@@ -1,0 +1,43 @@
+KanjiCard v1.6 Sample						6/9/1996
+
+KanjiCard is a computer flashcard program for Windows designed as a
+study aid for learning the Japanese Kanji.  It is based on the Japanese
+government's list of Educational Kanji that are learned in grades 1-6.
+These grade levels are organized by approximate levels of frequency of
+the Kanji.
+
+Note:  The sample version only contains the first 20 kanji
+
+A quick list of KanjiCard's features are:
+	o All 1006 Educational Kanji and Definitions
+	o Print flashcards to your printer
+	o "On" and "Kun" readings with Okurigana
+	o Stroke counts for all the kanji
+	o Mark difficult to remember kanji
+	o Copy Kanji to the clipboard
+	o Selective display of kanji attributes
+	o Shuffle the flashcards for studying
+
+The latest version of this sample program is available via ftp to
+liege.ics.uci.edu in the directory pub/eli
+
+The complete version of KanjiCard is currently available in 2 packages:
+	Package A:  Contains the 440 Kanji for Grades 1-3  US$ 20.00
+	Package B:  Contains the 556 Kanji for Grades 4-6  US$ 20.00
+
+	or, get all 1,006 Kanji for grades 1-6  US$ 35.00
+
+You can buy KanjiCard by sending a check for the purchase price + $3
+shipping (international $6 shipping) to:
+	Eli Charne
+	PO Box 11951
+	Marina Del Rey, CA 90295-2951
+
+You can also purchase the full version over the World Wide Web by
+connecting to:
+
+  http://www.infohaus.com/access/by-seller/21st_Century_Information
+
+If you have questions or comments, I can be reached at the address above
+or over the Internet as echarne@ics.uci.edu
+

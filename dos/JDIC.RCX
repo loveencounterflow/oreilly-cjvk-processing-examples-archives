@@ -1,0 +1,129 @@
+#
+#   JDIC.RC
+# 
+# The JDIC.RC file contains a number of directives which control certain
+# features of JDIC and JREADER. If you are a MOKE user, these directives
+# may be placed in your MOKE.RC file instead. The JDIC.RC file must be
+# in the directory from which JDIC/JREADER is run, the directory indicated
+# by the JDICRC environment variable, or the dicrectory indicated by the
+# -cDIR option on the command line.
+#  
+# This file can be used as an initial JDIC.RC file, simply by renaming
+# it. You will probably want to edit the entries, or remove the "#" which
+has been used to "comment-out" some entries.
+#
+#
+# The first group of directives are common to both MOKE and JDIC/JREADER.
+#
+# The "kanjipath" directive defines the directory in which all the 
+# dictionary and font files are placed.
+#
+kanjipath     C:\kanji
+#
+# The "bgipath" directive defines the directory in which the Turbo-C ".bgi"
+# files are to be found.
+#
+bgipath      C:\kanji
+#
+# The graphicstype directive can set the type of graphics card & display.
+# It is not needed with JDIC/JREADER unless you have an ATT400 graphics 
+# adaptor. In that case the auto-detect will probably set the operation to CGA. 
+#
+#graphicstype  ATT
+#
+# The following directives control the colours used on the screen:
+#
+# asciicolor - colour of English or Alpha characters
+# kanjicolor - colour of kana and kanji
+# backcolor - colour of the (background) screen
+# progcolor - colour of control information
+#
+# [the options are: black, blue, green, cyan, red, magenta, brown, lightgray,
+# darkgray, lightblue, lightgreen, lightcyan, lightred, lightmagenta, yellow 
+# and white.]
+#
+# The following settings will give a "telnet-like" screen appearance.
+#
+asciicolor      white
+backcolor       blue
+kanjicolor      yellow
+progcolor       lightgray
+#
+# The fontspace directive sets the number of pixels of spacing between kanji
+# and kana. The default is zero pixels, which is quite satisfactory in most 
+# cases, but in a few instances pairs of kanji will touch. The  fontspace 
+# directive allows the user to increases the inter-character pixel spacing to
+# 2 or 4 pixels.  The spacing between ASCII characters is half that between
+# kana/kanji.
+#
+#fontspace  2
+#
+#
+# The following directives are exclusive to JDIC/JREADER.
+#
+# The jdicmode directive sets JDIC's input mode of startup. If this is absent, 
+# the default is English. The possible settings are "e" (English), "h" 
+# (hiragana) and "k" (katakana). 
+# 
+#jdicmode h
+#
+# One or more "jdicfilt"  lines  can be used to set up to 10 sets of filters 
+# which can be selectively applied to the dictionary during display. See the
+# documentation for full details. The general format is:
+#
+#    jdicfilt f t on|off "filter_name" <code1> <code2> ....
+#
+# The following is a possible working set:
+#
+jdicfilt 0 2 on "Exclude proper names" (pl, (pn pl) pn)
+jdicfilt 1 1 off "Exclude all place names" (pl, pl)
+jdicfilt 2 1 off "Exclude all person names"  (pn pn)
+jdicfilt 3 0 off "Show only person names" (pn pn)
+jdicfilt 4 0 off "Show only place names" (pl, pl)
+jdicfilt 5 0 off "Show only place & person names" (pl, (pn pl) pn)
+#
+# the "dicfile" directive can specify up to 10 dictionary files on which JDIC
+# can operate. (Users select which dictionary to search via the Alt-F2 
+# command.) Note that if the "dicfile" directive  and/or  the  command-line 
+# option is being used, ALL dictionary files must be stated, as the default is 
+# over-ridden. 
+#
+# The following is the author's setting of these directives:
+#
+#dicfile   C:\KANJI\EDICT
+#dicfile   C:\KANJI\JDDICT
+#dicfile   C:\KANJI\LIFSCDIC
+#
+# The fkey directive is used to remap the function keys. The keys that can be 
+# remapped are F1 to F10, Alt-F1 to Alt-F10 and Ctrl-F1 to Ctrl-F10.  
+# The general format is:
+#
+#   fkey       key1    key2
+#
+# "key1" specifies the key that is pressed, and "key2" specifies the keystroke 
+# to  be simulated. The codings for "key1" and "key2" are Fn for F1-10, An for 
+# Alt-Fn, and Cn for Ctrl-Fn. 
+# For example, a user who often uses Kuten coding and rarely uses JIS coding 
+# can reverse the F9 and Alt-F9 with the following: 
+#
+#fkey  F9  A9
+#fkey  A9  F9
+#
+# JREADER's verb "de-inflection" function operates as a default. It can be
+# disabled at load time with the following directive:
+#
+#jverb	off
+#
+# The default is for JDIC to display the "Nelson" index numbers on multi-
+# kanji displays. The load-time default can be changed to the Halpern numbers
+# with the following directive:
+#
+#halpern
+#
+# Both JDIC nd JREADER have an on-line help facility whereby a short message
+# is provided with each screen explaining the possible user actions. The 
+# default is to have this facility enabled. The "verbose off" directive will 
+# disable the facility.
+#
+#verbose off
+#

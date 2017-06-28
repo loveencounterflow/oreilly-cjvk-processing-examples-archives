@@ -1,0 +1,295 @@
+Table of Contents for "Understanding Japanese Information Processing"
+by Ken Lunde
+
+Preface
+    Audience
+    Organization
+    Conventions
+    Acknowledgments
+    Errors, Omissions, and Updates
+1: Overview of Japanese Information Processing
+    Multiple Writing Systems
+    Japanese Character Set Standards
+    Japanese Encoding Methods
+    Japanese Input
+    Setting Japanese Text
+    Basic Concepts and Terminology
+        What Are JISC, JIS, and JSA, and How Are They Related?
+        What Are Internationalization and Localization?
+        What Are the Multilingual and Locale Models?
+        What Is KUTEN?
+        What Is the Difference Between a Character and a Glyph?
+        What Is a Typeface?
+        What Are Half- and Full-width Characters?
+        What Is Notation?
+        What Is an Octet?
+2: The Japanese Writing System
+    Roman Characters
+    Hiragana
+    Katakana
+    Kanji    
+        The Pronunciation of Kanji
+        The Structure of Kanji
+        The History of Kanji
+3: Japanese Character Set Standards
+    Non-electronic Character Set Standards
+    Electronic Character Set Standards
+        National Character Set Standards
+        Asian Character Set Standards
+        International Character Set Standards
+    Non-electronic Versus Electronic Character Set Standards
+    Advice to Developers
+4: Japanese Encoding Methods
+    National Encoding Methods
+        ASCII/JIS-Roman Encoding
+        EBCDIC/EBCDIK Encoding
+        Half-width Katakana Encoding
+        KUTEN Encoding
+        JIS Encoding
+        Shift-JIS Encoding
+        Shift-JIS Versus JIS Encoding
+        EUC Encoding
+        EUC Versus JIS Encoding
+    Asian Encoding Methods
+        KS C 5601-1992 Encoding
+        GB 2312-80 Encoding
+        Big Five Encoding
+        Comparing Japanese and Other Asian Encoding Methods
+    International Encoding Methods
+        ISO 10646/Unicode Encoding
+        ISO 10646/Unicode Encoding Versus JIS Encoding
+        Unicode Zones
+        XCCS Encoding
+    Conversion of Japanese Text
+    Repairing Damaged Japanese Text
+    Advice to Developers
+5: Japanese Input
+    Japanese Input Software
+        Kana Versus Romanized Input
+        Input by Pronunciation
+        Input by Radical
+        Input by Stroke Count
+        Input by Multiple Criteria
+        Input by Encoded Value
+        Input by Postal Code
+        Input by Association
+        In-line Conversion
+    Japanese Input Hardware
+        Western Keyboard Arrays
+        Kanji Keyboard Arrays
+        Kana Keyboard Arrays
+        Roman Character Keyboard Arrays
+        Other Input Hardware
+    Japanese Character Dictionaries
+6: Japanese Output
+    Japanese Fonts
+        Bitmapped Fonts
+        Parametric Fonts
+        Outline Fonts
+        PostScript Fonts
+        TrueType Fonts
+        Creating Your Own Fonts
+    Printer Output
+        PostScript Japanese Printers
+        Adobe Type Manager (ATM)
+        TrueType
+        Other Printing Methods
+    Computer Monitor Output
+    Vertically-set Japanese Text
+    External Character Handling
+    Special Japanese Text Formatting Functions
+        Japanese Hyphenation
+        Japanese Justification
+        Ruby Characters
+    Advice to Developers
+        Obtaining a Japanese Publishing System
+        Software Recommendations
+        Advanced Typeface Technologies
+7: Japanese Information Processing Techniques
+    Code Conversion Algorithms
+        JIS to Shift-JIS Conversion
+        Shift-JIS to JIS Conversion
+        JIS to EUC and EUC to JIS Conversion
+        JIS to KUTEN and KUTEN to JIS Conversion
+        Shift-JIS to EUC and EUC to Shift-JIS Conversion
+        Other Code Conversion Types
+    Text Stream Handling Algorithms
+        Eight- to Seven-bit Conversion
+        Seven- to Eight-bit Conversion
+        Eight- to Eight-bit Conversion
+        Seven- to Seven-bit Conversion
+    Miscellaneous Algorithms
+        Japanese Code Detection
+        Half- to Full-width Katakana Conversion
+        JIS Encoding Repair
+    Byte Versus Character Handling Issues
+        Character Deletion
+        Character Insertion
+        Character Searching
+        Character Sorting
+        Line Breaking
+    Character Attribute Detection
+    Japanese Code Processing Tools
+        Japanese Code Conversion
+        Generating Japanese Character Sets
+        Examining Japanese Text Files
+8: Japanese Text Processing Tools
+    Operating Systems and Operating System Extensions
+        IBM DOS J/V (IBM PC and Compatibles)
+        Microsoft Windows-J (IBM DOS J/V)
+        KanjiTalk and WorldScript II (Macintosh)
+        GomTalk7 (Macintosh)
+        AIX (RISC System/6000)
+        Irix (SGI Workstations)
+        PenPoint
+        Plan 9 (UNIX)
+        X11R5 (UNIX)
+        NeXTSTEP-J (NeXT)
+        ANS (Amiga)
+    Input Software
+        Kotoeri (KanjiTalk 7.1)
+        VJE-gamma (IBM DOS J/V or NeXTSTEP-J)
+        MacVJE-gamma (KanjiTalk 7.1)
+        Wnn (UNIX or KanjiTalk)
+        SKK (Mule, Nemacs, or Demacs)
+        Canna (UNIX)
+        Tcode (Mule, Nemacs, Demacs, or KanjiTalk)
+    Text Editors
+        MOKE (MS-DOS)
+        ASLEdit+ (KanjiTalk)
+        Emacs and GNU Emacs Variants
+        Jstevie (UNIX or IBM DOS J/V)
+        jelvis (UNIX or IBM DOS J/V)
+    Word Processors
+        JWP (Microsoft Windows)
+        NJStar (MS-DOS)
+        Nisus/Solo Writer (KanjiTalk)
+        Dedicated Japanese Word Processors
+    Page Layout Software
+        Aldus PageMaker-J (Microsoft Windows-J or KanjiTalk)
+        Adobe Illustrator-J (KanjiTalk)
+        FrameMaker-J (UNIX)
+    Online Dictionaries
+        JDIC (MS-DOS)
+        MacJDic (KanjiTalk)
+        rSTONE (KanjiTalk)
+        Syokendai (KanjiTalk)
+        XJDIC (UNIX)
+        edict.el (Mule or Nemacs)
+        Quick Viewer (IBM DOS J/V or KanjiTalk)
+        Translator's Apprentice (NeXTSTEP)
+    Machine Translation Software
+        PC-Transer (IBM DOS J/V)
+        EZ JapaneseWriter (MS-DOS)
+        TheTranslator (KanjiTalk)
+    Terminal Software
+        YKH (MS-DOS)
+        KCom2 (MS-DOS)
+        ASLTelnet (KanjiTalk)
+        NinjaTerm (KanjiTalk)
+        Terminal-J (KanjiTalk)
+        kterm/exterm (UNIX)
+9: Using Japanese E-mail and News
+    Sending Japanese E-mail
+    Posting Japanese News
+    Receiving Japanese E-mail
+    Displaying Japanese News
+    E-mail Addressing Templates
+        Internet and Aegis
+        Internet and America Online
+        Internet and AppleLink
+        Bitnet and AppleLink
+        Internet and Bitnet
+        Internet and CompuServe
+        Internet and Fidonet
+        Internet and MCIMail
+        Internet and NIFTY-Serve
+        Internet and PC-VAN
+        Internet and TWICS
+    E-mail Troubles & Tricks
+    Japan Network Domains
+        The JP Domain
+        Bitnet Sites in Japan
+    Getting Connected
+A: Japanese Code Conversion Table
+B: JIS X 0208-1990 Table
+C: JIS X 0212-1990 Table
+D: JIS Code Table Supplements
+    Pronunciation Index
+    Radical Index
+E: Joyo Kanji List
+F: Gakushu Kanji List
+G: Jinmei-yo Kanji List
+H: Japanese Corporate Character Set Standards
+    JEF
+    FMR Kanji
+    IBM Kanji
+    DEC Kanji
+    NTT Kanji
+    NEC Kanji
+    IKIS    
+    HP Kanji
+    Apple Kanji
+    KEIS
+I: Japanese Corporate Encoding Methods
+    JEF Encoding
+    JEF Encoding Versus EUC Encoding
+    FMR Kanji Encoding
+    IBM Kanji Encoding
+    IBM Kanji Encoding Versus Shift-JIS and EUC Encodings
+    DEC Kanji Encoding
+    DEC Kanji Encoding Versus EUC Encoding
+    NTT Kanji Encoding
+    NTT Kanji Encoding Versus JIS Encoding
+    NEC Kanji Encoding
+    NEC Kanji Encoding Versus JIS Encoding
+    IKIS Encoding
+    IKIS Encoding Versus EUC Encoding
+    HP Kanji Encoding
+    HP Kanji Encoding Versus Shift-JIS and EUC Encodings
+    Apple Kanji Encoding
+    Apple Kanji Encoding Versus Shift-JIS Encoding
+    KEIS Encoding
+    KEIS Encoding Versus EUC Encoding
+J: Character Lists and Mapping Tables
+    JIS C 6226-1978 Versus JIS X 0208-1983
+        Category 1
+        Category 2
+        Category 3
+        Category 4
+    JIS X 0208-1983 Versus JIS X 0208-1990
+    JIS X 0212-1990
+    Joyo Kanji
+    IBM Kanji
+K: Software and Document Sources
+    Anonymous FTP
+    FTP Mail
+    Finding Files
+    Useful Anonymous FTP Sites
+    FTP Sources
+    Commercial Sources
+L: Mailing Lists
+    Canna Mailing List
+    CCNET Mailing List
+    INSOFT-L Mailing List
+    ISO 10646 Mailing List
+    Japanese Newsgroup Mailing List
+    Kanji-Amiga Mailing List
+    KanjiTalk Mailing List
+    Mule Mailing List
+    NeXT Nihongo Mailing List
+    NIHONGO Mailing List
+    Nisus Mailing List
+    PenPoint Mailing List
+    RES-JAPAN-GROUP Mailing List
+    SKK Mailing List
+    Tcode Mailing List
+    Unicode Mailing List
+M: Professional Organizations
+    Association for the Internationalization of Computing Resources
+    Chinese Language Computer Society
+    International Macintosh Users Group
+N: Glossary
+O: Code Table
+Bibliography
+Index    

@@ -1,0 +1,20 @@
+Hi, Admin,
+
+  
+software: MView
+version: 2.00
+function: MView is a Microsoft Windows 3.x and Windows 95
+	  integrated software that allows viewing of Chinese,
+	  Japanese and Korean characters under Windows. The
+	  supported coding types include GB, HZ, BIG5, JIS,
+	  EUC, SJIS, KSC, UTF7 and UTF8. MView is
+	  distributed as a shareware. It is an inexpensive
+	  software with some distinctive features that are not
+	  found in other softwares. Auto detect between SJIS
+	  and EUC. Auto detect between GB and BIG5. Support
+	  non-English Windows (allowed to ignore opaque text,
+	  not the best solution, but work on Netscape)
+
+URL: ftp://ftp.ifcss.org/pub/software/ms-win/viewer/mview20.zip
+author: Albert Chong
+comment: Previous registered users can upgrade for free

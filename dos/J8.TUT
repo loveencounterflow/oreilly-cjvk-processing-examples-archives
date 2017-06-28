@@ -1,0 +1,85 @@
+¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦İ
+¡Ã£Å£ø£ğ£ï£ò£ô£é£î£ç  ¡õ  £É£í£ğ£ï£ò£ô£é£î£ç¡¡Ê¸½ñ¤ÎÍ¢Æş¤ÈÍ¢½Ğ¡¡      J8.TUT¡Ã
+¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ş
+\NumberStyle="NJJ 3.0: JW-Tutorial 8, page %d"
+
+In this tutorial, you learn the way how to import and export documents to other packages for information exchange or printout. You don't have to read through this section unless you need to do such actions.
+
+¡ü Planning Export and Import
+
+You normally decide to export or import documents for one of the following two reasons:
+
+  1) you don't have the software that was used to create the document
+  2) you want specific functions that are not available in the package used
+
+Take the following situations. Let's consider how we should respond:
+
+  1a) you don't have NJStar, but want to edit an NJStar document
+  1b) you don't have the software used to create the document, but now
+      want to use NJStar to edit the document.
+  2a) you want to add Japanese characters to your document
+  2b) you want to print NJStar document in higher quality than we get from
+      NJStar
+
+¢¢ SITUATION (1a)
+It is assumed that you have a word-processor which understands Japanese characters. If it is an ordinary English word-processor, all the Japanese characters and symbols will appear as funny symbols.
+
+NJStar's printing enhancement commands (e.g., \NewPage) will not be interpreted by the application software other than NJStar. So make sure to delete these instructions and supply valid formatting command valid for the particular software.
+
+¢¢ SITUATION (1b)
+This is the situation where you import text from other software. Make sure that the document has been stored in ASCII text, or PLAIN TEXT. 
+
+If it is a Japanese document created using DOS/V or Apple Macintosh, then you start NJStar with -j option (Shift-Jis), e.g., NJJ -j <filename>
+
+¢¢ SITUATION (2a)
+You are probably editing a document containing many English paragraphs as well as Japanese text. There are basically two different approaches:
+
+IF YOU DECIDE TO PRINT THE DOCUMENT FROM A JAPANESE WORD-PROCESSOR
+
+  1) Type your document in any English word-processor and spell check it.
+  2) Save the document in ASCII format (or plain text format)
+  3) Open the document from NJStar
+  4) Type Japanese characters and do the editing in NJStar
+  5) Print from NJStar or Export the document to other Japanese word-processors
+
+IF YOU DECIDE TO PRINT THE DOCUMENT FROM AN ENGLISH WORD-PROCESSOR
+
+(This is recommended only if the number of Japanese characters is small, and you use Windows word-processors, such as Word for Windows or Ami Pro)
+
+  1) Type your document in the English word-processor and spell check it.
+  2) Run NJStar and type all the Japanese characters and save it.
+  3) Create a PCX file (see Tutorial 3 for more details).
+  4) Incorporate the bit-mapped Japanese characters into the English document
+     via Paint Brush.
+
+¢¢ SITUATION (2b)
+As NJStar uses fixed width characters for English words, you may want to consider exporting the document to another Japanese word-processor which has proportionally spaced typeface, such as "Times Roman". If you use Windows, then you can use JWP for this purpose.
+
+
+¡ü A note on Importing English documents into NJStar
+
+If the document was created on a different word-processor, you must make sure that you have saved it in ASCII or "plain text" prior to loading it into NJStar.
+
+The 7-bit ASCII range accommodates most of the characters you can find on UK keyboard layout except œ, which has ASCII value of 156. All the European accented vowel characters are located above 128. If you are importing a document containing those characters, you must be careful: 
+
+NJStar can recognize the following codes (128-160) only under EUC coding:
+
+                €‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œáŸ 
+       (NB. ASCII-158 and ASCII-225 `á'are identical in NJStar)
+
+The characters with an ASCII value higher than 160 (except 225) will be replaced with Japanese characters. If you use Shift-JIS format (such as IBM and Mac in Japan), these codes are allocated for Japanese characters and cannot use them.
+
+¡ü A note on exporting NJStar documents to other applications
+
+When you try to export the text to other applications which do not understand Japanese characters, you must make sure that the document does not contain two-byte codes, such as Japanese characters and English characters from Japanese mode including space (which you can type from JASCII mode).
+
+NJStar uses ASCII-10 for carriage return as a default, rather than the 13 + 10 used under normal English application. When you want to export your file, then consider modifying the setting with¡ÚTools, NJ Config, G¡Û(answer "NO" in save file in binary).
+
+NJStar automatically detects these two formats when it is loading, so there shouldn't be any problem. You must bear in mind only that if you are exporting NJStar documents to English application, you may not be able to export successfully if it is in the binary format. If you experience this problem, try saving the document again in NJStar and repeat the above procedure. 
+
+                           ¢£ End of TUTORIAL 8 ¢£
+ ¦ç¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦è
+ ¦æ¡ş¡ş¡ş¡ş¡ş¡ş Press <Shift F10> to select other tutorials  ¡ş¡ş¡ş¡ş¡ş¡ş¦æ
+ ¦æ¡ş¡ş¡ş¡ş¡ş¡ş¡ş¡ş¡ş¡ş Press  <Ctrl F3> to exit NJStar ¡ş¡ş¡ş¡ş¡ş¡ş¡ş¡ş ¦æ
+ ¦ê¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦é
+

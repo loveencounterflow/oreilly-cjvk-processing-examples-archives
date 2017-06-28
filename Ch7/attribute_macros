@@ -1,0 +1,7 @@
+#define ISLEVEL1(A)    (A >= 16 && A <= 47)
+#define ISLEVEL2(A)    (A >= 48 && A <= 84)
+#define ISKANJI(A)     (ISLEVEL1(A) || ISLEVEL2(A))
+#define ISHIRAGANA(A)  (A == 4)
+#define ISKATAKANA(A)  (A == 5)
+#define ISKANA(A)      (ISKATAKANA(A) || ISHIRAGANA(A))
+#define ISKANAKANJI(A) (ISKANA(A) || ISKANJI(A))

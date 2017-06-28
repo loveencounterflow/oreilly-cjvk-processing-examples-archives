@@ -1,0 +1,68 @@
+							Jeffrey Friedl
+							Omron Corp.
+							Nagaokakyo, Japan
+							April 22, 1994
+
+LOOKUP provides a way to quickly and powerfully search text files.
+
+The author's prime use is to search "edict" (a Japanese-English word list),
+"kanjidic" (a database about Japanese characters), and "/usr/dict/words"
+(list of English words).
+
+However, one could easily be used to search for variables in huge programs,
+or most any other application of searching line-based text.
+
+From the manual page:
+
+   Romaji-to-Kana Converter
+        Lookup can convert romaji to kana for you, even "on the fly" as you
+        type.
+
+   Fuzzy Searching
+        Searches can be a bit "vague" or "fuzzy" , so that you'll be
+  	able to find the Japanese word for Tokyo even if you try to search for
+        "to kyo" (the proper Japanese "spelling" being "to u kyo u")
+
+   Regular Expressions
+        Uses the powerful and expressive regular expression for searching. One
+        can easily specify complex searches that affect "I want lines that
+        look like such-and-such, but not like this-and-that, but that also
+        have this particular characteristic...."
+
+   Filters
+        You can have lookup not list certain lines that would otherwise match
+        your search, yet can optionally save them for quick review. For
+        example, you could have all nameonly entries from edict filtered
+        from normal output.
+
+   Automatic Modifications
+        Similarly, you can do a standard search-and-replace on lines just
+        before they print, perhaps to remove information you don't care to
+        see on most searches. For example, if you're generally not interested
+        in kanjidic's info on Chinese readings, you can have them removed from
+        lines before printing.
+
+   Smart Word-Preference Mode
+        You can have lookup list only entries with whole words that match your
+        search (as opposed to an embedded match, such as finding "the" inside
+        "them" ), but if no wholeword matches exist, will go ahead and list
+        any entry that matches the search.
+
+   Handy Features
+        Other handy features include a dynamically settable and parameterized
+        prompt, automatic highlighting of that part of the line that matches
+        your search, an output pager, readline-like input with horizontal
+        scrolling for long input lines, a ".lookup" startup file, automated
+        programability, and much more.
+
+The program just spits out encoded Japanese. If your terminal doesn't support
+JIS, Shift-JIS, or EUC, you may as well stop now.
+
+See the "BUILDING" file for sections
+     COMPILING
+     MAN PAGE
+     RUNNING
+
+-----------------------------------------------------------------------------
+    Jeffrey
+    jfriedl@nff.ncl.omron.co.jp

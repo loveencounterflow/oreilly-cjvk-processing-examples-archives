@@ -1,0 +1,445 @@
+
+                           J R E A D E R
+
+      Japanese Text Reader with Online Dictionary Search & Yomikata Lookup
+      ====================================================================
+
+                            Version 2.5 
+
+                                       
+                           (Copyright)
+                            J.W. Breen
+                           January 1995
+                                    
+
+                             CONTENTS
+
+                        1. INTRODUCTION
+
+                        2. THIS DOCUMENT
+
+                        3. INSTALLATION
+
+                        4. ENVIRONMENT
+
+                        5. OPERATION
+
+                        6. DICTIONARY SEARCHING 
+
+                        7. VERB & ADJECTIVE MODIFICATION
+
+                        8. YOMIKATA SEARCHING
+
+                        9. KANJI INFORMATION
+
+                       10. JREADER ON A PALMTOP
+
+                       11. ADDITIONS TO PREVIOUS VERSION(S)
+
+                       12. AUTHOR'S COMMENT
+
+
+
+1. INTRODUCTION 
+
+This program provides a PC operating under MS-DOS with the capability to read 
+and  display a text file containing Japanese characters (kana & kanji),  with 
+the option of looking up the displayed words in a Japanese/English dictionary 
+file or in a kanji-to-kana yomikata file.  
+
+The Japanese characters in the text files can either be in the EUC,  New-JIS, 
+Old-JIS  or Shift-JIS codes.  Hankaku codes are supported for Shift-JIS,  but 
+not for EUC.  Codes which are not supported,  such as NEC-JIS or EUC-hankaku, 
+can be converted into one of the supported codes  using  a  utility  such  as 
+JCONV. 
+                 
+Although JREADER is  intended  to  help  non-Japanese  people  read  Japanese 
+language  text  files,  it can also be used by Japanese to read English text.  
+Its usefulness in this role is limited  by  the  dictionary,  which  is  more 
+oriented  to  the Japanese to English mode,  and the fact that the dictionary 
+search cannot cope with things like English's "strong" verbs (swim/swam/swum, 
+be/am/are, go/went, etc.). 
+
+JREADER is an extension of the  author's  JDIC  (Japanese/English  Dictionary 
+Display)  program,  which  has  been  designed  specifically  to operate on a 
+dictionary in the "EDICT" format originally used  by  the  MOKE  (Mark's  Own 
+Kanji  Editor)  Japanese  text  editor.  As  with  JDIC,  JREADER's operating 
+environment has been designed to be similar to MOKE's,  and it  can  use  the 
+same  environment  variables  and control file as MOKE.  
+
+The executable code and documentation of JREADER is hereby  released  to  the 
+public for general use.  It is covered by the author's copyright,  and may be 
+freely distributed with the proviso that it not be distributed as part  of  a 
+commercial system without the author's permission.  All usage of this program 
+is at the user's risk, and there is no warranty on its performance. 
+
+All  the  Japanese  displayed is in kana and kanji,  so if you cannot read at 
+least hiragana and katakana,  this program will not be much use for you.  The 
+author has NO intention of producing a version using romanized Japanese. 
+
+
+2. THIS DOCUMENT
+
+JREADER  is  an  extension of JDIC,  and shares a similar operating method as 
+JDIC.  Consequently this document file only includes details of where JREADER 
+differs  from  JDIC.  Please  make  sure  you  have  and read the appropriate 
+JDICnn.doc file. 
+
+
+3. INSTALLATION
+
+This program is distributed in a "zoo" archive (jdic25.zoo).  Both  JDIC  and 
+JREADER share a common operating environment.  Please follow the installation 
+details in JDIC25.DOC, which is in the "JDIC25.ZOO" file. 
+
+In addition, to get the full function from JREADER, you should have the files 
+WSKTOK.DAT  and  WSKTOK.IND.  These  are the kanji_to_kana file from MOKE and 
+its index file.  Without them the "y" (yomikata  lookup)  function  will  not 
+operate. If you are a MOKE user (Version 2.0 or later) you will have them. 
+
+The author has produced an expanded form of the WSKTOK.DAT file by adding  in 
+the  additional entries in EDICT,  plus further entries from the full WNN and 
+SKK dictionaries.  This is available in the WSKWNN.ZOO  file,  along  with  a 
+matching WSKTOK.IND index file. 
+
+(For the curious,  there is an explanation of these files in an  Appendix  to 
+JDIC25.DOC.) 
+
+
+4. ENVIRONMENT
+
+JREADER  uses  the  same  environment variables and JDIC.RC/MOKE.RC fields as 
+JDIC (and MOKE).  These affect things like paths and colours.  See JDIC25.DOC 
+for details. 
+
+JREADER has one special (optional) entry in  the  JDIC.RC/MOKE.RC  file.  The 
+verb/adjective  deinflection  function  (see  below)  can  be disabled by the 
+following line in JDIC.RC/MOKE.RC: 
+
+jverb   off
+
+The default is for this option to be enabled.
+
+
+5. OPERATION
+
+(a) LOADING
+
+JREADER is simple to operate. The command-line invocation is: 
+
+         jreader <options> text-file(s)
+
+The same -l,  -f,  -v,  -cDIR and -bnn  options  are  used  as  in  JDIC.  In 
+addition, JREADER uses: 
+
+ -sn (3 < n < 8) specifies that the text window is to use n/10 of the screen, 
+                   The default is n = 7. 
+
+ -ddictionary-file  specifies  the file that is to be used as the dictionary, 
+                   along with an index file  with  an  extension  of  ".jdx".  
+                   This latter file must be created using the JDXGEN utility.  
+                   The default is "edict" with "edict.jdx" as the index file, 
+                   or "jtoe.dct" and "jtoe.jdx", whichever is present. 
+                                       
+ -Llogfile  specifies the name of a file to log possible new "edict" entries. 
+                   The default name is "jreader.log". 
+
+ -/search_string specifies a string for which a search is  invoked  when  the 
+                   file  is  read.  See  the  section  below on searching for 
+                   strings.  The same options are available as  in  a  string 
+                   entered from the keyboard, and as well a serach string can 
+                   be in (EUC coded) kanji or kana. 
+                   
+One or more file names can be provided. MS-DOS wildcards can be used also. 
+           
+(b) READING FILES
+
+The working screen of JREADER contains two windows.  The upper  displays  the 
+text being read,  the lower displays control information,  and the dictionary 
+and yomikata search results. 
+
+The lower window also displays a short "help" display when the window is  not 
+being  used for a regular display.  The help display can be turned off by the 
+"-v" command-line option and the "verbose off" line in the JDIC.RC  file.  It 
+can also be toggled on and off by the "o" command. 
+
+The first screenful of the text file is displayed when  the  program  starts. 
+From then on most operation is by single keystroke commands. They are: 
+
+<PgDn> reads the next screen of the file.  The  last  line  of  the  previous 
+screen is repeated as the first line of the next. 
+
+<PgUp> reads the previous screen  of  the  file.  The  backspacing  technique 
+involves backspacing the number of lines on the current screen,  so it should 
+usually result in the previous screen being displayed,  unless  there  are  a 
+number of "folded" lines. 
+
+<Ctrl-PgUp> restarts the file from the beginning. 
+          
+<Ctrl-PgDn> skips to the end of the file, and displays the last 10 lines. 
+
+<Arrow>  The  four  arrow  keys  can  be  used to position the cursor under a 
+character which may be used as the start of a key for a dictionary search.  A 
+down-arrow while on the last line causes the display to scroll down one line, 
+and an up-arrow on the first line causes an upwards scroll. 
+
+<Enter> positions the cursor at the start of the next line. 
+
+<End> positions the cursor at the end of the current line. 
+
+<Home> positions the cursor at the start of the current line. 
+
+<Ctrl-Home> positions the cursor at the start of the screen. 
+
+<Ctrl-End> positions the cursor at the last line of the screen. 
+
+<Space> triggers a dictionary search using the string of characters beginning 
+with the one marked by the cursor. (See below.) 
+                                 
+<a> the same dictionary search as <space>,  but if the search key begins with 
+one or more kanji characters, the search will match against any occurrence of 
+the  character(s)  among  kanji compounds in the dictionary,  instead of just 
+those at the start of compounds. 
+
+</> invokes a prompt for  a  string  of  characters,  the  file  is  searched 
+forwards, starting at the *second* line on the display, until a line is found 
+containing that string.  This scan is case sensitive. 
+
+There are two special options with this search:
+
+    (i) if the entered string begins with a "\",  the remainder is treated as 
+    a hexadecimal coding of one or more kanji or kana. If the first character 
+    of the code is a "k",  the coding is treated as Kuten-encoded,  and if it 
+    is an "s",  it  is  treated  as  Shift-JIS.  For  example,  \k3214  is  a 
+    Kuten-encoded kanji and \s82a4 is Shift-JIS encoded kana,  while \3b7a is 
+    a JIS encoded kanji. 
+    
+    (Note that it is possible to obtain an incorrect match on occasions  when 
+    using  this option,  particularly when searching for a single kanji.  The 
+    scan uses a simple "strstr" function,  which  is  not  sensitive  to  the 
+    boundaries of individual kanji or kana,  and thus may find a match on the 
+    the combination of the second byte of one character, and the first of the 
+    next.) 
+
+    (ii) if the first character is a "?", the *previous* search is repeated.
+    
+Note that an initial search string can be entered as a  command-line  option. 
+In all cases the search can be abandoned by pressing the Esc key. 
+
+<c> triggers a search similar to the "/" command,  except the  key  is  taken 
+from  the  screen,  starting  at  the cursor position.  You are asked for the 
+length of the key,  which may be up to 9  characters  long  (kana,  kanji  or 
+ASCII). You may repeat the search using the "/" command with the "?" option.
+
+<l> logs the character string marked by the cursor  to  a  file  (default  is 
+"jreader.log").  The  logged  data is in "edict" format,  i.e.  `kanji [kana] 
+/english .../',  with the logged characters being  inserted  in  the  `kanji' 
+field.  You  will be prompted for the string length (up to 9 characters).  If 
+you respond with Enter,  and the cursor is on a Kanji,  all the kanji in  the 
+compound  will  be  logged.  You are also given the option of adding up to 50 
+characters of English to the logged entry.  (The main purpose of the  logging 
+function is to generate a file of Japanese words which are not  currently  in 
+the dictionary file.  This file can be edited later, the yomikata and English 
+translation  added  or  modified,  and  the  entries  included  in  the  full 
+dictionary.) 
+
+<y> invokes a scan of the "WSKTOK.DAT" file to find the yomikata of the kanji 
+compound starting with the character at the cursor.  [This option only  works 
+if  the  "WSKTOK.DAT"  and  "WSKTOK.IND" files are available,  i.e.  you need 
+either to be a MOKE (2.0 or later) user,  or you need to  have  obtained  the 
+files  separately  from  the  "WSKWNN.ZOO"  archive.]  The  longest  matching 
+sequence is displayed,  and you are given the option of  logging  this  entry 
+(kanji and kana) to the "JREADER.LOG" file, along with up to 50 characters of 
+English.  In  combination  with the <l> option above,  this option provides a 
+useful way of building up the dictionary file. 
+                 
+<n>  looks up and displays various details about the character at the cursor. 
+If the character is kana or ASCII,  the JIS or hexadecimal code is displayed. 
+For  kanji,  the  information  displayed  is the JIS code in hex,  the Nelson 
+number, the Halpern number, the Radical number (Bushu), the stroke count, the 
+on and kun readings, the English meaning(s) and a number of other information 
+fields.  This function requires the "KINFO.DAT"  file  to  be  present.  (See 
+JDIC25.DOC and KANJIDIC.DOC for further information.) 
+
+<s>  skips  ahead  in  the  text  file  to a line starting with "Article:" or 
+"Subject:".  This is to simplify reading a file containing  several  Japanese 
+news items. 
+
+<k>  skips  the cursor to the start of the next Kanji compound.  If Automatic 
+Lookup mode is active,  the dictionary is searched for  this  compound.  (See 
+below)                                         
+
+<w> skips the cursor to the start of the next of the next English word.  i.e. 
+the first slphabetic character after a non-alphabetic. 
+    
+<f>  initiates the opening of either the next file on the command line,  or a 
+totally new file. You are prompted for more details. 
+
+<m> displays the next window of dictionary matches (if any). 
+
+<d>  displays  a status report of the files in use,  the position in the file 
+being read,  the buffer usage,  and the state of user configurable  switches. 
+Note  that  the  line position is not always accurate if there have been some 
+PgUps,  and particularly if the Ctrl-PgDn skip_to_EOF option has  been  used, 
+which case the line count is set to 9999. 
+
+<j> jump ahead a number of lines. There is a prompt asking for the number. 
+
+<v> toggles the verb deinflection function between enabled and disabled. 
+
+<b> toggles the automatic blanking of the lower window.  Normally the display 
+on the lower window is left there until the next search, log, etc. is carried 
+out.  Some users prefer not to have such displays present.  The  <b>  command 
+toggles on and off a function which  will  blank  the  lower  window  on  any 
+keystroke following a search. 
+
+<o>  toggles  the  production of the help display in the lower window.  (When 
+this option is in use,  it over-rides the operation of the automatic blanking 
+of the lower window.) 
+
+<F1> Displays a summary of the keyboard commands. 
+
+<F2> Toggles Automatic Lookup mode (See <k> above.) 
+
+
+6. DICTIONARY SEARCHING 
+
+The dictionary search is similar to the one used in JDIC, except that the key 
+is  taken  from  the  text being displayed,  rather than from keyboard input.  
+Thus the search can be on keys consisting of kanji compounds, as well as kana 
+and ascii. 
+
+Starting with the character marked by the cursor,  the longest match is found 
+and  displayed,  followed by the next longest,  and so on.  Usually the first 
+match is the one you want.  The dictionary display is identical  to  that  in 
+JDIC,  except that each line is preceded by the number of matched characters.  
+If there are more matched lines than fit in the window, pressing "m" displays 
+the next window-full. 
+
+
+7. VERB & ADJECTIVE MODIFICATION
+
+When  a  dictionary  search  is initiated for text which consists of a single 
+kanji followed by two or more kana,  JREADER checks to see if it one  of  the 
+common verb or adjective conjugations or inflections, and if so, examines the 
+dictionary  using  the derived "plain" or "dictionary form" of the word.  The 
+user may then proceed with a normal search.  The inflection details used  are 
+in  the  file  "VCONJ",  which  may  be modified by the user.  Note that this 
+feature can be disabled by setting "jverb off" in the  JDIC.RC/MOKE.RC  file, 
+or  by  omitting the VCONJ file.  It can also be turned on or off dynamically 
+with the "v" command. 
+
+This function is not highly sophisticated,  and will not always  produce  the 
+right  result,  particularly when handling the more obscure grammatical forms 
+which use the "-masu stem" of verbs.  It is correct, however, over 95% of the 
+time,  and eliminates the problem of having the dictionary entry matching the 
+selected text only appearing about 20 or 30 lines down the display. 
+
+
+8. YOMIKATA SEARCHING
+
+The  "WSKTOK.DAT"  file  contains  thousands  of  kanji  compounds with their 
+readings in kana.  It is sorted,  and indexed on the first byte of the  first 
+character  in  the "WSKTOK.IND" file.  JREADER seeks into and scans this file 
+for the longest matching sequence of characters.  Only one such  compound  is 
+displayed.  The  present author has expanded the original MOKE file,  and the 
+expanded version is available in the WSKWNN.ZOO archive. 
+
+
+9. KANJI INFORMATION
+
+The  kanji  information  displayed  by  the  <n>  command  is  in  the   file 
+"KINFO.DAT".   KINFO.DAT  is  built  from  the  "KANJIDIC"  file.   See   the 
+KANJIDIC.DOC file for the full details on this information,  and the Appendix 
+to JDIC25.DOC for the structure of KINFO.DAT. 
+  
+
+10. JREADER ON A PALMTOP
+  
+JREADER  can  be  used successfully on the tiny HP100LX Palmtop (and probably 
+other emerging PCs of this type.) See JDIC25.DOC for more  details  of  this. 
+The author operates JREADER on a Palmtop by: 
+
+(a) installing it in the Application Manager as a call to a batch file,  i.e. 
+the "Path" box contains:  "a:\kanji\jrbat.bat|350".  Note that the "|" is the 
+upside-down "!". 
+
+(b) creating a batch file (JRBAT.BAT) containing the following lines: 
+
+        @echo off
+        input File Name(s) for JREADER? :
+        jreader -f -s6 %ANS%
+        
+The  "input.com"  utility,  which  is  in  the JDICPALM.ZOO archive,  is a PD 
+program which enables a text string (e.g.  a  file  name)  to  be  passed  to 
+JREADER via the "ANS" environment variable. 
+
+11. ADDITIONS TO PREVIOUS VERSION(S)
+
+V1.1 - Yomikata lookup, TAB expansion,  Shift-JIS reading,  PgUp for previous 
+screen. 
+
+V2.0  -  Larger  Help Screen,  double-Escape to exit,  "n" command to look up 
+Nelson,  etc.  information,  alternative font  files  and  dictionary  names, 
+multiple  input  files,  file  restart,  single-line scrolling,  text search, 
+paging of font and index files, capability of handling a dictionary up to 1.5 
+Mbytes. 
+
+V2.1 - Adds the ability to match a kanji with any occurrence  of  it  in  the 
+dictionary (the <a> function). 
+
+V2.2  -  Removes  the 1.5Mbyte restriction on dictionary size.  Tidies up the 
+kanji display (<n> option). 
+
+V2.3 - Added  the  verb/adjective  deinflector  facility,  the  <j>  and  <d> 
+options,  the  Kuten  field in the kanji display.  Enabled the display of the 
+last 4 JIS2 kanji when using the K16JIS2.FNT file.  Added the  JDIC.RC  file.  
+The   -cDIR  command-line  option.   Improved  the  search  speed,   and  the 
+line-folding in the dictionary and kanji display. 
+
+V2.4  -  compressed  the display,  including introducing user-selectable font 
+spacing,  and rearranging the lower window to enable better operation on  CGA 
+displays  (e.g.  the HP Palmtop.) Added the <b> blanking of the lower screen, 
+and the "Searching ..." message.  Added the handling of  half-width  kana  in 
+SJIS  files.  For  text searching,  added the <c> option,  the "\" setting of 
+JIS, SJIS and Kuten,  the command-line option,  and the "?" repeat.  Expanded 
+the "d" display, and fixed the erroneous line counts.  Added the help display 
+in the lower window.                        
+
+V2.5 - the EDICT Extension file facility <e>.
+
+
+12. AUTHOR'S COMMENT
+
+JREADER is to me a natural extension of JDIC,  and further exploits the  fast 
+dictionary  scanning technique used therein.  It also has been written with a 
+need in mind.  I had been using Mark Edwards' excellent VIEW and MOKE to read 
+fj.* news (using the SNUZ news reader.) I was frustrated by the  slowness  of 
+the  English  lookup  in  MOKE (a sequential read of the entire file) and its 
+refusal to add a compound to the dictionary if it was not in  the  kanji/kana 
+henkan  file.  Also  both  MOKE  and  VIEW require precise delineation of the 
+search string using several keystrokes.  This  can  result  in  several  slow 
+attempts  to  find  meanings for portions of a kanji compound.  What I wanted 
+was something friendlier and  faster  in  a  reading  environment,  with  the 
+capability of providing updates to my EDICT dictionary. 
+
+From this grew JREADER,  and it has turned out to be a very powerful Japanese 
+text  reader,  with  many  devoted  users  around the world.  (JREADER's code 
+actually formed the basis of the code for XJDIC,  the Unix X11 port of  JDIC, 
+because  XJDIC  provides virtually all of JREADER's functionality through the 
+kterm cut_and_paste facility.) To my delight,  the compilers  of  the  Walnut 
+Creek "East Asian Text Processing" CDROM  sought  my  permission  to  include 
+JREADER as the default Japanese text reader. 
+
+As  with  the JDIC program,  I am grateful to the many beta-testers,  and the 
+people who have suggested operational improvements, many of which I have been 
+able to incorporate. 
+
+As ever, comments and suggestions are welcome. 
+
+Jim Breen (jwb@capek.rdt.monash.edu.au) 
+Department of Robotics & Digital Technology 
+Monash University 
+Melbourne, Australia                                    
+Nov 1991 - March 1995
+

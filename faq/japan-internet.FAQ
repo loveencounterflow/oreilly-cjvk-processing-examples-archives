@@ -1,0 +1,433 @@
+Japanese Internet Service Providers FAQ file
+--------------------------------------------
+
+Last Modified: 94-6-30
+
+The main focus of this list is to help individuals seeking Internet E-Mail 
+and Usenet news access in Japan. In particular, to help them know (I hope all) 
+the service providers there are, narrow down to a target list and make 
+contact with or without E-mail.  For completeness, services for the "big boys" 
+(commercial organisations with a deep pocket for leased lines) are also 
+briefly provided.
+
+Caveat Emptor:  The state of Japan commercial Internet connectivity is in a 
+	state of flux now. With the honourable exceptions of Aegis and 
+	TWICS, virtually all the listed services are very new and some fall 
+	into the category of "Real Soon Now".  I have tried to flag the latter 
+	but ....
+
+Information is provided on an "AS IS" basis and makes no claim to correctness.
+Please use it at your own risk.  Data are summarized where possible from
+provider information files but are *not* actively corroborated with them.  
+
+Corrections and any new information about any sort of openly available or 
+commercial Internet connectivity service are welcome, please use E-mail if 
+possible.  I will maintain this at least into July when I move to the 
+Philippines.
+
+Mike Collinson
+	E-mail: mike@uxp.bs2.mt.nec.co.jp
+	Fax:    +81-3-3456-6675
+	Mail:   NEC Corporation, Daito Tamachi Building, 
+		14-22 Shibaura 4-Chome, Minato-ku, Tokyo 108, JAPAN
+
+-------------------------------------------------------------------------------
+
+Format:
+   #Access Provider:
+     Last updated:  Age of information
+     Services/cost: Basic List of services provided and indication of cost
+     POS:       Point(s) of Service (national/local extent, 
+		telephone numbers)
+		"Verified" after a telephone number shows that a login could 
+		be made.
+     How to Contact: Modem, e-mail, phone, fax, mail
+ 		The intent is to provide e-mail address where available and at
+		least one method for those without current e-mail access.
+
+		All phone numbers are for Japan except where noted.  To
+		dial from abroad, drop the leading "0" and prefix the Japan
+		"81" country code along with your international access code.
+     Interface: Language of of any on-line menu interface
+     Notes:	Miscellaneous items and comments
+
+TO DO:
+	- Put in standard FAQ format
+	- Replace "??" place-holders with real information - Your inputs please!
+
+-------------------------------------------------------------------------------
+#Access Provider: Aegis
+  Last update: 94-Jun-10
+  Services/cost:
+	UUCP as a not-for-profit society.
+	Three dial-in lines: 14,400, 14,400, 9,600 with PEP.
+	"20,000 yen/year for USENET + mail within Japan (*.jp) and to 
+	BITNET (*.bitnet).
+	Mail to all other addresses is 20 yen/K in both directions."
+  POS: Kansai  Tel nos: 
+                          075-954-0118 14,400
+                          075-957-5174 14,400
+                          075-954-4749  9,600 and PEP
+  Contact:
+	David G. McLane
+	- Tel: 075-951-1168 Fax: 075-957-1087
+	  Minami Hirao 1-6, Imazato, Nagaokakyoshi, Kyotofu 617
+	- E-Mail: davidg@aegis.or.jp | davidg@aegis.org
+
+#Access Provider: AppleLink, Apple
+  Last update: 94-Jun-22
+  Services/cost:
+	Internet email can be gatewayed to Applelink users.
+	[ Here is some sketchy information as a placeholder ]
+	"Although they don't have a PC9800 or Windows client, they certainly 
+	provide as much Internet access as AT&T, as well as many other things 
+	of interest to Mac owners."
+  POS: Access numbers in several cities, including Tokyo and Sendai.
+  Contact:
+	??
+	Indirectly, start with Apple Japan.
+	You can also use a US AppleLink account here.
+
+#Access Provider: ASCII-NET, ASCII Corporation
+  Services/cost:  This is the third largest PC Information Service provider
+	after PC-VAN and Nifty-Serve.  According to one user who is going to 
+	sign up with them:
+	"You can use telnet, ftp, whois, finger at ASCII-NET now.
+	3000 yen for setup, 2000 yen upto 5 hours 20yen/3 minutes"
+  POS: ??
+  Contact: ??
+
+#Access Provider: AT&T Jens
+  Last update: 93-Dec-15
+  Services/cost:
+	IP services - Digital leased line connection, 64Kbps up
+		One-time 50,000 Yen, Monthly 475,000 Yen and up
+	Dial-up router connection - PSTN or INS-C switched ISDN network
+		Monthly 215,000 Yen and up
+	Dial up SLIP and PPP - planned
+  POS:
+  Contact:
+	Vince Gebes vgebes@sys.attjens.co.jp
+
+#Access Provider: AT&TMail
+  Services/cost:
+	E-mail
+  POS:
+  Contact: - Thomas Caldwell, CFI Associates, tmcaldwell@attmail.com
+		Tel: 03-5371-0130      Fax: 03-3374-3865
+		(agent for AT&TMail)
+
+#Access Provider: Compuserve
+  Services/cost:
+	PC Information Service provider with Internet E-mail gateway.
+	No active marketing in Japan but provide access point(s) at least in 
+	Tokyo area.  
+  POS:
+	The following are unverified access points for Tokyo area:
+		(Tokyo)		03-5471-4790
+	The above is a direct number but has no no E-mail or electronic 
+	forum section.
+	The next numbers may actually be part of Fujitsu "Fenics" network
+	(see Nifty-Serve):
+		(Tachikawa)     0425-29-5491  7E1
+		(Tokyo)         0337-39-9968  7E1
+		(Yokohama)      0453-16-6325  7E1
+		(Yokosuka)      0468-25-7697  7E1
+	Can also be acccessed via Nifty-Serve, sprintnet.
+  Contact:
+	Get an account in your home country or sign up using one of
+	the introductory offers which often come with (US) modems.
+  Notes:
+	Compuserve policy is, er, fluid.  The Japan access point(s) exist
+	but they apparently do no publicize it/them.
+
+#Access Provider:  C.T.I. - Metanoia BBS (as 94-6-8 is under beta testing)
+  Services/cost:
+	dial-up UNIX shell accounts
+	e-mail and usenet
+	ppp (and maybe SLIP) for local files like e-mail and news
+	http/ftp servers for users to publish their own data
+	uucp
+	bbs (fido-net and first class node)
+	QWK mail packets for downloading of e-mail and news
+	  for off-line reading and replies.
+	The price will probably be 2000-3000 yen per month.
+  POS:
+	Tokyo 03-3465-1439 (verified)
+  Contact:	
+	- Dial POS and login as "new"
+		[ I tried this but got the following mesage : ]
+		We are sorry but new user accounts are
+		temporarily not available.  If you wish
+		to have more information regarding access
+		to CyberShrine, please e-mail the system
+		administrator at anishi@twics.com or
+		call customer support at +81-3-3929-6089.
+
+#Access Provider: Fidonet
+  Services/cost:
+        BBS with a Fidonet gateway can be used to send and recieve Internet
+        E-mail via Fidonet.  For example john smith at 1:2/3.4 can be
+        reached at john.smith@p4.f3.n2.z1.fidonet.org
+  POS:  National though concentrated around Kanto, Kansai and Okinawa
+  Contact:
+        There are about 80 Japan located BBS's listed in regular (copyrighted)
+	FidoNet Region 63 Nodelist put out by Bill English of BillBoard 
+	BBS 6:731/16.
+        I hope to put in an editted version of this list if the author agrees.
+
+        Meanwhile try Tokyo PC BBS (as listed) or the following to get started:
+                FidoNet-Japan BillBoard BBS  0427-77-0847, 8N1
+
+#Access Provider: Global On-Line Japan (beta testing as of 94-6-8)
+  Services/cost: Subscription BBS with as yet unspecified Internet services
+  POS:	Tokyo 03-5310-5143 (verified) ,  03-5310-5142, 8N1
+  Contact:
+	- Dial POS for on-line registration
+  Interface: English (will have Japanese)
+
+#Access Provider: GOEMON public-access Unix (No Internet connectivity yet)
+  Services/cost:
+	UNIX BBS.  Accounts on Goemon are presently free, will be a charge
+	for email and Usenet feeds when available.
+	"Coming soon (hopefully):"
+	- Internet email.
+	- Usenet and other network news.  Users will be able to choose the
+	  groups that I add to the newsfeed.  fj.* groups are OK too.
+	- Better Japanese news-reading software and on-line support for 
+	  Japanese email.
+  POS:	Fujisawa 0466-44-5652 (verified), 8N1, up to 14.4Kbps
+  Contact:
+	- Dial POS and log in as "guest"
+	- Bruce Hahne hahne@acm.org
+  Interface: English
+
+#Access Provider: IBM Japan's PEOPLE service, people.or.jp (beta until June 30th)
+  Last updated: 94-Jun-28
+  Services/cost:
+	- Internet services:Internet services:
+	    Internet email, apparently at no per-message surcharge.
+	    No ftp, telnet, or WWW, at least not now.
+	    A small selction of Japanese and non-Japanese Usenet newsgroups
+	    is presently available
+	- Until June 30th, for beta testers only: free.
+	  After June 30th:  10Y/minute for 2400 baud, 20Y/minute for up to 
+			    14,400.  Disk space: 10Y/100KB/day.
+  POS:  03-5572-7011(300-2400bps)
+        03-5572-7110(9600/14400bps)
+        and 93 access points nation wide(July 1st)
+  Contact:  
+	- Information and online sign up 
+            Tokyo: Dial-in POS and CONNECT:<cr> 
+                                    UserID:<PAMGUEST>
+            Others:Dial-in POS and CONNECT:@
+                                         *:A PAM(2400) A HPAM(9600)
+                                    UserID:<PAMGUEST>
+        - PEOPLE office 
+          0120-860864(toll free, 9:00 to 18:00)
+          fax: 03-5563-0353
+  Interface: Japanese(Shift-JIS, default, and most kanji codes).
+
+#Access Provider: Information Access Cnter (IAC)
+  Last updated: 94-Jun-23
+  Services/cost:
+  	BBS with Internet Email
+	Usenet News sub-set planned
+	Basic BBS service - Free (carries advertising)
+	[ Email probably free too but needs checking ]
+  POS:	Tokyo 03-3582-6047 (verified at 9600 bps) , up to 14.4kbps
+  Contact:
+	- Dial POS for on-line registration
+	- The Information Access Center
+	  Nomura Roppongi Bldg., #202,  3-4-2 Roppongi,  Minato-ku, Tokyo  106
+	  Tel: 03-5561-0416 Fax: 03-5561-0417
+  Interface:  English
+
+#Access Provider: International options (via dial-back, ICOM, SprintLink)
+  To Be Added - Your inputs please !
+
+#Access Provider: Internet Initiative Japan, Inc. (IIJ)
+  Last updated: 94-Jan-7
+  Services/cost:
+	1) UUCP (E-mail, News, files)
+		One-time 30,000 Yen, Monthly 2,000 Yen, 30 Yen/minute
+		for speeds up to 19.2 Kbps (analog)
+	2) IP service connected to the WIDE R&E internet
+		PPP available early April 94 ?
+		Starting from: One-time 180,000 Yen, Monthly 60,000
+	3) Dial Q2 Service
+		"Access to IIJ's information server via UUCP using NTT's
+		"Dial Q2" servive will be available" [Note the "will"]
+		30 yen / minute excluding dial-up connect charges.
+  POS: ??
+  Contact:
+	- 2-11-2 Nagatacho, Hoshigaoka Bldg., Chiyoda-ku, Tokyo 100
+	  Tel: 03-3580-3781  Fax: 03-3580-3782
+	- info@iij.ad.jp or David R Conrad davidc@iij.ad.jp
+	- Info can be obtained from ftp.iij.ad.jp (192.244.176.33):
+		ftp:pub/info/English
+		ftp:pub/info/Japanese
+	- In the US contact UUNET Technologies, Inc.
+		Tel:  1-800-4UUNET3 or (703) 204-8000
+		Fax:  (703) 204-8001
+		Email: info@uunet.uu.net
+
+#Access Provider:  Intercon KK. Now taken over, see PSI Inc.
+
+#Access Provider:  JANIS II BBS, M.R.T Inc.
+  Services/cost:  Subscription BBS running PC Board software
+	Basic Cost: From 10,000 Yen/year
+	Internet E-mail gatewway, Cost: ??
+  POS:	Tokyo 03-3252-7224, 8N1 1200-28,000bps (verified)
+  Contact:  
+	- Dial POS for on-line registration
+  	- Pete Perkins, M.R.T. Inc, 2nd Fl., Belle Square Bldg.
+	  2-7-10 Kanda Sudacho, Chiyoda-ku, Tokyo 101
+	  Tel: 03-3255-8880 Fax: 03-3255-8887
+  Interface: English
+#Access Provider:  PSI Inc. (was Intercon KK)
+  Services/cost:  IP services - Leased line Internet access for commercial users
+		  19.2 Kbps - 1.5 Mbps
+		  One-time 60,000 Yen and up, Monthly 210,000 Yen and up
+  POS: No dial-in access
+  Contact:  Tel: 03-5818-2955  Fax: 03-5818-2931
+
+#Access Provider: Nifty-Serve, Fujitsu
+  Services/cost:
+	No. 2 Compuserve-like PC Information Service provider with Internet
+	E-mail gateway.
+	[ Costs were obtained off-hand from a user and need corroboration ]
+	Basic cost: zero  flat rate + 10 Yen/minute connect time (?)
+	Cost for sending/receiving Internet email: Free (?)
+  POS: National via FENICS Frame Relay network dial-in points 300 - 9600bps
+	Examples:  Tokyo 03-3739-9120 (verified)  2400bps
+		   Tokyo 03-5703-0222 03-5710-5300
+		   Osaka 06-949-2573 06-941-7006 06-947-5936
+		   Akita 0188-31-4120  0188-31-6640
+  Contact: 
+	- "Nifty-Serve Guide Book" available at book stores and LAOX computer
+	  in Akihabara (Tokyo electronics shops district)
+	- Nifty-Serve is "presently offering" (94-6-14) free 
+	  English-language startup kits for "Nifty-Serve
+	  ES, the English language version of Nifty-Serve."  To get one, call
+	  their customer service department at (03) 5471-5806.
+	- On-line sign up in English via POS
+		Log in is not intuitively obvious and  according to the number 
+		that you dial.  Here is example for 03-3739-9120 :
+		Prompt				What you enter
+		----------------------------------------------------------
+		(none)				.00+    (Do not press RETURN!!)
+		COM Enter Connection-ID--->	SGE	(press RETURN)	
+		Enter Serial#--->		NIF00777 
+		Enter Agreement#--->		NIFTYSGN
+		----------------------------------------------------------
+		Note - It is the first line which varies, try also "C NIF"
+		       (no quotes, press return)
+	- Member Service Department (toll-free) 0120-22-1200
+		and 03-5471-5806.   Fax: 03-5471-5890
+  Interface: Japanese ("SVC" Connection ID) or English ("SVE" Connection ID)
+
+#Access Provider: PC-VAN, NEC Corporation
+  Services/cost:
+	No. 1 Compuserve-like PC Information Service provider with Internet
+	E-mail gateway.
+	Basic cost:  From 2000 monthly OR zero monthly + 20 Yen/3 min connect 		time
+	Cost for sending/receiving email: ??
+  POS: National access points, 300-9600bps
+  Contact: 
+	- On-line Sign up:  0120-00-9896 (Free dial - 2400bps MNP5)
+			    Enter "VANPCINFO" and press return key.
+			    06:00 - 02:00 Japan Std. Time
+	- Voice: 0120-00-9805 (free-dial) or 03-3454-6909 (information)
+	- NEC Show-rooms, "Bit.INN" sales centres
+  Interface: Japanese , NEC-JIS or Shift-JIS
+
+#Access Provider: TPC BBS, Tokyo IBM PC Users Club
+  Services/cost:
+	BBS with Fidonet and experimental Internet E-mail gateways
+	Small number of Usenet newsgroups carried.
+	Not-for-profit society offering services for convenience of members
+	Membership:  One time 3,000 Yen , annual 10,000 Yen
+	One year BBS Membership - Yen 4,000 (Complete acess to BBS/CD-ROMs)
+	There will probably be supplementary charge for Internet E-mail soon.
+  POS: Tokyo 03-3472-7512 (public) , 8N1 (verified)
+  Contact:
+	- Dial POS for on-line registration
+	- Information Hotline:        03-3576-9783
+	- Address: The Tokyo PC Users Group, Shibuya Post Restante,
+                   Shibya, Tokyo 150, Japan
+  Interface: English
+
+#Access Provider: TWICS
+  Last updated: early 1994
+  Services/cost:
+	BBS, Internet Email, TELNET/rlogin , FTP, Archie, whois, talk, irc
+	"5000 yen/month includes access to all facilities for up to 20 hours
+	each month.  A 200-500 yen per hour charge (pro-rated) is added for
+	additional time, depending on the time of day."
+	A 2000 Yen/month, 25 Yen/minute UUCP only service was available
+	and may still be.
+  POS:
+	Tokyo direct dial-in or via ?? 
+  Contact:
+	address:   TWICS
+                   IEC (NichiBei Kaiwa Gakuin) Bldg.
+                   1-21 Yotsuya, Shinjuku-ku
+                   Tokyo  160  JAPAN
+          phone:   (+81 3) 351 5977
+            FAX:   (+81 3) 353 8908
+
+       internet:   info@twics.com
+                        or
+                   Tim Burress <burress@tanuki.twics.co.jp>
+  Interface:  English (Japanese??)
+  Notes:
+	Until very recently, this was the only commercial Internet provider.
+
+#Access Provider: WIN/TRI-P
+  Last updated: 94-Mar-8
+  Services/cost:
+	"WIN provides with full Internet services.
+        Domestic ftp, telnet are available now.
+        Internation ftp, telnet will be available April '94.
+        E-mail and news are reachable to world wide .
+
+        WIN can be accessed through dial-in phone lines or ISDN ."
+                                adult     student      per:
+	First registration      3000yen   2000yen      one time
+        Basic charge            1000yen    800yen      month
+         (mail and read news)
+        Uucp charge [OPTION]     250yen    200yen      month
+        IP Usage registration
+                    [OPTION]    2000yen    1800yen     person
+        IP Usage charge
+         (PPP,SLIP) [OPTION]     780yen     600yen     month
+         FTP,TELNET Usage charge
+                    [OPTION]     700yen     500yen     month
+  POS:
+	1) Tokyo  03-5370-7171 8N1 (verified at 9600bps), and ISDN
+	2) National via TRI-P charge is  10 yen / minute (92 access points)
+  Contact:
+	- Dial-in POS and login in as "guest"
+	- From Welcome screen:
+	  TEL 03-5478-7111
+	  FAX 03-5478-7171
+	- From Enghlish canned info:
+	WINSYSTEM Inc.,
+        Yokohama Branch ( For Foreigner Information)
+        33-4 Matsugaoka Kanagawa-ku Yokohama Kanagawa 221, Japan
+        Fax: +81-45-290-1034
+	Email: Hirotaka Ikeda / hirotaka@cc.win.or.jp
+  Interface: Japanese - Shift JIS , JIS , EUC selectable
+
+
+Contributors:
+	 Andrew Norimasa Nishigaya <madjap@well.sf.ca.us>
+	 Max Morris <mgmorris@flab.fujitsu.co.jp>
+	 Rogers Huw <Was: rogersh@ccs.mt.nec.co.jp>
+	 Bruce Hahne <bruce@jise.isl.melco.co.jp>
+	 Yoshiyuki Abe    <89291416@people.or.jp>
+	 Anonymous <GEA03273@niftyserve.or.jp>
+	 Brian Gusko <briang@twics.com>
+	 Joel West <joelwest@san_marcos.csusm.edu>
+END

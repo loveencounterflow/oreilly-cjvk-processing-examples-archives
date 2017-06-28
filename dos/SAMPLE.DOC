@@ -1,0 +1,28 @@
+The printer drivers provided with NJSTAR V3.0 shareware version can
+only support 9 pin Epson, IBM or compatible printers.
+
+If your printer is better than a 9 pin printer, NJSTAR V3.0 registered
+version supports it! To try out if NJSTAR can print on your printer,
+4 sample printer files are provided as follow:
+
+1. SAMPLE.HP - for HP Lasetjet+,II,III, Deskjet series and compatibles.
+   To print:
+         C:\NJSTAR\NJPRN smaple.hp PRN
+
+2. SAMPLE.PS - for all Postscript and compatible printers.
+   To print:
+         C:\NJSTAR\NJPRN smaple.ps PRN
+
+3. SAMPLE.E24 - for Epson 24 pin and compatibles, Canon BJ (Epson compatible).
+   To print:
+         C:\NJSTAR\NJPRN smaple.e24 PRN
+
+4. SAMPLE.X24 - for IBM X24 and compatibles, Canon BJ (IBM compatible).
+   To print:
+         C:\NJSTAR\NJPRN smaple.x24 PRN
+
+If you see 2 Lines of Chinese characters are printed, NJSTAR works on your
+printer!  If not, please let me know your printer.
+
+Please read file NJPRN.DOC for detail usage of NJPRN.EXE.
+

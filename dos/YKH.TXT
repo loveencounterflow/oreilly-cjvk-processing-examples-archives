@@ -1,0 +1,230 @@
+YKH v1.2.2 Copyright (c)1993 Bryan McNett
+
+YKH comes with ABSOLUTELY NO WARRANTY. For details, read GNUGPL.TXT.
+This is free software, and you are welcome to redistribute it
+under certain conditions. Read the file GNUGPL.TXT for details.
+
+Thank you for taking a look at YKH, a freeware Japanese VT320
+emulator for DOS! I hope that you find YKH as useful as I have.
+I am sorry that YKH does not have many of the features people have
+come to expect in terminal software, such as phonebooks or file
+transfers. I would like to implement these features, time permitting.
+If you have any questions or comments, please feel free to write me
+(the author) at the following addresses:
+
+internet:      u94_bmcnett@vaxc.stevens-tech.edu
+US Mail :      Bryan McNett
+               Box S-835
+               Castle Point Station
+               Hoboken, NJ 07030 USA
+
+revision history:
+
+Version 1.2.2 properly displays kanji; version 1.2.1 did not. (sorry!)
+new command-line options and an .INI file also appear first in this
+version.
+
+Versions previous to 1.2.1 loaded the entire kanji font into unused
+video planes so that no kanji caching mechanism would be necessary.
+Well, this turned out to be a dumb idea. As soon as I installed MEMMAKER
+on my machine, YKH's kanji began to appear scrambled and broken up.
+So I spent a few hours rewriting the kanji display routines, and now they do
+use a cache, and do work with MEMMAKER.
+---------------------------------------------------------------------------
+
+contents:
+
+YKH overview
+requirements
+how to install YKH
+the file YKH.INI
+command-line options
+dialing your modem from within YKH
+how to exit YKH
+how to enter kana into YKH
+how to switch between EUC and SJIS modes in YKH
+how to use YKH with host systems that garble Japanese text
+credits
+
+---------------------------------------------------------------------------
+YKH overview
+
+YKH is a program for DOS that emulates a VT320 terminal while properly
+displaying Japanese text. It is able to connect via modem through comports
+1 and 2, or over local-area networks using the DECNET LAT and DECNET CTERM
+network terminal protocols. Unlike most Japanese terminals, YKH is able
+to fix Japanese text that has been damaged by escape-code stripping.
+The terms of YKH's distribution are described in GNUGPL.TXT.
+
+---------
+requirements
+
+YKH requires at least an 80286 CPU, the extended keyboard BIOS, a VGA
+graphics adapter, and about 128K of free RAM.
+
+---------
+how to install YKH
+
+To install YKH, copy the files YKH.EXE, YKH.INI, and JIS.16 into one of
+the directories in your PATH. If the file JIS.16 is absent from the directory
+that YKH.EXE is in, YKH will run, but it will not be able to display Japanese
+text. Note that YKH runs much faster when not displaying Japanese text.
+
+---------
+the file YKH.INI
+
+YKH.INI, like the .INI files used by Microsoft Windows applications, contains
+information and default values that remain the same between YKH sessions.
+When YKH is run, it searches in the current directory for YKH.INI, and
+if it cannot find it there, it searches in the directory where YKH.EXE
+resides. The structure of the YKH.INI file is as follows:
+
+[section]
+item=value
+item=value
+[section]
+item=value
+
+and here are the various sections and items currently in use by YKH:
+
+[Ports]
+
+port
+the port used to communicate with the host computer. can be com1, com2,
+lat, or cterm. lat and cterm are DECNET network terminal interfaces,
+and can be used to login to networked systems running DECNET.
+defaults to com1.
+
+service
+the DECNET node name of the system you intend to login to using the lat
+or cterm terminal interfaces. generally, a six-letter word.
+no default value.
+
+[Modem]
+
+baudrate
+the baudrate at which YKH should communicate with your modem.
+generally set to 300,1200,2400,4800, or 9600. defaults to 2400.
+
+databits
+the number of bits per byte used to hold information. defaults to 8.
+
+stopbits
+the number of bits per byte used as stop bits. defaults to 1.
+
+parity
+can be none, even or odd. defaults to none.
+
+[Kanji Fonts]
+
+font16
+full pathname to file containing the shapes of kanji characters. If an
+incomplete pathname is specified, the current directory will be
+searched, and then the directory where the executable file YKH.EXE
+resides will be searched.
+YKH's kanji file is in the same format as JIS.16 used by the word processor
+NJSTAR, so it is possible to keep one copy of this file on your hard drive
+for both YKH and NJSTAR to use. defaults to JIS.16.
+
+
+---------
+command-line options
+
+Most of the options that you can set in YKH.INI can be overridden if
+specified on the command-line. Here is a list of command-line options
+used by YKH:
+
+(any option may begin with either a - or a / character)
+
+-p[1|2|c|l] com port # or network terminal port name (l for lat, c for cterm)
+-sXXXXXX    DECNET node name you wish to connect to
+-d#         # databits
+-P[n|o|e]   none, odd, or even parity
+-S#         # stopbits
+-b#         baudrate of # bps
+-h
+-?          list command-line options
+
+---------
+dialing your modem from within YKH
+
+Once you have run YKH with the correct settings, you must dial your
+modem manually with the keyboard. For most modems, this means typing
+ATDT, followed by the number you wish to dial, and then hitting the
+Enter key. For example, to dial the number 555-1212, you could type
+this line:
+
+ATDT5551212
+
+Consult your modem's manual if this does not work.
+
+---------
+how to exit YKH
+
+You can exit YKH at any time by pressing Ctrl+F10.
+
+---------
+how to enter kana into YKH
+
+It is possible to enter kana directly into YKH, even though your keyboard
+does not have kana. YKH has three keyboard input modes: roumaji,
+hiragana, and katakana, which can be selected with the F5, F6, and F7
+keys, respectively. When you are in roumaji mode, your terminal responds
+to your keystrokes in much the same way a VT320 would. When you are in
+hiragana or katakana mode, everything you type is converted from roumaji
+to kana, and then displayed on the top line of the screen. When you are
+finished typing a string of kana, hit the Enter key. This will send the
+kana string to the host computer in the "new-jis" format, and then
+return you to roumaji input mode.
+To abort sending the kana string you have just typed, hit the Esc key.
+You will be returned to roumaji input mode.
+This is a clumsy system that is not very useful. I wrote it into YKH
+only so that I could use Jim Breen's "xjdic" program on the workstation in
+my office from my dorm room.
+A future version of YKH will include kana->kanji lookup, which is
+arguably very useful when one is trying to enter Japanese text.
+
+---------
+how to switch between EUC and SJIS modes in YKH
+
+Most of the Japanese text encountered on computers will be in the New-JIS
+or Old-JIS formats, which YKH is able to detect and display correctly in all
+circumstances. There are other Japanese text formats, however, that YKH is
+unable to distinguish between. The EUC and Shift-JIS formats overlap, so
+there is no simple way for YKH to determine if Japanese characters are
+in one or the other. For this reason, YKH allows you to choose which format
+you'd like to use. Pressing the F8 key switches between EUC mode, in which
+EUC and SJIS text is displayed as EUC text, and SJIS mode, in which EUC
+and SJIS text is displayed as SJIS text. An indicator at the upper left hand
+corner of the screen tells you which mode YKH is currently in.
+
+---------
+how to use YKH with host systems that garble Japanese text
+
+If you are trying to look at what you have been told is Japanese text,
+and it looks something like this instead:
+
+$@F|K\8l(J
+
+chances are that the system you have connected to is not transmitting
+the escape codes that let most Japanese terminals know when to display
+Japanese text. "news" and the VMS operating system are common culprits.
+YKH provides a simple solution to this problem. Hitting the F4 key toggles
+"fix" mode, in which YKH inserts escape codes into garbled Japanese text in
+an attempt to display it correctly. When "fix" mode is on, a small "f"
+appears in the upper lefthand corner of the screen. Note that "fix" mode
+may not always display Japanese text correctly, since it is only a
+"best-guess" system- and that occasionally, it will display English text
+in Japanese. "fix" mode may work better with command-line interface
+programs than it does with full-screen programs that make heavy use of
+control codes.
+
+---------
+credits
+
+Thanks to Douglas Webb, Erik Hall, and Virender Dayal, all students at
+the Stevens Institute of Technology, for teaching me programming principles
+necessary to write YKH.
+
+Special thanks to the teachers of JBC Language in Edgewater, New Jersey,
+whose patience and kindness make learning the Japanese language a joy.

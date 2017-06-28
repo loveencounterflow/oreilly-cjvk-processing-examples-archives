@@ -1,0 +1,26 @@
+             NJStar(tm) - Japanese Word Processor Version 3.0j
+
+          Copyright (C) Hongbo Ni 1991-1994. All Rights Reserved.
+
+
+Reversion History
+=============================================================================
+15/02/1994  Release of NJSTAR Japanese V3.0j shareware version
+
+Many things are new or improved, please read NJSTAR[123].DOC for details.
+
+IMPORTANT NEW FEATURES IN NJSTAR JAPANESE v3.0j
+
+(1)  New On-line Kana-Kanji input method, input Katakana directly into file.
+(2)  Input selection list is sorted by character frequency.
+(3)  Add/Edit/Delete Glossary and Kana->Kanji conversion interactively.
+(4)  <Kanji Info> provides all the info about Japanese character.
+(5)  Lookup a Japanese character through the Radical chart.
+(6)  On-line Japanese <-> English dictionary, two-way lookup (use EDICT).
+(7)  Supports SuperVGA 800x600 display, 30 lines of Japanese can be displayed.
+(8)  English and Japanese menus in one EXE, Displays English/Japanese messages.
+(9)  DOS command and shell; Screen saver; Time of the day display.
+(10) Supports the input of European language characters; Automatic wrapping.
+(11) Performs configuration without leaving NJSTAR.
+(12) Now NJSTAR can print specified pages, for a number of copies.
+

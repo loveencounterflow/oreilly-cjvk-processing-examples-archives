@@ -1,0 +1,438 @@
+----------------------------------------------------------------------
+
+
+                       FREQUENTLY ASKED QUESTIONS
+
+                          Honyaku Mailing List
+
+                              Version 0.4
+                             July 26, 1994
+
+
+______________________________________________________________________
+CONTENTS
+______________________________________________________________________
+
+1.0  What is the Honyaku mailing list?
+     1.1  How do I subscribe?
+     1.2  How do I post messages?
+     1.3  How do I unsubscribe?
+     1.4  How do I get other information about the list?
+     1.5  Is there a Honyaku archive?
+     1.6  Is there a preferred format for Honyaku posts?
+
+2.0  How can I read and write Japanese on this list?
+
+3.0  What other resources are available for J/E translators?
+     3.1  What is JAT?
+     3.2  What are some other translators' organizations?
+     3.3  What is FORUM?
+     3.4  What information is available on the Internet?
+
+4.0  Who are the subscribers?
+
+
+______________________________________________________________________
+1.0  What is the Honyaku mailing list?
+______________________________________________________________________
+
+"Two heads are better than one," the saying goes, or, in Japanese, 
+"sannin yoreba monju no chie."
+
+If you are a translator and have become stuck over how to handle a 
+particular phrase, ask your question here. Other questions or 
+discussions related to translation are welcome. Then be amazed at what 
+you can learn from the collective mind.
+
+You don't have to be a professional translator to participate in the 
+list. Everyone with an interest in the English and Japanese languages 
+and in establishing connections between them is welcome.
+
+This is an open mailing list administered by the Japan Association of 
+Translators (JAT). It was established in March 1994 by Dan Kanagy 
+(dkanagy@twics.com), who now administers it. There are over one hundred 
+fifty subscribers at present.
+
+________________________
+1.1  How do I subscribe?
+________________________
+
+To subscribe to the Honyaku mailing list, send an e-mail message to:
+
+   listserv@netcom.com
+
+The complete body of the message (not the subject line) should be:
+
+   subscribe honyaku
+
+Do not put your name after "subscribe honyaku."
+
+Soon after you subscribe, you will receive a message with general 
+introductory information about the mailing list. To get the latest 
+version of this message, follow the instructions given in Section 1.4 
+below.
+
+____________________________
+1.2  How do I post messages?
+____________________________
+
+When you are subscribed to the list, you can post your own messages for 
+distribution to everyone else. Send your post to:
+
+   honyaku@netcom.com
+
+Each message is distributed separately with its own lengthy e-mail 
+header, so contributors to the Honyaku discussion often include several 
+items in a single message. It's also a good idea to include your name 
+at the beginning or end of your messages, because some systems garble 
+or omit the sender's name.
+
+More suggestions about formatting posts appear in Section 1.6 below.
+
+__________________________
+1.3  How do I unsubscribe?
+__________________________
+
+To unsubscribe, send an e-mail message to:
+
+   listserv@netcom.com
+
+The body of the message should be:
+
+   unsubscribe honyaku
+
+This will unsubscribe the account from which you send the message.
+If you are subscribed with some other address, you'll have to send
+a command of the following form instead:
+
+   unsubscribe honyaku other-address@your_site.your_net
+
+If you don't know what address you are subscribed with, use the "who 
+honyaku" command described in the next section.
+
+___________________________________________________
+1.4  How do I get other information about the list?
+___________________________________________________
+
+Information about the list can be retrieved automatically by sending a 
+command in the body of an e-mail message to:
+
+   listserv@netcom.com
+
+To get a list of current subscribers, send the following command:
+
+   who honyaku
+
+To get the most recent version of the general introductory information 
+about Honyaku, send:
+
+   info honyaku
+
+To get a list of other commands, send:
+
+   help
+
+If you have any questions or comments about the list, send them to  
+honyaku-owner@netcom.com
+
+________________________________
+1.5  Is there a Honyaku archive?
+________________________________
+
+1.5.1  FTP Site
+
+Dan Kanagy has set up an archive at Netcom that contains information of 
+interest. The latest version of this FAQ and the Honyaku directory are 
+stored there. In the future, back files of Honyaku discussions are 
+likely to be kept there as well.
+
+If you have ftp access, you can reach this archive by connecting to  
+ftp.netcom.com  and following the usual procedure for anonymous ftp 
+(type "login anonymous" at the SERVER.NETCOM.COM> prompt and give your 
+e-mail address as your password). Then type "cd pub/honyaku" to reach 
+the honyaku directory, "ls" to see a list of the contents of that 
+directory, and "get file.name" to download something in that directory 
+to your home system.
+
+To make a file available to Honyaku subscribers, here's what you do. 
+Log on to ftp.netcom.com as described above, but this time enter "cd 
+pub/honyaku/put" to get to the upload directory. Then enter "put 
+file.name" and your file will be on its way.  Then send e-mail to Dan 
+Kanagy (dkanagy@netcom.com) to let him know what you've done.  Or you 
+can announce to the mailing list the name of the file you made 
+available.
+
+1.5.2  FTP by E-mail
+
+If you do not have ftp access, you can retrieve files from the Honyaku 
+archive be e-mail. To get a list of available files, send e-mail to 
+ftp-request@netcom.com with the body of:
+
+        ls honyaku
+
+Or you can send
+
+        dir honyaku
+
+instead to get a longer listing of one file per line.
+
+To fetch a file of interest, send e-mail to the same address with the
+body of:
+
+        send honyaku/file.name
+
+You can use this command to get either text or binary files of any 
+length. Longer files will be split into separate e-mail, which you will 
+have to reassemble yourself.  Binary files will be uunecoded, which you 
+will have to unencode yourself.
+
+If you send e-mail with the body of
+
+        index honyaku
+
+you will receive the index file.
+
+For a complete list of ftp-by-email commands, send the following 
+message:
+
+        help
+
+1.5.3  WorldWideWeb Home Page
+
+Adam Rice has established the Honyaku Home Page for the WWW. It 
+includes links to other sites of interest. If you have access to Lynx, 
+Mosaic, or another WWW browser on the Internet, point to the following 
+address:
+
+http://www.realtime.net/~adamrice/
+
+Be sure to insert that ~ (tilde), or it won't work right.
+
+
+___________________________________________________
+1.6  Is there a preferred format for Honyaku posts?
+___________________________________________________
+
+Some suggestions that have been made are as follows:
+
+* Be sure to use only ASCII characters in your posts. The ASCII 
+character list does not include characters with diacritics or left and 
+right quotation marks. If you are using a word processor with "smart" 
+quotation marks, turn off this feature when writing posts.
+
+* Keeping the maximum length of lines to about 72 characters will make 
+your posts easier to read and easier to quote from.
+
+ * The maximum permitted length of a single Honyaku post is about five
+kilobytes; anything longer will get bounced to Dan Kanagy for approval.
+Approval will always be given when the note pertains to ongoing
+discussion.  However, long notes forwarded from newsgroups that don't
+pertain to ongoing discussion are unlikely to be approved.
+
+* Use the subject line to indicate the content of your post. Many 
+people have started using the symbols [Q] for question, [A] for answer, 
+and [C] for comment, followed by a word or two specifying the topic of 
+the post.
+
+* Be sure to include your name and e-mail address at the end of your 
+post. This is especially important for people on NiftyServe, because no 
+one else will be able to read your Japanese header. And some systems, 
+such as MCI Mail, strip the headers from the message; if you 
+don't include your name in the body of your message, people on those 
+systems will not know who was writing.
+
+* When posting a reply to a question, include a short synopsis or 
+quotation of the original question. (Many people mark quotations with  
+>  or  |  symbols in the left margin.) Translators are frequently busy 
+with rush jobs which prevent them from reading Honyaku mail every day. 
+The busiest are often the veterans whose replies add greatest value to 
+the discussions on the list. Synopses make it easier for everyone to 
+contribute more easily.
+
+* While sometimes a reply is best sent privately, in most cases replies 
+should be posted publicly to the list so that everyone can see the responses
+and contribute to the synergy of the list.
+
+* The etiquette of the Honyaku list is slightly more Japanese than 
+other Internet discussion groups. Questers frequently post thank-you 
+notes after their queries have been answered. Since most of the 
+questions regard the correct English translations of Japanese words, 
+the thank-you note is a useful place to give a synopsis of what you 
+have learned. For instance, if your field is not electrical 
+engineering, you might ignore the discussion on *atchaku tanshi* until 
+the subject "Thanks for atchaku tanshi" appears, where a synopsis 
+useful to save and archive appears.
+
+* A wide variety of romanization systems is used by correspondents to 
+the Honyaku list. These systems tend to reflect the needs of data entry 
+via FEPs (front end processors) rather than academic theories about 
+Japanese phonology. Previous discussion of this subject suggests that a 
+unified romanization system will emerge as a result of software 
+developments (FEPs and database exchange protocols) rather than as a 
+result of discussion on the Honyaku list. However, note that "hats on 
+vowels" will turn into garbage on the Internet. You must use one of the 
+"wa-puro" conventions of doubling long Katakana vowels (or using a 
+dash) and adding "u" to long Hiragana vowels as in *jouhou shori* 
+(information processing).
+
+______________________________________________________________________
+2.0  How can I read and write Japanese on this list?
+______________________________________________________________________
+
+The primary language of the Honyaku mailing list is English, but the 
+topic of discussion is often the Japanese language, so people naturally 
+include Japanese words, phrases, and sentences as well. There are many 
+systems available for encoding kanji and kana in computers, including 
+JIS, Shift-JIS, and EUC. The primary encoding method for Internet 
+e-mail is JIS, which uses 7-bit characters. Shift-JIS and EUC use 8-bit 
+characters, and the 8th bit is stripped away by many e-mail processors, 
+turning the message into garbage. Therefore all kanji should be 
+converted into the JIS format before posting to Honyaku. Some on-line 
+systems will do this automatically (NiftyServe, for example, converts 
+automatically between Shift-JIS and JIS, and TWICS converts 
+automatically between EUC and JIS), but others will require special 
+conversion in your computer. For more information on how to do this, 
+see Ken Lunde's book described below.
+
+If you are able to send Japanese in the JIS format, please do so. 
+However, please keep in mind that many subscribers to this list are not 
+kanji-capable and will not be able to display it on their computers. 
+Therefore include the romanization of all Japanese and, when necessary, 
+brief explanations of the kanji.
+
+A poll conducted soon after the Honyaku list began found that slightly 
+over half of the respondents were able to read and write kanji on the 
+list. It may eventually become possible to dispense with romaji 
+entirely, but that is still a long way off. In fact, the proportion of 
+posts containing encoded Japanese has been dropping recently.
+
+For those interested in learning more about how the Japanese language 
+is handled by computers, the standard reference is "Understanding 
+Japanese Information Processing" by Ken Lunde (O'Reilly & Associates, 
+Inc., 1993; ISBN 1-56592-043-0). The book is very clearly written and 
+easy to understand.
+
+
+______________________________________________________________________
+3.0  What other resources are available for J/E translators?
+______________________________________________________________________
+
+_________________
+3.1  What is JAT?
+_________________
+
+The Japan Association of Translators (JAT) was founded in 1985 in the 
+belief that translators can benefit from supportive exchanges of 
+experiences, insights, and expertise.
+
+Since its inception, JAT has held monthly meetings and issued a monthly 
+Bulletin. JAT's meetings, which are free and open to the public, have 
+focused on both the translation process and the translation business, 
+with members explaining the problems they encounter and how they 
+approach solving these issues. The group has also invited outside 
+speakers and tried to avail itself of all available resources. Articles 
+in the Bulletin have a broad range, not only reporting on the meetings 
+but including numerous other discussions of translation-related issues.
+
+Since 1991, JAT has also sponsored an electronic forum for the 
+discussion of translation issues on TWICS, a forum open to everyone 
+with an interest in translation whether JAT member or not. With the 
+growth of commercial Internet access in Japan, this topic was retired 
+and replaced by the HONYAKU mailing list in March 1994.
+
+An additional activity of JAT has been sponsoring and/or organizing the 
+International Japanese/English Translation Conference. The first 
+conference took place in Hakone, Japan, in 1990. Subsequent IJET 
+Conferences were held in San Francisco (U.S.) in 1991, Fuji Yoshida 
+(Japan) in 1992, Brisbane (Australia) in 1993, and Chiba (Japan) in 
+1994. The 1995 conference is scheduled for Vancouver, British Columbia, 
+Canada.
+
+JAT members number about 160. Most live in Japan, but others also 
+reside in Canada, the United States, Australia, and the United Kingdom.
+
+Membership in JAT is limited to individuals with an interest in 
+translation. This means that the organization is not dominated by 
+agencies or end users interested in cartelizing the market but by 
+working translators interested in honing their skills. JAT's intention 
+is to serve the interests of individual translators.
+
+Should you be interested in joining JAT, you can send e-mail to John 
+Burton (selwyn@twics.com), JAT's membership secretary, to ask for an 
+application form. One year's membership (12 months from the month of 
+joining) is 10,000 yen. In addition, a 3,000 yen processing fee is 
+charged for new membership applications.
+
+____________________________________________________
+3.2  What are some other translators' organizations?
+____________________________________________________
+
+<If you are a member of or know about translators' organizations in any 
+country, please send the information to Tom Gally.>
+
+___________________
+3.3  What is FORUM?
+___________________
+
+FORUM is a quarterly newsletter for translators and interpreters of 
+Japanese. It started out five years ago as something for students and 
+graduates of the Master's course in Japanese interpreting and 
+translating at the University of Queensland in Australia, but has since 
+grown to have a much wider readership of nearly 300 (including about 80 
+overseas readers). It contains a variety of articles in English and 
+Japanese about matters of interest to people working in this 
+profession, and usually each issue includes a glossary on a particular 
+subject area. Perhaps the best thing about FORUM is that it is provided 
+free of charge as a community service.
+
+FORUM is edited by Judy Wakabayashi and published by the Key Centre for 
+Asian Languages and Studies, which hosted IJET-4 in Brisbane in 1993. 
+If you wish to receive FORUM, drop a note to the Key Centre for Asian 
+Languages and Studies, University of Queensland, QLD 4072, Australia 
+(fax: +61 7 365 6811). Contributions from readers are always welcome.
+
+___________________________________________________
+3.4  What information is available on the Internet?
+___________________________________________________
+
+The Honyaku Home Page described in section 1.5.3 above contains links 
+to many sites of interest.
+
+A long FAQ prepared for the sci.lang.japan Usenet group contains a
+lot of information about Japanese-language-related resources on the
+Internet. It can be retrieved by ftp from:
+
+ftp.uwtc.washington.edu
+
+pub/Japanese/FAQ.sci.lang.japan.v4.93
+
+This site also includes other files related to Japanese.
+
+Some Usenet groups of interest are:
+
+sci.lang.japan
+soc.culture.japan
+comp.research.japan
+alt.japanese.text
+
+Ken Lunde has placed the Honyaku FAQ at FTP site ftp.ora.com.
+
+<Would someone like to write up EDICT and other matters for the next 
+FAQ?>
+
+______________________________________________________________________
+4.0  Who are the subscribers?
+______________________________________________________________________
+
+The Honyaku Directory contains information submitted by Honyaku 
+subscribers about themselves. This directory, titled "dir0.4", is 
+available from the Honyaku ftp site described in section 1.5 above.
+
+
+----------------------------------------------------------------------
+
+End of FREQUENTLY ASKED QUESTIONS, Honyaku Mailing List, Version 0.4, 
+July 26, 1994. Please send all correspondence regarding this FAQ to Tom 
+Gally (tomgally@twics.com).
+
+----------------------------------------------------------------------

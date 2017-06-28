@@ -1,0 +1,25 @@
+* AX BX needed to
+* set 800x600x16    Super VGA Chip sets / Manufacturers
+* Graphics mode.
+*----------------- ----------------------------------------
+0x0054 0         - ATI Technologies
+0x006A 0         - Ahead Technologies / ZYMOS
+0x0070 0         - Chips & Technology
+0x0064 0         - Cirrus Logic  CL-GD 500/600
+0x0059 0         - Compaq Super VGA chips
+0x0029 0         - Compaq QVision VGA chips
+0x0070 0x0002    - Everex
+0x0029 0         - Genoa 5xxx series (Tseng Chip)
+0x0079 0         - Genoa 6xxx series
+0x0052 0         - OAK Tech. OAT-067 /OTI037C "UNIQUE" VGA
+0x005e 0         - OAK Tech. OTI037C+NEL Electronics BIOS
+0x0058 0         - Paradise / Western Digital / NCR / ACUMOS
+0x002a 0         - Primus Graphics Accelerator
+0x001F 0         - RealTek RTVGA
+0x4F02 0x0202    - S3 Graphics Accelerator
+0x005b 0         - Trident 8900/8800CS
+0x0029 0         - Tseng Lab ET-3000/ET4000/Hi color
+0x4F02 0x0102    - VESA (Video Electronics Standard Assoc.)
+0x6f05 0x0062    - Video 7 / Headland Technologies
+*----------------- ----------------------------------------
+

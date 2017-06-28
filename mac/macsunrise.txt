@@ -1,0 +1,72 @@
+MacSUNRISE - Script (Kanji-learning program) - Kanji Dictionary
+Berlin: JAPAN Media 1993
+
+-------------------------------------------------------------------------------
+
+The MacSUNRISE Series 
+CD-ROM Tools for Reading and Writing Japanese
+
+MacSUNRISE Script: Electronic Reference and Learning System for Kanji.
+  Release 3.0.  1 CD-ROM + 1 floppy disk + manual
+Script 500  (Intermediate Version):  hiragana, katakana, 500 kanji   580 DM*
+Script 2000  (Advanced Version):    hiragana, katakana, 2000 kanji  1280 DM*
+
+*40% discount for students, 30% for educational institutions. 
+For site licensing contact your distributor/addresses below.
+
+Japanese-English/German/French/Spanish*/Portuguese*/Magyar*/Italian** 
+* Script 2000: meanings only for 1945 kanji      
+** Script 2000: meanings only for 1000 kanji
+Manual and menus in English or German only
+
+MacSUNRISE Script features:
+- stroke order at a glance, or click for stroke-by-stroke display
+- readings display in both kana and romanization 
+- click for sound recording of correct pronunciation of kanji and kana
+- search functions, including Kanji Search System (KSS) for quickly 
+  finding unrecognized kanji (the same system used in MacSUNRISE 
+  Kanji Dictionary)
+- browse and speed-test functions with user-customized kanji groups
+- masking for self-testing
+- notes accept input in Japanese
+- print function for posters, stickers, and kanji cards
+- data based on the book Kanji & Kana by Hadamitzky/Spahn
+
+The Script 2000 program can function as a small Japanese-English and 
+English-Japanese dictionary, with a vocabulary of approximately 
+15,000 Japanese words and 20,000 English words.
+
+MacSUNRISE Kanji Dictionary: With Kanji and Compound Lookup via Any Grapheme.  
+1 CD-ROM + 1 floppy disk + manual.                 498 DM*
+
+*40% discount for students, 30% for educational institutions. 
+For site licensing contact your distributor/addresses below.
+
+Contains ca. 7,000 kanji (all JIS level 1+2 kanji and 700 non-JIS kanji) 
+and 47,000 compound words, along with their readings and English equivalents. 
+For the first time it is possible to look up a compound word by simply 
+clicking one (!) grapheme for each of its constituent kanji. With approxi-
+mately 160,000 English words and 70,000 Japanese words the program can 
+function as a Japanese-English and English-Japanese dictionary. Data based 
+on the Japanese Character Dictionary by Spahn/Hadamitzky.
+
+System requirements:
+Hardware: Macintosh computers operating at 68030/25 MHz or higher + CD-ROM 
+drive. RAM requirements for applications --> for Kanji Dictionary: black and 
+white 2 MB, color 3 MB; for Script 500/2000: black and white 4 MB, color 5 MB.
+Software: Japanese operating system KanjiTalk 6.0.7 (included in package) or 
+higher or Japanese Language Kit. (Script 500/2000 will also run under the 
+English operating system with romanized display of readings and without 
+display of kanji in notes and kanji lists.) 
+
+The programs and the demo disks may be ordered from your distributor (*) or, 
+if none indicated, from:
+
+M. & R. Moeller, Eberbacher Strasse 4, D-14197 Berlin GERMANY
+Tel:  +49-30-821-96-74   E-mail (private): moeller@ndsenta.in-berlin.de
+(please confirm by postal mail)
+
+(*) For North/South America: 
+Stone Bridge Press, P.O. Box 8208, Berkeley, CA 94707 USA
+
+------------------------------------------------------------------------------

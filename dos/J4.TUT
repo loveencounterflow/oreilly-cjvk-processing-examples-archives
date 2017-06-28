@@ -1,0 +1,202 @@
+¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+¡Ã£Ô£ù£ð£é£î£ç¡¡£Ë£á£î£ê£é¡¡£É¡¡¡½¡¡£Î£ï£õ£î£ó¡¡´Á»ú£É¡½ Ì¾»ì         J4.TUT¡Ã
+¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+\NumberStyle="NJJ 3.0: JW-Tutorial 4, page %d"
+
+Typing Kanji in NJStar is to be decided word by word, and not character by character. If the word is a combination of Kanji compounds, you must consider typing them separately, for the long compound may not be in the dictionary.
+
+For example, Ãæ²Ú¿ÍÌ±¶¦ÏÂ¹ñ is typed in three units, Ãæ²Ú,¿ÍÌ± and ¶¦ÏÂ¹ñ.
+If you use such long compounds often, you may consider including it into your own Glossary. See Tutorial 7.
+
+¡ü Kana-Kanji¡Î¤«¤Ê´Á¡Ïmode
+In this mode to type Kanji, you need to indicate the point where Kanji starts by capitalising the first character. NJStar first displays hiragana version and everything you type will be highlighted. 
+
+        >> set to Kana-Kanji¡Î¤«¤Ê´Á¡Ïmode: <Alt F3>
+        >> type "Nihon'" at the end of this line: 
+
+If "Automatic Kanji display" ¡ÚInput, option¡Ûis enabled, you will see all the possible conversion in the bottom line of the screen as you type. Press <SPACE> to get option "1", or press the corresponding number for the respective option. At this stage, you will see that the hiragana option is replaced by the Kanji.
+
+If you do not select this option, you will not see the Kanji until you press <SPACE> to invoke the conversion. This time, the first option is automatically picked up from the list, and the other possible options are displayed in the bottom line if any. This method speeds up the program's response, but you need a good knowledge of Japanese to survive.
+
+        >>¡ÚInput, option¡Û to check if you have this option -- [*]
+        >> If you don't see [*], press <A> to turn it on.
+
+Having selected the desired kanji, you can carry on typing for the next bits. The selection will be cleared automatically.
+
+¡ü Romaji mode
+¡Â If you use Romaji mode, you must watch the bottom line as you type and
+¡Â delete until you see the desired Kanji option. 
+¡Â
+¡Â        >> set to Romaji mode: <Alt F5>
+¡Â        >> type "nihon" at the end of this line: 
+¡Â
+¡Â As hiragana option occupies number 1, you must type numbers that 
+¡Â correspond the desired kanji.
+
+¡ü About the Kanji display in the bottom line
+
+Let's say, you want to type ¸ë ("go"), and assume you are not sure about
+the character. When you type "Go", you will see the following display:
+
+(Your Kanji table may be a bit different)
+  ¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²
+ ¡Î¤«¤Ê´Á¡Ï    > 1 ¸Þ 2 ¸å 3 ¸ì 4 ¸á 5 »ù 6 ¸î 7 ¸Ë 8 ¸æ 9 ¸ß 0 ¸í
+  ¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½
+
+        >> Did you see the Kanji?
+
+No, it isn't there! But if you hit a key which has ">" on it, you can see
+the next page.
+
+        >> Hit ">" key (without <SHIFT> key)
+
+Then you see the second page of the options:
+  ¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²¡²
+ ¡Î¤«¤Ê´Á¡Ï   <> 1 ¸ë 2 ¸ç 3 ¸â 4 ¸ä 5 ¸ã 6 ¸à 7 ¸è 8 ¸ê 9 ¸ï 0 £µ
+  ¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½
+
+Press the corresponding number to select ´Á»ú. Press <ESC> to cancel. 
+In this case, the Kanji is option 1, so you can press either <SPACE> or <1>.
+
+Thus to select a character you want, press a number key for that character in the selection list. If there are more than 10 matched ´Á»ús, such as the example above, you can see a symbol ">", indicating the presence of the next page. To flip around pages, you press > or < to move around the list.
+
+This indicator gives the following meaning:
+        >       you have further options in the following page(s);
+        <>      you have further options in the page(s) before and after;
+        <       you have further options in the previous page(s).
+
+Now let's imagine a situation when you can't decide which character you want.
+Then you call the dictionary.
+
+        >> Type "Go" here ---> 
+        >> Now hit <F1>
+
+Now you can see all the options on the screen with the English translation!
+Move the cursor <¢­> and <¢¬> to select, <ENTER> to paste it.
+
+Let's revise the Kanji conversion: 
+
+  (1)  Capitalise the first letter, e.g., "Kanji", "Nihongo"
+  (2)  Press <SPACE> to activate conversion, <ESC> to unconvert it.
+  (3a) If the selected Kanji is the only option, the job is done.
+  (3b) If the selected Kanji is one of many options, you can select one of
+       the other options by pressing the corresponding numbers to select what
+       you want. If you cannot decide without knowing the meaning, press <F1>
+       to get the English meaning of all the options.
+  (3c) If you decide not to type the word, pressing <ESC> at this point will
+       remove the Hiragana entry, clearing the input buffer.
+  (4)  If you did (3a) or (3b), typing further characters will finalise the
+       conversion. You will see that the selection is now removed. 
+       By pressing editing keys, such as <ENTER>, <Back space>, punctuations
+       and one of arrow keys, you can also finalise the conversion.
+
+Let's practice with the following exercises
+
+        >> (3a) Type "Ashita" (tomorrow) here: 
+        >> (3b) Type "Kinou" (yesterday) here: 
+        >> (3c) Type "Ototoi" (the day before yesterday): 
+
+¡ü Typing Kanji compounds
+
+If you are typing kanji compound such as Âç³Ø, it is not a good idea to type
+characters separately as "dai" and "gaku". If you do, it takes much longer to
+complete the job. Make sure that you type one part of speech at a time.
+
+For example, to type the following sentence, you carry out the selection according to the lines indicated.
+
+                       ¡Ã¡Ã    ¡Ã      ¡Ã  ¡Ã  
+                      »ä¤ÏÆüËÜ¸ì¤¬¤¢¤Þ¤ê¾å¼ê¤Ç¤Ï¤¢¤ê¤Þ¤»¤ó¡£
+[you try out here] -> 
+                      Watashi ha Nihongo ga amari Jouzu deha arimasen.
+             [actual] Watashi haNihongo gaamariJouzu dehaarimasen.
+                      (I'm not very good at Japanese.)
+
+On the contrary, if you cannot find a longer option, such as the following
+examples of an adjective stemmed from a noun and a compound of nouns, 
+you MAY have to type each segment at a time:
+(NOTE: In the Registered version, you have a much larger dictionary and they may be contained in it)
+                      ¡Ã   
+                   ³×¿·Åª¡Ê¤«¤¯¤·¤ó¤Æ¤­¡Ë- radical
+[you type here] -> 
+
+                      ¡Ã  ¡Ã
+                   Ãæ²Ú¿ÍÌ±¶¦ÏÂ¹ñ ¡Ê¤Á¤å¤¦¤«¤¸¤ó¤ß¤ó¤­¤ç¤¦¤ï¤³¤¯¡Ë- China
+[you type here] -> 
+
+If you desire certain entries like the one above to be included in the NJStar's dictionary, you can include them in the Glossary and Userdic. 
+See TUTORIAL 7 for details.
+
+¡ü Converting from Hiragana to Kanji afterwards
+
+There will be a time when you want to convert Kana to Kanji on a later
+occasion. For this, you first select the Kana, then call "Convert" function.
+
+        >> select "¤Ë¤Û¤ó" by using <SHIFT> and arrow keys, 
+           or mouse click with right button (If you forgot, go back to J1.TUT)
+        >>¡ÚInput, Convert¡Û                                    ¢¨ <SPACE>
+
+If you decided not to do the conversion, press <ESC>.
+
+Let's practice a little. Use <SPACE> to convert the following sentences.
+
+        >> ¤ï¤¿¤·¤Ï¤Ë¤Û¤ó¤¸¤ó¤Ç¤¹¡£     ¡Ê»ä¤ÏÆüËÜ¿Í¤Ç¤¹¡Ë
+        >> ¤³¤³¤Ï¤È¤¦¤­¤ç¤¦¤¨¤­¤Ç¤¹¡£   ¡Ê¤³¤³¤ÏÅìµþ±Ø¤Ç¤¹¡Ë
+        >> ¤¤¤Þ¡¢¤¸¤å¤¦¤¸¤Ï¤ó¤Ç¤¹¡£     ¡Êº£¡¢½½»þÈ¾¤Ç¤¹¡Ë
+
+____________
+¢² EXERCISES
+¡±¡±¡±¡±¡±¡±
+Rewrite the following sentences by using Kanji.
+
+¢Â      ¤­¤ç¤¦¤Ï¤¸¤å¤¦¤Ë¤¬¤Ä¤È¤ª¤«¤Ç¤¹¡£Today is the 10th of December.
+        ¡±¡±¡±  ¡±¡±¡±¡±¡±¡±¡±¡±¡±
+      >>
+       (Kyou ha Juunigatsu Tooka desu.)
+
+¢Ã      ¤¢¤Î¤Ò¤È¤Ï¤¿¤Ê¤«¤µ¤ó¤Ç¤¹¡£That man over there is Mr. Tanaka.
+            ¡±¡±  ¡±¡±¡±
+      >>
+       (ano Hito ha Tanaka san desu.)
+
+¢Ä      ¤ä¤Þ¤·¤¿¤µ¤ó¤Ï¤Ë¤Û¤ó¤¸¤ó¤Ç¤¹¡£Mr. Yamashita is a Japanese.
+        ¡±¡±¡±¡±      ¡±¡±¡±¡±¡±
+      >>
+       (Yamashita san ha Nihonjin desu.)
+
+¢Å      ¤¢¤Î¤ä¤Þ¤Ï¤Õ¤¸¤µ¤ó¤Ç¤¹¡£That mountain over there is Mt. Fuji.
+            ¡±¡±  ¡±¡±¡±¡±
+      >>
+       (ano Yama ha Fujisan desu.)
+¢Æ      ¤³¤Î¤«¤ï¤Ï¤È¤Í¤¬¤ï¤Ç¤¹¡£This river is the Tone River.
+            ¡±¡±  ¡±¡±¡±¡±
+      >>
+       (kono Kawa ha Tonegawa desu.)
+
+¢Ç      ¤«¤ï¤µ¤­¤µ¤ó¤Î¤»¤ó¤â¤ó¤Ï¤¯¤ë¤Þ¤Ç¤¹¡£Mr. Kawasaki's specialty is cars.
+      >>¡±¡±¡±¡±      ¡±¡±¡±¡±  ¡±¡±¡±
+       (Kawasaki san no Senmon ha Kuruma desu.)
+
+¢Ñ      ¤³¤ì¤Ï¤ä¤Þ¤À¤µ¤ó¤Î¤ª¤«¤Í¤Ç¤¹¡£This is Mr. Yamada's money.
+              ¡±¡±¡±        ¡±¡±
+      >>
+       (koreha Yamada san no oKane desu.)
+
+¢Ò      ¤½¤Î¤ª¤ó¤Ê¤Î¤Ò¤È¤Ï¤¬¤¯¤»¤¤¤Ç¤¹¡£That female person is a student.
+            ¡±¡±¡±  ¡±¡±  ¡±¡±¡±¡±
+      >>
+       (sono On'na no Hito ha Gakusei desu.)
+
+¢Ó      ¤ï¤¿¤·¤Ï¤»¤ó¤»¤¤¤Ç¤Ï¤¢¤ê¤Þ¤»¤ó¡£I am not a teacher.
+        ¡±¡±¡±  ¡±¡±¡±¡±
+      >>
+       (Watashi ha Sensei deha arimasen.)
+
+
+Well done!
+                          ¢£ End of TUTORIAL 4 ¢£
+ ¦ç¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦è
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ Press <Shift F10> to select other tutorials  ¡þ¡þ¡þ¡þ¡þ¡þ¦æ
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ Press  <Ctrl F3> to exit NJStar ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ ¦æ
+ ¦ê¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦é
+
+

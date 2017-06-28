@@ -1,0 +1,358 @@
+Version 09/19/95
+
+Errata for "日本語情報処理"
+To be fixed in the 2nd Printing (First Edition)
+
+
+Front Inside Jacket:
+
+o Change "モアナ大学" to "モナシュ大学" and "オーストリア" to "オース
+  トラリア" in Jim Breen's quote.
+
+
+Page xxi:
+
+o Change "「10」" to "「100」" in the title of Table 1-10.
+
+
+Page xxxiv:
+
+o Change "Stephan" to "Stephen" in the third line of the fifth
+  paragraph.
+
+
+Page xxxv:
+
+o Change "McClane" to "McLane" in the tenth line of the second
+  paragraph.
+
+
+Page xxxvi:
+
+o Change "Stephan" to "Stephen" in the seventh line of the first
+  paragraph.
+
+o Change "Chris Reilly" to "Chris Reilley" in the sixth line of the
+  second paragraph.
+
+
+Page xxxvii:
+
+o Change "Tomichi" to "Tomich" in the fifth line of the first
+  paragraph.
+
+o Add "+1-" to beginning of the two phone numbers that begin with
+  "707".
+
+
+Page 18:
+
+o Change "「10」" to "「100」" in the title of Table 1-10.
+
+
+Page 24:
+
+o The first table note for Table 2-3 is missing information for ヵ (カ)
+  and ヶ (ケ).
+
+
+Page 26:
+
+o Change "日本語標準文字セット" to "日本語基本文字セット規格" in the
+  first line of the first paragraph.
+
+
+Page 47:
+
+o Change "JIS C 6226-1978は実質" to "JIS C 6226-1983は実質" in the
+  fifth line of the third paragraph.
+
+
+Page 57:
+
+o "補助漢字" in the seventh line of Table 3-21 should be changed to
+  "補助文字".
+
+
+Page 60:
+
+o Change "GB13000.1-1995" to "GB 13000.1-95" in the footnote.
+
+
+Page 72:
+
+o Change "表4-6" to "表4-5" in the first line of the first paragraph.
+
+
+Page 89:
+
+o Remove "範囲" from "第１バイト範囲" in the "コードセット２" and "コー
+  ドセット３" sections of Table 4-17.
+
+
+Page 91:
+
+o Move "範囲" from コードセット２'s "第１バイト範囲" to コードセット０'s
+  "第２バイト".
+
+
+Page 101:
+
+o Add "範囲" after all six instances of "バイト" in Table 4-27.
+
+
+Page 145:
+
+o Change "dot-per-inch" to "dots-per-inch" in the fourth line of the
+  second paragraph.
+
+
+Page 179:
+
+o The boxed example (right side) does not use Jun101-Light for the
+  kana portions. Either the font name should change in the table
+  header, or the font should change to Jun101-Light.
+
+
+Page 248:
+
+o Change the FTP site reference for Tcode to the following URL format:
+
+  ftp://utsun.s.is.u-tokyo.ac.jp/tcode/
+
+
+Page 255:
+
+o Change Stephen Chung's e-mail address to the following:
+
+  sschun@ccmail.monsanto.com
+
+
+Page 258:
+
+o Change "Aldus" to "Adobe" in the second line of the second
+  paragraph (two instances).
+
+
+Page 276-277:
+
+o Delete the last sentence on page 276, whose last line extends to
+  page 277.
+
+
+Page 285:
+
+o Change "インターネットアドレス： INET:test-japan@ora.com" to "インター
+  ネットアドレス： test-japan@ora.com" (remove the "INET:" portion).
+
+
+Page 288:
+
+o Change "reray" to "relay" in the sixth line of the fourth paragraph.
+
+
+Page 290:
+
+o Delete "も" from "pub/jpnicからも入手できる" in the second line of
+  the second paragraph.
+
+
+Page 304:
+
+o The character at KUTEN 4572 (来) needs to be aligned properly.
+
+
+Page 345:
+
+o Change "IBM専用" to "IBM特殊" on the third line of the first
+  paragraph (two instances).
+
+
+Page 346:
+
+o Change "Single Byte" to "Single-Byte" in the third line of the third
+  paragraph.
+
+
+Page 356:
+
+o Change "領域" to "範囲" in "バイト領域" of the "１バイト文字"
+  section of Table I-2.
+
+
+Page 357:
+
+o Change "DBCS-HOST" to "DBCS-Host" in Table I-1.
+
+
+Page 374:
+
+o Remove "範囲" from "第１バイト範囲" and "第２バイト範囲" in the "全
+  角空白文字" section of Table I-15.
+
+
+Page 401:
+
+o Change "X11R5" to "X11R6" in the right side of the list (two
+  instances).
+
+
+Page 402:
+
+o Change "Ternimal" to "Terminal" in the list.
+
+o Change "X11R5" to "X11R6" in the list.
+
+
+Pages 403-415:
+
+o The following entries need to have "+1-" prepended to their phone
+  numbers:
+
+  Concord International Incorporated (two instances)
+  International Business Machines Corporation (one instance)
+  O'Reilly & Associates, Incorporated (two instances)
+  Pacific HiTech (two instances)
+  Portal Communications Company (two instances)
+  Sun Microsystems, Incorporated (one instance)
+
+
+Page 407:
+
+o Change "International Standards Organization" to "International
+  Organization for Standardization."
+
+
+Page 417:
+
+o Add the following URL to the ソフトバン株式会社 entry:
+
+  http://www.softbank.co.jp/
+
+o Add the following URL to the 株式会社ジャストシステム entry:
+
+  http://www.justsystem.co.jp/
+
+
+Page 420:
+
+o Change "NISUS" to "Nisus" in the right column.
+
+
+Page 429:
+
+o Change "uicode" to "unicode" (two instances).
+
+
+Page 431:
+
+o Prepend "+1-" to the two phone numbers.
+
+
+Page 436:
+
+o Change "character set select" to "Character set select" in the
+  "CSselect" entry.
+
+
+Page 437:
+
+o Change "dots-per-inch" to "Dots-per-inch" in the "DPI" entry.
+
+
+Page 438:
+
+o Change "front-end processor" to "Front-end processor" in the FEP
+  entry.
+
+
+Page 439:
+
+o Change "grobal" to "global" in the "grep" entry.
+
+
+Page 457:
+
+o Delete the sentence "「濁点」とも呼ばれる。" from the 濁点 entry,
+  and change sentence "「丸」参照。" to "「半濁点」参照。".
+
+
+Page 459:
+
+o Change the "半濁音" entry to "半濁点" and delete the sentence "「半
+  濁点」とも呼ばれる。" within the entry.
+
+
+Pages 467-468:
+
+o The JIS-Roman, EBCDIK, and EBCDIC columns are not in the correct
+  order between hexadecimal character codes 0xCD through 0xFF. See the
+  English edition for the correct order.
+
+
+Pages 469-475:
+
+o Change Donnalyn Frey's book to reflect the fourth edition as
+  follows:
+
+  Frey, Donnalyn & Rick Adams. "!%@:: A Dictionary of Electronic Mail
+    Addressing & Networks". Fourth edition. O'Reilly & Associates,
+    Inc. 1994. ISBN 1-56592-046-5.
+
+o Change Ed Krol's book to reflect the second edition as follows:
+
+  Krol, Ed. "The Whole Internet User's Guide & Catalog". Second edition.
+    O'Reilly & Associates, Inc. 1994. ISBN 1-56592-063-5.
+
+o Add the following books to the bibliography (inserted in the
+  appropriate places):
+
+  古瀬幸広. ワープロここが不思議--ちょっと知的なワープロ学. 講談社.
+    1994. ISBN 4-06-257018-1.
+
+  Kano, Nadine. "Developing International Software for Windows 95 and
+  Windows NT." Microsoft Press. 1995. ISBN 1-55615-840-8.
+
+  Krol, Ed. インターネットユーザーズガイド 改訂版. International
+    Thomson Publishing Japan. 1995. ISBN 4-900718-12-2.
+
+  Lunde, Ken. "Prescriptive Kanji Simplification". PhD Dissertation.
+    University of Wisconsin-Madison. 1994. University Microfilms
+    International order number 9419580.
+
+  Luong, Tuoc V. et al. "Internationalization: Developing Software for
+    Global Markets". John Wiley & Sons, Incorporated. 1995. ISBN
+    0-471-07661-9.
+
+  中西秀彦. 活字が消えた日--コンピュータと印刷. 晶文社. 1994. ISBN
+    4-7949-6172-3.
+
+  大木敦雄. 入門NEmacs. ASCII Corporation. 1994. ISBN 4-7561-0287-5.
+
+  大木敦雄. 入門Mule. ASCII Corporation. 1994. ISBN 4-7561-0300-6.
+
+  Searfoss, Glenn. "JIS-Kanji Character Recognition: Featuring the
+    Gaiji Method". Van Nostrand Reinhold. 1994. ISBN 0-442-01813-4.
+
+  Stallman, Richard M. "GNU Emacs Manual". Tenth edition. Free
+    Software Foundation. 1994. ISBN 1-882114-04-3.
+
+  Unger, J. Marshall. "The Fifth Generation Fallacy: Why Japan Is Betting
+    Its Future on Artificial Intelligence". Oxford University Press. 1987.
+    ISBN 0-19-504939-X.
+
+  Walsh, Norman. "Making TeX Work". O'Reilly & Associates, Inc. 1994
+    ISBN 1-56592-051-1.
+
+  ワープロ・パソコン最新漢字辞典. 小学館. 1994. ISBN 4-09-505121-3.
+
+o Change "International Standards Organization" to "International
+  Organization for Standardization."
+
+o Add the following bibliographic entry into the "Papers and
+  Articles" section:
+
+  Breen, J.W. "A Japanese Electronic Dictionary Project (Part 1:
+    The Dictionary Files)", Technical Report 93/13, Department of
+    Robotics & Digital Technology, Monash University, November
+    1993.

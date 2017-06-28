@@ -1,0 +1,705 @@
+Errata for "Understanding Japanese Information Processing"
+Fixed in 2nd Printing (First Edition), March 1994
+
+Quote pages (now two pages):
+
+o Removed "Advance Praise" from page header.
+
+o Three quotes added from Jack Halpern, Dr. Joseph Becker, and
+  Wolfgang Hadamitzky as follows:
+
+  "As a professional kanji lexicographer, I find Ken Lunde's work a
+  treasure-house of information on the complexities of Japanese
+  character encoding and processing. I have never encountered a
+  single book, even in Japanese, that brings together such a
+  wealth of detail with such clarity and precision. Armed with this
+  book as my guide, I feel totally confident in undertaking a
+  project of prodigious complexity: the development of a
+  comprehensive kanji database to serve as a basis for dozens of
+  dictionaries and learning aids."
+
+  -- Jack Halpern
+     Editor in Chief, "New Japanese-English Character Dictionary"
+     Research Fellow, Showa Women's University, Institute of
+       Modern Culture
+
+  "Ken Lunde has not only brought together a wealth of vital
+  information between these  covers, he has organized the
+  complexities of Japanese computing into a clear introduction
+  and practical handbook. "Understanding Japanese Information
+  Processing" is a treasure for computer system designers
+  concerned with multilingual software, as well as for teachers
+  and students pursuing computer tools to work with the
+  Japanese language."
+
+  -- Dr. Joseph Becker
+     Principal Scientist, XSoft/Xerox Corporation
+
+  "The wealth of information, its lucid arrangement including a
+  comprehensive index, and its clear and easy-to-understand
+  language will make this book an indispensible tool for a wide
+  range of people: for the student who is looking for Japanese
+  word processing software, teachware, or online dictionary; for
+  Japanese specialists who want to exchange Japanese documents
+  via floppy disk, e-mail, and so on; and for the programmer
+  who needs to write a program related to the Japanese language.
+  In short, for everyone who comes in touch with written
+  Japanese."
+
+  -- Wolfgang Hadamitzky
+     Coauthor, "Japanese Character Dictionary With Compound
+       Lookup via Any Kanji"
+
+
+Page iv:
+
+o Added "March 1994:  Minor corrections" to the Printing History
+  field.
+
+
+Page xx:
+
+o Appended "in China" to Table 2-16's title.
+
+o Changed the table names for 3-13, 3-14, 3-17, and 3-18 to match
+  the pattern "The X Character Set."
+
+
+Page xxv:
+
+o Corrected "Emmanual" to "Emmanuel" in the footnote.
+
+
+Page xxvi:
+
+o Added the following footnote:
+
+  "These abbreviations, such as I18N, come from the letter "I"
+  followed by 18 letters followed by the letter "N.""
+
+  The index into the text is at the end of the first sentence of
+  the last paragraph.
+
+
+Page xxvii:
+
+o Changed "a limited" to "little or no" in the first paragraph.
+
+
+Page xxx:
+
+o Added "Efrat Livny" to the second-to-last paragraph.
+
+
+Page 7:
+
+o The word "figures" in the footnote changed to use an "fi"
+  ligature.
+
+
+Page 12:
+
+o Corrected "explicitely" to "explicitly" in the second-to-last
+  paragraph.
+
+
+Page 14:
+
+o Changed the embedded parentheses in the second paragraph into an
+  em-dash structure.
+
+o Capitalized "mincho," (third paragraph), "ming," (third
+  paragraph), and "kyokasho" (fourth paragraph).
+
+
+Pages 22 & 23: 
+
+o Changed the ordering of entries in Table 2-4 to make more sense.
+  The first column on p 22 was linked to the first column on p 23 --
+  this was changed so that the first column on p 22 was linked to
+  the second column on the same page.
+
+o The source kanji for hiragana "ne" (ね) was changed to be the same
+  as for katakana "ne" (ネ) -- this caused the kanji 禰 to be removed
+  from Table 2-4.
+
+o Changed the source for katakana "yo" (ヨ) to be the kanji 與.
+
+
+Page 24:
+
+o Deleted the space between the asterisk of the footnote and "Some."
+
+
+Page 28:
+
+o Added "(熟語)" after "compounds" in the second sentence of the last
+  paragraph.
+
+o Changed "酸 means oxygen" to "酸 means acid" in the third entry of
+  Table 2-15.
+
+o Changed "(the element oxygen)" to "(the acid element)" in the
+  third entry of Table 2-15.
+
+
+Page 29:
+
+o Appended "in China" to Table 2-16's title.
+
+o Appended the field "Reference Work" to Table 2-16, and included
+  the names of the dictionaries for each year indicated.
+
+
+Page 30:
+
+o Changed "T'ang" to "Tang" in first line of third paragraph.
+
+
+Page 32:
+
+o Changed "intuitively" to "descriptively" in second line of first
+  paragraph.
+
+
+Page 34:
+
+o Add commas to "1850," "1945," and "1006" in Table 3-1.
+
+
+Page 39:
+
+o Inserted "national" before "character set standard" in the second
+  sentence of the second-to-last paragraph.
+
+
+Page 42:
+
+o Added "The" to Table 3-13's title.
+
+
+Page 43:
+
+o Added "The" to Table 3-14's title.
+
+
+Page 44:
+
+o Changed the hyphen to an en-dash in the third entry of Table 3-15.
+
+
+Page 46:
+
+o Changed Table 3-17's title to "The KS C 5601-1992 Character Set".
+
+
+Page 47
+
+o Changed Table 3-18's title to "The GB 2312-80 Character Set".
+
+
+Page 50:
+
+o Changed "20,902" to "21,000" (to fit with "approximately") in the
+  following sentence:
+
+  "...into a single set of approximately 21,000 kanji which support
+  Chinese (both simplified and traditional), Japanese, and Korean."
+
+o The following sentence replaces the one immediately after Table 3-21:
+
+  "The actual number of characters in Unicode, as depicted in Table 3-21,
+  has been stable for quite some time."
+
+o Added "most of" to the following sentence:
+
+  "According to Volume 2 of The "Unicode Standard: Worldwide Character
+  Encoding", most of the kanji contained in the character set standards
+  listed in Table 3-22 have been unified."
+
+
+Page 51:
+
+o The Table 3-22 note now reads as follows (the first sentence was
+  deleted):
+
+  "Appendix H shows that there are 4,039 kanji in JEF that are above
+  and beyond those in JIS X 0208-1990."
+
+
+Page 53:
+
+o The following paragraph totally replaces the one that begins and
+  ends with "Much of the ... results of Han Unification." This is
+  the most detail I could fit without breaking pages. The next
+  paragraph points readers to the Unicode books, which provide the
+  rest of the details.
+
+  "The result of Han Unification was a set of kanji whose ordering
+  can be considered culturally neutral. How kanji are ordered by
+  radical is often culture-specific, and devising an ordering that
+  would please all cultures that use kanji was a difficult task. The
+  Chinese/Japanese/Korean Joint Research Group (CJK-JRG), an ad-hoc
+  committee of ISO/IEC JTC1/SC2/WG2 (Joint Technical Committee 1/
+  Subcommittee 2/Working Group 2), selected four kanji dictionaries,
+  reflecting kanji usage in East Asia: Common tradition (康煕字典),
+  Japan, China, and Korea. These four dictionaries were then checked,
+  in the order given above, for each kanji. If the first dictionary
+  did not have it, the next dictionary was checked. This was done
+  until each of the kanji was found."
+
+
+Page 56:
+
+o Changed "extendable" to "extensible" in the last paragraph.
+
+
+Page 57:
+
+o The following two paragraphs totally replace what was on this
+  page before:
+
+  "What about ISO 10646 and Unicode? The character set defined by
+  those standards has been immobile since 1992, and implementations
+  are coming on line very quickly. PenPoint by GO Corporation, Plan
+  9 by AT&T Bell Laboratories, Windows NT by Microsoft, and Newton
+  by Apple are operating systems that currently support Unicode.
+  Other manufacturers have similar plans."
+
+  "Here is some history that may be of interest. When JIS C 6226-1978
+  was first introduced in Japan in 1978, it was not met with general
+  acceptance from industry. The problem was that it did not include
+  all the characters found in the major Japanese corporate character
+  set standards already in place at the time. In time, JIS C 6226-1978
+  became the standard in Japanese industry. The Unicode Consortium,
+  on the other hand, made sure that all of the characters from the
+  major national standards were included as part of Unicode."
+
+
+Page 64:
+
+o Removed "also" from the second sentence of the last paragraph.
+
+
+Page 65:
+
+o Changed "is" to "are" in the first line of the first paragraph.
+
+
+Page 69:
+
+o Changed "095" to "95" in the "JIS7 half-width katakana" entry in
+  Table 4-8.
+
+o Moved the third sentence of Table 4-8's 6th table note to the end.
+
+
+Page 72:
+
+o Added a footnote to explain "ASCII" in "Japanese TeX (ASCII
+  version)." It reads:
+
+  "*ASCII here refers to the name of a Japanese corporation, not
+  to the character set."
+
+
+Page 79:
+
+o Changed hyphens into en-dashes in Table 4-15 (six total). These
+  are the emboldened ranges.
+
+
+Page 83:
+
+o Changed "a" to "an" before "EUC" in last line.
+
+
+Page 86:
+
+o Removed the extraneous period at the end of the first paragraph.
+
+
+Page 90:
+
+o Table 4-25's kanji forms were changed. The Korean and BigFive forms
+  were changed into the traditional form (one extra stroke). The same
+  change was made to the traditional form in the table note.
+
+
+Page 91:
+
+o Added "(really 31-bit)" after "32-bit form" in the first line of the
+  first paragraph.
+
+o Added "(31 bits)" after "32 bits" in the second paragraph.
+
+o The "ISO 10646:UCS-4" section of Table 4-27 was changed to reflect the
+  correct ranges for the first and second byte.
+
+  "First byte    0-127   00-7F   000-177"
+  "Second byte   0-255   00-FF   000-377"
+
+
+Page 95:
+
+o Deleted "that" from beginning of third line of third paragraph.
+
+
+Page 97:
+
+o Changed "all too important" to "all-important" in second-to-last
+  paragraph.
+
+
+Page 99:
+
+o Deleted the sentence: "I have discovered errors in these mapping tables,
+  so they should always be checked and verified prior to implementation."
+
+
+Page 121:
+
+o Changed "This keyboard array is also ..." to "A keyboard array somewhat
+  similar to the M-style array is ..." in the first paragraph.
+
+
+Page 134:
+
+o Replaced the third sentence of the fourth paragraph with the
+  following:
+
+  "A vector is simply a straight line. A series of vectors can be
+  combined to form shapes such as curves."
+
+o Changed "manufacturers" to "manufactures" in the sixth paragraph.
+
+
+Page 137:
+
+o Deleted period from last entry in Table 6-4. Changed "character" to
+  "characters" in Table 6-5's second table note (second sentence).
+
+
+Page 139:
+
+o Removed "Finally," from the third-to-last line in the third-to-last
+  paragraph.
+
+
+Page 147:
+
+o Changed "claim" to "might imagine" in the following sentence:
+
+  "Some might imagine that Unicode is a solution to this problem."
+
+o Deleted "I have found that" from the following sentence:
+
+  "While this appears to be true at first glance (after all, there
+  are nearly 21,000 kanji to pick and choose from!), there are
+  approximately 1,000 JEF kanji that are not part of the Unicode
+  kanji set."
+
+
+Page 148:
+
+o Added the following paragraph after the first paragraph:
+
+  "More detailed information on Japanese text layout can be found in
+  the document JIS X 4051-1993 (Line Composition Rules for Japanese
+  Documents)."
+
+
+Pages 159-161:
+
+o Change "fi" to "fi" ligatures.
+
+
+Page 163:
+
+o Put the word "kanji" into double quotes -- the paragraph before
+  Table 7-2.
+
+
+Page 165:
+
+o Changed the "Line 5" explanation to truly reflect what the code
+  does:
+
+  "The variable celloffset is initialized by testing one or more
+  conditions. The first condition is whether the variable adjust
+  is equal to 1. If this first condition is not met, celloffset is
+  initialized to 126. If this first condition is met, another
+  condition is tested. If the variable c2 is greater than 127,
+  celloffset will be initialized to 32; 31 otherwise. As c1 is not
+  equal to 1 in the example, celloffset is initialized to 126."
+
+
+
+Pages 170-175, 177, 179-180, 182;
+
+o Change "fi" to "fi" ligatures.
+
+
+Page 194:
+
+o Deleted the period at the end of the second bulleted item (right
+  before the last paragraph).
+
+
+Page 202:
+
+o Deleted extraneous "the" from second line of second paragraph.
+
+
+Page 204:
+
+o Placed "copylefted" in double quotes (third line of second
+  paragraph).
+
+
+Page 205:
+
+o Changed "Emacs.Mule." to "Japanese versions of Emacs, such as
+  Mule." in the last line of the last paragraph.
+
+
+Page 207:
+
+o Changed "Namae-ha" to "Namae-wa" in the second line of the fourth
+  paragraph.
+
+
+Page 213:
+
+o Deleted extraneous "handles" from the first paragraph under the
+  "MicroEmacs-J (KanjiTalk)" section.
+
+
+Page 221:
+
+o Changed "later" to "earlier" in the first line of the "MacJDic
+  (KanjiTalk)" section.
+
+
+Page 231:
+
+o Changed the second footnote to the following:
+
+  "For those interested in Korean information processing, there is a
+  similar document called "Korean Character Encoding for Internet
+  Messages," written by Uhhyung Choi, Kilnam Chon, and Hyunje Park.
+  This document is RFC 1557. The name ISO-2022-KR is assigned to the
+  encoding format used in Korean networks."
+
+
+Page 232:
+
+o Changed "Later in this chapter we discuss" to "In Chapter 4 we
+  discussed" in the fifth paragraph.
+
+
+Page 245:
+
+o Added reference to Susan Estrada's "Connecting to the Internet: An
+  O'Reilly Buyer's Guide" in the last paragraph.
+
+
+Page 295:
+
+o Added the following paragraph after the third paragraph:
+
+  "The Ideographic Rapporteur Group (IRG; formerly CJK-JRG) is
+  currently working on adding characters from Japanese corporate
+  character sets to Unicode. These characters need approval and
+  mappings. Some of the characters you find in this chapter may
+  soon become part of the Unicode character set (if they are not
+  there already)."
+
+
+Page 344:
+
+o Changed the IP address for weber.ucsd.edu to 132.239.147.2.
+
+
+Page 346:
+
+o Added ftp.geophys.hokudai.ac.jp (133.50.22.9) to the entry for
+  "KanjiTalk related utilities."
+
+
+Page 347:
+
+o Changed the IP address for weber.ucsd.edu to 132.239.147.2 in
+  the entry for "Nisus macros."
+
+
+Page 348:
+
+o Changed the heading "Commercial Sources" from B head to A head
+  size.
+
+
+Page 350:
+
+o Added "Newton" to the list of products under "Apple Computer
+  Incorporated."
+
+
+Page 359:
+
+o Added "Microsoft Windows NT" to the list of products under
+  "Microsoft Corporation."
+
+
+Page 362:
+
+o Added "USA" to the "SANBI Software" entry.
+
+
+Page 364:
+
+o Italicized "SystemSoft Corporation" in the entry for "SystemSoft
+  America, Incorporated."
+
+
+Page 374:
+
+o Changed "etc." to "and so on." at the end of the second and third
+  bulleted items in the section "RES-GROUP-JAPAN Mailing List."
+
+
+Page 377:
+
+o Changed "$30.00" to "$40.00" in the paragraph about "Chinese
+  Language Computer Society."
+
+
+Page 382:
+
+o Changed "kanji" to "characters" in the entry for "Compound."
+
+
+Page 388:
+
+o Added a period to the footnote.
+
+
+Page 391:
+
+o Changed "1990" to "1983" in the entry for "JIS83."
+
+
+Page 395:
+
+o Changed the entry for "Kanji compound" to the following:
+
+  "漢語. A Japanese word consisting of two or more kanji."
+
+
+Page 398:
+
+o Changed "mincho" to "Mincho" in the entry for "Ming."
+
+
+Page 404:
+
+o Add a period to the end of the entry for "Synchronic."
+
+o Change "uses" to "use" in the entry for "Traditional Kanji."
+
+
+Page 406:
+
+o The following replaces the old "UTF" entry:
+
+  "UTF    UCS (Universal Character Set) Transformation Format. A
+          method of encoding 16- or 32-bit encodings such that they
+          pass as a stream of ASCII bytes. Also called UTF-1."
+
+o The following replaces the old "UTF-2" entry:
+
+  "UTF-2  A version of UTF defined by AT&T Bell Labs (Plan 9) and
+          X/Open for encoding Unicode text as a stream of ASCII
+          bytes. Also called FSS-UTF (file system safe UTF). Also
+          see Plan 9."
+
+o Deleted the "UTF-4" entry.
+
+
+Pages 416-421:
+
+o Added the following bibliographic entries:
+
+  Books:
+
+  Estrada, Susan. "Connecting to the Internet: An O'Reilly Buyer's
+    Guide". O'Reilly & Associates, Inc. 1993. ISBN 1-56592-061-9.
+  Halpern, Jack, editor. "NTC's New Japanese-English Character
+    Dictionary". NTC. 1993. ISBN 0-8442-8434-3.
+  許慎. 説文解字. 中華書局. 100. ISBN 962-231-208-X.
+  諸橋轍次. 大漢和辞典. 13 Volumes. 大修館書店. 1955.
+
+  Standards:
+
+  Japanese Industrial Standards Committee. "JIS X 4051-1993 Line
+    Composition Rules for Japanese Documents (日本語文書の行組版方法)".
+    Japanese Standards Association. 1993.
+  Korean Industrial Standards Association. "KS C 5657-1991 Code for
+    Information Interchange Extended Set". Korean Industrial Standard.
+    1991.
+
+  Papers and Articles:
+
+  Choi, Uhhyung et al. "Korean Character Encoding for Internet Messages".
+    RFC 1557. December 1993.
+  Ohta, Masataka & Kenichi Handa. "ISO-2022-JP-2: Multilingual Extension
+    of ISO-2022-JP". RFC 1554. December 1993.
+
+o Added "I" to the end of アスキー's "日本語TeXテクニカルブック" book name.
+
+o Corrected the year of Donnalyn Frey and Rick Adams' "!%@:: A Dictionary
+  of Electronic Mail Addressing & Networks" to 1993.
+
+o Changed "Revised" to "revised" in Andrew Nelson's "The Modern Reader's
+  Japanese-English Character Dictionary".
+
+o Moved 新村出's "広辞苑" entry to its proper place right before "Spahn."
+
+o Corrected the ISBN of Bill Tuthill's "Solaris International Developer's
+  Guide" to 0-13-031063-8.
+
+o Changed the entries for KS C 5601-1992 and KS C 5861-1992 as follows:
+
+  Korean Industrial Standards Association. "KS C 5601-1992 Code for
+    Information Interchange (Hangul and Hanja)". Korean Industrial
+    Standard. 1992.
+  ---. "KS C 5861-1992 Hangul Unix Environment". Korean Industrial
+    Standard. 1992.
+
+o Changed the entry for my paper "The History of the Japanese Character
+  Set and its Encoding" as follows:
+
+  Lunde, Ken. "The History of the Japanese Character Set and its Encoding".
+    CPCOL, June 1993, Volume 7, Number 1, pp 85-94.
+
+
+Page 427:
+
+o Changed "gothic" to "Gothic" in the entry "gothic typeface."
+
+
+Page 428:
+
+o Changed "problems with" to "source sets" under the "Han Unification"
+  entry.
+
+
+Page 432:
+
+o Changed "mincho" to "Mincho" in the entry "mincho typeface."
+
+
+Page 434:
+
+o The second page references for the entry "SKIP" changed from 404
+  to 403.

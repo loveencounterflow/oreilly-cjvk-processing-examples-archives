@@ -1,0 +1,669 @@
+(This is the third part of NJSTAR USER MANUAL. Read NJSTAR2.DOC first)
+=============================================================================
+
+14. FILE CONVERSION
+===================
+
+This section describes several file conversion options provided  by  NJStar.
+All items listed here can be found under "Output" (出力)  in  the main menu.
+
+NJStar  uses  the  EUC  (Enhanced  Unix  Code)  coding  standard,   but  can
+automatically detect all the 7-bit JIS codes described below.
+
+A file can also be output in any format at the user's choice,  regardless of
+what JIS code the file was  originally  written  in,  through  the many file
+conversion capabilities that NJStar provides.
+
+FUNCTION   <PcxSaveFile>   [Shift+F5]      PCX作成        Create PCX
+
+Creates a set of PCX files (one file per page) from the  current  file.  The
+purpose of this function is mainly to help users  to  send  a  JIS file  via
+computerized fax equipment.
+
+A JIS file is normally not supported by fax software. But PCX is  a  popular
+graphic format, supported by many fax software packages. This  function  can
+be used  to  convert  the  current  file  to  PCX  files,  to  be  sent  via
+computerized fax equipment.
+
+Since PCX is primarily a  graphics  format,  any  graphic  editor,  such  as
+Windows PaintBrush, can be used to edit the resultant graphic files.
+
+UTILITY   JIS2PCX.EXE
+
+<PcxSaveFile> uses 16x16 fonts to produce PCX files.  This  utility  program
+uses better fonts that are provided in the  registered  version  to  produce
+PCX  files  in  higher  resolution.  Registered  users  please   check   the
+UTILITY.DOC file for more details about this program.
+
+FUNCTION   <SaveEUC>          [Shift+F1]      EUC保管   Save as EUC
+
+Saves current file to disk in EUC-JIS (8-bit) format,  the  format  used  by
+UNIX system. The system will  prompt  user  to  enter  a  filename.  If  the
+filename is a duplicate of an existing file, the system will ask to  confirm
+the operation.
+
+FUNCTION   <SaveNewJIS>       [Shift+F2]      新-JIS保管   Save as New-JIS
+
+Saves current file to disk in New-JIS (7-bit) format. The system will prompt
+user to enter a filename. If the filename is  a  duplicate  of  an  existing
+file, the system will ask to confirm the operation. Use this file format  if
+you intend to send your file with any email package on the network.
+
+FUNCTION   <SaveOldJIS>       [Shift+F3]     旧-JIS保管    Save as Old-JIS
+
+Saves current file to disk in Old-JIS (7-bit) format. The system will prompt
+user to enter a filename. If the filename is a duplicate of an existing file,
+the system will ask to confirm the operation.
+
+FUNCTION   <SaveNecJIS>       [Shift+F4]     NEC-JIS保管   Save as NEC-JIS
+
+Saves current file to disk in NEC-JIS (7-bit) format. The system will prompt
+user to enter a filename. If the filename is a duplicate of an existing file,
+the system will ask to confirm the operation.
+
+FUNCTION   <SaveShiftJIS>     [Shift+F6]     シフト-JIS保管  Save as ShiftJIS
+
+Saves current file to disk in Shift-JIS (8-bit) format, the format currently
+used by PCs (DOS/V) and Apple Macintosh. The  system  will  prompt  user  to
+enter a filename. If the filename is a duplicate of an  existing  file,  the
+system will ask to confirm the operation.
+
+NJStar has the ability to coding European characters (ASCII  range  128-160)
+but  Shift-JIS uses this space for different purpose. So  make sure  not  to
+save the file in Shift-JIS if the document contains such characters.
+
+=============================================================================
+
+15. SYSTEM CONFIGURATION
+========================
+
+While you have many options when running  NJStar,  you  can  also  configure
+NJStar's initial settings so that NJStar will always run the way you prefer.
+The  system   configuration  is  set  through  NJCONFIG.EXE.  This   section
+describes the basic procedures for NJCONFIG.EXE.
+
+To run NJCONFIG.EXE, first make sure it is in the current  sub-directory  or
+accessible through the system path statement and  make a backup copy of  the
+current NJSTAR.NJJ. Then, at DOS prompt, enter the following command:
+
+     [USAGE]
+
+          C:\NJJ30> NJCONFIG
+
+Press [Return], the following main menu will appear at the center of the
+screen,
+
+          Options:
+
+             C - Color settings
+             G - General options
+             V - Video and keyboard
+             H - Help screen
+             K - Keys configuration
+             I - Install printer driver
+             P - Printer settings
+             S - Save and quit
+             Q - Quit without save
+
+Enter your option:
+
+NJCONFIG.EXE can also be  called  by  using  the  <NJConfig>  command  while
+running NJStar. In this case, the system will not ask for the program name.
+
+COLOR SETTING
+
+The first menu item is for  color  settings,  with  the  following  options.
+Please notice that the color numbers 0-15 are shown on the screen as  sample
+colors when the program is running. When running NJCONFIG.EXE within NJStar,
+the change of color setting will not take effect  until  NJStar  is  started
+again.
+
+Group 1: Background related options:
+
+     Enter background color for text editing screen. (0-7) [  1]:
+     Enter background color for bottom input line... (0-7) [  4]:
+     Do you want to use dark background color..............[ NO]?
+     Do you want to display marked block in reverse video..[YES]?
+
+Group 2: Foreground related options:
+
+     Enter color number for text editing screen... (0- 15) [ 11]:
+     Enter color number for cursor ............... (0- 15) [ 15]:
+     Enter color number for separation line....... (0- 15) [  7]:
+     Enter color number for QuickHelp screen ..... (0- 15) [ 10]:
+     Enter color number for marked text block..... (0- 15) [  2]:
+     Enter color number for menu (Reverse Video).. (0- 15) [ 15]:
+     Enter color number for hi-lighted menu item.. (0- 15) [ 10]:
+
+Group 3: Bottom input line color options:
+
+     Enter color number for bottom line .......... (1- 15) [ 15]:
+     Enter color number for general message ...... (1- 15) [ 10]:
+     Enter color number for ERROR message......... (1- 15) [ 14]:
+
+GENERAL OPTIONS:
+
+The following selections for the general options may not be  listed  in  the
+same order as they appear on the screen. Please refer to  the  corresponding
+materials in this manual for more information.
+
+Group 1: Input related options:
+
+     NJStar supports following Japanese input methods:
+       0.  ASCII Input         3.      Kana-Kanji
+       1.  Romaji              4.[A-Z] Other Methods
+       2.  EUC/JIS             5.      English->Japanese
+     Enter Default Input Method ..............................[0]:
+     NJStar supports following Japanese formats:
+        0. EUC   1. New-JIS   2. Old-JIS   3.NEC-JIS   4. Shift-JIS
+     Enter default format for new file ........... (0- 4)   [  0]: 0
+     Do you want to delay conversion in Kana-Kanji input... [ NO]?
+     Do you want to detect Shift-JIS automatically..........[ NO]?
+     Do you want to start with pure Japanese mode.......... [ NO]?
+
+Group 2: Display related options:
+
+     Do you want to display special EOL(End of Line) char. [ NO]?
+     Do you want to display Space specially with EOL...... [ NO]?
+     Enter ASCII code of end of line(EOL) mark.... (1-255) [ 20]:
+     Enter char disp. after the no. at bottom line(0 for small no.)[  0]:
+     Do you want to display <*** End of File ***> mark.... [YES]?
+     Do you want to have a blinking cursor................ [YES]?
+     Do you want to hide mouse cursor while using keyboard.[ NO]?
+
+Group 3: Operating related options:
+
+     Do you want to load all font into XMS (extended mem.) [ NO]?
+     Do you want to load some font into RAM (128K required)[YES]?
+     Do you want to create a backup file (.BAK)........... [YES]?
+     Do you want to save file in binary(with LF no CR).... [YES]?
+     Do you want to enter search string for SearchBackward.[YES]?
+     Should NJStar restore the starting drive/dir on exit. [YES]?
+     Should <QuitFile> & <File> ask before exiting to DOS. [ NO]?
+     Do you want a beep sound when an error occurs........ [YES]?
+     Enter sound frequency (Hz).................. (1-5000) [400]:
+     Enter autosave interval in min. (0=no save).. (0- 60) [ 10]:
+     Enter ScreenSaver interval in min.(0=no save) (0- 30) [  3]:
+
+VIDEO AND KEYBOARD
+
+Options for using various video and keyboard equipment. NJStar  will  select
+automatically between EGA or VGA  video  mode  according  to  your  existing
+hardware. However, you can force  NJStar  to  adopt  other  modes  with  the
+following options. Please note that if these options do not accord with your
+hardware, it may render NJStar unable to perform properly.
+
+The first question is,
+
+     Is your monitor a Super VGA supporting 800x600x16.... [ NO]?
+
+You need to have a Super VGA monitor to select this option.  If  [YES],  the
+following list will be displayed:
+
+     List of Super VGA chip sets:
+
+        0. 0x0054 0         - ATI Technologies
+        1. 0x006A 0         - Ahead Technologies / ZYMOS
+        2. 0x0070 0         - Chips & Technology
+        3. 0x0064 0         - Cirrus Logic  CL-GD 500/600
+        4. 0x0059 0         - Compaq Super VGA chips
+        5. 0x0029 0         - Compaq QVision VGA chips
+        6. 0x0070 0x0002    - Everex
+        7. 0x0029 0         - Genoa 5xxx series (Tseng Chip)
+        8. 0x0079 0         - Genoa 6xxx series
+        9. 0x0052 0         - OAK Tech. OAT-067 /OTI037C "UNIQUE" VGA
+       10. 0x005e 0         - OAK Tech. OTI037C+NEL Electronics BIOS
+       11. 0x0058 0         - Paradise / Western Digital / NCR / ACUMOS
+       12. 0x002a 0         - Primus Graphics Accelerator
+       13. 0x001F 0         - RealTek RTVGA
+       14. 0x4F02 0x0202    - S3 Graphics Accelerator
+       15. 0x005b 0         - Trident 8900/8800CS
+       16. 0x0029 0         - Tseng Lab ET-3000/ET4000/Hi color
+       17. 0x4F02 0x0102    - VESA (Video Electronics Standard Assoc.)
+       18. 0x6f05 0x0062    - Video 7 / Headland Technologies
+       19. ------------------ None of above.
+       20. 0x0029 0x0000 ==== Keep old configuration
+
+    Identify your Super VGA Chip set (0-20) [20]:
+  
+Your choice should match exactly the existing hardware. If in doubt,  please
+consult your computer's hardware manual to identify the video chip  set.  If
+your chip set  is  not  listed  above,  add  the  information  to  the  file
+SUPER.VGA, (a text file).
+
+An utility program, WHICHVGA.COM, is enclosed in the package to  assist  you
+to make a correct choice. (WHICHVGA.COM  is  a  public  domain  program  and
+NJStar assumes absolutely no responsibility for any result provided by  this
+program.)
+
+Here are three more options in this group.
+
+     Is your monitor a MonoEGA, MonoVGA/MCGA................[NO]?
+     Do you want to use 25 lines if VGA screen installed....[YES]?
+     Do you want to test for presence of enhanced keyboard..[YES]?
+
+
+HELP SCREEN
+
+Prompts for the user specified help screen file. The default  file  name  is
+NJCONFIG.HLP and KANJI.HLP. Please see <QuickHelp> in MENU AND HELP for  the
+specification of the help file.
+
+     Enter English help screen configuration filename [NJCONFIG.HLP]:
+
+     Enter Japanese help screen configuration filename [KANJI.HLP]:
+
+
+KEYS CONFIGURATION
+
+Prompts for the user specified key assignment file. The default filename is
+NJCONFIG.KEY. You may specify a user key assignment file if necessary.
+
+          Enter key configure data filename [NJCONFIG.KEY]:
+
+You  may  use  NJStar  to  write  a  key  assignment,  reassigning  NJStar's
+configurable functions to  user-specified  keys.  Here  are  some  important
+points (see NJCONFIG.KEY for an example):
+
+     1. Use EUC format (or ASCII) format for the key assignment file;
+
+     2. Comment lines in the key assignment file start with "*" characters;
+
+     3. Use function names in English as listed in Appendix 1;
+
+     4. Use the standard key names and button names listed in Appendix 2;
+
+     5. A function may be assigned to more than one key. But  if  more  than
+        one function is assigned to the same key, only the  last  assignment
+        will be functional.
+
+     6. Some keys are only available for enhanced  keyboards.  When  a  non-
+        available key is used in a key assignment file, the assignment  will
+        be ignored.
+
+     7. A function can be assigned to a single key (or a mouse button) or  a
+        primary key combination ([# Shift], [@  Alt],  or  [^ Ctrl] + other
+        keys) in the following way:
+
+                    KeyName   Function Name or a macro
+
+          [EXAMPLE]
+                    F1        QuickHelp
+                    @Y        Paste
+                    ^X        Meta
+                    #Enter    HardReturn
+
+     8. A function can  be  assigned  to  a  meta  key  combination  in  the
+        following way (Note: a meta key should  be  defined  prior  to  meta
+        combination.),
+
+                    MetaKey   FunctionName or a macro
+
+          [EXAMPLE]
+                    ^X        Meta
+                    Meta+^Z   QuitFile
+                    Meta+W    Macro EXInput 'B'
+
+     9. Please refer to Section <<MACRO COMMANDS>> for creating  macros  and
+        more macro examples.
+
+INSTALL PRINTER DRIVER
+
+Prompt for the user-specified printer driver file. Please note that  only  9
+pin printer drivers are supplied with NJStar's Shareware Version.
+
+     Printer driver currently installed: EPSON 9p & Compatibles
+     Printer Drivers Available:
+
+         0. CANONBJE.DRV    - Canon BJ(EPSON Comp
+         1. CANONBJI.DRV    - Canon BJ(IBM Comp.)
+         2. CANONLBP.DRV    - Canon LBP-8 / CaPSL
+         3. EPSON24.DRV     - EPSON24p & Compat's
+         4. EPSON9P.DRV     - EPSON 9p & Compat's
+         5. EPSONFX1.DRV    - EPSON FX 60 dpi
+         6. EPSONFX2.DRV    - EPSON FX 120 dpi
+         7. HPDESKJ.DRV     - HP Deskjet & Compt.
+         8. HPLASER.DRV     - HP Laserjet+ & PCLs
+         9. IBMPRO9P.DRV    - IBM Pro 9p & Comp's
+        10. IBMX24.DRV      - IBM Pro X24 &Comp's
+
+     Enter printer driver number  (0-10) [  4]:
+
+Please note that if you are going to print to file for a printer on  another
+computer, you should install the corresponding printer driver.
+
+PRINTER SETTINGS
+
+Please refer  to  the corresponding materials in this manual.
+
+Printer port (0=Lpt1  1=Lpt2  2=Lpt3  3=Lpt4)...... (0-  3) [ 0]:
+Double strike for 9 pin printing (0=NO, 1=YES)..... (0-  1) [ 0]:
+Paper feeding (0=Manual 1=Continuous).............. (0-  1) [ 1]:
+Should NJStar interpret the '\' formatting commands.........[YES]?
+Do you want to print page number............................[YES]?
+Default paper length in lines (1 line= 1/6 inch).. (20- 90) [53]:
+Paper length adjustment in dots(1 dot= 1/30 line).. (0- 30) [0]:
+Default top margin in lines (1 line= 1/6 inch)..... (2- 20) [3]:
+Default bottom margin in lines (1 line= 1/6 inch).. (2- 20) [5]:
+Paper width in number of Japanese chars............ (20- 70) [50]:
+Default left margin in number of Japanese chars..... (0- 20) [ 5]:
+Default right margin in number of Japanese chars.... (0- 20) [ 5]:
+Default space between 2 lines(in dots)............. (0- 72) [12]:
+
+EXIT
+
+When finished, select "S" to save and quit, or "Q"  to  cancel  all  changes
+made in the current session.
+
+Changes of configuration will be saved to NJSTAR.NJJ. To restore the  system
+settings to its original state, restore the original version of NJSTAR.NJJ..
+
+
+=============================================================================
+
+16. FONT UTILITIES
+==================
+
+When using a Japanese word processor, there is always a time when  you  will
+want to create a new character. To meet this need, NJStar provides a set  of
+utility programs to add user characters to NJStar's font library files.
+
+UTILITY  JISPRINT.EXE
+
+This utility program prints Japanese characters in a  EUC  file  to  another
+file in dot matrix format. You may also  use  this  program  to  output  any
+existing characters and modify them into new characters so that they may  be
+added to the font files again with JISFONT.EXE.
+
+UTILITY  JISFONT.EXE 
+
+This utility program will update NJStar's font  files  with  user  specified
+characters. You can specify the character code  (and  location)  and  bitmap
+images in the font file. This program will update  the  user-specified  font
+file.
+
+UTILITY   NJ24.EXE
+
+This utility program provides an interactive interface for editing  a  user-
+specified 24x24 font library  file.  The  result  takes  effect  immediately
+without using JISFONT.EXE and JISPRINT.EXE. Mouse support is available.
+
+These three programs are available for  registered  users  only.  Registered
+users please read UTILITY.DOC for more information.
+
+
+=============================================================================
+APPENDIX 1
+
+                    LIST OF NJSTAR CONFIGURABLE FUNCTIONS
+
+Note: This table contains all NJStar's configurable functions.
+Please notice that in the column of DEFAULT KEY, # = Shift+, @ =Alt+,
+and ^ = Ctrl+.
+
+NAME           NAME           DEFAULT KEY  FUNCTION
+=============  ============   =========    ==================================
+Menu           メニュー       [ESC]        Call up the main menu
+QuickHelp      ヘルプ         [F1]         Call up the help screen
+EnglishMenu    メニュー切替   [^M]         Toggling the system language
+NJConfig       セッティング   [^C]         System reconfiguration
+DOS            DOSコマンド    [^D]         Execute user specified DOS command
+Shell          シェル         [^S]         Shell to the DOS prompt
+
+ListDir        ディレクトリ   [#F9]        List user specified directory
+EditFile       文書の読出し   [F8]         Load user specified file
+OpenFile       文書オープン   [^O]         Provide file list for opening file
+NextFile       次の文書へ     [F10]        Goto the next file in file ring
+PrevFile       前の文書へ     [@F10]       Goto the previous file in file ring
+FileList       文書一覧       [#F10]       List all files in file ring
+RenameFile     文書名変更     [F7]         Rename the current file
+SaveFile       文書の保管     [F2]         Save the current file to disk
+File           文書           [F4]         Save the current file and quit
+SaveAll        全て保管       [^F4]        Save the current file and quit all
+QuitFile       文書を終了     [F3]         Quit current file (confirm saving)
+QuitAll        全て終了       [^F3]        Quit all files (confirm saving)
+
+CursorLeft     左方へ         [LEFT]       Move left by one character
+CursorRight    右方へ         [RIGHT]      Move right by one character
+CursorUp       上方へ         [UP]         Move up by one line
+CursorDown     下方へ         [DOWN]       Move down by one line
+BegLine        行頭へ         [HOME]       Goto beginning of current screen
+EndLine        行末へ         [END]        Goto the end of current screen
+WordLeft       一語左へ       [^LEFT]      Move to beginning of current word
+WordRight      一語右へ       [^RIGHT]     Move to the beginning of next word
+BegScreen      画面頭へ       [^UP]        Goto top left of the current screen
+EndScreen      画面末へ       [^DOWN]      Goto bottom left of current screen
+PageUp         一画面上へ     [PGUP]       Goto bottom line of previous screen
+PageDown       一画面下へ     [PGDN]       Goto top line of the next screen
+BegFile        文書頭へ       [^HOME]      Goto beginning of the current file
+EndFile        文書末へ       [^END]       Goto the end of the current file
+ScrollUp       上へスクロル   [@UP]        Scroll up screen by one line
+ScrollDown     下へスクロル   [@DOWN]      Scorll down screen by on line
+GotoLine       指定行へ       [^F6]        Goto a user specified hard line
+
+Enter          リターン       [ENTER]      Enter EOL character or accept input
+HardReturn     エンター       [GREYENTER]  Enter EOL char. in search string
+DelChar        削除           [DEL]        Delete the current character
+BackSpace      バックスペース [BS]         Delete the previous character
+DelLine        この行を削除   [^BS],[^Y]   Delete the current line
+DelToBegLine   行頭まで削除   [^J]         Delete to beginning of current line
+DelToEndLine   行末まで削除   [^K], [^E]   Delete to the end of current line
+UnDelLine      削除の回復     [F9]         Recover latest deleted text
+DupLine        この行を複写   [^L]         Duplicate the current line
+TimeDate       日付けと時刻   [^T]         Insert system date and time
+ToggleEOL      行末マーク     [^F9]        Toggle display of EOL characters
+FileStatus     文書について   [^F1]        Report current file status
+
+WordCount      語句の統計     [^F5]        Count a user specified string
+Search         検索           [F5]         Search for user specified string
+SearchForward  下方へ検索     [^F]         Continue to search forward
+SearchBackward 上方へ検索     [^B]         Search backward for given string
+SearchReplace  置換え         [F6]         Search and replace w/ confirmation
+Replace        全て置換え                  Search and replace w/o confirmation
+
+MarkBlock      指定域設定     [@B]         Mark beginning or end of a block
+MarkLine       行を指定       [@L]         Mark current line as a block
+MarkWord       一語を指定     [@W]         Mark the current word as a block
+UnMarkBlock    指定の解除     [@U]         Clear current block mark
+MoveBlock      指定域の移動   [@M]         Move block to the cursor position
+CopyBlock      複写と貼付     [@C]         Copy block to the cursor position
+Copy           複写           [^W]         Store the block to block buffer
+Paste          貼付け         [@Y]         Restore the content of block buffer
+UnDelBlock     削除の回復     [@Y]         Restore latest deleted block 
+DelBlock       指定域の削除   [@D]         Delete the current block
+GotoBlock      指定域へ       [@G]         Goto the beginning of current block
+SaveBlock      指定域保管     [@S]         Save the current block to a file
+DefWordSet     語長リセット   [@Q]         Set default word set(a-z,A-Q,0-9, _)
+AltWordSet     語長セット     [@A]         Set Alternative word set (Plus.etc)
+
+Convert2Kanji  変換：あ→亜   [@F1]        convert Hiragana to Kanji character
+EXInput        他の入力法     [@F2]        Select other input method
+KanaKanjiInput かな漢字入力   [@F3]        Online Romaji input
+EUCinput       EUCコード入力  [@F4]        Set input method to EUC/JIS Input
+RomajiInput    ローマ字入力   [@F5]        Set input method to Romaji Input
+ASCinput       英字入力       [@F6]        Set input method to ASCII Input
+English        英和入力       [@F7]        Set input method to English->Jap.
+JasciiMode     全角モード     [@F9]        Change mode to JASCII
+Option         オプション     [^F2]        Change conversion mode setting
+Symbols        特殊な記号     [^6]         Lookup special symbol character
+UndoConvert    変換の回復     [#F8],[INS]  Revert the conversion
+Radical        部首検索       [#F1]        Lookup character by radicals
+EDictLookup    辞書の検索     [@E/@X]      Call Japanese-English dictionary
+Glossary       用語集         [^G]         Call an user lookup dictionary
+KanjiInfo      漢字の情報     [@Z]         Call information for Kanji character
+
+MacroRec       マクロ記録     [F11]        Begin or end recording commands
+MacroExec      マクロ実行     [F12]        Execute recorded commands
+SaveMacro      マクロ保管     [@F11]       Save the current macro to a file
+ReadMacro      マクロ読出し   [@F12]       Read a macro file to macro buffer
+RepeatCmd      リピート       [^F11]       Repeat the current command
+
+Print          印刷           [^P]         Print the current file 
+PcxSaveFile    PCX作成        [#F5]        Write the current file to PCX files
+SaveEUC        EUC保管        [^F7]        Save current file to EUC JIS
+SaveNewJIS     新-JIS保管     [#F2]        Save current file to New JIS
+SaveOldJIS     旧-JIS保管     [#F3]        Save current file to Old JIS
+SaveNecJIS     NEC-JIS保管    [#F4]        Save current file to NEC JIS
+SaveShiftJIS   シフトJIS保管  [#F6]        Save current file to Shift JIS
+=============  =============  ===========  ====================================
+
+=============================================================================
+APPENDIX 2
+                       LIST OF NJSTAR KEY NAMES
+
+
+Note: This table contains  all NJStar's assignable key names.
+Please not that # = Shift+ ,  @ = Alt+ ,  and ^ = Ctrl+ .
+Key names followed by * are only available on an enhanced keyboard.
+
+     
+=======================================================================
+   PART I: Function keys
+
+           F1   F2   F3   F4   F5   F6   F7   F8   F9   F10  F11*    F12*
+          #F1  #F2  #F3  #F4  #F5  #F6  #F7  #F8  #F9  #F10 #F11*   #F12*
+          @F1  @F2  @F3  @F4  @F5  @F6  @F7  @F8  @F9  @F10 @F11*   @F12*
+          ^F1  ^F2  ^F3  ^F4  ^F5  ^F6  ^F7  ^F8  ^F9  ^F10 ^F11*   ^F12*
+     
+-----------------------------------------------------------------------
+   PART II: Regular Character Keys
+
+               ESC      BS       ENTER      TAB
+              #ESC     #BS      #ENTER     #TAB
+              @ESC     @BS      @ENTER     @TAB*    @BackSlash
+                       ^BS      ^ENTER     ^TAB*    ^BackSlash     ^BREAK
+
+            @A   @B   @C   @D   @E   @F   @G   @H   @I   @J  @K   @L   @M
+            ^A   ^B   ^C   ^D   ^E   ^F   ^G   ^H   ^I   ^J  ^K   ^L   ^M
+
+            @N   @O   @P   @Q   @R   @S   @T   @U   @V   @W  @X   @Y   @Z
+            ^N   ^O   ^P   ^Q   ^R   ^S   ^T   ^U   ^V   ^W  ^X   ^Y   ^Z
+
+            @`   @-*  @+*  @=   [@   @]   @'   @;   @/
+                 ^-                  ^]                  ^2  ^6
+
+-----------------------------------------------------------------------
+   PART III: Keypad Keys
+
+              GREY/       GREY*        GREY-        GREY+      GreyEnter
+             #GREY/      #GREY*       #GREY-       #GREY+     #GreyEnter
+             @GREY/*     @GREY*       @GREY-       @GREY+     @GreyEnter*
+             ^GREY/*     ^GREY**      ^GREY-*      ^GREY+*    ^GreyEnter*
+
+                 UP        DOWN         LEFT        RIGHT        Keypad5
+                #UP       #DOWN        #LEFT       #RIGHT       #Keypad5
+                @UP*      @DOWN*       @LEFT*      @RIGHT*
+                ^UP*      ^DOWN*       ^LEFT       ^RIGHT       ^Keypad5*
+
+               HOME        END      PGUP        PGDN       DEL       INS
+              #HOME       #END     #PGUP       #PGDN      #DEL      #INS
+              @HOME*      @END     @PGUP*      @PGDN*     @DEL*     @INS*
+              ^HOME       ^END     ^PGUP*      ^PGDN      ^DEL*     ^INS*
+
+-----------------------------------------------------------------------
+   PART IV: Meta Combination Keys
+
+                    0 -> 9      A -> Z
+                  !   @   #   $   %   ^   &   *   (   )   -  _  +   =
+                  [   ]   \   :   ;   "   '   ,   <   .   >  ?  /   ESC
+
+                  ^A -> ^Z     ^6      ^-     ^BACKSLASH     ^RBRACE
+
+-----------------------------------------------------------------------
+   PART V: Mouse Buttons
+
+        M_LEFT  - Click left button      M_LL - Double click left button
+        M_RIGHT - Click right button     M_RR - Double click right button
+        M_MID   - Click middle button    M_MM - Double click middle button
+        M_LR    - Click both left and right buttons
+
+=============================================================================
+APPENDIX 3
+
+             SUMMARY OF NJSTAR LOCATION-SENSITIVE MOUSE FUNCTIONS
+
+
+NOTE: This appendix presents a summary of NJStar's  location-sensitive  mouse
+function. If the user points  the  mouse  cursor  at  one  of  the  locations
+indicated below, and then clicks  the  left  button  once  (or  otherwise  as
+described), it will invoke certain functions.
+
+To use a mouse with NJStar, you  have  to  install  a  mouse  driver  program
+prior to running NJStar. Please see the mouse  manual  for  more  information
+about installing the mouse driver program.
+
+Please look first at the sample screen below. The left side is the ruler  for
+Line numbers. Please notice that an EGA monitor has  different  line  numbers
+from that of a VGA monitor. The bottom line is the ruler for column  numbers.
+Letters (A..H) indicate different areas.
+
+Line:  
+        +------------------------------------------------------------------+
+     1  |------------------------------- A------------------------------- H|
+     2  |                                                                  |
+        |                                                                  |
+        |                                                                  |
+        |                                                                  |
+        |                                                                  |
+        |                                B                                 |
+        |                                                                  |
+        |                                                                  |
+        |                                                                  |
+        |                                                                  |
+        |                                                                  |
+        |                                                                  |
+  24/18 |                                                                  |
+        +----+-----------+----------------------------------+------+-------+
+  25/19 | C  |   D       |               E                  |   F  |   G   |
+        +----+-----------+----------------------------------+------+-------+
+Column: 0    5           12                                69     74      79
+
+
+     AREA   DEFINITION           OPERATION           FUNCTIONS
+     ====   ==================   =================  ========================
+      A     The top line         M_LEFT              Calling up the main menu
+
+      B     From the 2nd line    Press the left      <ScrollDown>
+            to the line above    button and drag
+            the bottom line      down
+
+                                 Press the left      <ScrollUp>
+                                 button and drag
+                                 up
+
+                                 Other operations    User assigned functions
+
+      C     Column 1-4 at the    M_LEFT              Toggle between <ASCInput>
+            bottom line                              <KanaKanjiInput> and
+                                                     <Romaji Input>
+
+      D     Column 6-11 at       M_LEFT              None
+
+      E     Column 13-68 at      M_LEFT              Select a Japanese  char.
+            the bottom line                          to editing screen
+
+                                 M_LEFT              <FileList>   when    no
+                                                     Japanese  characters  to
+                                                     be input
+
+                                 M_LEFT              <GotoLine>  when in
+                                                     ASCII mode
+
+      F     Column 69-73 at      M_LEFT              <MacroRec>
+            the bottom line
+
+      G     Column 75-79 at      M_LEFT              <JasciiMode>
+            the bottom line
+
+      H     Column 79-80 at                          Screen saver
+            the top line
+
+     C-G    The bottom line      M_LR                <Escape>
+                                 M_Middle            <QuickHelp>
+                                 M_RIGHT             <OpenFile>
+     ====   ==================   =================  ========================
+
+=============================================================================
+--------------------------< END of NJSTAR3.DOC >------------------------------
+
+

@@ -1,0 +1,293 @@
+                        International Fonts,
+			Fonts for ISO 8859-X
+
+
+
+DISCLAIMER: THE AUTHOR MAKES NO WARRANTY OF ANY KIND WITH REGARD TO
+THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+If you have any further information about fonts which may be useful to
+others, please let me know, so that I can include it in future versions
+of this document.
+
+
+1. Which coding should I use for accented characters?
+Use the internationally standardized ISO-8859-X character sets to type
+accented characters.
+
+8859-1 is also used by MS-Windows (Actually, MS-Windows
+uses UNICODE (ISO 10646) truncated to 8 bit, which gives an equivalent
+encoding.), VMS and (practically all) UNIX implementations. MS-DOS
+uses a different character set and is not compatible with this
+character set. (It can, however, be translated to this format with
+various tools. See section 7.)
+
+ISO 8859-1 supports the following languages:
+Afrikaans, Catalan, Danish, Dutch, English, Faeroese, Finnish, French,
+German, Galician, Irish, Icelandic, Italian, Norwegian, Portuguese,
+Spanish and Swedish. 
+
+(It has been called to my attention that Albanian can be written with
+ISO 8859-1 also.  However, from a standards point of view, ISO 8859-2
+is the appropriate character set for Balkan countries.)
+
+ISO 8859-1 is just one part of the ISO-8859 standard, which specifies
+several character sets, e.g.:
+8859-1	Europe, Latin America
+8859-2  Eastern Europe
+8859-3  SE Europe 
+8859-4  Scandinavia (mostly covered by 8859-1 also)
+8859-5  Cyrillic
+8859-6  Arabic
+8859-7  Greek 
+8859-8  Hebrew
+8859-9  Latin5, same as 8859-1 except for Turkish instead of Icelandic
+8859-10 Latin6, for Eskimo/Scandinavian languages
+
+
+
+2. Font conversions
+
+Most of the font formats discussed here can be converted to the other
+formats in this FAQ.  For information on how to achieve this check out
+the font FAQ posted regularly in comp.fonts and the comp.font www
+home page at http://jasper.ora.com:8080/comp.fonts.
+
+
+
+3. Availability for X Windows
+
+8859-1
+X Windows has several ISO 8859-1 character sets in the standard
+distribution (those whose names end in iso8859-1).  If you are using
+X11R5, note that some fonts are labeled as ISO compliant fonts which
+they are not.
+
+
+8859-2
+The X11R6 release contains a font for this cxharacter set.  More fonts
+can be found at URL ftp://ftp.vszbr.cz/pub/X11-fonts/ISO_8859-2.
+
+8859-3
+You can find fonts for 8859-3 at URL
+ftp://ftp.stack.urc.tue.nl/pub/esperanto/fonts.dir.  Not all the fonts
+are Latin-3.  At least "adobe3.tar.gz" and "l3-tiparoj.tar.Z" contain
+Latin-3 BDF fonts.
+
+Also, there are fonts  at URL
+ftp://ftp.vszbr.cz/pub/X11-fonts/ISO_8859-3.
+
+
+8859-4 through 8859-10
+You can find fonts for these character sets at URL
+ftp://ftp.vszbr.cz/pub/X11-fonts.  
+
+
+8859-5
+Check out the ftp://nic.funet.fi/pub/culture/russian/comp/fonts
+(esp. subdirectories .../fonts and .../xwin).  It has a host of
+Russian fonts.  Also, check out the fonts in
+ftp://cs.umd.edu/pub/cyrillic/xwin_fonts.  This archive contains ISO
+8859-5, Koi8 and Alt fonts (Alt is very popular opn PCs.).  If you use
+emacs, russian.el allows you to use one font for the buffer and
+another for the display.
+
+
+8859-8
+Several fonts for this character set family can be found in the
+metamail package.  The `metamail' package is available via anonymous
+ftp from thumper.bellcore.com in /pub/nsb.  These fonts are in bdf
+format and can be found in <metamail-root>/src/fonts.  You will also
+need software which supports right-to-left writing, such as the MULE
+system for emacs.  Information about MULE can be found on
+ftp.vlsivie.tuwien.ac.at in /pub/8bit/MULE.
+
+
+8859-10
+There are a couple versions of an ISO_8859-10 font for X, the first
+version of which was based on the ECMA-144 standard and its depictions
+of the characters.  The second version of this font was a revision of
+the first to improve the appearance of certain accented characters,
+and to modify the appearance of some of the Latin-6-specific characters
+to reflect their appearances from what printed material the author
+could find.
+
+    Both of these BDF font files can be found by anonymous FTP
+ftp://ccsun.tuke.sk/pub/
+
+These fonts should also end up at the X Consortium ftp server
+eventually. 
+
+
+
+Other Fonts
+
+Languages	Character set	Font
+Thai		TIS620		<MULE-root>/fonts/ETL.tar.gz
+Vietnamese	VISCII		<MULE-root>/fonts/ETL.tar.gz
+Arabic		MULE-ETL	<MULE-root>/fonts/ETL.tar.gz
+Persian		MULE-ETL	<MULE-root>/fonts/ETL.tar.gz
+Persian		?		ftp://tehran.stanford.edu
+IPA		MULE-ETL	<MULE-root>/fonts/ETL.tar.gz
+
+MULE-ETL is a MULE-specific character set, IPA stands for
+International Phonetic Alphabet.  <MULE-root> refers to the root where
+you have installed MULE (MULE is a MULtilingual Enhancement to GNU
+Emacs).  More information on MULE and the MULE package can be found on
+ftp://etlport.etl.go.jp/pub/mule.
+
+
+
+4. DOS
+IBM code page 819 is the same as ISO 8859-1. I believe that 850 is the
+code page that has all of the characters in different positions.
+
+IBM code page 912 is the same as ISO 8859-2, but 852 is the one that
+comes with (all versions of) DOS, which has all of ISO 8859-2's
+characters in different positions.
+
+
+Alternatively, you can reconfigure your MS-DOS PC to use publicly
+available, free ISO-8859-X code pages.  Check out the anonymous ftp
+archive ftp.uni-erlangen.de, which contains data on how to do this
+(and other ISO-related stuff) in /pub/doc/ISO/charsets.  The README
+file contains an index of the files you need.
+
+
+
+5. MS-Windows
+There are different Windows code pages, just as there are different
+DOS code pages. The one used for western European languages is 1252,
+which is a superset of ISO 8859-1 (1252 makes use of the control
+characters from 0x80 to 0x9F). Similarly, 1250 is a superset of ISO
+8859-2. There are also versions for Cyrillic, Arabic, Greek, Hebrew,
+and Turkish, corresponding to ISO 8859-5, -6, -7, -8, and -9.
+
+
+IPA International Phonetic Alphabet fonts
+ftp.sil.org will get you to the Summer Institute of Linguistics, who
+have IPA fonts in both T1 and TT.
+
+
+Various fonts
+ftp.uni-paderborn.de:/pub/windows/Cica/demo/accentwm.zip
+
+This is a demo version of Accent. But after installing (and deleting)
+the demo you still have four TrueType fonts: East European (Latin 2),
+Greek, Cyrillic, Turkish (Latin 5).
+
+
+Tibetan Font & Keyboard Software for PC's 
+(Christopher J Fynn <cfynn@sahaja.demon.co.uk>)
+My TIBKEY  software + associated documentation has been installed
+in the "tibet-software" area of the "tibetan-archives" at the
+Coombspapers anonymous ftp archive (coombs.anu.edu.au)
+ 
+A gopher pointer to that area is as follows:
+ 
+Name=tibet-software
+Type=1
+Port=70
+Path=ftp:coombs.anu.edu.au@/coombspapers/otherarchives/asian-studies-archives/tibetan-archives/tibet-software/
+Host=cis.anu.edu.au
+File=tibkey.zip
+ 
+Tibkey includes one of my Tibetan fonts in TrueType format and a
+Tibetan keyboard program for MS Windows 3.1. This version is freeware.
+
+
+Bengali Font
+A shareware Bengali TrueType font for Windows, available by FTP is at
+URL ftp://ftp.cica.indiana.edu/pub/pc/win3/fonts/sgaon.zip
+
+
+
+6. Printing
+
+6.1 Adobe PS fonts
+6.1.1 IPA Adobe Type1
+* IPA fonts can be found on ftp://ftp.sil.org
+* There is also a suite (two fonts) based on Palatino that is
+available in the linguistics directory at ftp://macarchive.umich.edu/
+
+
+6.2 Printing with MULE 
+To print various characters supported by Mule, we provide a
+program `m2ps' which will be installed automatically while
+installing mule (just as etags, emacsclient).  `m2ps'
+converts Mule's text to PostScript by using BDF files for
+getting glyphs of characters.
+
+This utility allows printing of all character sets supported by either
+your X11 distribution or found in the MULE distribution.
+
+
+
+7. Latex
+
+For ISO 8859-1, you should use the inputenv package with the latin1
+option:
+\usepackage[latin1]{inputenc}
+
+If you use pre 2e version of Latex, use isolatin.sty or isolatin1.sty
+instead.  These are available from URL
+ftp://ftp.vlsivie.tuwien.ac.at/pub/8bit. 
+
+The ISO 8859-2 character set (ex-East Block), is supported by
+`latin2.sty': latin2.sty is available by ftp from the host
+ftp.uni-stuttgart.de as `/pub/tex/macros/latex/contrib/latin2.sty'.
+
+
+If you need a Fraktur font, check out
+ftp://ftp.vlsivie.tuwien.ac.at/pub/tex/fraktur which contains a TeX/MF
+fraktur font.
+
+
+8. Character Set Names
+A list of official character set names (for MIME and other internet
+purposes) can be found as RFC 1345 on ftp.uu.net.
+
+
+
+9. Other sources for fonts
+The Multiplingual PC Directory discusses internet font sites under URL
+http://www.knowledge.co.uk/xxx/mpcdir/inetsite.htm.  The fonts indexed
+there come in various fromats, but most can be adapted to whatever is
+needed by referring to the conversion methods described in the
+comp.fonts FAQ (URL http://jasper.ora.com:8080/comp.fonts). 
+
+
+
+10. Home location
+10.1 www
+You can find this and other i18n documents under URL
+http://www.vlsivie.tuwien.ac.at/mike/i18n.html.
+
+The comp.fonts home page is at http://jasper.ora.com:8080/comp.fonts.
+
+10.2 ftp
+This document is available via anonymous ftp from
+ftp.vlsivie.tuwien.ac.at as /pub/8bit/i18n-fonts.
+
+
+-----------------
+
+Copyright © 1994,1995 Michael Gschwind (mike@vlsivie.tuwien.ac.at)
+
+This document may be copied for non-commercial purposes, provided this
+copyright notice appears.  Publication in any other form requires the
+author's consent. 
+
+Dieses Dokument darf unter Angabe dieser urheberrechtlichen
+Bestimmungen zum Zwecke der nicht-kommerziellen Nutzung beliebig
+vervielfältigt werden.  Die Publikation in jeglicher anderer Form
+erfordert die Zustimmung des Autors.
+
+
+
+Michael Gschwind, Institut f. Technische Informatik, TU Wien
+snail: Treitlstrasse 3-182-2 || A-1040 Wien || Austria
+email: mike@vlsivie.tuwien.ac.at   PGP key available via www (or email)
+www  : URL:http://www.vlsivie.tuwien.ac.at/mike/mike.html
+phone: +(43)(1)58801 8156	   fax: +(43)(1)586 9697

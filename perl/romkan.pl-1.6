@@ -1,0 +1,132 @@
+#!/usr/local/bin/perl -s
+package romkan;
+;######################################################################
+;#
+;# romkan.pl: romaji-to-kana convertion subroutine for Perl
+;#
+;# Copyright (c) 1995,1996 Kazumasa Utashiro <utashiro@iij.ad.jp>
+;# Internet Initiative Japan Inc.
+;#
+;# Copyright (c) 1993 Kazumasa Utashiro
+;# Software Research Associates, Inc., Japan
+;#
+;# Original: Jan 12 1993
+;; $rcsid = q$Id: romkan.pl,v 1.6 1996/05/22 15:41:28 utashiro Exp $;
+;#
+;######################################################################
+;#
+;# SYNOPSIS
+;#
+;#	$kana = &romkan($roma [, CODE [, KATAKANA]] );
+;#
+;# DESCRIPTION
+;#
+;#	Subroutine &romkan returns KANA string expressed by the first
+;#	argument.  It returns undef when translation was failed.
+;#
+;#	Second argument specifies the encoding of return string.  It
+;#	is encoded in 'euc' by default.  Use 'euc', 'sjis' or 'jis'.
+;#
+;#	If the third argument is supplied and its value is
+;#	true, return string is expressed by KATAKANA rather
+;#	than HIRAGANA which is default.  Use undef for
+;#	second argument if you don't want to specify the code.
+;#
+;######################################################################
+;#
+;# SAMPLE:
+;#
+;#	require('romkan.pl');
+;#	while (<>) {
+;#	    s/[\w\-\']+/&romkan($&)||$&/ge unless 1 .. /^$/;
+;#	    print;
+;#	}
+;#
+;######################################################################
+
+require('jcode.pl');
+
+$pcode = 'euc';
+
+$romkan_table = <<'__TABLE_END__' unless $romkan_table;
+a	あ	i	い	u	う	e	え	o	お
+ka	か	ki	き	ku	く	ke	け	ko	こ
+ga	が	gi	ぎ	gu	ぐ	ge	げ	go	ご
+sa	さ	si	し	su	す	se	せ	so	そ
+za	ざ	zi	じ	zu	ず	ze	ぜ	zo	ぞ
+ta	た	ti	ち	tu	つ	te	て	to	と
+tsa	つぁ	tsi	つぃ	tsu	つ	tse	つぇ	tso	つぉ
+da	だ	di	ぢ	du	づ	de	で	do	ど
+na	な	ni	に	nu	ぬ	ne	ね	no	の
+ha	は	hi	ひ	hu	ふ	he	へ	ho	ほ
+fa	ふぁ	fi	ふぃ	fu	ふ	fe	ふぇ	fo	ふぉ
+pa	ぱ	pi	ぴ	pu	ぷ	pe	ぺ	po	ぽ
+ba	ば	bi	び	bu	ぶ	be	べ	bo	ぼ
+ma	ま	mi	み	mu	む	me	め	mo	も
+ya	や			yu	ゆ			yo	よ
+ra	ら	ri	り	ru	る	re	れ	ro	ろ
+wa	わ	wi	ゐ			we	ゑ	wo	を
+kya	きゃ	kyi	きぃ	kyu	きゅ	kye	きぇ	kyo	きょ
+gya	ぎゃ	gyi	ぎぃ	gyu	ぎゅ	gye	ぎぇ	gyo	ぎょ
+sha	しゃ	shi	し	shu	しゅ	she	しぇ	sho	しょ
+zya	じゃ	zyi	じぃ	zyu	じゅ	zye	じぇ	zyo	じょ
+ja	じゃ	ji	じ	ju	じゅ	je	じぇ	jo	じょ
+jya	じゃ	jyi	じぃ	jyu	じゅ	jye	じぇ	jyo	じょ
+tya	ちゃ	tyi	ちぃ	tyu	ちゅ	tye	ちぇ	tyo	ちょ
+cha	ちゃ	chi	ち	chu	ちゅ	che	ちぇ	cho	ちょ
+dya	ぢゃ	dyi	ぢぃ	dyu	ぢゅ	dye	ぢぇ	dyo	ぢょ
+tha	てゃ	thi	てぃ	thu	てゅ	the	てぇ	tho	てょ
+dha	でゃ	dhi	でぃ	dhu	でゅ	dhe	でぇ	dho	でょ
+nya	にゃ	nyi	にぃ	nyu	にゅ	nye	にぇ	nyo	にょ
+hya	ひゃ	hyi	ひぃ	hyu	ひゅ	hye	ひぇ	hyo	ひょ
+pya	ぴゃ	pyi	ぴぃ	pyu	ぴゅ	pye	ぴぇ	pyo	ぴょ
+bya	びゃ	byi	びぃ	byu	びゅ	bye	びぇ	byo	びょ
+mya	みゃ	myi	みぃ	myu	みゅ	mye	みぇ	myo	みょ
+rya	りゃ	ryi	りぃ	ryu	りゅ	rye	りぇ	ryo	りょ
+xa	ぁ	xi	ぃ	xu	ぅ	xe	ぇ	xo	ぉ
+xwa	ゎ	xtsu	っ	xtu	っ
+xya	ゃ			xyu	ゅ			xyo	ょ
+n'	ん	n	ん
+-	ー
+__TABLE_END__
+
+&jcode'convert(*romkan_table, $pcode);
+%romkan = @romkan = split(/\s+/, $romkan_table);
+$consonants = 'ckgszjtdhfpbmyrw';
+for ($consonants =~ /./g) { $romkan{"$_$_"} = $romkan{'xtsu'}; }
+for (0..9, "'") { $romkan{$_} = $_; }
+
+;;; eval($sub_romkan = q%
+sub main'romkan {
+    local($_, $code, $katakana) = @_;
+    local($kana) = '';
+    while (length) {
+% .	join('', grep(++$i%2 && ($_ = "\tnext if s/^$_//i;\n"), @romkan)) . q%
+	next if s/^[\d\']//;
+	next if s/^([%.$consonants.q%])\1/\1/i;
+	last;
+    } continue {
+	$kana .= $romkan{"\L$&"};
+    }
+    return undef if length;
+    $kana =~ s/\244(.)/\245$1/g if $katakana;
+    &jcode'convert(*kana, $code, $pcode) if $code && $code ne $pcode;
+    $kana;
+}
+%);
+
+;######################################################################
+if (__FILE__ eq $0) {	# test main
+    package main;
+
+    print $romkan'sub_romkan if $debug; #''
+    $/ = '' unless -t STDIN;
+    while (<>) {
+	print unless -t STDIN;
+	s/[\w\-\']+/&romkan($&)||$&/ge;
+	print;
+    }
+}
+;######################################################################
+
+1;

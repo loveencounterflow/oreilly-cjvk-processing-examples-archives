@@ -1,0 +1,211 @@
+Field-Specific Textbooks for Technical Japanese
+URL: ftp://ftp.ora.com/pub/examples/nutshell/ujip/doc/tech-jp-books.txt
+
+
+Technical Japanese Supplements
+	The "Technical Japanese Supplements" are designed to provide
+greater breadth and depth to instruction in technical Japanese. Most
+of the supplements concentrate on the expressions, vocabulary, and
+kanji that are essential for reading technical documents in one
+specific field, building on the grammar and kanji introduced in the
+textbook "Basic Technical Japanese" by Daub, Bird, and Inoue.
+	All of the volumes have been designed as supplementary texts
+for an introductory course in technical Japanese, but the readings and
+exercises can be used for more advanced courses, as well. Each volume
+can also be used independently for self-study by practicing scientists
+or engineers who have some familiarity with Japanese grammar and wish
+to concentrate on the vocabulary and expressions that are important in
+their discipline.
+
+Series Editor
+	James L. Davis (jdavis@engr.wisc.edu) is Assistant Professor
+of Technical Japanese in the Department of Engineering Professional
+Development at the University of Wisconsin-Madison.
+
+
+Volume 1: Polymer Science and Engineering
+
+By R. Byron Bird and Sigmund Floyd
+ISBN 0-299-14694-4 (The University of Wisconsin Press)
+ISBN 4-13-087055-6 (University of Tokyo Press)
+Paper, 1995, $20.00
+
+	This book is part of a series of supplements to the textbook
+"Basic Technical Japanese." It introduces an additional 100 kanji that
+are important in building vocabulary for reading and translating the
+Japanese literature on polymer science and engineering.
+	The text offers ten lessons, each of which introduces ten new
+kanji as well as exercises for mastering them. The new kanji are
+printed in very large type at the beginning of each chapter so that
+the reader can see very clearly how the characters are structured. The
+exercises include several types of matching exercises and translation
+of sentences and short paragraphs. Full translations of some exercises
+allow learners to evaluate their own work. In addition, a list of 35
+more kanji related to polymer science is provided at the end of the
+book. Intended for self-study, the book provides a complete on-kun
+index of all 135 kanji, which enables learners, if they know the
+pronunciation of a word, to locate the introductory discussion of the
+corresponding kanji in the book.
+
+	R. Byron Bird is Vilas Professor Emeritus in the Department of
+Chemical Engineering at the University of Wisconsin-Madison, and is a
+coauthor of both "Basic Technical Japanese" and "Comprehending
+Technical Japanese." Sigmund Floyd is Business Manager of AtoHaas
+Pacific B.V., a joint venture between Elf Atochem S.A. and Rohm and
+Haas Company, in Tokyo.
+
+
+Volume 2: Biotechnology
+
+By James L. Davis
+ISBN 0-299-14714-2 (The University of Wisconsin Press)
+ISBN 4-13-087053-X (University of Tokyo Press)
+Paper, 1995, $25.00
+
+	This book is part of a series of supplements to the textbook
+"Basic Technical Japanese." It introduces 100 new kanji and over 1500
+technical terms that appear frequently in documents dealing with
+biotechnology, in addition to reviewing vocabulary containing the 365
+kanji presented in "Basic Technical Japanese."
+	In each of the ten lessons the text presents key vocabulary
+and ten new kanji, which reappear in the exercises for that lesson and
+throughout subsequent lessons, reinforcing learning. The exercises
+emphasize vocabulary building, kanji recognition, definition matching,
+and translation skills. An introductory lesson reviews the katakana
+and hiragana writing systems, as well as the kanji presented in the
+first ten chapters of "Basic Technical Japanese." The lessons in this
+book have been keyed to the final ten chapters of "Basic Technical
+Japanese," so that students can use the two volumes together to build
+a Japanese vocabulary and to practice translation related to
+biotechnology. In addition, a list of 35 more kanji related to
+biotechnology is provided at the end of the book. Intended for
+self-study, the book provides a complete on-kun index of all 135
+kanji, which enables learners, if they know the pronunciation of a
+word, to locate the introductory discussion of the corresponding kanji
+in the book.
+
+	James L. Davis is Assistant Professor of Technical Japanese in
+the Department of Engineering Professional Development at the
+University of Wisconsin-Madison.
+
+
+Volume 3: Kanji for Comprehending Technical Japanese
+
+By Edward E. Daub
+ISBN 0-299-14704-5 (The University of Wisconsin Press)
+ISBN 4-13-087052-1 (University of Tokyo Press)
+Paper, 1995, $30.00
+
+	Designed as a companion and study guide for the textbook
+"Comprehending Technical Japanese" (CTJ), this book may also be used as
+a supplement to the textbook "Basic Technical Japanese." It provides
+detailed explanations of the origin and meaning of the 500 kanji
+featured in CTJ, which were chosen for their frequency and
+significance in chemistry, physics, and biology.
+	Each chapter is keyed to a chapter in CTJ, presenting twenty
+kanji, vocabulary that use those kanji, a kanji-card format for study
+and review, the Japanese essay that appears at the close of each CTJ
+chapter, and its English translation. This volume also introduces
+significant vocabulary in the sciences that include kanji other than
+the 500 featured in CTJ.
+
+	Edward E. Daub is Professor Emeritus in the Department of
+Engineering Professional Development at the University of
+Wisconsin-Madison, and is a coauthor of both "Basic Technical Japanese"
+and "Comprehending Technical Japanese."
+
+
+Volume 4: Solid-State Physics and Engineering
+
+By Craig T. Van Degrift
+ISBN 0-299-14734-7 (The University of Wisconsin Press)
+ISBN 4-13-087054-8 (University of Tokyo Press)
+Paper, 1995, $20.00
+
+	This book is part of a series of supplements to the textbook
+"Basic Technical Japanese." It introduces 100 new kanji and over 700 new
+words and phrases that appear frequently in documents dealing with
+solid-state physics.
+	The text offers ten lessons, each presenting key vocabulary
+and ten new kanji, which reappear in the exercises for that lesson and
+throughout subsequent lessons, reinforcing learning. The exercises
+emphasize vocabulary building, kanji recognition, definition matching,
+and translation skills. An introductory lesson reviews the katakana
+and hiragana writing systems The lessons in this book have been keyed
+to the final ten chapters of "Basic Technical Japanese," so that
+students can use the two volumes together to build a Japanese
+vocabulary and to practice translation related to solid-state physics
+and engineering. In addition, a list of thirty-five more kanji related
+to polymer science is provided at the end of the book. Intended for
+self-study, the book provides a complete on-kun index of all 135
+kanji, which enables learners, if they know the pronunciation of a
+word, to locate the introductory discussion of the corresponding kanji
+in the book.
+
+	Craig T. Van Degrift is a physicist with over 30 scientific
+publications connected with condensed matter physics. He is also the
+founder of Kanji-Flash Softworks, a publisher of Japanese language
+instructional software. He is the author of Kanji-Flash/BTJ, a
+software package providing electronic flashcard testing of the
+vocabulary in "Basic Technical Japanese."
+
+
+**Also Available**
+
+Basic Technical Japanese
+
+By Edward E. Daub, R. Byron Bird, and Nobuo Inoue
+ISBN 0-299-12730-3
+Cloth, 1990, $35.00
+
+	Even with no previous training in Japanese language, readers
+of this book can learn to translate technical manuals, research
+publications, and reference works. "Basic Technical Japanese" provides
+step-by-step instruction, from an introduction to the Japanese writing
+system through a mastery of grammar and scientific vocabulary to
+reading actual texts in Japanese. With extensive character charts and
+vocabulary lists, the book is entirely self-contained; no dictionaries
+or other reference works are needed. The authors are scientists and
+engineers with extensive experience in translating Japanese.
+
+
+Comprehending Technical Japanese
+
+By Edward E. Daub, R. Byron Bird, and Nobuo Inoue
+ISBN 0-299-06680-0
+Cloth, 1975, $35.00
+
+	This book assumes a basic level of competence in reading
+Japanese and offers 25 lessons on reading Japanese texts on topics in
+physics, chemistry, and biology. Each lesson emphasizes a set of
+twenty kanji in readings of progressive difficulty; the lessons
+progress in subject from the most basic concepts in physics through
+such complex topics as atomic theory, genetics, and biochemistry.
+Useful for either courses or self-study, "Comprehending Technical
+Japanese" is well suited to the needs of scientists, engineers, and
+translators who **have some background** in Japanese but wish to
+develop reading and translating skills in technical fields.
+
+
+Kanji-Flash/BTJ
+
+By Craig Van Degrift
+$79.00 software only
+$99.00 bundle of software and "Basic Technical Japanese"
+
+	This DOS software is an electronic flashcard companion to
+"Basic Technical Japanese." It follows the text chapter-by-chapter,
+testing in a game-like manner the pronunciations and meanings of all
+510 kanji and 4,000 compound words introduced therein. Missed words
+can be saved for subsequent retesting. The program requires VGA or
+color EGA graphics. Quantity pricing available.
+
+
+For more information, to include placing orders, please contact:
+
+The University of Wisconsin Press
+114 North Murray Street
+Madison, WI 53715
+USA
+608-262-2994 (phone)
+608-262-7560 (facsimile)

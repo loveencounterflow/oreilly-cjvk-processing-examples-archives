@@ -1,0 +1,1252 @@
+                  ##             ##                               TM
+                  ##             ##  #########         ##########
+            ###############      ##        ##          ##      ##
+                  ##           ######    ##            ## **** ##
+                  ##             ##  ### ######        ##      ##
+             #############       ##  # # ##  ##        ##########
+             ## ##   ## ##      #### # # ##  ##            ##
+             ##  #   #  ##      #### # # ### ##        ##  ##
+             ##   # #   ##     # ### # # ## ##         ##  ##
+             ## ####### ##     # ##  ### ## ##         ##########
+             ##   ##    ##       ##      ###  ##      ##   ##
+             ## ####### ##       ##    # ##   ##     ##    ##
+             ##   ##    ##       ##     ##          #  ##########
+             ##   ##    ##       ## ############           ##
+             ##   ##  ####       ##                        ##
+             #          #        #                   ##############
+
+              NJStar(tm) - A Japanese Word Processor Version 3.0j
+ 
+                                  USER MANUAL
+ 
+                    Written by Hongbo Ni and Dr. Yo Tomita
+
+             Copyright (c) Hongbo Ni 1991-1994. All Rights Reserved.
+
+============================================================================
+
+
+                              TABLE OF CONTENTS
+
+0. SOFTWARE LICENSE
+..........................................................................
+    You must read this section first!
+
+1. ABOUT THIS MANUAL
+..........................................................................
+    Manual structure   Conventions
+
+2. NJSTAR OVERVIEW
+..........................................................................
+    Overview   Basic Concepts
+
+3. PROGRAM USAGE
+..........................................................................
+    NJSTAR.EXE   Command line options   Environmental variables
+
+4. MENU AND HELP
+..........................................................................
+    Menu tree   Quick help   Japanese/English switch
+
+5. FILE MANAGEMENT
+..........................................................................
+    Open file    Save file    Quit    Multiple file operation   DOS shell
+
+6. CURSOR MOVEMENT
+..........................................................................
+    Arrow keys   Quick move
+
+7. FILE EDITING
+..........................................................................
+    Basic editing   Screen display   Current status   Keyboard
+
+8. SEARCH AND REPLACE
+..........................................................................
+    Search   Replace
+
+9. BLOCK OPERATION
+..........................................................................
+    Mark a block   Copy   Paste   Block to file
+
+10. INPUTTING JAPANESE
+..........................................................................
+    Kana-Kanji  Romaji    English    Radical     EUC   ASCII
+    Other input methods
+
+11. TOOLS
+..........................................................................
+    Dictionary   Glossary   Kanji info
+
+12. MACRO COMMANDS
+..........................................................................
+    Create macro   Use macro   Macro text file    NJMAC.EXE
+
+13. PRINTING
+..........................................................................
+    NJPRN.EXE   Printing format commands   PRINTPS.EXE
+
+14. FILE CONVERSION
+..........................................................................
+    PCX file   JIS24PCX.EXE   EUC    New-JIS   Old-JIS   
+    NEC-JIS    Shift-JIS
+
+15. SYSTEM CONFIGURATION
+..........................................................................
+    NJCONFIG.EXE   Video setting   Key file   Printer drivers
+
+16. FONT UTILITIES
+..........................................................................
+    JISFONT.EXE   NJ24.EXE
+
+APPENDIXES
+..........................................................................
+     1: List of NJStar Configurable Functions
+     2: List of NJStar Key Names
+     3: Summary of NJStar Location-Sensitive Mouse Functions
+
+
+=============================================================================
+
+0. SOFTWARE LICENSE
+===================
+
+This Software license consists of three sections. Please read it  carefully.
+The term "NJStar Owner" refers to Hongbo Ni and Hongbo Data Systems only.
+
+Section I.
+
+This section is applicable to  both  NJStar  Shareware  Version  and  NJStar
+Registered Version.
+
+1.1 NJStar is not and has never been public domain software, nor is it  free
+    software. It is NJStar owner's property.
+
+1.2 No one may modify or patch the  NJStar  executable  files  in  any  way,
+    including but not limited to decompiling,  disassembling,  or  otherwise
+    reverse engineering the program.
+
+1.3 The use of  NJStar,  except  for  the  initial  30-day  trial,  requires
+    registration. The use of unlicensed copies  of  NJStar  by  any  person,
+    business, corporation, government agency or any other entity is strictly
+    prohibited.
+
+Section II.
+
+This section is applicable to NJStar Shareware Version.
+
+2.1 Any use of NJStar Shareware Version  is  the  implication  of  a  user's
+    acceptance of the terms and conditions listed in this license.
+
+2.2 Non-registered users  are  granted  a  limited  license  to  use  NJStar
+    Shareware Version on a 30-day trial basis for the purpose of determining
+    whether NJStar is suitable for their needs.
+
+2.3 A limited license is granted to copy and distribute NJStar only for  the
+    trial use of others, subject to the  above  limitations,  and  also  the
+    following:
+
+     A) NJStar must be copied in unmodified form,  complete  with  the  file
+        containing  this  license  information  and  the   file   containing
+        registration information.
+
+     B) The full machine-readable NJStar documentation must be also included
+        with each copy.
+
+     C) NJStar may not be distributed in conjunction with any other  product
+        without a specific license to do so from the NJStar owner.
+
+     D) No fee, charge, or other compensation may be requested or  accepted,
+        except as authorized below:
+
+        a) Operators of electronic bulletin board systems (sysops) may  make
+           NJStar available for  downloading  only  as  long  as  the  above
+           conditions are met. An overall or time-dependent charge  for  the
+           use of the bulletin board system is permitted as long as there is
+           not a specific charge for the download of NJStar.
+
+        b)  ASP  vendors  can  distribute  NJStar  without   obtaining   any
+           permission from NJStar owner. But  we  prefer  you  write  to  us
+           first, so we can send the latest version to  you.  Other  Vendors
+           may distribute NJStar only  after  obtaining  written  permission
+           from the NJStar owner. Such permission is usually granted. Please
+           write for details (enclose your catalog). Vendors may charge  the
+           normal disk duplication and handling fee, which should not exceed
+           $5  per  disk.  Please  refer  to  file   VENDOR.DOC   for   more
+           information.
+
+Section III.
+
+This section is applicable to NJStar Registered Version.
+
+3.1 User's request for registration for NJStar  Registered  Version  is  the
+    implication of a user's acceptance of the terms and conditions listed in
+    this license. All required information should be submitted in  order  to
+    be qualified for registered user. Acceptance of the request is  made  at
+    NJStar owner's determination. User may  not  withdraw  the  registration
+    after acceptance, except at NJStar owner's determination.
+
+3.2 A single user license permits a user to use  NJStar  only  on  a  single
+    computer. Licensed user may use the program on different computers,  but
+    may not use the program on more than one  computer  at  the  same  time.
+    Multiple and Network user license require special permission.
+
+3.3 User's registration for NJStar Registered Version is a purchase for  the
+    right to use NJStar only under the term and conditions  listed  in  this
+    license. At no circumstance, licensed users are allowed to copy, rent or
+    resell their licenses or NJStar product to the third party.
+
+3.4 When upgrade to a newer  version  of  NJStar,  user's  license  for  the
+    previous  version  are  automatically  suspended.  At  no  circumstance,
+    licensed users are allowed to  transfer  or  resell  their  licenses  or
+    NJStar product for the previous version to the third party.
+
+=============================================================================
+                            LIMITED WARRANTY
+
+
+This LIMITED WARRANTY contains two sections. Please read it carefully.  The
+term "NJStar Owner" refers to Hongbo Ni and Hongbo Data Systems only.
+
+Section I.
+
+This section is applicable for NJStar Registered Version only.
+
+1.1  The Author of NJStar warrants that all disks  provided  are  free from
+     defects in material and workmanship, assuming normal use, for a period
+     of 30 days from the date of purchase.
+
+1.2  The Author  of  NJStar  warrants  that  the  program  will  perform in
+     substantial compliance with the  documentation  supplied  within  this
+     document. If a  significant  defect  in  the  product  is  found,  the
+     Purchaser may return the product for a refund. In no event will such a
+     refund exceed the purchase price of the product.
+
+Section II.
+
+This section is applicable for both NJStar Shareware Version and Registered
+Version.
+
+2.1  Use of this product for any period of time constitutes your acceptance
+     of this agreement and subjects you to its contents.
+
+2.2  EXCEPT  AS  PROVIDED  ABOVE,  THE  AUTHOR  OF  NJSTAR  DISCLAIMS   ALL
+     WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT  LIMITED  TO
+     IMPLIED WARRANTIES OF MERCHANTABILITY AND  FITNESS  FOR  A  PARTICULAR
+     PURPOSE, WITH  RESPECT  TO  THE  PRODUCT.  SHOULD  THE  PROGRAM  PROVE
+     DEFECTIVE, THE PURCHASER ASSUMES THE RISK OF PAYING THE ENTIRE COST OF
+     ALL NECESSARY SERVICING, REPAIR, OR CORRECTION AND ANY  INCIDENTAL  OR
+     CONSEQUENTIAL DAMAGES. IN NO EVENT WILL THE AUTHOR OF NJSTAR BE LIABLE
+     FOR ANY DAMAGES WHATSOEVER (INCLUDING WITHOUT LIMITATION  DAMAGES  FOR
+     LOSS OF BUSINESS PROFITS,  BUSINESS  INTERRUPTION,  LOSS  OF  BUSINESS
+     INFORMATION AND THE LIKE) ARISING OUT OF THE USE OR THE  INABILITY  TO
+     USE  THIS  PRODUCT  EVEN  IF  THE  AUTHOR  HAS  BEEN  ADVISED  OF  THE
+     POSSIBILITY OF SUCH DAMAGES.
+
+============================================================================
+
+1. ABOUT THIS MANUAL
+====================
+
+This manual covers the complete information to run NJStar 3.0J  in both the
+Shareware and Registered Versions. (Note: additional utility  programs only
+provided for registered users are not covered in this manual.)  This manual
+is written  for  experienced computer users only, while tutorial is written
+for beginners.
+
+This manual contains the following sections:
+
+(NJSTAR1.DOC)
+          1.  About This Manual
+          2.  NJStar Overview
+          3.  Program Usage
+          4.  Menu and Help
+          5.  File Management
+          6.  Cursor Movements
+          7.  File Editing
+          8.  Search and Replace
+          9.  Block Operations
+(NJSTAR2.DOC)           
+         10.  Inputting Japanese
+         11.  Tools
+         12.  Macros Commands
+         13.  Printing
+(NJSTAR3.DOC)              
+         14.  File Conversion
+         15.  System Configuration
+         16.  Font Utilities
+         Appendices
+          
+
+Please note the following conventions used in this manual:
+
+1. This manual is organized in a similar way to NJStar's menu  tree,  unless
+   otherwise indicated. Functions are grouped as they are listed in the main
+   menu, but not necessarily in the same order. Functions that do not appear
+   in the main menu are grouped in related sections.
+
+2. Each function includes a brief explanation,  together  with  the  related
+   information.  For instance,  the input method for  Japanese characters is
+   described under the function of <RomajiInput> or <KanaKanjiInput>.
+
+3. Under each function, the function name is  given  within  < > signs.  The
+   function names may be used for the NJStar key configuration file or macro
+   text files. NJStar's standard key  name  for  corresponding  function  is
+   presented with [ ] signs, followed by the menu item  display  in Japanese
+   and English, if any. If the function is not shown in the menu, a Japanese
+   translation and English equivalence is given in ( ) for reference.
+
+4. This manual is written in English, including a  few  Japanese characters,
+   and is thus basically ASCII compatible. You may view or  print  it  under
+   NJStar. When viewing under other English editors or word processors,  all
+   English letters can  be  viewed  properly,  but  Japanese  characters are
+   scrambled. If you want to produce a printed copy of this manual  with  an
+   English word processor, it is advisable  to  remove  first  the  Japanese
+   characters.
+
+5. This manual  is  divided  into  three  files,  NJSTAR1.DOC  (this  file),
+   NJSTAR2.DOC, and NJSTAR3.DOC.
+
+6. For the NJStar development  history  and  other  background  information,
+   please read README.DOC. For utility programs not covered in the shareware
+   version, read  UTILITY.DOC.  For  Updates  made  after  this  manual  was
+   written, please read WHATSNEW.XXX. For information on ther products  from
+   Hongbo Data Systems, please read PRODUCTS.DOC.
+
+=============================================================================
+
+2. NJSTAR OVERVIEW
+==================
+
+This section presents an overview of NJStar 3.0J, as well as  some  concepts
+that will be used in the following sections of this manual.
+
+User may start NJStar from any DOS prompt, if the NJStar's sub-directory  is
+in the system path statement. NJStar also provides a full range  of  command
+line options for opening and editing files.
+
+NJStar's interface includes both pull-down menus  and  a  quick-key  command
+system.  All  major  functions  are  re-configurable,  ie.,  capable  to  be
+reassigned into user selected keys. NJStar also provides a brief help screen
+as a reminder for reconfigured command keys. NJStar's screen colors  can  be
+reset by the user.
+
+After entering NJStar, the top portion (18 lines for EGA, 24 lines for  VGA,
+or 29 lines for SuperVGA) is referred to as the "editing screen," where  you
+can display or edit a file. Under certain input modes however,  the  editing
+screen may also be used to enter the input codes  in  order  to  reduce  eye
+movement.
+
+The "bottom line" is used mainly for the following purposes:
+
+     A)   Display the current Japanese input mode;
+     B)   Accept Japanese input codes;
+     C)   Display Japanese characters that can be used for input;
+     D)   Display the Status of macro operation mode; and
+     E)   Display the Status of JASCII (full-size English character) mode.
+     F)   Display the Time Clock when JASCII mode is off.
+
+The bottom line may also be used for:
+
+     A)   Report file or system status;
+     B)   Report operation results;
+     C)   Report error messages; and
+     D)   Accept input of the operational variables.
+
+There are two different concepts of "line" in NJStar. One is called  "Screen
+Line," a line as shown on the screen. The other is  "Hard  Line,"  a  string
+ending with a [Return] character. Often, a hard line is called a  paragraph.
+We will specify the exact meaning of "line" in the context where appropriate.
+
+Under NJStar, the maximum size of a single  file  is  64K,  that  is,  65536
+bytes. However, users may open several files simultaneously.  When  multiple
+files are opened  for  editing,  a  "File  Ring"  is  established  for  file
+management. The file displayed on the screen is known as the "Current File".
+A file ring looks like the following  diagram,  with  files  arranged  in  a
+counter-clockwise order:
+
+                        FILENAME.1 <-----  Current File
+                        /       \
+                      /           \
+                    /               \
+              FILENAME.2 ---------> FILENAME.3
+
+When a new file is opened, it will be added to the file ring,  next  to  the
+current file. The newly-opened file will become the current  file.  See  the
+following diagram,
+
+
+     Current File --->   FILENAME.4  <--------  FILENAME.1
+                            |                      ^
+                            |                      |
+                            v                      |
+                         FILENAME.2   ------->  FILENAME.3
+
+
+There is no limit to the number of files in the file ring, as  long  as  the
+computer can provide enough memory to manage it.  NJStar's  file  management
+functions make it very easy to control a single file or a bunch of files. In
+addition to these functions invoked by the user,  NJStar  can  automatically
+save the current file to prevent any  unexpected  interruption,  such  as  a
+power failure. NJStar also keeps a .BAK file for the user when saving a file
+which has been modified.
+
+Many operations also refer to "current  screen",  "current  line",  "current
+string", or, "current character". By the same token, that means the  screen,
+line, string or character the cursor is pointed at.  However,  the  "current
+block" means the block that is set in the current file, no matter  where  it
+is located.
+
+When inputting Japanese characters, NJStar prior to V3.0j uses Romaji as the
+primary input method. When the  user  enters  an  input  code,  NJStar  will
+display one or  a list of matched characters at the bottom  line.  The  user
+can  select  the desired character in order to paste  it  into  the  editing
+screen.
+
+In addition to Romaji, NJStar 3.0J  now  includes  the  on-line  version  of
+Romaji input called "Kana-Kanji" as well as 10 other popular input  methods,
+such as English to Japanese, Radical and  ASCII.  Users may  choose  to  use
+other input methods as a primary one.
+
+NJStar's editing functions, including cursor locating, text copying, moving,
+deleting, as well as undeleting commands, make  it  possible  to  manipulate
+text in the way preferred by the user. Complete block functions  make  those
+editing tasks even easier, especially for exchanging data  between  multiple
+files. NJStar's macros also add the feasibility to create shortcuts for many
+tasks.
+
+When printing, you do not have to leave NJStar. A file can be printed  to  9
+pin, 24 pin dot matrix printers, laser printers, as well as  other  printers
+from the NJStar editor. NJStar's  print  format  commands  enable  users  to
+customize the page layout whenever necessary. User may specify the range  of
+page numbers to print and the  output  devices  for  printing.  NJStar  also
+provides many  file conversion capabilities to enhance information  exchange
+in Japanese.
+
+For a more  detailed  description  of  NJStar's  functions  and  operational
+procedures, please read the following text.
+
+=============================================================================
+
+3. PROGRAM USAGE
+================
+
+This section describes NJStar's usage, and its command line options.
+
+To invoke NJStar from the DOS  prompt,  make  sure  that  the  NJStar  files
+(NJSTAR.EXE and other auxiliary files) are  in  the current sub-directory or
+accessible through the system path  statement.  The  following  is  a  brief
+presentation about NJStar usage and command line options:
+
+PROGRAM   NJSTAR.EXE
+
+     [USAGE]
+          NJSTAR [options] [filename, filename, ... filenames] [+linenum]
+
+     [OPTIONS]
+          -?/h    - Help information
+          -e      - Use EGA 19 line display for VGA monitor
+          -m      - Use MonoEGA, MonoVGA/MCGA (640x480x2)
+          -s      - Use predefined Super VGA monitor
+          -r      - Open files as Read Only, so can not save
+          -d      - Automatically display a file until [Ctrl+C] pressed
+          -j      - Set Shift-JIS as default file format
+          -lmacro - Load Macro from file "macro.NJM" into macro buffer
+          -xmacro - Load  Macro from file  "macro.NJM" into macro
+                    buffer and then execute the macro once
+
+     Filename: For any file(s) to be edited. More than one filename  can  be
+               entered at a command line. DOS wildcards, * or ?, can be used
+               as part of filename. The drive name and the full path can  be
+               added to the file if necessary. If the  file  name  does  not
+               exist on the disk, a new file will be opened under this name.
+               NJStar adds the ".jis" file extension if none  is  specified.
+               If no filename is entered, NJStar will open an  unnamed  area
+               for editing.
+
+     +linenum: [linenum] points to the line where the cursor will be located
+               after the file is opened. The line is  understood  as  string
+               ending with a [Return] character, not a screen line.  If  the
+               line number is greater  than  the  last  line's  number,  the
+               cursor will be located at the end of the  file.  The  special
+               line number, "+$" will position the cursor at the end of  the
+               file. If no line number is entered, the cursor will be at the
+               beginning of the file.
+
+     [EXAMPLES]
+
+          C:\NJJ30> NJSTAR njstar.doc +200 njstar +$
+
+          C:\NJJ30> NJSTAR *.doc *.txt
+
+          C:\NJJ30> NJSTAR -e njstar.doc
+
+          C:\NJJ30> NJSTAR -v *.tx?
+
+          C:\NJJ30> NJSTAR -j -lmymac osaka.jis
+
+Please note that for  NJStar's  auxiliary  files,  only  font  (jis*.*)  and
+dictionary (*.dic) files can be located on a directory other  than  NJStar's
+home directory. If this is the case, you must use DOS environment variables,
+NJZK and NJDIC, to identify the location of font and dictionary  files.  For
+example, if the font files  are  located  in  C:\NJJ30\FONT  and  dictionary
+files in C:\NJJ30\DIC, add the following lines to your AUTOEXEC.BAT file:
+
+          SET NJZK=C:\NJJ30\FONT
+          SET NJDIC=C:\NJJ30\DIC
+
+Alternatively, those two variables can also  be  defined  in  NJSTAR.INI  by
+adding these two lines:
+
+          NJZK=C:\NJJ30\FONT
+          NJDIC=C:\NJJ30\DIC
+
+The SET commands in AUTOEXEC.BAT override definitions in NJSTAR.INI.
+
+By defining NJZK and NJDIC in NJSTAR.INI or as  environment  variables,  you
+can avoid the need for multiple copies of fonts  and  dictionaries  on  hard
+disk when multiple versions of NJStar are installed. Those two variables are
+also used by all programs based on the NJSDK Japanese  software  development
+kits.
+
+=============================================================================
+
+4. MENU AND HELP
+================
+
+This section describes NJStar's Menu system and online Help functions. These
+functions are located under "Help" (ヘルプ) in the  main  menu,  except  the
+<Menu> function.
+
+FUNCTION   <Menu>   [ESC]        (メニュー   Main menu)
+
+This function will call up NJStar's pull-down menu.
+
+The following is the Menu Tree in English. Due to limited space, some  items
+are abbreviated arbitrarily.
+
+FILE     EDIT      BLOCK     SEARCH    INPUT     TOOLS      OUTPUT    HELP
+======== ========= ========= ========= ========= ========== ========  =======
+LoadFile Undelete  MarkBlock Search    KanaKanji EdicLookup PrintFile Help
+OpenFile Del Line  MarkLine  SearchFwd Romaji    Gossary    CreatePCX Jap/Eng
+SaveFile DelToEdLn MarkWord  SearchBwd Engl->J   KanjiInfo  --------- Copyrit
+ClosFile DelToBgLn CopyBlock Replace   Radicals  ---------- save as.. Register
+Ren File Dup Line  MoveBlock AutoRepl  EUC Input NJ Config  ...EUC  
+SaveBlck --------- Del Block --------- Ex Input  ---------- ...NewJIS
+FileList FileStat  UnDelBlk  Beg Line  Symbols   Save Macro ...OldJIS
+NextFile Time&Date UnMarkBlk End Line  Convert   Read Macro ...NECJIS
+PrevFile List Dir  GotoBlock Page Up   UndoCvrt  Macro Exec .ShiftJIS
+Save All File Name Copy      Page Dn   Options   Macro Rec  
+DOS Cmmd WordCount Paste     Beg File  Jascii            
+DosShell ToggleEOL           End File
+Exit All                     GotoLine           
+                                                   
+
+In ASCII mode, or in any Japanese input mode without  a  Japanese  character
+selected in the bottom line, press [ESC] to call up the menu.
+
+Mouse users can position the mouse pointer at the top line of the screen and
+click the mouse's left button once to call up the menu.
+
+When the main menu is displayed, use the cursor keys or the mouse pointer to
+select a main menu item. Press [Return] or click the left mouse button once,
+to activate a pull-down submenu under the main menu item. If the  system  is
+currently in English, enter the first letter of the  desired  menu  item  to
+call up the submenu.
+
+Submenu item selection operates in the same way as the main menu  items.  If
+the system is currently in English, enter the first  upper  case  letter  in
+the menu item to execute the menu item command.
+
+To turn off the main menu, press [ESC] key,  or  click the left mouse button
+once while the mouse pointer is pointing to any location outside the current
+menu area.
+
+FUNCTION   <EnglishMenu>  [Ctrl+M]    メニュー切替    ENGLISH
+
+Toggles between Japanese and English menu system. Please note the  different
+meaning for the menu item. That  is, it offers  "English  Menu"  when  under
+Japanese mode, and vice versa. Once switched, it also  resets  the  language
+for the help screen and the system messages and prompts.
+
+FUNCTION   <QuickHelp>   [F1]       ヘルプ           Quick Help
+
+Displays NJStar's Quick Help screen. The content of the default help  screen
+may be found in KANJI.HLP (in Japanese) and NJCONFIG.HLP (in English).
+
+There are 24 lines in the help screen, with up  to  80  characters  in  each
+line. Only 18 Lines can be displayed on EGA screens at  one  time,  but  the
+rest 6 lines will be displayed after the first screen. If you have  modified
+KANJI.HLP / NJCONFIG.HLP, or you want to  use  your  own  help  screen,  run
+NJCONFIG.EXE in order to write a new Help screen  into  NJSTAR.NJJ.  A  help
+screen file can have 80 characters per line and up to 24  line  maximum.  It
+must be in ASCII format or EUC format. 
+
+Pressing the mouse middle button at the bottom line also  invokes  the  help
+function. After viewing the help screen, you can press any key to go back to
+the current editing screen.
+
+=============================================================================
+
+5. FILE MANAGEMENT
+==================
+
+This section describes NJStar's file  management  functions.  All  functions
+listed here can be found under "File" (文書) in the top menu.
+
+FUNCTION   <EditFile>      [F8]             文書の読出し     Load File
+
+Opens a user specified file on disk, and place it into the File  Ring  after
+the current file. NJStar will then switch  to  the  newly  opened  file  and
+display it as the new current file. The file from  which  the  function  was
+initiated remains in the File Ring as the previous file.
+
+When executing this function, NJStar will prompt for a file  name.  You  may
+enter a filename at the prompt, DOS wild cards (*,?) can be  used, including
+the drive name and full path if necessary. Alternatively, you can press [F1]
+to list all the files in the current sub-directory in a pop-up window.
+
+From the pop-up file list window, you can select a file with the cursor keys
+or the mouse. Sub-directory items are listed before  the  file  name.  "\.."
+indicates a parent directory  for  the  current  sub-directory.  "(NewFile)"
+opens an "untitled" file. Other drive letters, if any, would be given at the
+end of the list, such as [A:], [B:]. The [DEL] key will delete a highlighted
+file, (not a sub-directory), from the disk after confirmation.
+
+When the list extends beyond the window, you can use the down arrow  key  or
+[PgDn] to scroll through the list. With a mouse, click  the  left  or  right
+button and drag the mouse to scroll the list.
+
+Before switching to the newly-opened file,  NJStar  checks  to  see  if  the
+current file has been modified. You have to confirm whether or not to save a
+modified file. If you answer [N]o, the modifications  in  the  current  file
+will be abandoned. At any point, press [ESC] to cancel the request.
+
+If the current file is an "untitled" file, the system will not ask  for  the
+filename until you are ready to save the file.
+
+When loading a file, NJStar can automatically detect a range  of  7-bit  JIS
+codes (Old-JIS, New-JIS, NEC-JIS), and save to original code.  It  can  also
+detect Shift-JIS (8-bit) if the "Shift-JIS" auto detection is switched on in
+NJCONFIG 'G' option. But since EUC and Shift-JIS share some  coding  spaces,
+there could be some errors. If you are sure that the file is Shift-JIS,  use
+option '-j' at NJStar's command line.
+
+FUNCTION   <OpenFile>     [Ctrl+O]      オープン      Open File
+
+Invokes the <EditFile>+[F1] key function. No filename is  asked.  To  invoke
+this function with the mouse, press the right button on any portion  of  the
+bottom line. See description under  Function  <EditFile>  for  more  details
+about operations in the pop-up file list window.
+
+FUNCTION   InsertFile    [Ctrl+I]       (文書の挿入    Insert File)
+
+This function is implemented as a macro in NJCONFIG.KEY.
+
+This function will insert a second file to the location where the cursor  is
+pointed to. When you start this function, it will bring up a  file  list  as
+described in <EditFile>. User may select a file to be opened, or press [ESC]
+to cancel the operation. The content of the inserted file will be marked  in
+reverse video.
+
+Since NJStar limits the file size to 64K, it is advisable not  to  insert  a
+file that won't fit into the current file. To be safe, you should  save  the
+current file before you insert another file of unknown length.
+
+FUNCTION   <NextFile>     [F10]      次の文書へ            Next File
+
+When editing multiple files, this function will move to the next file in the
+File Ring and then present that file as the  current  file.  The  file  from
+which the function was initiated remains in the File Ring  as  the  previous
+file.
+
+Before leaving the current file, NJStar may check to see if the current file
+is modified. You must confirm whether to save the modified file or  not.  If
+you answer [N]o, modifications will be abandoned. Press [ESC] to cancel  the
+request.
+
+FUNCTION   <PrevFile>     [Alt+F10]    前の文書へ          Prev File
+
+When editing multiple files, this function will move to the previous file in
+the File Ring and then present that file as the current file. The file  from
+which the function was initiated remains in the File Ring as the next  file.
+(Please see <NextFile>.)
+
+FUNCTION   <FileList>      [Shift+F10]   文書一覧           File List
+
+When editing multiple files, this function will display a pop-up window with
+all filenames in the current File  Ring.  The  current  file  name  will  be
+listed as the first item and the others listed in  the  order  of  the  File
+Ring. A file can be picked up from this list without changing the  order  of
+the File Ring.
+
+When the list displays, use the cursor key to select a  filename,  and  then
+press [Return] to open that file. Or, you can use the mouse pointer to point
+to the filename and then click the left button  once  to  select  the  file.
+Press [ESC] to select no file and go back to the  current  file.  Otherwise,
+when a file is selected, NJStar will check the modification in  the  current
+file. If there are any unsaved modifications, the system  will  ask  you  to
+save the file if necessary. (Please see <EditFile>.)
+
+If there is no Japanese character at the bottom line waiting to be selected,
+point the mouse pointer at the middle section of the bottom  line  and  then
+click the left button once to invoke this function.
+
+FUNCTION   <RenameFile>      [F7]       文書名変更         Rename File
+
+Renames the current file  to  a  user  specified  name,  without  saving  it
+immediately.
+
+The program will prompt you to enter the new filename, with drive  name  and
+full path if necessary. NJStar prompts to confirm the name if the file  name
+exists already. The request can be cancelled by pressing [ESC].
+
+FUNCTION   <SaveFile>        [F2]       文書の保管      Save File
+
+Saves the current file to disk under its current file  name.  If  NJStar  is
+configured to produce a '.BAK' file on saving, it will produce a backup file
+with a .BAK extension name. ie. the disk file with  the  same  name  as  the
+current file is renamed to *.BAK.
+
+If disk is full or the file is read only, an error message will be displayed
+on the bottom line.
+
+FUNCTION   <File>    [F4]               (文書           File)
+
+Closes the current file and withdraw it from the File Ring.  When  quitting,
+it saves the current file to disk. If there was only one file  open,  NJStar
+exits to DOS. Otherwise, it goes to the next file in the File Ring.
+
+If the disk is full or the file is  read-only,  an  error  message  will  be
+displayed in the bottom line and NJStar will prompt to quit. If the disk  is
+full, you can change to another disk. If the current file is read-only,  the
+message "This file is Read Only, can't save!" is displayed. You have to  use
+<RenameFile> to rename the current file to another filename, then use <File>
+or <SaveFile> again, or use <SaveEUC> function (found under OUTPUT) to  save
+it under a different filename.
+
+FUNCTION   <SaveAll>     [Ctrl+F4]       全て保管          Save All
+
+When editing multiple files, this function will save  the  current  file  to
+disk. All files are released from the File Ring and you can exit to DOS.  If
+it fails to save files, it stops before quitting. (Please see <File>.)
+
+FUNCTION   <QuitFile>     [F3]           文書を終了        Close File
+
+Exits from the current file  without  asking  to  save  the  file  to  disk.
+However, if the current file has been modified, you will be prompted to save
+the file. Press [Y] to keep modifications, or [N] to quit. If there is  only
+one file open, NJStar quits to DOS; otherwise, it opens the next file in the
+File Ring.
+
+FUNCTION   <QuitAll>      [Ctrl+F3]      全て終了          Exit All
+
+When editing multiple files, this  function  exits  from  the  current  file
+without a Save option. However, if the current file has  been  modified,  it
+will prompt for the optional Save. (Please see <QuitFile>.)
+
+FUNCTION   <DOS>          [Ctrl+D]       DOS コマンド      DOS Command
+
+Executes a user specified DOS command. When finished, it will switch back to
+NJStar. This command is very useful in macro commands. Users can access  any
+external program to perform some tasks (such as spelling checking) which are
+not available in NJStar.
+
+FUNCTION   <Shell>        [Ctrl+S]       DOS シェル       DOS Shell
+
+Shells out to DOS. NJStar's DOS shell occupies very little  RAM  and  leaves
+enough memory for most DOS operations. In NJStar's shell, the  DOS's  prompt
+shows <NJ>, for example:
+
+C:\NJJ30\><NJ> _
+
+Remember to type "EXIT" to return to NJStar once you have finished with DOS.
+
+=============================================================================
+
+6. CURSOR MOVEMENTS
+===================
+
+This section describes NJStar's cursor movements. Some of them  are  located
+under "Search" (検索) in the main menu.
+
+Mouse: point the mouse pointer to any position in the screen, except the top
+line, and then click the left button once to  relocate  the  cursor  on  the
+current screen.
+
+FUNCTION   <CursorLeft>    [LEFT]        (左方へ         Left)
+
+Moves the cursor to  the  previous  character.  If  the  cursor  is  on  the
+beginning of the current line, the cursor  will  move  to  the  end  of  the
+previous line. If the cursor is on the top left of the  screen,  the  screen
+display will scroll up one line.
+
+FUNCTION   <CursorRight>   [RIGHT]       (右方へ         Right)
+
+Moves the cursor to the next character. If the cursor is on the end  of  the
+current line, the cursor will move to the beginning of the next line. If the
+cursor is on the bottom right of the screen, the screen display will  scroll
+down one line.
+
+FUNCTION   <CursorUp>      [UP]          (上方へ         Up)
+
+Moves the cursor one line up. A line here is a line shown on the screen, not
+a hard line. If the cursor is on the top line of  the  current  screen,  the
+screen display will scroll up one line.
+
+FUNCTION   <CursorDown>    [DOWN]        (下方へ         Down)
+
+Moves the cursor one line down. If the cursor is on the bottom line  of  the
+current screen, the screen display will scroll down one line.
+
+FUNCTION   <BegLine>       [HOME]        行頭へ          Beg Line
+
+Moves the cursor to the beginning of the current screen line. If the  cursor
+is already in the beginning of the line, the cursor  will  be  relocated  to
+first non-blank character in the current line.
+
+FUNCTION   <EndLine>       [END]         行末へ          End Line
+
+Moves the cursor to the end of the current screen line.
+
+FUNCTION   <WordLeft>      [Ctrl+LEFT]   (一語左へ       Word Left)
+
+Moves the cursor to the beginning  of  the  current  word.  In  NJStar,  all
+Japanese characters, ASCII letters (a-z, A-Z), numbers (0-9), and underscore
+(_) are handled as elements of a word. Other characters, including  Japanese
+punctuation, are considered as word separators.
+
+FUNCTION   <WordRight>     [Ctrl+RIGHT]  (一語右へ       Word Right)
+
+Moves the cursor to the beginning of the next word. (See <WordLeft>)
+
+FUNCTION   <BegScreen>     [Ctrl+UP]     (画面頭へ       Begin Screen)
+
+Moves the cursor to the top left of the current screen.  If  the  cursor  is
+already at that position, it will do nothing.
+
+FUNCTION   <EndScreen>     [Ctrl+DOWN]   (画面末へ       End Screen)
+
+Moves the cursor to the bottom left of the current screen. If the cursor  is
+already at that position, it will do nothing.
+
+FUNCTION   <PageUp>        [PGUP]        (一画面上へ     Page Up)
+
+Moves the cursor to the bottom line of the previous screen, then  display  a
+new screen. If the current screen is the top screen, it will do nothing.
+
+FUNCTION   <PageDown>      [PGDN]        (一画面下へ     Page Down)
+
+Moves the cursor to the top line of the next  screen,  then  display  a  new
+screen. If the current screen is the last screen, it will do nothing.
+
+FUNCTION   <BegFile>       [Ctrl+HOME]      文書頭へ     Beg.File
+
+Moves the cursor to the beginning of the file, and redisplay the  screen  if
+necessary. If the cursor is at  the  beginning  of  the  file,  it  will  do
+nothing.
+
+FUNCTION   <EndFile>       [Ctrl+END]       文書末へ            End File
+
+Moves the cursor to the end  of  the  file,  and  redisplay  the  screen  if
+necessary. If the cursor is at the end of the file, it will do nothing.
+
+FUNCTION   <ScrollUp>    [Alt+UP]         (上へスクロル       Scroll Up)
+
+Scrolls the screen display up line by line  towards  the  beginning  of  the
+file. Please notice that the  cursor's  relative  position  on  the  current
+screen will not be changed.
+
+Mouse: point the mouse pointer at any position of the current screen, except
+the top line, and then drag the mouse up to scroll the screen up.
+
+FUNCTION   <ScrollDown>   [Alt+DOWN]       (下へスクロル      Scroll Down)
+
+Scrolls the screen display down line by line, to the end of  the  file.  The
+cursor's relative position at the current screen will not be changed.
+
+Mouse: point the mouse pointer at any position of the current screen, except
+the top line, and then drag the mouse down to scroll the screen down.
+
+FUNCTION   <GotoLine>      [Ctrl+F6]        指定行へ           Goto Line
+
+Moves the cursor to a user specified line and then redisplay the  screen  if
+necessary. A line here is a hard line.
+
+When NJStar asks for a line number, you can enter one of the following:
+
+        Line #    Results
+        ======    ====================================================
+        100       Go to the 100th line
+        +50       Forward 50 lines from the current line
+        -20       Back up 20 lines from the current line
+         $        Go to the end of the file
+        9999      When line number exceeded, go to end-of-file
+
+=============================================================================
+
+7. FILE EDITING
+===============
+
+This section describes NJStar's basic editing commands. Please read the next
+two sections for Search/Replace and Block Operations. Some functions  listed
+below can be found under "Editing Function" (編集) in the main menu.
+
+FUNCTION   <Enter>         [ENTER]          (リターン           Return)
+
+Inserts a [Return] character at the end of the current line  and  then  move
+the cursor to the beginning of the next new line.
+
+This function is also used to end user input in many other  cases,  such  as
+search strings, filenames, printing variables, etc.
+
+FUNCTION <HardReturn>  [GREYENTER] or [Shift+ENTER] (エンター  HardReturn)
+
+Inserts a [Return] character into the search  string.  The  display  of  the
+[Return] character depends on user's setting for End  of  Line  symbol.  The
+default is ASCII character 20.
+
+In some Japanese input modes which require only numerical  keys  on  keypad,
+such as  "Stroke", this  function  may  be  used  for  selecting  the  first
+character in the bottom line.
+
+For other situations, this function is the same as <Enter>.
+
+FUNCTION   <Space>        [SpaceBar]        (スペース        Space)
+
+Enters a space character  into  the  current  file.  If  the  system  is  in
+non-JASCII mode, it enters an ASCII space  character.  Otherwise,  it enters
+two ASCII space characters.
+
+When the bottom line has Japanese characters waiting to  be  selected,  this
+function selects the first character. To input a space in  this  case,  user
+should use ALT+Space or CTRL+Space.
+
+NOTE: <Space> is not a configurable function.
+
+FUNCTION   <DelChar>       [DEL]            (文字の削除     Del Char)
+
+Deletes the character at the current cursor position. If the current  cursor
+is at the end of a line, the End of Line character, ie., [Return] character,
+will be deleted so the next line will be joined to the current line.
+
+FUNCTION   <BackSpace>     [BS]             (バックスペース       BackSpace)
+
+Deletes the character before the current cursor  position.  If  the  current
+cursor is at the beginning of a  line,  the  previous  line's  End  of  Line
+character will be deleted so the current line will be joined to the previous
+line.
+
+FUNCTION   <DelLine> [Ctrl+BackSpace] /[Ctrl+Y]  この行を削除    Del Line
+
+Deletes the current screen line, including the End of Line character.
+
+FUNCTION   <DelToBegLine>  [Ctrl+J]         行頭まで削除     Del to Beg Line
+
+Deletes all characters up to the beginning of the current screen  line,  not
+including the character at the current cursor position. If the cursor is  at
+the beginning of a line, it will do nothing.
+
+FUNCTION   <DelToEndLine>  [Ctrl+K] or [Ctrl+E] 行末まで削除 Del to End Line
+
+Deletes all characters from the current cursor position to the  end  of  the
+current screen line, not including the End of Line  character.  However,  if
+the current line is a blank line, or the cursor is at the end of a line, the
+End of Line character will be deleted.
+
+FUNCTION   <UnDelLine>     [F9]             削除の回復       UnDelete
+
+Recovers the most recently deleted text by any  of  the  deleting  functions
+listed above,  and  insert  the  recovered  text  into  the  current  cursor
+position.
+
+If one or more  deleting  functions  are  used  without  interruptions,  all
+deleted text  could  be  recovered  by  this  function.  However,  if  other
+non-deleting functions are invoked in between deleting, such as  moving  the
+cursor, only the latest deleted text could be recovered.
+
+FUNCTION   <DupLine>       [Ctrl+L]         この行を複写      Dup Line
+
+Duplicates the current screen line to the  next  line,  and  then  move  the
+cursor down to the next line.
+
+FUNCTION   <TimeDate>      [Ctrl+T]         日付けと時刻      Time & Date
+
+Inserts the current system date and time into the editing screen in Japanese
+format. Time/Date will appear  as  Year,  Month,  Day,  Hours,  Minutes  and
+Seconds. For example: 1994 年 2 月 3 日  木曜日  11:29:04
+
+The system clock has to be set for  this  function  to  return  the  correct
+Time/Date.
+
+FUNCTION  <FileName>       [Ctrl+X+N]       文書名の貼付け    File Name
+
+Inserts the current filename, together with the full path, into the  editing
+screen, or into the prompt string on the bottom line when used in a macro.
+
+FUNCTION  <ToggleEOL>      [Ctrl+F9]        行末マーク        Toggle EOL
+
+Toggles the display of End of Line symbols at the editing screen. The symbol
+character and the initial display status can be defined  with  NJCONFIG.EXE.
+The default symbol is ASCII character 20, and the default display status  is
+off.
+
+FUNCTION  <FileStatus>     [Ctrl+F1]        文書について      File Status
+
+Displays the status of the current file, such  as  file  type,  name,  size,
+number of Japanese characters (including all the  two-byte characters),  and
+number of hard lines, at the bottom  line.
+The current cursor position, in terms of line and column, is also displayed.
+
+FUNCTION  <WordCount>      [Ctrl+F5]        語句の統計        Word Count
+
+Counts the frequency of a user specified string, within a block or from  the
+current cursor position to the end of the file. The result will be displayed
+at the bottom line. This function can also be used within a marked block.
+
+When this function is invoked, it will prompt for a string  to  be  counted.
+The string may be any type of text in the file and any relevant input method
+can be used to input Japanese or other characters. If this function, or  any
+one of searching functions, was called earlier, the system will prompt  with
+the previously entered string. In this case, press [Ctrl+BackSpace] to clear
+the existing string, or use other keys to edit the string. When ready, press
+[Return] key to accept the string. (The <HardReturn> key is  used  to  enter
+the End of Line symbol in the string.) Press [ESC] key at any time to cancel
+the counting request.
+
+FUNCTION   <ListDir>       [Shift+F9]         ディレクトリ       List Dir
+
+Lists files in a sub-directory, as well as the total file  number  and  free
+disk space. You can specify the drive, path, or  file  name,  if  necessary.
+After viewing the directory, press any key to go back to the editing screen.
+
+FUNCTION   <Keyboard>      (not assigned by default)
+
+This function enables you to select  a  different  keyboard,  e.g.  English,
+French, German and Swedish-Danish-Norwegian. The default  keyboard  is  also
+configurable through NJCONFIG's General option. This command is only  useful
+when no other keyboard driver is installed.
+
+International keyboard support (any countries supported by DOS) is available
+through the MS-DOS keyboard driver. The Keyboard driver should be  installed
+before starting NJStar. However,  since  ASCII  161-254  are  used  to  code
+Japanese characters, the special characters in this range will  be  ignored.
+Note that ASCII 225 (beta) is remapped as ASCII 158 in NJStar.
+
+With the International keyboard support, the <keyboard> command is no longer
+necessary. This command is provided for compatibility with V2.1, and may  be
+removed in future version.
+
+=============================================================================
+
+8. SEARCH AND REPLACE
+=====================
+
+This section describes NJStar's Search and Replace functions.  All  of  them
+are located under "Search" (検索) in the main menu.
+
+FUNCTION   <Search>        [F5]             検索           Search
+
+Searches a user specified string, beginning at the current  cursor  position
+and to the end-of-file. When the first match is found, the  cursor  will  be
+relocated to the beginning of the string and the screen may  be  redisplayed
+if necessary. If no match is found, a  message  will  be  displayed  at  the
+bottom line.
+
+The string to be searched may be any type of text.  Please  see  <WordCount>
+for entering the search string.
+
+FUNCTION   <SearchForward> [Ctrl+F]         下方へ検索       Search Forward
+
+Searches for a string, from the current cursor position to the  end  of  the
+file. When the first match is found, the cursor will  be  relocated  to  the
+beginning of the string and the screen may be redisplayed and  centered.  If
+no match is found, a message will be displayed on the bottom line.
+
+Unlike the <Search> function, this function will not  prompt  for  a  search
+string if a previous search string exists in the buffer.
+
+FUNCTION   <SearchBackward>  [Ctrl+B]       上方へ検索      Search Backward
+
+Searches for a string, from  the  character  prior  to  the  current  cursor
+position, to the beginning of the file. If a match is found, the cursor will
+be relocated  to  the  beginning  of  the  string  and  the  screen  may  be
+redisplayed and centered. If no match is found, a message will be  displayed
+on the bottom line.
+
+With NJCONFIG.EXE, users can set up this function to accept user input for a
+search string or not.  If  user  input  is  expected,  or  if  there  is  no
+previously entered string, you can enter a search string at the prompt.
+
+FUNCTION   <SearchReplace>  [F6]            置換え         Replace
+
+This function will search for a user specified string and  replace  it  with
+another, starting from the current cursor position to the  end-of-file.  The
+system will prompt separately for the search string and the replace  string.
+As with other search functions, previous entered search or  replace  strings
+will be used for prompts.
+
+After you enter a string, the system starts to search for it. If a match  is
+found, the cursor will move to the beginning of the string  and  redraw  the
+screen. This prompt will appear on the bottom line:
+
+          Replace: (Yes/No/Go/Only/Quit)?
+
+Enter one of (Y/N/G/O/Q) to proceed. The options are:
+
+          [Y]es  -  Replace this string  and then continue to
+                    search  for the next one.  
+          [N]o   -  Do  not replace this string, but continue to 
+                    search for the next one.  
+          [G]o   -  Replace  all matching strings found to the
+                    end of file, without confirmation.  
+          [O]nly -  Replace this string only and then stop.  
+          [Q]uit -  Don't replace anything and stop.
+
+The system will report the result on the bottom line,  whether  a  match  is
+found or not.
+
+This function can be used to search and replace in a marked block.
+
+FUNCTION   <Replace>                  (全て置換え        Auto Replace)
+
+Carries out Search and Replace without confirmation. It is  mainly  designed
+for use in Macros. No default key is assigned to this function.
+
+=============================================================================
+
+9. BLOCK OPERATION
+==================
+
+This section describes NJStar's block handling functions.  These  functions,
+except <SaveBlock>, are located under "Block" (指定域)  in  the  main  menu.
+<SaveBlock> is located under "File" in the main menu.
+
+FUNCTION   <MarkBlock>     [Alt+B]           指定域設定    Mark Block
+
+A block is a segment of file that is deliberately  marked  in  order  to  be
+processed separately. This function will mark the character in  the  current
+cursor position as the start or end of  a  block.  Mouse:  click  the  right
+button once to set the mark.
+
+A segment of file is marked as a block by using this function twice; at  the
+beginning and the end of the block. A marked block is displayed  in  reverse
+video and/or different color. You can change the block  display  style  with
+NJCONFIG.EXE.
+
+NJStar recognizes only one block at a time. After a block is marked,  it  is
+possible to change its range by invoking the <MarkBlock> function again.
+
+Block marks will be released automatically when switching to another file.
+
+FUNCTION   <MarkLine>      [Alt+L]          行を指定       Mark Line
+
+Marks the current screen line as the start or end of a  block.  If  a  block
+exists, this function will change  its  range.  Mouse:  press  middle  mouse
+button or double click the right button to use this function.
+
+FUNCTION   <MarkWord>      [Alt+W]          一語を指定     Mark Word
+
+Marks the current word if the cursor is at an English word, or mark  two  or
+more Japanese characters if the cursor is pointing at a  Japanese  word.  An
+existing block will be released.
+
+FUNCTION   <DefWordSet>    [Alt+Q]         語長リセット    Default Word Set
+
+Sets the default character set for <MarkWord>,  <WordLeft>  and  <WordRight>
+as: A-Z, a-z, 0-9 and underline '_', and Japanese characters
+
+FUNCTION   <AltWordSet>    [Alt+A]         語長セット   Alternative Word Set
+
+Sets  the  alternative  character  set  for   <MarkWord>,   <WordLeft>   and
+<WordRight> as:
+
+         A-Z, a-z, 0-9 and underline '_', and Japanese characters
+         PLUS  ! # $ %  & ` ' ( ) - . / \ @ { } ~ : ^
+
+<DefWordSet> and <AltWordSet> are mainly used by  macros.  For  example,  by
+default, <MarkWord> could not mark a filename such as  THISFILE.TXT, but the
+following macro can be used to mark a filename and open the file:
+
+Meta+W Macro AltWordSet Markword DefWordSet Copy EditFile Paste Enter
+
+When marking Japanese characters, each <AltWordSet> will increase the length
+of marking by one character. <DefWordSet>  will  reset  the  length  to  two
+Japanese characters.  The following  macro  uses  <MarkWord>  to  mark  four
+Japanese characters and call EDICT:
+
+Meta+W Macro AltWordSet AltWordSet Markword DefWordSet EDicLookup
+
+FUNCTION   <UnMarkBlock>   [Alt+U]          指定の解除     Unmark Block
+
+Releases the current block by unmarking it. Mouse: click the left and  right
+button at the same time to invoke this function.
+
+FUNCTION   <MoveBlock>     [Alt+M]          指定域の移動   Move Block
+
+Moves the current block to  the  location  immediately  before  the  current
+cursor position in the same file. The block mark will stay with the block.
+
+FUNCTION   <CopyBlock>     [Alt+C]          複写と貼付    Copy Block
+
+Copies the current block to the  location  immediately  before  the  current
+cursor position. The block mark will be released from the original location,
+moving to the newly copied text.
+
+If there is no block defined in  the  current  file,  it  will  restore  the
+content in the internal block buffer, stored by either <Copy> or <DelBlock>.
+
+This function can be used to copy a marked block from  one  opened  file  to
+another one, without the block mark.
+
+FUNCTION   <Copy>          [Ctrl+W]         複写          Copy 
+
+Stores the current block in the internal block buffer. The block  mark  will
+be released. The stored block can be copied into a file with  <Paste>.  This
+pair of functions allows to exchange text between files.
+
+FUNCTION   <Paste>         [Alt+Y]          貼付け        Paste
+
+Restores  the  content  of  the  internal  block  buffer  in  the   location
+immediately before the current cursor position. The restored text is  marked
+as a block.
+
+Since this function restores the content of the internal  block  buffer,  it
+can actually restore the content of a deleted  block,  or  copy  the  latest
+marked block in a file.
+
+FUNCTION   <DelBlock>      [Alt+D]          指定域の削除      Del Block
+
+Deletes the current marked block, and store it in the internal block buffer.
+The  deleted  block  can  be  recovered  with   <UnDelBlock>,   <Paste>   or
+<CopyBlock>. Only the last deleted block can be recovered.
+
+FUNCTION   <UnDelBlock>    [Alt+Y]          削除の回復      Undelete Block
+
+Recovers a deleted block, in the location  immediately  before  the  current
+cursor position. The recovered block will  be  displayed  and  marked  as  a
+block.
+
+This function is functionally the same as  <Paste>,  but  with  a  different
+concept. The default key is the same as <Paste>.
+
+FUNCTION   <GotoBlock>     [Alt+G]         指定域へ            Goto Block
+
+Moves the cursor to the beginning of the marked  block,  and  redisplay  the
+screen.
+
+FUNCTION   <SaveBlock>     [Alt+S]         指定域の保管        Save Block
+
+Saves a marked block to a file, with a user specified filename.  The default
+filename is the current filename with the  ".BLK"  extension,  and  you  can
+enter any valid filename, with drive name and full  path  if  necessary.  If
+the filename exists on disk, the system will ask for confirmation  to  avoid
+accidentally overwriting the disk file. In any case, NJStar  will  save  the
+overwritten file to a .BAK file if the backup option is  on.  This  function
+always saves the marked block in the same file format as the original.
+
+If there is no block marked, this function will call <SaveEUC>  function  to
+save the whole file.
+
+=============================================================================
+                                      (This manual continues in NJSTAR2.DOC.)
+

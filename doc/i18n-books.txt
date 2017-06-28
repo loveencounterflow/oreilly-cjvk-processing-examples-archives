@@ -1,0 +1,288 @@
+                 INTERNATIONALIZATION REFERENCE LIST
+                           7 January 1996
+
+
+IBM
+===
+Order from: your local IBM branch office
+
+NLS Information & Design Guide
+------------------------------
+Vol 1, Designing Enabled Products, Rules and Guidelines, SE09-8001.
+Vol 2, Reference Manual, SE09-8002.
+Vol 3, Arabic Script Languages, SE09-8003.
+Vol 4, Hebrew, SE09-8004.
+
+Character Data Representation Architecture
+------------------------------------------
+Level 2, Reference, SC09-1390.
+Level 2, Registry, SC09-1391.
+Executive Overview, SC09-1392.
+
+3174 Establishment Controller Character Set Reference, GA27-3831.
+
+DBCS Design Guide - System/370 Software, GG18-9095.
+
+DBCS Applications Primer - Enabling your programs for Chinese/
+Japanese/Korean), GG18-9059.
+
+Keys to Sort and Search for Culturally Expected Results, GG24-3516.
+
+National Language Support (NLS) Enabling of IBM AS/400 Applications,
+GG24-3807.
+
+IBM 3174 CECP Migration Issues, GG24-3380.
+
+CUA Advanced Interface Design Reference, SC34-4290.
+
+Introduction to OS/2 2.1 National Language Support, GG24-4213.
+
+
+Microsoft
+=========
+Developing International Software for Windows 95 and Windows NT:
+A Handbook for International Software Design. Nadine Kano.
+Microsoft Press, 1995. ISBN 1-55615-840-8.
+
+Adapt Your Program for Worldwide Use with Windows Internationaliza-
+tion Support. William S. Hall. Microsoft Systems Journal, Vol. 6,
+No. 6, 1991, pp.29-58.
+
+Internationalization in Windows NT, Part I: Programming with Unicode.
+William S. Hall. Microsoft Systems Journal, June 1994, pp.57-71.
+
+Internationalization in Windows NT, Part II: Locales, Languages, and
+Resources. William S. Hall. Microsoft Systems Journal, July 1994,
+pp.55-74.
+
+The International Character Set Conundrum: ANSI, Unicode, and
+Microsoft Windows. Nadine Kano and Asmus Freytag. Microsoft Systems
+Journal, November 1994, pp.55-70.
+
+Build a Multilingual User Interface for Your Application with Win32.
+Asmus Freytag. Microsoft Systems Journal, April 1995, pp.61-80.
+
+Internationalizing Software for Windows. William S. Hall. Microsoft
+Windows 3.1 Developer's Workshop. pp.3-90. Microsoft Press, 1993,
+$34.95, ISBN 1-55615-480-1.
+
+The GUI Guide: International Terminology for the Windows Interface.
+European Edition. Microsoft Press. $29.95, ISBN 1-55615-538-7.
+
+Internationalization Handbook for Software Design.
+This document is available on the Microsoft Developer's Network CD
+ROM 5 (and presumably all later issues).
+
+Using the OS/2 National Language Support Services to Write
+International Programs. Asmus Freytag and Michael Leu. Microsoft
+Systems Journal, March 1990, pp.1-26.
+
+Microsoft Windows Globalization Resource Kit. CD-ROM. Available
+from Microsoft by sending email to global@microsoft.com.
+
+
+DEC
+===
+Order from: DECdirect
+            800-DIGITAL (800-344-4825)
+
+Developing International Software, order number EY-F577E-DP, $28.95
+
+Developing International User Information, order number EY-H894E-DP,
+$24.95
+
+Digital Technical Journal, Volume 5, Number 3, Summer 1993. $16.00
+This issue of the DTJ is devoted to Product Internationalization.
+The articles published in this issue are:
+
+   International Cultural Differences in Software
+   Unicode: A Universal Character Code
+   The X/Open Internationalization Model
+   The Ordering of Universal Character Strings
+   International Distributed Systems - Architectural and
+      Practical Issues
+   Supporting the Chinese, Japanese, and Korean Languages
+      in the OpenVMS Operating System
+   Character Internationalization in Databases: A Case Study
+   Japanese Input Method Independent of Applications
+
+
+Sun Microsystems
+================
+Order from: Sun Microsystems, Inc.
+            2550 Garcia Avenue
+            Mountain View  CA  94043
+
+Software Internationalization Guide, Part No. 800-5972-04.
+
+
+Hewlett Packard
+===============
+Developing and Localizing International Software. Tom Madell, Clark
+Parsons, and John Abegg. Prentice Hall, 1994. ISBN 0-13-300674-3.
+
+
+Apple
+=====
+Guide to Macintosh Software Localization, Addison Wesley, 1992.
+ISBN 0-201-60856-1, $24.95
+
+
+UniForum
+========
+Order from: UniForum
+            2901 Tasman Drive, Suite 201
+            Santa Clara  CA  95054
+
+UniForum Technology Guide: Internationalization Explored. Sandra
+Martin. UniForum, September 1992, $10, ISBN 0-936593-18-0.
+
+
+Unicode
+=======
+The Unicode Standard: Worldwide Character Encoding.
+---------------------------------------------------
+Version 1.0, Volume 1.  The Unicode Consortium. Addison-Wesley, 1991,
+$32.95, ISBN 0-201-56788-1.
+Version 1.0, Volume 2.  The Unicode Consortium. Addison-Wesley, 1992,
+$29.95, ISBN 0-201-60845-6.
+
+
+Unix International
+==================
+Order from: Unix International
+            Waterview Corporate Center
+            20 Waterview Boulevard
+            Parsippany  NJ  07054
+
+Guidelines for the Development of Localization Packages. Unix
+International, 1993.
+
+
+X/Open
+======
+Order from: X/Open Publications,
+            P.O. Box 96,
+            Witney,
+            Oxon Ox8 6PG,
+            England.
+
+Internationalisation Guide - Version 2.  X/Open, 1993.
+ISBN 1-859120-02-4.
+
+Distributed Internationalisation Services, Version 2.  X/Open,
+1994.  ISBN 1-85912-033-4.
+
+Distributed Internationalisation Framework.  X/Open, 1995.
+ISBN 1-85912-079-2.
+
+Portable Layout Services: Context-Dependent and Directional
+Text.  X/Open, 1994.  ISBN 85912-075-X.
+
+Internationalisation of X/Open Specifications.  X/Open, 1995.
+ISBN 859120-80-6.
+
+Internationalisation of Networking Specifications. X/Open, 1993.
+ISBN 1-872630-87-1.
+
+System Interfaces and Headers, Issue 4. X/Open, 1992. ISBN
+1-872630-47-2.
+
+
+ISO
+===
+Order from: International Organization for Standardization (ISO)
+            1, Rue de Varemb<e'>
+            Case postale 56
+            CH-1211 Gen<e`>ve 20
+            Suisse
+
+                   or
+
+            Phillips Business Information
+            1201 Seven Locks Road
+            Potomac  MD  20854
+
+International Standard ISO 639:1988  -  Code for the representation
+of names of languages.
+
+International Standard ISO 646:1990  -  7-bit coded character set for
+information interchange (ASCII is the US variant of ISO 646).
+
+International standard ISO 2022:1986 -  ISO 7-bit and 8-bit coded
+character sets - Code extension techniques.
+
+International Standard ISO 3166:1988 - Codes for the representation
+of names of countries.
+
+International Standard ISO 4217:1987 - Codes for the representation
+of currencies and funds.
+
+International standard ISO 8601:1988  -  Data elements and inter-
+change formats - Information interchange - Representation of dates
+and times.
+
+International standard ISO 8859 (Parts 1-10)  -  8-bit single-byte
+coded graphic character sets.
+Part 1: ISO Latin-1 character set (west European languages)
+Part 2: ISO Latin-2 character set (east European languages)
+Part 3: ISO Latin-3 character set (southeastern European languages)
+Part 4: ISO Latin-4 character set (north European languages)
+Part 5: ISO Latin-Cyrillic Alphabet character set
+Part 6: ISO Latin-Arabic Alphabet character set
+Part 7: ISO Latin-Greek Alphabet character set
+Part 8: ISO Latin-Hebrew Alphabet character set
+Part 9: ISO Latin-5 character set (west European and Turkish)
+Part 10: ISO Latin-6 character set (Baltic countries)
+
+International Standard ISO/IEC 9945-2:1993  -  POSIX Shell and
+Utilities.
+
+International Standard ISO/IEC 10646-1:1993  -  Universal multiple
+-octet coded character set.
+
+
+Miscellaneous
+=============
+Understanding Japanese Information Processing. Ken Lunde. O'Reilly
+and Associates, Inc., September 1993, $30. ISBN 1-56592-043-0.
+
+Designing User Interfaces for International Use. Jakob Nielsen, ed.
+Elsevier Science Publishers. ISBN 0-444-88428-9.
+
+Programming for the World: A Guide to Internationalization. Sandra
+Martin O'Donnell. Prentice-Hall, 1994, $36. ISBN 0-13-722190-8.
+
+The Standard C Library. P.J. Plauger. Prentice Hall, 1992.
+ISBN 0-13-131509-9.
+
+Global Software: Developing Applications for the International
+Market. David Taylor. Springer-Verlag, January 1993, $34.
+ISBN 0-387-97706-6.
+
+Solaris International Developer's Guide. Bill Tuthill. Prentice
+Hall, 1993, $30. ISBN 0-13-031063-8.
+
+Software Internationalization and Localization: An Introduction.
+Emmanuel Uren, Robert Howard and Tiziana Preinotti. Van Nostrand
+Reinhold, September 1993. ISBN 0-442-01498-8.
+
+Internationalization: Developing Software for Global Markets.
+Tuoc V. Luong, James S.H. Lok, David J. Taylor, Kevin Driscoll.
+John Wiley & Sons, Inc., 1995. ISBN 0-471-07661-9.
+
+
+Periodicals
+===========
+Multilingual Communications & Computing Magazine.
+Email to info@multilingual.com for more information. Postal
+address is Multilingual Computing, Inc., 111 Cedar Street,
+P.O. Box 247, Sandpoint, Idaho 83864, USA.
+
+
+Compiled by
+
+Eugene Dorr
+
+Additions and corrections solicited. I can be reached at
+dorre@well.com  and  75156.3132@compuserve.com.

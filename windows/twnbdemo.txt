@@ -1,0 +1,114 @@
+This is a demo version of TwinBridge Japanese Version 3.2
+
+The following information explains features of the full working version. 
+
+TwinBridge Japanese Version 3.2 -- An Introduction
+
+TwinBridge, developed by PC Express, Inc. is an advanced multilingual interface software for
+Microsoft Windows 3.1, Windows for Workgroups, Japanese-Windows, Chinese-Windows and
+other language versions of Windows.  It allows Japanese input in Windows applications such as
+Access, Excel, PageMaker, WinFax Pro, Word, and WordPerfect, etc.
+
+TwinBridge Japanese System Features
+
+What's New in Version 3.2
+
+TwinBridge version 3.2 is enhanced to provide more supports for the hardware.  It also enhances
+the compatibility for Windows software, plus providing extra functions with easy to access tool bar.
+Theimprovements and new features are summarized below:
+
+A: Supports all video drivers and display cards.  This includes all Local Buses, Accelerators, and
+High/True color cards.
+
+B: Supports all printers under Windows including PostScript<< printers, Laser printers, color
+printers and dot matrix printers.  Users need not to select the "Print TrueType as Graphics" option
+to print Japanese anymore. This new change increases the speed of printing with LaserJet IV
+using 600dpi.
+
+C: TwinBridge acts as an application; it can be closed at anytime without affecting the original
+Windows environment.
+
+D:Supports Microsoft Chinese-Windows, Japanese-Windows and European-Windows.
+TwinBridge serves as a common platform for Japanese language processing in different Windows
+versions.
+
+E:All functions can be performed by mouse, such as changing the internal code from JIS to Shift
+JIS or vice versa and applying the bold mapping function (coreless, stereo, reverse display, etc.).
+
+F: Includes a built-in Dictionary Manager.  This utility allows users to customize their Japanese
+dictionary and the font database.
+
+G: Includes a Font Meta Utility, which is capable of exporting the Outline data of Japanese
+characters into Clipbaord or save to a file in Windows Meta Graphics Format (WMF), then import
+them into any graphic software (for the Standard Outline version only).
+
+H: Japanese characters can be displayed as 3D, shadow, inverse video, outline, etc. to enhance
+the document appearance.
+
+I: Supports English to Japanese input method.
+TwinBridge version 3.2 still maintains all the features and functions from the previous version.
+
+a: Supports 286, 386, 486, or Pentium desktop, laptop and notebook computers.
+
+b: The Japanese internal code used is the JIS Code or Shift JIS code standard.  A Code Converter
+utility is available for converting between the Shift JIS Code and the JIS Code.
+
+c: The Japanese input methods include Roma-Kanji, Kana-Kanji, English-Japanese, JIS Code,
+Shift JIS Code and the Full size English.  The Roma-Kanji and the Kana-Kanji input methods use
+the advanced sentence conversion technology.  The Japanese dictionary contains more than
+50,000 words and phrases.
+
+d: The Japanese fonts available are the bitmap fonts and the outline fonts.
+
+e: Allows users to select the automatic space character padding function after each input of a
+single Japanese character from the keyboard.  This function can be very useful when using a word
+processor or a desktop publishing software that has the automatic text wrapping function.  Also,
+this function helps to avoid the problem of displaying only half of a Japanese character in certain
+Windows application programs.
+
+f: The Japanese utilities allow users to add new characters, to edit characters, to manage phrases,
+to convert Japanese internal codes, to insert or remove space padding, to convert Japanese
+characters to the WMF format, and other useful functions.  They allow the TwinBridge Japanese
+System to be fine-tuned and personalized to fit users' needs.
+
+g: The TwinBridge Japanese System also provides the DLL interface and sample programs for
+software developers to add on additional input methods to the system.
+
+TwinBridge Marketing and Sales Tel: (818)293-1661	Fax:(818)293-1665
+TwinBridge Technical Support: (818)293-8183
+For any question, please contact:	
+	PC Express, INC
+	Tech Dept.
+	820 S. Garfield Ave. #201
+	Alhambra, CA 91801 USA
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Instructions for Unzipping and Installing the TWNBDEMO.ZIP
+
+Unzip TWNBDEMO.ZIP to a 3.5 inch, 1.44 MB floppy disk.
+When unzipping the TWNBDEMO.ZIP, use the "/d" switch to automatically create a "setup" subdirectory.
+
+Example (using PKUNZIP):
+
+C:\pkunzip /d C:\a\twnbdemo.zip A:\
+
+Where "a" is the directory which holds the TWNBDEMO.ZIP on the C: drive and "A:\" is the target 
+drive to unzip the files to. By using the "/d" switch, the subdirectory labeled "setup" will be 
+automatically created. The "setup" subdirectory should contain the following files:
+
+1. TWIN.MST
+2. TWIN.INF
+3. SETUPAPI.INC
+4. MSDETECT.INC
+5. _MSTEST.EXE
+6. _MSSETUP.EXE
+7. VER.DLL
+8. MSUILSTF.DLL
+9. MSSHLSTF.DLL
+10. MSINSSTF.DLL
+11. MSDETSTF.DLL
+12. MSCUISTF.DLL
+13. MSCOMSTF.DLL
+ 
+After unzipping the files to the 1.44MB floppy disk, please run the install program from the Windows Program Manager.
+

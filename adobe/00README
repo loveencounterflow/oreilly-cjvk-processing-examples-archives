@@ -1,0 +1,132 @@
+Version 03/29/2001
+
+The files in this directory relate to Adobe CJK character collections
+for CID-keyed fonts, and also provide *real* CIDFonts for testing
+purposes.
+
+Documentation that further describes CID-keyed Font Technology can be
+found at the following URL:
+
+  http://partners.adobe.com/asn/developer/technotes.html
+
+Specifically, Tech Notes #5014 and #5092 are available at the above
+URL. The former is the full engineering specification, and the latter
+is a gentle overview. Other CID-related Tech Notes are also available:
+
+  5004.AFM_Spec.pdf       (AFM specification -- includes CID-keyed AFM format)
+  5078.Adobe-Japan1-4.pdf (Adobe-Japan1-4 Character Collection)
+  5079.Adobe-GB1-4.pdf    (Adobe-GB1-4 Character Collection)
+  5080.Adobe-CNS1-3.pdf   (Adobe-CNS1-3 Character Collection)
+  5093.Adobe-Korea1-0.pdf (Adobe-Korea1-0 Character Collection)
+  5094.CJK_CID.pdf        (Adobe CJKV Character Collections and CMaps Overview)
+  5097.Adobe-Japan2-0.pdf (Adobe-Japan2-0 Character Collection)
+  5099.CMapFiles.pdf      (Building CMap Files for CID-Keyed Fonts)
+  5174.CID_PS.pdf         (CID-keyed Font Installation for PostScript Devices)
+  5175.CID_ATM.pdf        (CID-keyed Font Compatibility With ATM Software)
+  5176.CFF.pdf            (The Compact Font Format Specification)
+  5177.Type2.pdf          (The Type 2 Charstring Format)
+  5178.PFM.pdf            (Building PFM files for PostScript CJK fonts)
+  5180.sfnt.pdf           (CID-Keyed sfnt Font File Format for the Macintosh,
+                           version 2.0) 
+  5213.CID.pdf            (PostScript-language extensions for CID-keyed fonts)
+  5640.CJK_Fonts.pdf      (Application Support for PostScript CJK Fonts)
+  5641.CID_Embed.pdf      (Enabling PDF Font Embedding for CID-Keyed Fonts)
+
+Most of these are the illustrated CID tables that indicate the glyphs
+for each CID -- they use embedded 150-dpi bitmaps or embedded
+CIDFonts. Tech Note #5094 provides a detailed summary of what each
+character collection supports in terms of character sets and
+encodings, and Tech Note #5004 includes a description of CID-keyed AFM
+files (the AFM file that corresponds to a CIDFont).
+
+If you are interested in CID-keyed font technology or wish to develop
+products based on CID-keyed font technology, I *strongly* suggest that
+you request a copy of the CID SDK (CID Software Developers Kit) from
+Adobe Developer Support:
+
+  Adobe Developers Association
+  Adobe Systems Incorporated
+  345 Park Avenue
+  San Jose, CA 95110-2704
+  USA
+  +1-408-536-9000 (phone)
+  +1-206-628-5737 (facsimile)
+  devsupp-person@adobe.com
+  http://partners.adobe.com/asn/developer/
+
+The following describes the contents of this directory (those for
+specific character collections contain the complete set of *standard*
+CMap files plus the cid-to-character-code correspondence table):
+
+  00README                    This file
+  ac13.tar.Z                  Adobe-CNS1-3 materials
+  ag14.tar.Z                  Adobe-GB1-4 materials
+  ai0.tar.Z                   Adobe-Identity-0 materials
+  aj14.tar.Z                  Adobe-Japan1-4 materials
+  aj20.tar.Z                  Adobe-Japan2-0 materials
+  ak12.tar.Z                  Adobe-Korea1-2 materials
+  samples/                    Sample CIDFont and CID-keyed AFM files
+
+(Note that the Unicode, UCS-2 and UTF-8, CMap files are now integrated
+into the appropriate character collections.)
+
+The currently-available sample CIDFonts, in the "samples"
+subdirectory, are as follows:
+
+  Munhwa-Regular            (Adobe-Korea1-0 subset: 8193 CIDs)
+  Munhwa-Bold               (Adobe-Korea1-0 subset: 2549 CIDs)
+  MunhwaGothic-Regular      (Adobe-Korea1-0 subset: 8193 CIDs)
+  MunhwaGothic-Bold         (Adobe-Korea1-0 subset: 2549 CIDs)
+  MunhwaGungSeo-Bold        (Adobe-Korea1-0 subset: 2549 CIDs)
+  MunhwaGungSeo-Light       (Adobe-Korea1-0 subset: 2549 CIDs)
+  MunhwaGungSeoHeulim-Bold  (Adobe-Korea1-0 subset: 2549 CIDs)
+  MunhwaGungSeoHeulim-Light (Adobe-Korea1-0 subset: 2549 CIDs)
+  MunhwaHoonMin-Regular     (Adobe-Korea1-0 subset: 2549 CIDs)
+  WadaMin-Regular           (Adobe-Japan1-1 subset: 6998 CIDs
+  WadaMin-Bold              (Adobe-Japan1-1 subset: 6996 CIDs)
+  WadaGo-Bold               (Adobe-Japan1-1 subset: 6998 CIDs)
+  WadaMaruGo-Regular        (Adobe-Japan1-1 subset: 6998 CIDs)
+  WadaMin-RegularH          (Adobe-Japan2-0 complete: 6068 CIDs)
+  WadaMaruGo-RegularH       (Adobe-Japan2-0 complete: 6068 CIDs)
+  MOESung-Regular           (Adobe-CNS1-0 subset: 13699 CIDs)
+  MOEKai-Regular            (Adobe-CNS1-0 subset: 13699 CIDs)
+
+All of the "Munhwa" CIDFonts, except for Munhwa-Regular and
+MunhwaGothic-Regular, include CIDs 0-101 (.notdef, proportional Latin,
+and full-width space), 1086-3435 (2,350 KS X 1001:1992 hangul), and
+8094-8190 (half-width Latin). Munhwa-Regular and MunhwaGothic-Regular
+also include CIDs 102-1085 (KS X 1001:1992 symbols), and 3436-8093 (KS
+X 1001:1992 hanja), and 8283-8284 (additional punctuation). All of
+these fonts have /FSType set to 4 to enable PDF embedding.
+
+Note that two of the Korean "Munhwa" fonts are also available here in
+the "samples" subdirectory as sfnt-wrapped CIDFonts for use on MacOS
+(but with only 2,549 CIDs). The following are the relevant files:
+
+  Munhwa-Regular.hqx
+  MunhwaGothic-Regular.hqx
+
+Each archive contains instructions for installation and use. Korean
+font developers may also find these to be excellent examples.
+
+WadaMin-Bold, WadaGo-Bold, and WadaMaruGo-Regular include CIDs 0
+(.notdef), 422, 425-500, 629, 633- 740, 780-7477, 7479-7554,
+8229-8263, and 8284-8285. WadaMin-Regular includes the same CIDs as
+the previous three CIDFonts, except for 8284-8285. All of these fonts
+have /FSType  set to 4 to enable PDF embedding.
+
+MOESung-Regular and MOEKai-Regular include CIDs 0-505, 595-13746, and
+14056-14096. This subset definition provides full coverage of Big Five
+and CNS 11643-1992 Planes 1 and 2. Both of these fonts have /FSType
+set to 4 to enable PDF embedding.
+
+Because CMap and CIDFont files are considered binary data (a CMap file
+is just newline-terminated text, but a CIDFont is composed of newline
+terminated header material plus *real* binary data), be sure transfer
+all files in binary mode.  Cheers!
+
+-- Dr. Ken Lunde
+   Manager, CJKV Type Development
+   Adobe Systems Incorporated
+   lunde@adobe.com
+   http://www.oreilly.com/~lunde/ (WWW Home Page)

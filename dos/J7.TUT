@@ -1,0 +1,161 @@
+¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+¡Ã£Ó£ð£å£ã£é£á£ì¡¡£Æ£å£á£ô£õ£ò£å£ó¡¡¡¡ÆÃ¼ìµ¡Ç½¡¡¡¡¡¡¡¡      ¡¡¡¡¡¡¡¡¡¡J7.TUT¡Ã
+¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+\NumberStyle="NJJ 3.0: JW-Tutorial 7, page %d"
+
+¢£¢£¢£¢£¢£¢£¢£ £Ê£Á£Ó£Ã£É£É¡¡£ã£è£á£ò£á£ã£ô£å£ò£ó      Á´³ÑÊ¸»ú ¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+In most Japanese word-processors two sizes of English characters are available. What you are now reading is the type called single-byte code, or ASCII code (American Standard Code for Information Interchange).  
+
+To switch this indicator on, you do the following:
+
+        >>¡ÚInput, jascii Mode¡Û                                ¢¨ <Alt F9>
+
+You will see the¡ÎÁ´³Ñ¡Ïindicator on now. If you use a mouse, click the bottom right corner of the screen to call the same function.
+
+£Ô£è£å£î¡¡£ù£ï£õ¡¡£÷£é£ì£ì¡¡£â£å¡¡£ô£ù£ð£é£î£ç¡¡£ì£é£ë£å¡¡£ô£è£é£ó¡££Ã£á£ì£ì  £ô£è£å  £ó£á£í£å  £æ£õ£î£ã£ô£é£ï£î  £ô£ï  £ó£÷£é£ô£ã£è¡¡£ï£æ£æ¡¡£ô£è£é£ó¡¡£ï£ð£ô£é£ï£î¡£
+
+Note that the character is a "two-byte code", and does not perform "word-wrap" properly.
+
+In a Japanese document, you don't normally have trouble with "Justification"  (the term to describe a particular type of paragraph format where the text is aligned to both margins (left and right) by filling extra spaces among words in a line). This is because all the Japanese characters are of fixed width. JASCII characters have the same width as ¤Ò¤é¤¬¤Ê or ´Á»ú and is thus well suited to a Japanese document.
+
+In standard writing, the beginning of paragraph should be indented by one character space as follows:
+
+¡¡»ä¤Ïº££Î£Ê£Ó£ô£á£ò¤È¤¤¤¦¥ï¡¼¥×¥í¤Ç¡¢¥Ñ¥é¥°¥é¥Õ¡¦¥Õ¥©¡¼¥Þ¥Ã¥È¤ÎÊÙ¶¯¤ò¤·¤Æ¤¤¤Þ¤¹¤¬¡¢¤½¤Î¤¿¤á¤Ë¤Ï¡¢£Ê£Á£Ó£Ã£É£É¤È¤¤¤¦Ê¸»ú¤¬ÂçÊÑÌò¤ËÎ©¤Ä¤½¤¦¤Ç¤¹¡£
+¡¡¤³¤ÎÍÍ¤Ë¡¢ÆüËÜ¸ì¤È±Ñ¸ì¤ÎÃ±¸ì¤òº®¤¼¤Æ¤â¡¢åºÎï¤ËÊ¸»ú¤¬ÊÂ¤Ö¤Î¤Ç¡¢¤³¤Îµ¡Ç½¤ò¤è¤¯³Ø¤ó¤Ç¡¢´°Á´¤ËÍý²ò¤·¤¿¤¤¤È»×¤¤¤Þ¤¹¡£
+
+        >> Replace the JASCII codes with ASCII codes above.
+        >> When you have done this, restore them.
+
+
+¢£¢£¢£¢£¢£ £Ó£ð£å£ã£é£á£ì £É£î£ð£õ£ô £Í£å£ô£è£ï£ä£ó   ÆÃ¼ì¤ÊÆþÎÏË¡  ¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+In any Japanese word-processor, you will often encounter awkward situations where you don't know how to enter characters. For example,
+
+   1) you know the pronunciation of the Kanji but it was not found in the
+      program's input dictionary. It is probably a rarely used Kanji;
+
+   2) you know the form of the Kanji but don't know how to pronounce it, 
+      thus can't type it.
+
+   3) what you want to type is a symbol and not a character.
+
+   4) you don't know the word in Japanese (!) and therefore cannot type it.
+
+Fortunately, you can get away with these problems quite easily with NJStar 3.0.
+For (1) and (2), you can use RADICAL input, or if necessary, Stroke number or Nelson dictionary number. Symbols (3) can be accessed by a special table of symbols on which you can just click. For (4), you can use English input to find a word in Japanese.
+
+¡ü Radical Input and Kanji Information
+
+Selecting this option first displays systematically arranged radicals in stroke order. By selecting the radical, you will see the second screen to pick up the character. Press <ESC> to go back to the previous screen.
+
+Let's find ¡ØðÐ¡Ù
+
+        >>¡ÚInput, Radical¡Ûto call this function              ¢¨ <Shift F1>
+        >> click on ÀÄ (8 strokes)
+        >> click on the character
+
+Before selecting the character, you can preview the reading and the meaning by pressing <F1>. Remember that a mouse click on the left button will activate next action, while moving the cursor keys or a mouse click on the right button will select but not activate the next function.
+
+        >> Repeat the previous exercise and learn mouse clicks left and right
+
+Once you have typed the character, ðÐ, you can still get the Kanji Information by double-clicking on the character.
+
+        >> Try this now
+
+¡ü Symbols
+
+To type a symbol under NJStar, you can simply copy it from SYMBOLS.DIC, 
+which is accessible in the form of a pop-up window.
+
+        >>¡ÚInput, Symbols¡Û and click on the symbol "¢©".      ¢¨ <Alt F8>
+
+If you cannot find a symbol in the window, scroll it with <¢ª>.
+
+¡ü English Input
+
+In Tutorial 6, you have seen the way NJStar can use EDICT to get the meaning of word at either cursor or selection. Here you learn the way to type a word in English to get Japanese.
+
+        >>¡ÚInput, English->j¡Û                                 ¢¨ <Alt F7>
+        >> Type "get" followed by <SPACE>
+
+You will see a long list of entries containing the word "get". 
+
+¡ü Other input methods
+
+There are other minor input methods accessible from ¡ÚInput, Other input¡Û, such as Nelson number and Stroke number, which is not covered in this tutorial.
+
+
+¢£¢£¢£¢£¢£¢£¢£ £Í£Á£Ã£Ò£Ï¡¡£Æ£õ£î£ã£ô£é£ï£î       ¥Þ¥¯¥í¤Îµ¡Ç½  ¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+In many sophisticated applications, you can customise their performance by user specific tasks. This is the function of Macro.
+
+There are two types of Macro: 
+
+  1) a simpler one, for recording, storing and playing back a sequence of
+     keystrokes;
+
+  2) a more complex one, similar to the programming language, in which you can
+     program it.
+
+In this tutorial, we will learn (1) only. See NJSTAR2.DOC and NJCONFIG.KEY to learn (2) when you become sufficiently experienced with NJStar. Let's try something now. We will use this paragraph for the experiment.
+
+        >> Place the cursor at the beginning of the previous paragraph
+        >> Press <F11> to start recording (Now¡ÎMac.¡Ïis on)
+        >> Press <F5> for search. Type " " (space) followed by <ENTER>
+        >> Press <¢ª> once, followed by <ENTER>
+        >> Press <F11> again to stop recording.
+
+Now you recorded the keystrokes, finding the space character and separating each word. In this way, Macro will do the task repetitively at the press of a key <F12>.
+
+        >> Press <F12> many times.
+
+Now you know how powerful it is! If you want to save this macro for later use, you can do so.
+
+        >> ¡ÚTools, Save macro¡Û to save the file as "sep_word"
+
+Later on, you can restore it again by loading it ¡ÚTools, Road macro¡Û
+Note that NJStar remembers the last recorded macro until you record another.
+
+
+¢£¢£¢£¢£¢£¢£¢£ £Õ£ó£é£î£ç  £Ç£ì£ï£ó£ó£á£ò£é£å£ó    ÍÑ¸ì½¸¤Î³èÍÑ ¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+NJStar has two user dictionaries -- GLOSSARY and USERDIC to store the user's specific words. They are to be used for different purposes.
+
+¡ü GLOSSARY
+
+GLOSSARY is a very useful function, for it not only stores the words that are not found in the standard KANJI.DIC, but also you can give a short-hand name to the words you register. And unlike USERDIC, the registered words are available as soon as you register them. 
+
+        >>¡ÚTools, Glossary¡Û (to see what is there)            ¢¨ <Ctrl G>
+
+To register a new word, you can press <F1> there.
+
+        >> Press <F1>
+        >> Type your name. (If necessary <Alt F5> or <Alt F6> to toggle
+           input mode). When you finish, press <ENTER>
+        >> Register the key as "myname" followed by <ENTER>
+
+Now whenever you need to type your name, you can type 'myname in¡Î¤«¤Ê´Á¡Ïmode.
+
+Under normal circumstances, however, you first look for a word from NJStar's input dictionary, KANJI.DIC. When NJStar cannot find a word, you are automatically prompted to add a new word in the Glossary.
+
+        >> from¡Î¤«¤Ê´Á¡Ï, type "bungeishunjyuusha" to get Ê¸éº½Õ½©¼Ò
+
+When you cannot find the word in Kanji, you enter the Glossary mode.
+
+        >> Type the Kanji equivalent, in several small blocks
+           Ê¸éº, ½Õ½©, ¼Ò, followed by <ENTER>
+
+Note that the Glossary use¡ÎRomaji¡Ïinput mode.
+
+With this mode of adding a word, you have everything.
+
+¡ü USERDIC 
+
+USERDIC is a NJStar document file where you store words that are not found in WNNDICT. When you compile KANJI.DIC from DOS Prompt, the information stored in the USERDIC will be added to KANJI.DIC, NJStar's input dictionary. You need to do this only if you want to make the particular words to be included in KANJI.DIC. Unless you are modifying this KANJI.DIC placed on the network server, you normally don't need this function.
+
+                          ¢£ End of TUTORIAL 7 ¢£
+ ¦ç¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦è
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ Press <Shift F10> to select other tutorials  ¡þ¡þ¡þ¡þ¡þ¡þ¦æ
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ Press  <Ctrl F3> to exit NJStar ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ ¦æ
+ ¦ê¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦é

@@ -1,0 +1,28 @@
+void seven2shift(FILE *in,FILE *out)
+{
+  int temp;
+  int p1;
+  int p2;
+  int intwobyte = FALSE;
+
+  while ((p1 = fgetc(in)) != EOF) {
+    if (p1 == ESC) {
+      temp = fgetc(in);
+      SkipESCSeq(in,temp,&intwobyte);
+    }
+    else if (p1 == NL || p1 == CR) {
+      if (intwobyte)
+        intwobyte = FALSE;
+      fprintf(out,"%c",p1);
+    }
+    else {
+      if (intwobyte) {
+        p2 = fgetc(in);
+        jis2sjis(&p1,&p2);
+        fprintf(out,"%c%c",p1,p2);
+      }
+      else
+        fprintf(out,"%c",p1);
+    }
+  }
+}

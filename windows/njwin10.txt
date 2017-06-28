@@ -1,0 +1,142 @@
+		   NJWIN Multilingual Support System
+			     Version 1.0
+
+	 Copyright (c) Hongbo Data Systems 1995 All Rights Reserved.
+
+
+Introductions
+=============
+
+NJWIN v1.0 is designed to support any windows program to display Chinese,
+Japanese and Korean characters under the standard Windows 95 environment.
+All Chinese / Japanese / Korean (CJK) coding standards are supported in NJWIN,
+and coding can be switched on the fly from one coding to another depending on
+the document being viewed.
+
+Installation
+============
+
+1). Shareware Version
+
+You will normally receive the shareware version in a ZIP file, say
+NJWIN10.ZIP. First unzip it to a temporary directory, then type SETUP. The
+setup program will guide you through the installation process.
+
+2). Registered Version
+
+Registered users will receive their copy of the latest version on disk(s).  To
+install, simply insert the first disk in drive A: or B:, then type SETUP. The
+setup program will guide you through the installation process.
+
+Running NJWIN
+=============
+
+By clicking mouse left button on the NJWIN Icon or start NJWIN from windows
+95's START menu. The following NJWIN control center will be displayed on top
+right of the screen (default).
+
+
+1). NJWIN System button: Pressing the button will display a popup menu with
+    selection of 'About NJWIN' and 'Exit NJWIN'
+
+2). NJWIN Options button: Pressing the button will displays a dialog box of
+    all options available for selection.
+
+3). Current Coding button: Displays current Coding in Use, pressing the button
+    will get a popup menu with following coding selections:
+
+    Chinese GB JianTi	    View Chinese GB file  using simplified characters
+    Chinese GB FanTi	    View Chinese GB file using traditional characters
+    Chinese Big5 JianTi     View Chinese Big5 file using simplified characters
+    Chinese Big5 FanTi	    View Chinese Big5 file using traditional characters
+    Japanese EUC-JIS	    View Japanese file in EUC JIS coding
+    Japanese Shift-JIS	    View Japanese file in Shift-JIS coding
+    Korean KS C 5601	    View Korean file in KS C 5601 coding
+    ANSI / No CJK Support   View the document without CJK support
+
+4). Help button: Displays this help file.
+
+5). Move button: click and hold left mouse button on this button will let you
+    move NJWIN control center to other places, and NJWIN will remember the
+    position when started next time.
+
+
+Frequently Asked Questions about NJWIN
+======================================
+
+Q1: How to Use NJWIN to Read Chinese on Internet ?
+--------------------------------------------------
+A1: You should set NJWIN to Chinese Big5 or GB mode depending on the source.
+For Internet Chinese newsgroup alt.chinese.text, you can view in either GB or
+Big5 mode as long as HZ option is checked in the NJWIN Option dialog box.  For
+alt.chinese.text.big5, you should set NJWIN to Big5 simplified or traditional.
+To access those two newsgroups, its recommended to use Windows 95's
+HyperTerminal. When viewing Chinese HTML home pages, it normally allows you to
+select GB or Big5 code, so you should set NJWIN to the same code, either in
+simplified or traditional characters.
+
+Due to the conflict between 7 bit HZ encoding and HTML language syntax, a 7
+bit HZ home page can not be viewed correctly under any WWW viewer. So never
+create a home page in 7 bit HZ coding. Use 8 bit HZ (eg. the HZ8) instead, or
+better just use plain GB or Big5. As all WWW viewers can not wrap long Chinese
+line correctly,  Chinese home pages should be pre-wrapped, and placed between
+the <PRE>  and </PRE> statement. See CND-CM Chinese magazine for an example.
+
+
+Q2: How to Use NJWIN to Read Japanese on Internet?
+---------------------------------------------------
+A2: You should normally set to Shift-JIS mode because Shift-JIS is commonly
+used in Home pages, If you know a home page in EUC coding, then set NJWIN to
+EUC mode.  Under Shift-JIS or EUC mode,  all 7 bit JIS (New-JIS, Old-JIS and
+NEC-JIS) are recognized automatically. This recognition can be turn off
+through the NJWIN Option dialog box if desired.
+
+If the Japanese home pages are not pre-wrapped or in 7 bit JIS coding, It
+can't be viewed correctly under normal viewer, except using NETSCAPE. Under
+Netscape browser, you can set the  netscape font encoding to Japanese JIS, EUC
+or Shift-JIS depending on the source (go to Options - Preferences - Fonts,
+change 'The Default Encoding is' to Japanese JIS/EUC/SJIS). If you set
+Netscape to any of the Japanese Encoding, you must set NJWIN to Shift-JIS in
+order to view it correctly.
+
+
+Q3: How to Display CJK Text Perfectly on the Screen?
+-----------------------------------------------------
+A3: Since NJWIN uses 16x16 font for screen display, and Windows scale it to
+any size that specified by the displaying program. To get perfect screen
+display (ie. in 16x16 bitmap), you should set the concerned program to use 11
+or 12 point font for display. To get perfect display in menu or dialog box,
+set the font to 'System Font'. (from Windows 95's START - Settings - Control
+Panel - Screen - Appearance ).
+
+
+Q4: Does NJWIN work in Windows NT?
+----------------------------------
+A4: NJWIN only supports 16 bit applications under Windows NT. That means you
+can use 16 bit programs, like Netscape 16 bit, etc., to handle CJK. Because
+system controls (Button, ListBox, Edit, etc.) are 32 bits, so you could not
+see any Chinese display. If you are developing 32 bit DBCS application and
+want it to run it under Windows 95 and NT without any DBCS system support,
+please contact us for information on our royalty free NJSDK 32-bit DLL for
+linking to your application.
+
+
+Q5: Does NJWIN work in Windows 3.1x?
+------------------------------------
+A5: Not work in currently version, hopefully it will in next release.
+
+
+Q6: How to make NJWIN work for MS-Word 6.0 or later version?
+------------------------------------------------------------
+A6: You should disable MS-Word's AutoCorrect function and not allow the
+non-printing characters to be shown. Go to Word's Tool menu - AutoCorrect,
+uncheck all selections. Go to Tool - Options..., uncheck all non-printing
+characters..
+
+
+===========================================================================
+  Hongbo Data Systems Inc.   Tel:+61-2-869-0821   Fax:+61-2-869-0823
+  P. O. Box 40		     CompuServe:  100032,2724
+  Epping NSW 2121	     InterNet:	  Hongbo@njstar.com.au
+  Australia		     WWW:	  http://www.njstar.com.au/njstar/
+===========================================================================

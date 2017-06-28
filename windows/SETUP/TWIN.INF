@@ -1,0 +1,37 @@
+[Source Media Descriptions]
+	"1", "TwinBridge Disk #1", "twinj.ini", "..\disk1"
+
+[Default File Settings]
+"STF_BACKUP"     = ""
+"STF_COPY"       = "YES"
+"STF_DECOMPRESS" = "YES"
+"STF_OVERWRITE"  = "ALWAYS"
+"STF_READONLY"   = ""
+"STF_ROOT"       = ""
+"STF_SETTIME"    = "YES"
+"STF_TIME"       = "0"
+"STF_VITAL"      = "YES"
+
+[Files_in_Windows]
+	1, twinj.ini,,,, 1993-12-15, !DECOMPRESS,,, !READONLY,,,,,, 958,,,,,
+	1, twin32.bm_,,,, 1993-12-15,,,, !READONLY,,twin32.bmp,,,, 53102,,,,,
+
+[Files_in_Twin]
+	1, twinj.ex_,,,, 1993-12-15,,,, !READONLY,,twinj.exe,,,, 114688,,,,,
+	1, twinj.dl_,,,, 1993-12-15,,,, !READONLY,,twinj.dll,,,,29696,,,,,
+	1, jinput.dl_,,,, 1993-12-15,,,,!READONLY,,jinput.dll,,,,33584,,,,,
+	1, jtbconfi.ex_,,,, 1993-12-15,,,,!READONLY,,jtbconfi.exe,,,,75264,,,,,
+	1, twinj.hlp,,,, 1993-12-15,!DECOMPRESS,,, !READONLY,,,,,, 127409,,,,,
+	1, mljpn.di_,,,, 1993-12-15,,,, !READONLY,,mljpn.dic,,,, 364544,,,,,
+	1, mlengjpn.di_,,,, 1993-12-15,,,, !READONLY,,mlengjpn.dic,,,,278528,,,,,
+	1, jspace.ex_,,,, 1993-12-15,,,, !READONLY,,jspace.exe,,,, 98816,,,,,
+	1, jspace.hl_,,,, 1993-12-15,,,, !READONLY,,space.hlp,,,, 4080,,,,,
+	1, jcodecvt.ex_,,,, 1993-12-15,,,, !READONLY,,jcodecvt.exe,,,, 65536,,,,,
+	1, jcodecvt.hl_,,,, 1993-12-15,,,, !READONLY,,codecvt.hlp,,,, 4021,,,,,
+	1, readme.wr_,,,, 1993-12-15,,,,!READONLY,,readme.wri,,,,7296,,,,,
+	1, jsys.tt_,,,, 1993-12-15,,,, !READONLY,,jsys.ttf,,,, 40600,,,,,
+	1, jsysbd.tt_,,,, 1993-12-15,,,, !READONLY,,jsysbd.ttf,,,, 39568,,,,,
+	1, jsysbi.tt_,,,, 1993-12-15,,,, !READONLY,,jsysbi.ttf,,,, 40932,,,,,
+	1, jsysi.tt_,,,, 1993-12-15,,,, !READONLY,,jsysi.ttf,,,, 42596,,,,,
+	1, jlib16.bf_,,,, 1993-12-15,,,, !READONLY,,jlib16.bft,,,, 249840,,,,,
+

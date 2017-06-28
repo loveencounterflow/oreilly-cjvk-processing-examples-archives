@@ -1,0 +1,442 @@
+K A N J D 2 1 2
+===============
+
+Copyright (C) 1996 James William Breen
+
+INTRODUCTION
+
+The KANJD212 file is a comprehensive collection of information about the 
+5,801 kanji in the JIS X 0212-1990 supplementary character set.
+
+The basic philosophy and format of the KANJD212 file is the same as 
+that in the  original KANJIDIC file, which covers the kanji in the
+JIS X 0208-1990 set, and users are referred to the KANJIDIC.DOC file
+for further information. This document only covers the unique aspects
+of the KANJD212 file.
+
+The KANJIDIC file is made available under the terms of the GNU Public 
+Licence, a copy of which is appended to this document.
+
+FORMAT
+
+As in the the case of the KANJIDIC file, the KANJD212 contains a mixture 
+of ASCII characters and kana/kanji encoded in the EUC (Extended Unix Code) 
+coding. The first three bytes of each record are the kanji itself, coded
+in the EUC-3 method, in which the first byte is 0x8F. This is the main 
+method of encoding the JIS X 0212 characters in EUC. The remainder of the 
+fields in each record are in the same coding and format as in the 
+KANJIDIC file.
+
+CONTENTS
+
+At the time of its initial release, the KANJD212 file contains the 
+following information about each kanji:
+
+	Unicode (UCS2) coding
+	Bushu
+	Stroke count (total)
+	Morohashi Daikanwajiten number (if available)
+	Korean reading(s)
+	Pinyin reading(s)
+	On and Kun reading(s)
+
+Further information is being compiled for later addition, including the 
+Nelson, Halpern and O'Neill indices, where available, some further 
+readings, and some English meanings.
+
+COMMENTS
+
+Note that the bushu in this file are the "classical" versions, not the 
+revised Nelson versions used in the KANJIDIC file.
+
+COMPILATION
+
+The KANJD212 file has been compiled from a number of sources:
+
+	- the Unicode (UCS-2) mappings are from the table available  on
+          the Unicode Consortium's ftp site
+
+	- the radical and stroke counts have been taken from the x0212-cn
+          file, one of a set of file prepared some years ago by Eric
+          Grinstead
+
+	- the Morohashi numbers have been derived from the JIS X 0221
+	  standards document, and are from the file Uni2Dict prepared by
+	  Koichi Yasuoka <yasuoka@kudpc.kyoto-u.ac.jp>. The Uni2Dict file
+	  covers all the Unicode 1.1 kanji.
+
+	- the Pinyin readings are from the Uni2Pinyin file, also prepared
+	  by Koichi Yasuoka. His file was compiled originally from the 
+	  "TONEPY.tit" file prepared by Yongguang Zhang, and has been
+	  supplemented from other sources, including the x0212-cn file.
+
+	- the Japanese ON and KUN readings are mostly from the file
+	  of Unicode pronunciations (Pronunciations.text) prepared by
+	  the Taligent company. They have been supplemented by some 300
+	  additional readings from the Grinstead files, and by readings
+	  collected from several waei jiten, and from the "hojo_wnn.src"
+	  file prepared for use with the WNN FEP system.
+
+	- the Korean reading(s) have also been taken from the Taligent
+	  file.
+	  
+The compilation of the KANJD212 has really be made possible by the activities
+of a group of people collecting material for a Unicode dictionary, and the 
+assembly of the file is largely a by-product of that activity. The group is
+led by Jack Halpern, and I would like to express my appreciation to Jack
+and the other members of the group, in particular Koichi Yasuoka, Ken Lunde,
+Martin Du"rst, Christian Wittern and Chuck Muller.
+
+Jim Breen
+(jwb@capek.rdt.monash.edu.au)
+Department of Digital Systems
+Monash University, Victoria, Australia
+
+APPENDIX A.
+
+USING THE JIS X 0212-1990 CHARACTER SET
+
+[Some comments by Jim Breen.]
+
+Usage of the characters in the Supplementary Kanji set (which I will refer to 
+here as JIS212 for brevity,) is not wide-spread. In fact, regular access to
+these kanji is unlikely to become a feature of Japanese text processing
+until the rather larger set of characters in the CJK portion of the 
+ISO 10646/Unicode set is implemented widely. Why?, well they are pretty
+obscure kanji, and it is very rare to find an occasion in normal Japanese
+text-handling when the 6,355 characters in the JIS X 0208-1990 set will 
+not suffice.
+
+The only specific JIS212 font file I am aware of is the "jisksp16.bdf",
+prepared by Koichi Yasuoka and others. My copy is Version 0.9 and is dated 
+April 25, 1995 (ANZAC Day!). I have used this file to create the JIS21216.FNT
+binary bitmap file for use with DOS applications.
+
+As far as platforms supporting the JIS212 kanji, I have been able to 
+ascertain as follows:
+
+A. UNIX
+
+(a) MULE
+
+The MULE (Multilingual Emacs) system supports JIS212 codes. I am not an 
+emacs user, so I cannot comment further.
+
+(b) kterm
+
+The kterm (kanji xterm) can be made to support JIS212 by applying a patch
+file "kterm-6.1.0-6.1.0.wd2.patch" to the X11R6 version of kterm. I have
+successfully installed this within X11R5 under both Linux and DEC Ultrix.
+This kterm version supports both JIS208 and JIS212 in JIS (ISO 2022) and
+EUC codings, but does not support Shift-JIS at all.
+
+(c) WNN
+
+I presume from the existence of the "hojo_wnn.src" file, which contains over
+1,000 WNN henkan file entries of mappings into compounds of JIS212 kanji,
+that there are versions of WNN which support JIS212. I have never got 
+around to investigating them.
+
+(d) jstevie
+
+I am an old `vi' user, and desperately wanted to be able to edit files 
+containing JIS212 kanji using a vi-like editor. As I use jstevie under both
+Linux and Ultrix, I asked Junn Ohta, who did much of the kanjification of
+stevie, for some suggestions, and following his advice, I produced a version
+of jstevie which will edit EUC files containing JIS212 (and JIS208) kanji. 
+Of course it will not handle Shift-JIS, and I haven't got around to doing a 
+JIS version, although only a few changes are needed for this. Of course, it 
+needs the special version of kterm.
+
+I'll get around to releasing this version someday, but if anyone wants a
+copy to try, please email me.
+
+(d) xjdic
+
+Of course, I needed to be able to use my own dictionary system with JIS212 
+kanji, so I have extended the xjdic and xjdxgen software to handle files
+with JIS212 kanji. This will be released as part of V2.2, but if anyone
+want to try it out, email me.
+
+I considered making xjdic handle KANJIDIC and KANJD212 as a single kanji 
+dictionary file, however I have postponed that for a while. As an interim
+step, the way to use KANJD212 with xjdic is to treat it as one of the 9
+possible dictionary files. This allows reasonable searching capability.
+
+B. MacIntosh
+
+I am not aware of any software which handles JIS212 kanji on Macs. Bear
+in mind that the JLK and Kanjitalk software uses Shift-JIS, which cannot
+support JIS212.
+
+C. Windows.
+
+As for Macs. (I must suggest to Stephen Chung that he extend JWP to 
+support JIS212 kanji. JWP and WinJDic are among the very few pieces of
+Windows software that use EUC coding internally.)
+
+DOS.
+
+The Japanese version of DOS (DOS/V), and the NEC PC-9800 versions all use
+Shift-JIS, and hence cannot support JIS212.
+
+I have modified my JREADER text reader program to support files with JIS212
+kanji. It can also reference kanji in the KANJD212 file. This will be part of
+the V2.6 release, but if anyone wants to try it, please email me.
+
+I intend to modify JDIC in a similar fashion, but that will be a while yet
+as the changes are non-trivial.
+
+
+APPENDIX B.
+
+		    GNU GENERAL PUBLIC LICENSE
+		     Version 1, February 1989
+
+ Copyright (C) 1989 Free Software Foundation, Inc.
+                    675 Mass Ave, Cambridge, MA 02139, USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+			    Preamble
+
+  The license agreements of most software companies try to keep users
+at the mercy of those companies.  By contrast, our General Public
+License is intended to guarantee your freedom to share and change free
+software--to make sure the software is free for all its users.  The
+General Public License applies to the Free Software Foundation's
+software and to any other program whose authors commit to using it.
+You can use it for your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Specifically, the General Public License is designed to make
+sure that you have the freedom to give away or sell copies of free
+software, that you receive source code or can get it if you want it,
+that you can change the software or use pieces of it in new free
+programs; and that you know you can do these things.
+
+  To protect your rights, we need to make restrictions that forbid
+anyone to deny you these rights or to ask you to surrender the rights.
+These restrictions translate to certain responsibilities for you if you
+distribute copies of the software, or if you modify it.
+
+  For example, if you distribute copies of a such a program, whether
+gratis or for a fee, you must give the recipients all the rights that
+you have.  You must make sure that they, too, receive or can get the
+source code.  And you must tell them their rights.
+
+  We protect your rights with two steps: (1) copyright the software, and
+(2) offer you this license which gives you legal permission to copy,
+distribute and/or modify the software.
+
+  Also, for each author's protection and ours, we want to make certain
+that everyone understands that there is no warranty for this free
+software.  If the software is modified by someone else and passed on, we
+want its recipients to know that what they have is not the original, so
+that any problems introduced by others will not reflect on the original
+authors' reputations.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+ 
+		    GNU GENERAL PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. This License Agreement applies to any program or other work which
+contains a notice placed by the copyright holder saying it may be
+distributed under the terms of this General Public License.  The
+"Program", below, refers to any such program or work, and a "work based
+on the Program" means either the Program or any work containing the
+Program or a portion of it, either verbatim or with modifications.  Each
+licensee is addressed as "you".
+
+  1. You may copy and distribute verbatim copies of the Program's source
+code as you receive it, in any medium, provided that you conspicuously and
+appropriately publish on each copy an appropriate copyright notice and
+disclaimer of warranty; keep intact all the notices that refer to this
+General Public License and to the absence of any warranty; and give any
+other recipients of the Program a copy of this General Public License
+along with the Program.  You may charge a fee for the physical act of
+transferring a copy.
+
+  2. You may modify your copy or copies of the Program or any portion of
+it, and copy and distribute such modifications under the terms of Paragraph
+1 above, provided that you also do the following:
+
+    a) cause the modified files to carry prominent notices stating that
+    you changed the files and the date of any change; and
+
+    b) cause the whole of any work that you distribute or publish, that
+    in whole or in part contains the Program or any part thereof, either
+    with or without modifications, to be licensed at no charge to all
+    third parties under the terms of this General Public License (except
+    that you may choose to grant warranty protection to some or all
+    third parties, at your option).
+
+    c) If the modified program normally reads commands interactively when
+    run, you must cause it, when started running for such interactive use
+    in the simplest and most usual way, to print or display an
+    announcement including an appropriate copyright notice and a notice
+    that there is no warranty (or else, saying that you provide a
+    warranty) and that users may redistribute the program under these
+    conditions, and telling the user how to view a copy of this General
+    Public License.
+
+    d) You may charge a fee for the physical act of transferring a
+    copy, and you may at your option offer warranty protection in
+    exchange for a fee.
+
+Mere aggregation of another independent work with the Program (or its
+derivative) on a volume of a storage or distribution medium does not bring
+the other work under the scope of these terms.
+ 
+  3. You may copy and distribute the Program (or a portion or derivative of
+it, under Paragraph 2) in object code or executable form under the terms of
+Paragraphs 1 and 2 above provided that you also do one of the following:
+
+    a) accompany it with the complete corresponding machine-readable
+    source code, which must be distributed under the terms of
+    Paragraphs 1 and 2 above; or,
+
+    b) accompany it with a written offer, valid for at least three
+    years, to give any third party free (except for a nominal charge
+    for the cost of distribution) a complete machine-readable copy of the
+    corresponding source code, to be distributed under the terms of
+    Paragraphs 1 and 2 above; or,
+
+    c) accompany it with the information you received as to where the
+    corresponding source code may be obtained.  (This alternative is
+    allowed only for noncommercial distribution and only if you
+    received the program in object code or executable form alone.)
+
+Source code for a work means the preferred form of the work for making
+modifications to it.  For an executable file, complete source code means
+all the source code for all modules it contains; but, as a special
+exception, it need not include source code for modules which are standard
+libraries that accompany the operating system on which the executable
+file runs, or for standard header files or definitions files that
+accompany that operating system.
+
+  4. You may not copy, modify, sublicense, distribute or transfer the
+Program except as expressly provided under this General Public License.
+Any attempt otherwise to copy, modify, sublicense, distribute or transfer
+the Program is void, and will automatically terminate your rights to use
+the Program under this License.  However, parties who have received
+copies, or rights to use copies, from you under this General Public
+License will not have their licenses terminated so long as such parties
+remain in full compliance.
+
+  5. By copying, distributing or modifying the Program (or any work based
+on the Program) you indicate your acceptance of this license to do so,
+and all its terms and conditions.
+
+  6. Each time you redistribute the Program (or any work based on the
+Program), the recipient automatically receives a license from the original
+licensor to copy, distribute or modify the Program subject to these
+terms and conditions.  You may not impose any further restrictions on the
+recipients' exercise of the rights granted herein.
+ 
+  7. The Free Software Foundation may publish revised and/or new versions
+of the General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+Each version is given a distinguishing version number.  If the Program
+specifies a version number of the license which applies to it and "any
+later version", you have the option of following the terms and conditions
+either of that version or of any later version published by the Free
+Software Foundation.  If the Program does not specify a version number of
+the license, you may choose any version ever published by the Free Software
+Foundation.
+
+  8. If you wish to incorporate parts of the Program into other free
+programs whose distribution conditions are different, write to the author
+to ask for permission.  For software which is copyrighted by the Free
+Software Foundation, write to the Free Software Foundation; we sometimes
+make exceptions for this.  Our decision will be guided by the two goals
+of preserving the free status of all derivatives of our free software and
+of promoting the sharing and reuse of software generally.
+
+			    NO WARRANTY
+
+  9. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+
+  10. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+		     END OF TERMS AND CONDITIONS
+ 
+	Appendix: How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to humanity, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these
+terms.
+
+  To do so, attach the following notices to the program.  It is safest to
+attach them to the start of each source file to most effectively convey
+the exclusion of warranty; and each file should have at least the
+"copyright" line and a pointer to where the full notice is found.
+
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) 19yy  <name of author>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 1, or (at your option)
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+Also add information on how to contact you by electronic and paper mail.
+
+If the program is interactive, make it output a short notice like this
+when it starts in an interactive mode:
+
+    Gnomovision version 69, Copyright (C) 19xx name of author
+    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the
+appropriate parts of the General Public License.  Of course, the
+commands you use may be called something other than `show w' and `show
+c'; they could even be mouse-clicks or menu items--whatever suits your
+program.
+
+You should also get your employer (if you work as a programmer) or your
+school, if any, to sign a "copyright disclaimer" for the program, if
+necessary.  Here a sample; alter the names:
+
+  Yoyodyne, Inc., hereby disclaims all copyright interest in the
+  program `Gnomovision' (a program to direct compilers to make passes
+  at assemblers) written by James Hacker.
+
+  <signature of Ty Coon>, 1 April 1989
+  Ty Coon, President of Vice
+
+That's all there is to it!
+
+

@@ -1,0 +1,344 @@
+¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+¡Ã£Ç£å£ô£ô£é£î£ç¡¡£Ó£ô£á£ò£ô£å£ä¡¡£÷£é£ô£è¡¡£Î£Ê£Ó£ô£á£ò              J1.TUT¡Ã
+¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+\NumberStyle="NJJ 3.0: JW-Tutorial 1, page %d"
+
+
+
+
+                           ¡ØÆî¶ËÀ±¡Ù¥Á¥å¡¼¥È¥ê¥¢¥ë
+
+                ¡¡¡¡¡¡¡¡£Î£Ê£Ó£ô£á£ò¡¡£Ô£õ£ô£ï£ò£é£á£ì
+
+                               for version 3.0
+
+
+
+
+
+
+                            ¢þ Yo Tomita 1992-1994
+
+
+                           Hit <PageDown> to continue
+
+¢£¢£¢£¢£¢£¢£¢£¢£  £Ä£Ï£Ã£Õ£Í£Å£Î£Ô  £Ã£Ï£Î£Ö£Å£Î£Ô£É£Ï£Î£Ó  ¢£¢£¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+
+This tutorial uses the following keys to instruct your specific operation:
+******************************************************************************
+  <ESC>                 key strokes: press "ESC" key on your keyboard
+ ¡ÚFILE, File list¡Û    menu items: select "File", then "File list"
+ ¡ÎAscii¡Ï              indicator at the bottom of the screen: "Ascii"
+  >>¡¡¡¡                question asked by the Tutorial. Please answer it
+******************************************************************************
+
+        >> Now, a question: Press <ESC> twice. Did you see MENU?
+        >> If you did correctly, you should have seen it briefly.
+
+The following are the sections and headings of each tutorial.
+
+        ¢£¢£  £Ó£Å£Ã£Ô£É£Ï£Î  ¢£¢£
+        ¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+
+        ¡ü  Heading
+
+        ¢¢  Sub-heading
+
+                           Hit <PageDown> to continue
+¢£¢£¢£¢£¢£¢£¢£ £Â£Á£Ó£É£Ã¡¡£Ï£Ð£Å£Ò£Á£Ô£É£Ï£Î      ´ðËÜÅªÁàºî ¢£¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+¡ü Moving around the document (Part 1): About the cursor
+
+First of all, find the cursor, which is the blinking underscore. 
+This indicate the place you can insert characters.
+
+        >> Use <¢¬> or <¢­> to bring the cursor to this line.
+
+        >> Now hit <¢­> 20 times. Observe the behaviour of NJStar.
+        >> Bring back the cursor to this line and let it stay here.
+
+As you have seen, you can scroll your document using the arrow keys. If you want a quick scroll, hitting <PageDown> will give you a full screen as you have done before.
+
+But if you want to adjust the amount of text to read around the top or bottom edge, you can also use arrow keys <Alt¢¬> or <Alt¢­> to adjust the vertical position.
+
+        >> Hit <Alt¢­> 5 times, then <Alt¢¬> 5 times. Observe the behaviour.
+
+¡ü Calling Functions and Menu
+
+Many functions of NJStar, such as file management, search, changing input mode, are accessible from MENU (Pull-down). Menu can be called by pressing <ESC> located at the top left of the keyboard. 
+
+        >> Press <ESC>. 
+
+Did you see the following in the top of the screen?
+
+ ¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+ ¡ÃFile     Edit     Block    Search   Input    Tools    Output   Help       ¡Ã
+ ¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+        >> 1. Try to highlight "Edit" (hit <¢ª> or <¢«>)
+        >> 2. Pull-down the menu and select "Filestatus" (hit¢­several times)
+        >> 3. Press <ENTER> - the biggest key on your keyboard
+
+If you have followed the instructions correctly, the information of this file is displayed in the bottom row of the screen. 
+
+If you decided not to perform the function, just press <ESC> again to quit from Menu.
+
+        >> 1. Call Menu and repeat the same process (1, 2) as above, 
+        >> 2. Press <ESC> twice
+
+Please note that this time, the item "Edit" and "Filestatus" has already been selected. Yes, NJStar remembers what you did with the menu previously.
+
+You can perform the same by using the mouse.
+
+        >> Move the mouse pointer to the top of the screen, and 
+           click the left button.
+
+The functions in the menu are part of the configurable functions, which can also be called by hitting one of the Function Keys and / or Speed Keys. In this tutorial, Menu option is normally given first, as it is easier to remember than the other options. When you become familiar with the system, you may prefer to use Speed keys or Function keys.
+
+¡ü Help
+
+Help is called by <F1>
+
+        >> Hit <F1> then press any key twice
+
+As you notice, this is a two-page list. Page 1 lists information on Function Keys and Speed Keys; Page 2 shows Hiragana/Katakana romanisation chart. Note that when you are in the middle of Kana/Kanji conversion, the English dictionary will be called instead.
+
+¡ü Mode change between Japanese and English
+
+To type Japanese, you must be in either¡Î¤«¤Ê´Á¡Ïor¡ÎRomaji¡Ï mode.
+To type in English, you must be in¡ÎAscii¡Ïmode. 
+
+        >> Bring the mouse pointer to the left bottom indicator.
+        >> Click left button 10 times to observe the change
+
+The same action can be performed through the Menu.
+
+        >> Press <ESC>                          (to call MENU)
+        >> Hit "I" to pull down "Input"         (this is a short cut!)
+        >> Select "Ascii" followed by <ENTER>   (or hit "A" for short cut)
+
+This action is hereafter described as¡ÚInput, Ascii¡Û
+
+Now you are in English mode. Let's use this mode for a while. Keep it on your screen!
+
+
+¢£¢£¢£¢£¢£¢£¢£ £Â£Á£Ó£É£Ã¡¡£Å£Ä£É£Ô£É£Î£Ç      ´ðËÜÅª¤ÊÊÔ½¸Ë¡ ¢£¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+Please confirm that you see¡ÎAscii¡Ïand other file information at the bottom of the screen. If not, switch to¡ÎAscii¡Ïmode.
+
+First of all, let's familiarise ourselves with the navigation keys.
+
+        >> Find the cursor. This is the place where you can type characters.
+
+¡ü Moving around the document (Part 2) 
+
+¢¢ Arrow Keys alone
+Pressing one of the four arrow keys <¢«>, <¢ª>, <¢¬> or <¢­> moves you one space right / left / up / down respectively. If you continue to press, the movement goes very fast. 
+
+        >> Try this now. 
+
+You can achieve the same effect with a mouse by moving it and clicking the left button. 
+
+        >> Do it now.
+
+Let's turn the "End of Line" marker on. 
+
+        >> Menu action¡ÚEdit, Toggle eol¡Û                      ¢¨ <Ctrl F9>
+
+You will see the end of paragraph marker. Bring the cursor around the screen to see how this affects the movement. Did you discover that you cannot move right of the marker? Right!
+
+¢¢ CTRL + ARROW KEYS (Left/Right)
+You can jump a word at a time with CTRL keys together. This is a very useful feature in editing.
+
+        >> Try this now. 
+
+¢¢ CTRL + ARROW KEYS (Up/Down)
+You can jump to the beginning of the screen by pressing <CTRL ¢¬>, to bottom of the screen by pressing <CTRL ¢­>.
+
+        >> Try this now. 
+
+¢¢ SHIFT + ARROW KEYS
+You can select text with this. By selecting you can do many special tasks, such as saving the block of text, looking up the word in the dictionary, Copy, Cut, Paste and so on. See Tutorial 6 for details. 
+
+        >> Try this now.
+        >> MENU,¡ÚBlock, uNmarkblock¡Ûto cancel selection       ¢¨ <Alt U>
+
+¢¢ Other keys
+Here is the summary of other navigation keys:
+  ¦Ü¡½¡½¡½¦á¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦á¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+  ¡Ã key  ¡Ã alone                          ¡Ã  with CTRL               ¡Ã
+  ¦à¡½¡½¡½¦ä¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦ä¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦â
+  ¡Ã PGUP ¡Ãscroll 1 screenful of text up   ¡Ãgo to the beg. of document¡Ã
+  ¡Ã PGDN ¡Ãscroll 1 screenful of text down ¡Ãgo to the end  of document¡Ã
+  ¡Ã HOME ¡Ãgo to the beginning of line     ¡Ãgo to the beg. of document¡Ã
+  ¡Ã END  ¡Ãgo to the end of line           ¡Ãgo to the end  of document¡Ã
+  ¦ß¡½¡½¡½¦ã¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦ã¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+
+        >> Please try this now. 
+
+Remember that by using these four keys above, instead of using the cursor keys, you can save a lot of time and effort.
+
+¡ü Typing and Deleting 
+
+Typing is all done in insertion mode in NJStar.
+
+To type in English, place the cursor in the desired place (which you should know by now!) and press any character keys. Characters will appear directly and push the existing text to the right.
+
+To delete a character, you can do that in two directions. <Backspace>, which is located above <ENTER> deletes text to the left, while <DEL>, which is located below <INS> deletes on the character and to the right.
+
+____________
+¢¯ EXERCISES
+¡±¡±¡±¡±¡±¡±
+I. Delete all the numbers 1 to 9 in sequence hidden in the paragraphs below.
+
+a) The concept of 3the `picturesque' (a key concept ot 2the comprehension of1 Turner, 4even though in his case, as we shall see, it took an individual form)5 6presupposes a selection of the themes of painting, in the sense that not all7 aspects 8of nature can be of equal 9interest to painters who grow up in certain periods of history.
+
+b) 1The first public worship of the 2city was conducted in St. John at six o3'4clock, at which the "regular pastor" as a rule preached on the Gospel of the5 respective 6Sunday or 7festival and "after the 8sermon... every other Sunday,9 that is, every two weeks, the office was performed".
+
+
+II. Make corrections:
+
+My name is john sMith. I am british. I does't likes John Majaaa, who were the president of the United States. 
+
+
+¢£¢£¢£¢£¢£¢£¢£ £Õ£Ó£É£Î£Ç  £Á  £Í£Ï£Õ£Ó£Å        ¥Þ¥¦¥¹¤ò»È¤¦ ¢£¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+By using a mouse, you can perform certain functions quickly. 
+
+¡ü Location-sensitive mouse functions
+
+Please look at the following drawing, representing the screen.
+Letters (A..I) indicates different areas.
+
+
+        +------------------------------------------------------------------£Ê
+   top  |               £Á (calling up MENU)                                |
+        |-------------------------------------------------------------------|
+        |                                                                   |
+        |                                                                   |
+        |               £Â (scroll up/down by dragging)                     |
+        :                                                                   :
+        :                                                                   :
+        |                                                                   |
+        +----+--+---------------------------+-----------+------------+--+---+
+ bottom | £Ã |£Ä|           £Å              |    £Æ     |     £Ç     |£È|£É |
+        +----+--+---------------------------+-----------+------------+--+---+
+Column:  1    7 9                            45          57          71 75  79
+
+        £Ã Toggle major input modes -- [Kana] [Romaji] and [Ascii]
+        £Ä Display "Kanji Info" when you double click
+        £Å a) If Kanji characters are displayed here, you can select Kanji
+              character to editing screen.
+           b) otherwise, it calls the function "FileList"
+        £Æ¡ÎASCII¡Ïonly: display the file status
+        £Ç¡ÎASCII¡Ïonly: call function "Go to Line no:"
+        £È Start/stop recording Macro
+        £É Toggle Jascii Mode¡ÎÁ´³Ñ¡Ïon/off
+        £Ê Activate screen saver 
+
+        £Ã¡¾£É on Right button: Open File       (= ¡ÚFile, Open File¡Û)
+        £Ã¡¾£É on Middle button: Quick Help     (= ¡ÚHelp, Quick Help¡Û)
+
+
+¡ü Summary of mouse functions for editing area
+
+   * Left button once:           to move the cursor.
+   * Right button once:          to start selecting the region.
+                                 the subsequent action to adjust the region.
+   * Both buttons together:      to cancel the selection.
+   * Left button twice on Kanji: to call Kanji Information
+   * Right button twice <M_RR>:  to mark the current line
+______________________________
+¢¯ Quick test on using a mouse
+¡±¡±¡±¡±¡±¡±¡±¡±¡±¡±¡±¡±¡±¡±¡±
+a)  Call menu.
+b)  List the loaded files (call "File List" function)
+c)  Turn on and off JASCII mode
+d)  Flip between Romaji and ASCII
+e)  Select the word "done", and cancel it.
+f)  Get Kanji information on Ëð.
+
+
+¢£¢£¢£¢£¢£ £Æ£É£Ì£Å¡¡£Í£Á£Î£Á£Ç£Å£Í£Å£Î£Ô: OPEN, RENAME, SAVE, QUIT ¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+By `file' here we mean a document stored on the computer disks. As in other files in the office, we want to retrieve it and change the contents of it. We must put it back securely so that we can come back to it later.
+
+Most of the file-related functions are found in MENU's "File" section.
+
+¡ü OPEN ¥ª¡¼¥×¥ó
+
+With this option, you can do two things: 
+
+   1) find and edit one of your existing documents on disks; or
+   2) make a new document. 
+
+To call the function, you may use MENU. But make sure not to open it now, otherwise, you cannot carry on with the tutorial! You may be lost.
+
+        >>¡ÚFile, Open File¡Û                                   ¢¨ <Ctrl F8>
+        >> <ESC> to cancel
+
+Here you see sub-directories (starting with "\"), files and drives (in [ ]).
+You can scroll down for more if the list is longer than the screen height. 
+If you remember the filename, pressing the first character of the filename will make your life simpler.
+
+        >>¡ÚMENU, File, Open File¡Û
+        >> Press "W" to jump to filename "WHATSNEW.300"
+        >> <ESC> to cancel
+
+To open the file, highlight it and press <ENTER>, or click on it with a mouse.
+
+It is a good practice to keep your documents in subdirectories, separating them from the program files. In this case, you change the directory with the menu. As subdirectory-names always start with the "\" symbol, you can search for your document file.
+
+        >>¡ÚFile, File Open¡Û
+        >> Find "\.."                   ("cd .." command in DOS)
+        >> <ESC> to cancel
+
+If you are reading a document from your floppy disk, scroll down to find [A:], highlight it and press <ENTER>. 
+
+        >> do it.                       (Hit "[" for short cut)
+
+Unless you have already loaded a floppy disk, you will hear the error message 
+
+        Drive A: Not Ready (Retry/Abort)?
+
+If you got this, feed a floppy now and try again. You should see something. Note that the file called `(NewFile)' is a new file you are going to create. Just press <ESC> to cancel.
+
+You might have already noticed the `Load file' function, which behaves slightly differently from `Open file'. This function gives you command language, rather than menu action. This allows you to load many files at the same time. For example, if you specify "*.doc", then all the files with ".DOC" extension will be opened. 
+
+¡ü Rename  Ì¾¾ÎÊÑ¹¹
+
+Now you are going to create a copy of this tutorial file on your working directory by RENAMING this file. By doing this, you can keep the original document intact and create a new file based on the other.
+
+        >>¡ÚFile, Rename¡Û                                      ¢¨ <F7>
+        >> Delete the old name completely; and 
+        >> retype exactly as follows: my1.tut
+        >> Hit <ENTER> to do the action.
+
+You should see the file name now changed. That's it.
+
+¡ü Save ÊÝ´É
+
+When you save a file, NJStar saves your old file with BAK extension. It also has an autosave feature, which can be tuned via¡ÚTools, NJ Config¡Û. But it is a good habit to save your file every so often. 
+
+        >>¡ÚFile, Save File¡Û                                   ¢¨ <F2>
+
+Now "my1.tut" is saved.
+
+¡ü Exit all ½ªÎ»
+
+This command you desperately need when you have had enough of computing!
+
+There are two similar options, `save All', `Quit File' and `eXit all'. 
+For the use of `Quit file', refer to Tutorial 6.
+
+        >>¡ÚFile, eXit all¡Û                                    ¢¨ <Ctrl F3>
+
+Well done!
+
+
+                            ¢£ End of TUTORIAL 1 ¢£
+ ¦ç¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦è
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ Press <Shift F10> to select other tutorials  ¡þ¡þ¡þ¡þ¡þ¡þ¦æ
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ Press  <Ctrl F3> to exit NJStar ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ ¦æ
+ ¦ê¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦é
+

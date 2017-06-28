@@ -1,0 +1,51 @@
+Name:         WorldScript Updater
+Version:      1.0
+Released:     August 5, 1995
+Description:  This software will update WorldScript to version 7.5.1.  It is
+              a prerequisite for Chinese Language Kit Updater version 1.1.1 on
+              Power Macintosh 7200, 7500, 8500, and 9500.  Please see below for
+              complete information. 
+
+NOTE: To use the Chinese Language Kit with a Power Macintosh 7200, 7500, 8500, and 9500 series computer, make sure you use version 1.1.1 or later. To install the Chinese Language Kit version 1.1.1, first install the WorldScript Updater 1.0. Then install the Chinese Language Kit version 1.1. Finally, install the Chinese Language Kit Updater to update your software to version 1.1.1.
+
+The enclosed file is a self-extracting archive. To use, download, double-click the downloaded file (this decompresses it).
+ 
+Disk Copy can be found in the Utilities folder posted here.
+ 
+From the Read Me in this archive:
+
+7.5.1 WorldScriptª Installer
+ 
+ 
+Who Should Install WorldScriptª?
+ 
+This installer will install files needed by WorldScriptª technology for users running Macª OS 7.5 and above. Users of the Japanese and Chinese Language Kits or applications which depend on WorldScriptª technology should install these pieces as they improve the stability and performance of your system.  QuickDrawª GX and Power Macintosh users should upgrade to these pieces as they provide important improvements over previous versions.
+
+ 
+Using the WorldScriptª Installer
+ 
+The Easy Install option of the WorldScriptª Installer updates your existing WorldScriptª files. If you want to install additional files, you can use the Custom Install option of the Installer.
+ 
+1. To open the WorldScriptª Installer, double-click the Installer icon on the disk you received with your WorldScriptª update package.
+ 
+2. To update existing WorldScriptª files on your startup hard disk, click
+Install.
+ 
+To install additional files, choose Custom Install from the pop-up menu, then click to put an X in the box next to each item you want to install. When you're finished choosing items, click Install.
+ 
+The files are installed on your hard disk. You may be prompted to restart your computer after installation.
+ 
+ 
+About the WorldScriptª Installer
+ 
+The WorldScriptª Installer installs the following files:
+ 
+WorldScriptª I (version 7.5.1) Ñ used for complex one-byte processing of languages such as Arabic and Hebrew,
+ 
+WorldScriptª II (version 7.5.1) Ñ used for two-byte processing of languages such as Chinese, Japanese, and Korean,
+ 
+InputBackSupport (version 7.5.1) Ñ provides support for two-byte fonts; automatically installed with WorldScriptª II.
+
+
+©1995  Apple Computer, Inc.
+Apple, WorldScript and the Apple logo are trademarks of Apple Computer, Inc., registered in the U.S.A. and other countries.

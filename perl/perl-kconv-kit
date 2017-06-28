@@ -1,0 +1,1154 @@
+From: ntp@isl.mei.co.jp (Naoya TAKAO)
+Newsgroups: fj.lang.perl
+Subject: perl-kconv alpha version
+Message-ID: <NTP.92Jan15174121@gabriel.isl.mei.co.jp>
+Date: 15 Jan 92 08:41:21 GMT
+Article-I.D.: gabriel.NTP.92Jan15174121
+Sender: news@isl.mei.co.jp
+Reply-To: ntp@isl.mei.co.jp
+Distribution: fj
+Organization: Matsushita Electric IND. CO., LTD. Japan
+Lines: 1141
+Nntp-Posting-Host: gabriel
+
+fj.lang.perl 作成をお祝いして、perl に漢字コード変換機能をつけるキット
+のαバージョンをポストします。
+
+これは、以下のように使えるサブルーチン &kconv, &toeuc, &tosjis, &tojis 
+を perl に追加するものです(perl プログラムではありません)。
+
+$euc_str = &kconv($_, $_EUC);
+                       # 入力漢字コードを自動判定して EUC コードに変換
+$euc_str = &kconv($_, $_EUC, $_SJIS);
+                       # 入力漢字コードを指定して EUC コードに変換
+$euc_str = &toeuc($kanji_str);# 最初の例と同じ
+
+JIS漢字、MS漢字(シフトJIS)、EUC漢字の 2 バイトコードが対象です。JIS コー
+ド出力時のエスケープシーケンスの 3 バイト目は変更可能です。1 バイトカ
+タカナには対応していません。
+
+漢字コード判定および変換部分は(株)富士通研究所の市川さんが作成された 
+nkf のソースを流用させていただいています。なお、元になる perl は日本語
+化されている必要はありません。
+
+詳しくは README.jis を参考にしてください。shar の最初に入っています。
+仕様改善要求、バグ報告などをお待ちしています。
+
+高尾 直弥	ntp@isl.mei.co.jp
+松下電器産業(株)情報システム研究所
+---- Cut Here and unpack ----
+#!/bin/sh
+# shar:	Shell Archiver  (v1.22)
+#
+#                                                                          
+#                                                                          
+#
+#	Run the following text with /bin/sh to create:
+#	  README.jis
+#	  Makefile
+#	  kc_test.pl
+#	  nkf.c
+#	  kconv.c
+#	  usersub.c
+#
+if test -r s2_seq_.tmp
+then echo "Must unpack archives in sequence!"
+     next=`cat s2_seq_.tmp`; echo "Please unpack part $next next"
+     exit 1; fi
+echo "x - extracting README.jis (Text)"
+sed 's/^X//' << 'SHAR_EOF' > README.jis &&
+X	『perl への漢字コード変換機能付加キット(perl-kconv0.90)』
+X
+X					92/01/15
+X					by 高尾 直弥	ntp@isl.mei.co.jp
+X
+X					松下電器産業(株) 情報通信研究センター
+X					情報システム研究所 情報第4開発室
+X
+X1. はじめに
+X
+Xこれは、Larry Wall さんが作成して配布している perl に漢字コード変換機
+X能をつけるためのキットです。perl の distribution には C サブルーチンを
+Xリンクするための例がついていますので、これを利用しています。漢字コード
+X変換の基本的な部分は(株)富士通研究所の市川さんが作成された nkf のソー
+Xスをほぼそのまま用いています。元になる perl は日本語対応している必要は
+Xありませんが、perl 3.0 patchlevel 19 以降でなくてはなりません。
+X
+X対象となる文字のコードは、JIS漢字、EUC漢字、MS漢字(シフトJIS)です。
+X1 バイトカタカナはサポートしていません。
+X
+Xこのキットを用いて作った perl では、以下のサブルーチンが使用できます。
+X
+X&kconv( STRING, OUT [, IN] )
+X	STRING:	文字列
+X	OUT:	出力漢字コード
+X	IN:	入力漢字コード(オプション)
+X
+X	漢字コードの指定方法は以下の通りです。
+X
+X	値	0	1	2	3
+X	OUT:	EUC	SJIS	JIS	EUC
+X	IN:	AUTO	SJIS	JIS	EUC
+X	    (デフォルト)
+X
+X	$_AUTO(==0), $_SJIS(==1), $_JIS(==2), $_EUC(==3) の 4 変数を用
+X	意していますのでこれらを利用できます。これらは参照のみ可能で、
+X	変更はできません。
+X
+X	ex. &kconv( $str, $_EUC );        # 自動判定して EUC に変換
+X	    &kconv( $str, $_JIS, $_SJIS );# SJIS を JIS に変換
+X
+X	なお、JIS 出力時の漢字IN、漢字OUT エスケープシーケンスの３バイ
+X	ト目は、デフォルトでそれぞれ '@', 'J' となっていますが、これら
+X	は、perl 変数 $_KanjiIn, $_KanjiOut を変更することで任意の値に
+X	設定できます。
+X
+X	ex. $_KanjiIn=ord('B'); # 漢字IN  = ESC $ B
+X	    $_KanjiOut=ord('H');# 漢字OUT = ESC ( H
+X
+Xまた、より簡単に使える以下のサブルーチンもあります。
+X
+X&tosjis( $str )		#	&kconv( $str, $_SJIS, $_AUTO ) と同じ
+X&tojis( $str )		#	&kconv( $str, $_JIS, $_AUTO ) と同じ
+X&toeuc( $str )		#	&kconv( $str, $_EUC, $_AUTO ) と同じ
+X
+X2. インストール
+X
+X2.1
+Xキットは、以下の 6 ファイルからなっています。ご確認ください。
+XMakefile	メイクファイル
+XREADME.jis	このファイル
+Xkconv.c		perl とのインタフェース関数
+Xkc_test.pl	テスト用 perl スクリプト
+Xnkf.c		nkf の nkf.c を変更したもの、漢字変換のメイン処理を行う
+Xusersub.c	初期化用関数
+X
+X2.2
+X次に、perl のソースおよびオブジェクト(uperl.o)を用意します。オブジェク
+Xトを消去してしまっている場合はもう一度 perl のソースディレクトリで
+Xmake uperl.o を行ってください。
+X
+X2.3
+XMakefile の 1 行目の perl のソースディレクトリおよび 6 行目の実行形式
+X名その他を書き換えて、make して下さい。
+X
+X2.4
+Xうまく make できたら、"make test" を行って、"All tests passed" と表示
+Xされることを確認して下さい。これでできあがりです。
+X
+X3. その他
+X
+X・perl-kconv 0.90 は、αバージョンです。今後仕様や変数名が変わることが
+X  あります。御了承下さい。また、改善点やバグの指摘をお待ちしています。
+X
+X・perl と C サブルーチンをリンクする方法については、perl のソースの usub 
+X  ディレクトリの内容を参照してください。
+X
+X  その README によりますと、*.mus というファイルを作り、mus というプロ
+X  グラムを用いて C ファイルを作成するのが正しくてきれいな方法なのです
+X  が、この kconv では 可変数引数の扱いやテンポラリバッファの解放のため
+X  に musの出力を手で修正した C ファイル(kconv.c)を使用しています。
+X
+X・私が入手した nkf(PDS Version rev 1.0)には次のようなバグがありました
+X  ので修正しています。バグの症状は、次のようなものです。
+X
+X  「シフトJISファイルにおいて、それだけでは EUC か SJIS か判断できない
+X  2byte文字 A の次に、2バイト目が 0x7e 以下である 2byte文字 B が続く場
+X  合、文字 B が失われる。例えば、"螢／あ"という SJIS 文字列に対して
+X  "nkf -e[-j]" とすると "／" が消える。」
+X
+X・このキットの再配布・改変などについては、perl 同様 Gnu Public
+X  Licensesに従って下さい。perl の配布キットには 'Copying' というファイ
+X  ルがありますのでこれを参照してください。
+SHAR_EOF
+chmod 0644 README.jis || echo "restore of README.jis fails"
+set `wc -c README.jis`;Sum=$1
+if test "$Sum" != "4499"
+then echo original size 4499, current size $Sum;fi
+echo "x - extracting Makefile (Text)"
+sed 's/^X//' << 'SHAR_EOF' > Makefile &&
+XSRC = ../jperl
+XGLOBINCS = 
+XLOCINCS = 
+XLIBS =-lm
+XCFLAGS=-g
+XEXEC=./jperl
+XCC=cc
+X
+X.SUFFIXES=.o .c .mus
+X
+XCFILES = nkf.c kconv.c usersub.c
+XOFILES = nkf.o kconv.o usersub.o
+XOTHERS = README.jis Makefile kc_test.pl
+XARCHIVE= $(OTHERS) $(CFILES)
+X
+X$(EXEC): $(SRC)/uperl.o $(OFILES)
+X	$(CC) $(SRC)/uperl.o $(OFILES) $(LIBS) -o $(EXEC)
+X
+X.c.o:
+X	$(CC) -c -I$(SRC) $(GLOBINCS) -DDEBUGGING $(CFLAGS) $<
+X
+Xusersub.o: usersub.c
+Xnkf.o: nkf.c
+Xkconv.o: kconv.c
+X
+X#kconv.c: kconv.mus
+X#	mus kconv.mus >kconv.c
+X
+Xtest:	$(EXEC)
+X	$(EXEC) kc_test.pl
+X
+Xclean:
+X	-rm -f *.bak *~ $(OFILES) $(EXEC)
+X
+Xtar:	$(ARCHIVE)
+X	tar cf - $(ARCHIVE) | compress > perl-kconv.tar.Z
+X
+Xshar:	$(ARCHIVE)
+X	-rm -f kc_shar[0-9]*
+X	xshar -c -v -s -okc_shar -l41 $(ARCHIVE)
+SHAR_EOF
+chmod 0644 Makefile || echo "restore of Makefile fails"
+set `wc -c Makefile`;Sum=$1
+if test "$Sum" != "710"
+then echo original size 710, current size $Sum;fi
+echo "x - extracting kc_test.pl (Text)"
+sed 's/^X//' << 'SHAR_EOF' > kc_test.pl &&
+X#! ./jperl
+X
+X%Vars = (
+X	 '_KanjiIn', ord('@'),
+X	 '_KanjiOut', ord('J'),
+X	 '_AUTO', 0,
+X	 '_SJIS', 1,
+X	 '_JIS', 2,
+X	 '_EUC', 3,
+X);
+X
+X@Subs = ('kconv', 'tojis', 'tosjis', 'toeuc');
+X
+Xselect(STDERR);
+Xprint "1.Checking if new subroutines are defined .. ";
+Xfor (@Subs) {
+X    if (!defined &$_) {
+X	die "\nsubroutine $_ is not defined.\n";
+X    }
+X}
+Xprint "ok.\n";
+X
+Xprint "2.Checking default values of new variables .. ";
+Xwhile(($var, $value) = each(%Vars)) {
+X    if (eval "defined \$$var"){
+X	if (eval "\$$var" != $value) {
+X	    die "\nDefault value of \$$var is not $value\n";
+X	}
+X    } else {
+X	die "\n\$$var is not defined.\n";
+X    }
+X}
+Xprint "ok.\n";
+X
+Xprint "3.Checking asignablity of variables .. ";
+Xfor ('_KanjiIn', '_KanjiOut') {
+X    eval "\$$_ = ord('B')";
+X    if (eval "\$$_" != ord('B')) {
+X	die "\nCan't set a value to \$$_\n";
+X    }
+X}
+Xprint "ok.\n";
+X
+X@JIS_DATA = (
+X0x1b,0x24,0x40,0x47,0x52,0x37,0x3c,0x1b,0x28,0x4a,
+X0x41,0x1b,0x24,0x40,0x35,0x2e,0x3c,0x52,0x1b,0x28,
+X0x4a,0x42,0x1b,0x24,0x40,0x24,0x5e,0x24,0x39,0x24,
+X0x5e,0x24,0x39,0x1b,0x28,0x4a,0x43,0x1b,0x24,0x40,
+X0x24,0x34,0x40,0x36,0x31,0x49,0x24,0x4e,0x24,0x33,
+X0x24,0x48,0x24,0x48,0x1b,0x28,0x4a,0x44,0x1b,0x24,
+X0x40,0x24,0x2a,0x37,0x44,0x24,0x53,0x1b,0x28,0x4a,
+X0x45,0x1b,0x24,0x40,0x3f,0x3d,0x24,0x37,0x3e,0x65,
+X0x24,0x32,0x24,0x5e,0x24,0x39,0x1b,0x28,0x4a,0x46,
+X0x1b,0x24,0x40,0x21,0x23,0x1b,0x28,0x4a,0x47,0xa,
+X0x1b,0x24,0x40,0x72,0x35,0x4c,0x25,0x72,0x33,0x72,
+X0x34,0x21,0x3f,0x3d,0x2a,0x24,0x6a,0x21,0x23,0x1b,
+X0x28,0x4a,0xa,
+X	     );
+X
+X@EUC_DATA = (
+X0xc7,0xd2,0xb7,0xbc,0x41,0xb5,0xae,0xbc,0xd2,0x42,
+X0xa4,0xde,0xa4,0xb9,0xa4,0xde,0xa4,0xb9,0x43,0xa4,
+X0xb4,0xc0,0xb6,0xb1,0xc9,0xa4,0xce,0xa4,0xb3,0xa4,
+X0xc8,0xa4,0xc8,0x44,0xa4,0xaa,0xb7,0xc4,0xa4,0xd3,
+X0x45,0xbf,0xbd,0xa4,0xb7,0xbe,0xe5,0xa4,0xb2,0xa4,
+X0xde,0xa4,0xb9,0x46,0xa1,0xa3,0x47,0xa,0xf2,0xb5,
+X0xcc,0xa5,0xf2,0xb3,0xf2,0xb4,0xa1,0xbf,0xbd,0xaa,
+X0xa4,0xea,0xa1,0xa3,0xa,
+X	     );
+X
+X@SJIS_DATA = (
+X0x94,0x71,0x8c,0x5b,0x41,0x8b,0x4d,0x8e,0xd0,0x42,
+X0x82,0xdc,0x82,0xb7,0x82,0xdc,0x82,0xb7,0x43,0x82,
+X0xb2,0x90,0xb4,0x89,0x68,0x82,0xcc,0x82,0xb1,0x82,
+X0xc6,0x82,0xc6,0x44,0x82,0xa8,0x8c,0x63,0x82,0xd1,
+X0x45,0x90,0x5c,0x82,0xb5,0x8f,0xe3,0x82,0xb0,0x82,
+X0xdc,0x82,0xb7,0x46,0x81,0x42,0x47,0xa,0xe9,0xb3,
+X0x96,0xa3,0xe9,0xb1,0xe9,0xb2,0x81,0x5e,0x8f,0x49,
+X0x82,0xe8,0x81,0x42,0xa,
+X	      );
+X
+X$JIS_str = pack('C*', @JIS_DATA);
+X$EUC_str = pack('C*', @EUC_DATA);
+X$SJIS_str = pack('C*', @SJIS_DATA);
+X
+X$_KanjiIn = ord('@');
+X$_KanjiOut= ord('J');
+X
+Xprint "4.Checking if &kconv works(with/without specifying input code) .. ";
+X
+Xfor $src ('JIS', 'EUC', 'SJIS') {
+X    for $dst ('JIS', 'EUC', 'SJIS') {
+X	$ret = &kconv((eval "\$${src}_str"),
+X		      (eval "\$_$dst"), (eval "\$_$src"));
+X	if ($ret ne (eval "\$${dst}_str")) {
+X	    die <<EOM;
+X
+X$src to $dst conversion failed.(specifying input code)
+XEOM
+X	}
+X	$ret = &kconv(eval "\$${src}_str", eval "\$_$dst");
+X	if ($ret ne (eval "\$${dst}_str")) {
+X	    die <<EOM;
+X
+X$src to $dst conversion failed.(without specifying input code)
+XEOM
+X	}
+X    }
+X}
+Xprint "ok.\n";
+X
+Xprint "5.Checking if &tojis, &toeuc and &tosjis work .. ";
+Xfor $src ('JIS', 'EUC', 'SJIS') {
+X    for $dst ('JIS', 'EUC', 'SJIS') {
+X	($_ = $dst) =~ tr/A-Z/a-z/;
+X	$ret = eval "&to$_(\$${src}_str)";
+X	if ($ret ne (eval "\$${dst}_str")) {
+X	    die <<EOM;
+X
+X$src to $dst conversion failed.(using &to$_)
+XEOM
+X	}
+X    }
+X}
+Xprint "ok.\n";
+X
+Xprint "6.Checking if \$_KanjiIn and \$_KanjiOut are really working .. ";
+X
+X$_KanjiIn = $_KanjiOut = ord('B');
+X
+X$JIS_str =~ s/\033\044\100/\033\044\102/g;# ESC $ @ -> ESC $ B
+X$JIS_str =~ s/\033\050\112/\033\050\102/g;# ESC ( J -> ESC ( B
+X
+Xfor $src ('JIS', 'EUC', 'SJIS') {
+X    $ret = &kconv((eval "\$${src}_str"),
+X		  $_JIS, (eval "\$_$src"));
+X    if ($ret ne $JIS_str) {
+X	die <<EOM;
+X
+X$src to JIS(B) conversion failed.(specifying input code)
+XEOM
+X    }
+X    $ret = &kconv(eval "\$${src}_str", $_JIS);
+X    if ($ret ne $JIS_str) {
+X	die <<EOM;
+X
+X$src to JIS(B) conversion failed.(without specifying input code)
+XEOM
+X    }
+X}
+Xprint "ok.\n";
+X
+Xprint "All tests passed.\n";
+SHAR_EOF
+chmod 0755 kc_test.pl || echo "restore of kc_test.pl fails"
+set `wc -c kc_test.pl`;Sum=$1
+if test "$Sum" != "3995"
+then echo original size 3995, current size $Sum;fi
+echo "x - extracting nkf.c (Text)"
+sed 's/^X//' << 'SHAR_EOF' > nkf.c &&
+X/** Network Kanji Filter. (PDS Version) rev 1.0
+X************************************************************************
+X************************************************************************
+X** Copyright (C) Fujitsu LTD. (Itaru ICHIKAWA), 1987
+X** 連絡先： （株）富士通研究所　ソフト３研　市川　至
+X** （E-Mail Address: ichikawa@flab.fujitsu.junet）
+X** このプログラムのいかなる複写，移植，改変，修正も許諾します．
+X** Everyone is permitted to do anything on this program
+X** including copying, transplanting, debugging, and modifying.
+X************************************************************************
+X************************************************************************
+X** 	
+X**					 Written by I.Ichikawa
+X**					 Fujitsu Labs.,  JH2FKN/1
+X**
+X**/
+X
+X/*
+X *	Modified 91/05/25 by	高尾 直弥 (ntp@isl.mei.co.jp)
+X */
+X
+X#include "EXTERN.h"	/* ntp added */
+X#include "perl.h"	/* ntp added */
+X/* #include <stdio.h>	ntp deleted  */
+X#include <sys/types.h>
+X
+X#undef	FALSE	/* redefine by ntp */
+X#define		FALSE	0
+X#undef	TRUE	/* redefine by ntp */
+X#define		TRUE	1
+X
+X#define		ESC	0x1b
+X#define		SP	0x20
+X#define		AT	0x40
+X#define		SSP	0xa0
+X#define		DEL	0x7f
+X
+X#define		HOLD_SIZE	32
+X
+X#define		DEFAULT_KI	'@'
+X#define		DEFAULT_KO	'J'
+X#define		DEFAULT_I	oconv		/* EUC, JIS7 */
+X/* #define	DEFAULT_I	s_oconv		/* Shift JIS */
+X
+X#define		SJ0162	0x00e1		/* 01 - 62 ku offset */
+X#define		SJ6394	0x0161		/* 63 - 94 ku offset */
+X
+X/* undef'ed by ntp
+X#define GETC(p)  (!unbuf_f||(p)->_cnt>=1?getc(p):(fflush(stdout),getc(p)))
+X*/
+X
+X/* DIRTY redefines by ntp */
+X#ifdef	GETC
+X#undef	GETC
+X#endif/* GETC */
+X#define	GETC(x)	((int)(*(x++)))
+X
+X#ifdef	putchar
+X#undef	putchar
+X#endif/* putchar */
+X#define	putchar(x)	(*tmpcp++=(x),*tmpcp=0)
+X
+X
+X
+X/* buffers */
+X/* ntp deleted unnecessary stuffs */
+Xstatic	int             hold_count;
+Xstatic	short   *hold_buf;/* changed from hold_buf[] */
+X
+X/* flags */
+X/* ntp deleted unnecessary stuffs */
+Xstatic	int	estab_f;
+X
+X/* options */
+X/* GLOBAL variables --- available as perl variables */
+Xint	_KanjiIn = (int)(DEFAULT_KI),/* changed from k_in by ntp */
+X	_KanjiOut = (int)(DEFAULT_KO),/* changed from k_out by ntp */
+X	_EUC = 3,/* added by ntp */
+X	_JIS = 2,
+X	_SJIS = 1,
+X	_AUTO = 0;
+X
+X/* add by ntp */
+Xstatic	unsigned char	*tmpcp;/* add */
+X	char	*kconv();
+X	char	*tosjis();
+X	char	*tojis();
+X	char	*toeuc();
+X
+X/* converters */
+Xint             s_iconv ();
+X
+Xint             e_oconv ();
+Xint             j_oconv ();
+Xint             s_oconv ();
+X
+X#ifdef	__ROT__/* We don't need these --- ntp */
+Xunsigned int		rot13 ();
+Xunsigned int		rot47 ();
+X#endif
+Xstatic	unsigned int		nops ();
+X
+Xstatic	int             (*iconv) ();
+Xstatic	unsigned int		(*r1conv) ();
+Xstatic	unsigned int		(*r2conv) ();
+Xstatic	int             (*oconv) ();
+X
+Xstatic	unsigned char	*h_conv();/* changed to return pointer */
+X
+X/* Global states */
+Xstatic	int             in_kanji,
+X			k_shift;
+X
+X
+X
+Xchar *
+Xkconv(str, out, in)
+Xunsigned char	*str;
+Xint	out;
+Xint	in;
+X{
+X	unsigned char	*kconv_retbuf;
+X
+X	if ( out < 0 || out > 3 || in < 0 || in > 3 )
+X		fatal( "Usage: &kconv( $str, out [,in] )\n\
+X\tout = 0:EUC  1:SJIS 2:JIS 3:EUC\n\
+X\tin  = 0:AUTO 1:SJIS 2:JIS 3:EUC\n" );
+X
+X	if ( !(hold_buf = (short*)malloc(HOLD_SIZE*sizeof(short))))
+X		fatal( "Not enough memory in kconv.\n" );
+X/*
+X * I prepare a buffer whose size is 3*len(original_string)+3.
+X * I think this is enough(and least) for EUC(SJIS)->JIS conversion.
+X * Freeing of this buffer is done at usersub() in kconv.c.
+X * ---- by ntp ----
+X */
+X	if (!(kconv_retbuf=(unsigned char*)malloc(strlen(str)*3+3)))
+X		fatal( "Not enough memory in kconv.\n" );
+X	kconv_retbuf[0] = 0;
+X	tmpcp = kconv_retbuf;
+X	in_kanji = FALSE;
+X	k_shift = FALSE;
+X	estab_f = FALSE;
+X	oconv = (out == 1) ? s_oconv : ((out == 2) ? j_oconv : e_oconv);
+X	switch( in ) {
+X	case 0:	iconv = oconv; break;
+X	case 1: iconv = s_iconv; estab_f = TRUE; break;
+X	case 2: /* no break */
+X	case 3: iconv = oconv; estab_f = TRUE; break;
+X	}
+X	r1conv = nops;
+X	r2conv = nops;
+X	convert( str );
+X	free( hold_buf );
+X	return( (char *)kconv_retbuf );
+X}
+X
+X
+X
+Xstatic
+Xconvert (f)
+X    register unsigned char *f;/* changed from FILE */
+X{
+X    register int    c1,
+X                    c2;
+X
+X    c2 = 0;
+X    /*iconv = oconv; ntp deleted */
+X
+X    while ((c1 = GETC (f))) {
+X	if (c2) {
+X	    /* second byte */
+X	    if (c2 > DEL) {
+X		/* in case of 8th bit is on */
+X		if (!estab_f) {
+X		    /* in case of not established yet */
+X		    if (c1 > SSP) {
+X			/* It is still ambiguious */
+X			f = h_conv (f, c2, c1);/* ntp modified */
+X			c2 = 0;
+X			continue;
+X			/* goto next_word */
+X		    } else if (c1 < AT) {
+X			/* ignore bogus code */
+X			c2 = 0;
+X			continue;
+X			/* goto next_word */
+X		    } else {
+X			/* established */
+X			/* it seems to be Shift JIS */
+X			estab_f = TRUE;
+X			iconv = s_iconv;
+X			/* goto send */
+X		    }
+X		} else
+X		    /* in case of already established */
+X		if (c1 < AT) {
+X		    /* ignore bogus code */
+X		    c2 = 0;
+X		    continue;
+X		    /* goto next_word */
+X		} else;
+X		/* goto send */
+X	    } else
+X		/* 7 bit code */
+X		/* it might be kanji shitfted */
+X	    if ((c1 == DEL) || (c1 <= SP)) {
+X		/* ignore bogus code */
+X		c2 = 0;
+X		continue;
+X		/* goto next_word */
+X	    } else;
+X	    /* goto send */
+X	} else {
+X	    /* first byte */
+X	    if (c1 > DEL) {
+X		/* 8 bit code */
+X		if (!estab_f) {
+X		    /* not established yet */
+X		    if (c1 < SSP) {
+X			/* it seems to be Shift JIS */
+X			estab_f = TRUE;
+X			iconv = s_iconv;
+X		    } else if (c1 < 0xe0) {
+X			/* it seems to be EUC */
+X			estab_f = TRUE;
+X		    } else {
+X			/* still ambiguious */
+X		    }
+X		} else {
+X		    /* already established */
+X		}
+X		c2 = c1;
+X		continue;
+X		/* goto next_byte */
+X	    } else if ((c1 > SP) && (c1 != DEL)) {
+X		/* in case of Roman characters */
+X		if (k_shift) {
+X		    /* in case of Kanji shifted */
+X		    c2 = c1;
+X		    continue;
+X		    /* goto next_byte */
+X		} else;
+X		/* goto send */
+X	    } else if (c1 == ESC) {
+X		/* in case of ESC */
+X		if (!(c1 = GETC (f))) {
+X		    (*iconv) (0, ESC);
+X		    break;
+X		} else if (c1 == '$') {
+X		    if (!(c1 = GETC (f))) {
+X			(*iconv) (0, ESC);
+X			(*iconv) (0, '$');
+X			break;
+X		    } else {
+X			/* in case of Kanji in ESC sequence */
+X			k_shift = TRUE;
+X			continue;
+X		    }
+X		} else if (c1 == '(') {
+X		    if (!(c1 = GETC (f))) {
+X			(*iconv) (0, ESC);
+X			(*iconv) (0, '(');
+X			break;
+X		    } else {
+X			/* in case of Kanji out ESC sequence */
+X			k_shift = FALSE;
+X			continue;
+X		    }
+X		} else {
+X		    /* not kanji control */
+X		    (*iconv) (0, ESC);
+X		    /* goto send */
+X		}
+X	    } else;
+X	    /* goto send */
+X	}
+X	/* send: */
+X	(*iconv) (c2, c1);
+X	c2 = 0;
+X	continue;
+X	/* goto next_word */
+X    }
+X
+X    /* epilogue */
+X    (*iconv) (EOF, 0);
+X    return;
+X}
+X
+X
+X
+X
+X
+Xstatic unsigned char *
+Xh_conv (f, c2, c1)
+X    register unsigned char *f;/* changed from FILE */
+X    register int    c1,
+X                    c2;
+X{
+X    register int    wc;
+X
+X
+X    /** it must NOT be in the kanji shifte sequence	 */
+X    /** it must NOT be written in JIS7 			 */
+X    /** and it must be after 2 byte 8bit code		 */
+X
+X    hold_count = 0;
+X    push_hold_buf (c2, c1);
+X    c2 = 0;
+X
+X    while (c1 = GETC (f)) {
+X	if (c2) {
+X	    /* second byte */
+X	    if (c1 > DEL) {
+X		/* then 8th bit is on */
+X		if (!estab_f) {
+X		    /* not established */
+X		    if (c1 > SSP) {
+X			/* it is still ambiguious yet */
+X			/* goto send */
+X		    } else if (c1 < AT) {
+X			/* ignore bogus code */
+X			c2 = 0;
+X			continue;
+X			/* goto next byte */
+X		    } else {
+X			/* now established */
+X			/* it seems to be Shift JIS */
+X			estab_f = TRUE;
+X			iconv = s_iconv;
+X			/* goto send */
+X		    }
+X		} else;
+X		/* just established */
+X		/* goto send without checking */
+X	    } else {
+X	      /* BUG FIX of nkf --- ntp */
+X	      if (!estab_f) {
+X		/* 7 bit code */
+X		/* it might be bogus code  then ignore */
+X		c2 = 0;
+X		continue;
+X		/* goto next byte */
+X	      } else;/* goto send without checking */
+X	      /* BUG FIX end */
+X	    }
+X	} else {
+X	    /* First byte */
+X	    if (c1 > DEL) {
+X		/* 8th bit is on */
+X		if (c1 < SSP) {
+X		    /* it seems to be Shift JIS */
+X		    estab_f = TRUE;
+X		    iconv = s_iconv;
+X		} else if (c1 < 0xe0) {
+X		    /* it seems to be EUC */
+X		    estab_f = TRUE;
+X		} else {
+X		    /* still ambiguious */
+X		}
+X		c2 = c1;
+X		continue;
+X		/* goto next_byte */
+X	    } else;
+X	    /* 7 bit code , then send without any process */
+X	    /* goto send */
+X	}
+X	/* send: */
+X	if ((push_hold_buf (c2, c1) == EOF) || estab_f)
+X	    break;
+X	c2 = 0;
+X	continue;
+X    }
+X
+X    /** now,
+X     ** 1) EOF is detected, or
+X     ** 2) Code is established, or
+X     ** 3) Buffer is FULL (but last word is pushed)
+X     **
+X     ** in 1) and 3) cases, we must use default
+X     ** Kanji codes, that is DEFAULT_I
+X     **/
+X
+X    if (estab_f == FALSE) {
+X	iconv = DEFAULT_I;
+X	estab_f = TRUE;
+X    }
+X    for (wc = 0; wc < hold_count; wc++) {
+X	c1 = hold_buf[wc];
+X	c2 = 0x0ff & (c1 >> 8);
+X	c1 = c1 & 0x0ff;
+X	(*iconv) (c2, c1);
+X    }
+X    return( f );/* added return value */
+X}
+X
+X
+X
+X
+Xstatic
+Xpush_hold_buf (c2, c1)
+X    int             c2,
+X                    c1;
+X{
+X    if (hold_count >= HOLD_SIZE)
+X	return (EOF);
+X    hold_buf[hold_count++] = ((c2 & 0x0ff) << 8) | (c1 & 0x0ff);
+X    return ((hold_count >= HOLD_SIZE) ? EOF : hold_count);
+X}
+X
+X
+X
+Xstatic
+Xs_iconv (c2, c1)
+X    register int    c2,
+X                    c1;
+X{
+X    if ((c2 == EOF) || (c2 == 0)) {
+X	/* NOP */
+X    } else {
+X	c2 &= 0x0ff;
+X	c1 &= 0x0ff;
+X
+X	c2 = c2 + c2 - ((c2 <= 0x9f) ? SJ0162 : SJ6394);
+X	if (c1 < 0x9f)
+X	    c1 = c1 - ((c1 > DEL) ? SP : 0x1f);
+X	else {
+X	    c1 = c1 - 0x7e;
+X	    c2++;
+X	}
+X    }
+X    (*oconv) (c2, c1);
+X}
+X
+X
+Xstatic
+Xe_oconv (c2, c1)
+X    register int    c2,
+X                    c1;
+X{
+X    if (c2 == EOF)
+X	return;
+X    else if (c2 == 0)
+X	putchar ((*r1conv) (c1));
+X    else {
+X	putchar (((*r2conv) (c2)) | 0x080);
+X	putchar (((*r2conv) (c1)) | 0x080);
+X    }
+X}
+X
+X
+X
+X
+X
+Xstatic
+Xs_oconv (c2, c1)
+X    register int    c2,
+X                    c1;
+X{
+X    if (c2 == EOF)
+X	return;
+X    else if (c2 == 0)
+X	putchar ((*r1conv) (c1));
+X    else {
+X	c2 = (*r2conv) (c2);
+X	c1 = (*r2conv) (c1);
+X	putchar ((((c2 - 1) >> 1) + ((c2 <= 0x5e) ? 0x71 : 0xb1)));
+X	putchar ((c1 + ((c2 & 1) ? ((c1 < 0x60) ? 0x1f : 0x20) : 0x7e)));
+X    }
+X}
+X
+Xstatic
+Xj_oconv (c2, c1)
+X    register int    c2,
+X                    c1;
+X{
+X    if (c2 == EOF) {
+X	if (in_kanji) {
+X	    putchar (ESC);
+X	    putchar ('(');
+X	    putchar ((char)_KanjiOut);
+X	}
+X    } else if (c2 == 0) {
+X	if (in_kanji) {
+X	    putchar (ESC);
+X	    putchar ('(');
+X	    putchar ((char)_KanjiOut);
+X	    in_kanji = FALSE;
+X	}
+X	putchar ((*r1conv)(c1));
+X    } else {
+X	if (in_kanji == FALSE) {
+X	    putchar (ESC);
+X	    putchar ('$');
+X	    putchar ((char)_KanjiIn);
+X	    in_kanji = TRUE;
+X	}
+X	putchar ((*r2conv)(c2));
+X	putchar ((*r2conv)(c1));
+X    }
+X}
+X
+X
+Xstatic
+Xunsigned int	nops (c)
+X	char	c;
+X{
+X	return (c & 0x07f);
+X}
+X
+X
+X#ifdef	__ROT__/* We don't need these */
+Xunsigned int	rot13 (c)
+X	char	c;
+X{
+X	c &= 0x07f;
+X	if ( c < 'A' ) return (c);
+X	else if (c <= 'M') return (c + 13);
+X	else if (c <= 'Z') return (c - 13);
+X	else if (c < 'a') return (c);
+X	else if (c <= 'm') return (c + 13);
+X	else if (c <= 'z') return (c - 13);
+X	else return (c);
+X}
+X
+Xunsigned int	rot47 (c)
+X	char	c;
+X{
+X	c &= 0x07f;
+X	if ( c < '!' ) return (c);
+X	else if ( c <= 'O' ) return (c + 47);
+X	else if ( c <= '~' ) return (c - 47);
+X	else return (c);
+X}
+X#endif
+X
+X/* simplified functions &tojis(), &toeuc(), &tosjis() */
+Xchar *
+Xtosjis(str)
+Xunsigned char *str;
+X{
+X	return(kconv(str, 1, 0));
+X}
+X
+Xchar *
+Xtojis(str)
+Xunsigned char *str;
+X{
+X	return(kconv(str, 2, 0));
+X}
+X
+Xchar *
+Xtoeuc(str)
+Xunsigned char *str;
+X{
+X	return(kconv(str, 3, 0));
+X}
+SHAR_EOF
+chmod 0644 nkf.c || echo "restore of nkf.c fails"
+set `wc -c nkf.c`;Sum=$1
+if test "$Sum" != "11395"
+then echo original size 11395, current size $Sum;fi
+echo "x - extracting kconv.c (Text)"
+sed 's/^X//' << 'SHAR_EOF' > kconv.c &&
+X#include "EXTERN.h"
+X#include "perl.h"
+X
+Xextern	int	_KanjiIn, _KanjiOut;
+Xextern	int	_AUTO, _SJIS, _JIS, _EUC;
+Xextern	char	*kconv();
+Xextern	char	*tosjis();
+Xextern	char	*tojis();
+Xextern	char	*toeuc();
+X
+Xstatic enum uservars {
+X	UV_KANJIIN,
+X	UV_KANJIOUT,
+X	UV_AUTO,
+X	UV_SJIS,
+X	UV_JIS,
+X	UV_EUC
+X};
+X
+Xstatic enum usersubs {
+X    US_kconv,
+X    US_tosjis,
+X    US_tojis,
+X    US_toeuc
+X};
+X
+Xstatic int usersub();
+Xstatic int userset();
+Xstatic int userval();
+X
+Xint
+Xinit_kconv()
+X{
+X    struct ufuncs uf;
+X    char *filename = "kconv.c";
+X
+X    uf.uf_set = userset;
+X    uf.uf_val = userval;
+X
+X#define MAGICVAR(name, ix) uf.uf_index = ix, magicname(name, &uf, sizeof uf)
+X
+X    MAGICVAR("_KanjiIn",UV_KANJIIN);
+X    MAGICVAR("_KanjiOut",UV_KANJIOUT);
+X    MAGICVAR("_AUTO",	UV_AUTO);
+X    MAGICVAR("_SJIS",	UV_SJIS);
+X    MAGICVAR("_JIS",	UV_JIS);
+X    MAGICVAR("_EUC",	UV_EUC);
+X
+X    make_usub("kconv",		US_kconv,	usersub, filename);
+X    make_usub("tosjis",		US_tosjis,	usersub, filename);
+X    make_usub("tojis",		US_tojis,	usersub, filename);
+X    make_usub("toeuc",		US_toeuc,	usersub, filename);
+X
+X    if (dowarn) {
+X	fprintf(stderr,
+X	"This perl is linked with Kanji-Conversion functions.\n");
+X	fprintf(stderr,	"Version: perl-kconv 0.9\n");
+X    }
+X};
+X
+Xstatic int
+Xusersub(ix, sp, items)
+Xint ix;
+Xregister int sp;
+Xregister int items;
+X{
+X    STR **st = stack->ary_array + sp;
+X    register int i;
+X    register char *tmps;
+X    register STR *Str;		/* used in str_get and str_gnum macros */
+X
+X    switch (ix) {
+X    case US_kconv:
+X	if (items < 2 || items > 3 )
+X	    fatal("Usage: &kconv($str, $out [,$in] )");
+X	else {
+X	    char* retval;
+X	    char*	str =		(char*)		str_get(st[1]);
+X	    int		out =		(int)		str_gnum(st[2]);
+X
+X	    if ( items == 3 ) {
+X		int	in = 		(int)		str_gnum(st[3]);
+X		retval = kconv(str, out, in);
+X	    } else {
+X		retval = kconv(str, out, 0);
+X	    }
+X	    str_set(st[0], (char*) retval);
+X	    free(retval);
+X	}
+X	return sp;
+X
+X    case US_tosjis:
+X	if (items != 1)
+X	    fatal("Usage: &tosjis($str)");
+X	else {
+X	    char* retval;
+X	    char*	str =		(char*)		str_get(st[1]);
+X
+X	    retval = tosjis(str);
+X	    str_set(st[0], (char*) retval);
+X	    free(retval);
+X	}
+X	return sp;
+X
+X    case US_tojis:
+X	if (items != 1)
+X	    fatal("Usage: &tojis($str)");
+X	else {
+X	    char* retval;
+X	    char*	str =		(char*)		str_get(st[1]);
+X
+X	    retval = tojis(str);
+X	    str_set(st[0], (char*) retval);
+X	    free(retval);
+X	}
+X	return sp;
+X
+X    case US_toeuc:
+X	if (items != 1)
+X	    fatal("Usage: &toeuc($str)");
+X	else {
+X	    char* retval;
+X	    char*	str =		(char*)		str_get(st[1]);
+X
+X	    retval = toeuc(str);
+X	    str_set(st[0], (char*) retval);
+X	    free(retval);
+X	}
+X	return sp;
+X
+X    default:
+X	fatal("Unimplemented user-defined subroutine");
+X    }
+X    return sp;
+X}
+X
+Xstatic int
+Xuserval(ix, str)
+Xint ix;
+XSTR *str;
+X{
+X    switch (ix) {
+X    case UV_KANJIIN:
+X	str_numset(str, (double)_KanjiIn);
+X	break;
+X    case UV_KANJIOUT:
+X	str_numset(str, (double)_KanjiOut);
+X	break;
+X    case UV_AUTO:
+X	str_numset(str, (double)_AUTO);
+X	break;
+X    case UV_SJIS:
+X	str_numset(str, (double)_SJIS);
+X	break;
+X    case UV_JIS:
+X	str_numset(str, (double)_JIS);
+X	break;
+X    case UV_EUC:
+X	str_numset(str, (double)_EUC);
+X	break;
+X    }
+X    return 0;
+X}
+X
+Xstatic int
+Xuserset(ix, str)
+Xint ix;
+XSTR *str;
+X{
+X    switch (ix) {
+X    case UV_KANJIIN:
+X	_KanjiIn = (int)str_gnum(str);
+X	break;
+X    case UV_KANJIOUT:
+X	_KanjiOut = (int)str_gnum(str);
+X	break;
+X    }
+X    return 0;
+X}
+SHAR_EOF
+chmod 0644 kconv.c || echo "restore of kconv.c fails"
+set `wc -c kconv.c`;Sum=$1
+if test "$Sum" != "3365"
+then echo original size 3365, current size $Sum;fi
+echo "x - extracting usersub.c (Text)"
+sed 's/^X//' << 'SHAR_EOF' > usersub.c &&
+X/* $RCSfile: usersub.c,v $$Revision: 4.0.1.1 $$Date: 91/11/05 19:07:24 $
+X *
+X * $Log:	usersub.c,v $
+X * Revision 4.0.1.1  91/11/05  19:07:24  lwall
+X * patch11: there are now subroutines for calling back from C into Perl
+X * 
+X * Revision 4.0  91/03/20  01:56:34  lwall
+X * 4.0 baseline.
+X * 
+X * Revision 3.0.1.1  90/08/09  04:06:10  lwall
+X * patch19: Initial revision
+X * 
+X */
+X
+X#include "EXTERN.h"
+X#include "perl.h"
+X
+Xint
+Xuserinit()
+X{
+X    init_kconv();
+X}
+SHAR_EOF
+chmod 0644 usersub.c || echo "restore of usersub.c fails"
+set `wc -c usersub.c`;Sum=$1
+if test "$Sum" != "447"
+then echo original size 447, current size $Sum;fi
+exit 0

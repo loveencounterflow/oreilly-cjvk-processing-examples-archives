@@ -1,0 +1,116 @@
+¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+¡Ã£Ð£ò£é£î£ô£é£î£ç¡¡£æ£ò£ï£í¡¡£Î£Ê£Ó£ô£á£ò¡¡¡¡¡¡°õºþ¡¡                J3.TUT¡Ã
+¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+\NumberStyle="NJJ 3.0: JW-Tutorial 3, page %d"
+
+This tutorial shows how to print your document and to enhance the looks of your printout by using commands.
+
+¢£¢£¢£¢£¢£¢£¢£ £Ð£Ò£É£Î£Ô£É£Î£Ç¡¡£Æ£Ï£Ò£Í£Á£Ô¡¡£Ã£Ï£Í£Í£Á£Î£Ä£Ó ¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+The following is NJStar's In-Text printing format commands, used to enhance
+the output format.
+
+Name                   Function
+|===================    ======================================================
+| \Font(nn)             Setting the size of Japanese character to nn. 
+|                       ( 1 normal; 2 large)
+| \Thin                 Selecting thin font (the modern Gothic-style typeface)
+| \Bold                 Selecting bold font (default typeface)
+| \Center               Centering the current line on page
+| \NewPage              Forcing to print on a new page
+| \PageNumber(nn)       Specifying the current page number to nn
+| \NumberStyle="(%d)"   Specifying the page number style as text shown in "". 
+|                       Variable %d is the current page number
+| \NoPageNumber         Not printing page number
+| \LeftMargin(nn)       Setting left margin to nn Japanese characters
+| \RightMargin(nn)      Setting right margin to nn Japanese characters
+| \TopMargin(nn)        Setting top margin to nn lines
+|                       (1 line=1/6 inch or 1 line= 30 dots)
+| \BottomMargin(nn)     Setting bottom margin  to  nn  lines
+|                       (1 line=1/6 inch or 1 line= 30 dots)
+| \LineSpace(nn)        Setting the  space between  lines to nn dots
+|===================    ======================================================
+NB.
+   1) All commands must start at beginning of the line, and be preceded by "\".
+      To print a "\" character at the beginning of a line, please use "\\".
+   2) More than one command can be written on one line.
+
+¡ü EXAMPLE: Vocabulary Test format
+
+The following is the way these commands can be used. Compare the command with the printout of this document.
+
+\NewPage
+\LeftMargin(5)
+\RightMargin(20)
+\Font(2)
+\Center
+Japanese for Everyone
+\Center
+Vocabulary test
+\Center
+LESSON 6 (2) and 7 (1)
+\Font(1)
+\LineSpace(10)
+
+Name:                      Marked by:
+--------------------------------------------------
+Fill in the underlined part
+
+no.¡ÚJapanese¡Û           ¡ÚEnglish¡Û
+============================================
+\LineSpace(27)
+ 1.____________¡Ê²ñ¼Ò°÷¡Ë  company employee
+ 2.¤«¤Ð¤ó¡Ê³ó¡Ë            __________
+ 3._______¤Î               another, the rest
+ 4._______                 tangerine
+ 5.¤Ç¤ó¤Á¡ÊÅÅÃÓ¡Ë          __________
+ 6.¤ª¤Ä¤ê                  __________
+ 7._____________           foreigner
+ 8._________¡ÊÅÐÏ¿¡Ë¤¹¤ë   to register
+ 9._______¡Ê¾ì½ê¡Ë         place, location
+10._______¡Ê¾èÊª¡Ë         vehicle, means of transp.
+11._______¡Ê½ËÆü¡Ë         national holiday
+12.¤Ê¤ª¡ÊÄ¾¡Ë¤ë            to ____________
+13.¤½¤Ä¤®¤ç¤¦¡ÊÂ´¶È¡Ë¤¹¤ë  to ____________
+14.___________             child, children
+15.¤ª¤Ü¤¨¤ë¡Ê³Ð¤¨¤ë¡Ë      to ____________
+16.¤ª_____¤ê¡Ê¤ªº×¤ê¡Ë     festival
+17.¤Þ¤ó¤¬¡ÊÌ¡²è¡Ë          ___________
+18._____                   taste, flavour
+19._____¤±¤ë¡ÊÂ³¤±¤ë¡Ë     to continue
+================================================
+Total:    ____ / 19
+
+\NewPage
+\LeftMargin(10)
+\RightMargin(10)
+\LineSpace(12)
+
+The commands above restore the page layout.
+When you print, they will not be printed out.
+
+
+¢£¢£¢£¢£¢£¢£ £Ã£Ï£Î£Æ£É£Ç£Õ£Ò£É£Î£Ç  £Ù£Ï£Õ£Ò  £Ð£Ò£É£Î£Ô£Å£Ò ¢£¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+Before printing your document, you must configure NJStar to your printer. To do this, you run NJCONFIG.EXE via Menu,¡ÚTools, NJ Config¡Û.
+
+You will then be linked to the configuration program. Here you should go through the following two options in this order:
+
+        1) Install Printer Driver       (selecting your printer)
+        2) Printer Setting              (setting the paper size, margins, etc.)
+
+Consult manual for details.
+
+¢£¢£¢£¢£¢£  £Ã£Ò£Å£Á£Ô£É£Î£Ç¡¡£Ð£Ã£Ø¡¡£Ç£Ò£Á£Ð£È£É£Ã  £Æ£É£Ì£Å£Ó  ¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+PCX file is a widely supported graphic file format. If you print your NJStar document in this format, the output is sent to the disk as a graphic file,  which can be sent to fax software later. You may also want this option if you want to export Japanese characters to other non-Japanese application software, since NJStar's native format cannot be read properly by them.
+
+You can make two sizes of PCX files. From the main NJStar program (by either going through menu,¡ÚOUTPUT, CREATE PCX¡Û, or pressing <Shift F5>),  you can create 16x16 bit characters. If you want higher resolution characters, use JIS2PCX.EXE, which will create 24x24 characters.
+
+
+                          ¢£ End of TUTORIAL 3 ¢£
+ ¦ç¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦è
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ Press <Shift F10> to select other tutorials  ¡þ¡þ¡þ¡þ¡þ¡þ¦æ
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ Press  <Ctrl F3> to exit NJStar ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ ¦æ
+ ¦ê¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦é
+

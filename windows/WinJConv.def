@@ -1,0 +1,10 @@
+; WinJConv.def : declare module parameters of DLL
+
+LIBRARY      "WINJCONV"
+DESCRIPTION  'WINJCONV Windows Dynamic Link Library'
+
+CODE      PRELOAD MOVEABLE DISCARDABLE
+DATA      PRELOAD SINGLE
+
+EXPORTS    ;
+WinJConv	@2

@@ -1,0 +1,110 @@
+Quotes for "Understanding Japanese Information Processing"
+Version 05/11/95
+
+
+"'Understanding Japanese Information Processing' is a Rosetta Stone
+for those concerned about how Japanese is handled on computer systems. 
+It removes the mystique and creates understanding."
+
+-- Jun Murai, PhD, Keio University and WIDE Project
+
+
+"Ken Lunde's book is an essential reference for everyone developing or
+adapting software for handling Japanese text. It is a goldmine of
+useful and relevant information on fonts, encoding systems and
+standards."
+
+-- Professor Jim Breen, Faculty of Computing & IT, Monash University,
+   Australia
+
+
+"Creating multilingual software is a challenge in the growing global
+marketplace, and the task is especially daunting with Japanese--one of
+the world's most difficult languages. 'Understanding Japanese
+Information Processing' is *the* resource for developers building the
+bridge between Japanese and Western languages."
+
+-- Henry McGilton, Trilithon Software
+
+
+"Adobe Systems understands the importance of providing our Japanese-
+speaking customers with Japanese-capable software. The issues are
+complex, but Ken Lunde is able to sort them out for the reader in
+'Understanding Japanese Information Processing'. I expect this book
+to have a great impact in the field of software internationalization
+and localization."
+
+-- Dr. John Warnock, CEO, Adobe Systems Incorporated
+
+
+"As a professional kanji lexicographer, I find Ken Lunde's work a
+treasure-house of information on the complexities of Japanese
+character encoding and processing. I have never encountered a single
+book, even in Japanese, that brings together such a wealth of detail
+with such clarity and precision. Armed with this book as my guide, I
+feel totally confident in undertaking a project of prodigious
+complexity: the development of a comprehensive kanji database to serve
+as a basis for dozens of dictionaries and learning aids."
+
+-- Jack Halpern, Editor in Chief, "New Japanese-English Character
+   Dictionary"; Editor in Chief, Kanji Dictionary Publishing Society
+
+
+"Ken Lunde has not only brought together a wealth of vital information
+between these covers, he has organized the complexities of Japanese
+computing into a clear introduction and practical handbook.  'Understanding
+Japanese Information Processing' is a treasure for computer system
+designers concerned with multilingual software, as well as for
+teachers and students pursuing computer tools to work with the
+Japanese language."
+
+-- Dr. Joseph Becker, Principal Scientist, XSoft/Xerox Corporation
+
+
+"The wealth of information, its lucid arrangement including a
+comprehensive index, and its clear and easy-to-understand language
+will make this book an indispensible tool for a wide range of people:
+for the student who is looking for Japanese word processing software,
+teachware, or online dictionary; for Japanese specialists who want to
+exchange Japanese documents via floppy disk, e-mail, and so on; and
+for the programmer who needs to write a program related to the
+Japanese language.  In short, for everyone who comes in touch with
+written Japanese."
+
+-- Wolfgang Hadamitzky, Coauthor, "Japanese Character Dictionary With
+   Compound Lookup via Any Kanji"
+
+
+"A programmer interested in writing a computer program which will
+handle the Japanese language will find the book indispensable."
+
+-- "Multilingual Computing"
+
+
+"Ken Lunde's new book, 'Understanding Japanese Information
+Processing', has become the bible of those using Japanese on the
+Internet."
+
+-- Frederik L. Schodt, Author, "America and the Four Japans: Friend,
+   Foe, Model, Mirror"
+
+
+"This is a must-have book for anyone developing software for the
+Japanese market. Covering a complex and arcane subject thoroughly
+while maintaining readability, it is also the clear choice as a core
+text for any course on Japanese information processing."
+
+-- Earl H. Kinmonth, Reader in Japanese Studies, Centre for Japanese
+   Studies, University of Sheffield
+
+
+"This is a heavily detailed reference book; you should expect your
+copy to become dog-eared and splattered with coffee stains."
+
+-- Dr. Jeffrey S. Haemer, President, Canary Software, Inc.
+
+
+"Thank you for your wonderful book; it was my bible and inspiration
+throughout the port of our large application, Tactician."
+
+-- Bruce Leavitt, Director of Development, Tactician Corporation

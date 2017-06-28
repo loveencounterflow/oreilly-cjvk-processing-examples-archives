@@ -1,0 +1,163 @@
+Mentions of "Understanding Japanese Information Processing"
+Version 08/21/95
+
+
+Appearances in book bibliographies:
+
+"Software Internationalization and Localization: An Introduction" by
+  Emmanuel Uren et al., published by Van Nostrand Reinhold.
+"America and the Four Japans: Friend, Foe, Model, Mirror" by Fred
+  Schodt, published by Stone Bridge Press.
+"ワープロここが不思議--ちょっと知的なワープロ学" by Yukihiro Furuse,
+  published by Kodansha.
+"Making TeX Work" by Norman Walsh, published by O'Reilly & Associates.
+"JIS-Kanji Character Recognition" by Glenn Searfoss, published by Van
+  Nostrand Reinhold.
+"KanjiWorks User Guide" by AsiaWest Software.
+"Developing International Software For Windows 95 and Windows NT" by
+  Nadine Kano, published by Microsoft Press.
+"Internationalization: Developing Software for Global Markets" by Tuoc
+  V. Luong et al., published by John Wiley & Sons.
+
+
+Appearances in paper bibliographies:
+
+"A Japanese Electronic Dictionary Project (Part 1: The Dictionary
+  Files)," November 30, 1993, by J. W. Breen.
+"Getting Ready for the Japanese Market," The LISA Forum Newsletter,
+  Volume 2, December 1993, pp 2-6, by Jan Pfefferkorn.
+"Dynamic Adaptive Character Generation and Spatial Expressiveness,"
+  TeX Users Group Annual Meeting, May 7, 1994, by Michael Cohen.
+"Japanese Solaris 2.x," by Dan Powers.
+"Building of Comprehensive Database for the Compilation of Integrated
+  Kanji Dictionaries and Tools," by Jack Halpern et al.
+"Computerization of Han Unification--As the various Chinese
+  character codes stand now," Science Monthly, Volume 26, January
+  1995, pp 54-60, by Professor Jack Kai-tung Huang.
+"赤毛のアンのマル秘情報: The Electronic Anne," 烏賊, Number 45, August
+  1, 1994, page 31.
+"Computerization of Han Unification--As the various Chinese
+  character codes stand now," CIP, Issue 3, May 1995, pp 12-17, by
+  Professor Jack Kai-tung Huang. 
+
+
+Appearances in advertisements:
+
+"Dr. Dobb's Journal," April 1994, page 88, by O'Reilly & Associates,
+  Incorporated.
+"The MIT Japan Program Newsletter," Volume 8, Number 9, December 1993,
+  page 8, by Sasuga Japanese Bookstore.
+"Multilingual Computing," Volume 5, Issue 2, page 36.
+"Multilingual Computing," Volume 5, Issue 3, page 48.
+"Multilingual Computing," Volume 6, Issue 1, page 30.
+
+
+Appearances in catalogs:
+
+"Computer Literacy Bookshops New Book Bulletin," Fall/Winter 1993/94,
+  page 1 and back cover.
+"Cheng & Tsui Company," Catalog 28, Winter 1993, page 14.
+"News From The University Book Store," Volume 1, Issue 1, December
+  1993, page 2.
+"Sasuga Japanese Bookstore," 1994 Catalog, pp 29 and 34.
+"Cheng & Tsui Company," Catalog 29, Summer 1994, page 63.
+
+
+Book Reviews (electronic):
+
+HyperAd, March 2, 1994, by Mitsuhiro Hayashi (in Japanese; URL:
+  ftp://ftp.ora.com/pub/examples/nutshell/ujip/review/
+  ujip-hayashi.jis).
+Report on Workshop Titled "Technical Requirements for Accessing
+  Japanese Information: Problems and Solutions" by Frederik L. Schodt
+  (fschodt@netcom.com).
+NIFTY-Serve, August 3, 1994, by Hidehiko Nakanishi (in Japanese; URL:
+  ftp://ftp.ora.com/pub/examples/nutshell/ujip/review/ujip-
+  nakanishi.jis)
+"A Concise Guide to UNIX Books" (misc.books.technical) by Samuel Ko
+  (sko@helix.net)
+"Soc.culture.japan References" by Shimpei Yamashita
+  (shimpei@leland.stanford.edu)
+"Honyaku Mailing List FAQ" by Tom Gally (tomgally@twics.com)
+"Sci.lang.japan FAQ" by Rafael Santos (santos@mickey.ai.kyutech.ac.jp)
+"Internationalization Reference List" by Eugene Dorr
+  (edorr@legent.com)
+Book review by Robert Slade (roberts@decus.ca), September 16, 1994,
+  file BKUNDJIP.RVW (URL: ftp://ftp.ora.com/pub/examples/nutshell/
+  ujip/review/ujip-slade.txt)
+"How to Use Japanese on Internet" by Hideki Hirayama
+  (hideki@netcom.com)
+NTT Home Page, "Note on Japanese Documents" by Toshihiro Takada (URL:
+  http://www.ntt.jp/japan/note-on-JP/)
+"Notes on CJK Character Codes and Encodings" by Ross Paterson (URL:
+  http://www.ifcss.org:8001/www/pub/ software/info/cjk-codes/)
+
+
+Book Reviews (magazines):
+
+"Nikkei Byte," December 1993 (in Japanese).
+"JAPAN aktuell," December 1993-January 1994, page 37, by Wolfgang
+  Hadamitzky (in German).
+"Wired," January 1994, page 125, by John Browning.
+"Multilingual Computing," January/February 1994, page 12, by Seth
+  Thomas Schneider.
+"Connect Magazine," March/April 1994, page 75.
+"The Windows," May 1994, page 194 (in Japanese).
+"Mangajin," Issue 36, June 1994, pp 24-25, by Douglas Horn.
+"Dr. Dobb's Journal Japan," June 1994, page 112.
+"Open Computing," June 1994, page 98, by Walter Zintz.
+"Whole Earth Review," Winter 1994, page 83, by Jeffrey Shapard.
+"IEEE Software," March 1995, pp 116-117, by Michael Barker.
+"Computing Japan," March 1995, pp 41-42 & 60, by Jon Beck.
+
+
+Book Reviews (newspapers):
+
+"Computer Age," October 11, 1993.
+"Pittsburgh Business Times," November 8, 1993, by Franklynn Peterson
+  and Judi K-Turkel.
+"Mount Horeb Mail," Volume 94, Number 5, February 3, 1994, page 7.
+"The Australian," by Stephen O'Brien.
+
+
+Book Reviews (journals):
+
+"Software Management News," Volume 11, Number 5, September-October
+  1993, page 10, by Nicholas Zvegintzov.
+"Sun UK User," Winter 1993, pp 33-34, by Harold Somers.
+"Journal of the Association of Teachers of Japanese," Volume 28,
+  Number 1, April 1994, pp 103-110, by J. Marshall Unger.
+"American Mathematical Monthly," April 1994.
+"New Asia Review," Volume 1, Number 2, Fall 1994, pp 56-57, by Maureen
+  Donovan
+
+
+Book Reviews (newsletters/bulletins):
+
+"Route," Volume 9, September 1993, page 18, by Yasuhiro Uraki (in
+  Japanese).
+"The Mac Maniacs Flame," November 1993, page 3, by Tom Cloney.
+"The MIT Japan Program Newsletter," Volume 8, Number 8, November 1993,
+  page 5.
+"Japan Access Alert Bulletin," Volume 2, Number 6, November-December
+  1993, page 2, by Mindy Kotler.
+"IHJ Bulletin," Volume 14, Number 1, Winter 1994, page 12, by Izumi
+  Koide.
+"Japanese Technical Literature Bulletin," Issue 29, December 1993, pp
+  7-8, by Tom Kusuda.
+"The LISA Forum Newsletter," Volume 2, December 1993, p 11, by Michael
+  Anobile.
+"Technical Japanese Newsletter," Number 4, Spring 1994, page 6, by Jon
+  Wiederspan.
+"The IMUG Newsletter," March 1994, pp 7-8.
+"ATJ Newsletter," Volume 17, Number 2, April 1994, page 14, by Kazumi
+  Hatasa and Hiroshi Nara.
+"The LISA Forum Newsletter," Volume 3, Number 2, May 1994, pp 13-26,
+  by Chiaki Ishikawa and Bob Peterson.
+"Oboegaki," Volume 3, Number 2, by Mark Ravina.
+"Inside the Academy" ("Technical Japanese--Made in Wisconsin"),
+  September 1994, pp 4-5, by R. Byron Bird.
+";login:" (The Usenix Association Newsletter), Volume 20, Number 1,
+  February 1995, pp 45-47, by Jeff Haemer (jsh@canary.com)
+"Bulletin of the European Association of Sinological Librarians
+  (BEASL), Volume 8, 1994, pp 31-34, by Thomas Hahn.

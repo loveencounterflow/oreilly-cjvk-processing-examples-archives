@@ -1,0 +1,1147 @@
+How to Use Japanese on the Internet with a PC: From Login to WWW 
+
+Hideki Hirayama
+A Graduate Student in The American University
+HH1858a@american.edu
+hideki@netcom.com
+sgw01623@niftyserve.or.jp
+
+Date: 4/22 1995 Alpha
+
+Table of Contents:
+0. Purpose of This Document
+1. General Background; Why is it difficult to use Japanese on the Internet?
+     (1) Why is it difficult?
+     (2) Information Source about this problem
+2. Requirements
+     (1) Operating Systems
+     (2) Hardware Requirements
+     (3) Account Servers
+3. Software for the PC 
+     (1) Terminal Programs
+     (2) Converting / Decoding Programs
+     (3) Wapuro (Japanese Word-processors)
+4. Japanese E-mail on the Internet
+     (1) Text-based E-mail Facilities
+     (2) Non-UNIX Commercial Networks
+     (3) TCP/IP Client Mailers
+     (4) Gopher Mail / How to get information via E-mail
+5. Japanese TCP/IP Clients and Proxy
+     (1) Telnet
+     (2) Mailer
+     (3) News Reader
+     (4) WWW Browser
+     (5) DeleGate
+6. Japanese Information Sources
+     (1) FTP/ Gopher / WWW 
+     (2) Japanese BBSes outside Japan
+     (3) How to sign up for Niftyserve
+Appendix
+     A. Shop List
+     B. Mr. Haitani"s Report
+     C. Active fj.* Newsgroups and Gopher Mail Bookmarks
+     D. Public DeleGate Points
+     E. Japanese BBS outside Japan
+     F. FTP, Gopher and WWW Sites: Sources for Related Information
+     G. Niftyserve Access Points
+
+
+0.  The Purpose of This Document 
+
+This document describes how to use Japanese in the PC (IBM-AT compatible
+computer) environment.  I will discuss "a little bit of everything," from
+logging onto the Internet via commercial or academic networks to using 
+Japanese on WWW browsers. Since there are, no doubt, other methods not
+mentioned in this document, I welcome any comments or suggestions. 
+
+Most of the files mentioned in this document are saved at the following 
+FTP site: 
+
+ftp://ftp.netcom.com/pub/hi/hideki/
+
+Therefore, you do not have to FTP many sites to get information and
+programs. Moreover, you can read and download up-to-date information and
+programs from my WWW home pages at
+
+http://psk.anderson.american.edu/hideki/hideki.htm
+http://isms.com/personal/hirayama/home-e.html
+ftp://ftp.netcom.com/pub/hi/hideki/hideki.html
+
+Because I want to make this document accessible via e-mail and Usenet 
+news groups, I have stored some of the appendixes at these sites instead 
+of attaching them to this document. 
+
+DISCLAIMER
+
+There is no warranty or certification of the contents of this document nor
+files in the FTP site.  The author is not responsible for any damage caused
+by this document and files. 
+
+It is not the intention of the author to endorse any of the service providers
+mentioned in this document. 
+
+As long as you mention the name and title of the author, you can copy,
+transfer or upload this document to any site. 
+
+All the trade marks mentioned in this document are registered by their
+owners. 
+
+
+1. General Background; Why is it difficult to use Japanese on the Internet?
+
+(1) Why is it difficult?  
+
+I have been trying to use Japanese since September, 1993. After all, it
+took me more than a year to send my first Japanese e-letter from the US.
+Let me discuss why solving this problem took so much time. 
+
+First of all, the Internet makes it difficult for people to use Japanese 
+because it was not designed to send Japanese characters, which have to be
+expressed in two-byte code systems and contains some special codes. 
+However, formal protocol of the Internet, which was set by RFC (Request 
+For Comments), is a seven-bit data transfer protocol and it does not allow 
+these special codes to be transferred.  This means that a popular Japanese
+character code system, like that of Windows-J, is incompatible and will be
+"MOJIBAKE" (random transformation of characters) when transmitted through 
+the Internet. 
+
+Therefore, the answer is quite simple. Generally speaking, as long as you 
+use JIS code, or iso-2022-jp, you can transfer Japanese text and if you 
+have eight bit access to your Internet account and have some software to 
+decode JIS code you can read such text. Technically, there are tons of 
+things to be covered to send/ receive Japanese. However, as a user, all 
+you have to know is 'using JIS for transfer' only.
+
+(2) Information Source of this Problem/ Recommended Reading 
+
+Mr. Ken Lunde describes these problems quite neatly in _Understanding
+Japanese Information Processing_  (UJIP; ISBN 1-56592-043-0).  You can 
+"get" (download) the main contents of this book by FTPing to
+
+ftp://amber.ora.com /pub/examples/nutshell/ujip/doc/japan.inf
+
+or by going to
+
+http://jasper.ora.com/lunde/
+Though this book may seem difficult for newcomers, I assure you that 
+they will find it to be of great value. This book contains almost 
+everything one ought to know about using Japanese on the Internet. 
+
+However, due to the rapid development of the Internet, some parts of the 
+book are now out of date, and it also fails to discuss several new functions
+of the Internet, like WWW. 
+
+One of the major sources of "Using Japanese on the Internet" in English is
+apparently USENET. There are some Japan- / Japanese-related news groups,
+such as alt.japanese.text, soc.culture.japan and sci.lang.japan.
+alt.japanese.text focuses on the technical aspect of Japanese information
+processing, whereas the latter two groups focus on the language, history 
+and culture of Japan. 
+
+One more thing I would like readers to know before reading the rest of
+this document is that there is still no "out of the box" solution to
+this problem. Some companies, like Netscape, have been trying to
+provide Japanese versions of their product (Netscape 1.1b3).  However, 
+there will be as many solutions as the number of those who try to solve 
+this problem, based on their objectives and environments.  Therefore, I
+recommend that you acquire some basic knowledge of the Internet by reading 
+guide books like _The Internet for Dummies_  and _The Internet Starter Kit_  
+or attending an Internet orientation class before you try any off-the-cuff
+sending of Japanese e-mail,  which likely will appear to your recipient as
+"MOJIBAKE," or scrambled ASCII.
+
+In addition, although I did my best to avoid technical terms, your having 
+some basic knowledge about the use of Japanese on the Internet will help 
+you understand this document better.
+
+2. Requirements
+
+Generally speaking, to read/write Japanese on the Internet, you need three
+elements:
+
+a.  A Japanese Environment on Your Computer
+     -Japanese Operating Systems, such as DOS/V + Japanese Windows or 
+      English Windows + Win/V or Japanese Word-processor that can work on 
+      English Environment. (alternatives are discussed later)
+     -386 PC with 4 MB RAM/ 80 MB Hard Disk 
+     (486 CPU/ 8 MB RAM / 120 MB HD are recommended)
+     -Modem (14.4K or above is recommended)
+b. Network Account
+     -Internet account
+      (UNIX Shell account or TCP/IP connection account is recommended)
+c. PC Software
+     -Terminal software which can handle not
+      only S-JIS but also New JIS & EUC.
+     -OR Coding/decoding software + Japanese Wordprocessor
+
+In this section I will discuss the basic environment, including operating
+systems and hardware, and a network account .  Other elements will be
+discussed in the following sections. 
+
+(1) Operating Systems
+
+There are several kinds of Japanese Operating Systems: DOS/V, Japanese 
+Windows, Win/V, UNIX, Twinbridge, and Japanese OS/2. 
+ 
+i. DOS/V + Windows-J
+
+DOS/V is a Japanese version of DOS from both Microsoft and IBM which 
+can handle Japanese by switching between a Japanese mode and an English 
+mode. Windows-J means Japanese Windows (NIHONGO Windows), which runs
+under DOS/V. The "official" and the most popular environment on the PC is 
+DOS/V + Windows-J. Most of the PC applications in Japanese are developed under
+DOS/V or Windows-J, and the software vendors do not certify their products to
+run in an alternative environment.  Therefore, I can say that, if you want
+stability, this is the most reliable environment in which to run Japanese
+software.  However, since one of my policies in using Japanese on the Internet
+is to save as much money as possible and since the following seem to be the
+easiest and cheapest means of creating a Japanese environment, I will discuss
+alternative systems. 
+
+ii. Win/V
+
+Win/V is a good operating system if you need to use both English and
+Japanese applications often. Win/V is software that allows one to switch
+between two Windows environments: English and Japanese. Instead of switching
+from/to a Japanese mode in DOS (an operation that takes three to five
+minutes), you can quickly change environments within Windows (from the Windows
+control panel), saving time and avoiding the complications that may arise 
+from having two DOS's. Unlike DOS/V and Windows-J, which require more than 30
+floppy disks, Win/V is installed from just one floppy disk.  Applications seem
+to run faster under DOS, Windows 3.1, and Win/V than under DOS/V + Windows-J.
+However, since the Win/V software itself does not include a front end processor,
+like Katana or MS-IME (an application that allows one to use even a non-Japanese
+keyboard and type romaji [Japanese syllables using the Latin alphabet], which
+the FEP then turns into kana and/or kanji) (KANA-KANJI HENKAN)  or to use 
+other Japanese versions of small Windows accessories, like Write and Notepad, 
+I recommend that you buy a Japanese Windows kit, like the one distributed by
+Kureo Technology, Ltd., in Canada, which includes not only Win/V but also a 
+FEP and two FontWave (True Type-like) fonts.  It is important to note, however,
+that since the DOS-Windows-Win/V environment is not certified by Microsoft, IBM,
+ or Japanese software companies, you might find it difficult to obtain technical
+support for commercial Japanese applications running under Win/V.
+
+One of the convenient way to get support on Win/V is to access #5 Discussion
+group of Vender A Forum on Niftyserve (go SWINVA <enter> mes 5 <enter>). There
+are thousands of posting about Win/V and you can find suitable one which
+resembles to your case.
+
+iii. UNIX and Linux
+
+It is generally believed that UNIX is a widely-used operating system for
+commercial Japanese applications.  The truth is, however, that such use is
+limited for the most part to the academic community and that it is, moreover,
+fraught with tedious complexities that non-technical people (like me) would
+prefer not to have to bother with.
+
+Because there are several versions of UNIX, you have to "make" or compile a
+program source by yourself, a procedure which I found to be excruciatingly
+complex.  On the other hand, it is said that some software like MULE or kterm
+can handle Japanese perfectly on UNIX. Furthermore, it is well known that the
+WWW page of ntt.or.jp includes a favorable reference with regard to Japanese
+UNIX WWW browsers. 
+
+Linux is a popular clone of the UNIX system designed for the PC.  You can use
+Japanese on it by installing the JE Distribution package.  Unlike the work
+station version of UNIX, you can obtain a copy of Linux on a CD-ROM for only
+$20 to $30 or so at a local computer store. One of the great advantage to use
+Linux is all the programs on these distributions are already compiled and you 
+do not have to 'make' them by yourself.
+
+If you are interested in knowing more about it, you can "FTP" Linux related
+documents from several FTP sites: 
+
+http://sunsite.unc.edu/mdw/linux.html
+ftp://ftp.kuis.kyoto-u.ac.jp/Linux
+
+If you can read Japanese, I recommend Mr. Yasu Hiro Yamazaki"s
+detailed guide to Linux, which you can find at
+
+ftp://ftp.kuis.kyoto-u.ac.jp/Linux/JF/other-formats/jmemo.html
+
+As for the JE Distribution Package, you can find it at the following sites:
+
+ftp://sunsite.unc.edu/pub/Linux/je
+ftp://ftp.cdrom.com/pub/linux/je                 
+ftp://ftp.kuis.kyoto-u.ac.jp/Linux/JE
+
+In addition, you can find an English JE installation guide at
+
+ftp://sunsite.unc.edu/pub/Linux/docs/HOWTO/JE-HOWTO
+ 
+It is also possible to get more information about JE by sending mail to
+
+In Japanese:  je@Roy.dsl.tutics.tut.ac.jp
+In English: jewel@colias.tutics.tut.ac.jp
+
+iv. Twinbridge
+
+Using information obtained from several reports by experts on the Internet, 
+let me now turn to a discussion of Twinbridge.  Twinbridge is a program which
+"aims to use Japanese on U.S. applications on U.S. Windows."  In other words,
+you can install it on English Windows.  Several people have told me that they
+have run Japanese applications successfully under Twinbridge.  However, some
+older versions of Twinbridge could handle only EUC (Enhanced UNIX Code) 
+characters, and it was quite involved to get them to run on the Internet. 
+Therefore, you should be careful about the version you get.  The demo version 
+of Twinbridge, which works perfectly by the way, is available at
+
+ftp://ftp.netcom.com/pub/tw/twinbrg/japanese/demo/twnbdemo.zip
+
+as well as in The Japan Forum library on CompuServe.
+
+Since some people have had problems unzipping the main file, it is important 
+to read the "readme" text file carefully first.  If you wish to know more about
+Twinbridge, you can get in touch with a representative at
+
+twinbrg@netcom.com
+Tel. 818-293-1661
+Fax. 818-293-1665
+
+Like Win/V, Twinbridge is still not an official environment, so you may find 
+it difficult to get technical support. In any case, I have received some quite
+positive reports about its software compatibility. 
+
+v. OS/2 (Japanese version)
+
+Recently, IBM officially announced  the Japanese version of OS/2 v. 3.0 Warp.
+It not only supports TCP/IP connection as a standard but also comes with a
+"Bonus Pack" that includes Japanese TCP/IP client programs from a mailer
+to a web browser.  Currently, this is the only existing official and, at the
+same time, complete "out-of-box" solution to using Japanese on the Internet
+in a PC environment. It comes with news readers and WWW browser which can read
+Japanese. Quite unfortunately, the mailer in the Bonus Pack is not Japanized
+yet. Japanized mailer will be announced soon.One of my friends told me about the new package of Warp, and it sounds 
+like a good deal.
+
+In May, 1995, IBM will issue a "Full Pack" version, which may well be one of 
+the finest operating systems for users who need to read/write Japanese on the
+Internet. The pack includes not only OS/2 but also PC-DOS, DOS/V, Windows-J, 
+and a complete Japanese IAK. I am currently using a combination of the U.S. 
+OS/2 Warp "full pack" and Win/V. It is a very powerful yet easy operating
+environment.  The Warp-J "full pack" will make it even easier and more powerful.
+People who use JWP can continue to use it under Windows-E environment.  Those
+who need a Japanese word processor can start with the "Bonus Pack". If someone
+were to ask me to recommend a Japanese IAK and/or Japanese operating
+environment, I would instantly urge them to wait and get Warp-J full pack.
+
+vi. Places at Which to Buy the Operating Systems Listed Above
+
+In Appendix A of this FAQ, I have listed the names and addresses of several
+U.S. computer stores that carry DOS/V and Windows-J. Please inform me of any
+errata.
+
+Currently, Windows-J lists for $195 and DOS/V for $230. Win/V by itself lists
+for $150; the Japanese Windows Kit (Win/V plus a FEP and FontWave Fonts) lists
+for $250. However, street prices may be lower.  I have heard that Win/V alone is
+available for as low as $70. 
+
+(2) Hardware Requirements
+
+Since DOS/V + Windows-J system require more than 40 MB on your hard disk,
+you should have at least a 120-MB hard disk.  A 386 CPU with a large enough
+cache is the minimum requirement for Japanese.  Lots of RAM is strongly
+recommended because displaying Japanese fonts requires a great deal of memory,
+and the Windows-J program manager has to "swap" several applications at a time.
+As far as a modem is concerned, the faster, the better, with a minimum bps of
+14,400 for work on the Internet.
+
+(3) An Internet Account 
+
+You have to be careful about selecting your Internet account.  Whether you
+are looking for a UNIX shell account or a TCP/IP account, it should be able to
+transfer data using a clean eight-bit transfer protocol.  (I have never seen
+TCP/IP connection without this setup.) The first test is the modem setup.
+The data length of modem setup should be eight bit, indicated as
+"8-N-1," at least.  You can test if it is clean eight bit or not by uploading
+a Japanese JIS (not a S-JIS) file and then downloading it again as a
+text file. If you feel both of the tests are too complicated and too
+technical, you can just ask a representative or system administrator about
+the system setup.
+ 
+In addition, you should be careful about the code system of your account.
+You should avoid getting an account that uses the EBCDIC code system internally.
+Generally speaking, it is difficult, not to say impossible, to use Japanese on
+non-shell commercial network providers, like CompuServe, GEnie, Delphi, Prodigy,
+and AOL, although some of them can handle Japanese e-mail.  (I will discuss this
+method later under "4. Japanese E-mail on the Internet.")
+
+One more thing of which you should be careful is the news server protocol that
+your Internet service provider uses.  If your provider offers Japanese
+newsgroups like fj.* and tnn.*, it must use the "INN" protocol for its news
+server, for only the INN protocol will be able to handle your Japanese post
+without problems.  See below for a more detailed discussion of news server
+protocol. Japanese news groups are quite informative about not only technical
+problems but also general information about Japan and Japan-related topics.
+
+3. Software on PC 
+
+Though I discussed about alternative operating systems, I am going to
+discuss programs on Windows-J simply because it is the official platform
+and most of the programs I mention here can run on other platforms except
+OS/2 Warp and Linux.  There is little information about compatibility of
+OS/2 currently, thought it is 'supposed' to be compatible with various
+Windows software. 
+
+Software selection totally depends on your objective and environment and
+its setup can vary from system to system.  There might be some who just
+want to read and write Japanese E-mail and non-shell commercial networks
+such as GEnie that can carry New-JIS code is enough for them (I will
+discuss how to use Japanese E-mail later, using whole section.).  While,
+there is another groups of people who are eager to read Japanese news
+groups and need full-fledged TCP/IP connection and software setup. Since
+there i s no 'out-of-box' solution, I hope you can choose by yourself to
+satisfy your need and find out the way of set programs up. 
+
+One benefit to use Internet is that you can get virtually any program
+through it.  The file acquiring protocol is called File Transfer Protocol
+(FTP) and there is a program and server of this. Without FTP-ing, you have
+to purchase commercial software.  If not, I strongly recommend you to join
+some commercial network which gave you UNIX shell account.  There are some
+lists which contains all the commercial network providers on Internet and
+it is relatively easy for you to find one. The best way might be the
+'Internet Guru' near you. 
+
+One thing you should try before just downloading Japanese programs is to
+change fonts of English programs by either changing option setup or
+re-writing *.ini files.  When you run some program on Windows-J and the
+program is designed to handle clean eight bit transfer, it might be able
+to display Japanese S-JIS coded text.  Some utilities like Font Patch'n
+and Emigrant that help English programs to display Japanese.  I do welcome
+any report of your experiments. 
+
+(1) Terminal Software on PC
+
+The simplest one in this category is named "Terminal" bundled with
+Japanese Windows and it is enough to sign up and operate minimum Japanese
+functions.  However, it does not cover JIS and EUC code characters. 
+Because most of Japanese Internet sites use JIS code, not Shift-JIS, you
+need to have terminal soft which can handle JIS code. 
+
+I once used Wterm which is a DOS/V base terminal soft and it can handle
+S-JIS, New-JIS and EUC. Currently, I am using Emterm, the Japanese
+terminal software running on Japanese Windows and/or Win/V. It seems to be
+more sophisticated than DOS/V terminal software. Both of them are stored
+on 'Hideki' ftp site. 
+
+According to UJIP, there are several terminal programs which meet our
+requirements, like KCOM2 by Kureo Technology (tel. 604-433-7715) that runs
+under English Windows and DOS and handles JIS and S-JIS. However, it is
+relatively expensive. The KCOM2 V. 3.0 costs $350.  One of the advantages
+for KCOM2 is that it can handle CIS-JIS code which is a transferable code
+system on CompuServe mail.  However, since it is a little different from 
+normal JIS code, your receiver has to have KCOM2 or special decoder which 
+can be found in Japan Forum on CompuServe.
+
+(2)Some converting/coding software
+There are some 'must-have' type small software to decode files on
+Internet.  Here is the list of software and FTP site,
+
+Name:          Wincode.zip 
+Function:      This program can convert any binary file into ASCII text
+               file or files. Since UNIX programs uses the same logic to
+               decode files, named 'base-64', you can upload JIS or S-JIS
+               files by this coding. For your information, the undecode 
+               command on UNIX is "uudecode filename." 
+Site:          ftp://ftp.cc.utexas.edu/microlib/win/util/wincode.zip
+               ftp://ftp.ibp.fr/pub/pc/win3/util/wincode.zip
+
+Name:          winzip50b.exe
+Function:      A popular archiver for Windows.  This soft can "compress" 
+               and "decompress" *.zip and *.lzh files. Since many of the 
+               files decompressed in FTP sites, it is convenient to have one.
+Site:          ftp://aloha.com/pub/windows/winsock/ winzip50b.exe
+
+Name:          jconv.exe
+Function:      JIS, S-JIS, EUC (unicode) conversion program. Ken Lunde, the
+               legendary author of UJIP, wrote this program.
+Site:          ftp://ftp.ora.com/pub/examples/nutshell/ujip/dos
+               or Ken Lunde's home page at http://jasper.ora.com/lunde/
+          
+Name:           mpack15d.zip
+Function:       MIME header mail decode/encode program. Using Base-64 which 
+                is similar decoding method to uuencode, this program 
+                generates transferable file to carry binary, including S-JIS 
+                file.    
+
+(3) Wapuro (Japanese Word-processor)
+I believe Wapuro is a 'bare necessity' for those who want to use Japanese. 
+There are many variation of Wapuro from simple Windows-J accessories including
+write.exe which is my favorite to MS-Word and Ichitaro for Windows. Also,
+Japanese version of OS/2 Warp comes with Japanese word processor. Again, it
+depends on your objective, environment and your budget (some of Wapuro is quite
+expensive.) which one you take.
+
+Name:           JWP
+Function:       Full functional Windows Wapuro, shareware. This runs on 
+                English Windows.
+Site:           ftp://uesama.tjp.washington.edu/pub/Japanese/IBM/JWP/
+
+Name:           KanjiWORD 2.0/3.0
+Function        Full functional Windows Wapuro, a commercial product. This 
+                runs on English Windows.
+Access:         Pacific Software Tel. 1-800-232-3989 Fax. 206-562-0811
+
+Name:           KCOM2
+Function        KCOM2 consists of Japanese word processor and terminal 
+                software. Actually, KanjiWORD is a licensed part of 
+                KCOM2. Its original was KCOM2.
+Access:         Kureo Technology Tel. 604-433-7715
+
+4. Japanese E-mail
+
+I found that there are many people who simply want to read and write
+Japanese E-mail on Internet. Also, if you have Windows-J system and fancy
+TCP/IP connection, it is relatively easier to get information and
+shareware programs to make it work. On the other hand, if you have only
+English Windows and have only English E-mail facility, you rarely get
+information about how to use Japanese on Internet, like I was about a year
+ago.  Therefore, I am going to emphasize this topic and use this whole
+section to discuss about this function. 
+
+On the top of all, recently Mr. Aoki told me there is a list named 'Dr.
+Bob's' and you can get virtually any information, believe this or not from
+Archei search to Gopher and WWW, through E-mail.  E-mail can be the most
+efficient method to communicate and get information.
+
+(1) Text Base E-mail Facility
+
+As I spent a year just to send my first Japanese E-mail, it is difficult
+to transfer Japanese over text base E-mail facilities such as traditional
+universities' E-mail services.  Those systems are not design to
+'understand' Japanese and they even reject Japanese or take it as a
+control code since Japanese code includes escape sequence.  However, you
+still can send it as binary file.  It may takes several steps to do so. It
+might be burden some.  Still, it is worth trying if you do not have any
+other method to do so. 
+
+As long as I know, there are two coding systems to send binary over
+Internet; uuencode/uudecode and Multiple Internal Mail Extension (MIME).
+Uuencode/uudecode is a method widely used in UNIX systems. Using this
+method, you can convert a binary files into normal ASCII file.  You can
+see the sample of this method on 'binary' news groups where you can get
+pictures, sound and movies.  The typical decoder on Windows is Winced. On
+the other hand, MIME is a relatively new standard to send multimedia and
+multilingual files over Internet set by International Standardization
+Organization (ISO). You might have received a mail which contains; 
+
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-2022-jp
+X-Mailer: Eudora-J(1.3.8.5-J13)
+
+The first line show the mail used MIME encode method version 1.0. The
+second line shows that this mail contains iso-2022-jp character set which
+is a new JIS code.  The third line is an optional 'X-' line of MIME header
+and tells us that the send used Eudora-J. The point is that all the mail
+by MIME header can go through all the Internet mail servers, which mean it
+is transferable if your mailer 'understand' Japanese. (In most of he text
+base mailers, however, do not.) I just going to use binary part of MIME
+in this section. 
+
+Unfortunately there are not too many mailers which can read and write MIME
+header mail. However, Mpack can not only create MIME header mail but also
+decode it. 
+
+One thing you should know before developing this discussion is that since
+the coding method is rather special, your receiver needs special program
+like Winced, Pack or Pine UNIX mailer program to _read_ it.  You should
+not send MIME header mail before you make sure if you receiver has some
+method to read it. Otherwise he or she will be just confused or, in the
+worst case, get angry and stop return your mail. Therefore, through either
+FTP or physical mail, it is better for you to send some method to dec ode
+it to him. 
+
+So much for background. The actual steps of sending mail over text base
+mail facility is shown below. 
+
+i. Write Japanese mail on your Wapuro and save is as S-JIS file. (If your
+receiver prefers any other method you can convert it by Jconve.)
+
+ii. convert the file by Winced or Pack into transferable file.
+
+iii. Upload it to your account using PC-Server transfer protocol such as
+X-modem, Z-modem or Kermit. Notice that the file is already converted you
+can transfer it as text file. 
+
+iv. Login to your mail account and start to send E-mail to include the
+file you uploaded.  There is always a method to import ASCII file to your
+mail. 
+
+v. Finally, you can send it.
+
+If you feel uncomfortable with any of these steps, I advise you to talk to
+your system administrator and show this description. 
+
+(2) non-UNIX Commercial Networks
+
+You might be surprised by the fact that you can send japanese by some
+non-Shell commercial networks such as CompuServe, AOL and GEnie. Mr.
+Haitani describes this interesting method in his guide (see Appendix B).
+He shows how to recover escape sequence los t in transfer. 
+
+Surprisingly, according to Mr. Haitani, you can send JIS coded Japanese
+Email through American Online and GEnie. Even S-J IS coded text can be 
+sent by some condition. You can get in touch with GEnie at 1-800-638-9636 
+or LIVEWIRE@GENIE.GEIS.COM. On the other hand, as I discussed before, you 
+need KCOM2 or conversion program which can handle CIS-JIS code to transfer
+Japanese mail over CompuServe. 
+
+(3) TCP/IP 
+
+It is most sophisticated to send and receive Japanese E-mail by TCP/IP
+mail client.  Most of the mailers will convert your S-JIS normal text into
+JIS or in other words iso-2202-jp code to send over Internet and they also
+automatically convert them into S- JIS. I will discuss these mailer in the
+next section. 
+
+ (3) Gopher Mail / How to get information through E-mail
+
+Though TCP/IP is a sophisticated technology to open direct access to
+Internet, E-mail still has great potential to get information.  Recently,
+Mr. Aoki introduced me an interesting guide titled 'Dr. Bob's Accessing
+The Internet by E-mail.' This guide sh ow various technic to use FTP,
+Gopher and WWW only by E-mail and since any Japanese file on Internet can
+be obtained as a binary file, you can apply Dr. Bob's method to Japanese
+information.  You can get this guide by sending E-mail to; 
+
+listserve@ubvm.cc.buffalo.edu
+
+with blank subject and write 'GET INTERNET BY-EMAIL NETTRAIN F=MAIL' as a body.
+
+I will discuss about GopherMail technic here to get fj.* newsgroup, just to showan example of   E-mail's potential.
+
+i. Reading fj.*s
+
+Gopher Mail is 'a gopher client that uses electrical mail to interact with
+the user' (by Mr. Fred Bremmer, the author of this smart program). There
+are several Gopher Mail servers around the world. According to the guide,
+there are; 
+
+gophermail@calvin.edu  (USA)
+gopher@earn.net  (France)
+gopher@dsv.su.se  (Sweden)
+gomail@ncc.go.jp  (Japan)
+
+If you need a help for the operation of GopherMail, you can send blank
+E-mail to any of them with 'Subject: help.' I recommend you to get one
+since it describes the functions of GopherMail neatly. 
+
+When you send a blank E-mail (this time even without 'Subject: help'), you
+will get the menu of the server. Basically, all you have to do is to put
+'X' mark and return the menu file to Gopher Mail server and it will return
+further menus or document you want. 
+
+The very  basic format of Gopher mail request is like below;
+
+Name=fj.windows.x
+Type=1
+Port=70
+Path=exec:-h fj.windows.x:/bin/gonntp
+Host=gopher.cs.reitaku-u.ac.jp
+
+The first line, 'Name' is used for a header of return mail and second line
+shows what type the target file is.  As for this example, 'Type=1' show
+that the target file, indicated by the rest of the contents, is text file.
+'Type=9' means it is a binary file e and GopherMail will send it as a
+uuencoded file.  Therefore, instead of just put 'X' in front of the menu
+items in returned menu files, you can directly command GopherMail sever to
+retrieve your target file, if you know the exact location of the file you
+want.
+
+You can request the many of Nips gopher site (gopher.nips.ac.jp:8021/)
+or Reitaku University gopher site (gopher.cs.reitaku-u.ac.jp), since both
+of them have S-JIS coded news groups available for public. Why do you need
+S-JIS news site? Because you do not need to have another converter to read
+JIS or EUC code texts.
+
+One more thing I have to tell you about reading fj.* news is that there is
+a mail service where you can get daily base delivery of fj.* news over
+E-mail.  In order to request the delivery. You can send a mail either in
+Japanese or English to; 
+
+news@nips.ac.jp
+
+Before sending a mail to request, please be sure that you have a mailer or
+instrument to read Japanese E-mail and enough capacity to receive them,
+because all of them are written in Japanese and you might get hundreds of
+news mails a day after application. 
+
+Also, there are quite many 'dead' news groups in fj.*. Mr. Koyama kindly
+prepared an active fj list (Appendix C). 
+
+Other alternative is to use FTP site which contain fj.* news at; 
+
+ftp://kuso.shef.ac.uk/pub/News/fj/
+
+ii. Writing fj.*s
+
+The next thing you want to do on Internet after getting Japanese USENET
+news over E-mail is to post Japanese article onto them, right? This is
+relatively easier than reading. When you decide to make a post of your
+own, mail your Japanese text in JIS code to: 
+
+<<name of a newsgroup>>@news.demon.co.uk
+
+You should fill <<name of the a news group>> by the news group name you
+want to make a post , such as, fj.net.infosystem.www. 
+
+
+5. TCP/IP Clients
+
+Transmission Control Protocol/Internet Protocol (TCP/IP) connection is a
+great invention. It is the basic connection with Internet Protocol (IP)
+Address and it hooks you on the world of Internet directly. In addition,
+by its nature, all the TCP/IP connection can transfer Japanese properly...
+with some exceptions because it basically uses clean eight bit transfer. 
+
+There are always server and client in TCP/IP connections. The server has
+some information, from E-mail as a file to sound and graphic files, to
+send on demands by client programs. They can talk each other by TCP/IP
+protocol. Most of servers are located o n your provider side. Of- course
+you can hook to other servers located in Japan if you know the address and
+have rights to access.  You have to have client programs on your PC to
+access to these servers because each function, such as FTP or E-mail,
+require e special procedure to access servers. Conversation between
+programs consists Internet! What a sci-fi world we are living! Using SLIP
+or PPP connection over dial up, we can touch and feel this art of
+technology.  If you want to know more about TCP/IP, pl ease any of the
+Internet guide books available to you. They _must_ contain the explanation
+of what TCP/IP is. 
+
+In 1994, may Japanese TCP/IP client programs, which works on your PC side,
+were created. Some are converted form English to Japanese and I will
+discuss some of them here.  Almost all of them are compatible with
+Winsock, especially with Trumpet Winsock. 
+
+Mr. Shirahashi prepared an excellent FAQ of Japanese TCP/IP clients and
+WWW browsers. My description below owe so much to his FAQ. You can get
+them at; 
+
+TCP/IP FAQ:
+ftp://utsun.s.u-tokyo.ac.jp/PC/network/doc/pc-tcpip-faq-j.jis or .sjis
+
+WWW FAQ:
+ftp://utsun.s.u-tokyo.ac.jp/PC/network/doc/www-clients-for-windows.jis or .sjis 
+
+As I discuss later, Netscape 1.1 beta 3 is now available and it can handle
+Japanese. Also, it contains almost all function of TCP/IP, including WWW
+browser, news reader and Email, and they are all Japanized.  This is an 'all
+inone' package.
+
+(1) Telnet
+
+I recommend the combination of Emterm and COMt for Japanese telnet
+software, since there is no good Japanese telnet client shareware. 
+
+COMt is a telnet redirector, which turn unused com port into a virtual
+telnet connection port. You can think of this as an emulator of modem and
+we can use any terminal soft, such as Emterm, as telnet client by COMt. 
+
+You can get it at;
+
+ftp://ftp.std.com/cutomers/software/rfdmail/comt.zip
+ftp://utsun.s.u-tokyo.ac.jp/PC/network/winsock/apps/comt.zip
+
+(2)Mail
+
+There are various Japanese mail clients. It is lot easier to read and
+write Japanese mails on Windows-J or Win/V, not on UNIX text editors. You
+can input Japanese much smoother with Windows GUI. 
+ 
+Name:          Winbiff
+Function:      The mailer soft which can handle S-JIS, JIS and EUC codes. 
+               Also, it can handle MIME and sends binary files, including
+               New-JIS text.
+Site:          ftp://utsun.s.u-tokyo.ac.jp/PC/network/winsock
+                  /apps/Winbiff/wbiff106.lzh
+
+Name:          AL-Mail
+Function:      It can handle various Japanese code systems and MIME 
+               headers. It has off-line reader function by /off option. 
+Site:          ftp://utsun.s.u-tokyo.ac.jp/PC/network/winsock
+                  /apps/ALMail/alm094.lzh
+
+Many of the readers might has begun to use 'TIA' on UNIX shell to emulate
+SLIP connection, already. (This is too famous to mention, but just for
+your information you can get in at marketplace.com by WWW.) However`
+AL-Mail does not run with TIA. You can a dd -n option to TIA to fix this
+situation (i.e. 'tia -n'). 
+ 
+(3)News Reader
+
+There are a few Japanese news readers, like WinVN.
+
+If you want to read fj.* newsgroups, your news server has to have them. 
+It is better to consult with your network provider to see if it carry fj.*
+or not. 
+
+There is a problem in posting a Japanese article if your news server is
+'NNTP 1.1.15t' which uses Cnews protocol.  With 'NNTPD' with INN system,
+you can just connect these news readers and post Japanese. (I got this
+information form Mr. Ishido, who is an author of WinVN Japanese version.)
+
+For TIA users, you need 'nntpd' program to read newsgroup by a TCP/IP
+client. See the home page of marketplace.com. 
+
+Name:          WinVN for Windows-J
+Function:      The Japanese version of the famous WinVN. 
+Site:          ftp://utsun.s.u-tokyo.ac.jp/PC/network/winsock
+                   /apps/WinVN/wv0926j.lzh
+
+This news reader has problem with TIA, too. You should get tia 1.03 beta
+and nntpd to solve the problem, using '-nntpd:119' option. 
+
+(4) WWW Browser
+
+Recently, NetScape announced its NetScape Navigator 1.1 beta versions and
+it can handle Japanese code systems just by changing its font at
+[option]-[preference]-[fonts and colors]. Also, from beta 2, it can handle
+Japanese News Groups and Japanese SMTP mail, which means you can read
+Japanese News and write Japanese mail on NetScape Navigator.  You can get
+it at; 
+
+ftp://ftp.netscape.com/netscape1.1/
+
+If you still want to use previous version of NetScape, you can use
+Mpatch'n (mpatch.exe) to display Japanese on it. If you are using NetScape
+whose version is from 0.94 to 1.0N, you need ibar.exe to avoid 'hooking'
+problems. 
+
+There is a Japanese version of Mosaic, too. If you are interested in
+Infomosaic, which is a WWW browser from FUJITSU, try the WWW page below; 
+
+http://www.g-search.or.jp
+
+It will cost you 5,000 yen and you can download it from this site, though
+you should apply for G-SEARCH's membership over FAX first. This program
+will work on Win/V without FUJITSU's warranty and with Win32s. 
+
+(5) DeleGate
+
+There is a proxy server program which can convert among JIS, S-JIS and
+EUC. You can connect this server and you can read Japanese WWW pages,
+using only one Japanese code system, such as S-JIS. 
+
+At the same time, there are WWW servers that handle code conversion for
+you. For example, you can 'proxy' by typing,
+
+http://www.tohoku.ac.jp:8081/=@=:www.ntt.jp/
+
+The "http://www.tohoku.ac.jp:8081/" portion is the proxy server (this one
+happens to handle EUC/JIS -> Shift-JIS conversion), the "=@=:" indicates
+the real site to access, and "www.ntt.jp" is the real site. 
+
+Therefore, with 8 bit connection to Japanese server site, you can read WWW
+just by changing browser's font into S-JIS. 
+
+Recently, Ms. Aida and Mr. Brent Jones setup publica DelaGate sites in the
+United States at; 
+
+needmore.cs.utexas.edu port:10080
+
+I found more providers connect to these DeleGate sites by clean eight bit
+than those to Japanese sites. 
+
+6.  Japanese Information Sources
+
+(1) Mailing Lists
+
+The file named 'int-jpn.txt' (Mariko and Yuko's list) saved on the
+'hideki' site will give you more detailed description of these groups and
+mailing lists.  Some mailing lists, such as NIHONGO groups, carry
+excellent information about this problem. 
+
+Personally, there are two mailing lists I like.  Both of them are quite
+informative and carry interesting discussions. 
+
+NHONGO: Listserv@mitvma.mit.edu
+Japan Business and Economics: LISTSERV@PUCC.PRINCETON.EDU
+
+You can subscribe them by sending E-mail to their listserve.  Write 'SUB
+<<groups name>>.' <<group name>> can be 'Nihongo' for mitvma.mit.edu and
+'Japan' for PUCC.PRINCETON.EDU. 
+
+(2) FTP/ Gopher / WWW 
+
+On Appendix E, I put several interesting sites as URL format.  There are
+so many sites which contains valuable information about Japan and
+Japanese. Especially, these URLs shown below have hundreds of links to
+other sites in English. 
+
+NTT:                http://www.ntt.jp/
+Stanford X Guide:   http://fuji.stanford.edu/Guide/japan_information_guide.html
+Culture Wave:       http://sashimi.wwa.com:80/culturewave/
+Japan Windows:      http://jw.nttam.com/HOME/index.shtml
+
+Regarding using Japanese on Internet, there are several sites of SENJIN
+(those who have endeavored and contributed to solve problems for us.). 
+
+Ken Lunde:          http://jasper.ora.com/lunde/
+U. of Washington:   http://www.uwtc.washington.edu/Computing/Japanese
+                    /JapaneseResources.html
+Prof. Momoi:        http://condor.stcloud.msus.edu:20020/tojpn.html
+
+If you want to get Japanese news, you can try;
+
+Shima Medis Net:    http://www.eccosys.com:8080/SMN/JPN/
+Nips Gopher Site:   gopher://news.nips.ac.jp:8021/
+
+For searching WWW pages, YaHoo seite can be helpfull for you.
+
+Yahoo               http://akebono.stanford.edu/yahoo
+
+Please see the appendix to get more information about Internet FTP, Gopher
+and WWW sites. 
+
+(3) Japanese BBS outside Japan
+
+Other than the Internet, Japanese BBSes (Bulletin Board System) contains
+incredible amount of Japan related information.  Most of them are operated
+by volunteers and free to access.  Since you do not need a special account
+nor some TCP/IP programs which is difficult to setup, they can be great
+information source of using Japanese on Internet.  See Appendix F for
+detail. 
+ 
+(4) How to Sign-up for Niftyserve
+
+Other source of Japanese information is apparently Japanese networks like
+Niftyserve.  There are several networks, including ASCII-Net, PC-VAN etc. 
+Among them, I have an account on NIFTY-Serve, a counter part of CompuServe
+in Japan, and you can sign up through telnet. 
+
+Under Niftyserve, there are several good forums regarding using Japanese
+on Internet.  You can visit in order to get some information or questions
+to be answered; 
+
+FCIS:          The forum for international communication, including several 
+               connection to CompuServe form Japan.
+FUNIX:         People talk about how to use UNIX.
+FINET:         Forum to discuss Internet expertise.
+
+Niftyserve is an important information source for me.  It provides me
+enormous information about Japan. It carries some different information
+form one publicly disclosed. You can receive a detailed technical advice
+about programs and some industry or political gossips as well.  Also, I
+can download thousands of software and files...  Currently (4/1 1995),
+more than one million people signed up for Niftyserve. (I really do not
+have any relations with Niftyserve, other than I have an account on it.)
+
+The first thing you have to do is to get clean eight bit connection on
+Japanese system through Internet to telnet to Niftyserve. You can use
+Japanese telnet program hooked on TCP/IP connection.  The address of
+Niftyserve on Internet is 'r2.niftyserve.or.j p.'
+
+If you still prefer telephone access, you can access Nifty through
+CompuServe's access points. Therefore, the alternative of 'telnet' is to
+call CompuServe's access point and type 'NIFTY' (this should be all
+upper-case.). I listed some of the access point on Appendix G. However,
+this costs you 50 yen a minuet to connect Niftyserve, while telnet cost
+you only 10 yen a minute. 
+
+Now, I login Niftyserve by 'telnet'-ing under UNIX Shell account, which
+saved me 40 yen/ minuet special connecting fee of Niftyserve. You can 
+chose one of these two methods shown below. 
+
+i. Dial up to CompuServe's access point nearest to your home with 8-N-1 
+setup. Type 'NIFTY' (Be careful, case sensible). 
+
+or
+
+ii. Telnet "r2.niftyserve.or.jp" or call access point.  
+
+When you get connected, key in as below, (Inside " is the message from the
+host)
+
+     "connection ID:"  SGN  (should be strictly 
+     capital letters)
+     "Serial number:"   NIF00777
+     "Agreement number:" NIFTYSGN
+
+When you complete your sign up and received your password and ID, you can
+enter 'SVC' as your 'connection ID'.  Interesting thing is that Niftyserve
+will sense what kind of character system you used to enter 'SVC'.
+Therefore, it is better to enter 'SVC' by JIS code, not S-JIS, because
+S-JIS might be transformed during transmissions to Japan. 
+
+The alternative is to send a physical mail to Niftyserve. The address is
+below; 
+
+Oomori Bell Poart A-kan 6-26-1 Minami-Ooi, Shinagawa-ward, Tokyo 140 Japan
+Tel. ++81-3-5471-5806
+
+---------------------------------------------------------------------------
+As you see, this is not enough suggestion, but I do want to write some
+guide to use Japanese on Internet. I really welcome your comments and
+suggestions.  I believe there are hundreds of misspellings and grammatical
+errors....  I do not think that my solution is the best one.  If you find
+much better way, please tell me! Anyway, talk to you soon! 
+
+Even this document can not be made without cooperation and help from others.
+
+hiro@yokohama2.ixa.com (Hiro), day@yokohama2.ixa.com (Takashi ANJIKI), 
+Maze@ix.netcom.com, Metroman@netocm.com, Mr. Nakazato at Georgetown University,
+jl6bvo@ibm.net, Mr. Kanji Haitani, Prof. Momoi, Mr. Riu, TaMonTen@accessnv.com,
+Mr. Yasu Hiro Yamazaki, mikanno@netcom.com, Mr. Gordon Ross, Ms. Aida, 
+Mr. Ken Lunde with my sincere respect, Hiromi Hirayama, and special thanks to
+Mr. Koichi Aoki (woody@aloha.com), millions of 'Thank you, pal!'
+
+---------------------------------------------------------------------------
+
+Appendix A. Shop List
+Apropos, Inc.  Arlington, MA    617-648-2041
+CCIC           Barkeley,CA      510-843-5626
+CLR            LA,CA            800-569-2099
+C&T            Boston,MA        617-426-6074
+EJ Billingual  Torrance,CA      310-320-8139
+KiComp Ware    Appleton,WI      612-773-8621
+Kureo Technology, Canada        604-433-7715
+Language Eng.  Belmonst,MA      617-489-4000
+PRC            Burlingame,CA    800-745-0911
+PSP            Mercer Island,CA 206-232-3989
+PC Express     Alhambra,CA      818-293-1661
+QTC            Berkeley,CA      510-848-8080
+System Soft    Vero Beach,FL    800-882-8856
+K-Denshi       San Francisco,CA 415-346-5946
+
+Appendix B. Mr. Haitani's Report
+See the file named jemail.txt on Hideki's sites
+
+Appendix C. Active fj.* Newsgroups
+See the file named fj-act.txt on Hideki's sites.
+
+Appendix. D   Public DeleGate Points
+delegate.ncc.go.jp        port:10080/ (EUC/JIS -> SJIS proxy server)
+delegate.tokai-ic.or.jp   port:10080/ (EUC/JIS -> SJIS proxy server)
+www.tohoku.ac.jp          port:8081/ (EUC/JIS -> SJIS proxy server)
+www.osaka-u.ac.jp         port:10080/ (EUC/JIS -> SJIS proxy server)
+www.osaka-u.ac.jp         port:8080/ (SJIS/JIS -> EUC proxy server)
+bigblue.kuhp.kyoto-u.ac.jp port:10080/ (EUC/JIS -> SJIS proxy server)
+needmore.cs.utexas.edu    port:10080 (Other COde -> S JIS proxy server)
+
+Appendix E. FTP, Gopher and WWW Sites to get related information
+See the file named www-res01.htm on Hideki's sites.
+
+Appendix F. Japanese BBS outside Japan
+
+There must be many people who do not know that Japanese BBSs exist
+outside Japan. However, they do!
+
+Currently, New England Nihongo BBS, Metropolis BBS, Tim BBS,
+NJ PCClub BBS, CompXpress BBS, Micky's BBS, and LOS/V BBS are
+connected each other and with DOS/Vancouver BBS in Canada,
+J-NET in UK and some BBSs in Japan thru 'echo' (a bucket relay of
+BBSs networks) and you can exchanges messages world-widely!
+
+Hope you enjoy accessing the BBS nearest to you! They are really 
+informative and cozy places.
+
+BBS in the US
+----------------------------------------------------------------------
+  Name of BBS: New England Nihongo BBS, Boston, MA
+Access Number: 508-371-2654
+         Open: 24 hours
+     Baudrate: upto 14400 bps
+   Kanji Code: Sift - JIS
+        SYSOP: Nobutaka Kusakabe
+----------------------------------------------------------------------
+  Name of BBS: Metropolis BBS/Queens, NY
+Access Number: 718-263-2736
+         Open: 24hrs
+     Baudrate: 14400
+   Kanji Code: SHFT-JIS
+        SYSOP: Hitomi Kamada, Compuserve:101014,556/Nifty:GBE00556
+   From SYSOP: Everybody's welcome
+----------------------------------------------------------------------
+  Name of BBS: IM BBS   Fort Lee, NJ, USA
+Access Number: 201-224-2688
+         Open: 24 hours
+     Baudrate: 28800bps
+   Kanji Code: Shift-Jis
+        SYSOP: Tim Nishimura, 275 Dorin Court Road
+                               Fort Lee, NJ 07024
+   From SYSOP: Promoting mutual understanding as
+                a bridge between USA & Japan.
+----------------------------------------------------------------------
+  Name of BBS: NJ PCClub, Ramsey, NJ
+Access Number: 201-236-8662
+         Open: 24 hours
+     Baudrate: upto 14400 bps   Kanji Code: Sift - JIS
+        SYSOP: akeshi Takenaka
+----------------------------------------------------------------------
+  Name of BBS: CompXpress BBS, Hyattsville, MD
+Access Number: 301-779-3711
+         Open: 24 hours
+     Baudrate: upto 28800 bps
+   Kanji Code: Sift - JIS
+        SYSOP: Etsuhi Riu, 76427.2270@compuserve.com
+                                 e.riu@genie.geis.com
+   From SYSOP: This is a brand new BBS! I am trying hard to
+                support. Your access is quite welcomed.
+----------------------------------------------------------------------
+  Name of BBS: LOS/V BBS, Los Angeles, CA
+Access Number: 818-701-0632
+         Open: 24 hours
+     Baudrate: upto 14400 bps
+   Kanji Code: Sift - JIS
+        SYSOP: Takeo Mukasa
+
+----------------------------------------------------------------------
+  Name of BBS: Valcan BBS, San Francisco, CA
+Access Number: 415-348-8750
+         Open: 24 hours
+     Baudrate: upto 14400 bps
+   Kanji Code: Sift - JIS
+        SYSOP: 
+----------------------------------------------------------------------
+  Name of BBS: Hirota's BBS, Chicago,IL
+Access Number: 708-766-9699
+         Open: 24 hours
+     Baudrate: upto 14400 bps
+   Kanji Code: Sift - JIS
+        SYSOP: Mr. Hirota
+----------------------------------------------------------------------
+  Name of BBS: Micky's BBS, Chicago,IL
+Access Number: 708-882-7088
+         Open: 24 hours
+     Baudrate: upto 14400 bps
+   Kanji Code: Sift - JIS
+        SYSOP: Micky Nishioka
+
+Japanese BBS in Canada
+----------------------------------------------------------------------
+  Name of BBS: DOS/Vancouver BBS, Vancouver, CANADA
+Access Number: 604-272-0744
+         Open: 24 hours
+     Baudrate: upto 14400 bps
+   Kanji Code: Sift - JIS
+        SYSOP: 9220 Garden City Road
+                Richmond, B.C. Canada V7A 2S1
+   From SYSOP: Rakugo series postings and 'Gomi Board', and
+                Suppon System operater are our goodwill!
+                Expert of OS/2 (OS/2 no Tatsujin) _lives_
+                in here!
+
+Japanese BBS in UK
+----------------------------------------------------------------------
+  Name of BBS: J-NET, London, England
+Access Number: 801-715-9533
+         Open: 24 hours
+     Baudrate: upto 14400 bps
+   Kanji Code: Sift - JIS        SYSOP: Kiichi Chiba
+
+
+'Echo'ed Japanese BBSs in Japan
+
+EBISU-NET,       Tokyo                  03-3727-5370
+Con2-Serve BBS,  Tsukuba,Ibaragi        0298-92-8235
+Reading Rabbits, Osaka                  06-956-1160
+Go.Go-NET,       Yokohama,Kanagawa      045-772-8596
+SkyBlue-NET      Kobe                   078-707-6185
+
+and many more...
+
+                                             11/26/94 by Etsuhi Riu
+                                             3/23/95 Translated by 
+                                                     Hideki Hirayama
+Appendix. F   Niftyserve Access Points
+See the file named csap01.txt on Hideki's sites

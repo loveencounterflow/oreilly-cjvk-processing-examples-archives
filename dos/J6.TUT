@@ -1,0 +1,270 @@
+¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+¡Ã£Á£ä£ö£á£î£ã£å£ä¡¡£Å£ä£é£ô£é£î£ç¡¡£Æ£å£á£ô£õ£ò£å£ó    ¹âÅÙ¤ÊÊÔ½¸    J6.TUT¡Ã
+¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+\NumberStyle="NJJ 3.0: JW-Tutorial 6, page %d"
+
+In this tutorial, you are learning advanced techniques not available in typing on the typewriters. Here we learn computer specific functions, such as editing multiple documents, block operations and search & replace.
+
+
+¢£¢£¢£¢£¢£¢£¢£ £Æ£É£Ì£Å  £Ò£É£Î£Ç                  ¥Õ¥¡¥¤¥ë¤ÎÎØ ¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+¡Ã                        For experienced Windows users                     ¡Ã
+¡Ã                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                     ¡Ã
+¡ÃThis function is equivalent to switching windows <CTRL TAB> under any     ¡Ã
+¡Ãapplications which allow multiple windows operation. The only practical   ¡Ã
+¡Ãdifference is that NJStar doesn't allow adjusting the size of each window.¡Ã
+¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+
+In NJStar, the maximum size of a single file is limited to 64K bytes (ca.65,535 characters). Fortunately, it is not the practical limit, because you can switch between documents very easily and effectively with NJStar. 
+
+When more than one file is opened, the "File Ring" is established for file management. The term "File Ring" is coined from the fact that the files are queued and you can move either clockwise or anti-clockwise through the files in the queue. Thus you can go to the next document in the queue (by pressing <F10> once) or the previous document (by pressing <ALT F10> once) at will.
+
+As this NJStar tutorial constitutes nine documents, you should know how it works by now.
+
+        >> Press <F10> and <Alt F10> in sequence.
+
+You have briefly visited Tutorial 7, then come back here. 
+
+What NJStar actually does is to store in memory the minimum information of the file(s) which is / are not currently shown on the screen (namely, filename, file format, and the last cursor position). It releases all the other memory for the current document to use. Thus the contents of all non-current files are safely stored on the disk. When you come back to the document later, NJStar uses this stored information to read the document from the disk and go to the place where you were before. At the same time, the previous document goes into the queue list of the File Ring.
+
+There is no limit in the number of files in the File Ring. You can just open a file one after another to add to the File Ring. The current status of the File Ring can be checked by <Shift F10>. 
+
+If you want to remove a file from the File Ring, you must "Quit a file". Press <F3> for this action. If there is no file in the File Ring, NJStar session will be terminated. You will return to DOS prompt or shell from where you started NJStar.
+
+SUMMARY of SPEED KEYS: FILE RING
+¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½
+    <F10>             - Next file in the File Ring
+    <Alt-F0>          - Previous File in the File Ring
+    <F3>              - QuitFile - removing current file from the File Ring
+    <Shift-F10>       - (see also the alternative mouse operation) - 
+                           Display File List in the File Ring.
+
+
+¢£¢£¢£¢£¢£¢£¢£ £Â£Ì£Ï£Ã£Ë  £Ï£Ð£Å£Ò£Á£Ô£É£Ï£Î     ¥Ö¥í¥Ã¥¯ÊÔ½¸  ¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+¡Ã                For experienced Windows and Macintosh Users               ¡Ã
+¡Ã                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~               ¡Ã
+¡ÃMost of the functions described here are commonly available under EDIT    ¡Ã
+¡Ãmenu of any Windows applications. Under NJStar most of these functions are¡Ã
+¡Ãfound in the Menu Block option. One thing you have to bear in mind is that¡Ã
+¡Ãareas selected by marking remain selected until you perform a block-      ¡Ã
+¡Ãrelated operation. Unlike Windows or Macintosh environment, typing does   ¡Ã
+¡Ãnot destroy the selection.                                                ¡Ã
+¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+A Block is a selected area of text in the current document, marked with a different colour (green background as a default). By marking a block of text, you can do the following wonderful tasks:
+
+        1. Consult the dictionary for the character or word(s) selected;
+        2. Cut, Copy, Paste
+        3. Move it to another location
+        4. Save it as a separate file.
+        5. Do "search" or "replace" of the region
+
+Under NJStar, marking can be done in many ways, but can be different from the way you do with other applications like Windows. 
+
+The simplest way is to place markers where you mark the start and the end of the Block --¡ÚBlock, mark Block¡Û. You must place the second marker to complete the selection. Placing the 3rd marker will extend the selected region. 
+
+        >> Select the word "selection" above, with MENU action
+        >> ¡ÚBlock, uNmarkblock¡Ûto cancel the selection
+
+The same action can also be done by the keyboard or mouse:
+
+                  Keyboard     Mouse action
+        =======================================================
+        Mark      <Alt B>      clicking on the right button
+        Unmark    <Alt U>      clicking left and right together
+
+Note that if you use the mouse, the selection works in very similar fashion to the Windows' dragging selection.
+
+The most effective way for selecting a small area is to use <SHIFT arrow-keys>. This extends the selection.
+
+        >> Select the word "extend" above with this method.
+        >> Press <Alt-U> to cancel the selection
+
+You can select a word by pressing <Alt-W>. 
+
+        >> Try it now
+
+Note that NJStar recognises "words" which are separated either by a space or carriage return, and that it does not recognise Japanese words well if they were not separated in the same manner as English sentences.
+
+        >> Try with the following sentences and observe the behaviour:
+        >> »ä¤Ï¡¢º£¡ØÆî¶ËÀ±¡Ù¤ò¤ä¤Ã¤Æ¤¤¤Þ¤¹¡£
+
+There are other useful marking features, such as selecting a line <Alt-L>.
+By programming a macro, you can select a paragraph too, which will be explained in Tutorial 7.
+
+To cancel the selection at any time, press <Alt-U> or click Left and Right mouse button together (HINT: release the right button earlier).
+
+¢¢ 1. Consulting the dictionary for meaning
+
+With NJStar, you can look up a word in the bilingual dictionary instantly in two ways, Japanese ÆüËÜ¸ì and English ±Ñ¸ì. 
+
+        >> Select any word / character(s) in the above sentence
+        >>¡ÚTool, edic Lookup¡Û                         ¢¨ <ALT E> or <ALT X>
+
+If you don't make any selection, then NJStar will decide the word for you.
+Try this option as well.
+
+You can extract information from this dictionary as you wish. 
+Try the followings:
+
+        >> (1) Press <ENTER> to get the Japanese word only;
+        >> (2) Press <SPACE> to get the entire line;
+        >> (3) Press <ESC> to get nothing
+
+¢¢ 2. Cut, Undo, Copy and Paste
+
+NJStar has conventional editing commands such as these:
+
+CUT:    You can delete a large section of a document by selecting the area and
+        performing "DelBlock" function. It is the same function as "CUT" under
+        MS Windows in that the deleted text is in fact kept in the internal 
+        block buffer (= "Clipboard" of MS Windows).
+
+UNDO:   To restore the deletion, you can "UnDelBlock" it. "Paste" and 
+        "CopyBlock" do the same. Note that you can only recover the latest 
+        block deletion.
+
+COPY:   This command is normally used when you want to copy a selection
+        of text to the internal block buffer and not alter the document in
+        any way at this stage. The purpose of this is to PASTE the information
+        to other locations.
+
+PASTE:  This command is used to paste the information stored in the block
+        buffer to the designated position. You can Paste as many times as you
+        want.
+
+        >> Correct the following sentences by using CUT and PASTE:
+        >> »ä¤Ï³ØÀ¸¤Ç¤¹¡£¥ê¡¼¥ºÂç³Ø¤Î
+        >> °û¤ó¤À¡£¤­¤Î¤¦¥Ó¡¼¥ë¤ò
+
+
+¢¢ 3. Move the selected text to another area
+
+"Move block" is a quick equivalent of CUT and PASTE in one action. First you need to select the area to be moved. Then bring the cursor to the destination and press <ALT M> to complete the action.
+
+Note that the contents of the selected area is stored in the internal block buffer.
+
+        >> Correct the following sentences:
+        >> »ä¤Ï³ØÀ¸¤Ç¤¹¡£¥ê¡¼¥ºÂç³Ø¤Î
+        >> °û¤ó¤À¡£¤­¤Î¤¦¥Ó¡¼¥ë¤ò
+
+¢¢ 4. Save the selected text to a file
+
+Suppose you are asked by your colleague for some information. You have the document but the requested information is only a part of a large document. 
+What you need is to extract the required part only to a disk and send it to him/her.
+
+        >> select the whole paragraph above
+        >>¡ÚFile, save block¡Û                                 ¢¨ <Alt S>
+        >> Don't press <ENTER> yet! Please read the following:
+
+NJStar asks you to specify the filename. As a default it gives you the name of the current name of the file, but with the extension ".BLK." It is a good idea to modify the filename only slightly so that you can identify it later.
+
+        >> Edit the line and modify "J6.TUT" to "J6extr.TUT"
+        >> Press <ENTER> to save
+
+¢£¢£¢£¢£¢£ £Æ£Á£Ó£Ô¡¡£Ä£Õ£Ð£Ì£É£Ã£Á£Ô£É£Î£Ç¡¡¡õ¡¡£Ä£Å£Ì£Å£Ô£É£Î£Ç ¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+When you become an experienced user, you want everything to be quicker. Deleting 20 characters could waste painful seconds, distracting your creative mind. The following commands are available if you need them:
+
+Duplicating  a line ¡ÚEdit, dup line¡Û                       ¢¨ <CTRL L>
+Deleting:    a line ¡ÚEdit, Del line¡Û                       ¢¨ <CTRL Y>
+             to the beginning of line ¡ÚEdit, deltoBegline¡Û ¢¨ <CTRL J>
+             to the end of line ¡ÚEdit, deltoEndline¡Û       ¢¨ <CTRL K>
+
+Note that the contents of the deleted text will go to the internal deletion buffer, which is different from the block buffer. To undo a deletion, you must perform the Undelete function <F9>.
+
+________________
+¢´ EXERCISE (1)
+¡±¡±¡±¡±¡±¡±¡±¡±
+Delete all the English characters from the following text by using the fast deleting functions explained above:
+
+a new year: ¿·¤·¤¤Ç¯
+¸Å¤¤¼Ö: an old car
+long: Ä¹¤¤
+Ã»¤¤: short
+a lot of people: ¿Í¤¬Â¿¤¤
+Oh, I have seen this before.
+¿Í¤¬¾¯¤Ê¤¤: a few people
+a dark forest: °Å¤¤¿¹
+¤¿¤«¤¤¤Ë¤¯: expensive meat
+cheap fish: °Â¤¤µû
+I have a little money.
+a short string: Ã»¤¤»å
+Ä¹¤¤´Ö: for a long time
+
+
+¢£¢£¢£¢£¢£¢£¢£ £Ó£Å£Á£Ò£Ã£È¡¡£Á£Î£Ä¡¡£Ò£Å£Ð£Ì£Á£Ã£Å  ¸¡º÷¤ÈÃÖ´¹¤¨ ¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+The Search and Replace facility is found in most word processors. It is extremely useful functions if you know what you want to do with it. The functions described under this section are all found under the SEARCH option in the Menu. 
+
+When you call these functions, NJStar prompts the user for string(s) to be searched or replaced. If a previously entered search or replace string exists, it will prompt this string. You can edit it in the normal manner or cancel it with <CTRL Backspace>.
+
+¡ü Search
+
+This function will search a user specified string, beginning from the current cursor position. If you want to search for a word/phrase in English, then you must be in¡ÎAscii¡Ïmode. Otherwise select¡Î¤«¤Ê´Á¡Ï.
+
+        >> Select ¡ÎAscii¡Ïmode.               (press <Alt F6> to toggle)
+        >> Bring the cursor to the ¡ü above
+        >>¡ÚSearch, Search¡Û                                   ¢¨ <F5>
+        >> type "search", followed by <ENTER>
+
+Did you find the word "Search" immediately after ¡ü ?
+
+You may have also noticed that the found word is selected with different colour from selection, and the word is placed in the middle line of the screen.
+
+If you want a case-sensitive search, then press <ALT ENTER> instead of <ENTER>.
+
+        >> Try the case sensitive search.
+
+¡ü Search Forward (Find Next)
+
+This function will search a previously entered string from the current cursor position.
+
+        >> Bring the cursor to the same place as the previous exercise.
+        >>¡ÚSearch, search Fwd¡Û                                ¢¨ <Ctrl F>
+ 
+¡ü Search Backward
+
+This function will search a user-specified string backward, from the current cursor position.
+
+        >> Now you go backward.
+        >>¡ÚSearch, search Bwd¡Û                                ¢¨ <Ctrl B>
+
+If you have to press <ENTER> each time, your program is configured in NJCONFIG to specify search string. Go through¡ÚTools, NJConfig, G¡Û to change the setting.
+
+¡ü Replace ¡ÚSearch, Replace¡Û                                  ¢¨ <F6>
+
+This function will search for a user-specified string and replace it with another user-specified string, beginning from the current cursor position. 
+
+When the target is found, NJStar displays the following prompt:
+
+        Replace: (Yes/No/Go/Only/Quit)?
+
+You are asked to enter one of initial characters to direct the operation. They are:
+
+        Y - yes, I want to replace it and continue the operation;
+        N - no, I don't want to replace it, but continue the operation;
+        G - go on! I want everything to be replaced until the end of the file.
+        O - only this one please! I want to stop the operation after this one.
+        Q - quit. I abort the operation.
+
+________________
+¢´ EXERCISE (2)
+¡±¡±¡±¡±¡±¡±¡±¡±
+Search and Replace exercise for marked area: First of all, select the following paragraph. Then follow the exercises given below.
+
+Many Japanese functions of NJStar, Japanese such as file management, search, changing input Japanese mode, are accessible from both MENU (Pull-down) and Japanese Speed Key. I have Japanese assigned some Speed Japanese keys special macro programs that you can perform Japanese wonderful tasks with ease. You should collect Japanese from me a Function Key Template for NJStar. This Japanese explains what all the 12 function keys in the top rows of your keyboard.
+
+1) replace "Japanese" with "English"
+2) replace "English" with "¥¤¥®¥ê¥¹"
+3) delete "¥¤¥®¥ê¥¹" (replace it with null string)
+
+
+                          ¢£ End of TUTORIAL 6 ¢£
+ ¦ç¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦è
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ Press <Shift F10> to select other tutorials  ¡þ¡þ¡þ¡þ¡þ¡þ¦æ
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ Press  <Ctrl F3> to exit NJStar ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ ¦æ
+ ¦ê¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦é
+

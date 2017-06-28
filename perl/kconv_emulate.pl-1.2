@@ -1,0 +1,57 @@
+package kconv_emulate;
+require('jcode.pl');
+;######################################################################
+;#
+;# kconv_emulate.pl: perl-kconv emulation routines
+;#
+;# Copyright (c) 1992 Kazumasa Utashiro <utashiro@sra.co.jp>
+;#	Software Research Associates, Inc., Japan
+;#
+;# Perl-kconv is a modified version of perl made by Mr. Naoya Takao of
+;# Matsushita Electric IND. CO., LTD. <ntp@isl.mei.co.jp>, which has
+;# built-in functions for Japanese character code conversion.  This
+;# library emulates perl-kconv's four functions &kconv, &tosjis,
+;# &tojis and &toeuc by jcode.pl.
+;#
+;# NOTE:
+;# Changing variables $_KanjiIn and $_KanjiOut doesn't effect at all.
+;# Please use &jcode'jis_inout instead.
+;#
+;; $rcsid = q$Id: kconv_emulate.pl,v 1.2 1992/10/13 02:41:26 utashiro Exp $;
+;#
+;######################################################################
+
+@maptable[0..3] = (undef, 'sjis', 'jis', 'euc');
+
+package main;
+
+($_AUTO, $_SJIS, $_JIS, $_EUC) = 0..3;
+($_KanjiIn, $_KanjiOut) = (ord('@'), ord('J'));
+&jcode'jis_inout('@', 'J');
+
+sub kconv {
+    local($_, $out, $in) = @_;
+    $out = $_EUC unless $out;
+    &jcode'convert(*_, @kconv_emulate'maptable[$out, $in]);
+    $_;
+}
+
+sub tosjis {
+    local($_) = @_;
+    &jcode'convert(*_, 'sjis');
+    $_;
+}
+
+sub tojis {
+    local($_) = @_;
+    &jcode'convert(*_, 'jis');
+    $_;
+}
+
+sub toeuc {
+    local($_) = @_;
+    &jcode'convert(*_, 'euc');
+    $_;
+}
+
+1;

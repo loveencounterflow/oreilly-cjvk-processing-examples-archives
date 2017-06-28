@@ -1,0 +1,30 @@
+JIS.JIS - Read this file in text editor first, then view it in NJSTAR.
+          But do not save after viewed in NJSTAR. This file is put togather
+          manually, if you press save, NJSTAR will save it only to one of the
+          JIS codes. If AutoDetect of Shift-JIS is off, shift jis may not
+          correct).  If AutoDetect of Shift-JIS is ON, The special European
+          character will turn to Kanji.
+
+This file demonstrates NJSTAR's capability to Read various JIS code even when
+they are mixed togather.
+
+1. EUC (Extened Unix Code, 8 bits)
+¡ÖÂÐÎ©¤¹¤ëÂ¾Æ°»ì¤ò¤â¤Ä¼«Æ°»ì¤Î»ÈÌò¹½Ê¸¡×¸ìÊ¸¸¦µæÂèÏ»½½Ï»¹æ£±£¹£¹£²Ç¯£¶·î
+
+2. New-JIS (7 bits)
+$B!VBPN)$9$kB>F0;l$r$b$D<+F0;l$N;HLr9=J8!W8lJ88&5fBhO;==O;9f#1#9#9#2G/#67n(J
+
+3. Old-JIS (7 bits)
+$@!VBPN)$9$kB>F0;l$r$b$D<+F0;l$N;HLr9=J8!W8lJ88&5fBhO;==O;9f#1#9#9#2G/#67n(J
+
+4. NEC-JIS (7 bits)
+K!VBPN)$9$kB>F0;l$r$b$D<+F0;l$N;HLr9=J8!W8lJ88&5fBhO;==O;9f#1#9#9#2G/#67nH
+
+5. Shift-JIS(You must turn AutoDetect of Shift-JIS ON in NJCONFIG's 'G' option,
+             or start njstar as: NJSTAR -J JIS.JIS in order to see next line.
+u‘Î—§‚·‚é‘¼“®ŽŒ‚ð‚à‚ÂŽ©“®ŽŒ‚ÌŽg–ð\•¶vŒê•¶Œ¤‹†‘æ˜Z\˜Z†‚P‚X‚X‚Q”N‚UŒŽ
+
+6. European Special Characters.(You must turn AutoDetect Shift-JIS OFF in
+   NJCONFIG's 'G' option in order to see those characters.)
+   €‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ 
+------

@@ -1,0 +1,679 @@
+		  Programming for Internationalization
+
+			  Michael K. Gschwind
+
+
+
+DISCLAIMER: THE AUTHOR MAKES NO WARRANTY OF ANY KIND WITH REGARD TO
+THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+Note: Most of this was tested on a Sun 10, running SunOS 4.1.* - other
+systems might differ slightly
+
+This FAQ discusses topics related to internationalization. Simple i18n
+support for Europe, Latin America, and the Middle East might use of
+the ISO 8859-X based 8 bit character sets.  For wider portability, a
+standard such as Unicode is in order.
+
+This FAQ discusses how to program applications which support the use
+European (Latin American) national character sets on UNIX-based
+systems and standard C environments, and discusses some choices with
+respect to character sets.
+
+
+INTRODUCTION 
+
+Most of the information given here is independent of the character
+encoding used (e.g. DEC MCS, ISO Latin-X, etc.), but can be applied to
+any character set, providing the programming environment has
+provisions for this standard.
+
+
+1. Which coding should I use for accented characters?
+Use the internationally standardized ISO-8859-1 character set to type
+accented characters. This character set contains all characters
+necessary to type (West) European languages. This encoding is also the
+preferred encoding on the Internet.  ISO 8859-X character sets use the
+characters 0xa0 through 0xff to represent national characters, while
+the characters in the 0x20-0x7f range are those used in the US-ASCII
+(ISO 646) character set.  Thus, ASCII text is a proper subset of all
+ISO 8859-X character sets.  
+
+The characters 0x80 through 0x9f are earmarked as extended control
+chracters, and are not used for encoding characters.  These characters
+are not currently used to specify anything.  A practical reason for
+this is interoperability with 7 bit devices (or when the 8th bit gets
+stripped by faulty software).  Devices would then interpret the character
+as some control character and put the device in an undefined state.
+(When the 8th bit gets stripped from the characters at 0xa0 to 0xff, a
+wrong character is represented, but this cannot change the state of a
+terminal or other device.)
+
+This character set is also used by AmigaDOS, MS-Windows, VMS (DEC MCS
+is practically equivalent to ISO 8859-1) and (practically all) UNIX
+implementations.  MS-DOS normally uses a different character set and
+is not compatible with this character set. (It can, however, be
+translated to this format with various tools. See section 5.)
+
+Footnote: Supposedly, IBM code page 819 is fully ISO 8859-1 compliant.
+
+
+ISO 8859-1 supports the following languages:
+Afrikaans, Basque, Catalan, Danish, Dutch, English, Faeroese, Finnish,
+French, Galician, German, Icelandic, Irish, Italian, Norwegian,
+Portuguese, Spanish and Swedish.
+
+(It has been called to my attention that Albanian can be written with
+ISO 8859-1 also.  However, from a standards point of view, ISO 8859-2
+is the appropriate character set for Balkan countries.)
+
+ISO 8859-1 is just one part of the ISO-8859 standard, which specifies
+several character sets:
+8859-1	Europe, Latin America
+8859-2  Eastern Europe
+8859-3  SE Europe/miscellaneous (Esperanto, Maltese, etc.) 
+8859-4  Scandinavia/Baltic (mostly covered by 8859-1 also)
+8859-5  Cyrillic
+8859-6  Arabic
+8859-7  Greek 
+8859-8  Hebrew
+8859-9  Latin5, same as 8859-1 except for Turkish instead of Icelandic
+8859-10 Latin6, for Lappish/Nordic/Eskimo languages
+
+Another nascent standard is UNICODE (ISO 10646).  UNICODE is an
+extension of ISO 8859-1 (which itself is an extension of US-ASCII) to
+wide characters.  Thus, most of the world's languages (including
+Japanese, Korean, Chinese...) can be covered.
+
+Unicode is advantageous because one character set suffices to encode
+all the world's languages, however very few programs (and even fewer
+operating systems) support wide characters. Thus, a `cheap' upgrade
+from 7 bit US-ASCII might be to only 8 bit wide character sets (such
+as the ISO 8859-X).  Unfortunately, some programmers still insist on
+using the `spare' eigth bit for clever tricks, which will make
+conversion more difficult.
+
+
+Footnote: Some people have complained about missing characters,
+          e.g. French users about a missing 'oe'.  Note that oe is 
+          not a character, but a ligature (a combination of two
+          characters for typographical purposes).  Ligatures are not 
+          part of the ISO 8859-X standard.  (Although 'oe' used to 
+          be in the draft 8859-1 standard before it was unmasked as
+          `mere' ligature.)
+
+
+
+
+2. Choosing the character set encoding
+
+Depending on your needs, you will probably want to choose different
+solutions.  A quick shot i18n of US programs might simply be going to
+8 bit and use one of the ISO 8859-X character sets.
+
+If you have a choice and start from scratch, you might want to
+consider Unicode.  There are several aspects to choosing a particular
+character set (and you may want to decide on different character sets
+for different purposes):
+1) what codeset should the application run in?  
+2) what codeset should files be saved in 
+3) what codeset is used as output (to screens etc.) and 
+4) should wide characters or multi-byte characters be used (this
+   choice may be different for each of points 1-3)
+
+For example, if portability of your files across cultural borders is
+an objective, you might want to use some form of Unicode encoding to
+achieve this.  If interaction with other tools in your environment is
+the main objective, and these tools use an encoding different from
+Unicode, this character set might be used instead.  
+
+Using Unicode internally but writing a different format to files may
+sound funny (esp. if the output file format is only a subset of
+Unicode), but you would only have to adapt the file write and read
+functions and the same program will be able to execute in all
+countries your product might be used...)
+
+Also, terminals and/or which process Unicode may not be available (or
+you might have to support legacy hardware), so you might need to adapt
+the output format to a third standard.
+
+
+2. Getting your environment right for ISO 8859-X
+To configure your environment such that you can enter, process and
+display 8 bit ISO characters, check out the ISO-8859-1 FAQ available
+via anonymous ftp from ftp.vlsivie.tuwien.ac.at in
+/pub/8bit/FAQ-ISO-8859-1.  
+
+If you use a different encoding, you will probably also have to
+configure your system to fully support that encoding.
+
+
+
+3. Setting your environment for ISO-C (ANSI-C) programs
+The ISO C Standard (ANSI C Standard 4.4) defines several functions for
+supporting localization. To set your international environment on
+program startup, you should make one or several calls to the setlocale
+functions.  Calls to this function will predetermine the reaction of
+other localization functions according to your language/country
+environment.
+
+To configure a particular aspect of you environment, say the number
+representation, you would call
+--
+setlocale (LC_NUMERIC, "Germany");
+--
+
+This call would set all number representation functions defined in the
+localization set to return numbers in the format used in Germany.  If
+the call was successful, setlocale will return the name of your
+locale.  A NULL return value indicates failure.  Note that the
+environments are predetermined outside your C program by the system
+you run on. (So the example given here is likely to fail on all but a
+few systems.) Check the setlocale manual page or your system
+documentation to find out about the environments available.
+
+There are several LOCALE types available for different localization
+aspects (currency sign, number representation, characters sets). The
+value they can take is highly system dependent. Also, it should be up
+to the user to define the locale environment he needs. 
+ 
+A C program inherits its locale environment variables when it starts up.
+This happens automatically.  However, these variables do not
+automatically control the locale used by the library functions, because
+ISO/ANSI C says that all programs start by default in the standard C
+locale.  To use the locales specified by the environment, The POSIX
+standard defines the following call:
+-----
+setlocale (LC_ALL, "");
+-----
+
+Of course, you can only set part of your environment, by calling, say:
+----
+setlocale (LC_CTYPE, "");
+----
+This only defines the character classification macros (defined in
+ctype.h).
+
+This is a list of local categories:
+
+                   Effect of Specifying   Environment Variable
+     category      the Value              Affected
+     __________________________________________________________
+
+     LC_ALL        Sets or queries        LANG
+                   entire environment
+     LC_COLLATE    Changes or queries     LC_COLLATE
+                   collation sequences
+     LC_CTYPE      Changes or queries     LC_CTYPE
+                   character classifi-
+                   cation
+     LC_NUMERIC    Changes or queries     LC_NUMERIC
+                   number format infor-
+                   mation
+     LC_TIME       Changes or queries     LC_TIME
+                   time conversion
+                   parameters
+     LC_MONETARY   Changes or queries     LC_MONETARY
+                   monetary information
+
+
+
+
+4. Using the locale information for character classification
+If you write a program which supports international use, you should
+use the available standardized functions, as only these will be
+influenced by the setlocale call. Thus, if you want to convert a
+capital letter in c to a lower case letter in l, _don't_ write:
+
+l = c - 'A' + 'a';
+
+While this will work for characters in the US-ASCII character set, it
+will not work with many other character sets. The following,
+standard-conformant code will:
+
+#include <ctype.h>
+
+....
+
+l = tolower(c);
+
+Also note that the second code may actually be faster than even the
+full "C" locale functionality (for most implementations), as it
+replaces a complex expression ( (c<='Z' && c>='A')? c-'A'+a:c; )by a simple
+table lookup!
+
+Note that this ISO standard is independent of the character set
+encoding used!
+
+
+
+5. Language independent messages
+There are two competing standards for language independent messages:
+one by X/Open, and another one propagated by Sun.  The X/Open standard
+seems to have found a larger following as it has been around for a
+longer time.  As of Solaris 2.x, Sun supports both the X/Open and Sun
+message standards.  (they used to support only their own "standard".)
+
+5.1 X/Open language independent messages
+X/Open defines a method for providing language-independent messages.
+Error messages are kept in a catalog which is opened upon program
+start with a locale specification.  Then the message number and a set
+specification are used to index the message catalog.  A default fourth
+argument is specified which will be printed if a particular message
+cannot be found in the catalog. 
+
+Here is the world-famous C program using the language-independent
+X/Open message standard:
+--------------------------------------------------------------------------
+#include <stdio.h>
+#include <nl_types.h>
+ 
+#define SET 1
+#define MSG_HELLO 1
+ 
+nl_catd catfd;
+ 
+int main (int argc, char **argv) {
+        /* Open the message catalog. We use the basename of the program
+         * as the catalog name. Of course, several programs can also
+         * share a  common catalog.
+         */
+        catfd = catopen (basename (argv [0]), NL_CAT_LOCALE);
+        /* catgets returns message MSG_HELLO from set SET from the 
+         * message catalog catfd. If catfd does not refer to a message
+         * catalog, or the requested message cannot be found, the
+         * catalog, or the requested message cannot be found, the
+         * fourth argument is returned.
+         */
+        printf (catgets (catfd, SET, MSG_HELLO, "hello, world\n"));
+        catclose (catfd);
+        return 0;
+}
+-------------------------------------------------------------------------
+
+For catopen, specify the constant NL_CAT_LOCALE to open the message
+catalog for the locale set for the LC_MESSAGES variable; using
+NL_CAT_LOCALE conforms to the XPG4 standard.  You can specify 0 (zero)
+for compatibility with XPG3; when oflag is set to zero, the locale set
+for the LANG variable determines the message catalog locale.
+
+Several utilities exist for generating message catalogs and for
+upgrading programs which contain hard-wired strings:
+* gencat is used to generate message catalogs
+[All other programs are OS-specific:]
+* Ultrix and OSF support the extract program which will extract string
+  constants from the C source code, and has an option to replace these
+  strings with calls to catgets.
+* HP/UX has a similar utility called findmsg.
+* Under OSF, message catalogs may be listed with the dspcat utility.
+* HP/UX calls a similar utility dumpmsg.
+
+
+5.2 Sun/XView
+Sun implements a different set of functions functions to support i18n
+of messages (the source is available with the XView code): 
+
+You can either use:
+-----------------------------------------------
+
+main()
+{
+	// get the message catalog named "helloprogram" 
+	// for the hello world program
+	textdomain("helloprogram");	
+
+	// get the translation for the "Hello, world\n" string
+	printf(gettext("Hello, world\n"));
+}
+-----------------------------------------------
+
+or you can roll all in one and write
+
+-----------------------------------------------
+main()
+{
+	// get the translation for the "Hello, world\n" string 
+	// from the message catalog "helloprogram"
+	printf(dgettext("helloprogram","Hello, world\n"));
+}
+-----------------------------------------------
+
+The LC_MESSAGES locale category setting determines the locale of
+strings that gettext() returns.  The message catalogs are generated
+with either the installtxt or gencat commands.
+
+No opening of files as in the old SYS V and X/Open routines, and no
+handling of message numbers that you must have in a database to
+administer.  However, this mechanism is only supported by Sun.  Sun
+tried to push it into COSE, but without success.
+
+
+5.3 POSIX language independent messages
+Neither of the previous two mechanisms is in the POSIX standard.
+There was much disagreement in the POSIX.1 committee about using the
+gettext routines vs. catgets (XPG).  In the end the committee couldn't
+agree on anything, so no messaging system was included as part of the
+standard. I believe the informative annex of the standard includes the
+XPG3 messaging interfaces, "...as an example of a messaging system
+that has been implemented..."
+
+They were very careful not to say anywhere that you should use one set
+of interfaces over the other.
+
+
+
+6. Other localization aspects in ISO/ANSI C (and POSIX environments)
+For a more thorough discussion of localization and
+internationalization (aka. i18n), check your system vendors
+documentation, and the C library manual which comes with the FSF's
+glibc library (Chapter 19, 'Locales and Internationalization').
+
+
+
+7. Internationalization under X11
+While X11 is farther than most system software when it comes to
+internationalization, it still contains many bugs.  A number of bug
+fixes can be found at URL http://www.dtek.chalmers.se:80/~maf/i18n/.
+
+7.1 Output
+To output text encoded with ISO 8859-1 under X11, simply invoke the X
+display routines with 8 bit characters as you would use them with
+7-bit ASCII.  You should however choose a font which contains bitmaps
+for these characters.  You can use the xfd utility to display a font
+to verify that it contains a full set of characters.
+
+
+7.2 Input
+If you use a national keyboard (that is a keyboard, which has distinct
+keys for your countries special characters), inputting accents is
+straight forward and you'll get the corresponding characters by using
+the X11 input functions.
+
+Sometimes it may be necessary to input characters for which there are
+no keys on your keyboard (e.g. if you want to enter the German 'ß'
+from a French keyboard).  
+
+
+"X11R5 and X11R6 both have extensive support for i18n, but due to a
+variety of factors the R5 i18n was not well understood or widely
+used.  Many people resorted to a work-around and might have been
+disappointed when R6 did not include this feature.  It is important
+to recognize that the correct use of R5 and R6 i18n features will
+ensure maximum portability of your program." [X Consortium's view]
+
+Unfortunately, not even the xterm terminal emulator supplied with the
+X11 distribution by the X Consortium supports this input method
+mechanism.  The lack of missing code samples (and support for this
+feature in some non-essential, but widely used X11 parts) may have
+contributed to this situation.
+
+
+Footnote: Amongst other reasons, the X Consortium decision not to add
+support for input methods to the Xaw Athena widget contributes to this
+situation.  Xaw is officially not supported by the X Consortium, and
+thus has only marginally been improved since X11R4.  However, many
+users (and much of the PD software) live in an Xaw-only world, so they
+will not be able to benefit from this i18n effort.
+
+X11 R5 and R6 support input methods for entering non-ASCII, and
+displaying and configuring text, menus etc. for a wide variety of
+languages.  This input method has to be installed by the application
+by calls to the Xlib library (or an Xt toolkit call).
+
+[Under X11R5, some X servers (notably the Xsun server) will let you
+enter ISO characters by supplying a built-in escape mechanism, if no
+keys for these characters are on your keyboard, and will pass along
+and display ISO 8859-1.  This hack obviated the need to install an
+input method, but was less flexible.]  
+
+
+If you are using a toolkit, it is quite simple to support localization
+of your X11 code: 
+If you're using a toolkit -- Xt and a widget set like Motif or R6 Xaw --
+you need only add a single line of code to your source. Before any other 
+calls to Xt, add a call to XtSetLanguageProc, e.g.:
+ 
+    int main (int argc, char** argv)
+    {
+        ...
+        XtSetLanguageProc (NULL, NULL, NULL);
+        top = XtAppInitialize ( ... );
+        ...
+    }
+
+The LANG and LC_xxx environment variables (see section 3) will then be
+used to determine the 'input method' for this X application.  This
+input method is responsible for managing COMPOSE character sequences
+or any other input mechanism for this particular implementation.  Also
+see section 9 of ftp://ftp.vlsivie.tuwien.ac.at/pub/8bit/FAQ-ISO-8859-1,
+the FAQ on ISO 8859-1 usage.
+
+
+7.3 Toolkits, Widgets, and I18N
+The preferred way of inputing national characters when a national
+keyboard is not available is one/several input methods.  These input
+methods will then support various kinds of compose sequences to enter
+national characters.
+
+The environment variables LANG and/or LC_xxx select the language for
+the Input Method (IM), but if several input methods exist, the
+environment variable XMODIFIERS can be used to select a specific input
+method.
+
+Xlib, Xt and (partially) Xaw support IMs.  Thus, applications written
+with Xlib or Xt can support IMs (see section 7.2 on how to install
+input methods under Xt).
+
+Motif 1.2  or greater automatically uses the R5/R6 input method APIs.
+Thus applications using Motif 1.2+ can be made to support IMs.
+Several Motif 1.[01] versions also had similar functionality added to
+them by the respective vendors, but these extensions are
+vendor-specific and not portable.
+
+Xaw i18n is based upon X11R5 i18n, not on R6.  Thus, it supports R5
+input methods.  R6 added OUTPUT METHODS which are good for mainly
+R-to-L languages, and a few new INPUT METHODS (in-the-spot and I think
+one other) that Xaw might not support.  Xaw does support
+over-the-spot, off-the-spot, and root-window conversion.  To make this
+work, you might need to set "*international: True" in your resources.
+ 
+
+FOOTNOTE: If you can have comments/corrections for this section and on
+          OpenLook, please let me know.
+
+
+7.4 I18N under X11R6, General Information
+Background information from the X11R6 announcement:
+Internationalization (also known as I18N, there being 18 letters between the
+i and n) of the X Window System, which was originally introduced in Release
+5, has been significantly improved in R6.  The R6 I18N architecture follows
+that in R5, being based on the locale model used in ANSI C and POSIX, with
+most of the I18N capability provided by Xlib.  R5 introduced a fundamental
+framework for internationalized input and output.  It could enable basic
+localization for left-to-right, non-context sensitive, 8-bit or multi-byte
+codeset languages and cultural conventions.  However, it did not deal with
+all possible languages and cultural conventions.  R6 also does not cover all
+possible languages and cultural conventions, but R6 contains substantial new
+Xlib interfaces to support I18N enhancements, in order to enable additional
+language support and more practical localization.
+
+The additional support is mainly in the area of text display.  In order to
+support multi-byte encodings, the concept of a FontSet was introduced in R5.
+In R6, Xlib enhances this concept to a more generalized notion of output
+methods and output contexts.  Just as input methods and input contexts sup-
+port complex text input, output methods and output contexts support complex
+and more intelligent text display, dealing not only with multiple fonts but
+also with context dependencies.  The result is a general framework to enable
+bi-directional text and context sensitive text display.
+
+The description of the X11R6 internationalization framework is
+available via anonymous ftp from ftp.x.org in
+/pub/R6untarred/xc/doc/specs/i18n.
+
+
+
+8. Supporting I18N Network Protocols
+8.1 MIME
+MIME is specified in RFC 1521 and RFC 1522 which are available from
+ftp.uu.net.  There is also a MIME FAQ which is available via anonymous
+ftp from ftp.ics.uci.edu in /mh/contrib/multimedia/mime-faq.txt.gz.
+(This file is in compressed format. You will need the GNU gunzip
+program to decompress this file.)
+
+If you want to write applications which support the MIME protocol,
+there are several libraries/tools which can ease your task:
+
+
+8.1.1 metamail
+Source for supporting MIME (the `metamail' package) in various mail
+readers is available via anonymous ftp from thumper.bellcore.com in
+/pub/nsb.  This distribution consists of several utilities, which can
+be called by MIME applications to handle MIME types.
+
+
+8.1.2 MIMElt
+A "lightweight" MIME library available via anon ftp from
+oslonett.no:Software/MsDos/Comm/Offline/mimeltXX.zip 
+
+It is source code (ANSI C) packaged as a library to facilitate
+construction of a limited MIME facility (limited == handling only
+character-set aspects of MIME, not the multimedia-aspects).  It
+includes hooks to recode character sets into whatever system you are
+running off (e.g.  if you read mail on a MsDos platform using CP-850,
+MIMElite may be set up so that QUOTED-PRINTABLE ISO Latin 1 is recoded
+into CP-850 for reading and saving to file).
+ 
+It's main use is to provide programmers of so-called "off-line 
+readers" (used by users who access Internet mail through dial-up 
+service providers) with the tools needed to include proper support for 
+QUOTED-PRINTABLE encoding in their product.
+ 
+The archive also contains a couple of sample applications that 
+demonstrates how the library may be used.  UNMIME is a stand-alone 
+utility to decode MIME-encoded messages (e.g. it works like UUDECODE
+for binary files with BASE64 encoding), SENDMIME is a simple utility
+to send MIME-encoded messages if your service provider doesn't have
+PINE or similar tools.
+
+The current version (2.1) is limited to character set issues.  I am
+about to release version 2.2, which will support additional 
+Content-Types (e.g. "application/octet-stream").
+
+
+
+9. Programming in Prolog 
+SICStus Prolog accepts ISO characters as part of atoms, so you can
+even define goal names containing accented characters.  I/O of 8 bit
+characters is (obviously) also supported.
+
+
+
+10. ISO 8859-1 on non-UNIX systems
+10.1 MS-DOS
+MS-DOS generally uses its own characters set. There are several code
+pages (one with the same symbols as ISO 8859-1, albeit at different
+character code positions, which can lead to problems with the transfer
+of data).
+
+If interoperability without data conversion is your goal, you can
+reconfigure your MS-DOS PC to use an ISO-8859-1 code page. Check out
+the anonymous ftp archive ftp.uni-erlangen.de, which contains data on
+how to do this (and other ISO-related stuff) in /pub/doc/ISO/charsets.
+The README file contains an index of the files you need.
+
+Most (all?) C compilers/libraries for MS-DOS have only minimal support
+for the ANSI/POSIX locale mechanism.  The setlocale() and localeconv()
+calls (and stuff like strxfrm()) are generally hardwired.
+
+
+10.2 MS Windows
+MS-Windows (using code page 1252) normally uses the first 256
+characters of Unicode, which is (for all practical purposes)
+equivalent to ISO 8859-1.  Thus, data representation and conversion
+for interoperability with other ISO 8859-1 compliant systems is not an
+issue.  
+
+It seems that C libraries for MS Windows do not support the ANSI/POSIX
+locale mechanism. (If you have any experiences with that, please let
+me know.)  There is a POSIX-like mechanism in some Microsoft platform
+services, but none in the compilers from any vendor.
+
+
+10.3 OS/2
+Text mode OS/2 programs generally suffer the same limitations as do
+MS-DOS programs, because the display hardware is the same.
+
+Presentation Manager OS/2 programs using code page 1004 will order
+the font glyphs in the same sequence as ISO 8859-1 (although of
+course whether the glyphs will actually look anything like those
+from ISO 8859-1 depends entirely from the font).
+
+The IBM CSet++ compiler supports full internationalization, with
+several predefined locales.
+
+The Borland C++ compiler supports only the "C" locale.
+
+The Watcom C++ compiler supports only the "C" locale.
+
+The Metaware High C++ compiler supports only the "C" locale.  It
+does, however, also support UNICODE, providing UNICODE character
+types and UNICODE versions of the appropriate parts of the standard
+library (including I/O).
+
+
+
+10.4 Apple Macintosh
+MacIntoshes have their own non-standard character encodings;
+the first 128 characters are US-ASCII but the remaining characters are
+non-standard.
+
+I do not know whether C libraries (for which compilers?) for the
+MacIntosh support the ANSI/POSIX locale mechanism. If you have any
+experiences with that, please let me know.
+
+
+10.5 DEC OpenVMS (Alpha and Vax systems)
+DEC recently implemented support for the XPG4 world-wide portability
+interfaces as well as XPG4 message catalogs. You need DEC C V5.0 and
+OpenVMS V6.2 (for either Alpha or VAX systems)
+
+
+10.6 Amiga
+The AmigaOS uses ISO-8859-1. As of OS version 2.1, Amiga-specific
+means of localization are available.
+
+
+
+11. Home location of this document
+11.1 www
+You can find this and other i18n documents under URL
+http://www.vlsivie.tuwien.ac.at/mike/i18n.html.
+
+11.2 ftp
+The most recent version of this document is available via anonymous
+ftp from ftp.vlsivie.tuwien.ac.at under the file name
+/pub/8bit/ISO-programming.  
+
+-----------------
+
+Copyright © 1994,1995 Michael Gschwind (mike@vlsivie.tuwien.ac.at)
+
+This document may be copied for non-commercial purposes, provided this
+copyright notice appears.  Publication in any other form requires the
+author's consent. (Distribution or publication with a product requires
+the author's consent, as does publication in any book, journal or
+other work.)
+
+Dieses Dokument darf unter Angabe dieser urheberrechtlichen
+Bestimmungen zum Zwecke der nicht-kommerziellen Nutzung beliebig
+vervielfältigt werden.  Die Publikation in jeglicher anderer Form
+erfordert die Zustimmung des Autors.  (Verteilung oder Publikation mit
+einem Produkt erfordert die Zustimmung des Autors, wie auch die
+Verfentlichung in Bhern, Zeitschriften, oder anderen Werken.)
+
+Michael Gschwind, Institut f. Technische Informatik, TU Wien
+snail: Treitlstrasse 3-182-2 || A-1040 Wien || Austria
+email: mike@vlsivie.tuwien.ac.at   PGP key available via www (or email)
+www  : URL:http://www.vlsivie.tuwien.ac.at/mike/mike.html
+phone: +(43)(1)58801 8156	   fax: +(43)(1)586 9697

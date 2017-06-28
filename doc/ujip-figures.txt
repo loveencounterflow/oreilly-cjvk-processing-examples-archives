@@ -1,0 +1,59 @@
+List of Figures for "Understanding Japanese Information Processing"
+by Ken Lunde
+
+1: Overview of Japanese Information Processing
+1-1   256-by-256 matrix
+1-2   Indexing an encoding matrix by row and cell
+2: The Japanese Writing System
+2-1   Decomposition of kanji into radicals and strokes
+3: Japanese Character Set Standards
+3-1   Three-axis model for Han Unification
+3-2   Relationships between electronic and non-electronic character
+      set standards
+4: Japanese Encoding Methods
+4-1   ASCII/JIS-Roman encoding table
+4-2   ISO 8859 encoding table
+4-3   EBCDIC encoding table
+4-4   Half-width katakana encoding tables
+4-5   Half-width katakana plus ASCII/JIS-Roman encoding table
+4-6   KUTEN encoding table
+4-7   JIS encoding tables
+4-8   Shift-JIS encoding tables
+4-9   Shift-JIS user-defined encoding table
+4-10  Shift-JIS versus JIS encoding
+4-11  EUC packed format encoding tables
+4-12  EUC complete two-byte format encoding table
+4-13  EUC packed format versus JIS encoding
+4-14  EUC complete two-byte format versus JIS encoding
+4-15  Big Five encoding table
+4-16  Unicode zone table
+5: Japanese Input
+5-1   Japanese input stages and input method interaction
+5-2   The QWERTY keyboard array
+5-3   The Dvorak keyboard array
+5-4   The kanji tablet array
+5-5   The JIS keyboard array
+5-6   The New-JIS keyboard array
+5-7   The Thumb-shift keyboard array
+5-8   The 50 Sounds keyboard array
+5-9   The M-style keyboard array
+5-10  The High-speed Roman keyboard array
+6: Japanese Output
+6-1   Sample BDF character description
+6-2   Japanese bitmapped characters
+6-3   Japanese outline character
+6-4   The effect of ATM-J on a 216-point kanji
+7: Japanese Information Processing Techniques
+7-1   Algorithmic versus hard-coded conversion
+8: Japanese Text Processing Tools
+8-1   The interaction of Japanese text processing tools
+9: Using Japanese E-mail and News
+9-1   Information interchange
+I: Japanese Corporate Encoding Methods
+I-1   JEF encoding tables
+I-2   IBM DBCS-PC encoding tables
+I-3   IBM DBCS-Host encoding tables
+I-4   DEC Kanji encoding table
+I-5   HP-15 encoding table
+I-6   HP-16 encoding table
+I-7   HP-15 versus Shift-JIS encoding

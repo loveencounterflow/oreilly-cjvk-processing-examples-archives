@@ -1,0 +1,1020 @@
+(This is the second part of NJSTAR USER MANUAL. Read NJSTAR1.DOC first)
+=============================================================================
+
+10. JAPANESE CHARACTER INPUT
+============================
+
+This section describes NJStar's  functions  related  to  Japanese  character
+input. All functions are listed under the "Input" (∆˛Œœ) menu item.
+
+NJStar supports all 6,879 JIS characters; 6,355 kanji divided in two  levels
+(Level 1: 2,965  kanji  arranged  by  pronunciation;  Level 2:  3,390  kanji
+arranged by radical), 83  Hiragana,  86  Katakana,  10  numerals,  52  Roman
+characters, 147 symbols, 66 Russian characters, 48 Greek characters, and  32
+line elements for making charts. NJStar also includes  some  extra  symbols,
+which you can extend by adding some custom-made characters.  Run JISFONT.EXE
+to add more characters to the standard character set.
+
+FUNCTION  <KanaKanjiInput>   [Alt+F3]     §´§ ¥¡ª˙∆˛Œœ   Kana-Kanji Input
+
+Sets NJStar's input method to Kana-Kanji. When entering KanaKanji mode,  the
+left end of the bottom line displays a sign of "KanaKan" (§´§ ¥¡). This is a
+phonetic input method based on romaji input method and is  the  new  primary
+input method for NJStar, replacing the Romaji input described next. 
+
+Mouse: point the mouse cursor at the left end of the bottom line  and  click
+the left button once, to toggle between KanaKanji, Romaji and ASCII mode.
+
+With this input method, alphabetic letters (a-z, A-Z) and the  single  quote
+['] and the minus sign [-] are used to input Japanese  phonetic  sound.  All
+other ASCII characters may be entered into the editing screen. While all the
+numbers are entered in plain ASCII codes,  symbols  such  as  "$, %, \"  are
+entered by default in JASCII codes. Please see the function  <ASCinput>  for
+details concerning how to enter ASCII and JASCII characters.
+
+(1) Entering Hiragana
+
+Hiragana can be typed directly into editing screen by typing Romaji sound in
+lower case letters (a-z).
+
+NJStar  uses  the  following  table  to   translate   romaji   to   Hiragana
+automatically as Romaji is being typed in.
+
+-------------------------------------------------------------------------------
+ -   °º    dja §¬§„  fyo §’§Á  jo  §∏§Á  myu §ﬂ§Â  re  §Ï    ta  §ø    xa  §°
+ a   §¢    dje §¬§ß  fyu §’§Â  ju  §∏§Â  n   §Û    ri  §Í    te  §∆    xe  §ß
+ ba  §–    dji §¬    ga  §¨    jya §∏§„  n'  §Û    ro  §Ì    ti  §¡    xi  §£
+ be  §Ÿ    djo §¬§Á  ge  §≤    jye §∏§ß  na  §     ru  §Î    to  §»    xka •ı
+ bi  §”    dju §¬§Â  gi  §Æ    jyi §∏    ne  §Õ    rya §Í§„  tsa §ƒ§°  xke •ˆ
+ bo  §‹    do  §…    go  §¥    jyo §∏§Á  ni  §À    rye §Í§ß  tse §ƒ§ß  xo  §©
+ bu  §÷    du  §…§•  gu  §∞    jyu §∏§Â  no  §Œ    ryo §Í§Á  tso §ƒ§©  xtu §√
+ bya §”§„  dya §«§„  gya §Æ§„  ka  §´    nu  §Ã    ryu §Í§Â  tsu §ƒ    xu  §•
+ bye §”§ß  dye §«§ß  gye §Æ§ß  ke  §±    nya §À§„  sa  §µ    tu  §ƒ    xwa §Ó
+ byo §”§Á  dyo §«§Á  gyo §Æ§Á  ki  §≠    nye §À§ß  se  §ª    tya §¡§„  xya §„
+ byu §”§Â  dyu §«§Â  gyu §Æ§Â  ko  §≥    nyo §À§Á  sha §∑§„  tye §¡§ß  xyo §Á
+ cha §¡§„  dza §¬§„  ha  §œ    ku  §Ø    nyu §À§Â  she §∑§ß  tyi §¡    xyu §Â
+ che §¡§ß  dze §¬§ß  he  §ÿ    kya §≠§„  o   §™    shi §∑    tyo §¡§Á  ya  §‰
+ chi §¡    dzi §¬    hi  §“    kye §≠§ß  pa  §—    sho §∑§Á  tyu §¡§Â  ye  §®
+ cho §¡§Á  dzo §¬§Á  ho  §€    kyo §≠§Á  pe  §⁄    shu §∑§Â  u   §¶    yo  §Ë
+ chu §¡§Â  dzu §≈    hu  §’    kyu §≠§Â  pi  §‘    si  §∑    va  •Ù•°  yu  §Ê
+ cya §¡§„  e   §®    hya §“§„  ma  §ﬁ    po  §›    so  §Ω    ve  •Ù•ß  za  §∂
+ cye §¡§ß  fa  §’§°  hye §“§ß  me  §·    pu  §◊    su  §π    vi  •Ù•£  ze  §º
+ cyi §¡    fe  §’§ß  hyo §“§Á  mi  §ﬂ    pya §‘§„  sya §∑§„  vo  •Ù•©  zi  §∫§£
+ cyo §¡§Á  fi  §’§£  hyu §“§Â  mo  §‚    pye §‘§ß  sye §∑§ß  vu  •Ù    zo  §æ
+ cyu §¡§Â  fo  §’§©  i   §§    mu  §‡    pyo §‘§Á  syi §∑    wa  §Ô    zu  §∫
+ da  §¿    fu  §’    ja  §∏§„  mya §ﬂ§„  pyu §‘§Â  syo §∑§Á  we  §Ò
+ de  §«    fya §’§„  je  §∏§ß  mye §ﬂ§ß  (q) §Û    syu §∑§Â  wi  §
+ di  §«§£  fye §’§ß  ji  §∏    myo §ﬂ§Á  ra  §È    t-  §√    wo  §Ú
+-------------------------------------------------------------------------------
+                (Note: q - is available in Romaji mode only)
+
+Examples: toyota --> §»§Ë§ø    toukyou --> §»§¶§≠§Á§¶
+
+The romaji-to-kana translation is almost identical to  that  used  in  other
+Kanji editors and programs (e.g. MOKE by Mark Edwards, JDIC by  Jim  Breen).
+To  enter a small "tsu", you can type a double consonant, e.g. "shippai", or
+"t-",  e.g. "shit-pai". To enter  an "n" you  can  type  "n'"  if  necessary
+e.g. as in "hon'ya" §€§Û§‰° À‹≤∞°À. Most of the time, just  typing  ordinary
+Hepburn or kunrei romaji will work. Note that the  romaji  must  follow  the
+kana  style  for long vowels. Tokyo can be "toukyou", but not "tookyoo". For
+small a§° e§ß  i§£ o§© u§• tsu§√ wa§Ó ka•ı ke•ˆ ya§„ ye§ß  yo§Á  yu§Â,  type
+xa, xe, xi, xo, xu, xtu, xwa, xka, xke, xya, xye, xyo and xyu respectively.
+
+(2) Entering Katakana
+
+To type Katakana characters,  use  the  toggle  switch  [q].  This  switches
+between Kana-Kanji  (§´§ ¥¡)  and  Katakana ([•´• ])  modes.  In •´•   mode,
+Katakana can be typed in the same way as Hiragana. 
+
+There is yet another way to type Katakana by typing in all upper case letters
+(A-Z) in Kana-Kanji  (§´§ ¥¡) mode. But the current version  does  not  allow
+vowel sound (AIUEO) under this method, however.
+
+The centered dot for kana separation can be entered as "'ten". 
+
+Example: 
+
+    [•´• ]: Type "jon''ten[SpaceBar][Enter]sumisu" to get •∏•Á•Û°¶•π•ﬂ•π
+
+(3) Entering Kanji
+
+In Kana-Kanji mode to type Kanji, it is necessary  to  indicate  the  point
+where Kanji part starts by capitalizing the  first  character  of  Japanese
+sound. The system displays Hiragana version  first,  but  everything  typed
+will be highlighted. 
+
+As a default, "Automatic Kanji display" <Option> is enabled. In  this  case
+all the possible conversion will be displayed in the  bottom  line  of  the
+screen as you type along. See the section under <Option> for more details.
+
+Example:                                         ___________________________
+    Type "A" will display the following:         §´§ ¥¡: 1 ∞° 2 ∞§ 3 ∞£ 4 ∞¢
+                                                 ___________________________
+    Typing "Toukyou" will display the following°ß§´§ ¥¡: 1 ≈Ïµ˛ 2 ≈Ï∂µ
+
+    Note: the display of options may differ between Shareware and Registered
+          versions.
+
+As long as the entry is displayed in  Hiragana  and  is  still  highlighted,
+users can edit the entry by using  [BS]  key. At  this stage, pressing [ESC]
+will cancel the whole highlighted input.
+
+Press the corresponding number to get the Kanji you  want.  For  option "1",
+users can press [SpaceBar] for  convenience.  If  there  are  more  than  10
+matched items, users may use the [>]/[,] or [<]/[.] key to flip through  the
+list, and then select an option in the same way. At this stage, the Hiragana
+option is replaced by the  Kanji.  Users  may  press  [Esc]  to  revert  the
+conversion to Hiragana, if necessary.
+
+Having selected the desired Kanji, users can carry on typing  for  the  next
+bits of the sentence. The selection will be cleared automatically as soon as
+you go on typing the next section, edit the entry  itself,  or  move  cursor
+keys. Alternatively users may press [Enter] to finalize the conversion.
+
+(4) Entering Verbs and Adjectives with a Kanji part
+
+Entering verbs and adjectives is  slightly  different  from  entering  words
+that are all Kanji, because their form can vary depending  on  their  tense,
+inflection and the degree of politeness. 
+
+The following chart shows the conjugation of the verb π‘§Ø ("iku" = to go)
+     °Ω°Ω°Ω°Ω¶·°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω¶·°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω
+             °√  polite  form                °√     plain form           
+     °Ω°Ω°Ω°Ω¶‰°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω¶‰°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω
+     present °√ª‰§œ°¢≈Ïµ˛§ÿπ‘§≠§ﬁ§π°£        °√ª‰§œ°¢≈Ïµ˛§ÿπ‘§Ø°£        
+     pres.neg°√ª‰§œ°¢≈Ïµ˛§ÿπ‘§≠§ﬁ§ª§Û°£      °√ª‰§œ°¢≈Ïµ˛§ÿπ‘§´§ §§°£    
+     past    °√ª‰§œ°¢≈Ïµ˛§ÿπ‘§≠§ﬁ§∑§ø°£      °√ª‰§œ°¢≈Ïµ˛§ÿπ‘§√§ø°£      
+     past,neg°√ª‰§œ°¢≈Ïµ˛§ÿπ‘§≠§ﬁ§ª§Û§«§∑§ø°£°√ª‰§œ°¢≈Ïµ˛§ÿπ‘§´§ §´§√§ø°£
+     °Ω°Ω°Ω°Ω¶„°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω¶„°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω°Ω
+
+NJStar's dictionary stores this verb as π‘k (§§k) and  π‘t (§§t)  and  users
+need to indicate where the §“§È§¨§  part begins by  capitalizing  the  first
+character of the sound. Thus in  the  above  example,  verbs  are  typed  as
+follows:
+
+                IKimasu                 IKu
+                IKimasen                IKanai
+                IKimashita              ITta
+                IKimasendeshita         IKanakatta
+
+Since   this   method   of   conversion   does   not   require   grammatical
+interpretation, the system responds quicker. In addition, users can  convert
+various styles of Japanese,  such  as  ancient ° ∏≈∏Ï°À,  literary °  ∏∏Ï°À,
+colloquial° ∏˝∏Ï°À, and dialect°  ˝∏¿°À.
+
+(5) Katakana Version of English words
+
+The Katakana Version of some English words can  be  entered  in  the  Romaji
+input mode. The user must enter a single quote ['] or lower case [l] (el for
+latin) before the English word. The availability of a word  depends  on  the
+entries in KANJI.DIC.
+
+Example:   Typing  'computer       will give     •≥•Û•‘•Â°º•ø
+                   'editor                       •®•«•£•ø
+                   'communication                •≥•ﬂ•Â•À•±°º•∑•Á•Û
+
+The system first searches for the matching index entry in the Glossary  then
+KANJI.DIC. When no word is found in neither of them, the ASCII entry remains
+as it is in the document.
+
+Note: Pressing upper case [L] (el) switches input mode to ASCII (=[Alt+F6]).
+
+(6) Kana/English to Kanji lookup
+
+    See <EDicLookup> [Alt+X]/[Alt+E] for more details.
+
+(7) Entering Punctuations
+
+In Kana-Kanji input mode, all punctuation characters on the keyboard can  be
+entered. When there is no  Kanji  displayed  for  selection,  the  following
+symbols can be entered directly:
+
+  Typed as:  ~ ` ! @ # $ % ^ & * ( ) _ = + \ | [ ] { } ; : " " < > , . ? /
+  Appear as: °¡°§°™°˜°Ù°°Û°Ô°ı°ˆ° °À°≤°·°‹°¿°√°ÿ°Ÿ°⁄°€°®°ß°÷°◊°‘°’°¢°£°©°ø
+
+When there are Kanji characters displayed in the bottom line waiting  to  be
+selected, keys that are used for selecting  Kanji,  i.e., [>], [,], [<], [.]
+will not  produce  punctuation  characters  but  performs  their  designated
+function described under (3) "Entering Kanji" above.
+
+(8) A complete sentence:
+
+               Ashita, watashi wa toukyou ni ikimasu.
+               §¢§∑§ø°¢§Ô§ø§∑§œ≈Ïµ˛§Àπ‘§≠§ﬁ§π°£
+  is typed as: ashita,watashihaToukyou[SpaceBar]niIKimasu.
+
+Note that it is standard convention to type particles §œ wa, §ÿ e,  and §Ú o
+as "ha", "he", and "wo" respectively.
+
+(9) Using the Glossary
+
+  See <Glossary> [Ctrl+G] for more details.
+
+FUNCTION  <RomajiInput>   [Alt+F5]         •Ì°º•ﬁª˙∆˛Œœ   Romaji Input
+
+Sets NJStar's input method to Romaji. When entering Romaji  mode,  the  left
+hand side of the bottom line displays a sign of "Romaji" (•Ì°º•ﬁª˙). 
+
+Mouse: point the mouse cursor at the left end of the  bottom line and  click
+the left button once, to toggle between KanaKanji, Romaji and ASCII mode.
+
+The use of keyboard to input Japanese is basically identical with Kana-Kanji
+input described above. The main differences between Kana- Kanji  and  Romaji
+are:
+
+  a) Everything typed will be first displayed in the bottom line, and  users
+     need to select each time the desired characters / words.
+  b) When no Kanji options  are  displayed  in  the  bottom  line,  pressing
+     uppercase alphabetic letters (A-Z) will enter ASCII characters directly
+     into the editing screen.
+  c) Glossary is not available from this  input  method, but  instead  EDICT
+     is available.
+
+(1) Entering Hiragana
+
+You can enter as  few  as  one  romanized  Hiragana,  or  a  whole  line  of
+romanized Hiragana.
+
+Example:
+    ___________________________________________________________________
+    Romaji: shippai    1 §∑§√§—§§ 2 º∫«‘
+    ___________________________________________________________________
+    Romaji: watashiha  1 §Ô§ø§∑§œ 
+    ___________________________________________________________________
+    Romaji: motte      1 §‚§√§∆ 
+
+Hiragana is usually displayed as choice #1 for selection.  Pressing  [1]  or
+[SpaceBar] to select it. Pressing [ESC] at any time will  clear  the  romaji
+input line.
+
+The centered dot for kana separation can be entered as the single quote ',
+    ___________________________________________________________________
+    Romaji: a'a    1 §¢°¶§¢
+
+
+(2) Entering Katakana
+
+Normally, when romaji is entered, NJStar translates it into  Hiragana,  then
+searches the 'KANJI.DIC' for the possible matches of the  Hiragana  entered.
+If no matches are found, NJStar will display the  Katakana  version  of  the
+romaji as choice #2. Pressing [2] will select the Katakana string. If one or
+more matches are found, NJStar will display  the  matched  Kanji's  together
+with the Hiragana string. If the user wants to  enter  Katakana  instead  of
+Hiragana or Kanji, pressing [ALT+1]  will  select  it.  Pressing [ESC]  will
+cancel the entire input line.
+
+Example:
+    ______________________________________________________________________
+    Romaji: o-sutoraria  1 §™°º§π§»§È§Í§¢ 2 •™°º•π•»•È•Í•¢
+
+(3) Entering Kanji
+
+When a correct Romaji code is entered, its Hiragana version is displayed  at
+the bottom line. If the displayed Hiragana matches a kana-to-kanji entry  in
+KANJI.DIC, the matched Kanji entries are also listed for selection.
+
+Example:
+    ______________________________________________________________________
+    Romaji: ai   >  1 §¢§§ 2 πÁ 3 ¡Í 4 ∞¶ 5 ∞°∞· 6 ∞• 7 Õı 8 ∞ß 9 €£ 0 ∞®
+    ______________________________________________________________________
+    Romaji: toukyou 1 §»§¶§≠§Á§¶ 2 ≈Ïµ˛
+    ______________________________________________________________________
+    Romaji: oosaka  1 §™§™§µ§´   2 ¬Á∫Â
+
+Press the corresponding number to select Kanji. Press [ESC]  to  cancel  the
+entire input line. The convention for the selection is identical  with  that
+of Kana-Kanji input.
+
+The rules for entering verbs and adjectives  are  basically  identical  with
+Kana-Kanji input.
+
+(5) Typing English word to get Japanese
+
+As in Kana-Kanji mode, users can input an English word  to  get  a  Japanese
+word starting with ['] key. But instead of  having  Glossary,  Romaji  input
+integrates the function of <English> [Alt+F7] described below.
+
+When invoking this function, the system  first  searches  for  the  matching
+entry in KANJI.DIC to get Katakana version of  English  words.  If  this  is
+unsuccessful, the system then calls EDICT to find the matching entries.  See
+<EDicLookup> for more details.
+
+If no match is found at this stage, the system displays  an  error  message.
+User can edit the input line and try again, or press [ESC]  to  cancel  the
+whole input line.
+
+(6) Entering Punctuation
+
+In Romaji input mode, when there is nothing in the bottom line (press [ESC]
+to clear the input line if there are Kana/Kanji waiting  to  be  selected),
+all the following punctuation characters on the keyboard can be entered.
+
+  Typed as:  ~ ` ! @ # $ % & * ( ) _ = + \ | [ ] { } ; : " " < > , . ? /
+  Appear as: °¡°§°™°˜°Ù°°Û°ı°ˆ° °À°≤°·°‹°¿°√°ÿ°Ÿ°⁄°€°®°ß°÷°◊°‘°’°¢°£°©°ø
+
+(7) A complete sentence:
+
+  §¢§∑§ø°¢§Ô§ø§∑§œ≈Ïµ˛§Àπ‘§≠§ﬁ§π°£(Ashita, watashi wa toukyou ni ikimasu)
+  is typed as: ashita1,watashi1ha1toukyou2ni1iKimasu1.
+
+    ___________________________________________________________________
+    Romaji: ashita      1 §¢§∑§ø 2 Ã¿∆¸ 
+    ___________________________________________________________________
+    Romaji: watashi     1 §Ô§ø§∑ 2 ª‰
+    ___________________________________________________________________
+    Romaji: ha          1 §œ
+    ___________________________________________________________________
+    Romaji: toukyou     1 §»§¶§≠§Á§¶ 2 ≈Ïµ˛ 3 ≈Ï∂µ
+    ___________________________________________________________________
+    Romaji: ni          1 §À
+    ___________________________________________________________________
+    Romaji: iKimasu     1 π‘§≠§ﬁ§π 2 ¿∏§≠§ﬁ§π 3 ≥Ë§≠§ﬁ§π 4 ¿¬§≠§ﬁ§π
+
+(8) Entering JIS Characters by typing two typable ASCII character
+
+In Romaji input mode, if the first character is '^', NJStar  will  interpret
+the rest of the input as 2 bytes of JIS code each by masking  the  high  bit
+on. In some email systems or news systems, the high bit is masked off. Using
+this method, you can reconstruct the actual message from the high-bit-masked
+ASCII character. For example, a Japanese email, saying: "my name is [Pd9cGH]"
+can be read by typing the characters inside the "[]" pair prefixed by a '^'.
+
+   ___________________________________________________________________
+   Romaji: ^Pd9cGH  1 –‰π„«»
+
+FUNCTION  <English>     [Alt+F7]      ±—œ¬∆˛Œœ        English Input
+
+Sets input method 'English to Japanese'. Type an English  word,  then  press
+[SpaceBar] will force NJStar to search  the  word  in  the  EDICT,  Japanese
+English dictionary.
+
+FUNCTION   <Option>     [Ctrl+F2]       •™•◊•∑•Á•Û      Option
+
+The following option changes the behaviour of Kana-Kanji mode:
+
+    DelayConvert: Toggles the 'Delay Conversion' mode. 
+                  In Kana-Kanji input, when Delay Conversion is set ON, 
+                  NJStar does not display Kanji until [SpaceBar] is pressed.
+
+In this case, the first item of the selection list is automatically selected,
+and the rest of list are displayed on the Bottom line.  
+
+Beginning from NJStar v3.0, all the  option  changes  and  changes  made  by
+Toggle  functions  (such  as  Input  Method,  JASCII  mode,  etc.)  will  be
+automatically saved on exit, and restored in  the  next  session  of NJStar.
+
+FUNCTION   <Radicals>      [Shift+F1]       …ÙºÛ∏°∫˜          Radicals
+
+This function is seldom used as an input method.  However,  it  provides  an
+handy way to look up a character by radicals, especially when  the  user  is
+not very sure about its pronunciation.
+
+When starting this function, a pop-up window will display all  214  radicals
+arranged by the number of strokes.  Use  the  cursor  or  mouse  to select a
+radical. Once selected, another  window  will  be  displayed  with  all  the
+characters for that radical arranged again by number  of  strokes.  Use  the
+down or right arrow key to scroll through the list. Once the  character  you
+are looking for has been found, it can be pasted into the editing screen  by
+pressing [Return]. Press [F1] key to get coding and  other  information  for
+the character. (See function <KanjiInfo> below.)
+
+FUNCTION   <EUCinput>       [Alt+F4]         EUC•≥°º•…∆˛Œœ      EUC/Kuten
+
+Sets NJStar's input method to EUC or Kuten code  input  modes.  In  previous
+versions, there used to be two separate functions but beginning with Version
+3.0, they  have  been  merged  into  one  command.  However,  when  invoking
+<EUCinput>, the left end of the bottom  line  will  display  a  "EUC"  sign,
+unless a Kuten code is detected by the system, and then it will display  the
+"Kuten" (∂Ë≈¿) sign. (A EUC code starts with [a] to [f] while a  Kuten  code
+starts with [0] to [9].)
+
+EUC and Kuten are major supplementary input  methods  in  NJStar.  The  file
+EUC.DOC lists out all valid EUC  codes  and  the  corresponding  characters,
+while KUTEN.DOC does for Kuten codes.
+
+To enter a EUC code, you have to complete all four code letters before it is
+displayed on the editing screen. For Kuten codes, the first two code numbers
+bring up a list of  characters.  Select  a  character  from  the  list  with
+[Alt]+number key or a number key on the keypad,  or  wait  until  all  four-
+number codes have been entered.
+
+EUC Example:   d0e4 -> –‰  b9e3 -> π„  c7c8 -> «»
+
+Kuten Example: 4868 -> –‰  2567 -> π„  3940 -> «»
+
+FUNCTION   <AscInput>      [Alt+F6]         ±—ª˙∆˛Œœ      Ascii Input
+
+Sets NJStar's input method to ASCII. When using ASCII, the left end  of  the
+bottom line will display an "ASCII" sign. The  filename,  size,  and  cursor
+position are displayed on the bottom line. The "*" sign in front of  "Bytes"
+indicates the current file has been modified since it was  opened  or  since
+the last time it was saved.
+
+Mouse: point the mouse cursor at the left side of the bottom line and  click
+the left button once, to toggle  between  KanaKanji, Romaji and ASCII  input
+modes.
+
+ASCII mode is used to enter all English characters, plus the extended  ASCII
+character set (128-160). To enter those  characters,  press  [Alt]  together
+with the corresponding ASCII code with the numerical keys from  the  keypad.
+For instance, to enter [Å], hold down [Alt] and type [1], [2],  [9]  on  the
+numeric keypad. Release the [Alt] key and the character will be pasted  into
+the editing screen.
+
+FUNCTION   <EXInput>       [Alt+F2]         ¬æ§Œ∆˛ŒœÀ°        Extra Input
+
+Lets user select one of the following input methods as listed on the  bottom
+line:
+
+  b. bushu        Coded with number 0-9 for Radical number (total 214)
+     …ÙºÛ         Use standard letter keys to enter code.
+
+  c. 4corner      Coded with number 0-9 for a classification of four
+     ªÕ≥—         corners. Maximum length of codes is 4 numbers.  
+                  Use standard letter keys to enter code.
+
+  n. Nelson#      Coded with number 0-9 for number in Nelson Dictionary
+     •Õ•Î•Ω•Û     Use standard letter keys to enter code.
+
+  s. Strokes      Coded with number 0-9 for total stroke count.
+     ≤ËøÙ
+
+  u. UniCode      Coded with Hex numbers for Unicode.
+     •Ê•À•≥°º•…
+
+All these input methods have their strengths and weaknesses. Some users  are
+familiar with one or the other.
+
+All unused letters listed above, such as a, d, e ..., may  be  used  for  an
+user-defined input method [NJINPUT?.DIC]. The user can also  substitute  the
+existing input dictionary file  with  a  user-defined  input  dictionary  to
+include one or more of the unused letters.
+
+One of NJStar's outstanding features is to allow users  to  implement  their
+own preferred input methods by setting up an input dictionary  with  NJStar.
+Once the dictionary,  a  EUC  file,  is  coded,  NJStar's  utility  program,
+NJJDIC.EXE, can convert it into NJStar's input dictionary. This adds  a  new
+input method to NJStar. For more details, see NJJDIC.DOC.
+
+FUNCTION   <Symbols>       [Ctrl+6]         ∆√ºÏ§ µ≠πÊ        Symbols
+
+This function is also seldom used as an input method. However,  it  provides
+an handy way to look up a special symbol character in a pop-up window.
+
+When invoking this function, a window will pop-up, showing all  the  symbols
+in the EUC character set. Use the cursor or mouse to select a symbol. If the
+screen is full, use the down or right arrow key to scroll through the  list.
+When the character is  found, it  can  be  pasted  into  editing  screen  by
+pressing [Return].
+
+FUNCTION   <Convert2Kanji>   [Alt+F1]        —¥π°ß§¢¢™∞°       Convert
+
+In Kana-Kanji mode, converts the marked Hiragana string into  Kanji.  If  no
+matching options are found in KANJI.DIC, the system enters the Glossary mode,
+asking the user to register the new entry. See <Glossary> for more details.
+
+You can use the [SpaceBar] to invoke this function.
+
+FUNCTION   <UndoConvert>   [Shift+F8]        —¥π§Œ≤Û…¸         Undo Convert
+
+Reverts the conversion just performed from Hiragana to Kanji  in  Kana-Kanji
+mode  while  the  word  is  still  highlighted. This  function  works   only
+immediately after a Hiragana string has been converted to Kanji and no block
+operation is performed.
+
+By performing  this  function  twice  consecutively,  you  can  restore  the
+original state before conversion.
+
+(1) If the highlighted Japanese words are originally  typed  in,  the  input
+    itself will be cancelled. (i.e., delete the highlighted region).
+
+(2) If the highlighted Japanese words are marked region, the  marked  region
+    will not be removed but simply the region will be unmarked.
+
+You can use the [ESC] / [INS] / [Insert] key to access this function  as  an
+one-key operation.
+
+FUNCTION   <JasciiMode>   [Alt+F9]         ¡¥≥—•‚°º•…      Full size English
+
+Toggles NJStar's JASCII and Non-JASCII input modes. In JASCII mode,  a  sign
+of "zenkaku" (¡¥≥—) will be displayed at the right bottom corner.
+
+The initial mode can be set with NJCONFIG.EXE.
+
+There is no differences in Japanese  characters  input  under  either  mode.
+ASCII characters, in JASCII mode,  are  mapped  into  JIS counterparts.  For
+instance, an ASCII period, a dot, is mapped to a  Japanese  period, a  small
+circle. Some ASCII characters may be mapped into different presentations  in
+JASCII mode. For example, a caret [^]  is  mapped  to  a  Japanese  currency
+symbol °Ô. However, this function only affects input  of  ASCII  characters.
+The mappings are as follows:
+
+  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+ £¡£¬£√£ƒ£≈£∆£«£»£…£ £À£Ã£Õ£Œ£œ£–£—£“£”£‘£’£÷£◊£ÿ£Ÿ£⁄
+
+  a b c d e f g h i j k l m n o p q r s t u v w x y z
+ £·£‚£„£‰£Â£Ê£Á£Ë£È£Í£Î£Ï£Ì£Ó£Ô££Ò£Ú£Û£Ù£ı£ˆ£˜£¯£˘£˙
+
+  1 2 3 4 5 6 7 8 9 0
+ £±£≤£≥£¥£µ£∂£∑£∏£π£∞
+
+  ~ ` ! @ # $ % ^ & * ( ) - _ = + \ | [ ] { } ; : ' ' " " < > , . ? /
+ °¡°§°™°˜°Ù°°Û°Ô°ı°ˆ° °À°Ω°≤°·°‹°¿°√°ÿ°Ÿ°⁄°€°®°ß°÷°◊°÷°◊°‘°’°¢°£°©°ø
+
+Mouse: point the mouse cursor to the right end of the bottom line and  click
+the left button once to invoke this function.
+
+=============================================================================
+
+11. TOOLS
+=========
+
+This section describes NJStar's several enhancements  listed  under  "Tools"
+(•ƒ°º•Î) in the main menu. There are three kinds of enhancements mentioned
+in this section. (1) Dictionary-related, (2) System Configuration,  and  (3)
+Macro commands. Macro commands are described in the next section.
+
+FUNCTION   <EDicLookup> [Alt+E]/[Alt+X]     º≠ΩÒ§Œ∏°∫˜       EDIC Lookup
+
+Displays a translation window for the current character or  word  in  either
+Japanese or English.
+
+Before  calling  this  function,  position  the  cursor  under  the  desired
+character or mark the word as a block.
+
+When the function is called, the system will search for matching  characters
+or words in the dictionary and display the result in the pop-up  window.  If
+the content of dictionary exceeds one screen,  press  [Down]  arrow  key  or
+[PgDn] key to scroll through the list of entries.
+
+If the current character is Japanese and is not "marked",  NJStar  treats it
+as a single character, and will intelligently search all the  words  in  the
+dictionary which match the words around the  cursor  character.  If  only  a
+portion of a Japanese word is marked, NJStar will  search  all  the  entries
+that contain this character or word. If no match is found in the dictionary,
+NJStar will indicate so. Custom-made  characters  cannot  be  found  in  the
+dictionary.
+
+If the current word is English and is not "marked", the search will  operate
+on the whole word.  If  only  a portion of a word is marked, only the marked
+segment will be processed.  If the marked block contains more than one word,
+only the first word will be searched.
+
+If the system finds the entry  in  the  dictionary,  it  then  displays  all
+entries in which the word is found. Once the desired entry is located by the
+user, press [Enter] to insert the Japanese word into the editing screen,  or
+[SpaceBar] to dump the whole entry into the screen.
+
+In both Kana-Kanji and Romaji modes, if there are some Kanji  characters  or
+words on the bottom line, user can press  [F1]  to  get  their  meanings  in
+English.
+
+From Romaji input mode, typing an English words (preceded by [']) and  press
+[SpaceBar] looks up the meaning of the word in  Japanese-English  dictionary
+when no Katakana version is found in KANJI.DIC.
+
+FUNCTION   <Glossary>      [Ctrl+G]         Õ—∏ÏΩ∏         Glossary
+
+Brings up the user definable vocabulary bank.  These  glossary  entries  are
+accessible from Kana-Kanji mode directly. When you enter a code matching the
+index string, NJStar will convert the code into the pre-defined string.
+
+The Glossary is basically used for two  purposes: 1)  supplement  KANJI.DIC;
+2) store frequently used long words / phrases which are made  accessible  by
+short-hand keys.
+
+(1) Supplement KANJI.DIC
+
+In Kana-Kanji mode, users can register  a  new  word  in  Glossary  when  an
+expected Kanji option does not appear as one of displayed options.  If there
+is no  option  displayed in the bottom line, the system automatically enters
+in the Glossary mode as soon as users press [SpaceBar].
+
+(2) Store frequently used long words and phrases
+
+The Glossary function allows users to identify a string  with  any  letters,
+not just valid Romaji or English. If an entry is not a valid romaji code, it
+must start with ['] key. For instance, 'OZ --> πÎΩ£, 'PRC --> √Ê≤⁄øÕÃ±∂¶œ¬πÒ,
+'njstar --> °ÿ∆Ó∂À¿±°Ÿ. Furthermore, you can also define  a  non-JIS  string,
+such as 'fyi --> FOR YOUR INFORMATION. This  is  quite  different  from  the
+user-Definable input method (as with the one generated by NJJDIC.EXE)  where
+the primary advantage of Kana-Kanji input cannot be obtained. On  the  other
+hand, a user vocabulary defined  through  such  a  user  dictionary  is  not
+accessible in Kana-Kanji mode.
+
+NJStar will search the glossary  dictionary  first  and  then  the  ordinary
+Kanji dictionary. Numbers  can  be  used  in  the index code, but not as the
+first letter. Note that the index entry is case sensitive, so the index word
+"OZ" is not obtainable by typing "'oz" but "'OZ".
+
+The Glossary list may be updated  manually.  When  the  Glossary  window  is
+displayed, you can use [F1] for 'Add New', [F2] for 'Add Marked' Block, [F3]
+for 'Edit Current', [F4] for 'Delete Current', [ESC]  to  quit.  Pressing  a
+letter 'a-z' will search for  an  entry  starting  with  the  key.  Pressing
+[SpaceBar] to insert the current entry into the current file.
+
+While the Glossary list displays only  one  line  for  each  entry,  it  can
+actually contain a much larger content. Mark a portion of  the  screen  with
+the <Block> function, then add the block after the Glossary list  is  called
+up by the <Glossary> function. If the marked block is less  then  one  line,
+you can edit the block. Otherwise, the large block cannot be edited further.
+The only way to work around this is to insert the  block  into  the  editing
+screen and edit it, then add the block to the Glossary as a  new  entry  and
+delete the old one.
+
+FUNCTION   <KanjiInfo>     [Alt+Z]          ¥¡ª˙§Œæ Û      Kanji Info
+
+Displays the current character in large size in a  pop-up  window,  together
+with  meanings, readings, grading as well as coding information, such as EUC,
+UniCode, Radical, Strokes, etc.
+
+Mouse: double click the left mouse button on the  character  to call up this
+function.
+
+FUNCTION   <NJConfig>       [Ctrl+C]         •ª•√•∆•£•Û•∞     NJCONFIG
+
+Starts NJCONFIG.EXE program inside of the NJStar system. User may change the
+system setup through NJCONFIG.EXE. (See  section  System  Configuration  for
+more details.)
+
+Most setup changes made through this function will take effect  immediately,
+such as printer drivers and printing setup. However, the video card settings
+will not take place until the user starts NJStar again.
+
+=============================================================================
+
+12. MACROS COMMANDS
+===================
+
+This section describes NJStar's Macro related functions. Those functions are
+located  under "Tools"  (•ƒ°º•Î)  in  the  main  menu.  This  section   also
+describes the way to compose the macro  text  file  and  use  NJMAC.EXE  for
+compiling NJStar macros.
+
+A macro is a pre-defined sequence of a series of NJStar  commands.  You  can
+record a series of commands within NJStar, or write a macro text  file  with
+NJStar and then compile it with NJStar's utility  program,  NJMAC.EXE.  This
+will convert it to a macro file that can be loaded into NJStar.
+
+See PROGRAM USAGE for information about loading a macro in the command  line
+with '-L' and '-X' options.
+
+FUNCTION   <MacroRec>      [F11]            •ﬁ•Ø•Ìµ≠œø          Macro Rec
+
+Starts and stops macro recording. When entering  macro-recording  mode,  the
+right side of the bottom will display a sign of "Record."
+
+Mouse: point the mouse cursor at "Record" and then  click  the  left  button
+once to invoke this function.
+
+When starting, a sequence of NJStar commands entered by  the  user  will  be
+recorded and stored in the macro  buffer,  until  this  command  is  invoked
+again. The contents of the macro buffer will be cleared by  the  next  macro
+recording operation.
+
+When recording a macro, pressing [ESC] would be considered to  be  a  normal
+command to be recorded, instead of cancellation of the command.
+
+Beginning from NJStar v3.0, contents in  the  macro  buffer  will  be  saved
+automatically on exit, so that the macro  can  be  executed  the  next  time
+NJStar is run.
+
+FUNCTION   <MacroExec>     [F12]            •ﬁ•Ø•Ìº¬π‘      Macro Exec
+
+Executes the macro stored in the macro buffer. If the macro buffer is empty,
+it will do nothing.
+
+If a macro turns out to contain an infinite loop, you must press [Ctrl+C] or
+[Ctrl+Break] to cancel the execution.
+
+FUNCTION   <SaveMacro>     [Alt+F11]        •ﬁ•Ø•Ì ›¥…       Save Macro
+
+Saves the contents of the macro buffer to a file with a user-specified  file
+name. Thus, a recorded macro can be repeatedly used. The macro filename  has
+the standard extension, ".NJM". Any other extension given to the file by the
+user will be ignored.
+
+If you enter a filename that already exists on disk,  the  system  will  ask
+for confirmation. Press [ESC] at any time to cancel the request.
+
+FUNCTION   <ReadMacro>     [Alt+F12]        •ﬁ•Ø•Ì∆…Ω–§∑     Read Macro
+
+Reads a user-specified macro file into the macro buffer, so that  the  macro
+can be executed. When NJStar prompts for a filename, don't use an extension
+as NJM will be used as the default.
+
+FUNCTION   <RepeatCmd>     [Ctrl+F11]       (•Í•‘°º•»        Repeat Command)
+
+Repeats a previous command a given  number  of  times.  If  it  is  a  macro
+command, <RepeatCmd> will repeat the macro for a given number of times. This
+function can not be used inside a macro.
+
+MACRO TEXT FILES
+
+User may also build macro files from scratch. To  create  your  own  macros,
+write them as text files. The following basic rules apply to macro files:
+
+     1.  A macro  text  file  should  be  given  the  ".NJ"  extension;  The
+         converted NJStar macro file has the standard extension of ".NJM".
+
+     2.  A macro text file may contain one macro statement only,  which  can
+         contain one or more commands;
+
+     3.  A macro statement should always start with a string "Macro";
+
+     4.  When a line gets too long, split the line and use "&" at the end of
+         line to indicate that it continues on the next line;
+
+     5.  A  comment  line  in  the  macro  text  file  starts  with  an  "*"
+         character;
+
+     6.  All commands listed in this manual can be  written  to  macro  text
+         files, separated by a space. Commands are case insensitive;
+
+     7.  Use double quotation marks ("") around text or search strings;
+
+     8.  Use single quotation marks ('') to input the enclosed text  to  the
+         editing screen or a Japanese character code at prompt;
+
+     9.  Use #nnn to input an ASCII character represented by nnn. The number
+         nnn can be either in Decimal, Hex, or Oct format;
+
+     10. Use $nn to pause the execution for a period of nn ticks.  One  tick
+         is equal to 1/18 second. User input  will  be  ignored  during  the
+         pause;
+
+     11. Use the <Pause> command to pause the execution of  the  macro  when
+         NJStar prompts user to enter  a  string,  until  the  user  presses
+         [Return] or [ESC]. Other editing  tasks  can  be  done  during  the
+         pause. <Pause> can be also used when  the  <DOS>  command  returns.
+         NJStar will wait for a key press before  clearing  the  DOS  output
+         screen;
+
+     12. Use <ScreenOff> to freeze the screen  display  when  the  macro  is
+         being executed. Use <ScreenOn> to turn on the screen. In  any  case
+         NJStar  will turn on the  screen  display  at  the  end  of  macro.
+         <ScreenOff> will speed up the macro execution speed;
+
+     13. Use string plus ":" to compose  a  label.  A  macro  statement  can
+         contain up to 64 labels. Label example, BEGIN: LOOP: ;
+
+     14. Use <Jump> followed  by  a  label  to  indicate  the  unconditional
+         command switch to the label within the macro statement;
+
+     15. Use <JTrue> followed by a label to indicate the command  switch  to
+         the label within the macro statement when the previous  command  is
+         successfully executed or the condition checked is true  (e.g.,  the
+         current  character   is   a  Japanese   character   when   executed
+         <IsJapanese>); and
+
+     16. Use <JFalse> followed by a label to indicate the command switch  to
+         the label within the macro statement when the previous command  can
+         not be executed or the condition checked is false.
+
+Here are some more commands for use in the macro:
+
+         <SoundOff>        - Turn Error Beep Off.
+         <SoundOn>         - Turn Error Beep On.
+         <IsJapanese>      - If the current character is a Japanese (15-84).
+         <IsTwoBytes>      - if the current character is a Two Bytes EUC                                     character.
+         <IsCursorInBlock> - The cursor is inside a marked block.
+
+Here is an example of a macro statement, This macro will replace  one JASCII
+characters "°Ù" (JASCII  '#' characters)  with  two  ASCII '#' characters.
+
+     [EXAMPLE]
+
+         Macro BegFile ASCinput Replace "°Ù" Enter "##" Enter
+
+You can define a macro command  in  NJCONFIG.KEY,  and  assign  the  command
+permanently to a Key. For example, the following syntax  assigns  the  macro
+shown above to the 'Ctrl+X+1' key:
+
+Meta+1  Macro BegFile ASCinput Replace "°Ù" Enter "##" Enter
+
+UTILITY   NJMAC.EXE
+
+The utility program NJMAC.EXE  is  in  the  NJStar  sub-directory.  It  will
+convert a macro text file into a compiled file so that it  can  be  executed
+within NJStar.
+
+     [USAGE] C:\NJJ30> NJMAC macfile
+
+Macfile is the name of a macro text file. Add the drive name  and  the  full
+path if necessary. The resultant macro file will use  the  same  file  name,
+with an extension name of .NJM. The location of the resultant macro file  is
+the same as that of the original macro text file.
+
+If the macro text file contains an invalid statement, NJMAC will generate an
+error message indicating the error location within the macro text file.
+
+A compiled macro file can be loaded with NJStar as  a  command  line  switch
+when the system is started. See Section <<Program Usage>> for more details.
+
+
+EXAMPLES OF USEFUL MACRO COMMANDS
+
+NJStar has more than 120 functions/commands in total. Each command  performs
+certain pre-defined tasks. However, there are always  tasks  that  a  single
+command cannot do. With NJStar's macros, you  can  create  new  commands  by
+combining several single commands into a macro command. What a macro command
+can do is only limited by your imagination. Here are some examples  (already
+defined in NJCONFIG.KEY).
+
+*(1) Mark a sentence with Kanji character only.
+Meta+1 Macro ScreenOff UnMarkBlock IsJapanese JFalse END:           &
+       LEFT: IsJapanese JFalse BEG: CursorLeft Jump LEFT:           &
+       BEG: CursorRight MarkBlock RIGHT: IsJapanese JFalse MARKEND: &
+       CursorRight Jump RIGHT: MARKEND: MarkBlock END:
+
+*(2) Call WordPefect 5.1 to Check the spelling of current File ,
+*    WARNING: WP51 must be on path
+Meta+s Macro screenoff SaveFile DOS 'WP51 ' FileName enter   &
+       EditFile FileName enter
+
+*(3) Replace the current English/Japanese by user entered new character
+Meta+F  Macro UnMarkBlock IsJapanese JFalse MW: MarkBlock Jump OK: &
+        MW: MarkWord OK: copy SearchReplace paste pause pause
+
+*(4) Search the current English or Japanese word until end of the file
+Meta+^F  Macro screenoff IsJapanese JFalse MW: MarkBlock Jump OK: &
+         MW: MarkWord OK: copy search paste screenon enter
+
+*(5) Insert a file into current file
+^I  macro savefile openfile JFalse END: screenoff BegFile markline endfile &
+    markline copy QuitFile PrevFile paste gotoblock END:
+
+*(6) Display the time and date for 5 second than delete it
+meta+T macro enter enter enter enter cursorup cursorup tabright &
+       TimeDate $100 delline backspace backspace delchar
+
+*(7) Convert a file with every line hard returned into soft return
+*    NOTE: should have a blank line between paragraph, Mark a Block
+Meta+\    macro screenoff GotoBlock IsCursorInBlock Jfalse END:  &
+          Replace #10 #10 enter "##"    Enter  &
+          Replace #10     enter DelLine Enter  &
+          Replace "##"    enter #10 #10 Enter  UnMarkBlock END:
+
+*(8) Open a file with filename at cursor
+Meta+^O   Macro altwordset markword editfile paste enter defwordset
+
+*(9) Save the current file in New-JIS and send it as email message with
+*    a mail package (e.g., pmail) to Yo Tomita (author of NJJ Tutorial).
+*    NOTE: your computer must be connnected to network.
+meta+^S   Macro saveNewJis enter &
+          DOS "pmail -t chi6yt@sun.leeds.ac.uk -f " filename enter
+
+*(10) Use Shift + Arrow key to mark block interactively
+#up       Macro Screenoff MarkBlock CursorUp    MarkBlock
+#Down     Macro Screenoff MarkBlock CursorDown  MarkBlock
+#Left     Macro Screenoff MarkBlock CursorLeft  MarkBlock
+#Right    Macro Screenoff MarkBlock CursorRight Markblock
+
+=============================================================================
+
+13. PRINTING
+============
+
+This section describes NJStar's printing function,  located  under  "Output"
+(Ω–Œœ) in the main menu. This section  also  describes  printing  format
+commands and the utility file NJPRN.EXE.
+
+FUNCTION   <Print>       [Ctrl+P]          ∞ı∫˛          Print File
+
+Prints the current file to a user-defined output device.
+
+Currently, NJStar supports 9 pin or 24 pin dot  matrix  printers  (Epson  or
+IBM-ProPrinter and compatibles), Canon BubbleJet printers, and HP DeskJet or
+LaserJet  printers  (and  their  emulations).  You  have  to   install   the
+appropriate printer driver for your chosen printer with NJCONFIG.EXE.
+
+After the correct printer driver is installed, you  can  print  the  current
+file to the printer or to a file. Generally, NJStar uses 16x16  font  for  9
+pin  dot  matrix  printers,  and  better  fonts  for  printers  with  higher
+resolution capabilities. The user has no control on the type of font.
+
+If the printer is not connected, or if you  want  to  use  another  printer,
+print the current file to a file, with  the  appropriate  printer  settings.
+NJStar's utility program, NJPRN.EXE, can be used later  to  print  out  that
+file to the printer.
+
+UTILITY  NJPRN.EXE
+
+The utility program NJPRN.EXE is in NJStar's subdirectory.
+
+     [USAGE]
+          C:\NJJ30> NJPRN printfile port
+
+'Printfile' is a filename  for  the  file  generated  by  NJStar's  <Print>
+command (see above). Please include the drive name and  the  full  path  for
+NJPRN.EXE and print file if necessary. The valid ports are PRN, LPT1,  LPT2,
+LPT3, COM1, COM2, COM3, or COM4.
+
+PRINTING FORMAT COMMANDS
+
+The following are NJStar's printing format commands, to enhance  the  output
+format.
+
+  English Name          Function
+  ===================   ====================================================
+   \NewPage             Forces to print on a new page from here
+
+   \PageNumber(nn)      Changes the  current page  number to nn, whatever it
+                        was originally set
+
+   \NumberStyle("%d")   Specifies the page number style as text shown in "". 
+                        Variable %d is the current page number.
+
+   \NoPageNumber        Do not print page number
+
+   \LeftMargin(nn)      Sets the left margin to nn Japanese characters
+
+   \RightMargin(nn)     Sets the right margin to nn Japanese characters
+
+   \TopMargin(nn)       Sets the top margin to nn lines
+                        (1 line=1/6 in. or 1 line=30 dots)
+
+   \BottomMargin(nn)    Sets the bottom margin to nn lines
+                        (1 line=1/6 in. or 1 line=30 dots)
+
+   \LineSpace(nn)       Sets the space between lines to nn dots
+
+   \Font(nn)            Sets the size of Japanese character to nn.
+                        ( 1 normal; 2 larger)
+
+   \Center              Centers the current line on page
+
+   \Bold                Force NJStar to print in Bold, Mincho style 
+                        font (JIS.24 )
+
+   \Thin                Force NJStar to print in thin, Gothic style 
+                        font (JIST.24)
+
+   ===================  =====================================================
+
+Here are some examples of how to use printing format commands  in  the  text
+file.
+
+        [EXAMPLE]        \NewPage
+
+Forces the printer to perform a form feed and then prints the following text
+on a new sheet.
+
+        [EXAMPLE]        \PageNumber(2) \NumberStyle("•⁄°º•∏%d")
+
+Forces the system to set the page numbers to start from  2  from  here.  The
+page number printed on this sheet would look like "•⁄°º•∏2".
+
+        [EXAMPLE]        \LeftMargin(5) \RightMargine(5) \LineSpace(5)
+
+Forces the system to change both margins to 5 characters from here onwards,
+and use new space setting. Normally, it would be advisable to set LineSpace
+with a  smaller  value  when  drawing  a  table  with  NJStar's  line  draw
+characters, such as ¶⁄,¶€,¶‹,¶›,¶ﬂ ,¶ﬁ,  etc.  Don't  forget  to  set  line
+spacing back to normal when finished.
+
+        [EXAMPLE]        \Center ƒ´∆¸ø∑ π
+
+Forces the system to print the string "ƒ´∆¸ø∑ π" at the center of the line.
+
+        [EXAMPLE]        \Font(2) \Center ∆¸À‹§Œ¿Øº£≤»
+                         \Font(1)
+
+Forces the system to print "∆¸À‹§Œ¿Øº£≤»" in an larger size at the center of
+the line, and then return to normal size to print the next line.
+
+Here are two more points for using print format commands.
+
+     1) All commands must start with "\" at the very beginning of the  Line,
+        To print a "\" character at the beginning of a line, use "\\".
+
+     2) More than one command can be written on a single line.
+
+Finally, there is one special print format command that does not start  with
+a [\]. This is [~], which forces the system to print the next  character  in
+"reverse" style character, that is, Thin instead of Bold.
+
+Occasionally, the user might  want  to  print  some  characters  in  reverse
+font. For example, while the current file uses Thin style characters, one or
+two characters should  be  printed  in  Bold  font.  Putting  a  [~]  before
+the character will make NJStar  print  this  character  in  Bold  font.  For
+example,
+
+          [EXAMPLE]     Ã¿∆¸§œ°¢~¿ß~»Û§‰§Î§Ë§¶§À°™
+
+In this case, the last "¿ß»Û" will be  printed  as  a  Bold style, while the
+whole sentence will be in thin style.
+
+This  function  only  works  for  printers capable of using 24x24 or  better
+fonts.
+
+UTILITY  PRINTPS.EXE
+
+NJStar  supports  postscript  printers  with  a  separate  utility  program,
+PRINTPS.EXE. This program converts a EUC file to a set  of PostScript  files
+according to the font and page size selected by the user.  This  program  is
+provided for registered users only; check UTILITY.DOC for more details.
+
+=============================================================================
+                                      (This manual continues in NJSTAR3.DOC.)
+

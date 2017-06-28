@@ -1,0 +1,13 @@
+	The file kw3demo.zip is a self-running demo version of
+KanjiWORD Version 3.0. KanjiWORD is a Microsoft Windows Japanese word
+processor by Pacific Software Publishing. It is unique in that it does
+not require a Japanese operating system to function.
+	For more information on KanjiWORD, contact:
+
+Pacific Software Publishing, Inc.
+14405 SE 36th Street, Suite 300
+Bellevue, WA 98006
+USA
+206-562-1224 (phone)
+206-562-0811 (facsimile)
+70740.1273@compuserve.com

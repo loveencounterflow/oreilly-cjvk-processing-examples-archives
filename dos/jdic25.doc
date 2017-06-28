@@ -1,0 +1,1776 @@
+
+
+                                  J D I C 
+
+
+
+                     Japanese English Electronic Dictionary
+                     ====================================== 
+
+
+                                Version 2.5
+
+                              Copyright  1995
+                                 J.W. Breen
+                           (jwb@rdt.monash.edu.au)
+                                              
+
+
+
+                             TABLE OF CONTENTS
+                             =================
+
+
+                             1. INTRODUCTION
+
+                             2. QUICK START
+                              
+                             3. HARDWARE
+
+                             4. INSTALLATION
+                        
+                                (a) FILES
+                                (b) DIRECTORY
+                                (c) ENVIRONMENT VARIABLES
+                                (d) CONTROL FILE
+
+                             5. INVOCATION
+
+                             6. HELP FACILITIES
+
+                             7. DICTIONARY SEARCHING
+
+                                (a) ENGLISH SEARCH KEYS
+                                (b) ENGLISH PRIORITY SEARCH KEYS
+                                (c) KANA SEARCH KEYS
+                                (d) USING MULTIPLE DICTIONARIES
+
+                             8. KANJI SELECTION
+                             
+                             9. SEARCH AND SELECTION HISTORY
+                             
+                            10. DICTIONARY LINE SELECTION
+                             
+                            11. DICTIONARY LINE LOGGING
+
+                            12. EDICT EXTENSION FILE
+                             
+                            13. FILTERS
+
+                            14. DISPLAY MODES
+
+                            15. DICTIONARIES
+                             
+                            16. UTILITIES (JDXGEN, EJDXGEN & MAKEINFO)
+                             
+                            17. TECHNICAL DETAILS
+                            
+                            18. JDIC ON A PALMTOP
+
+                            19. JDIC AND MOKE, JWP & NJSTAR
+                            
+                            20. JDIC VERSIONS
+                             
+                            21. IT DOESN'T WORK!
+                             
+                            22. ACKNOWLEDGEMENTS                     
+                            
+                            APPENDIX A. SUMMARY OF COMMANDS
+                            
+                            APPENDIX B. DATA FILES USED BY JDIC, ETC.
+                            
+                            APPENDIX C. OVERVIEW OF FOUR CORNER CODES
+                            
+                            APPENDIX D. OVERVIEW OF SKIP CODES
+
+
+
+
+1. INTRODUCTION 
+
+JDIC  is  an  electronic  Japanese-English dictionary program which operates 
+under MS-DOS on IBM PCs or clones. It functions as: 
+
+(a) a Japanese-English Dictionary (waei jiten), searching for and displaying 
+entries for keywords or phrases entered in Japanese (hiragana or katakana); 
+
+(b)  an  English-Japanese  Dictionary  (eiwa  jiten),   searching  for   and 
+displaying entries for key-words entered in English; 
+  
+(c)  a  Japanese-English  Character  Dictionary  (kanei  jiten),  capable of 
+selecting kanji by a wide variety of techniques,  such  as  radical,  stroke 
+count,  Nelson Index number,  Halpern Index number,  SKIP code,  Four Corner 
+code or reading,  and displaying information  about  the  kanji,  and  then, 
+optionally, displaying compounds containing that kanji. 
+
+JDIC  depends  for  its  performance  on  a  pair  of  dictionary  files;  a 
+Japanese/English dictionary and a Kanji  dictionary.  Associated  with  this 
+distribution  is  the EDICT dictionary,  of which the author coordinated the 
+compilation,  and a packed kanji dictionary derived from the KANJIDIC  file, 
+also compiled by the author.  At the time of releasing this version of JDIC, 
+EDICT has over 100,000 entries. 
+
+While  JDIC is not aligned with any particular printed dictionary,  it draws 
+upon index fields in KANJIDIC to provide a search service which  complements 
+two major dictionaries: 
+
+(a)  the  "Japanese-English  Character  Dictionary",  compiled  by Andrew N. 
+Nelson and published by Tuttle. 
+
+(b) the "New Japanese-English Character Dictionary" compiled by Jack Halpern 
+and published by Kenkyuusha. 
+
+In addition to the dictionaries mentioned above,  several  other  dictionary 
+files have been compiled in a suitable format for use by JDIC, either as the 
+primary  dictionary  file,  or  using  the "alternative dictionary" facility 
+feature of JDIC. 
+
+The executable code and  documentation  of  JDIC  are  hereby  released  for 
+general use.  All usage of this program is at the user's risk,  and there is 
+no warranty on its performance.  Copies of the program(s) accompanied by the 
+documentation files, may be distributed by any means, but at no charge apart 
+from  that of the distribution medium.  The dictionary files are also in the 
+freely available for non-commercial  use,  and  are  covered  by  their  own 
+copyright and licence statements. 
+
+[Note:  this is copyrighted freeware,  not shareware.  No payment is sought, 
+there is no registration system,  and all copies are fully functional.  Some 
+users,  quite overcome by the availability of this package free,  gratis and 
+for nothing,  have been moved to send the  author  tokens  of  appreciation.  
+These  are  gratefully  received,  but  the author's real satisfaction is in 
+knowing that the software is  being  used  gainfully  by  many  appreciative 
+users.] 
+
+All  the  Japanese displayed by JDIC is in kana and kanji,  so if you cannot 
+read at least hiragana and katakana,  this is not the program for  you.  The 
+author  has  no  intention  whatsover of producing a version using romanized 
+Japanese. 
+
+A companion program to  JDIC  is  JREADER,  a  text  file  reader  with  the 
+capability  of looking up words and phrases in the dictionary.  JREADER also 
+has  additional  features,   including  the  ability  to  detect  verbs  and 
+adjectives  in  their  inflected  forms,  and to perform matches against the 
+dictionary form. 
+
+JDIC is a fully  self-contained  dictionary  package,  requiring  no  special 
+software  or  hardware.  It  has,  however,  been  designed to coexist with a 
+number of Japanese word-processor packages,  such as MOKE,  JWP  and  NJSTAR.  
+See  Section  19  of  this  Manual  for more information on operating JDIC in 
+association these packages.
+
+
+2. QUICK START 
+
+(a)  obtain  the  five  packed   archive   files:   JDIC25.ZIP,   EDICT.ZIP, 
+EDICTJDX.ZIP,  KINFO25.ZIP and JIS16.ZIP.  (Some of these are also available 
+as .ZOO files) 
+
+(b) create a directory on your hard disk (the name \KANJI is suggested). 
+                                          
+(c) unpack the archives (you will need the appropriate program for this). 
+
+(d) type "JDIC [Enter]" to start the program.  F1 will give a summary of the 
+options  and  commands.  Simply  enter search keys and press Enter.  Type in 
+romaji for the kana keys and conversion to kana  will  occur  as  you  type. 
+Either Hepburn or kunrei romaji will work.  F3 will toggle between key entry 
+in  English,  hiragana  and  katakana.  Ctrl-F1  turns  off the On-Line help 
+facility.  Ctrl-F3 gives a display of the status of the files  and  settings 
+used by JDIC. 
+
+
+3. HARDWARE 
+
+JDIC must operate on a PC, XT, AT or compatible with an appropriate graphics 
+card.  It  has  been  written  using Turbo C 2.0,  uses the Borland Graphics 
+library, and has been tested on VGA, EGA,  CGA,  ATT and Hercules cards.  It 
+has also operated successfully under SoftPC on a Unix workstation. 
+
+Auto-detection  is  used  to  determine the type of graphics card installed. 
+This is quite successful,  except in the case  of  an  ATT  card,  where  an 
+environment variable or control file field setting is needed. 
+
+JDIC  requires  at  least  120K  of  RAM  to operate,  however for efficient 
+operation at least 250K should be available.  Approximately 6Mb of hard disk 
+is required to hold JDIC's dictionary,  index and font  files.  As  it  uses 
+dynamic  paging  of  its  files,  a  disk  cache or RAM drive will speed its 
+operation, but only if they use expanded or extended memory. 
+
+
+4. INSTALLATION 
+     
+(a) FILES 
+
+This program  is  normally  distributed  as  a  "ZIP"  archive  (JDIC25.ZIP) 
+containing the following files: 
+
+    JDIC25.DOC      (this documentation file V2.5)   
+    JREADR25.DOC    (documentation of JREADER V2.5)  
+    JDIC.EXE        (the executable)
+    JDXGEN.EXE      (program to generate the dictionary index file)
+    JREADER.EXE     (executable of the JREADER program)            
+    EJDXGEN.EXE     (program to generate the extension index file)
+    KANJDFIX.EXE    (program to reformat the KANJIDIC file for MAKEINFO)
+    MAKEINFO.EXE    (program to build the KINFO.DAT file)
+    KINFONDX.EXE    (program to build & sort the *.IDX files)
+    MAKEYOMI.EXE    (program to build the KINFYOMI.DAT & .JIS files)
+    JDIC.HLP        (Brief Help information, displayed when F1 is pressed)
+    *.BGI           (Borland  Graphics drivers for various cards) 
+    RADICALS.TM     (list of Nelson radicals for the F5 display)  
+    ROMKANA.CNV     (file of romaji to kana conversions) 
+    SORTF.COM       (sort utility called by JDXGEN & EJDXGEN) 
+    KIASCII.FNT     (alternative  font file for ASCII characters) 
+    VCONJ           (file of verb & adjective inflections)
+    JDIC.RCX        (sample JDIC.RC file)
+
+You  will also need three other archives of dictionary and font information. 
+They are the kanji dictionary archive: "KINFO25.ZIP", containing: 
+                                                             
+    KINFO.DAT       (packed file of Nelson & Halpern numbers, stroke count, 
+                    etc. information) 
+    KINFO*.IDX      (index files for kinfo.dat, indexed by Bushu, etc) 
+    KINFYOMI.DAT    (index file for kanji lookup by yomikata) 
+    KINFYOMI.JIS    (kanji indexed by yomikata) 
+                                           
+(Make sure you have the correct version of these files,  as  those  used  by 
+V2.2 of JDIC and earlier will not  operate  with  V2.5.  The  files  in  the 
+earlier  KINFO23.ZOO archive will work,  but are missing some of the indices 
+use by Version 2.4 and later of JDIC.  You can, of course, build these files 
+yourself using the MAKEINFO, etc.  utilites and the KANJIDIC file.  You will 
+need to obtain a copy of the KANJIDIC file from one of the  ftp  sites.  The 
+master release site is ftp.c.monash.edu.au:pub/nihongo.) 
+
+The Japanese/English dictionary archive(s), "EDICT.ZIP" & "EDICTJDX.ZIP: 
+
+    EDICT      (Japanese/English dictionary file)      
+    EDICT.JDX  (the index file for the dictionary)
+    EDICT.DOC  (information about the dictionary file, and its copyright and 
+                licence statement.) 
+
+(These  two sets of archives are available separately because their contents 
+are being continually updated.) 
+
+The archive "JIS16.ZOO" containing the  kana/kanji  16x16  bit  mapped  font 
+files: 
+
+    K16JIS1.FNT  (the 3490 JIS1 characters) 
+    K16JIS2.FNT  (the 3388 JIS2 characters) 
+
+(Other  sources  of  these files include the MK11K16.ZIP file in the MOKE1.1 
+distribution,   and  the  KD100.ARC  in  the  original  KD  (Kanji   Driver) 
+distribution.) 
+
+If you plan to use JDIC on the HP100LX Palmtop, the JDICPALM.ZIP archive may 
+be of use. It contains: 
+
+    *.ICN           (Icon files for JDIC, JREADER & MOKE for use with an
+                     HP 100LX Palmtop)                         
+    INPUT.COM       A PD utility to enable JREADER (and MOKE) to be passed 
+    INPUT.DOC       file names.
+    JRBAT.BAT       A batch file suitable to initiate JREADER.
+
+(b) DIRECTORY 
+
+A directory should be created on the hard disk for holding JDIC's files, and 
+all the archive files unpacked into this directory. 
+
+The   executables  (JDIC.EXE,   JREADER.EXE,   JDXGEN.EXE,   EJDXGEN.EXE  and 
+SORTF.COM) will need to be stored in a directory on your path if you wish  to 
+invoke JDIC from any directory.  Alternatively,  add JDIC's directory to your 
+path. 
+                                   
+(c) ENVIRONMENT VARIABLES 
+
+The following environment variables may be set.
+
+    BGI=DIRECTORY  
+
+-  the  directory  containing  the  *.BGI files,  which control the graphics 
+output for the various cards.  E.g.  C:\TC  or  C:\KANJI.  If  this  is  not 
+present,  the  BGI  files must be in the directory in which JDIC is invoked.  
+Alternatively you can specify a BGI  directory  in  the  JDIC.RC  file  (see 
+below). 
+                        
+    JDICRC=DIRECTORY
+
+-  the  directory  containing  the JDIC.RC,  e.g.  C:\KANJI.  If this is not 
+present,  the current directory alone will be searched  for  a  file  called 
+JDIC.RC, and the details extracted. 
+
+    JGRAPHIC=ATT400
+
+-  set  this  variable  to  ATT400 if you have an AT&T high-resolution card. 
+Otherwise it will default to CGA.  Alternatively,  you can  specify  an  ATT 
+card in the JDIC.RC file. 
+                                                                              
+(d) CONTROL FILE 
+
+JDIC  uses  a  control  file  called  JDIC.RC  to  contain  various  control 
+information.  JDIC examines the control file, if it is present,  and adjusts 
+its  own  environment (colours,  directories,  etc.) accordingly.  A JDIC.RC 
+file is not necessary for successful operation of JDIC,  however it  is  the 
+only  way  for the user to specify screen colours or to apply filters to the 
+display. 
+
+The environment variable JDICRC or the -c command-line option may be used to 
+specify the directory containing JDIC.RC.  Otherwise the file must be in the 
+directory from which JDIC is invoked. 
+
+The file contains one or more lines of text,  each comprising a key-word and 
+a value. The key-words recognized by JDIC are: 
+
+    kanjipath    directory-path    (e.g. C:\KANJI)
+
+If you wish to operate JDIC from other directories,  you must have this line 
+to tell the program the location of the control and font files. 
+
+    graphicstype  ATT
+
+Use this if you have an ATT400 graphics adaptor,  otherwise the  auto-detect 
+will probably set the operation to CGA. 
+
+    bgipath       directory-path
+
+This is an alternative to using the BGI environment variable. 
+
+    asciicolor    <colour>
+    backcolor     <colour>
+    kanjicolor    <colour>
+    progcolor     <colour>
+
+Use these to set the colours to be used for English text, Japanese text, the 
+screen  background  and the control information.  The available colours are: 
+black,  blue,  green,  cyan,  red,  magenta,  brown,  lightgray,   darkgray, 
+lightblue, lightgreen, lightcyan, lightred, lightmagenta, yellow and white. 
+
+    fontspace     0|2|4
+
+Normally  JDIC  displays each kana or kanji using 16 pixels of screen width, 
+and each ASCII character with 8 pixels.  This is quite satisfactory in  most 
+cases,  but  in  a  few  instances pairs of kanji will touch.  The fontspace 
+directive allows the user to increases the  inter-character  pixel  spacing. 
+The  0,  2  and 4 refer the spacing between kana/kanji.  The spacing between 
+ASCII characters is half that. (The default is 0) 
+                                           
+    jdicmode      e|h|k
+
+Use this to set JDIC's input  mode  of  startup.  If  this  is  absent,  the 
+default is (e)nglish. "h" indicates hiragana and "k" katakana. 
+
+    jdicfilt f t on|off "filter_name" <code1> <code2> ....
+
+One  or  more  "jdicfilt"  lines can be used to set up to 10 sets of filters 
+which can be selectively applied  to  the  dictionary  during  display.  See 
+FILTERS below. 
+
+     fkey       key1    key2
+
+This  directive  is  used  to remap the function keys.  The keys that can be 
+remapped are F1 to F10,  Alt-F1 to Alt-F10 and Ctrl-F1 to  Ctrl-F10.  "key1" 
+specifies the key that is pressed,  and "key2" specifies the keystroke to be 
+simulated.  The codings for "key1" and "key2"  are  Fn  for  F1-10,  An  for 
+Alt-Fn, and Cn for Ctrl-Fn. 
+
+For  example,  a user who often uses Kuten coding and rarely uses JIS coding 
+can reverse the F9 and Alt-F9 with the following: 
+
+    fkey  F9  A9
+    fkey  A9  F9
+
+Note that the F1  "help"  screen  still  shows  the  original  function  key 
+actions,  but also lists the remappings, if any.  Users are strongly advised 
+not to remap the F1 key. Up to 20 remappings may be specified. 
+
+     halpern
+
+The feature that  allows  a  user  to  select  kanji  according  to  certain 
+criteria,  displays  screens  of  kanji  along  with  some other appropriate 
+details such as stroke count,  etc.  The display will also include the index 
+number  in  either  the  Nelson  or Halpern dictionaries.  A user can toggle 
+between the two using Ctrl-F4,  JDIC's default is to display Nelson numbers, 
+but  is  can  be  made  to  initialize  itself  to  Halpern numbers with the 
+"halpern" line in the control file.  (It is also possible  to  add  the  JIS 
+codes of the kanji to this display using the Ctrl-F5 command.) 
+
+     verbose on|off
+
+JDIC has an on-line help facility whereby a short message is  provided  with 
+each  screen  explaining  the possible user actions.  The default is to have 
+this  facility  enabled.  The  "verbose  off"  directive  will  disable  the 
+facility.  The  facility  can  be  toggled  on  and off by the user with the 
+Ctrl-F1 keys. 
+
+     dicfile  file-name
+
+JDIC can operate with up to  10  dictionary  files  at  once.  If  none  are 
+specified  it  will  automatically  use  either "EDICT" or "JTOE.DCT".  This 
+default setting can be replaced by  other  dictionary  file  names  via  the 
+"dicfile"  directive  in  the  JDIC.RC  file,  or  by  adding  them  to  the 
+command-line.  Note that if the "dicfile" directive and/or the  command-line 
+option is being used, ALL dictionary files must be stated, as the default is 
+over-ridden.  File  names  supplied  by  the  "dicfile"  directive  and  the 
+command-line are cumulative.  Up to 10 "dicfile"  directives  may  be  used. 
+Note  that  the  file-name  must  be  fully  specified  or  in the operating 
+directory. (Users select which dictionary to search via the Alt-F2 command.) 
+                          
+    font24  font-file-name
+
+The Kanji Information Display will  use  either  the  "asiya24.fnt"  or  the 
+"jis24"  files  of 24x24 bit fonts to display the character being described. 
+If an alternative  24x24  bit-mapped  font-file  is  available,  it  can  be 
+identified to the program by this directive. 
+                                                  
+    extfile  extension-information-file-name
+
+JDIC can automatically access the EDICT  Extension  File  from  the  Alt-F10 
+function. This file has a default name of "EDICTEXT", however an alternative 
+file can be selected using this directive. 
+
+
+5. INVOCATION 
+
+The invocation of JDIC is: 
+
+    JDIC  <options> <dictionary-files>
+
+If  no  dictionary  is specified,  it is assumed to be the EDICT file in the 
+local directory,  or in  the  directory  specified  by  the  "kanjipath"  in 
+JDIC.RC.  (Up  to  10 dictionary files can be specified via a combination of 
+the command-line and the "dicfile" directive in the JDIC.RC file.) 
+
+The commandline options are: 
+
+    -bnn 
+    
+    this restricts the number of 1K buffers used to hold the  dictionary  to 
+    nn.  The default is for JDIC to get as many buffers as it can.  Only use 
+    this  option  if  you  have  a  particular requirement to leave some RAM 
+    unallocated. 
+
+    -Bnn 
+    
+    this sets the number of lines backspaced in the (B) back-up command (see 
+    below).  This has a default setting of 45, which is probably about right 
+    for a VGA display which can take  up  to  26  lines  of  dictionary  per 
+    screen. For a CGA display, where only 9 lines are displayed, the default 
+    will  result  in an overrun.  Note that the number of lines specified is 
+    the count from the last line on the display to  the  first  line  to  be 
+    displayed.  Thus  it  should approximate about twice the number of lines 
+    in the display,  less an allowance for folded  lines.  Suggested  values 
+    are: CGA -> 16, Hercules -> 35, ATT -> 40, VGA -> 45 (default). 
+    
+    -l 
+    
+    this inhibits JDIC from loading the dictionary and fonts initially.  The 
+    program will start more quickly, but will operate more slowly (at first) 
+    as  the  pages  of  the fonts,  dictionary and index table are loaded on 
+    demand. 
+
+    -f 
+
+    forces the use of the 8x8-bit bgi fonts for English  text.  The  default 
+    is to use the bit-mapped fonts from the KIASCII.FNT file which look much 
+    better, however the display of these can be slow on an 8088 PC. 
+    
+    -mm 
+
+    overrides  the  default  setting  of input mode to English (ASCII).  The 
+    alternative values are:  e|a = english, h = hiragana, k = katakana.  (To 
+    maintain  compatibility  with earlier versions of JDIC,  these modes may 
+    also be given as 0, 1 or 2.) 
+
+    -cdir
+    
+    sets the directory in which the  JDIC.RC  file  is  to  be  found.  This 
+    overrides  any  setting of the JDICRC environment variable.  It does not 
+    specify the directory for any other files.  (The purpose of this  option 
+    is  to  allow  for  situations where JDIC is installed on a file server, 
+    e.g. Novell.  It allows a user to have his/her own control file in order 
+    to specify colour settings, filters, etc.  through putting it in a local 
+    directory,  e.g.  "jdic  -cC:\MYDIR",  while still using the file server 
+    directory for the main files.) 
+    
+    -Llogfile
+
+     specifies a file to be used for the logging function.  If  this  option 
+     is not used, the default "JDIC.LOG" file is used. 
+
+    -v
+    
+    disables the on-line help facility.  (This facility can be togged on and 
+    off with the Ctrl-F1 keys.) 
+
+
+6. HELP FACILITIES
+
+[The function keys shown in the following sections are the default settings. 
+Advanced users may rearrange the actions  of  the  function  keys  with  the 
+"fkey"  directive  in  the  JDIC.RC  file.  See  the  details  on the "fkey" 
+directive in Section 4(d).] 
+
+JDIC has two sets of Help facilities:
+
+(a)  a  summary  of  all  the  keyboard commands is provided on a full-screen 
+display as a result of the F1 command.  This is  contained  in  the  JDIC.HLP 
+file, which may be edited by the user, if desired. 
+
+(b) an on-line Help facility provides a short  message  with  each  possible 
+screen  type,  advising  the  user  of the possible actions.  This facility, 
+which is normally enabled when the program loads,  can be toggled on and off 
+with the Ctrl-F1 command,  and can be disabled at the time the program loads 
+with the "verbose off" directive in the JDIC.RC file. 
+
+In  addition,  the full documentation file,  JDIC25.DOC,  may be displayed by 
+pressing Alt-F1. 
+
+
+7. DICTIONARY SEARCHING 
+
+(a) ENGLISH SEARCH KEYS 
+
+Operation of JDIC is quite straight-forward.  Upon loading,  the full-screen 
+working window is displayed with the "Search Key:" prompt at the bottom.  To 
+enter a search key,  type a few letters from the *start* of the word you are 
+seeking (characters past the first 6 are  ignored)  and  press  Enter.  JDIC 
+does   not   match   on   keys   in  the  middle  of  words.   The  scan  is 
+case-insensitive. 
+
+A multi-line display will be produced of all the  dictionary  entries  which 
+contain matches with the search key.  The display format is: 
+
+     matched_word [kanji] (yomikata) english_1, english_2, etc.
+            
+A line is normally only displayed once per search,  regardless of the number 
+of matches which occur within it. 
+
+If the search resulted in more entries than will fit on a screen,  a further 
+prompt occurs at  the  bottom  of  the  screen  giving  you  the  option  of 
+requesting the next screen-full (M or PgDn),  displaying the previous screen 
+(B or PgUp) or requesting another search (A).  (The reverse display (B) uses 
+an estimate of the number of lines per display and backspaces that number of 
+dictionary  entries.  Also,  using  the  (B)  response  switches  JDIC  into 
+continuous-display mode (see  Ctrl-F2  below)  as  normally  JDIC  will  not 
+display a line twice.) 
+
+After  the  last screen of a search,  or if the (A) or Esc command is given, 
+the "Search Key:" prompt returns. 
+
+As a general rule,  pressing the Escape key returns  JDIC  to  the  previous 
+command level.  When pressed at the "Search Key:" prompt, it will ask you to 
+confirm whether you want to exit the program at that point. 
+  
+The  F1  key  initiates  a Help Screen which contains a summary of commands.  
+The Ctrl-F3 key gives a summary of the status  of  the  files  and  variable 
+settings used by JDIC. 
+
+(b) ENGLISH PRIORITY SEARCH KEYS
+                                     
+The growth in the size  of  the  EDICT  dictionary  file  (now  over  50,000 
+non-proper   name  entries)  has  limited  the  usefulness  of  JDIC  as  an 
+English-Japanese dictionary.  For example, a search for the key "house" will 
+result in over 70 entries being displayed.  In order to make  JDIC  function 
+more effectively as an English-Japanese dictionary,  a number of entries are 
+having their keywords marked with the special character "@" to indicate they 
+should be given priority in an English keyword  search.  Thus  a  few  major 
+entries will have the word "house" marked as "@house". 
+
+The  marking  of  priority  English words in the EDICT file has no affect on 
+normal JDIC operation.  It is, however,  possible to instruct JDIC to search 
+only  for  English  words which have the priority marker prepended.  This is 
+done with the Alt-F3 command,  which toggles the "Priority English" mode  on 
+and off. (When this mode is active, [P] appears on the top left-hand side of 
+the  screen.) Typically this mode would only be invoked when a normal search 
+revealed a very large number of matching entries. 
+
+Words  which  are  marked  as  being of priority are displayed in the colour 
+normally used for kana/kanji. 
+
+(c) KANA SEARCH KEYS 
+
+You  will have noticed an "(E)" in the bottom lefthand corner of the screen. 
+This is to indicate you are entering search keys in  English  (i.e.  in  the 
+ASCII code).  If you press F3 before entering a key,  you toggle between the 
+(E)nglish, (H)iragana and (K)atakana input modes. 
+
+To enter a search key in kana, type it in romaji and it will be converted to 
+kana as you type.  The romaji->kana conversion is almost identical  to  that 
+used in many Japanese word processors,  i.e.  for a small "tsu" you can type 
+either a double consonant, e.g.  "shippai", or "t-", e.g.  shit-pai, and for 
+"n" you can type "n'" if necessary (e.g.  as in "hon'ya").  Most of the time 
+just typing ordinary Hepburn or kunrei romaji works.  Note that  the  romaji 
+must  follow  the  kana  style for long vowels.  Tokyo must be toukyou,  NOT 
+tookyoo. 
+
+The  actual  romaji  to  kana  conversions  are  specified   in   the   file 
+"ROMKANA.CNV".  This file provides the capability for inputing all the kana. 
+It may,  however, be edited if you want to add extra mappings, e.g.  some of 
+the modern katakana mora constructions. 
+
+The matching of kana keys is insensitive to whether they are in katakana  or 
+hiragana,  however  note that the convention for long vowels differs between 
+Japanese words and gairaigo. 
+
+The  display  is  in  "dictionary"  order  for  the  words   matched,   i.e. 
+alphabetical for the English search, and JIS code order for the kana search.  
+JIS  order  is  very  close  to  the  "gojuuon"  kana order used in Japanese 
+dictionaries except that it separates the syllables with nigori and maru. 
+                                      
+The display format is similar to the one following the the English search: 
+
+     matched_word [kanji] english_1, english_2, etc.
+
+however the separate yomikata display is omitted. 
+
+[JDIC also supports a convention used in both the SKK (Simple Kana to Kanji) 
+package and in MOKE for switching between  English  and  kana.  Ctrl-J  will 
+cause  a switch from English mode to hiragana,  "l" will switch from kana to 
+English and "q" will toggle between hiragana and katakana.] 
+
+
+(d) USING ALTERNATIVE DICTIONARIES 
+
+Up to 10 dictionary files can  be  identified  to  JDIC  via  the  "dicfile" 
+directive in the JDIC.RC file,  and/or via the command-line.  JDIC will load 
+with the first-named dictionary  active  (those  listed  in  JDIC.RC  appear 
+before  those  in  the  command-line).  Users  can  switch to an alternative 
+dictionary file by using the  Alt-F2  command.  This  command  triggers  the 
+display of a list of the files available, one of which can then be selected.  
+The  Status  Display  (Ctrl-F3)  will  show which dictionary file is active.  
+Note that the searching  will  be  initially  slower  after  an  alternative 
+dictionary has been selected, as the new file will need to be paged into the 
+PC's RAM. 
+
+8. KANJI SELECTION 
+
+JDIC  has  the  capability  to select individual kanji,  display information 
+about the character and optionally display all dictionary  entries  starting 
+with or containing that particular character. 
+
+A kanji can be identified by JDIC in a number of ways. They are: 
+
+(a)  by  its "JIS" code.  This is the standard 4-digit hexadecimal code used 
+to identify each Japanese character. F9 triggers a prompt for a JIS code. 
+
+(b) by its "Kuten" code,  which is the row and column location of the  kanji 
+in  the  94x94  layout.  Alt-F9 triggers a prompt for the Kuten code,  which 
+must be in the four-digit format: rrcc. 
+     
+(c) by its "Shift-JIS" code.  This 4-digit hexadecimal coding is also  known 
+as  MS-JIS.  It  is  commonly  used on PCs and MacIntosh computers.  Ctrl-F9 
+triggers a prompt for the Shift-JIS code of a kanji. 
+
+(d) by its "Nelson" index number.  This refers the kanji index numbers  used 
+in  Nelson's  dictionary.  F8  triggers  a prompt for the Nelson number of a 
+character.  Over 5000 kanji in JDIC's files have Nelson numbers.  
+
+(e) by its "Halpern" index number,  which refers to its reference number  in 
+Halpern.  Alt-F8 triggers a prompt for the Halpern Index number. 
+
+(f)  by the reading (or yomikata) of a character.  F10 triggers a prompt for 
+a character's yomikata in kana.  Both on and kun readings are used for  this 
+search.  A  multi-screen  display of all kanji with that particular yomikata 
+is produced.  Once the kanji are displayed,  use the arrows to position  the 
+cursor and select a kanji by pressing Enter. 
+
+[Note:  the  screens  of  kanji for selection include some other appropriate 
+details such as stroke count,  etc.  The display will also include the index 
+number in either the Nelson or Halpern dictionaries.  A user can toggle JDIC 
+between the two modes  by  using  Ctrl-F4.  JDIC's  default  setting  is  to 
+display  Nelson numbers,  but is can be made to initialize itself to Halpern 
+numbers with the "halpern" line in the control file. (N) or (H) is displayed 
+at the top right-hand corner of the screen to indicate the current mode.  It 
+is also possible to add the JIS codes of the kanji to this display using the 
+Ctrl-F5 command. In this case (J) is displayed in the corner of the screen.] 
+
+(g)  by  its  stroke  count.  F7  triggers  a  prompt for a stroke count.  A 
+display (multi-screen if necessary) of all the characters with  that  stroke 
+count  is  produced,  along with their Nelson or Halpern numbers,  and their 
+Bushu (radical) numbers.  As in (f),  the desired character can be  selected 
+by moving the cursor to it and pressing Enter. 
+
+(h)  by  its  primary radical (Bushu).  F6 triggers a prompt for the kanji's 
+radical number.  The numbers used by JDIC are those from Nelson (as depicted 
+inside the front cover of the dictionary).  To use  this  method,  you  will 
+need to know the radical numbers,  have previously used the F5 function,  or 
+have a copy of the radical table with you.  You will be asked to  specify  a 
+(total) stroke count for the character sought; either select a stroke count, 
+or  press  Enter to get all the characters for that radical.  If you elected 
+to display the kanji for a particular  stroke  count,  you  can  repeat  the 
+search  for  the  next higher or lower stroke count by using the "+" and "-" 
+keys. 
+
+[F5 triggers a display of all the Nelson radicals  and  their  numbers.  You 
+can  move  the  cursor  to  a  radical and select it by pressing Enter.  The 
+process then continues as though you had used the F6 key.  Alt-F5 allows the 
+option of starting the radical display at radicals with a particular  stroke 
+count, which can be handy on, say, a slow PC with only a CGA display.] 
+
+(i)  by  its  "Four  Corner" code.  Alt-F6 triggers a prompt for the Kanji's 
+coding by this identification system.  The Four Corner code consists of four 
+decimal digits,  each of which identifies a  characteristic  of  the  kanji, 
+generally associated with the corners.  (There is a fifth digit in the code, 
+but this is not used in the search.) Enter the code as a  single  four-digit 
+number  (leading  zeroes may be omitted.) See Appendix C for details of this 
+venerable coding system,  which was popular in  Japan  and  China  for  many 
+years.  As with the Stroke Count and Bushu selection,  a number of kanji are 
+displayed for you to select one.  On this  occasion  the  Bushu  and  Stroke 
+Count are displayed along with each kanji. 
+
+(j)  by  its  SKIP Code.  Alt-F7 triggers a prompt for the Kanji's coding by 
+this identification system,  which was devised by Halpern and  used  in  his 
+dictionary.   The  SKIP  code  consists  of  three  numbers  each  of  which 
+identifies a characteristic of the kanji.  Enter the code as  three  numbers 
+separated by the "-" symbol,  e.g.  "2-5-11".  Other characters are ignored.  
+See Appendix D for a summary of this coding system.  The display is  similar 
+to that in the Four Corner selection. You can repeat the search for the next 
+higher or lower SKIP code,  i.e.  the third number in the code, by using the 
+"+" and "-" keys.  
+
+Once  a  kanji has been identified by any of the techniques described above, 
+JDIC displays the following information about it: 
+
+       KANJI, JIS code in hexadecimal & ASCII,  Kuten code,  Shift-JIS code, 
+       Nelson No, Halpern No, Bushu No, Stroke Count and Grade (in which the 
+       kanji  is  taught  in  Japan.  G8  is  used  to denote a "general use 
+       kanji", and G9 a supplementary kanji for use in names.) 
+
+       ONYOMI: "on" readings of the kanji (in katakana). 
+
+       KUNYOMI: "kun" readings in hiragana.  
+
+       DETAILS:   various  other  codes  related  to  the  kanji   (Unicode, 
+       frequency, etc.), plus the meanings ascribed to the kanji.  
+
+At this stage,  the user can request a display of all the compounds in EDICT 
+which begin with the character (F) or which contain  the  character  in  any 
+position  (A).  This  display  is similar to that produced in the English or 
+kana search, except that the format of each line is: 
+
+     kanji (yomikata) english_1, english_2, etc 
+                                    
+Note that when the  (A)  option  is  being  used,  the  compounds  with  the 
+character  in the last position will tend to be displayed first.  This is an 
+unavoidable side-effect of the indexed search. 
+
+It is also possible to set this kanji as a special filter (S) which has  the 
+effect  of  restricting  the  following full dictionary search to displaying 
+entries which contain that kanji.  Thus it is possible to search for entries 
+which contain two specified kanji (in any order)  or  a  combination  of  an 
+English word and a kanji. Note that the (S) function only has affect for one 
+dictionary search. 
+
+Note  that  the kanji displayed in this function may use a 24x24 font if one 
+is available. 
+
+
+9. SEARCH AND SELECTION HISTORY 
+
+JDIC maintains a history list of the last 10  dictionary  search  keys  that 
+have  been entered.  Pressing F4 will progressively retrieve previous search 
+keys. Having retrieved a key, you can then edit it if you wish. 
+   
+A list is also kept of the last 10  kanji  selection  keys,  and  any  kanji 
+selections  which  resulted.  Pressing  Alt-F4  will  progressively retrieve 
+previous selection keys or kanji.  Note that kanji selection keys cannot  be 
+edited on retrieval. 
+
+
+10.  DICTIONARY LINE SELECTION 
+
+If you have one or more lines from the dictionary displayed,  you can select 
+a kanji, a yomikata or an English word from the display by pressing Alt-F10. 
+(Note that this must be done at the "Search Key:" prompt, so you may need to 
+press Esc or "a" first.) A small marker will appear to the left of  the  top 
+line.  Use  the  up  and  down  arrows to position the marker on the desired 
+line,  then press Enter to select that line.  You will then  be  offered  in 
+turn  as  candidates  for dictionary searches:  each kanji (if any) from the 
+head-word, the yomikata (or the head-word itself if there are no kanji), and 
+each English word from the translation.  Press Enter to select a key, or the 
+space-bar to move to the next candidate.  If you select a kanji,  the  kanji 
+details  are  displayed,  and  you  can  proceed  to a subsequent display of 
+compounds. 
+
+(This screen is  also  used  for  the  logging  function  described  in  the 
+following section.) 
+
+
+11. DICTIONARY LINE LOGGING 
+
+Lines  from  the  EDICT dictionary can be "logged" to a file for later edit, 
+analysis,  etc.  To do this enter the Alt-F10 (EDICT  line  selection)  mode 
+(see above),  move the cursor to the line you wish to log,  and press "l" or 
+"L".  The line will be copied to the logging file,  and an "L" placed at the 
+far  right  of  the line to show that it was logged.  You are also given the 
+option of adding up to 60 characters of text to the logging file each  time.  
+As  many  lines  as you like can be logged from the one screen.  The default 
+file used for logging is  is  "JDIC.LOG".  Another  file  can  be  specified 
+through use of the command-line option "-L". 
+                                          
+
+12. EDICT EXTENSION FILE
+
+Associated with the main EDICT dictionary  file  is  the  EDICTEXT  extension 
+file,  which contains further information about a selection of EDICT entries. 
+Typically  the  EDICTEXT  file  contains  a  paragraph  or  two  of   further 
+information,  including examples of the use of the Japanese words or phrases. 
+The  EDICT file has the tag:  "(EXT)" appearing in the entry to indicate that 
+there is further information available. 
+
+It  is possible to select and display information from the EDICTEXT file from 
+within JDIC,  provided the appropriate EDICTEXT.JDX index file is  available 
+(see the section on JDXGEN below.) 
+
+To  display information from the EDICTEXT file,  you need to "mark" the EDICT 
+entry using Alt-F10 (see the immediately preceding sections), then press "E".  
+If there is an entry in the EDICTEXT file that matches the EDICT headword, it 
+will be displayed. 
+
+                                                         
+13. FILTERS 
+    
+A. Control-file defined
+
+Up to 10 sets of filters can be specified using "jdicfilt" lines in JDIC.RC. 
+These  allow the option of only displaying dictionary entries which contain, 
+or do not contain certain text strings. 
+
+There are three types of filters: 
+
+(a) inclusion filters (Type 0).  If one  of  these  is  active,  only  those 
+entries which contain one of the specified text strings will be displayed. 
+
+(b)  exclusion  filters  (Type  1  & 2).  If one or more of these is active, 
+lines which contain the specified text strings will  not  be  displayed.  In 
+the  case of Type 2 filters,  they only function if the dictionary entry has 
+just ONE English entry. 
+
+The format of the filter lines in JDIC.RC is;
+
+jdicfilt f t on|off "filter name" string_1 string_2 ....
+
+where: 
+
+        f - the filter number (0 to 9) 
+
+        t - the filter type (0, 1 or 2) 
+        
+        on|off - sets the initial state of the filter
+
+        "filter name" - the " " delimited name  of  the  filter,  up  to  50 
+        characters long 
+
+        string_2  -  the  space-separated strings which are to be matched as 
+        part of the filter operation.  Up to 10 strings per filter,  each up 
+        to 10 characters. 
+
+Here are some sample filter entries: 
+
+        jdicfilt 0 2 off "Suppress proper name entries" (pl, (pn pn) pl) 
+
+        [This  filter,  if  activated,  would prevent the display of entries 
+        which only relate to proper names.] 
+        
+        jdicfilt 1 0 off "Show only place names" (pl, pl) 
+        
+        [This  filter  would  enable  JDIC  to  be  used  as  a   place-name 
+        dictionary.] 
+
+        jdicfilt 2 1 off "Suppress colloquialisms" (col) (col.) 
+                                              
+The F2 command enables individual filters to be activated or deactivated.
+
+Use  caution  when  setting  up  filters,  as  their operation may make JDIC 
+examine many dictionary entries, resulting in a slow display of information.  
+Note that once a filter condition has been met for a  dictionary  entry,  no 
+further testing is carried out for that entry. 
+    
+B. Dynamic filter
+
+In addition to the filters described above, a user can set or clear a filter 
+by typing it in from the keyboard. This filter can be either an English word 
+(case senstive) or a sequence of  hiragana  or  katakana.  The  function  is 
+invoked  by  the Ctrl-F2 sequence,  and the user is prompted for the filter, 
+which will be in the current search-key mode.  While this filter is  active, 
+"[F]" will be displayed in the top left corner of the screen.  To clear this 
+filter, press Ctrl-F2, followed by Enter. 
+
+
+14. DISPLAY MODES 
+
+In  addition  to  its  normal  operating  mode,  JDIC  can  be  placed in an 
+"Unlimited  Display  Mode",  which is invoked by pressing Ctrl-F10 before or 
+during the entering of the search key.  In this  mode  you  will  just  keep 
+scrolling  through  the  dictionary instead for stopping when you run out of 
+matching words.  Also in this mode entries are displayed every time there is 
+a match in the index table (normally an entry is displayed once only.)  This 
+mode  is  useful  for  doing  maintenance  on  the dictionary,  and for just 
+browsing.  Using the (B) scroll-back command places the program  temporarily 
+in Unlimited Display Mode. 
+        
+The other display mode is the On-Line Help mode, in which a two-line message 
+is displayed at the bottom of  each  screen  giving  advice  about  possible 
+actions.  This mode is the default mode for JDIC,  but it can be disabled at 
+load time by the "verbose off" directive in the  JDIC.RC  file,  or  the  -v 
+command-line  option.  It  can  also  be toggled on and off with the Ctrl-F1 
+command. 
+
+15. DICTIONARIES 
+
+JDIC depends for its performance on a pair of dictionary files;  a  Japanese 
+<->  English  dictionary  and  a Kanji dictionary.  Optionally included with 
+this distribution is the EDICT dictionary and a packed kanji dictionary.  At 
+the time of releasing this version of JDIC, EDICT has over 102,000 entries. 
+
+The format each entry of EDICT is: 
+
+Kanji [kana] /english_1/english_2/..../ or 
+kana /english_1/english_2/..../ 
+
+JDIC's dictionary must use the EUC (Extended Unix Code) for kana and  kanji. 
+It need not be in any particular order. 
+       
+JDIC uses a kanji dictionary file called KINFO.DAT, plus a number of related 
+index  files.  KINFO.DAT is built from the KANJIDIC text file.  See Appendix 
+B for a description of these files. 
+                       
+In addition to the dictionaries mentioned above,  several  other  dictionary 
+files  have  been compiled in a suitable format for use by JDIC.  Among them 
+are the Japanese/German file keyed (with permission) by  Helmut  Goldenstein 
+from  the Langenscheidt edited by Wolfgang Hadamitzky,  and the Life Science 
+dictionary prepared  by  staff  at  the  Pharmacology  Department  at  Kyoto 
+University.  Other  dictionary  files  are  believed to be under preparation 
+which combine Japanese with French,  Portugese and Indonesian.  Any of these 
+additional  files  can  be used with JDIC,  either as the primary dictionary 
+file, or using the "alternative dictionary" facility feature of JDIC. 
+
+
+16. UTILITIES (JDXGEN, EJDXGEN & MAKEINFO)
+   
+(a) JDXGEN is a utility program that parses the dictionary file and produces 
+a file <dictionary-name>.JDX containing the index table (see below).  If you 
+make  any  changes  to the dictionary,  you must run JDXGEN before operating 
+JDIC again.  Its operation is similar to JDIC in that  it  uses  JDIC.RC  to 
+establish the path to the dictionary and will operate either on a dictionary 
+called EDICT (the default) or a user-specified name.  
+
+There are two other command-line options: 
+
+    -tpathname 
+
+where "pathname" is a directory which  JDXGEN  can  use  for  its  temporary 
+files.  If  none  is specified,  the current directory is used for temporary 
+files.  
+                                        
+    -rnnnnn 
+
+where  nnnnn  is  the  number  of records written to each workfile.  If this 
+command-line option is not used, JDXGEN calculates the appropriate value. It 
+is  important that you watch the display as JDXGEN runs.  If you do not have 
+enough RAM,  the SORTF program will exit prematurely (JDXGEN  cannot  detect 
+this),  and  you  will  have  to  abort the run and try again with a smaller 
+number of records in each workfile. 
+
+JDXGEN parses the dictionary,  producing several  temporary  files  of  sort 
+keys,  each  of which is sorted using Vernon D.  Buerg's SORTF utility (make 
+sure that SORTF.COM, a copy of which is included in this distribution, is in 
+the path).  The sorted files are then merged to  produce  the  index  table.  
+This  process  can be quite slow.  A 70,000 line dictionary results in about 
+300,000 entries in the index. 
+
+A RAM drive, a disk cache,  a second hard drive or a network file server can 
+reduce  the  time  of the sort.  The author has observed the following times 
+processing a 40,000 entry EDICT: 
+
+        120+ minutes on an 8MHz 8088 with one hard disk 
+        
+        15 minutes on a 12MHz 8086 using a Novell  network  drive  with  4Mb 
+        cache 
+        
+        10 minutes on a 16MHz 80386 with 1M disk cache 
+
+Note  that  a  large  quantity  of file space is required.  The .JDX file is 
+about 50% the size of the dictionary.  The temporary files will  take  about 
+twice  the  size  of  the  dictionary.  These are deleted automatically when 
+JDXGEN finishes, however if JDXGEN aborts prematurely you may need to delete 
+them by hand (one file is called SORTFILE.XYZ,  and up to 100  files  called 
+JDXnn.TMP  <nn = 00,01,02,....> are used).  Note also that about 500k of RAM 
+is needed after DOS.  If this is not available,  the sort will  abort.  Note 
+also  that  your  CONFIG.SYS file may need amendment to allow for sufficient 
+workfiles. 
+    
+JDXGEN measures the amount of disk space free on the  default  or  specified 
+work  drive.  If  it does not seem to be enough,  it will ask if it is OK to 
+proceed. 
+
+JDXGEN stores the length of the dictionary file and the JDIC version in  the 
+.JDX file,  and if JDIC detects a mismatch, it will refuse to operate.  This 
+ensures that JDXGEN is run every time the dictionary is modified. 
+
+Make sure you have the most recent JDXGEN version (2.5). 
+    
+(b) there is a second index program, EJDXGEN.EXE, which indexes the EDICTEXT 
+extension file.  This has identical operating procedures to JDXGEN,  but the 
+index produced is in a slightly different format, and is much smaller. 
+
+(c) there are four utility programs included in this release of JDIC for the 
+first  time  which  enable  users to build their own copies of the KINFO.DAT 
+file. They are: 
+        
+        (i) KANJDFIX.  This utility rearranges the contents of the  KANJIDIC 
+            file into a form suitable for the MAKEINFO utility.  In addition 
+            it can suppress information fields which are not wanted  by  the 
+            user. 
+            
+            example: KANJDFIX -YQM KANJIDIC KANJIDIC.NEW 
+            
+            - results in a reformatted version with the PinYin,  Four-Corner 
+            and Morohashi fields omitted. 
+            
+        (ii) MAKEINFO builds  the  KINFO.DAT  file  from  the  (reformatted) 
+            KANJIDIC(.NEW)  file.  It  also automatically calls the KINFONDX 
+            and MAKEYOMI utilities to build the extra index files. 
+
+            example: MAKEINFO KANJIDIC.NEW
+    
+        (iii) KINFONDX examines the KINFO.DAT and KANJIDIC(.NEW), and builds 
+            the .NDX files, which it then sorts into the appropriate orders. 
+            
+        (iv) MAKEYOMI compiles the KINFYOMI.DAT and .JIS files.  It calls on 
+            the SORTF utility at one stage. 
+
+
+17. TECHNICAL DETAILS 
+
+(a) Japanese-English Dictionary & Index 
+    
+The index table generated by JDXGEN contains a long  integer  entry  marking 
+the  starting  byte  of  each  "word"  in  the dictionary,  and is sorted in 
+alpha/kana order of the "words" indexed.  This enables a fast binary  search 
+to be done, and for the display to be in alphabetical order by keyword.  The 
+"words"  indexed  by JDXGEN are defined as any sequence of one or more kana, 
+any occurrence of a kanji or any sequence of three or more ASCII  alphabetic 
+characters.  Common words like:  "of",  "to",  "the",  etc.  and grammatical 
+terms like: "adj", "vi", "vt", etc. are not indexed. 
+
+(b) Memory Management 
+
+As  the  combined  size of the dictionary,  index and fonts is now over 6Mb, 
+JDIC uses a paging system to access this data.  It obtains as  much  RAM  as 
+possible upon loading,  divides this into 1Kb page buffers,  reads the first 
+100Kb of Japanese fonts (i.e. the kana and commonly-used kanji), and as much 
+of the dictionary as will  fit.  From  then  on  it  will  page  in  missing 
+portions  as  they  are  required,  using the LRU (least recently used) page 
+replacement method. 
+
+(c) Character Dictionary Files 
+
+Unlike EDICT,  which is a text file,  the main  character  dictionary  file, 
+KINFO.DAT contains all the kanji information in a highly compressed form. 
+
+A description of KINFO.DAT and its index files is in Appendix B. 
+  
+18. JDIC ON A PALMTOP 
+
+JDIC can be operated successfully on the tiny HP 100LX PC,  thus providing a 
+useful  hand-held  electronic  dictionary.  To  do  this  you  will  need  a 
+FlashDisk of at least 5Mb capacity. On this create a directory, and load the 
+files  from  a  PC (using a protocol such as Kermit,  or using the Palmtop's 
+Connectivity Pack functions.) 
+
+Assuming the directory on the FlashDisk (A:) is \kanji, you can install JDIC 
+by giving the following Path to the Application Manager: 
+
+       A:\kanji\jdic.exe -f -v -B16 |350 (Note that | is the upside-down !)
+
+(The "-f" may be omitted if  you  prefer  the  larger  and  fainter  English 
+characters.  The "-v" disables the on-line help facility, which takes up too 
+much  of  the screen for the 640x200 pixel CGA display.  The "350" specifies 
+the amount of RAM required for the program, and represents about the maximum 
+amount available without stopping the Application Manager,  etc..  Use  less 
+RAM than this if you want to run other applications in parallel with JDIC.) 
+
+There  is  a  JDIC.ICN  file  (designed  by  Paul  Johnson)  provided in the 
+JDICPALM.ZIP archive which can be selected by  the  Application  Manager  to 
+provide a "JITEN" icon. 
+
+19. JDIC & MOKE, JWP & NJSTAR
+
+A. MOKE. 
+
+If you are already a MOKE user,  you should store JDIC's files  in  the  MOKE 
+directory (probably \KANJI.) 
+
+You should also be aware of the following: 
+
+(a) JDIC will access the MOKE.RC file as an alternative to JDIC.RC. Thus the 
+same colour, etc. settings can be used for both programs.  The JDIC-specific 
+directives, such as "jdicmode", will not affect the operation of MOKE. 
+
+(b)  JDIC will use JTOE.DCT as a dictionary if EDICT is not present.  If you 
+use MOKE 2.1, you may need to rename the EDICT file JTOE.DCT,  and the index 
+file JTOE.JDX. 
+
+(c)  you  will  not  need  the  font  files,  as  JDIC  will  use either the 
+"K16JIS*.FNT" or "KIJIS16.FNT" files.) 
+
+B. JWP
+
+JWP uses the same EDICT and EDICT.JDX files as does JDIC. From JDIC V2.3 the 
+versions of the KINFO.DAT file used by JDIC and JWP differed,  however  this 
+is being brought back into line, and will be remedied in a version of JWP to 
+be released shortly. 
+
+C. NJSTAR 
+
+NJSTAR uses the EDICT file,  but has its own indexing system.  Note that the 
+indexing utility is not available in the shareware release.  NJSTAR's  kanji 
+file is built from the KANJIDIC file. 
+                              
+
+
+20. JDIC VERSIONS 
+
+[This information has been provided for those people who are curious to  see 
+how a program like JDIC has expanded, usually at the prompting of users.] 
+
+Changes in Version 1.1 
+
+ATT graphics card handling via an environment variable; fixes to the parsing 
+of kanji/kana keys. 
+
+Changes in Version 1.2 
+
+Fixes  to  the  kana->romaji code to handle "nyu" properly;  facility to use 
+dictionaries other than EDICT; Unlimited Display Mode. 
+
+Changes in Version 1.3 
+
+Immediate  romaji->kana  conversion;  examination  of  the  BGI  and  MOKERC 
+environment variables, and the "MOKE.RC" control file. 
+
+Changes in Version 1.4 
+
+Reformatting  the  output  to start with the `hit' word,  to put parentheses 
+around the kanji and kana,  and to  position  the  ASCII  text  better  with 
+respect  to  the  kana/kanji;  handling  of  an index table greater than 64k 
+bytes. 
+
+Changes in Version 1.5 
+
+Inclusion of Maintenance Mode;  fixing of the backspace, so that it works in 
+kana entry mode;  demand paging of the dictionary file;  removal of the .jdx 
+generation into a  separate  program;  command-line  options;  emulation  of 
+MOKE's SKK option;  use of colours as specified in MOKE.RC(*); extraction of 
+ATT  graphics  request  and  bgi  directory  from  MOKE.RC(*);  use  of  the 
+alternative  ASCII font(*);  inclusion of correct romaji conversion for mya, 
+myu and myo(*);  modified handling of "-" in  hiragana(*).  [*  these  items 
+track features introduced in MOKE V2.1] 
+
+Changes in Version 1.6 
+
+Auto-detection of the presence of the alternative fontfiles, and alternative 
+dictionary  names  to match the changes introduced in the production version 
+of MOKE2.1; demand paging extended to the index table and font file(s).  
+
+Changes in Version 2.0 
+
+The kanji selection feature for Bushu, Nelson and Stroke counts; the F1 Help 
+screen;  the -mn command-line option;  increases in buffer sizes  to  handle 
+dictionaries  up  to 1.5Mb;  new version of JDXGEN capable of handling large 
+EDICT files. 
+  
+Changes in Version 2.1 
+
+The selection of kanji by JIS code and yomikata; the JIS code display in the 
+"Show Nelson" mode;  the capability of  displaying  compounds  containing  a 
+selected  kanji  in other than the first character position (JDXGEN was also 
+modified,  and the .jdx file was increased in size for  this);  a  rewritten 
+.doc file to make it more useful as a manual;  confirmation of exit when the 
+escape key is pressed;  restoring the  display  of  yomikata  in  continuous 
+display mode. 
+
+Changes in Version 2.2 
+
+Removal  of  the  1.5Mbyte  restriction on dictionary size;  addition of the 
+(b)ackward display feature; enforcing the restriction of the search key to 6 
+ASCII or kana;  tidying up the yomikata/meaning display  to  cope  with  the 
+extra details added to the kanji dictionary. 
+
+Changes in Version 2.3 
+
+Improvement  to  binary  search to increase the search speed for short keys; 
+addition of Halpern nos and Alt-F8 Halpern index selection  option;  display 
+of the Kuten codes and the Alt-F9 Kuten code selection option;  selection of 
+a kanji from the display with  the  Alt-F10  option;  the  filter  facility; 
+cleaner  line-folding  in  the  dictionary  and kanji display;  enabling the 
+display of the last 4 JIS2  kanji  when  using  the  K16JIS2.FNT  file;  the 
+JDIC.RC  control  file  as  the  default;  command-line  setting  of JDIC.RC 
+directory 
+
+Changes in Version 2.4 
+
+The F4 retrieve-previous-search-key option (the previous F4 [Nelson display] 
+feature was removed as the Alt-F10 facility introduced  in  V2.3  made  this 
+mode  redundant);  the Alt-F4 retrieve-previous-kanji-selection option;  the 
+expansion of the Alt-F10 selection to include yomikata and English keys; the 
+facility to specify a stroke count in the F6 (Bushu)  search,  and  the  +/- 
+option;  the Alt-F5 short-cut in the radical display;  the logging function; 
+the Ctrl-F4 choice of Nelson or Halpern numbers in the  kanji  screens,  and 
+the "halpern" line in the control file;  the Alt-F6 (Four Corner) and Alt-F7 
+(SKIP) code indexing and kanji selection;  the change of  (A)  to  (E),  for 
+English search key mode;  PgUp and PgDn as alternatives to B and M; the -Bnn 
+command-line option to  fine-tune  the  backup  mechanism  to  screen  type; 
+recognition and response to the "fontspace" JDIC.RC directive; making "M" on 
+a  kanji  display  cycle  to  the  front  of  a  series of screens,  and the 
+down-arrow go to the next screen; the Function Key remappings; the selection 
+of Kanji by Shift-JIS code (Ctrl-F9) and  the  display  of  this  code;  the 
+alternative  dictionary  facility;  the  on-line  help facility;  the Status 
+Display, and the removal of the previous "maintenance mode";  JDXGEN amended 
+to  get  around Turbo C's limit on file handles,  to test properly for write 
+errors,  and to check the free disk space.  
+
+Changes in Version 2.5
+
+prevent a messy redrawing of the screen after jumping  to  another  function 
+such  as  the  Help  Screen;  enabling 24x24 fonts for the Kanji Information 
+Display;  removing a bug which crashed the PC after > 1000  items  had  been 
+displayed;  adding  the support for the EDICT Extension file,  including the 
+inclusion of the EJDXGEN.EXE utility;  adding the support for  the  Priority 
+English  search keys,  including the Alt-F3 toggle and the changes to JDXGEN 
+to create the extra indices; changing JDXGEN to calculate the correct number 
+of records/workfile for SORTF; adding the JDIC.HLP file (replacing a display 
+from compiled strings in the program);  changing the Alt-F1 to  display  the 
+JDICnn.DOC file instead of a short  information  summary;  addition  of  the 
+Ctrl-F2  function  to  set and clear a filter,  extension of the Alt-F7 SKIP 
+selection to support +/- follow-ups,  addition  of  the  Ctrl-F5  option  to 
+display JIS codes on a multi-kanji display. 
+
+21. IT DOESN'T WORK!
+
+If  you  do  not  get  the introductory message,  you probably have either a 
+corrupted .EXE file or a PC without adequate graphics  capability.  Try  and 
+get a clean copy and try again. 
+
+If  you actually get started,  but cannot find any thing,  even when you put 
+"a" as a search key,  check that you have an EUC version of the  dictionary, 
+then if it still does not work,  delete your .jdx  file  and  remake  it.  If 
+everything  fails,  email  the  author  a  clear  description of the problem, 
+including the full text of any error messages you received. 
+
+Please appreciate  that  JDIC  has  been  used  successfully  on  dozens  of 
+platforms  in  hundreds  of  sites  around  the world,  so if you are having 
+problems running it,  the fault  probably  lies  in  your  configuration  or 
+operation. 
+
+22. ACKNOWLEDGEMENTS 
+
+A message from the author: 
+
+I  wrote  this  program  originally  to  gain  experience  in  handling  and 
+displaying  the  Japanese  character  set,  and to exploit the initial small 
+dictionary that came with my copy of MOKE.  I also wanted to brush up  my  C 
+skills. 
+
+I am pleased how it has turned out,  and it has certainly filled a  need  for 
+such  a  package.  In  fact  JDIC,  its  companion  program JREADER,  and the 
+burgeoning EDICT dictionary and KANJIDIC file have  taken  over  much  of  my 
+spare time.  At the time of preparing this version (March 1995) XJDIC,  which 
+is  a  port  to  the  Unix/X11/kterm/kinput  environment,  has  been  running 
+successfully  for  over two years.  A further port to the Macintosh KanjiTalk 
+environment (MacJDIC) was successfully carried out by Dan Crevier,  and is in 
+widespread  use.  After  I made it clear that I was not going to do a Windows 
+port,  Mark Edwards developed his own Windows-based dictionary program called 
+WinJDIC,  which  also  uses  the  EDICT and KINFO.DAT files,  and is now in a 
+commercial version called KiHon. 
+
+Earlier versions of JDIC used some code lifted with minor modifications from 
+"KD" (Kanji Driver),  which was written by  Izumi  Ohzawa  at  Berkeley,  in 
+particular the JIS handling module (kjis.c) which was a port of "jis.pas" by 
+Seiichi Nomura and Seke Wei.  In V1.6 most of this code was replaced with my 
+own  code  to page in the fonts as required.  While there is now very little 
+KD code left in JDIC, it was invaluable in getting me started. 
+
+Ken Lunde's "japan.inf" and his elegant "jis.c" (now jconv.c) explained  the 
+workings of EUC and old/new JIS codes. 
+
+Many  people have contributed to the EDICT and KANJIDIC files,  and you will 
+find record of their work in the appropriate documentation files. 
+
+Stephen Chung supplied me with the original version of the  utility  program 
+for  the  cunning  compression  scheme  used in the KINFO.DAT file.  Theresa 
+Martin keyed the RADICALS.TM file used in the F5 display and added  many  of 
+the obscure mappings to ROMKANA.CNV. 
+
+I  am  grateful  to  the  many  dedicated  beta-testers  and  suggesters  of 
+operational  improvements:   Theresa  Martin,  Ilya  Farber,   Scott  Trent, 
+Christian Wittern, to name but a few.  Tim Frost saved my bacon in JDXGEN by 
+showing me how to get around Borland C's silly limit of 20 file handles. 
+
+Mark  Edwards' MOKE showed what could be done in                                 
+ and was the main inspiration  f
+  JDIC.  When  I  produced  the  first 
+version of JDIC,  I regarded it as a humble and minor accessory to MOKE.  (I 
+used tables lifted from two of the ".HLP" files in MOKE to build the initial 
+version of the ROMKANA.CNV file which drives the  romaji->kana  code.)  Mark 
+has  also provided much helpful advice,  and has kindly given permission for 
+the release of the original EDICT file in MOKE 2.0 and the KIASCII.FNT file. 
+
+Suggestions,  comments and constructive  criticism  are  most  welcome,  and 
+usually result in modifications to the subsequent version. 
+
+                             
+Jim Breen 
+Department of Robotics & Digital Technology 
+Monash University 
+Melbourne, Australia 
+(jwb@capek.rdt.monash.edu.au) 
+January 1991 - June 1995
+
+
+
+
+APPENDIX A: - SUMMARY OF KEYBOARD COMMANDS
+
+The following a summary of the keyboard  commands.  It  is  produced  on  the 
+screen by pressing F1. (This information is in the JDIC.HLP file.)
+
+       J D I C   H E L P  I N F O R M A T I O N
+ 
+   <F1>        This Help Information
+   <Alt-F1>    Display the JDIC Documentation
+   <Ctrl-F1>   Toggle the online-help mode on/off
+   <F2>        Activate/Deactivate Filters
+   <Alt-F2>    Switch to an alternative dictionary file
+   <Ctrl-F2>   Turn on Unlimited Display Mode
+   <F3>        Toggle Input Mode: Ascii, Hiragana, Katakana
+   <Ctrl-F3>   Display JDIC Status Information
+   <F4>        Select Previous Search Key
+   <Alt-F4>    Select Previous Kanji Lookup
+   <Ctrl-F4>   Toggle Kanji Screens between Nelson & Halpern Numbers
+   <F5>        Display Table of Radicals (Bushu)
+   <Alt-F5>    Display Table of Radicals (Starting Stroke Count)
+   <F6>        Select Kanji - Bushu Number
+   <Alt-F6>                 - Four Corner Code
+   <F7>                     - Stroke Count
+   <Alt-F7>                 - SKIP Code
+   <F8>                     - Nelson Number
+   <Alt-F8>                 - Halpern Number
+   <F9>                     - JIS Code
+   <Alt-F9>                 - Kuten Code
+   <Ctrl-F9>                - Shift-JIS Code
+   <F10>                    - Yomikata
+   <Alt-F10>   Select Search Key from Display, View Extension, or Log to File
+   <l>         Switch from kana input to English
+   <q>         Toggle between Hiragana & Katakana input modes
+   <Ctrl-J>    Switch from English input to kana 
+
+   <Esc>       Exit
+
+
+
+APPENDIX B: - DATA FILES USED BY JDIC, JREADER, MOKE, JWP, NJSTAR, ETC.
+
+This  appendix  is  for  the curious,  and may also assist people who want to 
+avoid having too many duplicate copies of files. 
+
+EDICT
+=====
+
+EDICT is the master Japanese/English text file.  See EDICT.DOC for up-to-date 
+details.  EDICT is used, naturally, by JDIC and JREADER,  and also by JWP and 
+NJSTAR.  On Unix platforms it is used by XJDIC and KDIC,  while on McIntoshes 
+it is used by MacJDic. 
+
+JTOE.DIC
+========
+
+In V2.1 of MOKE,  Mark Edwards decided to rename EDICT  "JTOE.DIC".  This  is 
+probably  a  better  name than EDICT for a file which is really a Japanese to 
+English dictionary.  Because EDICT was reasonably  well  established  in  the 
+user  community,  I  did  not  follow  suit,  although  JDIC  &  JREADER will 
+automatically use "JTOE.DIC" if it is present.  Thus,  if you are a dedicated 
+MOKE 2.1 user, rename EDICT.* to JTOE.DIC and JTOE.JDX. 
+
+EDICT.JDX
+=========
+
+This  is  a  binary  (non-text)  file  consisting  of  long (i.e.  four-byte) 
+integers.  The first contains a combination of the length of the  EDICT  from 
+which it was generated,  plus a version number.  The remainder are offsets to 
+the starting bytes of the words or tokens within EDICT which  can  be  looked 
+up.  The  offsets  are sorted according to the lexical value (i.e.  collating 
+sequence) of the tokens to which they point.  JDIC and JREADER use a  variety 
+of  "binary  search"  via  the  indices in this file to find rapidly the text 
+strings they seek,  and then display in turn each line in EDICT to  which  an 
+index points. 
+
+I  believe JWP and NJSTAR use similar,  if not identical techniques.  On Unix 
+platforms XJDIC and KDIC use the same technique, as does MacJDic.  XJDIC uses 
+this technique with KANJIDIC also. 
+
+KINFO.DAT
+=========
+
+KINFO.DAT  and  its  many associated data and index files all derive from the 
+master KANJIDIC file. See KANJIDIC.DOC for details on this file. 
+
+The file contains: 
+
+(i) a 14-byte record for every JIS1&2 kanji, containing stroke count,  bushu, 
+Nelson number, etc. information, plus offset details into:- 
+                                  
+(ii) a region of strings of packed readings and meanings,  one byte per ascii 
+or kana character. 
+
+The structure of the front part of the file is: 
+
+typedef struct {
+    unsigned char strokes;
+    unsigned char bushu;
+    unsigned short int indexn;   /* Nelson index no */
+    unsigned short int indexh;   /* Halpern index no */
+    unsigned char grade;
+    unsigned char onkun;         /* two 4-bit counts */
+    unsigned char meanings;
+    unsigned char version;       /* current value is 23 (2.3) */
+    long int offset;
+} RECORD;
+
+The front portion of the file is accessed directly by using the JIS  code  to 
+derive an index. 
+
+The KINFO*.IDX files consists of 6-byte records containing each JIS1 and JIS2 
+kanji  plus  its identifying code number,  bushu and stroke count.  The files 
+are similar in content,  but are  sorted  into  different  orders.  A  binary 
+search  is used to find all characters with a given code.
+
+The structure of these records is:
+
+typedef struct {
+    unsigned char strokes;
+    unsigned char bushu;
+    unsigned int code;   /* See below */
+    unsigned int index;
+} IDXRECORD;           
+
+The values of the "code" are:
+
+KINFOSTR.NDX, KINFOBSH.NDX, KINFONEL.NDX -> Nelson Number
+KINFOHAL.NDX -> Halpern Number
+KINFOFC.NDX  -> Four Corner Code
+KINFOSKP.NDX -> SKIP Code
+
+The KINFYOMI.DAT file contains fixed length records consisting of sorted  and 
+packed readings of each kanji, plus pointers into KINFYOMI.JIS, which in turn 
+contains  the  sequences  of  kanji  associated  with each reading.  A binary 
+search is carried out on KINFYOMI.DAT. 
+
+The structure is:
+
+typedef struct {
+    unsigned char ryomi[6];  /* packed kana (2nd byte only) */
+    unsigned long int rindex;
+    unsigned short int rcount;
+} YOMTAB;
+
+The original KINFO.DAT was built by Stephen Chung for his JWP word processor. 
+It was used to build the first version of KANJIDIC, and was extended for JDIC 
+usage by the addition of the "meanings" and other indices.  As of  V2.3,  the 
+versions  of  KINFO.DAT are not compatible between JDIC and JWP,  but we will 
+try and fix this eventually. 
+
+JREADER only uses KINFO.DAT, whereas JDIC uses it and all the index files. 
+
+WNNDICT
+=======
+
+WNNDICT is MOKE's master kana-to-kanji conversion file.  Mark  Edwards  built 
+it  from  the WNN pubdic,  and from the SKKJIS.L dictionary (see Chapter 6 of 
+the MOKE manual.) I have extended this file considerably by adding in my  own 
+collection  of  kana/kanji mappings,  including all the entries in EDICT that 
+were not already there. 
+
+WNNDICT has the format: 
+               
+kana /kanji/kanji/...../ 
+
+It is sorted into ascending  order,  and  is  accessed  via  an  index  file: 
+WNNDICT.IND.  WNNDICT.IND consists of 255 long integers which are the offsets 
+in WNNDICT of the starting bytes of the first record which has that value  in 
+its  second  byte  (it  is  the second byte which varies from kana to kana in 
+EUC). 
+
+As far as I know,  MOKE is the only program which uses this  file.  Both  JWP 
+and NJSTAR use similar material, but in different file formats. 
+
+WSKTOK.DAT
+==========
+
+WSKTOK.DAT  is  MOKE's one-to-one kanji-to-kana conversion file.  It is built 
+from WNNDICT, and is in the format: 
+
+kanji [kana] 
+
+MOKE uses it to find the yomikata of compounds (F7),  so I used it in JREADER 
+to  do  the  same.  It is accessed via an index file (WSKTOK.IND) in the same 
+manner as WNNDICT. 
+                        
+As with WNNDICT, I have built a much-expanded version of this file. 
+
+As far as I know only MOKE and JREADER use this file. 
+  
+REVTAB
+======
+    
+This file is used by MOKE to find the readings of kanji.  For  each  possible 
+kanji  it  contains 8 long integers,  each of which indicates the offset of a 
+yomikata in WNNDICT for that kanji. 
+
+REVTAB is built from WNNDICT by the  utility  program  REVTAB.EXE,  which  is 
+available in the MOKE V1.1 distribution. 
+
+I think MOKE is the only program which uses it.
+         
+RADICALS.TM                                                          
+===========
+
+This  file  contains a list of radicals and their "classical" numbers.  It is 
+used by JDIC in it F5 display. (MOKE V2.1 has a very similar file: HENS.IND.) 
+
+RADICALS.TM was prepared by Theresa Martin, hence the "TM" extension. 
+
+As far as I know, only JDIC and XJDIC use this file, but MacJDic might also. 
+           
+VCONJ
+=====                                      
+
+VCONJ is the file used by JREADER (and XJDIC V1.1) to map the inflected parts 
+of verbs and adjectives back to their  dictionary  forms.  It  contains  some 
+commentary at the front as to its internal structure.  Used by JREADER, XJDIC 
+and possibly the latest version of MacJDic. 
+
+ROMKANA.CNV
+===========
+
+This file contains all the romaji-to-kana mappings used by JDIC and XJDIC for 
+their  kana  input  routine.  It has separate katakana and hiragana sections, 
+and can be modified by the  user  if  necessary.  Used  by  JDIC,  XJDIC  and 
+possibly the latest version of MacJDic. Some other people have also used it.
+
+FONT FILES
+==========
+
+JDIC  and  JREADER,  along with MOKE and KG,  use 16x16 bit mapped kana/kanji 
+font files. There are two alternative sets of files: 
+
+    K16JIS1.FNT  (the 3490 JIS1 characters) 
+    K16JIS2.FNT  (the 3388 JIS2 characters)       
+
+These  files,  which are in the Public Domain,  and have been around for some 
+years,  have the characters  occurring  contiguously.  This  means  that  the 
+individual  character  bit-maps  have to be accessed via a table,  as the JIS 
+coding system has many gaps in it. 
+
+The K16JIS*.FNT files are also included in the MOKE1.1  distribution  in  the 
+MK11K16.ZIP archive file, and also in the KG distribution.  Another source is 
+KD100.ARC, the KD distribution file, in which you can find the code to access 
+the characters in these files.  
+
+With the MOKE 2.1 distribution, Mark Edwards released another font file: 
+    
+    KIJIS16.FNT  (all the JIS1 and JIS2 characters)
+
+This file has the same fonts,  but in strict JIS sequence,  and thus has gaps 
+but can be accessed more simply. 
+
+JDIC and JREADER will detect whichever set of files is present,  and can  use 
+either. 
+
+
+
+APPENDIX C: - AN OVERVIEW OF THE FOUR CORNER CODING SYSTEM
+
+The Four Corner System has been used for many years in China  and  Japan  for 
+classifying  kanji.  In  China  it  is  losing popularity in favour of PinYin 
+ordering.  Some Japanese dictionaries,  such as the  Morohashi  Daikanwajiten 
+have a Four Corner Index. 
+
+The following overview of the system has been condensed from the article "The 
+Four  Corner  System:  an  introduction  with  exercises"  by Urs App,  which 
+appeared in the Electronic Bodhidharma No 2, February 1992,  published by the 
+International Research Institute for Zen Buddhism, Hanazono College. 
+
+1. Stroke shapes are divided into ten classes:
+
+                0       LID               Ðµ
+                1       HORIZONTAL LINE   °ì
+                2       VERTICAL LINE     ¡Ã
+                3       DOT               Ð¦
+                4       CROSS             ½½
+                5       SKEWER            ¥­
+                6       BOX               ¸ý
+                7       ANGLE             ÒÌ
+                8       HACHI             È¬
+                9       CHIISAI           ¾®
+
+2. The Four Digits are derived from the Four Corners in a Z-shaped order. 
+
+                A    B                   7  1     7  7
+                         for example:     ¸¶       ·î
+                C    D                   2  9     2  2
+
+Some examples: »Å 2421  ¹Ô 2122  Îò 7121  µû 2733  »ì 0762  Æ± 7722  ¶¶ 4292
+
+3.  A shape is only used once.  If it fills several corners, it is counted as 
+zero in subsequent corners. 
+
+Some examples: ¸ý 6000  ¼ó 8060  Ê¬ 8022  Âç 2003  ÏÂ 2690  ÉÊ 6066  µþ 0096
+                                                          
+4.  When the upper or lower half of a character consists of only one  (single 
+or composite) shape,  it is,  regardless of its position,  counted as a  left 
+corner. The right corner is counted as zero. 
+
+Some examples: Î© 0010  Í³ 5060  Àã 1017  Êý 0022  Äí 0024  »å 2090  ¼ê 2050
+
+5.  When there is no additional element to the four sides of  the  characters 
+¸ý,  Ìç,  ò¨ (and sometimes ¹Ô), whatever is inside these characters is taken 
+for the lower two corners. 
+
+Some examples: Ìä 7760  ¼ü 6080  Ô¢ 6015  ÌÜ 6010  ³« 7744  ÌÌ 1060  îò 2110
+
+6.  The analysis is based on the block-style handwritten kaisho (Ü´½ñ)  shape 
+of characters. 
+
+(This needs attention, as ¸Í is 3027, not 1027.  The top stroke is treated as 
+a Ð¦.) 
+
+7. Some points to note when analysing shapes: 
+
+o Shape 0:  
+
+When the horizontal line below a DOT shape (number 3) is connected to another 
+stroke at its right-hand end (as in Õß ¸Í,  etc.) it is not counted as a  LID 
+(number 0) but as a DOT. 
+
+Examples: °Â 3040  ¿À 3520  µ§ 3222
+
+o Shape 6:
+
+Characters  such  as »® and Õù where one of the strokes of the square extends 
+beyond it,  are not considered to be square (number 6)  shapes,  but  corners 
+(number 7). 
+
+Examples: ³î 7710  ½ê 3222  »® 7710  ´Û 8377 µ¹ 3010
+
+o Shape 7:
+
+Only the cornered end of corner shapes (number 7) is counted as 7. 
+
+Examples: ¶è 7171  ¶Ô 7222 ¶ç 2762¡¡È¿ 7124
+
+o Shape 8:
+
+Strokes that cross other strokes are not counted as shape number 8 (È¬). 
+
+Examples: Èþ 8043  ´Ø 7743  Âç 4003  ¼º 8043  ¹Õ 2143  Àí 9043
+
+o Shape 9:
+
+Shapes resembling shape 9, but featuring two strokes in the middle (as in the 
+top part of ¶È or ÁÑ) or two strokes on one side (as in ¿å or the bottom part 
+of Êé) are not considered as 9 shapes. 
+
+Examples: Êé 4433  ¶È 3290  ÁÑ 3214
+
+8. Some points to note when choosing corners. 
+
+- when a corner is occupied by more than one independant or parallel strokes, 
+the one that extend furthest to the left or right is  taken  as  the  corner, 
+regardless of how high or low it is. 
+
+examples: Èó 1111  Ðë 2124  ¼À 0013  Äë 0022  ¼Ò 3421  ÌÔ 4721
+
+- if there is another shape above (or, at the bottom of the character, below) 
+the  leftmost  or  rightmost  stroke  of  a  character,  that  shape is given 
+preference and is taken as the corner. 
+
+examples: »¡ 3090  ¹¬ 4040  á¶ 6020  ½÷ 4040  ã¹ 3521  Â¶ 4480
+
+- when two composite stroke shapes are interwoven and each could be  regarded 
+as a corner,  the shape that is higher is taken as the upper corner,  and the 
+lower stroke as lower corner. 
+
+- when a stroke that slopes downwards to the left or right  is  supported  by 
+another stroke, the latter is taken as the corner. 
+
+examples: ±° 2740  Î¢ 0073  ¾Ë 1962  é° 4464  ·Ô 4410  Èï 3424
+
+- a left slanting stroke on the upper left is taken for the left corner only; 
+for the right corner one takes a stroke more to the right. 
+
+examples: ¿È 2740  Ì¶ 2350  ³û 6752  Åª 2762  ½Ü 2762  Åç 2772
+
+9. Shape variations: (Dr App includes several pages of examples) 
+
+10. The fifth corner:
+
+In  order to differentiate between the several characters with the same code, 
+an optional "fifth corner" is sometimes used. This is, loosely, a shape above 
+the fourth corner which has not been used in any other shape. 
+
+
+
+APPENDIX D: - AN OVERVIEW OF THE SKIP CODING SYSTEM
+
+The following summary of the SKIP codes was written by Mr Jeffrey Friedl. 
+
+(Mr.  Halpern) spends an unbelievable 226 pages explaining what I'll  explain 
+below... . 
+          
+Look at the character in question and decide if it can visually be divided 
+
+     1) into left and right sides
+     2) into upper and lower halves
+     3) into an enclosing structure and an internal structure
+     4) none of the above.
+
+
+For 1,  2 and 3,  count the strokes in the left/upper/enclosing part, and the 
+number left in the right/lower/internal part.  Write the three  numbers  (the 
+#1 - #3 from above plus the two stroke counts) separated by dashes and that's 
+the code. 
+
+Examples:
+
+ ²ó  3-3-3
+ ²¬  3-2-6
+ »ß  3-2-2 (strange - the last two strokes are the "enclosure").
+ »°  2-1-2
+ ¶Á  2-11-9
+ È¬  1-1-1
+ ³¹  1-3-9
+
+For #4 above, then choose the first true from
+
+     1) has a horizontal line at the top (as in ²¼)
+     2) has a horizontal line at the bottom (as in Ë´)
+     3) has a vertical line through (as in Ãæ)
+     4) none (for example ²Ð, À®, ¿Í, ½÷)
+
+Write the total stroke count between the #4 (from the  first  list)  and  the 
+number from the second (with intervening dashes). That's the code. 
+
+Example codes
+
+ ²Ð  4-4-4
+ À®  4-6-4
+ ¿Í  4-2-4
+ ½÷  4-3-4
+ Ãæ  4-4-3
+ Ë´  4-3-2
+ ²¼  4-3-1
+
+Some  codes  aren't  as  concise  as  would  be  nice...  some  have over 100 
+characters with the same code.  However,  it is generally  a  rather  concise 
+method. 
+
+´Á»ú

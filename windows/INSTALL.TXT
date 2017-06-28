@@ -1,0 +1,19 @@
+KanjiCard v1.6 Sample					6/9/1996
+
+  Kanjicard will run off a floppy disk, but works best when run from a
+  hard drive.  To install Kanjicard, make a directory, and copy the
+  uncompressed files into that directory.  i.e.,
+
+    mkdir c:\kanjicrd
+    copy kcards.exe c:\kanjicrd
+    copy kcards.hlp c:\kanjicrd
+    copy kana.rcb c:\kanjicrd
+    copy grades.rcb c:\kanjicrd
+
+  You can choose any name you like for the installation directory.
+
+  To add KanjiCard to the windows program manager, select the File Menu
+  under the program manager, and New.  Select to add a new Program Item,
+  and specify where KanjiCard was installed.
+
+						Enjoy!

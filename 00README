@@ -1,0 +1,83 @@
+Version 12/17/98
+
+First, let me thank you for either purchasing or considering the
+purchase of "CJKV Information Processing" (the sequel to
+"Understanding Japanese Information Processing," sometimes abbreviated
+as "UJIP").
+
+At the root level of this directory you should find several
+directories and a file called 00README (this document).
+
+The directory called "doc" contains versions of CJK.INF, the book's
+Table of Contents, and other things. The directory called "errata"
+contains the latest set of errata files, separated by printing
+(strings such as "1-2" in the file name stand for "first edition,
+second printing"). The final version of JAPAN.INF, which existed prior
+to the publication of "Understanding Japanese Information Processing,"
+can be found in the file that matches the following pattern:
+
+  japan.inf-032092
+
+JAPAN.INF has been discontinued, but is not dead. It has evolved into
+a new document entitled CJK.INF. Archived versions of CJK.INF will be
+marked in a similar way, denoting their date (for example, "032092"
+stands for "March 20, 1992"). The current version will be in the "doc"
+subdirectory, and will be named as follows, and will actually be a
+link to the latest version:
+
+  cjk.inf
+
+	The directories here include character lists, mapping information,
+and software -- all described or listed in "CJKV Information
+Processing." Specifically, they are:
+
+  Ch9  (Chapter 9 material)
+  AppN (Appendix N material)
+  AppQ (Appendix Q material)
+
+	Files that contain Japanese characters are available in three
+formats: JIS, Shift-JIS, and EUC encodings. The possible file extensions
+for text files are as follows:
+
+  .txt   = ASCII text (no Japanese)
+  .jis   = JIS encoding
+  .sjs   = Shift-JIS encoding
+  .euc   = EUC encoding
+
+Choose whichever suits your Japanese environment.
+	There are also other directories. They are listed below with some
+commentary:
+
+  adobe   (Adobe Systems' materials, such as Tech Notes)
+  amiga   (Amiga programs)
+  dic     (Online dictionaries -- the drivers are in the directories for each
+           platform)
+  doc     (Documents of interest, such as CJK.INF and files that relate
+           to the book)
+  dos     (MS-DOS programs)
+  errata  (The current errata sheets for the book, with separate files for
+           each printing)
+  faq     (Frequently Asked Question files on various Japanese topics)
+  mac     (Macintosh programs -- the files in this directory are binhexed
+           self-extracting archives)
+  map     (Character set mapping tables and databases -- also look under
+           the "dic" and "unicode" directories)
+  os2     (OS/2 programs)
+  perl    (Perl scripts -- requires that you have "perl" installed)
+  review  (Reviews of books, software, and hardware)
+  rfc     (Useful RFCs)
+  src     (Source code for programs, such as jconv.c, jchar.c, and jcode.c --
+           the files in this directory are just plain text)
+  unicode (Material related to Unicode and ISO 10646-1:1993 -- mostly
+           consisting of mapping tables)
+  unix    (Unix programs)
+  vms     (VMS Vax programs)
+  windows (Windows programs)
+
+	I hope that you enjoy using this material (and also that you
+enjoy reading my book!).
+
+
+-- Ken Lunde
+   Author, "CJKV Information Processing"
+   lunde@adobe.com or lunde@oreilly.com

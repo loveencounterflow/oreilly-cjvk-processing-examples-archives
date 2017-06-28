@@ -1,0 +1,142 @@
+#!/usr/local/bin/perl
+;######################################################################
+;#
+;# pkf: Perl Kanji Filter
+;#
+;# Copyright (c) 1995-1996 Kazumasa Utashiro <utashiro@iij.ad.jp>
+;# Internet Initiative Japan Inc.
+;# Sanbancho Annex Bldg. 1-4, Sanban-cho, Chiyoda-ku, Tokyo 102, Japan
+;#
+;# Copyright (c) 1991,1992 Software Research Associates, Inc.
+;#	by srekcah@sra.co.jp, Febuary 1992
+;#
+;# Redistribution for any purpose, without significant modification,
+;# is granted as long as all copyright notices are retained.  THIS
+;# SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+;# IMPLIED WARRANTIES ARE DISCLAIMED.
+;#
+;; $rcsid = q$Id: pkf,v 2.0 1996/10/02 16:08:28 utashiro Rel $;
+;; $pkf = ('pkf', split('/', $0));
+;;
+;; Usage:				($usage = <<";#-") =~ s/(^|\n);#/\1/g;
+;#	$pkf [option] [-[icode]ocode[in,out]] files
+;#
+;#	icode/ocode is one of [jse] (j=JIS, s=SJIS, e=EUC)
+;#	ocode `j' can be followed by JIS in/out character
+;#
+;#	-b	buffered output (default)
+;#	-u	unbuffered output
+;#	-m	dynamic input code recognition
+;#	-c	print code name
+;#	-v	print escape sequences used in JIS when used along with -c
+;#	-n	no code conversion (use original code)
+;#	-Z	convert 1-byte (hankaku) kana to 2-byte (zenkaku) kana
+;#	-H	convert 2-byte (zenkaku) kana to 1-byte (hankaku) kana
+;#
+;#	-f [unix, mac, dos]
+;#		convert eol string to \\n, \\r, \\r\\n respectively.
+;#		currently this option can't be used with other options.
+;#
+;#$rcsid
+;#-
+;# Input Kanji code is recognized automatically if not supplied. 
+;# Usually this is done only once, but it will be done on each input
+;# line when dynamic recognition is specified.
+;#
+;# Output Kanji code is JIS by default.
+;#
+;# Output JIS code can be followed by kanji in and out characters.
+;# Default is "BB" which means kanji sequence start with ESC-$-B and
+;# end with ESC-(-B
+;#
+;# Example:
+;#	pkf file	convert to JIS code
+;#	pkf -j@J file	convert to JIS code ("ESC-$-@", "ESC-(-J")
+;#	pkf -es file	convert EUC to SJIS
+;#	pkf -me file	convert mixed code file to EUC
+;#	pkf -mc file	convert to JIS and print orginal code on each line
+;#
+require 'jcode.pl';
+
+$ocode = 'jis';
+%codename  = ('j', 'jis', 's', 'sjis', 'e', 'euc', 'n', 'noconv');
+%eol = (
+    'unix', "\n", 'mac', "\r", 'dos',  "\r\n",
+    'nl',   "\n", 'cr',  "\r", 'crnl', "\r\n",
+);
+
+;#
+;# Option handling
+;#
+while (($_ = @ARGV[$[]) =~ s/^-(.+)/\1/ && shift) {
+    next if $_ eq '';
+    s/^[budmcvZH]// && ++$opt{$&} && redo;
+    if (s/^f(.*)//) {
+	($eol = $1 || shift) =~ tr/A-Z/a-z/;
+	unless (defined($eol) && defined($eol{$eol})) {
+	    die("Usage:\n$usage");
+	}
+	next;
+    }
+    if (/^([jsen]+)/) {
+	($ocode, $icode) = @codename{split(//, reverse($1))};
+	&jcode'jis_inout(split(//, $')) if $';
+	next;
+    }
+    print "Usage:\n", $usage;
+    exit(0);
+}
+$| = $opt{'u'} && !$opt{'b'};
+($debug, $dynamic, $showcode, $showseq) = @opt{'d', 'm', 'c', 'v'};
+$convopt = $opt{'Z'} ? 'z' : $opt{'H'} ? 'h' : undef;
+
+if ($showcode && !$dynamic) {
+    @ARGV = ('-') unless @ARGV;
+    while (defined($file = shift)) {
+	if ($file ne '-') {
+	    print "$file: " if @ARGV .. undef;
+	    if (-d $file) { print "directory\n";         next; }
+	    unless (-f _) { print "not a normal file\n"; next; }
+	    unless (-s _) { print "empty\n";             next; }
+	}
+	open(F, $file) || do { warn "$file: $!\n"; next; };
+	while (<F>) {
+	    next unless $icode = &jcode'getcode(*_) || (eof && "ascii"); #'
+	    print $icode;
+	    if ($showseq && $icode eq 'jis') {
+		local($jin, $jout) = &jcode'get_inout($_); #'
+		$jin =~ s/\e/ESC/g;
+		$jout =~ s/\e/ESC/g;
+		print ' [', $jin, ', ', $jout, ']';
+	    }
+	    print "\n";
+	    last;
+	};
+	close(F);
+    }
+    exit 0;
+}
+	
+if ($eol) {
+    eval "s/[\r\n]+/$eol{$eol}/g, print while <>";
+    exit;
+}
+
+while (<>) {
+    if ($dynamic) {
+	$c = &jcode'convert(*_, $ocode, $icode, $convopt);
+	print($showcode ? "$c\t" : '', $_);
+	next;
+    }
+    $showcode || print, next if !@readahead && !/[\033\200-\377]/;
+    push(@readahead, $_) unless $showcode;
+    next unless $icode || ($icode = &jcode'getcode(*_));
+    $ocode = $icode if $ocode eq 'noconv';
+    *convf = $jcode'convf{$icode, $ocode};
+    printf STDERR "in=$icode, out=$ocode, f=$convf\n" if $debug;
+    do convf(*_, $convopt), print while $_ = shift(@readahead);
+    do convf(*_, $convopt), print while <>;
+    last;
+}
+print @readahead;
+exit $!;

@@ -1,0 +1,11 @@
+	The files in this subdirectory were copied from the following
+FTP sites:
+
+unicode.org (192.195.185.2)
+metis.com (140.186.33.400)
+
+I will try to keep these versions as up-to-date as possible by
+periodically checking the above listed FTP sites.
+	The files relate to Unicode and ISO 10646-1:1993, in
+particular to the handling of Chinese characters that are contained
+within those standards.

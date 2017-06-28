@@ -1,0 +1,64 @@
+BKUNDJIP.RVW  940916
+
+"Understanding Japanese Information Processing", Lunde, 1993, 1-56592-043-0
+lunde@adobe.com
+%A   Ken Lunde
+%C   103 Morris Street, Suite A, Sebastopol, CA   95472
+%D   1993
+%G   1-56592-043-0
+%I   O'Reilly & Associates, Inc.
+%O   800-998-9938, nuts@ora.com, brian@ora.com, mary@ora.com
+%P   435
+%T   "Understanding Japanese Information Processing"
+
+Ken:
+
+Thanks for the book, and my abject apologies for taking so long to get around
+to it.  In my defence, all I can say is that several large piles of books
+arrived immediately afterwards, and it got buried.  (This excuse, of course, is
+completely negated by the fact that I *could* have pulled it out from under,
+but didn't bother.)
+
+With a title like that, of course, it's partly your own fault.  Everyone is a
+little intimidated by Japanese technology these days.  I figure that since I'm
+not a linguist, not into Asian studies, and not about to try to develop
+software for sale in Japan, then I didn't need to crack my skull over an
+obviously high-powered technical subject, revealing myself as a fraud by
+completely missing the point of whatever you were trying to get across.
+
+Well, I was wrong.  And you were right.  (To write the book.)  After reading
+the first few pages, I was rivetted.  Your description of the problems of
+Japanese (written) representation is fascinating.  The outlines of the
+necessary data structures, input methods and output are absolutely clear.  And
+your lists of tools, resources, vendors and contacts would save anyone entering
+the field months of time in getting up to speed.
+
+A couple of notes:  sometimes you bring up points without having introduced
+them first.  For example, in the discussion of Unicode, you mention Kanji being
+ordered by radical and stroke count.  Radicals, and the component strokes, have
+been described, but the ordering hasn't.  Also, I think you sometimes go
+overboard in showing how difficult written Japanese can be.  In discussing the
+different pronunciation of the same characters, and the different characters
+with the same pronunciation, you could draw an analogy to the English, "I read
+that book yesterday," and "I will read that book tomorrow;" and, "I read that
+book," versus "That book is red."
+
+Overall, however, you write far too well, you wretch.  Don't you know that it's
+against the rules for a technically competent person to generate lucid text? 
+Better watch it, or we'll have to take away your nerd licence, and start the
+rumour that you are an (ugh!) author!
+
+Got to get the word out somehow that this is *not* just a special interest
+textbook.  You've got a really interesting work here, with a lot of concepts
+dealing not only with Japanese and not only with multi-lingual applications,
+but with data representation, communication and interpretation, as well.
+
+Yours,
+Rob
+
+copyright Robert M. Slade, 1994   BKUNDJIP.RVW  940916
+ 
+======================
+DECUS Canada Communications, Desktop, Education and Security group newsletters
+Editor and/or reviewer ROBERTS@decus.ca, RSlade@sfu.ca, Rob Slade at 1:153/733
+Author "Robert Slade's Guide to Computer Viruses" (contact: 1-800-SPRINGER)

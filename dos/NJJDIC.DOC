@@ -1,0 +1,42 @@
+
+NJJDIC - Convert a Japanese EUC input table to DIC file for NJSTAR.
+
+Usage: NJJDIC inputfilename outputfilename
+
+Example: NJJDIC 4corner4.euc njinputc.dic
+
+The output file name should be NJINPUTx.DIC (where x=A-Z)
+
+In NJSTAR <Exinput> command, Pressing 'x' will let NJSTAR load NJINPUTx.dic
+
+NOTE: if you create a useful Input dictionary for NJSTAR. Please make it
+      availabe to the public for the common interest of Japanese community.
+
+In the EUC input file NJINPUTx.EUC, you should have a line like bellow.
+
+******************************************************************************
+* line start with * are comment line
+*
+* +------------------- Input method name in ASCII or EUC (max 8 bytes)
+* |     +------------- N - Number key (0-9), A - Alpha key (a-z)
+* |     |              X - Alpha and numerical key(0-9 :;<=>?@[\] a-z)
+* |     | +----------- Max key length
+* |     | | +--------- M - Multiple selection or U - Unique key (1 CC per key)
+* |     | | |  +------ Range of Key Character ( 0-9 for Num Key; a-z for Alpha
+* |     | | |  |                    key; 0-z for Alpha Numerical key [0-9a-z])
+* |     | | |  |  +--- Learning key (not implemented yet)
+* |     | | |  |  | +- Input method name in ASCII of max 8 chars
+* |     | | |  |  | |          +-- anything after here
+* |     | | |  |  | |          |
+* V     V V V  V  V V          V
+4Corner N 4 M 0-9 0 FourCorn   **********
+1010 °¡
+6101 °¢
+4441 °£
+7122 °¤
+0073 °¥
+2024 °¦
+5303 °§
+....
+....
+

@@ -1,0 +1,189 @@
+List of Tables for "Understanding Japanese Information Processing"
+by Ken Lunde
+
+1: Overview of Japanese Information Processing
+1-1   Sample Katakana
+1-2   Sample Hiragana
+1-3   Sample Kanji and Kanji Compounds
+1-4   Sample Japanese Characters
+1-5   Single Kanji Input
+1-6   Kanji Compound Input
+1-7   Sample Japanese Typefaces
+1-8   Half- Versus Full-width Characters
+1-9   Half- and Full-width Character Representations
+1-10  Decimal 100 in Various Notations
+1-11  Octets and 16-bit Units in Various Notations
+2: The Japanese Writing System
+2-1   Roman Characters
+2-2   The Hiragana Syllabary
+2-3   The Katakana Syllabary
+2-4   The Kanji Used to Derive Katakana and Hiragana
+2-5   Katakana and Kanji With Similar Shapes
+2-6   Kanji and Their Pronunciations
+2-7   Kanji and Kanji Compounds
+2-8   Irregular Uses of Kanji Pronunciations
+2-9   Radicals and Kanji Made From Them
+2-10  Pictographic Kanji
+2-11  Ideographic Kanji
+2-12  Logical Compounds
+2-13  Phonetic Compounds With a Common Pronunciation Component
+2-14  Phonetic Compounds With a Common Meaning Component
+2-15  Kanji Compounds
+2-16  The Number of Chinese Characters During Different Periods in China
+2-17  Simplified and Traditional Kanji Forms
+2-18  Kanji Variants in the Same Character Set
+2-19  Examples of Kokuji
+3: Japanese Character Set Standards
+3-1   Evolving Kanji Counts for Various Non-electronic Character
+      Set Standards
+3-2   The Names and Meanings of Japanese Non-electronic Character
+      Set Standards
+3-3   The Development of Gakushu Kanji
+3-4   Japanese National Character Set Standards
+3-5   The ASCII Character Set
+3-6   The Nine Parts of ISO 8859
+3-7   The Extended ASCII Character Set -- ISO 8859 Part 1 -- Examples
+3-8   The JIS-Roman Character Set
+3-9   The Half-width Katakana Character Set
+3-10  Nigori Versus Maru and Full- Versus Half-width
+3-11  The JIS X 0208-1990 Character Set
+3-12  The JIS C 6226-1978 Character Set
+3-13  The JIS X 0208-1983 Character Set
+3-14  The JIS X 0212-1990 Character Set
+3-15  Proposed Change to the JIS X 0212-1990 Character Set
+3-16  Asian Character Set Standards
+3-17  The KS C 5601-1992 Character Set
+3-18  The GB 2312-80 Character Set
+3-19  The Big Five Character Set
+3-20  International Character Set Standards
+3-21  The Unicode and ISO 10646 Character Set
+3-22  Character Sets Included in Unicode Kanji Set
+3-23  Example of Ununified Kanji
+3-24  Example of a Unified Kanji
+3-25  Six Kanji From JIS X 0208-1990 That Are Not Unified
+3-26  The XCCS Character Set
+4: Japanese Encoding Methods
+4-1   Japanese National Character Set Standards and Their Encoding Methods
+4-2   ASCII and JIS-Roman Encoding Specifications
+4-3   EBCDIC Encoding Specifications
+4-4   EBCDIK Encoding Specifications
+4-5   Half-width Katakana Encoding Specifications
+4-6   EUC Half-width Katakana Encoding Specifications
+4-7   KUTEN Encoding Specifications
+4-8   JIS Encoding Specifications
+4-9   Shift-JIS Encoding Specifications
+4-10  Shift-JIS User-defined Character Encoding Specifications
+4-11  EUC Reserved Code Ranges and Positions
+4-12  EUC Graphic Character Encoding Ranges
+4-13  EUC SS2 and SS3 Characters
+4-14  EUC Multiple-width Representations
+4-15  EUC 16-bit Fixed-width Representations
+4-16  Japanese EUC
+4-17  EUC Packed Format Encoding Specifications
+4-18  EUC Complete Two-byte Format Encoding Specifications
+4-19  Asian Character Set Standards and Their Encoding Methods
+4-20  KS C 5601-1992 Seven-bit Encoding Specifications
+4-21  KS C 5601-1992 Eight-bit Encoding Specifications
+4-22  GB 2312-80 Seven-bit Encoding Specifications
+4-23  GB 2312-80 Eight-bit Encoding Specifications
+4-24  Big Five Encoding Specifications
+4-25  Kanji Encoded in Different Asian Character Sets
+4-26  International Character Set Standards and Their Encoding Methods
+4-27  Unicode and ISO 10646 Encoding Specifications
+4-28  Unicode Zones
+4-29  XCCS Encoding Specifications
+4-30  Modified XCCS Encoding Specifications
+5: Japanese Input
+5-1   Keystrokes for Common Japanese Input Tasks
+5-2   Keystrokes to Produce Kana Characters
+5-3   Keystrokes to Produce Special Kana Characters
+5-4   Input by Pronunciation (Single Kanji)
+5-5   Input by Pronunciation (Kanji Compound)
+5-6   Input by Pronunciation (Phrase)
+5-7   Input by Pronunciation for Non-kanji Characters
+5-8   Input by Radical
+5-9   Radicals With Their Names and Numbers
+5-10  Input by Stroke Count
+5-11  Input by Encoded Value
+5-12  Input by Postal Code
+5-13  The Effect of the Thumb-shift Keys
+5-14  The M-style Keyboard Array's Consonant Keys
+5-15  The M-style Keyboard Array's Consonant Keys
+5-16  Comparisons Between M-style, Roman, and Kana Input
+6: Japanese Output
+6-1   BDF Keyword Descriptions
+6-2   The 16 Unique Binary Patterns From BDF Data
+6-3   Binary and Pixel Patterns for BDF Data
+6-4   The Six PostScript Font Formats
+6-5   PostScript Japanese Font Name Conventions
+6-6   Sample PostScript Japanese Typefaces
+6-7   Sample Japanese Characters That Require Special Vertical Handling
+6-8   Characters Prohibited From Beginning Lines
+6-9   Characters Prohibited From Terminating Lines
+6-10  Examples of Japanese Justification
+6-11  Japanese Characters Annotated With Ruby Characters
+6-12  Japanese Characters Annotated With Pseudo Ruby Characters
+6-13  Japanese Publishing System Hardware and Software Recommendations
+6-14  Multiple Master Design Axes and Number of Corresponding
+      Master Outlines
+6-15  Sample Character for a Two-axis Multiple Master Font
+6-16  Sample Kanji for a One-axis Multiple Master Font With Interpolation
+6-17  Character IDs and Their Graphic Representations
+6-18  Encoded Values Versus Character IDs
+7: Japanese Information Processing Techniques
+7-1   Algorithmic Versus Hard-coded Conversion
+7-2   JIS to Shift-JIS Conversion Example
+7-3   Shift-JIS to JIS Conversion Example
+7-4   Code Conversion Matrix
+8: Japanese Text Processing Tools
+8-1   Explanations of KANJIDIC Fields
+9: Using Japanese E-mail and News
+9-1   Example Usages of Relays
+9-2   Example JP Sites and Addresses
+9-3   Example Japanese Bitnet Sites and Addresses
+H: Japanese Corporate Character Set Standards
+H-1   Japanese Corporate Character Set Standards
+H-2   The JEF Character Set
+H-3   The JEF Extended Character Set
+H-4   The Three Extra Hiragana in FMR Kanji
+H-5   The IBM DBCS-Host Character Set
+H-6   The IBM DBCS-PC and IBM DBCS-EUC Character Set
+H-7   Mappings for Two IBM DBCS-PC Characters
+H-8   The DEC Extended Character Set
+H-9   The NTT Kanji Character Set
+H-10  The Differences Between JIS X 0208-1990 and NEC Kanji
+H-11  Special Characters From NEC Kanji
+H-12  The NEC Kanji Extended Character Set
+H-13  The Differences Between JIS X 0208-1983 and IKIS
+H-14  The Differences Between JIS X 0208-1983 and Apple83
+H-15  The Differences Between JIS X 0208-1990 and Apple90
+H-16  Vertically-set Character Positions in Apple83 and Apple90
+H-17  The KEIS Character Sets
+I: Japanese Corporate Encoding Methods
+I-1   Corporate Character Set Standards and Their Encoding Methods
+I-2   JEF Encoding Specifications
+I-3   IBM DBCS-PC Encoding Specifications
+I-4   IBM Select Kanji and Non-kanji Mappings
+I-5   IBM DBCS-EUC User-defined Character Encoding Positions
+I-6   IBM DBCS-Host Encoding Specifications
+I-7   DEC Kanji Encoding Specifications
+I-8   NTT Kanji Encoding Specifications
+I-9   NEC Kanji Encoding Specifications
+I-10  IKIS Encoding Specifications
+I-11  HP-15 Encoding Specifications
+I-12  HP-16 Encoding Specifications
+I-13  Apple Kanji Encoding Specifications
+I-14  KEIS Encoding Space
+I-15  KEIS Encoding Specifications
+J: Character Lists and Mapping Tables
+J-1   Glyph Change Examples Between JIS X 0208-1983 and
+      JIS X 0208-1990
+J-2   The 28 Kanji From JIS C 6226-1978 in JIS X 0212-1990
+J-3   The 95 Kanji Added to Toyo Kanji to Become Joyo Kanji
+J-4   IBM Select Characters Mapping Table (to JIS X 0208-1990
+      Positions)
+J-5   IBM Select Characters Mapping Table (to JIS X 0212-1990
+      Positions)
+J-6   IBM Select Characters Mapping Table (to JIS X 0212-1990
+      User-defined Positions)
+J-7   Mapping Table (to JIS X 0212-1990 User-defined Positions)

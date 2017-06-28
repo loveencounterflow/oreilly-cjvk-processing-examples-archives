@@ -1,0 +1,177 @@
+
+JList
+Version 0.1
+Released October 1994
+Copyright (C) 1994 by Martin Thierer
+
+Topics
+======
+
+1. Introduction
+2. System Requirements
+3. License
+4. Files
+5. Documentation
+6. Installation
+7. De-Installation
+8. Contacting the Author
+9. History
+
+1. Introduction
+===============
+
+JList is  a program  which is  able to  display text files  which have
+japanese characters  (Kana and Kanji) in them.    It is distributed as
+Freeware - see the License below for details.
+
+Please note that this is the first  release of JList. It doesn't offer
+many  functions right now -  all you can do  is to  display the files.
+For this purpose it is however already suited quite well.
+
+Some of the features are:
+
+o Support for files in ASCII, Old-JIS, New-JIS, NEC-JIS, Shift-JIS and
+  EUC
+o Kanji fonts in multiple sizes are supported
+o Any OS/2 outline font can be used for the non-japanese characters
+o Multi-threaded
+o Partial WPS support (file types)
+
+2. System Requirements
+======================
+
+o JList runs under  OS/2 2.x with  Presentation Manager.  It  has only
+  been tested with Version 2.11 but should work with 2.0 and above.
+
+o A  screen  resolution of 800x600  or  more  is  advisable, as at the
+  standard VGA resolution the characters are quite big.
+
+o You must have the 'emx Runtime Package' installed. If you don't have
+  it already, you can get it by anonymous FTP for example from:
+
+  ftp.uni-stuttgart.de (129.69.8.13)
+    /pub/systems/os2/emx-0.8h/emxrt.zip
+
+  ftp.cdrom.com (192.216.191.11)
+    /os2/2_x/unix/emx08h/emxrt.zip
+
+3. License
+==========
+ 
+JList is Copyright (C) 1994 by Martin Thierer. All rights reserved.
+
+JList is Freeware.  If you want to use  it, you have  to agree  to the
+following conditions:
+
+   o You may use JList free of charge. 
+
+   o You may copy  and  distribute  JList   as long  as all   files
+     included  in the original archive  are  distributed and all of
+     these files are unmodified.
+
+   o JList is  provided 'as is'.   There  is NO WARRANTY.   You use
+     JList completly at your   own  risk. The copyright  holder  of
+     JList won't be liable for any damage and/or loss caused by any
+     function or malfunction of JList.
+
+4. Files
+========
+
+The JList package consists of the following files:
+
+jlist.exe	executable
+jlist.hlp	online help
+k16x16.f00	kanji font
+install.cmd	install script
+de-inst.cmd	de-install script
+read.me		this file
+
+5. Documentation
+================
+
+The documentation for JList is in the online help.
+
+6. Installation
+===============
+
+It is assumed  that you have already  unpacked  the JList distribution
+archive into any directory (otherwise you  probably wouldn't read this
+text).
+
+If you want to keep  all the files  in  this directory, you can  start
+directly with   step d  in  the  list   below.  However,  you  perhaps
+nevertheless   have  to add   this directory   to   the HELP and  PATH
+specifications in your CONFIG.SYS file.
+
+   WARNING: Please note that the  install script for JList SEARCHES
+   for the files it installes. So you really have to MOVE the files
+   from the  temporary directory where   you unpacked  them to  the
+   target directory,  as otherwise it  could happen that  the wrong
+   files are installed.
+
+a. Move JLIST.EXE to a directory of your choice
+
+   If you plan to start the program only from the Workplace Shell, the
+   directory needs not to be in your PATH.
+
+b. Move JLIST.HLP to a directory in your HELP path
+
+c. Move the Kanji Font K16X16.F00 to a directory of your choice
+
+   The font is the same  as the one that comes  with the free Japanese
+   Word Processor JWP,   written by Stephen  Chung. If  you  have this
+   package already installed, you can just  delete the file that comes
+   with JList and use the one from JWP. Or,  better yet, copy the file
+   over the one in the  directory where JWP  is installed, as then the
+   file type 'Kanji Font' is preserved.
+
+d. If you haven't already done so, install the 'emx Runtime Package'
+
+e. Execute the Install-Script INSTALL.CMD 
+      
+   This script performs the following tasks:
+
+   1. Creates a program object for JList on the desktop.
+   2. Adds 'Kanji  File' and 'Kanji  Font' to the file types  known by
+      the system.
+   3. Adds an association of the file type 'Kanji File' to JList. This
+      also creates a  Template for this  file type  in the 'Templates'
+      folder.
+   4. Sets the ASCII font for JList to 'Courier'.
+   5. Searches the file 'k16x16.f00' and sets it as the Kanji font for
+      JList.
+
+   The script tells you which  files it uses.   You should check  that
+   these are the files you wanted!
+
+If the installation completed  with no errors,  you should now be able
+to start JList with the program object created on the desktop.
+
+7. De-Installation
+==================
+
+The script DE-INST.CMD that comes with JList can be used to 'clean up'
+a bit, if you don't want to keep JList.  It deletes the program object
+and the entries in the USER_INI file created by INSTALL.CMD and JList.
+
+It does however NOT delete the files (jlist.exe, jlist.hlp, ...).  You
+have to do this 'by hand'. It also neither  removes the new file types
+'Kanji File' and 'Kanji Font' nor the Template for 'Kanji File'.
+
+If the reason why you don't want to use JList  is that you didn't like
+it, i would grateful  if you could  send me  an email explaining  your
+complaints.
+
+8. Contacting the Author
+========================
+
+I can be reached on Internet:
+
+   zc0a1121@rpool1.rus.uni-stuttgart.de
+
+9. History
+==========
+
+Version
+
+0.1 (Oct 94)	Initial release

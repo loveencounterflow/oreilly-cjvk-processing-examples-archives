@@ -1,0 +1,191 @@
+¦Ü¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Ý
+¡Ã£Ô£ù£ð£é£î£ç¡¡¤Ò¤é¤¬¤Ê¡¡£á£î£ä¡¡¥«¥¿¥«¥Ê¡¡¡¡¡¡¡¡¡¡¡¡                J2.TUT¡Ã
+¦ß¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¡½¦Þ
+\NumberStyle="NJJ 3.0: JW-Tutorial 2, page %d"
+
+In this lesson, you are going to learn how to input Japanese characters.
+
+        >> First of all, RENAME this file and SAVE it as "MY2.TUT".
+
+If you are working on the Network, this should save the file to the disk on the server in your working directory. If this instruction isn't clear, you should go back to Tutorial 1.
+
+¡ü Kana-Kanji input (on-line input)
+
+In this version of NJStar, you can use Kana-Kanji mode, on-line input method. It has the big advantage over the other mode that you can type Japanese characters directly into the document. Let's try.
+
+        >>¡ÚInput, Kana-Kanji¡Û                                 ¢¨ <Alt F3> 
+
+Now you are in Kana-Kanji mode, which is a case sensitive mode. Try these:
+
+        >> Type "watashi" at the end of this line: -->> 
+        >> Type "WATASHI" at the end of this line: -->> 
+        >> Type "Watashi" at the end of this line: -->> 
+        >> for the last one, press <SPACE> or hit <1>.
+
+These show the ways to distinguish between "hiragana", "katakana" and "Kanji".
+
+Kana-Kanji mode is the default input method and will be focused in the Tutorial. You can skip the sections explaining Romaji input method below, as it is kept as a backward compatible method.
+
+        >> Hit <PageDown> to skip
+
+¡ü Romaji input (old input method)
+¡Â
+¡Â In the previous version of NJStar, Japanese characters are typed with ROMAJI
+¡Â input method only. This mode requires the selection of characters before  
+¡Â actually typing the character into the document. Let's try a bit.
+¡Â
+¡Â      >> Menu,¡ÚInput, Romaji¡Û                               ¢¨ <Alt F5>
+¡Â Now NJStar is in Romaji mode. Let's type something
+¡Â
+¡Â      >> Bring the cursor at the end of line <END>: --->> 
+¡Â      >> Type aiueo                   (hiragana is displayed)
+¡Â      >> Press <SPACE>                (paste it to the document)
+¡Â
+¡Â If you get AIUEO instead, you have [Caps Lock] on. 
+¡Â Turn it off and try again.
+¡Â In this mode, whatever you type will be checked by NJStar against its
+¡Â dictionary to see whether the typed characters form a valid Japanese sound.
+¡Â For example, typing "watashi" is accepted, but "www" is not. At all times
+¡Â NJStar gives you all the possible options of writing the word(s) / sentence
+¡Â you have typed in the bottom row of the screen.
+¡Â 
+¡Â In most cases, you will have ¤Ò¤é¤¬¤Ê as the first option, which you can
+¡Â select by pressing either <1> or <SPACE>. It is normally recommended that
+¡Â you place Japanese characters from the input buffer word by word and not
+¡Â character by character.
+
+
+¢£¢£¢£¢£¢£¢£¢£ £Ô£Ù£Ð£É£Î£Ç¡È£È£É£Ò£Á£Ç£Á£Î£Á¡É  ¤Ò¤é¤¬¤ÊÆþÎÏ ¢£¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+Now it is time for you to do some practice. Check your input mode if you
+have selected¡Î¤«¤Ê´Á¡Ï.
+
+VOWELS ONLY:
+~~~~~~~~~~~~
+Please type exactly as: ¤¢ ¤¤ ¤¦ ¤¨ ¤ª  ¤¢¤¢¤¤¤¤¤¦¤¦¤¨¤¨¤ª¤ª ¤¢¤¨¤ª¤¤¤¦
+------here you type >>: 
+         (romaji info): a  i  u  e  o 
+
+CONSONANT + VOWELS: (when you get stuck, see Help, p.2 - <F1>)
+~~~~~~~~~~~~~~~~~~~
+Follow me: ¤«¤­¤¯¤±¤³ ¤µ¤·¤¹¤»¤½ ¤¿¤Á¤Ä¤Æ¤È ¤Ê¤Ë¤Ì¤Í¤Î ¤Ï¤Ò¤Õ¤Ø¤Û ¤Þ¤ß¤à¤á¤â
+------->>:
+ (romaji): ka         sa         ta         na         ha         ma
+
+Follow me: ¤ä¤æ¤è ¤é¤ê¤ë¤ì¤í ¤ï¤ò¤ó ¤¬¤®¤°¤²¤´ ¤¶¤¸¤º¤¼¤¾ ¤À¤Â¤Å¤Ç¤É 
+------->>: 
+ (romaji): ya     ra         wa     ga         za         da
+
+                                        ¡ú NOTE: ji ¤¸   dji ¤Â
+
+Follow me: ¤Ð¤Ó¤Ö¤Ù¤Ü ¤Ñ¤Ô¤×¤Ú¤Ý ¤­¤ã¤­¤å¤­¤ç ¤·¤ã¤·¤å¤·¤ç ¤Á¤ã¤Á¤å¤Á¤ç
+------->>: 
+ (romaji): ba         pa         kya           sya         cha
+
+Follow me: ¤Ë¤ã¤Ë¤å¤Ë¤ç ¤Ò¤ã¤Ò¤å¤Ò¤ç ¤ß¤ã¤ß¤å¤ß¤ç ¤ê¤ã¤ê¤å¤ê¤ç ¤Ô¤ã¤Ô¤å¤Ô¤ç
+------->>: 
+           nya          hya          mya           rya         pya
+
+Follow me: ¤®¤ã¤®¤å¤®¤ç ¤¸¤ã¤¸¤å¤¸¤ç ¤Ó¤ã¤Ó¤å¤Ó¤ç
+------->>: 
+           gya          ja           bya
+
+Please check carefully to see if you have typed and spaced out characters properly.
+
+
+¢£¢£¢£¢£¢£¢£¢£ £×£Ò£É£Ô£É£Î£Ç¡¡£Á¡¡£Ó£Å£Î£Ô£Å£Î£Ã£Å  Ê¸¤ò½ñ¤¯ ¢£¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+In Japanese word-processing, we have the following conventions:
+
+ 1. Particles ¤Ï¡¢¤ò and ¤Ø are typed as "ha", "wo" and "he" respectively;
+
+ 2. Small ¤Ã will appear when consonant is doubled (other method available. 
+    See Help, p.2 <F1> for further information).
+
+ 3. To type a vowel after ¤ó, you must place a ' after "n". For example, to
+    type ¸¢°Ò ¡Ê¤±¤ó¤¤¡Ë "authority", you need to type "ken'i". Otherwise, 
+    you will get ¤±¤Ë "keni".
+
+ 4. To type small kana, such as ¤¡¡¢¤ã, you type "x" before the sound.
+
+EXERCISES
+~~~~~~~~~
+Follow me: ¤ï¤¿¤·¤Ï¡¢¤¤¤Þ ¤³¤ó¤Ô¤å¤¦¤¿¤¢¤ò ¤Ù¤ó¤­¤ç¤¦¤·¤Æ¤¤¤Þ¤¹¡£
+------->>: 
+
+Follow me: ¤³¤Î ¤ï¤¢¤×¤í ¤Ï¡¢¤È¤Æ¤â ¤ª¤â¤·¤í¤¤¤Ç¤¹¡£
+------->>: 
+
+Follow me: ¤»¤ó¤»¤¤¡¢¤É¤¦¤â ¤¢¤ê¤¬¤È¤¦¡£
+------->>: 
+
+Follow me: ¤ï¤¿¤·¤Ï¡¢¤ê¤¤¤º¤À¤¤¤¬¤¯¤Î¤¬¤¯¤»¤¤¤Ç¤¹¡£
+------->>:
+
+Follow me: ¤¤¤®¤ê¤¹¤Ë ¤¿¤«¤¤¤ä¤Þ¤Ï ¤¢¤ê¤Þ¤»¤ó¡£
+------->>:
+
+Follow me: ¤­¤Î¤¦ ¤ï¤¿¤·¤Ï ¤À¤¤¤¬¤¯¤Ø¤­¤Þ¤·¤¿¤¬¡¢¤Ù¤ó¤­¤ç¤¦¤·¤Þ¤»¤ó¤Ç¤·¤¿¡£
+-------->:
+
+Follow me: ¤³¤Î¤·¤ã¤Ä¤Ï¤Á¤¤¤µ¤¤¤Ç¤¹¤Í¡£ ¤â¤Ã¤È¤ª¤ª¤­¤¤¤Î¤Ï¤¢¤ê¤Þ¤»¤ó¤«¡£
+-------->:
+
+¢£¢£¢£¢£¢£¢£¢£ £Ô£Ù£Ð£É£Î£Ç¡È£Ë£Á£Ô£Á£Ë£Á£Î£Á¡É  ¥«¥¿¥«¥ÊÆþÎÏ ¢£¢£¢£¢£¢£¢£¢£¢£
+¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å
+Katakana characters are used for foreign words and onomatopoeia.
+¡ü Kana-Kanji input
+
+There are two ways to type katakana:
+   1) Type everything in capital letters (either hold down <SHIFT> or hit
+      "Caps Lock"
+   2) Hit "q" to toggle between Kana-Kanji and Katakana. In Katakana mode, 
+      you will see the [¥«¥Ê] indicator.
+
+¡ü Romaji input
+¡Â
+¡Â As you type along in Japanese into the input buffer, you will see that
+¡Â NJStar first lists hiragana plus all the available Kanji for the reading
+¡Â you have so far specified. If you continue, NJStar can no longer find the
+¡Â possible Kanji. At this stage Katakana appears as a second option in INPUT
+¡Â screen. You can select ¥«¥¿¥«¥Ê by pressing `2'.
+¡Â
+¡Â Alternatively, you can press <ALT + 1> to get ¥«¥¿¥«¥Ê even if you don't 
+¡Â see the ¥«¥¿¥«¥Ê option.
+
+One important note: ¥«¥¿¥«¥Ê writing uses one unique symbol "¡¼", for an extended vowel instead of vowels ¥¢¥¤¥¦¥¨¥ª. This extended vowel symbol can be accessed by typing "-" (minus sign).
+
+Follow me: ¤ï¤¿¤·¤Ï¡¢¥¤¥®¥ê¥¹¤¸¤ó¤Ç¤¹¡£
+-------->: 
+
+Follow me: ¤­¤Î¤¦¡¢¥Ó¡¼¥ë¤È¥¦¥¤¥¹¥­¡¼¤ò¤Î¤ó¤À¡£
+-------->: 
+
+Follow me: ¤¤¤Ì¤Ï¡¢¥ï¥ó¥ï¥ó¤È¤Ê¤­¡¢¤Ë¤ï¤È¤ê¤Ï¡¢¥³¥±¥³¥Ã¥³¡¼¤È¤Ê¤¯¡£
+-------->: 
+
+Some English words which are phonetically translated into Japanese can by typed directly from English spelling. For this, you start with ' (single quotation mark). For example, typing 'london then press <SPACE> will give only one option, ¥í¥ó¥É¥ó.
+
+      Try: 'london  'white   'house 'mouse 'monitor 'communication     'coffee
+      -->> 
+
+____________
+¢° EXERCISE
+¡±¡±¡±¡±¡±¡±
+Re-type the following paragraphs below:  
+  ¤ï¤¿¤·¤Ï¡¢¤ª¤È¤È¤¤¤Î¤¹¤¤¤è¤¦¤Ó¤Ë¥í¥ó¥É¥ó¤Ø¤¤¤­¤Þ¤·¤¿¡£¤í¤¯¤¸¤Ï¤ó¤Ë¤ª¤­¤Þ¤·¤¿¡£¤½¤·¤Æ¤·¤Á¤¸¤Î¥Ð¥¹¤Ç¤¤¤­¤Þ¤·¤¿¡£
+  ¥í¥ó¥É¥ó¤Ï¤È¤Æ¤â¤µ¤à¤«¤Ã¤¿¤Ç¤¹¡£¤½¤ì¤Ç¡¢¤ª¤Ò¤ë¤´¤í¡¢¤È¤â¤À¤Á¤Î¤¦¤Á¤Ë¤¤¤­¤Þ¤·¤¿¡£¤½¤³¤Ç¡¢¤¢¤¿¤¿¤«¤¤¥¹¡¼¥×¤ò¤â¤ß¤Þ¤·¤¿¤¬¡¢¤½¤Î¤Ò¤Î¤è¤ë¤Ï¡¢¤²¤ó¤­¤¸¤ã¤¢¤ê¤Þ¤»¤ó¤Ç¤·¤¿¡£¤Ç¤¹¤«¤é¡¢¤­¤Î¤¦¤·¤´¤È¤ò¤ä¤¹¤ß¤Þ¤·¤¿¡£
+
+>>
+
+
+
+
+Well done!
+
+                            ¢£ End of TUTORIAL 2 ¢£
+ ¦ç¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦è
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ Press <Shift F10> to select other tutorials  ¡þ¡þ¡þ¡þ¡þ¡þ¦æ
+ ¦æ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ Press  <Ctrl F3> to exit NJStar ¡þ¡þ¡þ¡þ¡þ¡þ¡þ¡þ ¦æ
+ ¦ê¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦å¦é
+

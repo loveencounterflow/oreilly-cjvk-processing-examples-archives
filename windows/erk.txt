@@ -1,0 +1,44 @@
+erk.txt
+
+
+The Email Repair Kit
+
+Files:
+		erk.exe		(application)
+		erk.hlp		(help)
+		erk.txt		(this file)
+
+
+Email and Usenet newsgroups are encoded as 7 bit ASCII.
+
+ASCII is sufficient for English, but poses problems for
+languages that have thousands of characters, particularly
+Chinese, Japanese and Korean.
+
+These languages use multi-byte encoding schemes, which
+rely on 8 bit characters and/or the Escape character.
+
+Multi-byte encoded text is often damaged by email and usenet
+services. The Email Repair Kit repairs this damage. 
+
+Included are special tools for the encoding schemes used for
+Japanese text. In addition, there is a general tool that
+should repair damage in any multi-byte encoded language.
+
+
+
+This is FREEWARE. Please distribute freely.
+All rights reserved. This software may not be sold.
+No liability accepted.
+
+Suggestions for future versions welcome. 
+
+The author is available for Freelance software development.
+
+contact:
+
+erk@cbootle.demon.co.uk
+
+
+
+ 

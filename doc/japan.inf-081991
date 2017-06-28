@@ -1,0 +1,1901 @@
+JAPAN.INF Version 1.1
+
+ELECTRONIC TRANSFER OF JAPANESE
+
+August 19, 1991
+
+Ken R. Lunde (小林 剣)
+Adobe Systems Incorporated
+1585 Charleston Road
+P.O. Box 7900
+Mountain View, CA 94039-7900
+(415)361-1702 (home)
+(415)962-3866 (office)
+(415)960-0886 (fax)
+lunde@adobe.com
+
+     This article is a description of how to send and receive *real* Japanese 
+text (i.e., kana and kanji) using electronic mail. I am absolutely delighted 
+to share this information with others, and I would appreciate any comments on 
+its content. Since some of the information contained within changes on a 
+monthly, even weekly basis, I keep the current copy in electronic form. The 
+current version of this article will be made available at two places: by 
+anonymous FTP at ucdavis.edu (128.120.2.1) in the pub/JIS directory under the 
+name japan.inf; and by contacting me directly through electronic mail to 
+request a copy -- my electronic mail address is given above.
+
+
+TABLE OF CONTENTS:
+  WHAT'S NEW
+  INTRODUCTION
+  PART 0: THE JAPANESE CHARACTER SET
+  PART 1: 7-BIT JAPANESE CODES
+  PART 2: 8-BIT JAPANESE CODES
+  PART 3: SENDING JAPANESE
+  PART 4: RECEIVING JAPANESE
+  PART 5: CONVERSION OF JAPANESE CODES
+  PART 6: JAPANESE E-MAIL NETWORKS AND ADDRESSING TEMPLATES
+  PART 7: ACTIVE JUNET DOMAINS
+  PART 8: JUNET NEWS
+  PART 9: HARDWARE AND SOFTWARE REQUIREMENTS
+  A FINAL NOTE
+  ACKNOWLEDGMENTS
+  BIBLIOGRAPHY
+  APPENDIX 1: BITNET NODES IN JAPAN
+  APPENDIX 2: JUNET DOMAINS
+  APPENDIX 3: JUNET NEWS NEWSGROUPS
+
+
+WHAT'S NEW
+     This version has added material under the UNIX and NeXT sections in PART 
+9. I have also added a paragraph in PART 6 which describes how to access 
+NiftyServe from within CompuServe. In addition, the entire document, in 
+general, was completely updated.
+     Also new is the fact that as of July 1, 1991 I have been working at Adobe 
+Systems Incorporated in the area of Japanese font production. Although I list 
+my address here at Adobe Systems for contact purposes, Adobe Systems does not 
+endorse this file which I have created, and have continued (and will continue) 
+to update on a regular basis. This file is a personal endeavor to inform 
+people of how Japanese can be handled on a variety of platforms.
+
+
+INTRODUCTION
+     Electronic mail has become a very efficient means of communicating both 
+locally and world-wide. While it is very simple to send text which uses only 
+the 94 printable ASCII characters, character sets which contains more than 
+these ASCII characters pose special problems. In this article, I will describe 
+how Japanese characters can be sent using electronic mail.
+     This report contains actual Japanese text throughout, so don't be alarmed 
+if strange sequences of ASCII characters appear. All Japanese contained in 
+this file is in the New-JIS code.
+
+
+PART 0: THE JAPANESE CHARACTER SET
+     The Japanese character set as specified in the document JIS X 0208-1990 
+(see Bibliography) currently includes 6,879 standard characters; 6,355 kanji 
+in 2 levels (level 1: 2,965 kanji arranged by ON reading (the Chinese-based 
+pronunciation); level 2: 3,390 kanji arranged by radical), 86 katakana, 83 
+hiragana, 10 numerals, 52 English characters, 147 symbols, 66 Russian 
+characters, 48 Greek characters, and 32 line elements (for making charts). 
+This standard was first established in 1978, modified for the first time in 
+1983 (4 kanji were appended to JIS level 2), and just modified again in 1990 
+(2 kanji were appended to JIS level 2). This character set is widely 
+implemented on a variety of machines. Encoding methods for JIS X 0208-1990 
+include Shift-JIS, EUC, and JIS.
+     Late in 1990 a new Japanese standard called JIS X 0212-1990 was published 
+by Japanese Industrial Standards (JIS) which specified an additional 5,801 
+kanji plus 21 symbols/diacritical marks and 245 Latin-based characters with 
+diacritical marks. This means that there are now 12,156 standard kanji in 
+Japanese. A future version of JAPAN.INF will go more into detail about the 
+encoding methods for JIS X 0212-1990 (i.e., how it will be implemented, and 
+when).
+
+
+PART 1: 7-BIT JAPANESE CODES
+     All of these 7-bit codes share a common character coding system, but 
+their kanji-in (KI) and kanji-out (KO) escape sequences differ. We can use 
+these in the United States, and are the most commonly used in Japan. The names 
+in the parentheses below are other names for the same code (i.e., New-JIS is 
+also called JIS). The most common of these codes is New-JIS.
+
+EXAMPLES:
+  New-JIS (JIS)
+  Old-JIS
+  NEC-JIS (NEC Kanji and NEC Code)
+
+     The following is a table listing the kanji-in and kanji-out escape 
+sequences for each of the three codes listed above (note the two types of 
+kanji-out).
+
+                    KI       KO (JIS-Roman)  KO (ASCII)
+                    ^^       ^^^^^^^^^^^^^^  ^^^^^^^^^^
+  New-JIS  (1983)   <ESC>$B  <ESC>(J         <ESC>(B
+  Old-JIS  (1978)   <ESC>$@  <ESC>(J         <ESC>(B
+  NEC-JIS  (1978)   <ESC>K   <ESC>H          n/a
+
+     The difference between KO (JIS-Roman) and KO (ASCII) is very minor, and 
+lies in only two characters. Their 8-bit extension do differ greatly, though. 
+The 8-bit extension of the JIS-Roman character set contains half-size 
+katakana. Also, most terminal software can emulate only one of the KO 
+character sets no matter which one it receives. For example, NinjaTerm (to be 
+described in PART 9) only emulates KO-ASCII.
+     The difference between New-JIS and Old-JIS is minor. The reason for the 
+existence of these two codes is due to the introduction of JOUYOU kanji (常用
+漢字) in 1981. Previous to this, the standard in education were the 1850 kanji 
+in TOUYOU kanji (当用漢字); JOUYOU kanji added an additional 95 kanji to 
+TOUYOU kanji bringing the total to 1945. The JIS standard contains two levels 
+of kanji, and the folks at JIS wanted to be sure that all JOUYOU kanji were 
+included in the first level. So, in 1983, a new JIS standard was released. The 
+people at JIS simply juggled positions of old and new forms of kanji (JIS 
+level 1 contains the common forms of kanji, and their respective older forms 
+are located in JIS level 2), and added 4 additional kanji to the second level. 
+In 1990, the JIS standard was again modified due to the addition of 118 kanji 
+to the JINMEI-YOU kanji (人名用漢字) list -- 2 of these 118 kanji were not 
+found in the JIS standard, so they were appended to the end of JIS Level 2 
+kanji. The character set used for NEC-JIS is identical to that of Old-JIS -- 
+they only differ in their escape sequences.
+     There are two types of New-JIS; one based on the 1983 standard, and one 
+based on the 1990 standard. The only difference between them is that the 1990 
+standard includes 2 additional kanji appended to JIS level 2. For all 
+practical purposes they can be treated as the same.
+     The KI escape sequence tells Japanese terminals to treat what follows as 
+two-bytes per character. KO, on the other hand, tells Japanese terminals to 
+treat what follows as one-byte per character (back to JIS-Roman or ASCII).
+     A two-byte per character coding system using 7-bit bytes (ASCII) can 
+encode up to 16,384 characters (128 by 128); however, the Japanese only use 
+the 94 printable ASCII codes in their matrix, so it can only encode a maximum 
+of 8,836 characters (94 by 94).
+     Japanese text is represented as follows. A romanized version is given so 
+that those who cannot view Japanese text can benefit, too.
+
+  Japanese Text:                   これは日本語の文章です。
+  (Romanized):               KO RE HA NI HON GO NO BUN SHOU DE SU .
+  Raw Code (NO ESCAPE CODES)       $3$l$OF|K\8l$NJ8>O$G$9!#
+  New-JIS:                  <ESC>$B$3$l$OF|K\8l$NJ8>O$G$9!#<ESC>(J
+  Old-JIS:                  <ESC>$@$3$l$OF|K\8l$NJ8>O$G$9!#<ESC>(J
+  NEC-JIS:                   <ESC>K$3$l$OF|K\8l$NJ8>O$G$9!#<ESC>H
+
+Note the correspondence between the ASCII characters and Japanese characters, 
+namely that two ASCII characters represent one Japanese character; hence, 
+Japanese characters consist of two bytes. For example, the hiragana symbol for 
+"RE" (れ) is represented by the two ASCII characters "$" and "l."
+     The following paragraph is a sample Japanese text in the New-JIS Japanese 
+code. If you are using a Japanese terminal, then you can view this Japanese 
+text on-line using the procedures found in later sections of this report.
+
+  New-JIS: (kanji-in: "<ESC>$B"; kanji-out: "<ESC>(J")
+  　日本語の一文字を7ビットx2バイトのコードで表現する方法には新JIS、旧JIS、
+  日電漢字等の三種類があります。これらのコードを用いた文章では日本語の前後
+  に漢字イン、漢字アウトという二つのエスケープ・シーケンスを使用することに
+  より、その中が日本語であることを示します。
+
+     The following table lists the code specifications for the 7-bit codes and 
+their respective escape sequences. This information is most useful to 
+programmers.
+
+                 DECIMAL            OCTAL              HEXADECIMAL
+  first byte     033-126            041-176            21-7E
+  second byte    033-126            041-176            21-7E
+
+  New-JIS (1983):
+   kanji-in      027 + 036 + 066    033 + 044 + 102    1B + 24 + 42
+   kanji-out     027 + 040 + 074    033 + 050 + 112    1B + 28 + 4A
+  Old-JIS (1978):
+   kanji-in      027 + 036 + 064    033 + 044 + 100    1B + 24 + 40
+   kanji-out     027 + 040 + 074    033 + 050 + 112    1B + 28 + 4A
+  NEC-JIS:
+   kanji-in      027 + 075          033 + 113          1B + 4B
+   kanji-out     027 + 072          033 + 110          1B + 48
+
+
+PART 2: 8-BIT JAPANESE CODES
+     These codes cannot be used reliably through electronic mail networks 
+since 7-bit paths will strip off the 8th bit leaving garbage. These codes are 
+used primarily for internal processing of Japanese. For example, the Japanese 
+system software for the Macintosh uses Shift-JIS code internally. The names in 
+the parentheses below are other names for the same code (i.e., Shift-JIS is 
+also called MS KANJI).
+
+EXAMPLES:
+  Shift-JIS (MS KANJI)
+  EUC (AT&T JIS)
+
+Shift-JIS:
+     The Shift-JIS implementation is quite unlike that of the 7-bit code as 
+described above. The two-byte-per-character mode is initiated when a Japanese 
+terminal receives a character with a decimal value ranging between 129-159 or 
+224-239. This character will subsequently be treated as the first byte of an 
+expected two-byte sequence. The following character (the second byte) must be 
+a character with a decimal value ranging between 64-158 (but not 127 -- the 
+DEL character) or 159-252. Note that the first byte's range falls entirely in 
+the extended ASCII character set -- true 8-bit characters. The second byte 
+does not share the same limitation, though. Note that Shift-JIS includes half-
+size katakana. Historically, this is how Shift-JIS got its name: the encoding 
+for 2-byte kanji had to *shift* around the code positions for half-size 
+katakana -- the half-size katakana existed first.
+     The following table lists the code specifications for Shift-JIS. Note 
+that all five types together make up Shift-JIS. This information is most 
+useful to programmers.
+
+                 DECIMAL            OCTAL              HEXADECIMAL
+  TYPE 1:
+   first byte    129-159            201-237            81-9F
+   second byte   064-158 (not 127)  100-236 (not 177)  40-9E (not 7F)
+  TYPE 2:
+   first byte    224-239            340-357            E0-EF
+   second byte   064-158 (not 127)  100-236 (not 177)  40-9E (not 7F)
+  TYPE 3:
+   first byte    129-159            201-237            81-9F
+   second byte   159-252            237-374            9F-FC
+  TYPE 4:
+   first byte    224-239            340-357            E0-EF
+   second byte   159-252            237-374            9F-FC
+  Half-size katakana:
+   first byte    161-223            241-337            A1-DF
+
+     The following is a sample Japanese text in Shift-JIS code which has been 
+uuencoded (so that it does not get corrupted on the nets). You can view this 
+Japanese text by copying it, then uudecoding it.
+
+begin 0700 "jis.sjs"
+MhbbapioZEGNlZHklBnJuMHZz@O`W@WjcxHmG>cjc{Xmc@V>bShmr@uNczhke
+MEuRlNXjW@NFu^Yy`@LFbSyavrDEs@tfkCdIitXeacr`@D_JsyhJ_CIJsFxkl
+MCD^n[y?>@JJbHhkH@MRbMXeb@KfbZHkG@LRctHe{@VBb\i}P@JjbOyvVC\Vb
+MQxkmD_Jv>XSJ@LRqsXSCcr`@@LFjOXZz@TncDXeaBK^nFHma@TvcyXkf@Jjb
+MIioQ@LjbShmg@UBcthe{@Wzaqxmv@uNcthns@UBb\hYGEWbbMXkI@KfbQHki
+Mcr`@@NzbZhea@KNbSijf@JJs^Iy[CnJbQxj@@NFbLxkf@ObnIHjU@MRbMXeb
+`
+end
+
+EUC (Extended UNIX Code):
+     EUC consists of 4 code sets, the primary code set (code set 0) which is 
+the ASCII 7-bit character set, and 3 supplementary code sets (code sets 1, 2, 
+and 3) which can be specified by the user, and are usually used for non-
+English characters.
+     The following table lists the code specifications for code set 1 of EUC. 
+This information is most useful to programmers.
+
+                 DECIMAL            OCTAL              HEXADECIMAL
+  first byte     161-254            241-376            A1-FE
+  second byte    161-254            241-376            A1-FE
+
+     Code set 2 is used for half-size katakana, and code set 3 is used for 
+GAIJI (外字 = external characters). Below are the code specifications for code 
+sets 2 and 3; note that code set 3 uses three bytes per character.
+
+                 DECIMAL            OCTAL              HEXADECIMAL
+  Half-size katakana:
+    first byte   142                216                8E
+    second byte  161-223            241-337            A1-DF
+
+  GAIJI:
+    first byte   143                217                8F
+    second byte  161-254            241-376            A1-FE
+    third byte   161-254            241-376            A1-FE
+
+     There will be no further discussion of the 8-bit Japanese codes. The 
+important thing is that they exist, and can be manipulated electronically.
+     The following is a sample Japanese text in EUC code which has been 
+uuencoded (so that it does not get corrupted on the nets). You can view this 
+Japanese text by copying the entire text, and uudecoding it.
+
+begin 0700 "jis.euc"
+MhbbAH|{\R]RX[jsnLnSjNkOZIohWI}nEPZwh>cjETjvDI|BDSJvSH{RERzsg
+MR{VXOzrYInOj_|NAIlNDS[^WrDEsHzjU[dIitZfBcr`@QOSeQ{saN_Ke^zsn
+MN[b\[\[@IjRDHJsJImZDNzfCIknD[jsIIlZELZf\I|FD\LWqIjrDO\JXOL^D
+MQZsoQOSkWkCLIl[aLkCEcr`@IlNTP{OZIzrE\ZfBMlf[^JvBIzzERjshIjrD
+MIL{SIlrDSJvHI{FELzf\I}>AIJvWH{RELzwSI{FD\KOhS}fDNzsKIknDRjsk
+Mcr`@InBDZJfBIkVDSLoFIjSf_lO|NnRDQZrBInNDLZshIoj\JjrWImZDNzfC
+`
+end
+
+
+PART 3: SENDING JAPANESE
+     There are different environments under which one can send Japanese text 
+from their computer to a mainframe computer for transmission through 
+electronic mail. Many of these environments are specific to particular types 
+of mainframe computers or electronic services.
+
+PART 3.1: SENDING JAPANESE UNDER UNIX
+     I have some experience in sending Japanese from UNIX mainframe computers. 
+One method I know of is to upload the Japanese file using a standard file 
+transfer protocol (like XModem or Kermit), then send it as an electronic mail 
+message. The file's kanji code can be converted to New- or Old-JIS either 
+before sending to the UNIX mainframe, or after it is there. One can also 
+create Japanese text on-line if the user has such software.
+
+PART 3.2: SENDING JAPANESE UNDER VMS
+     VMS Vax machines can use a program which is executed with the command 
+KANJI at the system prompt ($). This program simply allows the unprintable 
+ASCII control character <ESC> (escape) to be accepted by VMS Vax machines. The 
+output of the program is a file which is called OUTPUT.DAT. I can supply the 
+code to users of VMS Vax machines upon request.
+
+  STEP 1: $ [KANJI<CR>]
+          (opens VMS Vax for Japanese input)
+  STEP 2: (transfer text from paste buffer or from disc file)
+  STEP 3: [<CR>.<CR>]
+          (exits 'KANJI' and creates file OUTPUT.DAT)
+  STEP 4: $ [EMAIL<CR>]
+          (enters electronic mail system)
+  STEP 5: EMail> [SEND OUTPUT.DAT<CR>]
+          To: [address<CR>]
+          Subject: [header<CR>]
+          (file named OUTPUT.DAT is sent to the addressee)
+
+     Another method is to use the Kermit file transfer protocol to transfer 
+the file to the VMS mainframe. Japanese code conversion programs can 
+subsequently convert the file's code to one which is more suitable for 
+transmission by electronic mail. These programs, which can run on a mainframe 
+or personal computer, are described in PART 5.
+
+PART 3.3: SENDING JAPANESE UNDER COMPUSERVE
+     CompuServe users can use an option in the MAIL system which allows one to 
+upload a file from their personal computer to be sent as an electronic mail 
+message. Since one cannot run their own programs on CompuServe, the user must 
+convert their Japanese file to New-JIS (or Old-JIS) before transferring the 
+file to CompuServe. Note that the Japanese text won't appear properly in the 
+editor, but is readable if sent -- try to send Japanese text to yourself as an 
+experiment. One can also upload a file to the PER area (personal file area for 
+storing textfiles).
+     Note that CompuServe users can send electronic mail to Internet 
+addresses, and Internet users can send electronic mail to CompuServe 
+addresses. CompuServe users must use the following template for sending to an 
+Internet address:
+
+Internet address:                     lunde@adobe.com
+Addressing template on CompuServe:    >INTERNET:lunde@adobe.com
+
+Internet users must use the following template for sending to a CompuServe 
+address:
+
+CompuServe user ID:                   00000,0000
+Addressing template on the Internet:  00000.0000@compuserve.com
+
+Note the use of the comma in the CompuServe user ID, and the use of the period 
+in the Internet address. Be aware that the maximum file size which CompuServe 
+users can receive is 50K. If you send anything larger, it must be segmented.
+     The following does not pertain to CompuServe, but may still be useful 
+information. AppleLink, another electronic service, has special email 
+addressing requirements. For example, if someone on the Internet wishes to 
+send email to someone on Applelink, the following pattern is used:
+
+Applelink user ID:                    username
+Addressing template on the Internet:  username@applelink.apple.com
+
+The reverse pattern is as follows:
+
+Internet address:                     lunde@adobe.com
+Addressing template on AppleLink:     lunde@adobe.com@INTERNET#
+
+Note that "INTERNET#" must be in all caps, and that two @'s are used in the 
+addressing template. Be aware that AppleLink users cannot receive files more 
+than 32K in size, and such files should be segmented before sending.
+
+
+PART 4: RECEIVING JAPANESE
+     Receiving Japanese text is a bit easier than sending it as you will find 
+out below. Whether Japanese text will be displayed on-line depends on whether 
+you computer and/or communication software has the ability to display 
+Japanese. The mainframe computer simply stores the electronic codes, and your 
+computer acting as a terminal will interpret them accordingly.
+
+PART 4.1: RECEIVING JAPANESE UNDER VMS
+     There are two methods for viewing Japanese text on VMS mainframe 
+computers: the first method allows one to view Japanese while in the EMail 
+subprogram; the second method allows one to view Japanese at the system 
+prompt.
+
+METHOD 1:
+
+  STEP 1: open message containing Japanese
+          (only ASCII characters can appear at this stage)
+  STEP 2: EMail> [EXTRACT tt:<CR>]
+          (converts message to textfile format and prints it on the screen)
+          (Japanese text will now appear on-line)
+
+METHOD 2:
+
+  STEP 1: open message containing Japanese
+          (only ASCII characters can appear at this stage)
+  STEP 2: EMail> [EXTRACT filename<CR>]
+          (converts message to textfile format)
+  STEP 3: EMail> [EXIT<CR>]
+          (exits electronic mail system)
+  STEP 4: $ [TYPE filename.TXT<CR>]
+          (Japanese text will appear on-line)
+
+     The reason for this elaborate scheme is due to the VMS Vax mail sub- 
+system's feature which does not permit control characters (like <ESC>) to 
+perform their function; they are there, but only appear as a white space. Once 
+the message is in textfile format, the control characters can function 
+properly.
+
+PART 4.2: RECEIVING JAPANESE UNDER UNIX/COMPUSERVE
+     CompuServe and the UNIX mail system allows escape characters to function 
+properly, so these users can read Japanese text on-line just like normal 
+English text as long as their terminal allows Japanese to be displayed.
+
+     For those who must view Japanese text off-line due to hardware/software 
+limitations, then some sort of file transfer protocol (XModem or Kermit) must 
+be used to get the file to where it can be viewed. If your viewer requires the 
+file to be in Shift-JIS format, then the programs which are described in the 
+following part will become important. Step 4 in the above scheme should be 
+ignored, and is replaced with the downloading of the file to your computer. 
+CompuServe users will need to save the message as a file in their PER area, 
+then download it to their computer.
+
+
+PART 5: CONVERSION OF JAPANESE CODES
+     I have written a program in both C and Pascal which allows a user to 
+change the Japanese codes within a textfile. They can handle Shift-JIS and EUC 
+(both 8-bit Japanese codes), and all three 7-bit Japanese codes (New-JIS, Old-
+JIS, and NEC-JIS).
+     There are two Pascal versions of the program available: one for 
+compilation on MS-DOS machines (Turbo Pascal), and another for compilation on 
+VMS Vax machines (Vax Pascal). The source code along with a help file is 
+available for downloading from the following anonymous FTP site:
+
+  ucdavis.edu (128.120.2.1) (in the pub/JIS/PASCAL directory)
+
+  jis.pas      <- source code for Vax Pascal
+  jis_pc.pas   <- source code for Turbo Pascal
+  jis.hlp      <- help file
+
+I find this program to be a very useful tool. It was a standard piece of 
+software running on the WIRCS cluster (VMS) at this university, but now the C 
+version is being used. I have provided the source code so that other 
+programmers may benefit from the algorithms to convert between the various 
+Japanese codes. The Pascal version of this program has not been modified for 
+over a year-and-a-half.
+     This program has been recently rewritten in ANSI C, and should compile 
+with no changes on any C compiler as long as it complies with the ANSI C 
+standard. My intent is to make this program very portable across various 
+platforms. I have also made significant changes in this version: improved 
+error checking, the ability to automatically detect the input file's kanji 
+code, selective conversion of half-size katakana to their full-size 
+equivalents, and command-line argument support. The most current version as of 
+this writing is JIS.C V2.1. This program is available at the same FTP site as 
+the Pascal versions (above).
+
+  ucdavis.edu (128.120.2.1) (in the pub/JIS/C directory)
+
+  jis.c        <- source code for ANSI C compilers (instructions in header)
+
+     If you have problems obtaining these programs, please feel free to 
+contact me directly for a copy. I will be constantly upgrading the C version 
+(jis.c), so simply check the FTP site periodically to see if a newer version 
+is there (check the date posted column), or ask me directly.
+     I was made aware of a program written by Mr. Itaru Ichikawa of Fujitsu 
+(ichikawa%flab.fujitsu.co.jp@uunet.uu.net) called NKF (Network Kanji Filter). 
+This program is very similar to the above programs, and is written in C. It 
+was written to run under UNIX, but I also heard that an MS-DOS port of the 
+program exists. I have obtained a copy of this program, and I have put a copy 
+of it in the same directory as my jis.c program.
+
+  ucdavis.edu (128.120.2.1) (in the pub/JIS/C directory)
+
+  nkf.src       <- source code for NKF
+  nkf.patch     <- patch for NKF
+
+     For those who wish to convert Japanese files on the Macintosh, there are 
+three programs available, each of which can be requested by email through me. 
+One is called MacKc 0.93. It is an application written by Mr. Masato Hirose 
+(hirose%sws.cpd.mei.co.jp@uunet.uu.net), and is available at the FTP site 
+given below. MacKc 0.93 is much like ASL KConvert (below), but it can *
+automatically* detect the input file's Japanese code (it supports Shift-JIS, 
+EUC, 2 types of New-JIS, and 2 types of Old-JIS), and allows one to rename the 
+output file. It has many other nice features built-in. It also allows one to 
+modify how lines break. Unlike ASL KConvert, it uses a Finder-like interface. 
+This program is FreeWare.
+     The second is called ASL KConvert 1.0/a3 (in both application and desk 
+accessory (DA) form). This program was written by Mr. Hiroo Yamada 
+(76414.372@compuserve.com), and is available at FTP at the site given below. 
+The file must be debinhexed and unstuffed. It handles New-JIS (does not 
+recognize <ESC>(B, though), Old-JIS (two types), Shift-JIS, EUC, and another 
+code called DEC. This program also allows one to change how lines break, 
+namely by carriage return, line feed, or a combination of both. This program 
+is FreeWare.
+	The third is a Macintosh port of my JIS.C program described above. This 
+program, of course, is FreeWare, and includes the source code. Please write to 
+me to request a copy.
+
+
+PART 6: JAPANESE ELECTRONIC MAIL NETWORKS AND ADDRESSING TEMPLATES
+     There are two electronic mail networks which are used in Japan: JUNET 
+(Japan UNIX Network) and BITNET (also called CREN).
+     JUNET addresses are rather complicated, and will differ depending on 
+whether the address is a corporation or not. Here is a typical Japanese 
+address as used in Japan:
+
+  tomita@keio.ac.jp
+
+     Since this address is for an academic institution (ac), it will use the 
+following addressing template (note the use of % and @):
+
+  tomita%keio.ac.jp@relay.cs.net
+
+     An address such as tomita@canon.co.jp is a corporation, so its addressing 
+template is as follows (again, note the use of % and @):
+
+  tomita%canon.co.jp@uunet.uu.net
+
+     The rule of thumb is that you should use the ...%...@uunet.uu.net 
+addressing template when sending to a corporation, but otherwise you should 
+use ...%...@relay.cs.net. The use of % and @ indicates use of relays.
+
+NOTE: It is no longer necessary to use relays (relay.cs.net or uunet.uu.net) 
+to get electronic mail from the United States to Japan. You may, however, 
+notice that encoded Japanese text will become scrambled if the relay is 
+omitted from the address. I think this is caused by the mail somehow getting 
+onto Bitnet along the way, and then the escape characters are removed. In any 
+case, if you experience problems with sending Japanese text without using a 
+relay in the address, you will find that using the relay should solve the 
+problem.
+
+     There are currently 93 BITNET nodes in Japan. Besides JUNET and the now 
+developing Japanese Internet (WIDE), there is still an increasing demand for 
+membership in BITNET.
+     I have experienced problems when sending or receiving Japanese text to 
+BITNET addresses. Sending to JUNET addresses is much more reliable. The 
+problem with BITNET lies in the fact that those unprintable ASCII escape 
+characters are removed far too often. I have, however, found out that escape 
+codes do survive when sent as network files (network files are not considered 
+to be electronic mail messages since there is no header; it is simply sending 
+a file from site to site by electronic means). To send a Japanese network file 
+to a bitnet host, use the following format:
+
+  SEND/FILE/BINARY/TRANSLATE/PRINTER filename address
+
+/PRINTER is usually required when sending files whose lines are longer than 80 
+characters. Escape sequences add data to a line although they are invisible 
+when printed; lines may wrap at unexpected places if this part is omitted from 
+the command.
+     I have noticed that BITNET seems to handle 8-bit codes in electronic mail 
+messages much better than Internet (or JUNET) does. One simply needs to 
+experiment with the site they wish to contact.
+     BITNET addresses are the same as in the US, namely that the following 
+addressing template can be used:
+
+  username@JPN*****
+
+Note that Japanese BITNET sites begin with the three letters JPN.
+
+SEE APPENDIX 1 FOR BITNET NODES IN JAPAN
+
+     Although there is no direct way to send email from the Internet to 
+NiftyServe, a very popular Japanese Bulletin Board Service (BBS), there exists 
+a gateway between NiftyServe and CompuServe. CompuServe users can enter GO 
+NIFTY at any ! prompt to connect to NiftyServe. There are several things to 
+note before doing this: 1) CompuServe charges about $12 per hour on-line costs 
+-- accessing NiftyServe through this gateway, I am told, increases the charge 
+to about $35 per hour; and 2) CompuServe requires 7E1 for communications 
+settings -- NiftyServe requires 8N1 -- this means one must be able to change 
+their communications settings while still connected. I hope to include more 
+such information on accessing Japanese electronic services in future versions 
+of JAPAN.INF.
+
+
+PART 7: ACTIVE JUNET DOMAINS
+     JUNET is by far the most active electronic mail network in Japan. There 
+are 5 domains within JUNET: AC, GO, OR, AD, and CO. These correspond to 
+Academic Institution (AC), Government (GO), Organization (OR), Administration 
+(AD), and Corporation (CO), respectively.
+     The basic addressing method works like described in Part 6, but each 
+domain must be specified within the address. For example, "hokudai", which is 
+in the AC domain, is addressed as "hokudai.ac.jp". The JP domain, which is 
+JUNET itself, is much simpler; for example, "ntt" would be "ntt.jp".
+
+SEE APPENDIX 2 FOR JUNET DOMAINS
+
+
+PART 8: JUNET NEWS
+     JUNET News is the Japanese equivalent to the Usenet NEWS. Each newsgroup 
+name is prefixed with fj, which means "From Japan."
+     JUNET News is an information service which contains many newsgroups. It 
+acts much like a bulletin board in Japan, but is distributed in the United 
+States using electronic mail (not all newsgroups are available in this 
+electronic mail distribution, though). The articles posted to JUNET News are 
+in Japanese, and are in either Old-JIS or New-JIS code.
+     To subscribe to the JUNET News mailing list, simply send a request to Mr. 
+Hisao Nojima at nojima%nttlab.ntt.jp@relay.cs.net or to Stanford University at 
+junet-news-request@russell.stanford.edu. You will then receive a *grab bag* of 
+articles from a limited list of newsgroup.
+     If you only wish to receive a select few newsgroups, please send a 
+request to Jason Molenda at molenda@s1.msi.umn.edu instead. Please do not ask 
+Jason Molenda to send you several newsgroups as this will clog the mailers -- 
+I am currently receiving only fj.sys.mac and fj.lang.postscript from him. The 
+following is information about receiving JUNET News articles (written by Jason 
+Molenda):
+
+1)   With rrn (remote rn), you can read the newsgroups from my systems via 
+NNTP (Network News Transmission Protocol or some such thing) right on our 
+system. This is usually the easiest way; any user can do it, you don't need 
+root-access on your system to set this up.
+     There are also remote news readers that use GNU Emacs. There are also 
+remote news readers for just about any computer in the known Universe out 
+there; Mac, VAX, I think even PC's.
+
+2)   Physically telnet into the NNTP port and interact with the nntp daemon 
+directly. This can be done but it's not very fun.... A sample session would 
+look like
+
+group fj.general
+article
+next
+article
+group fj.kanji
+
+etc. It's all pretty gross; not really meant for humans to do. I wouldn't 
+recommend it unless you're desperate.
+
+3)   Get a newsfeed of the fj.* newsgroups. This is by far the easiest from my 
+point of view. Although there are about 150 or so fj.* newsgroups, the volume 
+is pretty low (compared to comp and rec), so if you're not the news admin at 
+your site, it may be easy to convince him/her to set up the newsfeed for them. 
+Then you would be able to read the newsgroups locally on your own machine and 
+post messages, etc.
+
+4)   I can also have my news system mail you the articles fairly painlessly. 
+This isn't too great because you'll end up with 200-300 articles per day in 
+your mailbox.
+
+SEE APPENDIX 3 FOR JUNET NEWS NEWSGROUPS
+
+
+PART 9: HARDWARE AND SOFTWARE REQUIREMENTS
+     The basic necessity for sending and receiving Japanese text using 
+electronic mail is a Japanese terminal. A mainframe computer itself does not 
+give you the ability to display Japanese text, but only stores the raw code 
+along with its escape sequences. Below are some suggestions for obtaining a 
+Japanese terminal. I am sure there are others, and I will include them once I 
+find them.
+
+GENERAL MAINFRAMES
+     There is an interesting piece of software called KanjiBanner with which 
+one can display Japanese on any terminal, if your mainframe host computer has 
+the file called k14.bdf or k16.bdf installed. The author's name is Koichi 
+Yasuoka (安岡孝一), and his email address is yasuoka%kudpc.kyoto-
+u.ac.jp@relay.cs.net. I have not tried this program, though.
+
+
+NeXT
+     The following is a message from Mr. Izumi Ohzawa directed toward NeXT 
+users:
+
+--- BEGIN ---
+Dear NeXT users --
+  who use Japanese at work
+  who are studying or learning Japanese
+  who teach Japanese
+  who are native Japanese working/studying abroad, and internationally-minded 
+NeXT developers who want to plan ahead product development for Japanese, 
+Chinese, and Korean markets.
+     I have volunteered to set up a mailing list "next-nihongo" to exchange 
+information and ideas on using Japanese on the NeXT computer.
+     If you wish to be added to, or removed from this mailing list, send e-
+mail to: "next-nihongo-request@pinoko.berkeley.edu".
+     If you wish to send mails to *everyone* on the mailing list, send e-mail 
+to: "next-nihongo@pinoko.berkeley.edu". [Please, please, DO NOT send requests 
+to the mailing-list manager, namely "next-nihongo."]
+     The installed user base of the NeXT computer is still quite small, and 
+the number of users who are interested in using Japanese on NeXT is even 
+smaller. I am hoping that this list will help us at the initial stage of the 
+development of the NeXT user community. Additionally, we should be able to 
+lobby NeXT and Canon (the NeXT distributor for Asia) so that they provide us 
+with the Japanese version of the NeXT OS at a reasonable cost outside of Japan 
+as soon as possible.
+     The Japanese version of the NeXT OS (2.1J) apparently started shipping in 
+Japan just a few weeks ago (July 91). Although I have not played with it 
+myself, it appears to offer the best Japanese language environment of all 
+workstation-class computers. The educational price of the NeXT even compares 
+favorably with Macs when the cost of Kanji PostScript printer is included (and 
+if the OS is offered at a reasonable price).
+
+---
+Izumi Ohzawa             [ 大澤五住 ]
+USMail: University of California, 360 Minor Hall, Berkeley, CA 94720
+Telephone: (415) 642-6440     Fax:  (415) 642-3323
+Standard mail: izumi@violet.berkeley.edu
+NeXTmail:      izumi@pinoko.berkeley.edu
+--- END ---
+
+UNIX
+     For those of you who are using UNIX, there are options open for you, too. 
+kterm is used by UNIX, and works under the X WINDOW system. There is also a 
+Japanese Front-End Processor called Wnn. Nemacs (written by Ken'ichi Handa of 
+ETL) and nepoch at site scslwide.sony.co.jp (133.138.199.1) are Japanese text 
+editors. Some people prefer jstevie. For printing purposes, jTeX (ASCII and 
+NTT versions) and kanjips are useful.
+     Wnn is a Japanese front-end processor which runs under UNIX (a Macintosh 
+version is due out soon). The name Wnn is from the project objective to make a 
+good Kana-to-Kanji conversion program which can convert "Watashino Namae ha 
+Nakano desu" into correct Japanese on the first try. Wnn version 4.0.3 is 
+available at the utsun.s.u-tokyo.ac.jp (133.11.11.11) FTP archive in the fj/
+wnn4.0.3 directory. The following article (in English) gives an overview of 
+Wnn: KABA Software Research Group: Overview of GMW+Wnn System, 2nd IEEE 
+Conference on Computer Workstations (1988), pp. 170-177.
+     There is a public domain vi-based editor named JSTEVIE which supports 
+most vi and ex commands, Japanese kanji input, tag stack, etc. It runs mainly 
+on UNIX and MS-DOS systems, and should be easy to port to other platforms. As 
+you can tell from its name, it is based on the STEVIE 3.69 sources by Tony 
+Andrews. Hopefully, these two threads will be merged someday into a single 
+distribution.
+
+Features of JSTEVIE include:
+  - Japanese kanji support - works with JIS, EUC, SJIS codes and with most
+    MS-DOS front-end processors
+  - shiftwidth, autowrite, and fepcontrol settings
+  - tag stack (cf. Sun's vi) for returning to previous context after using
+    :ta or ^[ commands
+  - :map, :map!, :ab, :unmap, :unmap!, and :unab are supported
+  - uses TERMCAP file for terminal settings
+
+The latest version of JSTEVIE (J1.2) is available by anonymous FTP at site 
+utsun.s.u-tokyo.ac.jp (133.11.7.250). It is also available at site 
+mindseye.berkely.edu (128.32.232.19) in the pub/kanji directory under the name 
+jstevie.tar.Z. Any questions about JSTEVIE should be sent to its author, Jun 
+Ohta, at ohta%src.ricoh.co.jp@uunet.uu.net.
+     Nemacs (Nihongo Emacs) is a Japanese language editor based on GNU Emacs. 
+It runs under a system in which GNU Emacs runs, and distributed in the form of 
+patches to GNU Emacs or the previous version of Nemacs. Nemacs can handle 
+kanji and kana characters in a buffer, and displays them on the screen. File 
+I/O, interprocess communication, screen display, and keyboard input are all 
+specially designed for handling Japanese character codes: JIS, Shift-JIS, and 
+EUC. TAMAGO supplies the Japanese text environment for Nemacs. TAMAGO requires 
+the kana-to-kanji conversion server Wnn V3.3 or later. The latest version is 
+TAMAGO Ver.3.0.0. TAMAGO enables one to input Japanese characters, and edit 
+Japanese text in a Nemacs buffer. By default, roman characters are used to 
+input kana, and then the kana are converted into kanji, but you can customize 
+TAMAGO to accept direct kana or kanji input. TAMAGO also extends Emacs' text 
+editing functions for fill/justify and search/replace, or adds new ones to fit 
+the Japanese writing system. TAMAGO (means "egg" in Japanese) is an 
+abbreviation of TAKUSAN MATASETE GOMEN NASAI (沢山待たせてごめんなさい), 
+"sorry to have kept you waiting so long." The latest version of Nemacs and 
+TAMAGO is available by anonymous FTP at several sites: clover.ucdavis.edu 
+(128.120.57.1), cs.washington.edu or june.cs.washington.edu (128.95.1.4), 
+sauna.hut.fi (130.233.192.1), russell.stanford.edu (36.9.0.9), mtfuji.gw.u-
+tokyo.ac.jp (128.167.64.2), utsun.s.u-tokyo.ac.jp (133.11.11.11), and 
+ftp.cs.titech.ac.jp (131.112.16.39). Any questions or suggestions about nemacs 
+or TAMAGO should be sent to nemacs@etl.go.jp or tamago@etl.go.jp.
+     Kanji printing programs are now available via anonymous ftp from /usr/
+masui/ftp at site a.nl.cs.cmu.edu (128.2.250.143). The kit consists of 3 
+programs: 1) kanjips - converts a PostScript program including JIS Kanji text 
+into normal PostScript text by expanding each Kanji character into a dot 
+pattern; 2) jenscript - convert a plain text including Kanji into a Kanji 
+Postscript file; and 3) mp - convert a mail/news article into a Kanji 
+PostScript file. Kanjips can handle many kinds of Kanji pattern files, such as 
+1) Pxl/pk files used in JTeX (jisjka24, etc.); 2) X11 bdf files (k14, k24, 
+etc.); 3) GMW pattern files; and 4) Plain dot-matrix pattern files. Sample 
+usage:
+
+% jenscript kanjifile | kanjips | lpr -Plw
+-- prints a Japanese textfile
+
+% show | mp | kanjips | lpr -Plw
+-- prints mail containing Japanese
+
+     The following is a description of kterm. A new version of kterm is now 
+available from the following anonymous ftp sites: crl.nmsu.edu (128.123.1.14) 
+as pub/misc/kterm-4.1.2.tar.Z; expo.lcs.mit.edu (18.30.0.212) as contrib/
+kterm-4.1.2.tar.Z; and kum.kaist.ac.kr (137.68.1.65) as pub/x/kterm-
+4.1.2.tar.Z. Version 4.1.2 supports Chinese (GuoBiao (7 && 8-bit), Big5 , and 
+Shift-GuoBiao text), Japanese (EUC, Shift-JIS, and JIS text), Korean (KS 
+C5601-1987 Hangul and n-byte Hangul text), ISO 6429 color text sequences, and 
+X11 Compound Text character set sequences (Not all of the character sets are 
+supported, but the sequences are recognized.) The README file mentions 
+anonymous ftp locations for Chinese, Japanese, and Korean Hangul BDF fonts. 
+Please send bug reports, fixes, enhancements, etc. to Mark Leisher at 
+mleisher@nmsu.edu.
+     The following is a description of using Japanese on UNIX written by Frank 
+Sheeran. Some of the material is slightly repeated from above paragraphs, 
+though. There are several pieces of software that allow use of Japanese at 
+various levels under UNIX, if you are using X11 windowing environment. If you 
+are not using X11, you are probably out of luck. In short, X11 allows programs 
+("clients") on any internet computer to be used much like a MacIntosh or a 
+Windows program, right on your screen, with graphics. Xterm is the standard 
+terminal emulation program. If you know xterm, kterm the same, only it uses 
+JIS fonts. It automatically follows shifts between ASCII and JIS formats, and 
+is fine by itself for reading mail. Many sizes of fonts are available. Since X 
+terminals usually have big screens and high resolution, a 16 point font is 
+fine for general use, if you only want to use one. Kterm also displays Korean 
+and Chinese, if you have the requisite Hangul/Hanzi fonts. Kinput captures 
+input, uses Wnn (like a meat grinder - ASCII in, JIS out) to convert to kanji, 
+then sends the JIS codes on their merry way. Depending on your task, then, 
+your X11 system will need:
+
+                     JIS fonts   jtex   kterm   kinput   wnn   nemacs/jstevie
+                     ^^^^^^^^^   ^^^^   ^^^^^   ^^^^^^   ^^^   ^^^^^^^^^^^^^^
+Viewing:             yes                yes
+Printing:                        yes
+Terminal emulation:  yes                yes     yes      yes
+Editing:             yes                        maybe    yes   yes
+
+
+IBM/IBM Compatibles (MS-DOS)
+     There is a program which allows any IBM or clone (USA type) to read (but 
+not to send) incoming Japanese text. I have tried it, and it works fairly 
+well. It does require some sort of graphics, the basic necessary being 
+Hercules. To obtain a copy, contact Mr. Seiichi Nomura (b470ssn@utarlvm1).
+     MOKE (Mark's Own Kanji Editor) version 2.0 is a Japanese editor written 
+by Mr. Mark Edwards. It allows one to create Japanese text for sending by 
+electronic mail. It can also be used for displaying Japanese text. I recommend 
+it highly for MS-DOS users; the only alternative is EW+, which costs $850.00. 
+MOKE 2.0 costs $49.95 plus $5.00 for shipping and handling (an additional 
+$5.00 for foreign addresses). MOKE 2.0 can be used in conjunction with 
+communication software, such as PROCOMM or Kermit, for sending/receiving 
+Japanese text. MOKE 2.0 can be ordered from the following address (specify 
+either 3.5" or 5.25" disks):
+ 
+  KiCompWare
+  Attn: J.J.
+  1812 N. Erb St.
+  Appleton, WI 54911
+
+In case personal contact with the author is required, his address in Japan is 
+as follows (DO NOT use this address for ordering MOKE 2.0!):
+
+Mark Edwards
+#405 Konya manshon 4-12-6 Gono kami
+Hamura-cho, Nishitamagun
+Tokyo 190
+JAPAN
+Phone: (0425)79-3910
+
+Mr. Edwards can also be contacted at 101015.206@compuserve.com.
+     KD (Kanji Driver) is a program written by Mr. Izumi Ohzawa of University 
+of California-Berkeley. He can be contacted at izumi@violet.berkeley.edu. KD 
+is available through anonymous FTP at mindseye.berkeley.edu (128.32.232.19) 
+(in the pub/kanji directory). KD supports both JIS levels (6,355 kanji), and 
+Japanese files may be displayed on-line (one does not have to download a file 
+for viewing off-line). KD is written in Turbo C and runs on all graphic 
+adapters. KD, which comes with dmore, can also be run using the Kermit 
+terminal program.
+     There is also a Japanese terminal program called hterm (version 2.6.0.0), 
+available free for non-military use at FTP site azabu.tkl.iis.u-tokyo.ac.jp 
+(130.69.16.7) in the hterm/hterm2.6.0.0 directory. It is a full fledged 
+terminal program that allows one to view Japanese on line on American-made 
+IBM/PC's with EGA or VGA. It emulates VT220. It also contains a program called 
+hemacs, with which one can read Shift-JIS Japanese files up to 800 lines long, 
+and can edit the file a bit (no FEP support, though). It comes in a huge 
+package (500K+), and the source code is available at the same site. I was told 
+that this version may be corrupted, and that version 2.6.0.-2, one which 
+works, is available at terminator.cc.umich.edu (141.211.164.8).
+     The newest arrival for the MS-DOS world is called IBM DOS J4.0/V. It is a 
+Japanese operating system for MS-DOS computers, and is IBM's answer to 
+KanjiTalk for the Macintosh. It is similar to KanjiTalk in that its Japanese 
+fonts are stored in RAM rather than in ROM. This allows non-Japanese MS-DOS 
+machines (i.e., those sold in the US) to implement Japanese. The following are 
+the hardware requirements to run IBM DOS J4.0/V:
+
+  - AT/PS2 compatible with VGA graphics
+  - 80286 or above CPU
+  - At least 256K of extended memory (NOT expanded memory 'EMS')
+  - Extended keyboard with at least 101 keys
+  - 3.5 inch 1.44MB floppy disk drive
+
+The operating system costs 40,000 Yen (the manuals are extra!). I hear that it 
+is available in Japan right now, and that there are plans to market it in the 
+US early in 1991. Note that the Paradise VGA professional and the 
+ProDesignerII VGA cards do not work with this operating system.
+     Shouichi Matsui of the Central Research Institute of Electric Power 
+Industry wrote a utility program to print Japanese text from the IBM PC to the 
+HP Laserjet series printers. It uses 24x24 JIS fonts which you can download 
+from the utsun server (133.11.11.11) and comes with C source code. The output 
+is reasonable and fast. This program is available to the public and it will be 
+uploaded to appropriate FTP servers. In the meantime, if you want a copy (not 
+the JIS 24x24 fonts, which are about 500K), send Seiichi Nomura 
+(b460nom@utarlg.uta.edu) or Shouichi Matsui (matsui%denken.or.jp@relay.cs.net) 
+a message and you will get the uuencoded file.
+
+
+MACINTOSH (マッキントッシュ)
+     The Macintosh is probably the best computer you can buy (at least in the 
+US) if you wish to use Japanese in the things you do.
+     NinjaTerm, a public domain Japanese communications program written by Mr. 
+Michiharu Ariza of Adobe Japan, used to be available from sumex-
+aim.stanford.edu (36.44.0.6) by anonymous FTP. It was recently removed to free 
+up disk space there. I will gladly send a copy to anyone who wants it. 
+NinjaTerm can send and receive text in New-JIS and Old-JIS; it also supports 
+Shift-JIS and EUC for other applications. NinjaTerm requires KanjiTalk version 
+1.0 or higher (the most current version is 6.0.7).
+     For Macintoshes with TCP/IP, FastPath, GatorBox, etc., NCSA TelnetJ works 
+fine as a Japanese terminal emulator. It is located at the FTP site utsun.s.u-
+tokyo.ac.jp (133.11.11.11) in the Mac/telnetJ directory. This is the Japanese 
+version of NCSA Telnet. ASLTelnet, from the author of ASLEdit+, also works 
+very well, and can be used for the same purposes. I can send copies by 
+request.
+     KanjiTalk version 6.0.7 can be obtained through APDA (800-282-2732 or 
+APDA@applelink.apple.com) for $70 (plus $20 for one-year membership) in the 
+near future. It will come with 9 disks, and its stock number is M0008J/C. You 
+will need at least 2MB RAM and a hard disk to make this system work properly. 
+Unfortunately, APDA currently sells only KanjiTalk 6.0.4. Note that APDA 
+members are eligible to subscribe to a quarterly journal called "develop," and 
+that each issue of "develop" includes a CD-ROM on which is the most current 
+version of KanjiTalk, namely KanjiTalk 6.0.7. A one-year subscription to 
+"develop" is $30, and sample issues are sold for $10 each.
+     In order to input (create) Japanese text on a Macintosh, you will need to 
+be running Japanese system software, namely KanjiTalk (see above). You will 
+also need a front-end processor (FEP) as well as an editor or word processor. 
+An FEP is the tool which performs the so-called kana-to-kanji conversion, and 
+an editor or word processor is simply the "blackboard" on which you write. Be 
+aware that some blackboards are "smarter" than others -- MicroSoft Word does 
+not handle Japanese properly, but Nisus does extremely well.
+     An FEP called HENKAN 2.1 (2.0 for versions of KanjiTalk before 6.0.7) is 
+included with KanjiTalk. There are other, more powerful, FEP's available, some 
+of which are EGBridge 5.0, TurboJIP 2.0, Wnn, and MacVJE 2.1. I personally use 
+MacVJE 2.1, and find it very powerful and flexible.
+     There is a text editor called miniWRITER 1.7 which handles Japanese 
+remarkably well. It is a DA (Desk Accessory), so it is accessible everywhere 
+on the Macintosh. It handles Japanese beautifully, and is ShareWare ($12.00 
+fee). It is available through anonymous FTP at the same site as NinjaTerm. You 
+can find it as mini-writer-17.hqx in the info-mac/da directory. There is also 
+another editor called ASLEdit+ 1.0/a12 written by Mr. Hiroo Yamada 
+(76414.372@compuserve.com), but does not have a word wrap feature (it was 
+designed to be an editor for source code). This program can be used as either 
+a DA or application. This is also available at the sumex-aim.stanford.edu FTP 
+archive in the info-mac/app directory under the name asledit-plus-10a12.hqx, 
+is FreeWare, and has a very robust search/replace feature. The last text 
+editor I would like to mention is YooEdit 0.95 written by Mr. Yooichi Tagawa. 
+This program is much like ASLEdit+ above (it can be used as either a DA or 
+application), but sports a word wrap feature which works best with Japanese, 
+not English (it splits words randomly at the end of lines). It is FreeWare, 
+and is available at the sumex-aim.stanford.edu FTP site (36.44.0.6) in the 
+info-mac/app directory under the name yooedit-095.hqx. If any of these 
+programs are not where I said they are, they can be requested directly from 
+me.
+     There are several Japanese word processors for the Macintosh: マックライ
+トII-J (MacWriteII-J), EGWord, TurboWriter, MacWord, zeroByWord, ByWord, にば
+いわーど (2ByWord), and Solo Writer. There are also Japanese DeskTop 
+Publishing programs for the Macintosh: QuarkXPress 2.0J, Aldus PageMaker 3.5J, 
+and EGBook. I use PageMaker 3.5J. There are US sources for these programs. 
+Another Japanese word processor called BlueHawk is due out very soon. It is 
+very cheap (3800 Yen!), and claims to support in-line conversion with any FEP. 
+It will be marketed in Japan by Akiba Pascal, and I know of no US source.
+     A localized Japanese version of Nisus (called Solo Writer) was released 
+in May 1991. Its price in Japan is 68,000 Yen, and in the US is $495.00. 
+Paragon Concepts, who wrote the program (Mercury Software markets it in Japan) 
+tells me that registered users of Nisus can purchase Solo Writer for only 
+$250.00. Educational discounts of $250 are also available for Solo Writer (USA 
+only) as well as site licenses. Paragon Concepts and Mercury Software offer a 
+demo disk for Solo Writer available free for the asking. Paragon Concepts can 
+be reached by phone at 800-922-2993 or by email at d0405@applelink.apple.com 
+for more information.
+     A good source for Japanese-related products for the Macintosh is Qualitas 
+Trading Company (6907 Norfolk Road, Berkeley, CA 94705, 415-848-8080). There 
+is also an outfit called Japanese Language Services (186 Lincoln Street, 
+Boston, MA 02111, PHONE: 617-338-2211, FAX: 617-338-4611) which markets 
+Japanese software for the Macintosh. The Green Signal Factory in San 
+Francisco, California (800-722-7795) also sells Japanese software for the 
+Macintosh.
+     KanjiTalk, of course, includes Japanese fonts. There are two basic types 
+of Japanese fonts: Ming- (明朝) and Gothic- (ゴシック) style. Included in the 
+package are PostScript screen fonts (requires the use of the LaserWriterII 
+NTX-J for PostScript output) and ImageWriterII fonts. The following chart 
+lists the fonts included with KanjiTalk 6.0.7:
+
+PostScript Screen: 細明朝体 (Ming), 等幅明朝 (mono-spaced Ming), 中ゴシック体
+                   (Gothic), 等幅ゴシック (mono-spaced Gothic)
+ImageWriterII:     Kyoto (Ming), Osaka (Gothic)
+
+Individuals in Japan have also designed their own fonts. All of these are 
+ImageWriterII fonts, and have special characteristics. They are as follows:
+
+ASLFont+    (9/12-point, Japanese is Osaka, English is Monaco, included with
+             ASLEdit+, mono-spaced font)
+Tokyo       (12/24-point, Japanese is Osaka, English is Chicago, no half-
+             size katakana support, meant to be System font using
+             SystemFontINIT)
+Koshigaya   (9/12/18/24-point, Japanese is Osaka, English is Geneva, no
+             half-size katakana support, meant to be Application font using
+             SysFontINIT)
+Yoshinogari (9/12-point, Japanese is Osaka, English is Geneva)
+K2!         (9/12-point, Japanese is Osaka, English is Chicago, meant to be
+             System and application font by using a utility such as
+             KTCustomizer)
+
+I use Tokyo as my System font, Koshigaya as my Application font, and ASLFont+ 
+for most editing purposes. I have placed a file called japan-fonts.hqx on the 
+sumex-aim.stanford.edu FTP site (36.44.0.6) in the info-mac/font directory. It 
+includes the five Japanese fonts mentioned above (ASLFont+, Tokyo, Koshigaya, 
+Yoshinogari, and K2!) along with an INIT called SysFontINIT which requires the 
+use of the Tokyo and Koshigaya fonts.
+     There are also third-party Japanese font vendors. Canon markets high-
+resolution Japanese fonts in both Ming and Gothic styles, and in a wide 
+variety of sizes ranging from 24- to 56-dots. The Ming style is available in 
+32-, 40-, 48-, and 56-dot sizes, and the Gothic style is available in 24-, 
+32-, 40-, 48-, and 56-dot sizes. 24- through 40-dot sizes cost 8,800 Yen each, 
+and 48- through 56-dot sizes costs 9,800 Yen each. Japanese Language Services 
+(address and phone number above) sells the Canon fonts in the US. Dynaware 
+(the maker of MacVJE and MacWord) also markets scalable Japanese fonts 
+(includes both Ming and Gothic fonts) called MacFont which sells for 20,000 
+Yen. Both of the included fonts are designed to be used with LaserWriter-
+series laser printers without the Japanese PostScript feature. This means that 
+if you do not have a LaserWriterII NTX-J, and want 300 dpi (dots-per-inch) 
+resolution, these fonts are for you. Ain Technology markets a product called 
+Parametric Font  which costs 18,900 Yen ($150 through the Green Signal Factory 
+in San Francisco, California -- phone number listed above). This product 
+offers scalable screen fonts at a reasonable price, and allows the user to 
+adjust their relative weight for both Ming- and Gothic-styles. This product 
+requires the use of the 2 PostScript screen fonts included with KanjiTalk 
+6.0.7.
+     Adobe Systems Incorporated has just released 3 new Japanese PostScript 
+typefaces: FutoMin (bold Ming), FutoGo (bold Gothic), and Jun (thin-rounded 
+Gothic). They are downloadable, and will cost 99,000 Yen each.
+
+
+DEDICATED JAPANESE WORD PROCESSORS (日本語ワープロ専用機)
+     Many dedicated Japanese word processors are available with built-in 
+modems, built-in communication software, or both.
+     I once used an NEC 文豪ミニ7H (BUNGOU mini7H) with a built-in 1200 baud 
+modem and communication software. I was able to send and receive text only in 
+NEC-JIS, but by using my Japanese code conversion program described in PART 5, 
+I was able to convert incoming codes and to convert outgoing codes to New-JIS 
+with absolutely no difficulty. Other newer dedicated Japanese word processors 
+handle New-JIS and other codes. Some of these machines can be purchased for as 
+little as $500, but only in Japan.
+     Be aware that these machines are not computers, have limited memory 
+capacity, and cannot be serviced in the US. If you only use a computer as a 
+word processor, then one of these machines may be an inexpensive alternative.
+     I will try to include as part of the next version of JAPAN.INF a report 
+on the current state-of-the-art of dedicated Japanese word processors. I am 
+currently gathering the data I need to do so. Anyone with experience with such 
+machines should send me their comments as soon as possible.
+
+
+A FINAL NOTE
+     I hope that the information presented here will prove useful. I would 
+like to keep the electronic version of this article as up-to-date as possible, 
+and through readers' input, I am able to do so.
+     Most readers should notice that I am very heavy into the Macintosh. If 
+anyone has information on Japanese interfaces for UNIX, VMS, or any other 
+machine, please feel free to send me the information, and I will be sure to 
+include it in the next version of JAPAN.INF. Your name, of course, will be 
+mentioned in the ACKNOWLEDGMENTS section. Please include sources for the 
+software/documentation by giving addresses, phone numbers, FTP sites (with 
+their IP numbers!), etc.
+     Please do not hesitate to ask me further question concerning any subject 
+presented in this text.
+
+
+ACKNOWLEDGMENTS
+     I would like to express my deepest thanks to Kazumasa Kayo Utashiro of 
+Software Research Associates (SRA) for being my "SENSEI" approximately 2.5 
+years ago. He taught to me how to send and receive Japanese text using the 7-
+bit codes. With his help I was able to write this article in order to inform 
+others about what he has taught me plus more.
+     I would also like to express special thanks to Hisao Nojima for 
+introducing me to JUNET News. I read the Japanese articles every day, and have 
+benefitted much from them.
+     I would also like to thank the countless people who carefully read 
+through previous versions of this article in electronic form and offered 
+numerous suggestions on how to improve it. I would personally like to thank 
+Seiichi Nomura, Haruhiko Nishida, Koichi Mori, Rainer Daeschler, Erik M. van 
+der Poel, Ron Granich, Mark Edwards, Peter C. Lind, Masamichi Honda, Masato 
+Hirose, Katsuhiko Momoi, Yukihiko Okada, Hideo Tomita, Ron Hofmann, Richard 
+Walters, Jamie Hubbard, Tomonori Shirakawa, Tatsuya Shoji, Craig Van Degrift, 
+Eric E. Bowles, Jason Molenda, Izumi Ohzawa, Frank Sheeran, Toshiyuki Masui, 
+Theodore Morris, and Shmuel Browns just to name a few. If I missed anyone, 
+please let me know. I continue to receive numerous requests for this 
+information bulletin from all parts of the world...
+
+
+BIBLIOGRAPHY
+     The following publications are very useful references for anyone who is 
+interested in coding methods for Japanese text. All of the references are in 
+Japanese, except for the paper I wrote, so you must have reading ability in 
+order for these to be useful. JIS X 0212-1990 and Kazuo Tajima's book are 
+excellent references for the additional 5,801 kanji made standard in 1990 
+(Kazuo Tajima was the chairman of the JIS X 0212-1990 committee).
+     I have included two lists. One is romanized, and the other is Japanese. 
+The content of both lists is identical except for my paper. [NOTE: JIS = 
+Japanese Industrial Standards]
+
+Romanized/Translated:
+  JIS. 1984. JIS X 0202-1984 Code Extension Techniques for Use with the Code
+    for Information Interchange. 1,600 Yen.
+  JIS. 1989. JIS X 0201-1989 Code for Information Interchange. 700 Yen.
+  JIS. 1990. JIS X 0208-1990 Code of the Japanese Graphic Character Set for
+    Information Interchange. 3,090 Yen.
+  JIS. 1990. JIS X 0212-1990 Code of the Supplementary Japanese Graphic
+    Character Set for Information Interchange. 3,296 Yen.
+  Lunde, Ken R. 1990. Using Electronic Mail as a Medium for Foreign Language
+    Study and Instruction. March 1990 issue of CALICO Journal (pp. 68-78).
+  Mori, Hirotake. 1986. PASOKON TSUUSHIN GAIDO BUKKU. HBJ Publishing.
+    1,236 Yen.
+  Tajima, Kazuo. 1990. SAISHIN JIS KANJI JITEN. Kodansha. 2,300 Yen.
+  Uegaki, Tsutomu. 1987. PASOKON WAAPURO KANJI JITEN. Natsume-sha. 1,860
+    Yen.
+
+Japanese:
+  JIS. 1989. JIS X 0201-1989 『情報交換用符号』. 700円.
+  JIS. 1984. JIS X 0202-1984 『情報交換用符号の拡張法』. 1600円.
+  JIS. 1990. JIS X 0208-1990 『情報交換用漢字符号』. 3090円.
+  JIS. 1990. JIS X 0212-1990 『情報交換用漢字符号―補助漢字』. 3296円.
+  森 浩孝. 1986. 『パソコン通信ガイドブック』. HBJ Publishing. 1236円.
+  上柿 力. 1987. 『パソコンワープロ漢字辞典』. ナツメ社. 1860円.
+  田嶋 一夫. 1990. 『最新JIS漢字辞典』. 講談社社. 2300円.
+
+
+APPENDIX 1: BITNET NODES IN JAPAN
+
+NODE-ID  routing   name of site                         Network-soft *
+=====================================================================
+JPN      JPNSUT00  Japan BITNET Association (JaPan N,JP RSCS
+JPNAC    GWUVM     Nat Ctr for Sci Info Systems     ,JP UREP  90/04/27
+JPNAIST  JPNTSUKU  Agency Of Industrial Sci & Tech C,JP JES2  90/04/27
+JPNAIT01 JPNNUCBA  Aichi Institute of Tech          ,JP RSCS  90/04/24
+JPNARUTO JPNNME    Naruto Univ of Education         ,JP RSCS  90/04/27
+JPNCCKU  JPNKISCT  Kyushu Univ                      ,JP NETDA 90/04/24
+JPNCGU   JPNSUT30  Chuo-Gakuin University - Computer,JP RSCS  90/06/25
+JPNCUN10 JPNNUCBA  Nanzan Univ                      ,JP RSCS  90/04/24
+JPNDENTU JPNSNU10  Osaka Electro-Comm Univ          ,JP NETDA 90/06/25
+JPNDOKYO JPNWAS00  Dokkyo Univ                      ,JP RSCS  90/04/24
+JPNGUCC  JPNRKY00  Gakushuin Univ.                  ,JP NETDA 90/04/24
+JPNHIROA JPNKISCT  Hiroshima Univ                   ,JP RSCS  90/04/24
+JPNHUIS  JPNHIROA  Hiroshima Univ Grad Schl of Info ,JP UREP  90/04/27
+JPNICEPP JPNWAS00  Univ of Tokyo ICEPP              ,JP RSCS  90/04/24
+JPNISAS0 JPNTAMA0  Inst of Space & Astronautical Sci,JP NETDA 90/04/27
+JPNISM01 JPNSUT00  Inst of Stat Math Stat Data Anal ,JP RSCS  90/06/25
+JPNISSP  JPNWAS00  Univ of Tokyo/Inst for Solid St P,JP NJE   90/04/24
+JPNIUJ01 JPNSWU10  Intl Univ of Japan Niigata       ,JP RSCS  90/04/27
+JPNJAERI JPNWAS00  Japan Atomic Energy Res Ins      ,JP RSCS  90/04/24
+JPNKBUDS JPNOIT10  Dept of Systems Eng              ,JP RSCS  90/04/24
+JPNKEIO  JPNISSP   Keio Univ                        ,JP NJE   90/04/24
+JPNKEKTR JPNKEKVM  KEK TRISTAN                      ,JP NJE   90/04/24
+JPNKEKVM JPNSUT00  Kou Enerugi Ken, Tsukuba Japan   ,JP RSCS  90/04/24
+JPNKEKVX JPNKEKVM  KEK Network                      ,JP JNET  90/04/24
+JPNKGU01 JPNCUN10  Kinjo Gakuin Univ                ,JP NETDA 90/04/27
+JPNKISCI JPNKISCT  Kyushu Institute of Tech - Iizuka,JP RSCS  90/04/24
+JPNKISCM JPNKISCI  Kyushu Inst of Tech MVS          ,JP JES2  90/04/27
+JPNKISCT JPNSUT50  Kyushu Institute of Tech         ,JP RSCS  90/04/24
+JPNKIT   JPNSUT00  Kanazawa Inst. of Tech.          ,JP RSCS  90/04/24
+JPNKNSU  JPNOIT20  Kansai Univ                      ,JP NJE   90/07/20
+JPNKNU10 JPNKISCI  Kinki Univ                       ,JP RSCS  90/04/24
+JPNKNZW1 JPNKIT    Kanazawa Univ Info Proc Ctr      ,JP NJE   90/07/20
+JPNKSUVX JPNRINS   Kyoto Sangyo University - Faculty,JP JNET  90/06/25
+JPNKUDPC JPNKYOTO  Kyoto Univ - Data Proc. Ctr.     ,JP NETDA 90/04/24
+JPNKUHEL JPNKEKTR  Kyoto U HEPL                     ,JP NJE   90/04/24
+JPNKYOTO JPNOIT10  Kyoto Univ Dept Info Sci         ,JP RSCS  90/04/24
+JPNMU11  JPNISSP   Meiji Univ                       ,JP JES2  90/04/24
+JPNMU21  JPNMU11   Meiji Univ                       ,JP NJE   90/04/24
+JPNNIHOC JPNWAS00  Nihon U Col of Commerce          ,JP RSCS  90/04/24
+JPNNME   JPNSNU10  Natl Museum of Ethol             ,JP RSCS  90/04/24
+JPNNUCBA JPNSUT01  Nagoya Univ of Commerce          ,JP RSCS  90/04/24
+JPNNUHEP JPNKEKTR  Nagoya U HEPL                    ,JP NJE   90/04/24
+JPNOCHA1 JPNSWU10  Ochanomizu Univ                  ,JP RSCS  90/04/24
+JPNOIT10 JPNSUT00  Osaka Inst of Tech               ,JP RSCS  90/04/24
+JPNOIT20 JPNOIT10  Osaka Inst of Tech               ,JP NJE   90/06/25
+JPNONRI  JPNNUCBA  Okazaki Nat'l Res Insti          ,JP JNET  90/04/24
+JPNORIUT JPNORIXA  Ocean Rsrch Inst                 ,JP RSCS  90/06/25
+JPNORIXA JPNSUT00  Ocean Rsrch Inst                 ,JP RSCS  90/06/25
+JPNOSAKA JPNOIT10  Osaka Univ Ed Ctr                ,JP RSCS  90/04/24
+JPNOSKFM JPNKEKTR  Osaka U HEPL                     ,JP NJE   90/04/24
+JPNOUCC  JPNHIROA  OKAYAMA Univ Comp Ctr            ,JP RSCS  90/04/27
+JPNOUC01 JPNOIT10  OSAKA Univ OF COMMERCE           ,JP RSCSV 90/04/27
+JPNPNCT1 JPNJAERI  PNC Tokai Waste Tech Dev Div GIS ,JP RSCS  90/04/27
+JPNRIFP  JPNKYOTO  Kyoto Univ                       ,JP RSCS  90/04/24
+JPNRINS  JPNRIFP   Ryukoku Univ RINS Comp Ctr       ,JP RSCS  90/04/27
+JPNRKNCC JPNRKY00  Inst of Phys & Chem Rsrch Comp Ct,JP NETDA 90/04/27
+JPNRKY00 JPNWAS00  Rikkyo Univ                      ,JP NETDA 90/04/24
+JPNSENDI JPNTOHOK  Sendai Jr Coll of Tech           ,JP RSCS  90/04/24
+JPNSNU10 JPNOIT10  Setsunan Univ                    ,JP RSCS  90/04/24
+JPNSNU20 JPNSNU10  Setsunan Univ                    ,JP RSCS  90/04/24
+JPNSOKA  JPNSUT00  Soka Univ                        ,JP RSCS  90/06/25
+JPNSUT00 CUNYVMV2  Science U of Tokyo               ,JP RSCS  90/05/29
+JPNSUT01 JPNSUT00  Science Univ of Tokyo            ,JP RSCS  90/04/24
+JPNSUT10 JPNSUT00  Science U Tokyo - Japan          ,JP RSCS  90/04/24
+JPNSUT20 JPNSUT10  Science U Tokyo - Japan Kagurazak,JP RSCS  90/04/24
+JPNSUT3A JPNSUT30  Science U Tokyo - Japan, Noda    ,JP RSCS  90/04/24
+JPNSUT30 JPNSUT00  Science U Tokyo - Japan, Noda    ,JP RSCS  90/04/24
+JPNSUT31 JPNSUT30  Science U of Tokyo Noda          ,JP JNET  90/04/24
+JPNSUT40 JPNSUT00  Science U of Tokyo               ,JP RSCS  90/05/29
+JPNSUT50 JPNSUT00  Scienc U Tokyo Y J Coll          ,JP RSCS  90/05/29
+JPNSUT60 JPNSUT00  Science University of Tokyo Suwa ,JP RSCS
+JPNSWU10 JPNSUT01  Showa Women's Univ               ,JP RSCS  90/04/24
+JPNTAMA0 JPNWAS00  Tamagawa Univ                    ,JP RSCS  90/04/24
+JPNTDUK  JPNRKY00  Tokyo Denki Univ Kanda           ,JP NETDA 90/04/27
+JPNTDUS  JPNTDUK   Tokyo Denki Univ Hatoyama        ,JP NETDA 90/04/27
+JPNTHKVX JPNTOHOK  Tohoku Univ                      ,JP JNET  90/04/24
+JPNTIU01 JPNWAS00  Tokyo Intern'tl Univ             ,JP RSCS  90/04/24
+JPNTKUVM JPNSUT00  Tokyo Keizai U                   ,JP RSCS  90/04/24
+JPNTOHOK JPNSUT00  Tohoku Univ                      ,JP RSCS  90/04/24
+JPNTOP   JPNTYAVM  Toyama Prefectual University - Co,JP NJE   90/07/19
+JPNTSCVM JPNSUT01  IBM Tokyo Research               ,JP RSCS  90/04/24
+JPNTSUKU JPNKEKVM  Univ of Tsukuba - SIPC           ,JP RSCS  90/04/24
+JPNTSUK1 JPNTSUKU  U of Tsukuba - Sci Info Proc. Ctr,JP NJE   90/04/24
+JPNTSUK2 JPNTSUKU  U of Tsukuba - SIPC              ,JP RSCS  90/04/24
+JPNTYAVM JPNKIT    Toyama Univ                      ,JP RSCS  90/04/24
+JPNUMIN  JPNUTHOS  U of Tokyo Hospitalumin          ,JP UREP  90/04/24
+JPNUNU00 JPNUTHOS  United Nations Univ Comp Svcs    ,JP RSCS  90/04/27
+JPNUOEH  JPNKISCT  Univ of Occ & Envir Health       ,JP JNET  90/04/24
+JPNUTDME JPNSUT00  Univ of Tokyo                    ,JP RSCS  90/04/24
+JPNUTHOS JPNUTDME  Univ of Tokyo                    ,JP RSCS  90/04/24
+JPNUTINS JPNKEKTR  Univ of Tokyo - INS              ,JP NJE   90/04/24
+JPNUTKOM JPNWAS00  Univ of Tokyo Coll of Arts & Sci ,JP RSCS  90/04/24
+JPNWAS00 JPNSUT00  Waseda Univ                      ,JP RSCS  90/06/25
+
+ * Network-soft gives you a hint about the machine-type. None-IBM
+   computers need different software to bevave IBM-like in BITNET
+   UREP = UNIX
+   JNET = VAX/VMS
+   JES2 = MVS from IBM (dont't try to talk online with users there.
+                        The machine is a batch-specialist and can't talk
+                        to anybody outside)
+   RSCS = VM from IBM
+   NJE & NETDA = I hope sombody can tell me!!!
+
+
+APPENDIX 2: JUNET DOMAINS
+
+JP domains:
+^^^^^^^^^^
+  ntt                    Nippon Telegraph and Telephone Corp.
+  nttdata                NTT Data Communications Systems Corp.
+
+AD domains:
+^^^^^^^^^^
+  jain                   Japan Academic Inter-University Network
+  juice                  JUICE Network
+  junet                  JUNET Network
+  sinet                  Science Information Network
+  tisn                   Todai Int'l. Science Network
+  wide                   WIDE Internet
+
+AC domains:
+^^^^^^^^^^
+  aichi-med-u            Aichi Medical Univ.
+  aitech                 Aichi Inst. of Technology
+  akita-u                Akita Univ.
+  aoyama                 Aoyama Gakuin Univ.
+  ashitech               Ashikaga Inst. of Technology
+  chiba-u                Chiba Univ.
+  chubu                  Chubu Univ.
+  chukyo-u               Chukyo Univ.
+  chuo-u                 Chuo Univ.
+  ciea                   Central Inst. of Exp. Animal Pre-Clinical Lab.
+  dendai                 Tokyo Denki Univ.
+  ehime-u                Ehime Univ.
+  esumi-th               East Sumiyoshi Technical High School
+  fit                    Fukuoka Inst. of Technology
+  fukui-u                Fukui Univ.
+  fukuoka-edu            Fukuoka Univ. of Education
+  fukuoka-u              Fukuoka Univ.
+  gifu-u                 Gifu Univ.
+  gunma-u                Gunma Univ.
+  hamamatsu-med          Hamamatsu Univ. School of Medicine
+  hamamatsu-pc           Hamamatsu Polytechnic College
+  himeji-du              Himeji Dokkyo Univ.
+  hiroshima-u            Hiroshima Univ.
+  hit-u                  Hitotsubashi Univ.
+  hokudai                Hokkaido Univ.
+  hosei                  Hosei Univ.
+  ibaraki                Ibaraki Univ.
+  ism                    The Inst. of Statistical Mathematics
+  it-chiba               Chiba Inst. of Technology
+  it-hiroshima           Hiroshima Institute of Technology
+  kanagawa-u             Kanagawa Univ.
+  kanazawa-u             Kanazawa Univ.
+  kansai-u               Kansai Univ.
+  kawai-juku             Kawai Educational Institution
+  keio                   Keio Univ.
+  kek                    Nat'l. Lab. for High Energy Physics
+  kindai                 Kinki Univ.
+  kit                    Kyoto Inst. of Technology
+  knct                   Kumamoto Nat'l. College of Technology
+  kobe-u                 Kobe Univ.
+  kobeuc                 Kobe Univ. of Commerce
+  kochi-u                Kochi Univ.
+  kogakuin               Kogakuin Univ.
+  konan-u                Konan Univ.
+  kouku-k                Tokyo Metropolitan College of Aeronautical Engr.
+  kshosen                Kobe Shosen Univ.
+  kumamoto-u             Kumamoto Univ.
+  kurume-it              Kurume Inst. of Technology
+  kushiro-ct             Kushiro Nat'l. College of Technology
+  kwansei                Kwansei Gakuin Univ.
+  kyoto-su               Kyoto Sangyo Univ.
+  kyoto-u                Kyoto Univ.
+  kyusan-u               Kyushu Sangyou Univ.
+  kyushu-id              Kyushu Inst. of Design
+  kyushu-u               Kyushu Univ.
+  kyutech                Kyushu Inst. of Technology
+  meiji                  Meiji Univ.
+  mie-u                  Mie Univ.
+  minpaku                Nat'l. Museum of Ethnology
+  miyazaki-u             Miyazaki Univ.
+  musabi                 Musashino Univ. of Arts
+  nacsis                 Nat'l. Center for Science Information System
+  nagano                 Nagano Univ.
+  nagano-nct             Nagano Nat'l. College of Technology
+  nagaoka-coltech        Nagaoka College of Technology
+  nagaokaut              Nagaoka Univ. of Technology
+  nagasaki-u             Nagasaki Univ.
+  nagoya-u               Nagoya Univ.
+  nanzan-u               Nanzan Univ.
+  nao                    Nat'l. Astronomical Observatory
+  nara-k                 Nara Nat'l. College of Technology
+  nig                    Nat'l. Inst. of Genetics
+  nihon-u                Nihon Univ.
+  niigata-u              Niigata Univ.
+  nijl                   Nat'l. Inst. of Japanese Literature
+  nitech                 Nagoya Inst. of Technology
+  oita-u                 Oita Univ.
+  okayama-u              Okayama Univ.
+  osaka-cu               Osaka City Univ.
+  osaka-kyoiku           Osaka Kyoiku Daigaku
+  osaka-med              Osaka Medical College
+  osaka-tech             Osaka Inst. of Technology
+  osaka-u                Osaka Univ.
+  osakac                 Osaka Electro-Communication Univ.
+  osakafu-u              Univ. of Osaka Prefecture
+  otaru-uc               Otaru Univ. of Commerce
+  pu-toyama              Toyama Prefectural Univ.
+  rikkyo                 Rikkyo Univ.
+  ritsumei               Ritsumeikan Univ.
+  ryukoku                Ryukoku Univ.
+  saga-u                 Saga Univ.
+  saitama-u              Saitama Univ.
+  sanno                  SANNO College
+  sapmed                 Sapporo Medical College
+  sasebo                 Sasebo College of Technology
+  seikei                 Seikei Univ.
+  seinan-gu              Seina Gakuin Univ.
+  sendai-ct              Sendai Nat'l. College of Technology
+  senshu-u               Senshu Univ.
+  sheart                 Univ. of the Sacred Heart
+  shinshu-u              Shinshu Univ.
+  shizuoka               Shizuoka Univ.
+  shudo-u                Hiroshima Shudo Univ.
+  sophia                 Sophia Univ.
+  sut                    Science Univ. of Tokyo
+  t-gitan                Toyama Prefectural College of Technology
+  takushoku-u            Takushoku Univ.
+  teu                    Tokyo Engr. Univ.
+  titech                 Tokyo Inst. of Technology
+  to-shinkeiken          Tokyo Shinkei Research Inst.
+  tohoku                 Tohoku Univ.
+  tohtech                Tohoku Institute of Technology
+  tokushima-u            Tokushima Univ.
+  tokuyama               Tokuyama Nat'l. College of Technology
+  tosho-u                Tokyo Shosen Univ.
+  toyo                   Toyo Univ.
+  toyota-ti              Toyota Technological Inst.
+  tsuda                  Tsuda College
+  tsukuba                Univ. of Tsukuba
+  tuat                   Tokyo Univ. of Agriculture and Technology
+  tut                    Toyohashi Univ. of Technology
+  u-gakugei              Tokyo Gakugei Univ.
+  u-ryukyu               University of Ryukyus
+  u-shizuoka-ken         Univ. of Shizuoka
+  u-tokai                Univ. of Tokai
+  u-tokyo                The Univ. of Tokyo
+  uec                    The Univ. of Electro-Communications
+  uitec                  Univ. of Ind. Technology
+  ulis                   Univ. of Library and Information Science
+  utsunomiya-u           Utsunomiya Univ.
+  wakayama-th            Wakayama Prefectural Ind. High School
+  wakayama-u             Wakayama Univ.
+  waseda                 Waseda Univ.
+  yamagata-u             Yamagata Univ.
+  yamaguti-u             Yamaguchi Univ.
+  yamanashi              Yamanashi Univ.
+  ynu                    Yokohama Nat'l. Univ.
+
+GO domains:
+^^^^^^^^^^
+  aerospace-lab          National Aerospace Laboratory
+  bosai                  Nat'l Research Inst. for Earth Science and Disaster
+  crl                    Communications Research Lab.
+  etl                    Electrotechnical Lab.
+  fukui-kg               Ind. Technology Center of Fukui Prefecture
+  gsj                    Geological Survey of Japan
+  idlabh                 Ind. Development Lab. Hokkaido
+  ipa                    Information-technology Promotion Agency, Japan
+  ipri                   Ind. Products Research Inst.
+  jaeri                  Japan Atomic Energy Research Inst.
+  jnoc                   Japan Nat'l. Oil Corp., Technology Research Center
+  jrdc                   Research Development Corp. of Japan
+  jwa                    Japan Weather Association
+  kiri                   Mech. and Elect. Research Inst.
+  kmt-iri                Kumamoto Ind. Research Inst.
+  mel                    Mechanical Engr. Lab.
+  nagasaki               Nagasaki Prefectural Government
+  nasda                  Nat'l. Space Development Agency of Japan
+  ncl                    Nat'l. Chemical Lab. for Ind., AIST, MITI
+  ncvc                   Nat'l. Cardiovascular Center Research Inst.
+  okakogi                Okayama Prefecture Technical Center
+  prit                   Tokyo Psychiatric Research Inst.
+  riken                  Inst. of Physical and Chemical Research
+  statci                 Kagaku Gijutsu Chou Kenkyuu Kouryuu Center
+  tikusi                 Nat'l. Inst. of Animal Ind.
+  wakayama               Wakayama Kenchou
+  ysc                    Yokohama Science Popularizing Association for Youth
+
+OR domains:
+^^^^^^^^^^
+  aegis                  The Aegis Society
+  astem                  Astem Research Inst.
+  chemnet                CHEMNET Japan
+  denken                 Central Research Inst. of Electric Power Ind.
+  friend21               Friend 21 Research Center
+  fuzzy                  Lab. for Int'l. Fuzzy Engr. Research
+  genesys-p              Steering Committee of Genesys-P
+  icot                   Inst. for New Generation Computer Technology
+  ijaic                  ICOT-JIPDEC AI Center
+  imt-shizuoka           Inst. of Mechatronic Technology Foundation
+  jafsa                  Ship and Ocean Foundation
+  jeida                  Japan Electronic Industry Development Association
+  jipdec                 Japan Information Processing Development Center
+  juice                  JUICE Network (not JUNET)
+  jus                    Japan UNIX Society
+  kaba                   Kyoto Artificial Brain Associates
+  kmt-technopolis        Kumamoto Technopolis Foundation
+  peccom                 Sekiyu Sangyou Kasseika Center
+  prug                   Packet Radio User's Group
+  rinshoken              Tokyo Clinical Sciences Research Inst.
+  rtri                   Railway Tech. Research Inst.
+  sea                    Software Engineers Association
+  senri-i                Senri Int'l. Information Ind.
+  snet                   SNET
+  stanford-jc            Stanford Japan Center
+  tiny                   Tsukuba Internet Club
+
+CO domains:
+^^^^^^^^^^
+  abc-kk                 ABC Corp.
+  access                 Access Co., Ltd.
+  adac                   Advanced Data Controls, Corp.
+  aic                    Advanced Intelligent Communication System Lab.
+  aichi-steel            Aichi Steel Works, Ltd.
+  air                    AI Language Research Inst., Ltd.
+  airco                  AIR Co., Ltd.
+  aisoft                 AI Soft, Inc.
+  allied-telesis         Allied Telesis, Inc.
+  allumer                Allumer
+  aml                    Advanced Materials Lab., Inc.
+  analog                 Analog Devices Corp.
+  anritsu                Anritsu Corp.
+  aplix                  Aplix Corp.
+  apollo-j               Apollo Computer Japan
+  apptec                 Applied Technology Co., Ltd.
+  arc-s                  Architectural Systems Inc.
+  artstech               Arts Tech Inc.
+  asahi                  Asahi Broadcasting
+  asahi-eng              Asahi Engr.
+  asahi-np               The Asahi Shimbun Publishing Co., Ltd.
+  asahi-techno           Asahi Techno-Computer Corp.
+  asatsu                 Asatsu, Inc.
+  ascii                  ASCII Corp.
+  asi                    Advanced Solutions Inc.
+  asics                  ASICS
+  asp                    ASP Corp.
+  asr                    ASR Corp.
+  astec                  Astec, Inc.
+  atr                    Advanced Telecomm. Research Inst. Int'l.
+  att                    AT&T Unix Pacific Co., Ltd.
+  attjens                AT&T Jens Corp.
+  axis                   AXIS Corp.
+  bootsystems            Boot Systems Japan Corp.
+  bridge                 Bridge Inc.
+  brother                Brother Ind. Co., Ltd.
+  bug                    BUG Inc.
+  bussan-advsys          Bussan Advanced Systems Corp.
+  c-creators             Computer Creators, Inc.
+  cac                    Computer Applications Co., Ltd.
+  canon                  Canon Inc.
+  canon-soft             Canon Software Corp.
+  canopus                Canopus Electric Co., Ltd.
+  casio                  Casio
+  cat                    System House CAT
+  cec                    Chuo Electric Co., Ltd.
+  cij                    Computer Inst. of Japan, Ltd.
+  citizen                Citizen Watch Co., Ltd.
+  citoh                  C. Itoh & Co., Ltd.
+  clipper                Systems Clipper Inc.
+  convex-j               Comvex Computer Ltd.
+  cray                   Cray Research Japan Ltd.
+  creo-rd                Creo R & D Co., Ltd.
+  crosscat               Cross Cat Corp.
+  csk                    CSK Corp.
+  daikin                 Daikin Ind. Co.
+  datacontrol            Data Control Ltd.
+  dcl                    Yokogawa Digital Computer Corp.
+  dec-j                  Digital Equipment Corp. Japan
+  densan                 Densan Corp.
+  diaconsult             Dia Consultants Co., Ltd.
+  digital                Digital
+  dit                    Dit Co., Ltd.
+  dnp                    Dai Nippon Printing Co., Ltd.
+  edr                    Japan Electronic Dictionary Research Inst., Ltd.
+  epson                  Seiko Epson
+  eric                   Eric
+  foretune               Foretune Co., Ltd
+  fuji-ric               Fuji Research Institute Corp.
+  fujidenki              Fuji Electric Corporate R & D, Ltd.
+  fujifilm               Fuji Photo Film Co., Ltd.
+  fujita                 Fujita Corp.
+  fujitsu                Fujitsu Ltd.
+  fujixerox              Fuji Xerox Co., Ltd.
+  furukawa               Furukawa Electric Co., Ltd.
+  furuno                 Furuno Electric Co., Ltd.
+  gctech                 Graphics Communication Technologies R & D Dept.
+  global                 Global Science Co., Ltd.
+  goldcoast              Gold Coast Productions Co., Ltd.
+  goldman                Goldman Sacks
+  hallab                 HAL Lab., Inc.
+  hankyu                 Hankyu Dentetsu Corp.
+  hexard                 Hexard Inc.
+  hitachi                Hitachi, Ltd.
+  hitachi-chem           Hitachi Chemical Ind. Corp.
+  hitachi-hipro          Hitachi Process Computer Engr., Inc.
+  hitachi-sk             Hitachi Software Engr. Corp.
+  hitachi-system         Hitachi System Engineering, Ltd.
+  horiba                 Horiba Seisaku
+  hst                    Hirata Software Technology Co., Ltd.
+  hudson                 Hudson Co., Ltd.
+  hyperware              Hyperware Corp.
+  ibix                   IBIX Co., Ltd.
+  ibm                    IBM Japan, Ltd.
+  icat                   ICAT Corp.
+  icfd                   Inst. of Computational Fluid Dynamics
+  icm                    ICM Co., Ltd.
+  ihi                    Ishikawajima-Harima Heavy Ind. Co., Ltd.
+  image-f                Computer Art Form Image Factory
+  imagica                Imagica Corp.
+  imslab                 Information and Mathematical Science Lab., Inc.
+  intec                  Intec Inc.
+  intel-j                Intel Japan Corp.
+  intelligent-systems    Intelligent Systems Co., Ltd.
+  isac                   Int'l. Sekisu AI Corp.
+  isid                   Information Services Int'l. - Dentsu, Ltd.
+  iwanami                Iwanami Shoten, Publishers
+  jal-cs                 JAL Jouhou Kaihatsu
+  jba                    Japan Business Automation Co., Ltd.
+  jcc                    Japan Computer Corp.
+  jepro                  JEPRO Co., Ltd.
+  jip                    Japan Information Processing Service Co., Ltd.
+  jmas                   JMA Systems Corp.
+  jsd                    Joint System Development Corp.
+  jusoft                 Nippon Unisoft Corp.
+  just                   Just System
+  jvc-victor             Japan Victor Corp.
+  kajima                 Kajima Corp.
+  kao                    Kao
+  kawaju                 Kawasaki Heavy Ind. Corp.
+  kawasaki-steel         Kawasaki Steel Co.
+  kcc-comp-consul        Kinki Computer Consultant, Inc.
+  kcs                    KCS Corp.
+  kcs-soft               KCS Soft Corp.
+  kddlabs                KDD Lab.
+  kepco                  The Kansai Electric Power Co., Ltd.
+  ker                    Kinryo Engr.
+  kke                    Kozo Keikaku Engr. Inc.
+  knowledge              Knowledge Co., Ltd.
+  kobelco                Kobe Steel, Ltd.
+  kokusai-kogyo          Kokusai Kogyo Co., Ltd.
+  komatsu                Komatsu Ltd.
+  kpress                 Kabushiki Shinbun, Inc.
+  kthree                 Kanri Kogaku Kenkyusho, Ltd.
+  kubota                 Kubota Ltd.
+  kyocera                Kyocera Corp.
+  kysa                   Kyoto Software Application Inc.
+  lifeboat               Lifeboat, Ltd.
+  lsi-j                  LSI Japan Co., Ltd.
+  m-kasei                Mitsubishi Kasei
+  macro                  Macro Engr.
+  maspro                 Maspro Denko Corp.
+  mbrain                 Max Brain
+  mei                    Matsushita Electric Ind. Co., Ltd.
+  meidensha              Meidensha Corp.
+  meitec                 Meitec Corp.
+  melco                  Mitsubishi Electric Corp.
+  mhi                    Mitsubishi Heavy Ind., Ltd.
+  microcad               Micro CAD Inc.
+  mignon                 Mignon Systems, Inc.
+  mipec                  Mitsui Petrochemical Ind., Ltd.
+  misystems              M.I. Systems
+  mita                   Mita Ind. Co., Ltd.
+  mitsui-knowledge       Mitsui Knowledge Ind. Co., Ltd
+  mocoil                 Mitsubishi Oil Co., Ltd.
+  mogami-wire            Mogami Wire & Cable Co.
+  mot-j                  Nippon Motorola, Ltd.
+  mri                    Mitsubishi Research Inst., Inc.
+  msassoc                Micro Software Associates Co., Ltd.
+  msi                    Mathematical Systems, Inc.
+  msr                    Mitsuizosen Systems Research
+  n-denso                Nihon Denso Corp.
+  nakasha                Nakasha Curieitebu Co., Ltd.
+  ncd                    NCD Japan, Inc.
+  ndg                    Nihon Data General
+  ndr                    NDR Co., Ltd.
+  nec                    NEC Corp.
+  nesco                  Nichimen Electronic Systems Co.
+  netone                 NetOne Systems Co., Ltd.
+  next                   Next Foundation Co., Ltd.
+  nichigai               Nichigai Associates, Inc.
+  nichimen-nds           Nichimen Data Syatems Corp.
+  nihonmusen             Nihon Musen Corp.
+  nikon                  Nikon Corp.
+  nintendo               Nintendo Co., Ltd.
+  nippon-computer-system Nippon Computer Systems Co., Ltd.
+  nishitsuu              System Nishitsu
+  nissan                 Nissan Jidousha
+  nissho-ele             Nissho Electronics Corp.
+  nissin                 NISSIN Electric Co., Ltd.
+  nk-exa                 NK-EXA Co., Ltd.
+  nkk                    NKK Corp.
+  nmcc                   Nihon Micom Hanbai
+  nova                   Nova Corp.
+  nri                    Nomura Research Inst., Ltd.
+  ns-ace                 Nakano Software Ace
+  nsc                    Nippon Steel Corp.
+  nss                    Nisshin Systems
+  nssys                  Nihon Sogo System
+  ntec                   NTT Gijutsu Iten
+  nts                    Nippon Timeshare Co., Ltd.
+  ntt-itn                NTT Internet Co., Ltd.
+  ntts                   NTT Software
+  oki                    Oki Electric Ind. Co., Ltd.
+  okit                   Okit Corp.
+  omnis                  Omnis, Inc.
+  omron                  Omron Corp.
+  omronsoft              Omron Software Co., Ltd.
+  osakagas               Osaka Gas Co.
+  paltec                 Paltec Corp.
+  pentel                 Pentel Co., Ltd.
+  peri                   Protein Engr. Research Inst.
+  personal-media         Personal Media Corp.
+  profile                Profile Co. Ltd.
+  prompt                 Prompt Corp.
+  publinix               Publinix Corp.
+  recruit                Inst. for Supercomputing Research, Recruit
+  ricoh                  Ricoh Co., Ltd.
+  rics                   Research Inst. for Computer Science, Inc.
+  rikei                  Rikei Corp.
+  roland                 Roland Corp.
+  sanei                  Sanei Co.
+  sanwa-ss               Sanwa Seisakusho
+  sanyo                  Sanyo Electric Co., Ltd.
+  sc-htc                 SC Hitech Center
+  scr                    SCR Corp.
+  screen                 Dainippon Screen Seizou
+  seaside                Seaside Software Inc.
+  secom                  Secom Intelligent Systems Lab.
+  sekisui                Sekisui Chemical Co., Ltd.
+  sgi                    Nihon Silicon Graphics, Inc.
+  sharp                  Sharp Corp.
+  shimz                  Shimizu Corp.
+  shinko-elec            Sinko Electric Corp.
+  shionogi               Shionogi & Co., Ltd.
+  sibasoku               Shibasoku Corp.
+  sigma                  Sigma Systems Corp.
+  softbank               Softbank Corp.
+  soliton                Soliton Systems Corp.
+  sony                   Sony Corp.
+  sonytek                Sony Tektro
+  sord                   Sord Computer Corp.
+  soum                   Soum Corp.
+  spec                   System Planning and Engr. Corp.
+  squid-tech             Superconducting Sensor Lab.
+  sra                    Software Research Associates, Inc.
+  ssk                    Nippon System Services Co., Ltd.
+  sstech                 SS Technology Co., Ltd.
+  stanley                Stanley Electric Co., Ltd.
+  stepone                Stepone Corp.
+  strategic              Strategic Research Inst.
+  studiogen              StudioGEN, Inc.
+  sumiden                Sumitomo Electric Ind., Ltd.
+  sumikin                Sumitomo Metal Ind., Ltd.
+  japan.sun.com          Sun Microsystems Inc., Japan
+  sunjapan               SunJapan Co., Ltd.
+  suri                   Surigiken Corp.
+  swire                  Swire Transtech, Ltd.
+  symbolics              Nihon Symbolics Corp.
+  sysplan                Sysplan, Inc.
+  system-keikaku         Research Inst. of Systems Planning
+  systemsoft             Systemsoft Corp.
+  taisei                 Taisei Corp.
+  takaoka-electric       Takaoka Electric Mfg. Co., Ltd.
+  tbs                    Tokyo Broadcasting Systems, Inc.
+  tds                    Tokyo Denshi Sekkei Co., Ltd.
+  technonet              Technonet, Inc.
+  teijin                 Teijin
+  telema                 Telematique Int'l. Research Lab.
+  tepco                  Tokyo Electric Power Corp.
+  teradata-j             Teradata Japan Ltd.
+  tis                    Toyo Information Systems Co., Ltd.
+  tmr                    Technical Marketing Research, Inc.
+  tms                    Toppan Moore Systems, Ltd.
+  togra                  Tokyo Graphic Arts
+  tokimec                Tokimec, Inc.
+  tokyo-gas              Tokyo Gas, Ltd.
+  tokyo-shoseki-ptg      Tokyo Shoseki Printing Co., Ltd.
+  tokyoelectron          Tokyo Electron Co.
+  toppan                 Toppan Printing Co. Ltd.
+  toshiba                Toshiba Corp.
+  total                  Total Systems Inst. Co., Ltd.
+  totsu                  Totsu Sangyou Corp.
+  toyo-eng               Toyo Engr. Corp.
+  toyo-stl               Toyo Stainless Corp.
+  toyodenki              Toyo Denki Seizo Corp.
+  toyota                 Toyota Motor Corp.
+  tradtech               Trad Technologies Corp.
+  tsi                    Toden Software, Inc.
+  twics                  TWICS
+  tytlabs                Toyota Central R & D Lab., Inc.
+  uclosk                 Universal Computer Lab. Corp.
+  ulvac                  Ulvac Corporate Center
+  unipress               Unipress Software Japan, Inc.
+  unisol                 Unisolu Co., Ltd.
+  unisys                 Nihon Unisys, Ltd.
+  uniuni                 Unisys, Union Systems Co., Ltd.
+  wacom                  Wacom Co. Ltd.
+  windriver              Wind River Systems Corp.
+  word-house             Word House
+  yamaha                 Yamaha Corp.
+  yaskawa                Yaskawa Electric Mfg. Co., Ltd.
+  yhp                    Yokogawa Hewlett Packard Computer Operation
+  ykk                    Yoshida Kogyo Corp.
+  yokogawa               Yokogawa Electric Corp.
+  zuken                  Zuken Corp.
+
+
+APPENDIX 3: JUNET NEWS NEWSGROUPS
+ 
+fj.ai                       Artificial intelligence discussions
+fj.announce                 General announcements of interest to all
+                              (Moderated)
+fj.binaries.mac             Encoded Macintosh programs in binary
+fj.binaries.misc            Encoded programs in binary not covered elsewhere
+fj.binaries.msdos           Encoded MS-DOS programs in binary (Moderated)
+fj.binaries.msdos.d         Topics on softwares posted to fj.binary.msdos
+fj.books                    Books of all genres, shapes, and sizes
+fj.comp.arch                Computer architecture
+fj.comp.comm                Discussion about software & hardware for
+                              communications
+fj.comp.image               Computer graphics, art, animation, image
+                              processing
+fj.comp.misc                General topics about computers not covered
+                              elsewhere
+fj.comp.music               Topics about computers and music
+fj.comp.oops                Object Oriented Programming, System, etc
+fj.comp.parallel            Discussion about parallel computing
+fj.comp.printers            Printers, hardware & software
+fj.comp.texhax              Discussion about TeXhax and delivery of mailing
+                              list
+fj.comp.text                Text processing issues and methods
+fj.editor.emacs             EMACS editors of different flavors
+fj.editor.misc              Talk about editors
+fj.editor.sse               Discussion about SSE (Simple Screen Editor)
+fj.followup                 Followups to articles in fj.general
+fj.forsale                  Short, tasteful postings about items for sale
+fj.general                  *Important* and timely announcements of interest
+                              to all
+fj.guide.admin              Junet guide for administrators (Moderated)
+fj.guide.general            Junet guide. Rules, Convention, etc (Moderated)
+fj.guide.newusers           Explanatory postings for new users (Moderated)
+fj.info-terms               All sorts of terminals
+fj.jokes                    Joke and humor
+fj.junet                    General discussion about JUNET itself
+fj.jus                      Information about JUS
+fj.kanakan.misc             Discussion about kana-kanji henkan
+fj.kanakan.wnn              Discussion about Wnn kana-kanji henkan system
+fj.kanji                    Discussion about Kanji
+fj.kermit                   Discussion about kermit package
+fj.lan                      Local area network hardware and software
+fj.lang.ada                 Discussion about Ada*
+fj.lang.c                   Discussion about C
+fj.lang.forth               Discussion about Forth
+fj.lang.lisp                Discussion about LISP
+fj.lang.misc                Different computer languages not specifically
+                              listed
+fj.lang.mod2                Discussion about Modula-2
+fj.lang.postscript          PostScript language and related topics
+fj.lang.prolog              Discussion about PROLOG
+fj.lang.st80                Discussion about Smalltalk 80
+fj.lectures                 Informative talks given to the news readers
+fj.living                   Discussions about various things in daily life
+fj.mail                     Proposed new mail/network standards
+fj.mail-lists.apollo        Apollo workstation mailing list (Moderated)
+fj.mail-lists.common-lisp   Common lisp mailing list from ARPA (Moderated)
+fj.mail-lists.connectionist Connectionist mailing list (Moderated)
+fj.mail-lists.info-japan    Info-japan mailing list from ARPA (Moderated)
+fj.mail-lists.nihongo       Nihongo mailing list from ARPA (Moderated)
+fj.mail-lists.occam         Occam mailing list from ARPA (Moderated)
+fj.mail-lists.parallel      comp.parallel mailing list (Moderated)
+fj.mail-lists.reduce        Reduce mailing list (Moderated)
+fj.mail-lists.types         Types mailing list from ARPA (Moderated)
+fj.mail-lists.x-window      X window mailing list from ARPA (Moderated)
+fj.meetings                 announce for conference, workshop, etc
+                              (Not-moderated)
+fj.misc                     Various discussions that there are no groups to
+                              match
+fj.net-people               Announcements, requests, etc. about people on
+                              the net
+fj.news.adm                 Comments directed to news administrators
+fj.news.b                   Discussion about B news software
+fj.news.config              Postings of system down times and configuration
+                              change
+fj.news.group               Discussions and lists of newsgroups
+fj.news.lists               News-related statistics and lists
+fj.news.map                 Various maps, including UUCP maps
+fj.news.misc                Discussions of network news on JUNET itself
+fj.news.newsite             Postings of new site announcements
+fj.news.sa                  Comments directed to system administrators
+fj.os.minix                 Discussion about the MINIX operating system
+fj.os.misc                  Discussion about operating systems not covered
+                              elsewhere
+fj.os.msdos                 Discussion about the MSDOS operating system
+fj.os.os9                   Discussion about the OS9 operating system
+fj.papers                   Papers of all genres
+fj.ptt                      Information about PTT
+fj.questions.junet          Questions especially about JUNET
+fj.questions.misc           Questions about miscellaneous subjects
+fj.questions.unix           Questions especially about UNIX
+fj.rec.aerospace            About aviation, airplanes, airsports, etc.
+fj.rec.animation            Discussion about animated movies
+fj.rec.autos                Automobiles, automotive products and laws
+fj.rec.av                   High fidelity audio and video components
+fj.rec.baseball             Discussion about baseball
+fj.rec.bikes                Motorcycles and Bicycles, related products and
+                              laws
+fj.rec.comics               The funnies, old and new
+fj.rec.food                 Food, wine, spirits, cooking, cookbooks, and
+                              recipes
+fj.rec.games                Discussion about games and computer games
+fj.rec.games.scores         Personal best scores of games and computer games
+fj.rec.ham                  topics about ham radio
+fj.rec.idol                 General topics about idol
+fj.rec.marine               Marine recreation. Diving, swimming, yachting,
+                              etc.
+fj.rec.misc                 Recreational/participant topics not covered
+                              elsewhere
+fj.rec.movies               Reviews and discussions of movies
+fj.rec.music                Discussion about music
+fj.rec.music.classical      Talk around classical music
+fj.rec.music.progressive    Talk around progressive rock
+fj.rec.mystery              Talk about mystery
+fj.rec.photo                Topics about cameras and photographs
+fj.rec.rail                 Discussion about railway & railroad
+fj.rec.sf                   Discussion about science fiction
+fj.rec.sports               Topics about sports
+fj.rec.sports.football      Talk around footballs
+fj.rec.sports.keiba         About horseracing
+fj.rec.sports.prowrestling  About prowrestling
+fj.rec.sports.ski           About skiing
+fj.rec.travel               Traveling all over the world
+fj.rec.tv                   Talk about television and its shows
+fj.sci.astro                Discussion about stars, planets and comets
+fj.sci.lang                 Natural languages, communication, etc
+fj.sci.math                 Mathematical discussions and pursuits
+fj.sci.misc                 Discussions about sciences not covered elsewhere
+fj.soc.culture              Group about (japanese?) culture
+fj.soc.law                  Topics on Law and rights
+fj.soc.men-women            Fairness, Rights, etc. Between women and men
+fj.soc.misc                 Socially-oriented topics not covered elsewhere
+fj.soc.tech                 Topics on society and technology
+fj.sources                  For the posting of software packages &
+                              documentation
+fj.sources.d                For any discussion of source postings
+fj.sources.mac              Software for the Apple Macintosh
+fj.std                      Discussion about various standards
+fj.sys.famicom              Discussion about Nintendo's Family Computer
+fj.sys.j3100                Discussion about TOSHIBA's J3100-family
+                              computers
+fj.sys.mac                  Discussion about the Apple Macintosh & Lisa
+fj.sys.misc                 Discussion about computers of all other kinds
+fj.sys.news                 Discussion about SONY NEWS workstation
+fj.sys.next                 NeXT workstation and related topics
+fj.sys.pc98                 Discussion about NEC's PC-9800 & other computers
+fj.sys.sun                  Discussion about SUN workstation
+fj.sys.x68000               Discussion about Sharp's X-68000 & other
+                              computers
+fj.test                     Testing all over JUNET. Very boring
+fj.unix                     UNIX neophytes group
+fj.unix.wizards             Discussions, bug reports, and fixes on and for
+                              UNIX
+fj.wanted                   Requests for things that are needed
+fj.windows.gmw              GMW window systems
+fj.windows.misc             Miscellaneous window systems
+fj.windows.x                About X window systems

@@ -1,0 +1,25 @@
+Function Key        ^=Ctrl        @=Alt         #=Shift
+===============================================================================
+F1  Quick Help  | File Status | Convert2Kanji | Radicals    |^BSP Delete Line
+F2  Save File   | Options     | Other Input   | Save NewJIS | INS Undo Convert
+F3  Quit File   | Exit All    | Kana-Kanji    | Save OldJIS | ^O  Open File
+F4  File        | Save All    | EUC input     | Save NecJIS | ^K  Del To EOL
+F5  Search      | Word Count  | Romaji Input  | Create PCX  | ^J  DelToBegLin
+F6  Replace     | Goto Line   | Ascii Input   | SaveShiftJIS| ^I  Insert File
+F7  Rename File | SaveAs EUC  | English Input |             | ^T  Time-Date
+F8  Edit File   | Open File   | Symbols       | Undo Convert| ^L  Dup. Line
+F9  Undelete    | Toggle EOL  | Jascii Mode   | Directory   | ^P  Print
+F10 Next File   |             | Prev File     | File List   | ^F  SearchForward
+F11 Macro Rec   | Repeat Cmd  | Save Macro    |             | ^B  Search Back
+F12 Macro Exec  |             | Read Macro    |             | ^M  Switch Menu
+============ C U R S O R  M O V E M E N T ==================| ^G  Glossary
+^HOME BegFile | HOME Beg Line  | PGUP Page Up   | вм Up     | ^Y  Delete Line
+^END  EndFile | END  End Line  | PGDN Page Dn   | вн Down   | @Z  Kanji Info.
+^вл   WordLt  | ^вм  BegScreen | @вм  ScrollUp  | вл Left   |@X/E EDict Lookup
+^вк   WordRt  | ^вн  EndScreen | @вн  ScrollDn  | вк Right  |#ENTER HardReturn
+============ B L O C K =========================+==SYSTEM===|-----MOUSE--------
+@B Mark Block | @M Move Block | @G Goto Block   | ^D DOS    | LL  Kanji Info
+@L Mark Line  | @D Del Block  | @U UnMark Block | ^S Shell  | R   Mark Block
+@C Copy Block | @W Mark Word  | @Y UnDel Block  | ^C Config | LR  UnMark Block
+@S Save Block | ^W Copy       | @Y Paste        | ^X MetaKey| RR  Mark Line
+-------------------------------------------------------------------------------

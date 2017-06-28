@@ -1,0 +1,131 @@
+                       ┏━━━━━━━━━━━┓
+                       ┃Translator's Foreword ┃
+                       ┗━━━━━━━━━━━┛
+
+Ken Lunde氏の『日本語情報処理』日本語版がこの世に出たことは、日本語情
+報処理の歴史上、非常に画期的な出来事と言える。事実、言語を問わず、コン
+ピュータによる日本語処理について、これほどまでに豊富な内容を網羅したも
+のはないと言っても過言ではない。本書が日本語に先駆け英語で出版されたこ
+と自体、驚くべきことである。これは、中国人やインドネシア人の手によって、
+世界初の本格的なフランス語文法書が書かれたことに等しいと言えよう。
+
+世界で好評を博した本書の翻訳に携わることができたことは、私にとっても、
+また共訳者である鈴木武生氏にとっても、大きな喜びであると共に、この上な
+い名誉でもある。本書は、日本語処理の各主要分野に関する情報を徹底的に網
+羅した初めての解説書であり、これにより、日本語文字セット、符号化方式、
+地域化、コード変換等を始めとする数多くの複雑な問題も、充分理解すること
+ができるはずである。
+
+本書は、極めて実用的な用途を意図しており、またユーザの観点に立って書か
+れたものである。Ken Lunde氏は、語学学習者、ソフトウェア開発者、辞書編
+纂者といった様々な読者の要望を充分に把握しており、各内容について極めて
+正確かつ明解に解説している。
+
+では、本書の特長について、漢英字典刊行会の編集長としての視点に立って手
+短に述べる。辞書編纂を生業とする訳者は、１６年間にわたり『新漢英字典』
+（書籍版研究社、電子ブック版日外アソシエーツ）の編纂に従事してきた。そ
+して現在、辞書や語学学習ソフト等、数多くの教材を生み出す基となる、日中
+韓の漢字の用法を収めた包括的データベースを構築中である。
+
+このプロジェクトにとって、本書は欠かすことのできない一冊である。例えば、
+私達は、ＤＯＳ用（ビットマップフォント）とWindows用（PostScript Type 1
+フォント）に約１３５０字の外字を作成しなければならなかった。本書は、符
+号化のコード範囲や方式の決定、コード変換、有用なソフトや書籍の購入、出
+力技術等、それぞれの過程で大いに重宝した。また本書は、インターネットを
+通じてソフトウェアや各種団体を利用する上でも、豊かな情報源となる。しか
+し、何よりも有意義だったのは、日本語の符号化方式やコード変換について充
+分理解できた点である。
+
+質の高い翻訳を提供する上で、訳者は数多くの課題に挑んだ。新しいソフトウェ
+ア及びハードウェアが、目まぐるしいほどの速さで発売されている一方で、こ
+れらを指す用語や、またそれに関係した新しい概念は、大幅に立ち遅れている。
+ＤＴＰやUnicode等に関する用語の多くは、未だ英語ですら標準化されていな
+い。従来、和訳に携わる者は、往々にして安直な解決法に頼りがちである。即
+ち、厄介な用語には片仮名を宛てるだけで片付け、後はその負担を読者に負わ
+せてしまうのである。例えば、「localization」という用語を「ローカライゼー
+ション」と訳しても、ほとんど無意味な場合が多い。だが、「地域化」という
+漢字による訳語を使えば、その意味は一目瞭然である。
+
+私達は、敢えて安易な逃げ道に走らず、適切かつ時代に合った訳語を決定する
+ために、用語データベースを作成し、広範囲にわたる調査を行った。この点で
+は、曖昧な用語や数多くの固有名詞を調査するために尽力して頂いた近藤嘉雪
+並びにソフトバンクの野沢喜美男及び伊東由人の諸氏に、大きな感謝を送りた
+い。内容確認、組版、レイアウト、校正等、いずれの面においても複雑な本書
+を、出版にまでこぎつけることができたのは、何よりも関係者諸氏による御尽
+力の御陰である。
+
+本書は、日本語情報処理の各分野を網羅した有益な情報源として、必ずや日本
+の読者の皆さんの役に立つものと確信している。
+
+NOTE: The English below served as a basis for the Japanese, but they
+are not exactly equivalent. The Japanese has various improvements and
+some changes.
+
+The publication of Ken Lunde's *Understanding Japanese Information
+Processing* marks an event of major importance in the history of
+Japanese information processing. In fact, it is no exaggeration to say
+that not a single book in any language brings together such a wealth
+of information and in-depth coverage of processing Japanese on
+computers. That this work appeared in English before appearing in
+Japanese is nothing short of incredible. It is the equivalent of, say,
+a Chinese or Indonesian writing the world's very first comprehensive
+grammar of French.
+
+It has been a great pleasure, indeed a unique honor, for me and my
+colleague Takeo Suzuki to work on the translation of a work that has
+made such worldwide impact. I am fully confident that with this book
+the Japanese reader will have available for the first time a complete
+source of information on every major aspect of Japanese text
+processing, and provide him/her with a full understanding of such
+complex issues as Japanese character sets, encoding methods,
+localization, code conversion and many others.
+
+The aims of this book are highly practical, and it was written from
+the point of view of the user. Ken Lunde has a very full grasp of the
+needs of such diverse users as language learners, software developers
+and lexicographers, and provides detailed information for each need
+with great clarity and precison.
+
+I will briefly describe how useful the book was to me in my capacity
+as the Editor in Chief of the Kanji Dictionary Publishing Society. I
+am a lexicographer by profession, and for sixteen years have engaged
+in the compilation of the New Japanese-English Character Dictionary
+(paper edition Kenkyusha, EB edition Nichigai Associates). We are now
+building a comprehensive database on the use of Chinese characters in
+CJK languages that will serve as a basis for compiling dozens of
+learning aids such as dictionaries and CALL software.
+
+The contribution of Ken Lunde's book to our project has been
+invaluable. For example, we had to create some 1350 gaiji both for DOS
+(bitmapped fonts) and for Windows (PostScript Type 1 fonts). The book
+was invaluable in every step of the way, such as in deciding on
+encoding ranges and methods, code conversion from other systems, the
+purchase of appropriate software and books, output technology, and
+much more. It was also a fountainhead of information on locating
+software and organizations through through the Internet. But above
+all, it was of decisive importance in giving us an in-depth
+understanding of Japanese encoding and code conversion.
+
+To ensure an accurate translation of high quality, we had to confront
+various challenges. As new software and hardware systems appear at a
+dizzying pace, the terms to describe these and the related new
+concepts lag far behind.  Many such terms, such as those related to
+DTP and Unicode, have not even been standardized in English.
+Traditionally, Japanese translators often take the easy way out --
+simply use a katakana transcription and shift the burden to the
+reader.  Translating such terms as *localization* as ローカライゼーショ
+ン is often almost useless -- the kanji equivalent 地域化 at once
+makes thing clear.
+
+We have not chosen the easy path, but made a major effort to compile a
+database of these terms and conduct extensive surveys to determine the
+most appropriate and up-to-date terminology. In this regard, I want to
+extend my gratitude to Yoshiyuki Kondo, Kimio Nozawa and Yoshihito Ito
+for their invaluable help in researching obscure terms and verifying
+proper names. I am deeply grateful for their hard work the invested
+in research, verification, design and production to ensure a book of
+high quality.
+
+I am fully confident that this book will provide the Japanese user
+with a wealth of useful information on every aspect of Japanese
+language processing.

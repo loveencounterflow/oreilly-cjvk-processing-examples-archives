@@ -1,0 +1,22 @@
+[Params]
+	WndTitle   = TwinBridge Japanese System Setup
+	WndMess    = Initializing Setup...
+	TmpDirSize = 500
+	TmpDirName = ~twinstp.1
+	CmdLine    = _mstest twin.mst /C "/S %s %s"
+	DrvModName = DSHELL
+
+[Files]
+       setup\twin.mst	  =   twin.mst
+       setup\twin.inf	  =   twin.inf
+       setup\setupapi.inc =   setupapi.inc
+       setup\msdetect.inc =   msdetect.inc
+       setup\mscomstf.dll =   mscomstf.dll
+       setup\msinsstf.dll =   msinsstf.dll
+       setup\msuilstf.dll =   msuilstf.dll
+       setup\msshlstf.dll =   msshlstf.dll
+       setup\mscuistf.dll =   mscuistf.dll
+       setup\msdetstf.dll =   msdetstf.dll
+       setup\_mstest.exe  =   _mstest.exe
+       setup\_mssetup.exe =   _mssetup.exe
+

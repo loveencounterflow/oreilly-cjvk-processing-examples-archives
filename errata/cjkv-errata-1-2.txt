@@ -1,0 +1,546 @@
+Errata for "CJKV Information Processing" (first printing, January 1999)
+To be corrected in second printing
+
+Last update: 04/02/2001
+
+Page v: Change the book's dedication to the following:
+
+  This book is dedicated to the countless people who have touched my
+  life, either personally or professionally. I have become the person
+  I am today -- for better or for worse -- from their companionship,
+  criticism, encouragement, friendship, generosity, guidance, humor,
+  influence, inspiration, kindness, patience, strength, support, and
+  wisdom. I shall be forever in their debt.
+
+Page xxii: Remove "(because my wife won't let it in the house)" from
+  the fifth line of the last paragraph.
+
+Page xxiii: I forgot to include Jeff Engelman in the list of reviewers.
+  Sorry, Jeff!
+
+Page xxiv: Replace the entire first paragraph with the following:
+
+  Finally, I wish to thank my wonderful parents, Vernon Delano Lunde
+  and Jeanne Mae Lunde, for all of their support throughout the years,
+  and my son, Edward Dharmaputra Lunde.
+
+Page 2: Insert the word "Even" at the beginning of the sentence that
+  begins "If you consider ..." (the second paragraph after the
+  bullets).
+
+Page 5: Remove "zhuyin" from the "China" row in Table 1-4.
+
+Page 11: Change "zhuyin for Chinese" to "zhuyin for Chinese (in
+  Taiwan)" in the last bullet item of the page.
+
+Page 30: Add a table note to the "Number" column heading of Table 2-4
+  that reads as follows:
+
+  "Microsoft's pinyin input method uses the numeral 5 to indicate no
+  tone.
+
+Page 63: Change "Nozumu" to "Nozomu" in the fifth line of the first
+  paragraph.
+
+Page 70: Change "this table" to "Table 3-3 on page 69" in the first
+  line of the third paragraph.
+
+Page 79: The title of Table 3-17 should be "GB 2312-80 Character
+  Samples" (change "-90" to "-80").
+
+Page 92: Change "Korean kanji" to "Korean hanja" at the end of the
+  last bulleted item. Also, one URL change:
+
+  http://www.cmex.org.tw/service/cmex/project.htm ->
+    http://www.cmex.org.tw/case.html
+
+Page 97: Remove the "a" before "often" at the end of the middle line
+  of the second-to-last paragraph.
+
+Page 98: The second column header of Table 3-51 should read "Big Five
+  Level 2" instead of "Big Five Level 1."
+
+Page 102: One URL change:
+
+  http://funnelweb.utcc.utk.edu/~lacure/ -> http://web.utk.edu/~lacure/
+
+Page 107: There is a horizontal rule between the second-to-last and
+  last lines in Table 3-62 that should be removed.
+
+Page 112: Change "It also" to "Appendix P" in the last line of the
+  page.
+
+Page 115: Change "hanja a listed" to "hanja are listed" in the first
+  line of the first paragraph.
+
+Page 119: Remove the stray closing parenthesis from the end of the
+  first bulleted item.
+
+Page 123: Change the number of TCVN 6056:1995 characters from 3,323 to
+  3,311 at the bottom of Table 3-77.
+
+Page 136: Change "four" to "seven" in the second-to-last line of the
+  paragraph before Table 3-87.
+
+Page 139: Move the last sentence of the fifth paragraph ("Efficiency
+  and ... internal processing.") to right before the last sentence of
+  the following paragraph (on page 140).
+
+Page 142: Change "these" to "ISO 8859's" in the seventh line of the
+  first paragraph.
+
+Page 147: Remove "In fact, " from the beginning of the last sentence
+  in the third paragraph, and capitalize the "s" in "some."
+
+Page 167: Change "EUC-CN" to "EUC-KR" in the last line of the last
+  paragraph.
+
+Page 175: Change "developed by Microsoft Corporation" to "co-developed
+  by ASCII Corporation and Microsoft Corportion" in the first line of
+  the only paragraph.
+
+Page 187: Remove the last sentence from the second-from-last
+  paragraph, which begins "You will see" and ends "classes of
+  characters."
+
+Page 189: Change the hexadecimal value of "=" from 0x3B to 0x3D in the
+  second paragraph from the bottom of the page.
+
+Page 197: Change "to use for EUC-KR encoding" in the fourth line of
+  the third paragraph to the following:
+
+  to use EUC-KR for EUC-KR encoding
+
+  (The first instance of "EUC-KR" should be in the constant-width
+  font.)
+
+Page 198: IANA will become ICANN (Internet Corporation for Assigned
+  Names and Numbers) at http://www.icann.org/. The "Big_Five" charset
+  designator in Table 4-59 should be "Big5" instead. The "US_ASCII"
+  charset designator in Table 4-59 should be "US-ASCII" instead.
+
+Page 205: Change "Hanzi" to "Chinese" on the first line of the page
+  (hard to believe that NCF stands for "Network Hanzi Filter," eh?).
+
+Page 208: Add the following to the sentence "Uniconv provides a
+  plethora of options and features." (the last line of the page):
+
+  ", including encoding auto-detection of text in a specified
+  language: Chinese, Japanese, or Korean."
+
+Page 213: One URL change:
+
+  colin@bootle.dircon.co.uk -> colin@cbootle.com
+
+Page 230: Change "key" to "value" in the eighth line of the first
+  paragraph.
+
+Page 236: Insert the transliteration "hoshiki" after "ni sutoroku
+  nyuryoku" in the third line of the last paragraph.
+
+Page 247: Change the diacritic on the first "u" of the transliteration
+  "nyuryoku" to a macron in the third line of the last paragraph.
+
+Page 255: Figure 5-16 is missing a key (immediately to the right of
+  the right-side "shift" key) for switching between Korean and English
+  modes.
+
+Page 268: Change "Chinese and Korean" to "Chinese and Japanese" on the
+  second line.
+
+Page 274: One URL change:
+
+  http://www.adobe.com/supportservice/devrelations/technotes.html ->
+    http://partners.adobe.com/asn/developer/technotes.html
+
+Page 276: Change the second-to-last sentence ("The two companies
+  ... with one another.") as follows:
+
+  "The two companies went their separate ways, and independently
+  enhanced the TrueType format, but not to the point that they became
+  completely incompatible with one another."
+
+Page 280: Change "thousands of" to "seven and a half million" in the
+  fourth line of the footnote.
+
+Page 281: One URL change:
+
+  http://www.adobe.com/supportservice/devrelations/technotes.html ->
+    http://partners.adobe.com/asn/developer/technotes.html
+
+Page 282: Change "code sets 0 and 1" to "code sets 0 and 2" in the
+  first footnote.
+
+Page 287: Change "TIC" to "T1C" ("I" -> "1") in the second footnote.
+
+Page 293: One URL change:
+
+  http://www.adobe.com/supportservice/devrelations/technotes.html ->
+    http://partners.adobe.com/asn/developer/technotes.html
+
+Page 294: Change the two instances of "Adobe-CNS1-2" to "Adobe-CNS1-3"
+  on this page, change 17,601 to 18,846, and change "GCCS" to "GCCS
+  and SCS" in the last line on the page.
+
+Page 295: Change five of the six instances of "Adobe-CNS1-2" to
+  "Adobe-CNS1-3" on this page. The sixth instance, inside Table 6-17
+  (the last line), should not be changed. Modify the "Encoding" column
+  of the last line of Table 6-16 to read as follows:
+
+  0x0000 - 0x49FF
+
+  Add another row to Table 6-17 as follows:
+
+  Adobe-CNS1-3  18,846  1,245
+
+  Add the following rows to Table 6-16:
+
+  HKscs-B5-H  Yes  Hong Kong SCS         Big Five (extended)
+  ETHK-B5-H   Yes  Hong Kong SCS & ETen  Big Five (extended)
+
+  Both of these new entries should come immediately after HKgccs-B5-H.
+  Change "Adobe-Japan1-3" to "Adobe-Japan1-4," change 9,354 to 15,444,
+  and change 250 to 255.
+
+Page 296: Change all three instances of "Adobe-Japan1-3" to
+  "Adobe-Japan1-4." Also, change the "Encoding" for the last entry of
+  Table 6-18 to:
+
+  0x0000 - 0x3CFF
+
+Page 297: Change "Adobe-Japan1-3" to "Adobe-Japan1-4" in the title
+  of Table 6-19. Add a fifth entry to Table 6-19, the contents of
+  which is as follows:
+
+  Adobe-Japan1-4  15,444  6,090
+
+  Move the last paragraph to before the paragraph before Table 6-19,
+  and re-write it as follows:
+
+  "The Adobe-Japan1-4 character collection, which added 6,090 CIDs,
+  was completed in early 2000. It was designed to serve most of the
+  Japanese professional and commercial printing needs."
+
+Page 304: Change "read the footnote on page 302" in Table 6-28 to
+  "read the first paragraph on page 302."
+
+Page 305: Change "incompatibilities" to "differences" in the second
+  line of the first paragraph.
+
+Page 311: The second instance of "90msp-RKSJ-H" in Table 6-35 should
+  be "90msp-RKSJ-V" instead.
+
+Page 315: Change the three instances of "51" to "53" in the last three
+  paragraphs.
+
+Page 316: Change the one instance of "51" to "53" in the first
+  paragraph.
+
+Page 322: Two URL changes:
+
+  http://www.pyrus.com/flfrm.htm -> http://www.pyrus.com/html/fontlab.html
+  http://www.pyrus.com/cpfrm.htm -> http://www.pyrus.com/html/composer.html
+
+Page 323: One URL change:
+
+  http://www.pyrus.com/ttfrm.htm -> http://www.pyrus.com/html/typetool.html
+
+Page 325: The "o" in "shinkokai" needs a macron.
+
+Page 328: Change "KanjiTalk" to "MacOS-J" in the first line of the
+  second paragraph (after Table 6-46).
+
+Page 340: Change "the user the" to "the user to" in the second line of
+  the second paragraph.
+
+Page 349: Change "74 rows" to "84 rows" in the fourth line of the
+  fourth paragraph.
+
+Page 353: Change "should not should not" to simply "should not" in the
+  second line of the third-to-last paragraph.
+
+Page 354: The second line of Table 7-13 is missing an ideographic
+  comma.
+
+Page 366: Change "base line" to "baseline" in the second to third
+  lines of the last paragraph.
+
+Page 391: Change "Aladdin Systems" to "Aladdin Enterprises" in the
+  second line of the fifth paragraph.
+
+Page 394: Change two instances of "slash" to "backslash" in the first
+  paragraph, and also change the literal slash to a literal backslash.
+
+Page 397: The spacing of Japanese characters in the fifth paragraph
+  needs some adjustment.
+
+Page 407: Change "as" to "an" in the first line of the second
+  paragraph. Change "indentifiers" to "indentifier" in the second line
+  of the second paragraph. Change "codes" to "code" in the fourth line
+  of the second paragraph.
+
+Page 410: Insert "in most common implementations" before "the default"
+  in the second line of the last paragraph.
+
+Page 411: Remove the footnote completely.
+
+Page 414: Change "require" to "requires" in the last line of the last
+  paragraph. Insert "not" before "supported" in the fifth footnote.
+
+Page 417: Change the second line of code in the center of the page as
+  follows:
+
+  p2 = p1 + 128;     ->     p2 = p2 + 128;
+
+Page 424: Remove the last three lines from the page along with the
+  first two lines from the following page (425) -- the paragraph
+  doesn't belong.
+
+Page 427: Remove "in addition to those listed in the previous section"
+  from the fourth paragraph.
+
+Page 433: Change "adapting" to "adopting" in the third line of the
+  third paragraph.
+
+Page 441: Change the katakana in the first column of Table 9-16 as
+  follows:
+
+  Third line:  handon -> hanton
+  Fourth line: hanto  -> hando
+
+Page 444: Change "compand" to "compound" in the second-to-last line of
+  the first paragraph.
+
+Page 447: One URL change:
+
+  http://enterprise.ic.gc.ca/~jfriedl/regex/ ->
+    http://enterprise.dsi.crc.ca/~jfriedl/regex/
+
+Page 448: Two URL changes:
+
+  http://www-jp.lycos.com/ -> http://www.lycos.co.jp/
+  http://www-kr.lycos.com/ -> http://www.lycos.co.kr/
+
+  Also, the fifth line of the third paragraph is missing the "i" in
+  "in" (at the very end of the line). Also, add the following to the
+  second footnote:
+
+  "(see http://www.basistech.com/articles for a discussion of the
+  Japanization of the Lycos search engine)"
+
+Page 454: One URL change:
+
+  http://www.erols.com/eepeter/chtools.html ->
+    http://www.mandarintools.com/
+
+  Also, add to the list of "Other Useful Tools" the following:
+
+  Basis Technology's CJ computational linguistic tools (Chinese/
+  Japanese Morphological Analyzers, Chinese Script Converter, Encoding
+  and Language Identifier, and other Japanese Data Parsing tools)
+
+Page 457: Change "three" to "two" in the first line of the fifth
+  paragraph.
+
+Page 459: Add the following to the middle of the second paragraph
+  (after the sentence "Microsoft has effectively insulated users from
+  the issues."):
+
+  However, for Unicode-based applications, it is not quite as simple.
+  Although Windows NT supports Unicode, Windows 95 and 98 do not fully
+  support Unicode. A Unicode application that runs on Windows NT very
+  likely needs to be modified to run on Windows 95 and 98. For
+  example, Unicode applications that use Microsoft Foundation Classes
+  (MFC) will not initialize properly on Windows 95. There are
+  solutions to this dilemma. One is Basis Technology's Cheops product
+  (footnote: http://cheops.basistech.com).  Cheops is a compatibility
+  layer that allows Windows NT Unicode applications to run on Windows
+  95 and 98 using a single set of executables.
+
+Page 461: Change the two instances of "che" to "ce" in the third line
+  of the last paragraph.
+
+Page 469: One URL change:
+
+  http://macos.apple.com/multilingual/ and
+  http://www.apple.com/macos/multilingual/languagekits.html ->
+
+    http://www.apple.com/macos/
+
+Page 472: Remove the word "itself" from the first line of the first
+  paragraph.
+
+Page 501: Change "Moke" to "MOKE" on the second line of the last
+  paragraph.
+
+Page 505: Remove "a" from the "Availability" column for the "JREADER"
+  entry of Table 11-11.
+
+Page 506: Two URL changes:
+
+  http://enterprise.ic.gc.ca/~jbreen/wwwjdic.html ->
+    http://enterprise.dsi.crc.ca/~jbreen/wwwjdic.html
+
+  http://enterprise.ic.gc.ca/cgi-bin/j-e/ ->
+    http://enterprise.dsi.crc.ca/cgi-bin/j-e/
+
+Page 507: Two URL changes:
+
+  http://www.erols.com/eepeter/worddict.html ->
+    http://www.mandarintools.com/worddict.html
+
+  http://www.erols.com/eepeter/chardict.html ->
+    http://www.mandarintools.com/chardict.html
+
+Page 514: Change "Japanese" to "CJKV" on the eighth and eleventh lines
+  of the fourth paragraph.
+
+Page 516: Change "Japanese" to "CJKV" on the first line of the first
+  paragraph.
+
+Page 517: Change "previous section" to "Sending Email section, on page
+  513" in the third line of the fourth paragraph. Change "in this
+  chapter" to "in the next section" in the fourth line of the fourth
+  paragraph.
+
+Page 522: Change "This chapter ends with" to "This section provides"
+  in the first line of the last paragraph.
+
+Page 527: Change "Version 2.0" to "Version 20" in the sixth line of
+  the third paragraph.
+
+Page 529: Remove everything after the em-dash in the third paragraph.
+
+Page 535: Change "Shift-JIS" to "EUC-JP" on the third line.
+
+Page 536: Add "set" after "character" on the first line of the fifth
+  paragraph.
+
+Page 545: One URL change:
+
+  http://enterprise.ic.gc.ca/cgi-bin/j-e/ ->
+    http://enterprise.dsi.crc.ca/cgi-bin/j-e/
+
+Page 575: Change 1156 to 1,156 (add a comma) in the first line of the
+  fourth paragraph.
+
+Page 587: Add "set" after "character" in the first line of the second
+  paragraph.
+
+Page 591: Change "1, 3, and 4" to "1, 4, and 5" in the fourth line of
+  the first paragraph.
+
+Page 613: Change "or" to "of" in the third line of the third
+  paragraph.
+
+Page 620: Change "above" to "in Table D-17" in the first line of the
+  third paragraph.
+
+Page 629: Change "three" to "four" in the second line of the third
+  paragraph.
+
+Page 791: The glyph at 0xD6CC ("Row D6," row "C," and column "C")
+  should be that of the glyph at 0xDADF ("Row DA," row "D," and column
+  "F") on page 792.
+
+Page 792: The glyph at 0xDADF ("Row DA," row "D," and column "F")
+  should be that of the glyph at 0xD6CC ("Row D6," row "C," and column
+  "C") on page 791.
+
+Page 802: The glyph for 0xF7DA is incorrect. The left-side radical
+  should be that for "heart" not "person" (CNS 11643-1992 Plane 2
+  Row-Cell 79-09 on page 693 shows the correct glyph).
+
+Page 893: The transliterated name for radical number 164 should be
+  "hiyominotori" instead of "sakenotori."
+
+Page 921: The glyph for Row-Cell 80-55 in the "1983" column is
+  currently the JIS90 form. It needs to be changed to the form that is
+  in the "1983" column for Row-cell 80-55 on page 924.
+
+Page 929: Change "DBCS-EUC (EUC-JP) encoding" to "Row-Cell notation"
+  in the third line of the second paragraph. Also, change "DBCS-EUC
+  encoding" to "Row-Cell notation" in the second line of the third
+  paragraph, and in the second line of the last paragraph.
+
+Page 969: Change "chapter" to "appendix" in the second line of the
+  second paragraph.
+
+Page 980: Insert a hyphen between "+886" and "2" in the "DynaLab
+  Incorporated" entry (two times).
+
+Page 982: Combine the phone and facsimile numbers onto a single line
+  for the "Harlequin Incorporated" entry. Remove "1-" from the 800
+  number in the "International Business Machines (IBM) Corporation"
+  entry.
+
+Page 983: Combine he phone and facsimile numbers onto a single line
+  for the "Japan Network Information Center (JPNIC)" entry.
+
+Page 986: Change "phone and facsimile" to "phone/facsimile" in the
+  "Mediator Technologies" entry. Change "MultiLingual Communications &
+  Technology" to "MultiLingual Computing & Technology" in the
+  "MultiLingual Computing, Incorporated" entry.
+
+Page 988: Remove the comma at the end of the phone/FAX line for the
+  "O'Reilly & Associates" entry.
+
+Page 989: Two URL changes:
+
+  http://world.std.com/~sasuga/ -> http://www.sasugabooks.com/
+  sasuga@world.std.com -> sasuga@sasugabooks.com
+
+Page 993: Prefix "+1-" to the phone number in the "World Language
+  Resources" entry. Change "telephone" to "phone" in the "Yahoo!
+  Corporation" entry.
+
+Page 997: Make the following email address change to Table U-5:
+
+  listserv@listproc.hcf.jhu.edu -> listproc@listproc.hcf.jhu.edu
+
+Page 998: Order "Mozilla language Enabling Project" before "Mule
+  Mailing List."
+
+Page 1002: Change two instances of "Hasabe" to "Hasebe" (the second is
+  a transliteration) in the "Nihongo Computing Mailing List" section.
+
+Page 1009: Modified the Perl program in the "ISO-2022-JP to EUC-JP
+  Conversion" section. The new version is at the following URL:
+
+  ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/perl/jis2euc.pl
+
+Page 1011: The following line in the "Shift-JIS to EUC-JP Conversion"
+  program has an error (the fifth line from the end of the program):
+
+  (($y = &sjis2jis($x)) =~ tr/\21-\x7E/\xA1-\xFE/, $y) :
+
+  It should be correct as (the "\21" needs an "x"):
+
+  (($y = &sjis2jis($x)) =~ tr/\x21-\x7E/\xA1-\xFE/, $y) :
+
+Page 1027: Remove the "Also referred to as byte order." sentence from
+  the "Byte order" entry in the left column. Also, the second kanji
+  under the "Character spanning" entry in the right column is
+  incorrect. See page 356 for the correct kanji.
+
+Page 1028: Change "if" to "of" in the third line of the "CNS
+  11643-1986" entry.
+
+Page 1030: Change "characters" to "character" in the entry for
+  "designator sequence."
+
+Page 1037: Remove "(where my wife is from)" from the "Java" entry.
+
+Page 1046: The last sentence for the "Q" entry needs a period.
+
+Page 1047: A period is missing from the last sentence of the "SI"
+  entry.
+
+Page 1067: Change "MultiLingual Communications & Technology" to
+  "MultiLingual Computing & Technology" in the Periodicals section.
+
+Page 1090: Remove the "Lunde, Ninik" index entry.
+
+Colophon: Change the first instance of "this" to "the" in the first
+  line of the third paragraph. Also, remove the word "in" from the
+  last line of the second-to-last paragraph on the second page.

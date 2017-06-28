@@ -1,0 +1,127 @@
+Name:          Chinese Language Kit Updater for System 7.5 v1.1.1
+Version:       1.0
+Date Released: November 27, 1994 - (This posting updated August 30, 1995)
+Description:   This software updates the Chinese Language Kit to version 1.1.1.
+               Please refer to the Read Me below.
+ 
+The enclosed file is a self-extracting archive of a Disk Copy 1440K disk image.
+To use, download, double-click the downloaded file (this decompresses it),
+and use Disk Copy to create a disk.
+
+NOTE: To use the Chinese Language Kit with a Power Macintosh 7200, 7500, 8500, and 9500 series computer, make sure you use version 1.1.1 or later. To install the Chinese Language Kit version 1.1.1, first install the WorldScript Updater 1.0. Then install the Chinese Language Kit version 1.1. Finally, install the Chinese Language Kit Updater to update your software to version 1.1.1.
+
+ 
+Disk Copy can be found in the Utilities folder posted here.
+ 
+Files found on the Updater disk:
+--------------------------------
+Chinese Updater                            1.0
+Installer                                  4.0.3
+Read Me
+Support Files
+- InputBackSupport                         7.5
+- Language Kit Extension                   7.5
+- SimpleText                               1.1.1
+- Simplified Chinese                       CH1-7.1.1
+- Simplified Chinese Input Method          CH1-1.0.3
+- Traditional Chinese                      TA1-7.1.1
+- WorldScriptª II                          7.5
+- WorldScriptª Power Adapter               7.5.1
+
+ 
+Read Me:
+ 
+If you use the Chinese Language Kit (CLK) version 1.0 or 1.1 on System 7.5, you
+should update your system with the CLK Updater for System 7.5 v1.1.1. The
+Updater will improve the functionality of both CLK 1.0 and 1.1, and will also
+make it possible to use the CLK with QuickDraw GX technology.  Do not use the
+Updater if you are not running System 7.5.
+ 
+Using the Chinese Language Kit Updater for System 7.5 v1.1.1 Disk:
+Use the Updater program AFTER you have installed the Chinese Language Kit 1.0
+or 1.1 software. To install the CLK Updater for System 7.5 v1.1.1, double-click
+the Installer script and follow the on-screen instructions.
+ 
+If you have installed only one version of Chinese (Simplified or Traditional)
+and later decide to install the other language script, you must use the Updater
+program again after installing the second script. (If you have already
+installed both Simplified and Traditional Chinese, you only need to use the CLK
+Updater once.)
+ 
+System Requirements:
+To install the CLK Updater for System 7.5 v1.1.1 on the Chinese Language Kit,
+you need the following:
+ 
+¥ Macintosh system software version 7.5.
+ 
+¥ A hard disk with at least:
+   Ð 8 MB for Simplified Chinese and its TrueType fonts.
+   Ð 15 MB for Traditional Chinese and its TrueType fonts.
+   Ð 22 megabytes (MB) of disk space for both Simplified and Traditional
+   Chinese and their TrueType fonts.
+ 
+¥ 8 MB of  random-access memory (RAM) are recommended for System 7.5 plus the
+Chinese Language Kit;
+ 
+¥ 12 or more MB of RAM are recommended for System 7.5, with QuickDraw GX and/or
+PowerTalk, and the Chinese Language Kit.
+ 
+¥ For Performa Users:
+If you have a Macintosh Performa, you may experience difficulties installing
+the CLK. If this is the case, do the following:
+  -ÊRemove the "Launcher" file from the active System Folder (Drag "Launcher"
+    to another folder while the Language Kit is being installed)
+  - Restart your Macintosh
+  - Install the Japanese or Chinese Language Kit
+  - Drag the "Launcher" back into your System Folder
+ 
+¥ The Chinese Language Kit Updater for System 7.5 v1.1.1 is available from the following services:
+ 
+- AppleLink:  AppleLink Services: Apple Products: Apple SW Updates: Macintosh:
+System Software: Other System Software: Chinese Language Kit Updater.
+ 
+- eWorld:  Computer Center: Apple Customer Center: Apple Software Updates:
+Macintosh: System Software: Other System Software: Chinese Language Kit
+Updater.
+ 
+- Internet:  ftp.info.apple.com: Apple Support Area: Apple SW Updates:
+Macintosh: System Software: Other System Software: Chinese Language Kit
+Updater.
+
+- Internet:  ftp.support.apple.com: Apple Support Area: Apple SW Updates:
+Macintosh: System Software: Other System Software: Chinese Language Kit
+Updater.
+
+ 
+¥If you own CLK 1.0:
+If you are currently using CLK version 1.0, Apple recommends that you upgrade
+your fonts to the new and improved fonts contained in the CLK 1.1.1 upgrade
+package. The upgrade is offered for 29USD plus tax, shipping and handling to
+owners of CLK 1.0.
+ 
+THE UPGRADE PROGRAM RUNS FROM JANUARY 4, 1995 THROUGH JUNE 12, 1995.  All
+orders must be received by JUNE 12, 1995. For more details on how to receive
+CLK 1.1.1, in the USA, call 1-800-769-2775 extension 5902. You will receive a
+coupon detailing PROOF OF PURCHASE that must be provided and additional program
+details.
+ 
+¥If you own CLK 1.1:
+If you are currently using CLK version 1.1, Apple recommends that you use the
+Updater to improve functionality with System 7.5 and to enable the QuickDraw GX
+technology that is an option with the System 7.5 package.
+If you are not running System 7.5, the Updater is not necessary.
+ 
+The CLK 1.1 already includes the fonts in CLK 1.1.1 and therefore, only the CLK
+Updater is necessary.
+ 
+¥If you DO NOT OWN the CLK 1.0 or the CLK 1.1:
+If you do not own the CLK 1.0 or the CLK 1.1 and would like to purchase a
+complete copy of the Chinese Language Kit 1.1.1, please contact the Apple
+Reseller Referral at 800-538-9696 /ext 525 for the name of your local software
+reseller or call the Apple Order Center to place your order at 1-800-769-2775
+/ext 5924.
+ 
+© 1994 Apple Computer, Inc. All rights reserved. Apple, the Apple logo, and
+Macintosh are trademarks of Apple Computer, Inc., registered in the U.S. and
+other countries. PowerTalk, QuickDraw, and TrueType are trademarks of Apple
+Computer, Inc.

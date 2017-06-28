@@ -1,0 +1,627 @@
+
+                 ##             ##                               TM
+                 ##             ##  #########         ##########
+           ###############      ##        ##          ##      ##
+                 ##           ######    ##            ## **** ##
+                 ##             ##  ### ######        ##      ##
+            #############       ##  # # ##  ##        ##########
+            ## ##   ## ##      #### # # ##  ##            ##
+            ##  #   #  ##      #### # # ### ##        ##  ##
+            ##   # #   ##     # ### # # ## ##         ##  ##
+            ## ####### ##     # ##  ### ## ##         ##########
+            ##   ##    ##       ##      ###  ##      ##   ##
+            ## ####### ##       ##    # ##   ##     ##    ##
+            ##   ##    ##       ##     ##          #  ##########
+            ##   ##    ##       ## ############           ##
+            ##   ##  ####       ##                        ##
+            #          #        #                   ##############
+
+               NJStar(tm) - A Japanese Word Processor Ver 3.0j
+
+                            INFORMATION PACKAGE
+
+           Copyright (c) Hongbo Ni 1991-1994. All Rights Reserved.
+
+
+[ABOUT THIS FILE]
+
+This file contains the following important information:
+
+        Introduction
+        Software License
+        Limited Warranty
+        Important New Features in Version 3.0j
+        NJStar Shareware Version
+        NJStar Registered Version
+        NJStar System Requirement
+        Other Products
+        Acknowledgements
+
+Please notice that  this package is prepared based on version 3.00J.    Some
+new features added after this  may not be fully recorded here.   Please also
+read file WHATSNEW.3xx for details.
+
+===========================================================================
+                            INTRODUCTION
+
+NJSTAR is a Japanese word processor for IBM PC and compatibles. It  supports
+the input, display and printing of Japanese characters on the  standard  IBM
+computers. NJSTAR features a user friendly  user  interface,  very  easy  to
+use. If you want do Japanese word processing or want to  learn  Japanese  on
+computer, then NJSTAR is the right software for you.
+
+Many hours of work  have  gone  into  the  development  of  NJSTAR,  and  I
+regularly incorporate suggested changes into the product as I am  able  to.
+The only way I can continue to provide products like NJSTAR  and  to  offer
+outstanding technical support, is for you to register your copy of  NJSTAR.
+I like the shareware concept, and I would like to stay a part of it. But  I
+can do so only through registrations of NJSTAR. Please don't take this  the
+wrong way - try  out  NJSTAR  for  30  days  or  so,  under  no  obligation
+whatsoever. But if you found it is useful and continue to use it after that
+30-day period, please send your bank check for your registration copy to:
+
+       Hongbo Ni
+       Hongbo Data Systems     Telephone:  +61-2-869-0821
+       P. O. Box 40            Fax:        +61-2-869-0823
+       Epping NSW 2121         CompuServe: 100032,2724
+       AUSTRALIA               InterNet:   100032.2724@CompServe.COM
+
+Users in the England, please contact the authorized agent:
+
+       Dr. Yo Tomita           Telephone: (0532)-333465 / 301395
+       9 Raynel Green          Fax:       (0532)-336741
+       Cookridge, Leeds        Email:     chi6yt@sun.leeds.ac.uk (Japanese)
+       England  LS16 6BT                  Y.Tomita@leeds.ac.uk (English)
+
+Registered user will receive latest registered copy of NJSTAR with  printed
+user manual. The registered copy also includes the on-line Japanese-English
+dictionary (EDICT) free of charge. Registered version contains drivers  for
+24 pin printers, Canon  BubbleJet  and  HP  LaserJet  printer,  HP  DeskJet
+printer, PostScript printing program, additional utilities, and  additional
+configuration files not found on the shareware distribution disk,  and will
+receive free technical support and low cost updates.
+
+Please report any bugs or suggestions to the author on the  address  listed
+above.
+
+Ordering Method:
+----------------
+
+Please use <Register> command under HELP in the NJSTAR  pull-down  menu  to
+enter your information, and the order form will be printed on the  printer.
+If you do not have a printer connected to your PC, you can fill  and  print
+out the file ORDER.DOC manually.
+
+Payment Methods:
+----------------
+
+Please send US dollar personal check or bank check/draft  if  possible.  If
+you have difficulty in obtaining US dollar bank check/draft, you  can  send
+US dollar cash or signed US$ traveller's check in a registered mail. So far
+I have not had any problem with cash. European user can send EuroCheque  in
+US dollars. The  last  option  is  to  use  your  local  currency  if  it's
+internationally convertible (eg. GBP, DM,  Franc,  Japanese  Yen,  Canadian
+dollar etc..).  Please  calculate  your  local  currency  amount  using the
+following formula:
+
+                         US$79 + $10 (S/H) + $5 (Conversion Charge)
+       Local Currency = -----------------------------------------------
+                                 Current Exchange Rate
+
+We are regret that we are unable to accept following payment:
+
+       a). US dollar check which is not drawn from an US Bank (eg Canada)
+       b). Postal money order (other than from Australian Post);
+       c). Credit cards.
+
+===========================================================================
+
+                            SOFTWARE LICENSE
+
+This Software license consists of three sections. Please read it  carefully.
+The term "NJStar Owner" refers to Hongbo Ni and Hongbo Data Systems only.
+
+Section I.
+
+This section is applicable to  both  NJStar  Shareware  Version  and  NJStar
+Registered Version.
+
+1.1 NJStar is not and has never been public domain software, nor is it  free
+    software. It is NJStar owner's property.
+
+1.2 No one may modify or patch the  NJStar  executable  files  in  any  way,
+    including but not limited to decompiling,  disassembling,  or  otherwise
+    reverse engineering the program.
+
+1.3 The use of  NJStar,  except  for  the  initial  30-day  trial,  requires
+    registration. The use of unlicensed copies  of  NJStar  by  any  person,
+    business, corporation, government agency or any other entity is strictly
+    prohibited.
+
+Section II.
+
+This section is applicable to NJStar Shareware Version.
+
+2.1 Any use of NJStar Shareware Version  is  the  implication  of  a  user's
+    acceptance of the terms and conditions listed in this license.
+
+2.2 Non-registered users  are  granted  a  limited  license  to  use  NJStar
+    Shareware Version on a 30-day trial basis for the purpose of determining
+    whether NJStar is suitable for their needs.
+
+2.3 A limited license is granted to copy and distribute NJStar only for  the
+    trial use of others, subject to the  above  limitations,  and  also  the
+    following:
+
+     A) NJStar must be copied in unmodified form,  complete  with  the  file
+        containing  this  license  information  and  the   file   containing
+        registration information.
+
+     B) The full machine-readable NJStar documentation must be also included
+        with each copy.
+
+     C) NJStar may not be distributed in conjunction with any other  product
+        without a specific license to do so from the NJStar owner.
+
+     D) No fee, charge, or other compensation may be requested or  accepted,
+        except as authorized below:
+
+        a) Operators of electronic bulletin board systems (sysops) may  make
+           NJStar available for  downloading  only  as  long  as  the  above
+           conditions are met. An overall or time-dependent charge  for  the
+           use of the bulletin board system is permitted as long as there is
+           not a specific charge for the download of NJStar.
+
+        b)  ASP  vendors  can  distribute  NJStar  without   obtaining   any
+           permission from NJStar owner. But  we  prefer  you  write  to  us
+           first, so we can send the latest version to  you.  Other  Vendors
+           may distribute NJStar only  after  obtaining  written  permission
+           from the NJStar owner. Such permission is usually granted. Please
+           write for details (enclose your catalog). Vendors may charge  the
+           normal disk duplication and handling fee, which should not exceed
+           $5  per  disk.  Please  refer  to  file   VENDOR.DOC   for   more
+           information.
+
+Section III.
+
+This section is applicable to NJStar Registered Version.
+
+3.1 User's request for registration for NJStar  Registered  Version  is  the
+    implication of a user's acceptance of the terms and conditions listed in
+    this license. All required information should be submitted in  order  to
+    be qualified for registered user. Acceptance of the request is  made  at
+    NJStar owner's determination. User may  not  withdraw  the  registration
+    after acceptance, except at NJStar owner's determination.
+
+3.2 A single user license permits a user to use  NJStar  only  on  a  single
+    computer. Licensed user may use the program on different computers,  but
+    may not use the program on more than one  computer  at  the  same  time.
+    Multiple and Network user license require special permission.
+
+3.3 User's registration for NJStar Registered Version is a purchase for  the
+    right to use NJStar only under the term and conditions  listed  in  this
+    license. At no circumstance, licensed users are allowed to copy, rent or
+    resell their licenses or NJStar product to the third party.
+
+3.4 When upgrade to a newer  version  of  NJStar,  user's  license  for  the
+    previous  version  are  automatically  suspended.  At  no  circumstance,
+    licensed users are allowed to  transfer  or  resell  their  licenses  or
+    NJStar product for the previous version to the third party.
+
+=============================================================================
+                            LIMITED WARRANTY
+
+
+This LIMITED WARRANTY contains two sections. Please read it carefully.  The
+term "NJStar Owner" refers to Hongbo Ni and Hongbo Data Systems only.
+
+Section I.
+
+This section is applicable for NJStar Registered Version only.
+
+1.1  The Author of NJStar warrants that all disks  provided  are  free from
+     defects in material and workmanship, assuming normal use, for a period
+     of 30 days from the date of purchase.
+
+1.2  The Author  of  NJStar  warrants  that  the  program  will  perform in
+     substantial compliance with the  documentation  supplied  within  this
+     document. If a  significant  defect  in  the  product  is  found,  the
+     Purchaser may return the product for a refund. In no event will such a
+     refund exceed the purchase price of the product.
+
+Section II.
+
+This section is applicable for both NJStar Shareware Version and Registered
+Version.
+
+2.1  Use of this product for any period of time constitutes your acceptance
+     of this agreement and subjects you to its contents.
+
+2.2  EXCEPT  AS  PROVIDED  ABOVE,  THE  AUTHOR  OF  NJSTAR  DISCLAIMS   ALL
+     WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT  LIMITED  TO
+     IMPLIED WARRANTIES OF MERCHANTABILITY AND  FITNESS  FOR  A  PARTICULAR
+     PURPOSE, WITH  RESPECT  TO  THE  PRODUCT.  SHOULD  THE  PROGRAM  PROVE
+     DEFECTIVE, THE PURCHASER ASSUMES THE RISK OF PAYING THE ENTIRE COST OF
+     ALL NECESSARY SERVICING, REPAIR, OR CORRECTION AND ANY  INCIDENTAL  OR
+     CONSEQUENTIAL DAMAGES. IN NO EVENT WILL THE AUTHOR OF NJSTAR BE LIABLE
+     FOR ANY DAMAGES WHATSOEVER (INCLUDING WITHOUT LIMITATION  DAMAGES  FOR
+     LOSS OF BUSINESS PROFITS,  BUSINESS  INTERRUPTION,  LOSS  OF  BUSINESS
+     INFORMATION AND THE LIKE) ARISING OUT OF THE USE OR THE  INABILITY  TO
+     USE  THIS  PRODUCT  EVEN  IF  THE  AUTHOR  HAS  BEEN  ADVISED  OF  THE
+     POSSIBILITY OF SUCH DAMAGES.
+
+
+===========================================================================
+                   IMPORTANT NEW FEATURES IN VERSION 3.0j
+
+(1)  New On-line Kana-Kanji input method, input Katakana directly into file.
+(2)  Input selection list is sorted by character frequency.
+(3)  Add/Edit/Delete Glossary and Kana->Kanji conversion interactively.
+(4)  <Kanji Info> provides all the info about Japanese character.
+(5)  Lookup a Japanese character through the Radical chart.
+(6)  On-line Japanese <-> English dictionary, two-way lookup (use EDICT).
+(7)  Supports SuperVGA 800x600 display, 30 lines of Japanese can be displayed.
+(8)  English and Japanese menus in one EXE, Displays English/Japanese messages.
+(9)  DOS command and shell; Screen saver; Time of the day display.
+(10) Supports the input of European language characters; Automatic wrapping.
+(11) Performs configuration without leaving NJSTAR.
+(12) Now NJSTAR can print specified pages, for a number of copies.
+
+FEATURES IN VERSION 2.1j+
+
+(1)  Able to use EDICT by Jim Breen & others for Kanji->English lookup.
+(2)  Now support user defined Kana->Kanji dictionary: USERDIC
+(3)  Menu item can be selected by pressing the hot key.
+(4)  Able to Enter Kanji part of Verb by using the entries in Wnndict.
+(5)  Tabs are expended into spaces when loading.
+(6)  Fixed various problem concerning Romaji->Kana translation,
+(7)  Auto Detection for the presence of Enhanced keyboard is added.
+(8)  All color combinations can be configured.
+
+Features as in V2.0j
+
+(1)  Support following JIS code
+     7 bits JIS: New-JIS (1983), Old-JIS (1978) NEC-JIS (1978)
+     8 bits JIS: EUC (AT&T code) - Extended Unix Code
+
+     NJSTAR can automatic detect above 4 JIS codes and save to  original
+     code. The EUC code is used for a new file.  Commands  are  provided
+     for save current file to any of above 4 JIS codes. EUC code is used
+     internally.
+
+(2)  Support Standard romaji-kana input  with  automatic  kana  to kanji
+     lookup. Single kanji character and kanji words to kana  lookup  are
+     also supported.
+
+(3)  User friendly interface with pull-down menu and mouse support.(Like
+     WordPerfect 5.1) Most of the functions can be accessed through  the
+     menu. Mouse buttons are configurable.
+
+(4)  Support EGA 19 lines and VGA 25 lines Japanese Display.  Very Fast!
+     Foreground and Background color are configurable. The cursor can be
+     configured to be blinking in Graphic mode.
+
+(5)  Come with Qedit like command sets, all commands and many parameters
+     are fully configurable,  a 25x80 help screen is also configurable.
+
+(6)  Rich editing functions,  include:  multi-file  editing,  delete /
+     undelete, two way fast search, flexible replace and extensive block
+     manipulations.
+
+(7)  Command Macros can be Recorded, Executed, saved to a  file  or read
+     from  file.  A  utility,  NJMAC.EXE,  is  provided  for  converting
+     user-written macro texts to macro files for loading. Option  -l  -x
+     at NJSTAR command line, is used to  load  or  load  &  execute  the
+     macro.
+
+(8)  AutoSave current file to AUTOSAVE.NJX for possible recovery in case
+     of power failure or other unexpected errors. User will  be  noticed
+     if such a backup file exists.
+
+(9)  Support 9 pin & 24 pin Epson and IBM Compatible Dot Printers, Canon
+     Bubblejet  Printers,  HP  deskjet  printer  (Plus/500),HP  Laserjet
+     series (Plus, II,  IIP,  III,  IIIP,  etc.)  and  postscript  laser
+     printers. NJStar prints directly to printer, but can be  redirected
+     to a file. Necessary page formatting commands are supported.
+
+(10) NJStar is able to Create PCX file for FAX transmission or importing
+     to other desktop publishing  software.  A  utility  JIS2PCX.EXE  is
+     provided for creating PCX file in 24 dot font.
+
+Please refer to the section of "History of NJStar Development" in this file 
+for the functions added in the different versions.
+
+===========================================================================
+                          NJSTAR SHAREWARE VERSION
+
+NJStar Shareware Version is a copy of fully functional program. It has  the
+standard features that a NJStar Registered Version.
+
+The following is a list  for  the  NJStar  Shareware  Version  Distribution
+Disks. Please report to the NJStar Owner or his  agent,  if  you  find  the
+files are missing.
+
+Minimum files:
+NJSTAR   EXE - the main program
+NJSTAR   NJJ - the configuration file
+NJSTAR   OVL - the main program's overlay file
+JIS      16  - Japanese display font file
+KANJI    DIC - Kana to Kanji lookup dictionary (small version)
+
+Documentation:
+FILE_ID  DIZ - NJSTAR description File for BBS
+WHATSNEW ??? - Latest features not included in user manuals (???= Version)
+README   DOC - NJSTAR information package (This file)
+NJSTAR1  DOC - NJSTAR user manual (First part)
+NJSTAR2  DOC - NJSTAR user manual (Second part)
+NJSTAR3  DOC - NJSTAR user manual (Third part)
+ORDER    DOC - Registration order form
+PRODUCTS DOC - List of products available from the Author
+VENDOR   DOC - Instruction for shareware distribution vendors
+EUC      DOC - List of all Japanese chars with EUC index
+KUTEN    DOC - List of all Japanese chars with Kuten index
+EDICT    DOC - Jim Breen's documentation for EDICT
+
+Dictionaries:
+KANJIDIC DIC - Kanji information dictionary
+NJJGLOS1 DIC - NJSTAR Glossary dictionary (Index)
+NJJGLOS2 DIC - NJSTAR Glossary dictionary (Definition)
+RADICALS DIC - Radical lookup dictionary
+NJJFREQ  DIC - NJSTAR Kanji frquency table
+SYMBOLS  DIC - Japanese Symbols input dictionary
+J2EDIC   DIC - Japanese->English dictionary - Index (small version)
+E2JDIC   DIC - English->Japanese dictionary - Index (small version)
+EDICT        - Japanese-English dictionary - Database (small version)
+         NOTE: this is an old version, you can FTP current version from
+                       monu6.cc.monash.edu.au : pub/nihongo/edict
+               and generate new index files with J2EDIC.EXE & E2JDIC.EXE.
+
+Input Dictionaries & Utilities:
+NJINPUT* DIC - External Japanese input methods module (* = A-Z)
+NJJDIC   EXE - Utility to create NEW input methods dictionary
+USERDIC      - User-defined Kana to Kanji dictionary
+JAPKANJI EXE - convert Wnndict or SKKdict + USERDIC to KANJI.DIC
+J2EDIC   EXE - generating Index file J2EDIC.DIC for EDICT, which will be used
+               by NJSTAR to read Kanji or Kana, then display the English
+               translation.
+E2JDIC   EXE - generating Index file E2JDIC.DIC for EDICT, which will be used
+               by NJSTAR to lookup English word in EDICT.
+
+Configuration:
+NJCONFIG EXE - the configuration program
+NJCONFIG KEY - config file for user defined keys
+NJCONFIG HLP - config file for help screen in English
+KANJI    HLP - Japanese version of NJCONFIG.HLP
+
+Printer Drivers:
+EPSON9P  DRV - 9 pin dot matrix printer driver (Epson 9 pin & Compatibles)
+EPSONFX1 DRV - 9 pin dot matrix printer driver (Epson FX at 120 dpi)
+EPSONFX2 DRV - 9 pin dot matrix printer driver (Epson FX at 60 dpi)
+IBMPRO9P DRV - 9 pin dot matrix printer driver (IBM Pro 9 pin & Compatibles)
+
+Super VGA support (800x600):
+SUPER    VGA - Super VGA definition file (can be modified)
+WHICHCGA COM - Super VGA card testing program
+ASCII    16  - Ascii 16x8 font for Super VGA mode
+
+Tutorials:
+TUTORIAL BAT - Dr. Yo Tomita's NJSTAR Tutorial Batch file
+J[0-8]   TUT - Dr. Yo Tomita's NJSTAR Tutorial
+
+(optional)
+NJPRN    EXE - Print a NJSTAR printed file to a printer
+SAMPLE   *   - Sample printer files for 24pin, and Laser printers
+UUENCODE EXE - Public Domain uuencoding program
+UUDECODE EXE - Public Domain uudecoding program
+
+===========================================================================
+
+                        NJSTAR REGISTERED VERSION
+
+A registered user will receive a registered version of NJJ.EXE that will
+provide the following features:
+
+   a, Start NJStar without the pesky registration screen and random key.
+   b, User's name will be displayed on opening screen.
+   c, The closing screen is disabled.
+   d, larger version of Dictionaries.
+   e, All printer drivers for 24 pin and laser printers
+   f, Free technical support.
+   g, Low cost upgrade.
+
+Registered user also receives the following additional files,
+
+KANJI    DIC - Kana to Kanji lookup dictionary (large version)
+EDICT    DIC - Japanese-English dictionary - Database (large version)
+J2EDIC   DIC - Japanese->English dictionary - Index (large version)
+E2JDIC   DIC - English->Japanese dictionary - Index (large version)
+
+WP       KEY - NJSTAR's WordPerfect key configuration
+WP       HLP - NJSTAR's WordPerfect key configuration help screen (Japanese)
+WP_E     HLP - NJSTAR's WordPerfect key configuration help screen (English)
+NJSTAR   ICO - Nice Windows 3.1 ICON file for NJSTAR.
+
+EPSON24  DRV - 24 pin dot matrix printer driver (Epson)
+IBMX24   DRV - 24 pin dot matrix printer driver (IBM)
+TOSHIBA  DRV - 24 pin dot matrix printer driver (Toshiba)
+HPLASER  DRV - HP laserJet driver
+HPDESKJ  DRV - HP DeskJet driver
+CANONBJE DRV - Canon BubbleJet printer driver (Epson compatible)
+CANONBJI DRV - Canon BubbleJet printer driver (IBM Compatible)
+CANONLBP DRV - Canon LBP-8/4 II/III Laser printer driver
+
+ASCII    24  - 12x24 Ascii font  for 24 pin printer, Canon  BJ, HP LaserJet.
+JIS      24  - 24x24 Bold, Mincho style font
+JIST     24  - 24x24 Thin, Gothic style font
+
+JIS2PCX  EXE - Utility used to produce PCX file using 24x24 dot font
+JISFONT  EXE - Utility used to modify and create char font for CCLIB
+NJ24     EXE - Modify NJSTAR 24x24 font interactively
+NJMAC    EXE - NJStar macro file converter
+JISPRINT EXE - Print Japanese character in text mode (for making new character)
+UTILITY  DOC - Documentation for all EXE files not mentioned in NJSTAR*.DOC.
+PRINTPS  EXE - Print Japanese document to PostScript printer, can use any font.
+
+README   DOC - Newly compiled information packages.
+WHATSNEW ??? - Upto date information on NJSTAR improvements.
+
+===========================================================================
+
+                         NJSTAR SYSTEM REQUIREMENT
+
+
+The following is NJStar's system requirement,
+
+     1.   IBM  XT,  AT 286,  386,  486,  PS/2  and compatible,  laptop  and
+          notebooks.
+
+     2.   MS-DOS 3.0 or above. DR-DOS 5.0 or above
+
+     3.   At least 512K free RAM
+
+     4.   EGA/MCGA/(mono)VGA/SuperVGA Monitor
+
+     5.   At least 3.0 MB for Shareware Version, 8 MB for registered version.
+
+     6.   9 pin, 24 pin  EPSON and  IBM  ProPrinter compatible  dot  matrix
+          printer, Canon BubbleJet,  HP LaserJet series, HP DeskJet series,
+          and PostScript printer (supported but not required)
+
+     7.   Mouse (supported but not required)
+
+
+NOTE:
+
+     1.   24 dot fonts are not provided on NJStar Shareware Version.
+
+     2.   Printer drivers for 24 pin, Canon LBP & BubbleJet, HP LaserJet, HP
+          DeskJet Printer are not included on NJStar Shareware Version.
+
+===========================================================================
+
+===========================================================================
+                                OTHER PRODUCTS
+
+1.   NJSDK - NJSTAR Chinese Software Development Kits. Version 3.0:
+     a C Library as being used by NJSTAR Version 3.0. It contains all  the
+     functions for handling  Chinese  Input,  display  and  printing.  With
+     NJSDK, user can develop any Chinese applications without  knowing how
+     Chinese characters are input, displayed or  printed.  LICENSED  USER can
+     distribute all NJSTAR dictionaries and fonts (30 files) with their
+     application without any further royalty payment.  A  copy  of  Latest
+     NJSTAR will be included with this  license,  but  not  allowed  to  be
+     distributed with user  application.  Please  contact  the  author  for
+     current price.
+
+     If you require a Japanese version of NJSDK, please contact the author.
+
+2.   Chinese Version of NJSTAR is available using GB (Chinese National
+     Standard Code) with PinYin/ZhuYin input and other 20 methods. All
+     functions are  the same except input. Please contact the Author
+     for more details.
+
+     ******* Please read PRODUCTS.DOC for a List of NJSTAR products *******
+
+===========================================================================
+                              ACKNOWLEDGEMENTS
+
+1. The author wish to thank Dr. Yo Tomita for his excellent work on NJSTAR
+   tutorial, and NJSTAR Japanese user manual. The implementation of online
+   Kana-kanji input is mostly suggested by Dr. Tomita.
+
+2. Special thanks are owned to Prof. Jim Breen  at  Monash  University,
+   Prof. Eric Nelson at USAF Academy and Ms Theresa Martin  for  their
+   suggestions in  Entering  Hiragana  and  Katakana.  Without  their
+   suggestions, NJStar won't be a usable Japanese Word Processor.
+
+3. Special thanks are owned to Mr. Huijie Chen and Dr. Xuebin Chen for
+   their invaluable comments & suggestions for Chinese Version.
+
+4. The NJSTAR dictionaries KANJIDIC.DIC, RADICALS.DIC and NJINPUT[NUSB].DIC
+   are converted from KANJIDIC, which is maintained by Prof. Jim Breen and
+   distributed as public domain.
+
+5. The dictionaries index file E2JDIC.DIC and J2EDIC.DIC are converted from
+   EDICT, which is in Public Domain but the new version is copyrighted 1994
+   by Prof. Jim Breen.
+
+6. The dictionary and KANJI.DIC used by NJSTAR is converted from the
+   Wnn dictionary provided by Kyoto University.
+
+*  Below is the Copyright notice with Wnn.
+*
+*     Wnn Version 4.0
+*
+*  This distribution contains Version 4.0 of Wnn Japanese Input
+*  System.  Wnn is a network-extensible Kana-to-Kanji conversion system
+*  and was jointly developed and released by the Software Research Group
+*  of Kyoto University Research Institute for Mathematical Science, OMRON
+*  TATEISI ELECTRONICS CO., and Astec, Inc.  If you have Wnn up to
+*  Version 3.3, refer to "manual/intro" for revision information.
+*
+*  This distribution has been tested on the following systems.
+*          Sun-3 Sun-4,  SunOS3.4, SunOS4.0
+*          OMRON SX9100, UniOS-B (4.3BSD) UniOS-U (SystemV R2.1) (DT DS M90)
+*  --------------------------------------------------------------------------
+*  Copyright
+*          Kyoto University Research Institute for Mathematical Sciences
+*          1987, 1988, 1989
+*  Copyright OMRON TATEISI Electronics, CO. 1987, 1988, 1989
+*  Copyright ASTEC,Inc. 1987, 1988, 1989
+*
+*  Permission to use, copy, modify, and distribute this software
+*  and its documentation for any purpose and without any fee is
+*  hereby granted, subject to the following restrictions:
+*
+*  The above copyright notice and this permission notice must appear
+*  in all version of this software;
+*
+*  The name of "Wnn" may not be changed;
+*
+*  All documentation of software based on "Wnn" must contain the wording
+*  "This software is based on the original version of Wnn developed by
+*  Kyoto University Research Institute for Mathematical Sciences (KURIMS),
+*  OMRON TATEISI Electronics, CO. and
+*  ASTEC,Inc.", followed by the above copyright notice;
+*
+*  The name of KURIMS, OMRON and ASTEC may not be used
+*  for any purposes related to the marketing or advertising
+*  of any product based on this software.
+*
+*  KURIMS, OMRON and ASTEC make no representations about
+*  the suitability of this software for any purpose.
+*  It is provided "as is" without express or implied warranty.
+*
+*  KURIMS, OMRON and ASTEC DISCLAIM ALL WARRANTIES WITH REGARD TO THIS
+*  SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS,
+*  IN NO EVENT SHALL OMRON, ASTEC and K.U.R.I.M.S BE LIABLE FOR ANY SPECIAL,
+*  INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+*  LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
+*  OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+*  PERFORMANCE OF THIS SOFTWARE.
+*
+*  Author: Hideki Tsuiki        Kyoto University
+*                               tsuiki%kaba.or.jp@uunet.uu.net
+*
+*           Hiroshi Kuribayashi Omron Tateisi Electronics, Co.
+*                               kuri@frf.omron.co.jp
+*                               uunet!nff.ncl.omron.co.jp!kuri
+*
+*           Naouki Nide         Kyoto University
+*                               nide%kaba.or.jp@uunet.uu.net
+*
+*           Shozo Takeoka       ASTEC, Inc
+*                               take%astec.co.jp@uunet.uu.net
+*
+*           Takasi Suzuki       Advanced Software Technology & Mechatronics
+*                               Research Institute of KYOTO
+*                               suzuki%astem.or.jp@uunet.uu.net
+*========================================================================
+
+7. Many thanks also extends to those who have proudly became the registered
+   users of NJSTAR, and those who have supported and prompted the use of
+   NJSTAR.
+
+============================================================================
+<<<End of README.DOC, please see NJSTAR[123].DOC for detailed user manual>>>
+

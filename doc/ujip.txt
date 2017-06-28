@@ -1,0 +1,69 @@
+"Understanding Japanese Information Processing"
+by Ken Lunde
+Published by O'Reilly and Associates, Inc.
+
+ISBN 1-56592-043-0
+
+Publication date:  September 1993
+Pages:             470
+Price:             $29.95
+
+About this Book:
+
+There are many complex issues surrounding the use of the Japanese
+language in computing. Unlike English, which has 26 letters in a
+single alphabet, Japanese has thousands of characters in four
+scripts. The issues around handling such an unwieldy collection
+of data are formidable and complex. Up to now, researching and
+understanding the relevant issues has been a difficult, if not
+unattainable task, especially to a person who doesn't read or
+speak Japanese.
+
+"Understanding Japanese Information Processing" is a book that
+provides detailed information on all aspects of handling Japanese
+text on computer systems. It brings all of the relevant
+information together in a single book. It covers everything from the
+origins of modern-day Japanese to the latest information on specific
+emerging computer encoding standards.
+
+Here is a sampling of the topics covered:
+
+- The Japanese writing system
+- Japanese character set standards
+- Japanese encoding methods
+- Japanese input
+- Japanese output
+- Japanese code conversion techniques
+- Japanese code and text processing tools
+- Japanese e-mail
+
+In addition, there are 15 appendixes which provide additional
+reference material, such as a code conversion table, character set
+tables, mapping tables, an extensive list of software sources, a
+glossary, and much more.
+
+Ken Lunde is the Project Manager for Japanese Font Production at Adobe
+Systems, Inc., a leading manufacturer of computer-based font
+technologies. The author also created and maintains an on-line
+document entitled JAPAN.INF, which has become an invaluable resource
+for people trying to understand the issues involved in dealing with
+Japanese text. The book expands on the topics covered in JAPAN.INF,
+and contains a rich complement of figures, tables, and lists
+unavailable in the on-line document.
+
+Both O'Reilly & Associates and the author are excited about the
+publication of this book because it fills a large void for
+information about the Japanese language for English-language readers.
+This book is able to both describe the Japanese language
+generally and cover very detailed specifics about implementing the
+language on computers. Even a person with only a casual
+interest in languages will find the book engaging. A programmer
+interested in writing a computer program which will handle the
+Japanese language will find the book indispensable.
+
+For more information on this book, contact:
+
+O'Reilly & Associates, Inc.
+103 Morris Street, Suite A, Sebastopol, CA 95472 USA
+(800) 998-9938    (707) 829-0515    Fax: (707) 829-0104
+UUCP:	uunet!ora!nuts      Internet:   nuts@ora.com

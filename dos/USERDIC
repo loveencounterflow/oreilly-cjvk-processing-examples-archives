@@ -1,0 +1,23 @@
+******************************************************************
+* USERDIC - NJSTAR user defined Kana->Kanji Conversion Dictionary
+*-----------------------------------------------------------------
+* Syntax: (Same as WnnDict)
+*         KANA /Kanji1/Kanji2/Kanji../Kanji n/
+*
+*    or  (for Kanji Part of a Verb)
+*         KANA[A-Z] /Kanji1/Kanji../
+*
+*    Or   English /Kanji1/kanji2/.../Kanji n/
+*
+*NOTE: You must run JAPKANA & JAPKANJI after modifying this file.
+*
+* Line starting with a '*' is comment line
+******************************************************************
+¤Ê¤ó¤­¤ç¤¯¤Û¤· /Æî¶ËÀ±/
+njstar         /¡ØÆî¶ËÀ±¡Ù/
+nihongbo       /Ðä¹ãÇÈ/
+tab /¦Ú/¦Û/¦Ü/¦Ý/¦Þ/¦ß/¦à/¦á/¦â/¦ã/¦ä/¦å/¦æ/¦ç/¦è/¦é/¦ê/¦ë/¦ì/¦í/¦î/¦ï/¦ð/¦ñ/¦ò/¦ó/¦ô/¦õ/¦ö/¦÷/¦ø/¦ù/¦ú ¦û ¦ü ¦ý ¦þ               
+
+
+****************************************************************END
+

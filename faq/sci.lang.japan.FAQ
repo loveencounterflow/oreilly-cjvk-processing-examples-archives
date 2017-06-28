@@ -1,0 +1,2339 @@
+*******************************************************************************
+
+0. Frequently Asked Questions
+
+-------------------------------------------------------------------------------
+Q. How can I use this FAQ ?
+A. It is better to use is as a file with text search capabilities. To search
+   for some information on, for example, The Nihongo Journal, just search
+   the text for it. The index and this section 0 can be useful too.
+-------------------------------------------------------------------------------
+Q. How can I use my PC or MAC as a Japanese Word Processor ?
+A. It depends on how much money you want to spend and if you have only DOS,
+   or Windows or MAC OS's. Section 2.1 (DOS), 2.2 (Windows), 2.4 (MAC) can
+   give you some tips. 
+-------------------------------------------------------------------------------
+Q. Where can I buy The Nihongo Journal ?
+A. See section 5.1.1  
+-------------------------------------------------------------------------------
+Q. Is there any suggestion of books on learning Japanese ?
+A. See section 5.1   
+-------------------------------------------------------------------------------
+Q. How can I read Japanese News outside Japan ?
+A. See section 1.3
+-------------------------------------------------------------------------------
+Q. How can I understand the difference between JIS, SJIS, EUC and the
+   other very confusing encoding systems ?
+A. See Ken Lunde's book, 5.7.2   
+
+*******************************************************************************
+
+1. This newsgroup and list
+
+===============================================================================
+1.1 Receiving this newsgroup in your site
+===============================================================================
+1.2 Receiving the post as a list file in your mail (subscription)
+    To do so, send an e-mail message to:
+      Listserv@mitvma.mit.edu or
+      Listserv@mitvma.bitnet
+    with no subject and the line
+      SUB Nihongo <your REAL name>
+    Please don't send messages for subscription or unsubscription to
+    the addresses for posting on the list.
+-------------------------------------------------------------------------------
+1.2.1 Posting to the list
+      To send your article, question, etc. to the list, just send it as
+      normal e-mail to:
+        Nihongo@mitvma.mit.edu or
+        Nihongo@mitvma.bitnet 
+      The article will be distributed to all the readers of the list and
+      posted automatically in the newsgroup sci.lang.japan.
+      Please don't send articles to the addresses of subscription and
+      unsubscription.
+-------------------------------------------------------------------------------
+1.2.2 Signing off (cancel the subscription)
+      To cancel your subscription, send an e-mail message to:
+        Listserv@mitvma.mit.edu or
+        Listserv@mitvma.bitnet
+      with no subject and the line
+        UNSUB Nihongo
+      Please don't send messages for subscription or unsubscription to
+      the addresses for posting on the list.
+===============================================================================
+1.3 Other related Newsgroups
+    There are other Newsgroups on Usenet where topics related to Japan
+    are discussed. They are:
+    soc.culture.japan - cultural, political, social, etc. topics.
+    comp.research.japan - topics on computer science research and development
+      in Japan
+    There are also groups in the fj.* hierarchy, but all (except for 
+    fj.life.in-japan) are in Japanese/Kanji. In fj.life.in-japan usually the 
+    posts are in English. 
+    It's possible to get some articles from the fj.* groups outside Japan, 
+    as part of the JUNET NEWS Mailing List. Almost all the articles will be
+    in Japanese, coded in OLD-JIS or NEW-JIS. To subscribe, send a request 
+    to Hisao Nojima at nojima@nttlab.ntt.jp or to Stanford University at 
+    junet-news-request@russell.stanford.edu. You will then receive a 
+    *grab bag* of articles from one or more of the following newsgroups:
+         fj.ai
+         fj.books
+         fj.comp.oops
+         fj.comp.text
+         fj.editor.emacs
+         fj.followup
+         fj.general
+         fj.junet
+         fj.misc
+         fj.rec.animation
+         fj.rec.ham
+         fj.rec.misc
+         fj.soc.misc
+         fj.sys.mac
+         fj.sys.pc98
+===============================================================================
+1.4 Other related Listservers
+
+*******************************************************************************
+
+2. Japanese computer programs 
+   You can find more information on Ken Lunde's japan.inf (Electronic
+   Handling of Japanese Text) file. 
+   This file is on FTP sites:
+   AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106],
+     file /pub/nihongo/japan.inf
+   JAPAN: utsun.is.s.u-tokyo.ac.jp [133.11.11.11], files
+     /doc/japan.inf/files japan?.inf.Z (?)
+   More details are on Ken Lunde's book, "Understanding Japanese Information
+   Processing", (section 5.7.2), an excellent book, highly recommended to
+   all who wants to process Japanese Information - that includes Japanese
+   word-processing, e-mail, etc. See also 2.8.3
+   These are some basic descriptions of programs and utilities, specially
+   for learning tools, displaying Japanese and Japanese word processing: 
+===============================================================================
+2.1 for DOS
+-------------------------------------------------------------------------------
+2.1.1 Moke - Mark's Own Kanji Editor - Shareware Japanese Text editor
+      Version 1.1 is shareware, can be obtained from ftp sites:
+      AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106], files 
+        /pub/nihongo/mk11*.*.
+      Version 2.1 is commercial, Us$ 69.95+5s&h (10 s&h outside USA and 
+      Canada). KiCompWare, P.O.Box 536, Appleton, WI 54912. USA Tel. 
+      612-773-8621  
+-------------------------------------------------------------------------------
+2.1.2 NJStar - Shareware Japanese Text editor
+      Version 2.1 is shareware, can be obtained from ftp sites:
+      AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106], files 
+        /pub/nihongo/njj210.zip, maybe some more. 
+      The same version with drivers for printing can be ordered by 
+      Us$49+10s&h from: Hongbo Data Systems - Tel 61+2-399-9876,
+      PO box 866, Kensington NSW 2033, Australia
+-------------------------------------------------------------------------------
+2.1.3 Jim Breen's Edict - Freeware Electronic J-E E-J dictionary
+      There are always new versions, the latest one (V.94-003) have 77995
+      entries. Can be obtained from FTP sites:
+      AUSTRALIA: ftp.cc.monash.edu.au [130.194.1.106],directory /pub/nihongo
+        files jdic24.zoo, kinfo24.zoo, edict.zoo, edictjdx.zoo, jis16.zoo,
+        maybe more. DOS compiled (.EXE) programs and fonts, needs zoo to 
+        unpack.
+-------------------------------------------------------------------------------
+2.1.4 HTERM
+      A communication program for MS-DOS which will display ASCII, JASCII, 
+      JIS1, and JIS2 - can be obtained from FTP sites: 
+      JAPAN: utsun.is.s.u-tokyo.ac.jp [133.11.11.11] directory 
+        fj/hterm2.6.0.0 
+      JAPAN: ftp.cs.titech.ac.jp [131.112.16.39] directory 
+        JAPAN/hterm/hterm2.6.0.0
+      JAPAN: azabu.tkl.iis.u-tokyo.ac.jp [130.69.16.7] directory 
+         hterm/hterm2.6.0.0
+      USA: mindseye.berkeley.edu [128.32.232.19] directory /pub/kanji/hterm
+-------------------------------------------------------------------------------
+2.1.5 KD (Kanji Driver) by Izumi Ohzawa 
+      Kanji viewer/ front-end-processor for Kermit. Can be obtained from FTP
+      sites:
+      AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106] file 
+        /pub/nihongo/kd100.arc
+      USA: mindseye.berkeley.edu [128.32.232.19] file /pub/kanjikd100.arc
+-------------------------------------------------------------------------------
+2.1.6 Mark Edward's Kanji Guess
+      Kanji quizzes program, shareware, can be found in FTP sites:
+      AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106], files 
+        /pub/nihongo/kg101*.*, maybe more. 
+-------------------------------------------------------------------------------
+2.1.7 Kanji Flashcard Package
+      For the first 204 kanji. From FTP sites:
+      AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106], files 
+        /pub/nihongo/kanji?.lzh. 
+      Display and information only.
+-------------------------------------------------------------------------------
+2.1.8 Gakusei
+      Gakusei, from Barham Software, is a DOS-based elementary Japanese 
+      grammar tutorial. It is well-suited for low-end or older PCs with 
+      minimal hardware. From the lesson browser choose one of fifteen 
+      lessons. In the exercises following the lessons you can type responses
+      using Kana keyboards. Use the built-in dictionary to find forgotten 
+      words and view conjugated forms. From Lesson 1, you will view Roomaji
+      and Kana characters. You can make screen prints on compatible printers.
+      Gakusei won't replace your teacher, but it can help you master 
+      beginning Japanese at your own pace. Avaliable in FTP sites:
+      AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106], files 
+        /pub/nihongo/gaku10.exe
+      The shareware demo version contains only the first six lessons. The 
+      full lesson set is available for $40 + ($4 US & Canada, $7 other) 
+      shipping from BARHAM SOFTWARE, 15507 S. Normandie Ave. #245, Gardena,
+      CA 90247-4028, USA, e-mail 70700.2225@CompuServe.com or call 
+      1-800-RAN-EASY (1-310-327-4862).
+      System requirements are EGA or VGA, DOS >= 3.3, memory >=640K, 1MB
+      free hard disk, HP LJII or Epson LQ-compatible printer.
+-------------------------------------------------------------------------------
+2.1.9 Ambassador - Commercial Bilingual Document System
+      Allows you to compose letters in Japanese, English, Spanish, French
+      without knowing the target language. Requires DOS/V. Versions in 
+      English/Japanese, English/French, English/Spanish, French/Japanese.
+      Call 617-489-4000, Fax 617-489-3850 Language Engineering Corporation,
+      385 Concorde Ave. Belmont, MA 02178, USA.
+-------------------------------------------------------------------------------
+2.1.10 Japanese I for DOS
+      Basic self-study course for oral, written and grammar, includes reading
+      vocabulary and oral quizzes. Sound. Covers hiragana, katakana and 
+      38 basic kanji. Us$ 41.95, contact Conrad Haller, Educational Tutorial 
+      Software, 10811 Ashton Ave, Suite 209, Los Angeles, CA 90024, USA 
+      tel. 213-470-6205. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.1.11 Verb Conjugation v.1.0
+      Verb conjugation. Us$20+s&h, contact Language Learning Lab, 707 
+      S. Mathews G-70, For. Lang. Bldg., Univ. of Illinois, Urbana, 
+      IL 61801, USA. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.1.12 Smart Characters for Students
+      Word processor, vocabulary tutor and font editor for Asian languages, 
+      text display includes furigana for all kanji, includes radical/stroke 
+      dictionary for reading, Us$ 79.95, contact Frank Kaupman, Apropos Inc.
+      8 Belknap St. Arlington MA 02174, Tel. 617-648-2041.  Review in
+      Mangajin #8.
+-------------------------------------------------------------------------------
+2.1.13 Eastword
+      Hiragana/katakana tutor with menu-driven interface, kanji are large 
+      and easy to read, includes stroke order and mnemonics. Us$ 99.95, 
+      contact Pacific Rim Connections, 3030 Atwater Drive, Burlingame,
+      CA 94010, USA, tel. 800-745-0911. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.1.14 Gambare-kun
+      Kanji/compound exercise package featuring stunning color graphics 
+      (requires VGA and HD) sophisticated learning environment (skill-level
+      tracking, score-keeping and reporting). We don't know the price. Contact
+      Hilary Eastwick-Field Lingotek 56 Rauhuia Crescent, Titirangi-parau,
+      Auckland, New Zealand. Review in Mangajin #8. 
+-------------------------------------------------------------------------------
+2.1.15 Kanji-flash V.0.97
+      Kanji flashcards keyed to the book "Basic Technical Japanese", thorough
+      approach to exercises, several learning modes. We dont know the price.
+      Contact Craig VanDegrift, 9605 Barkston Court, Potomac, MD 20850, USA
+      tel. 301-279-2678. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.1.16 Verb Explorer J
+      Computerized system for analyzing and practicing verb and adjective 
+      constructions, drills by verb type. Us$ 225. Contact Larry Cross,
+      Japan-America Institute of Mgt. Science, 6660 Hawaii Kai Drive, 
+      Honolulu, HI 96825 USA, tel. 800-54-JAIMS. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.1.17 Kintaro Sensei
+      Interactive language exercises + culture, four levels of instruction,
+      romaji, katakana, hiragana, several hundred kanji. Us$ 600+. Requires 
+      hardware Voice Production Unit. Contact Jack Walraven, Pacific
+      Educational Sys., 915 Woodhall Drive, Victoria, BC Canada V8X 3L7 
+      tel. 604-727-6668. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.1.18 Let's learn Nihongo
+      Comprehensive package to learn grammar, kanji with sound, uses a 
+      computer-controlled tape player and hand-writing recognizer. Needs 2
+      empty slots on the PC. Us$ 3900. Contact Richard Kurtzman, Seikosha
+      America Inc., 10 Industrial Ave, Mahwah, NJ 07430, USA 
+      tel. 201-327-7227. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.1.19 DOS/V
+      DOS/V allows non-Japanese PCs (i.e. PCs that does not have the Kanji
+      fonts in ROM) to display and enter Japanese. The fonts and conversion
+      tools are all software. The main caveat is: you cannot enter/display 
+      Japanese in applications that were not designed for working with DOS/V 
+      (like non-Japanese Lotus, Word, etc.) unless they can use ANSI.SYS to 
+      display the characters. English-based applications must run on the
+      English environment - there is a command to change between them.
+      Other caveat: software designed for Japanese PCs, like NECs, will 
+      not run on DOS/V. There seems to be also a problem with the printing - 
+      Japanese will not work for printers that does not have the Kanji 
+      fonts in their own ROMs too. The last version is J5.02/V. You need 
+      also a VGA or better and at least 2 Mb of memory to run it. Price is 
+      about 17.000 yen. 
+-------------------------------------------------------------------------------
+2.1.20 JLateX
+      There are two freeware versions from LaTex available in some FTPs - I
+      tried to install one and it was very hard to make it work, I don't even
+      remember the steps ! Somebody that made this, please tell me how !
+-------------------------------------------------------------------------------
+2.1.21 Demacs - Japanese Emacs for MSDOS
+      Now sources are part of Mule, q.v.  Binaries available at FTP sites:
+      USA??? ftp.uu.net [192.48.96.9] directory 
+        /systems/ibmpc/msdos/simtel20/demacs
+-------------------------------------------------------------------------------
+2.1.22 Word Perfect 5.1j
+      WP5.1j works under DOS/V, but has its own FEP - WPFEP, which doesn't 
+      require any extended memory. So to run WP you need only WPFEP.sys and
+      about 400K conventional memory. To print texts from WP is a problem, 
+      because it supports only japanese printers. Price: about 40.000 yens.
+      Does anybody have more information on it ?
+-------------------------------------------------------------------------------
+2.1.23 Kana Sensei v2.1
+      Shareware quiz program for beginning and intermediate students with 
+      quizzes on hiragana, katakana as well as vocabulary and basic 
+      grammatical patterns.  Users can also create their own quizzes. 
+      Quiz modes are english to japanese, japanese to romaji, japanese to 
+      english and japanese to romaji/english.  Includes some kanji.
+      It is available at FTP sites:
+      USA: ftp.uga.edu [128.192.1.9], file 
+        pub/msdos/mirror/langtutor/ksensei1.zip
+      USA??? ftp.uu.net [192.48.96.9], file 
+        pub/archive/systems/ibmpc/msdos/simtel20/langtutor/ksensei1.zip
+      You can contact the author (Mike Chachich) at 
+      mdchachi@vela.acs.oakland.edu or P.O.Box 290-232 Waterford, MI 48329,
+      USA.
+-------------------------------------------------------------------------------
+2.1.24 YKH
+      YKH is a program for DOS that emulates a VT320 terminal while properly
+      displaying Japanese text. It is able to connect via modem through
+      comports 1 and 2, or over local-area networks using the DECNET LAT 
+      and DECNET CTERM network terminal protocols. Unlike most Japanese 
+      terminals, YKH is able to fix Japanese text that has been damaged by 
+      escape-code stripping.
+      YKH requires at least an 80286 CPU, the extended keyboard BIOS, a VGA
+      graphics adapter, and about 128K of free RAM.
+      It can be downloaded from FTP sites:
+      USA: oak.oakland.edu, file /pub/msdos/modem/ykh122.zip
+===============================================================================
+2.2 for Windows 
+-------------------------------------------------------------------------------
+2.2.1 JWP - Stephen Chung's Japanese Word Processor
+      Version 1.1 is freeware and can be obtained from anonymous FTP from
+      FTP sites:
+      AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106], files 
+        /pub/nihongo/jwp*.*, maybe more.
+      Includes access to edict. Very good, and free.  
+-------------------------------------------------------------------------------
+2.2.2 Power Japanese 
+      Features digital sounds, animation, drills, dictionary, flashcards.
+      BayWare Inc., 1-800-538-8867 or 415-312-0980, FAX 415-578-1884.
+      Good for starters, hard to use if you're used to Windows interface,
+      limited but new version seems to be far better.
+-------------------------------------------------------------------------------
+2.2.3 Understanding Spoken Japanese
+      Interactive video (?), requires IBM Info Windows Structure or M-Motion
+      card + laser disc player. We dont know the price. Contact Ms. Sally 
+      Vito, Intellimation Inc., P.O.Box 1922, Santa barbara, CA 93116,
+      USA tel. 805-968-2291. Review in Mangajin #8. 
+-------------------------------------------------------------------------------
+2.2.4 Kanji Exercises
+      Toolbox version of kanji flashcards, interactive approach includes 
+      reading exercises, animated character generation and quizzes, uses
+      kunrei romanization. Us$ 65. Requires Runtime Toolbook (?). Contact
+      Annonae Software, P.O.Box 7629, Berkeley, CA 94707, USA. 
+      Tel. 415-527-8006. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.2.5 Windows 3.1/J
+      There is a version of Windows that can run under DOS/V. You will need
+      a 80386SX or better, 27+ Mb of hard disk, MS-DOS 5.0/V or IBM DOS 
+      J5.02/V, at least 4 Mb Ram and VGA display. The Kanji fonts are 
+      TrueType. The drivers are only for Japanese made printers, but if you
+      have drivers for non-Japanese printers you can install them and they
+      will print OK. US printers can be installed by replacing CONTROL.INF
+      file in the system directory with the US version. Thus, even old U
+      printers like EPSON FX (9 pin) can print Kanji TrueType fonts. You 
+      might want to save a version of the Japanese CONTROL.INF. Non-Japanese
+      versions of programs seem to work OK under Win31J, as long you don't
+      expect to use Japanese on them. Win31J can coexist with English Win31. 
+      They should be installed in separate directories, changing the path 
+      environment variable changes which version is run. 
+      [Rafael's note: I had some weird problems with non-japanese 
+      applications which messages that should be in English appears in 
+      Japanese, garbaged !]
+-------------------------------------------------------------------------------
+2.2.6 Word for Windows 5.0/J
+------------------------------------------------------------------------------
+2.2.7 WinJDIC - Japanese Dictionary for Windows (WinJDIC), by KiCompWare
+      The Japanese Dictionary project was started way back in 1990 by 
+      Mark Edwards. Professor Jim Breen took it over and has continued 
+      to support, compile, and edit it. He also wrote a DOS program JDIC
+      to provide a quick interface to the program. Since then a version for
+      the Mac, and X-Windows has been released (Jim did the X-Windows version,
+      someone else did the Mac version). WinJDIC is a version for MS-Windows.
+      The program is Copyrighted, but freeware. This means you can use it for
+      and pay no fee after you download it, or pay to have some ship it to you.
+      Distributors, may charge up to $10 (including postage and handling) to
+      distribute it. If you do decide to distribute, it might be a good idea
+      to contact us, to get the latest version. At any rate, everyone is 
+      encouraged to pass it on to a friend so they may benefit from an easier
+      road to learning Japanese.
+------------------------------------------------------------------------------
+2.2.8 WIN/V 1.0 from C. F. C. Computing
+      WIN/V is a program which allows you to have Japanese MS-Windows 
+      environment on regular English Windows environments. WIN/V was made by 
+      Mr. Nishimura who is a legend among Japanese Windows users.
+      Since Japanese Windows application requires Kanji handling, you could 
+      not run those programs on regular English MS-Windows environment. But,  
+      with WIN/V, you can not only run Japanese Windows application, but 
+      also you no longer needed  MS-DOS/V or PC-DOS/V. You simply install 
+      WIN/V and restart Windows,  then you can have true Japanese Windows 
+      environment. 
+      Moreover, WIN/V supports Kanji True Type Font and can be run on 
+      variety of MS-Windows environments such as Windows for Workgroup 
+      3.1/3.11, OmniBook/Windows 3.1 (ROM version),  English OS/2 2.1, 
+      English OS/2 2.1 for Windows, NEXTSTEP 3.2/Soft PC + Windows, SCO 
+      Unix/Windows session, iRMX for Windows, and C. F. C. Computing
+      is working on CHICAGO/V now. Unfortunately, WIN/V does not work with 
+      WABI from Sun.
+      Since WIN/V does not include neither KanaKanji Henkan program 
+      (IME program) nor any Kanji True Type Font, you have to install those 
+      programs from "Japanese MS-Windows3.1 Setup Disk."  But, most of 
+      Japanese word Processors, such as MS-WORD, ICHITARO for Windows, or 
+      AMI Pro for Windows, also provides both IME program and Kanji True Type
+      fonts. So, for non-Japanese Windows user, you should buy at least
+      one Japanese Windows word processor..   
+      Where can you get it ? WIN/V can be purchased from SOFTEX (on-line
+      software shop. "go swinva") in NIFTY-Serve.  Also, shareware version 
+      should be available shortly on CIS. (but, IME support will be protected
+      (disabled) for non-registered user.  TrueType module for shareware 
+      version will be available from SOFTEX.)
+      WIN/V also include "OMAKE program" which makes English Windows 
+      applications Kanji-aware, but, it is a non-supported program.
+===============================================================================
+2.3 for Unix, X-Windows, etc.
+-------------------------------------------------------------------------------
+2.3.1 Jim Breen's Edict - Freeware Electronic J-E E-J dictionary
+      There are always new versions, see 2.1.3. The interface for X-Windows is
+      xjdix, and need kterm in order to display Japanese characters.
+      Can be obtained from FTP sites:
+      AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106], file 
+        /pub/nihongo/xjdic.tar.Z, plus the dictionaries.
+-------------------------------------------------------------------------------
+2.3.2 Kterm - Kanji terminal for X
+      Predecessor of exterm.
+      Sources so you have to compile it for your machine. Last version,
+      5.1.0 works fine here but some people reported bugs. Version 4.1.2
+      is OK. Can be found in FTP sites:
+      USA: world.std.com, file /Japanese/kterm-4.1.2.tar.Z 
+-------------------------------------------------------------------------------
+2.3.3 Mule - MUltiLingual Enhancement to GNU Emacs
+      Mule is a modification of GNU Emacs to do Japanese display, entry, 
+      and henkan (conversion to kanji). It also does Chinese and other 
+      languages. Can be obtained in FTP sites:
+      JAPAN: etlport.etl.go.jp [192.31.197.99], directory /pub/mule
+      JAPAN: sh.wide.ad.jp [133.4.11.11], directory /JAPAN/mule/mule-0.9.7
+      FINLAND: ftp.funet.fi [128.214.6.100], directory /pub/gnu/emacs/mule
+-------------------------------------------------------------------------------
+2.3.4 Wnn - "Watashi No Namae" 
+      A library that performs kanji conversion by connecting to a
+      dictionary server (see jserver); Wnn also has routines to manage
+      dictionary files.  Requires a front end, such as xwnmo or Mule.
+      Version 4.108 can be found in FTP sites:
+      JAPAN: sh.wide.ad.jp [133.4.11.11], directory 
+        /JAPAN/mule/mule-0.9.8/contrib
+      An internationalized version called Xsi is bundled with the X11R5 
+      distribution, e.g. at FTP sites
+      USA: export.lcs.mit.edu 2.7.14 directory 
+        /pub/R5untarred/contrib/im/Xsi
+-------------------------------------------------------------------------------
+2.3.5 Xwnmo 
+      A Japanese input client.  It displays kana/kanji, and uses
+      Wnn to do the work of henkan and dictionary management.
+      It is bundled with Wnn; see Wnn for ftp sites.
+-------------------------------------------------------------------------------
+2.3.6 Jserver
+      A kanji conversion server.  Comes with Wnn, q.v.
+-------------------------------------------------------------------------------
+2.3.7 Nemacs 
+      The precursor to Mule: GNU Emacs 18.55 plus Japanese input/
+      conversion/display.  Smaller than Mule, less functionality.
+      Version 3.3.1 is in the FTP sites:
+      USA: clover.ucdavis.edu [128.120.57.1] 
+      Version 3.3.2 is in the FTP sites:
+      USA: crl.nmsu.edu [128.123.1.18] or [128.123.1.14] ?
+-------------------------------------------------------------------------------
+2.3.8 SKK
+      A newer, more efficient Japanese input/conversion method, that
+      does not do grammatical analysis but lets the user specify the
+      starting point of okurigana.  Can be used with Mule.  Version
+      6.7 is at FTP sites:
+      USA: world.std.com, directory /src/Japanese
+      JAPAN: sh.wide.ad.jp [133.4.11.11], directory
+        /JAPAN/mule/mule-0.9.7/contrib
+-------------------------------------------------------------------------------
+2.3.9 exterm - internationalized xterm for X
+      Terminal that can display or input international text, including
+      Japanese.  Requires an input client such as xwnmo, egim, etc.
+      Comes with X11R5, e.g. on ftp sitea:
+      USA: export.lcs.mit.edu 2.7.14 directory 
+        /pub/R5untarred/contrib/im/Xsi
+-------------------------------------------------------------------------------
+2.3.10 Kdic - Motif interface to edict/kanjidic by Pertti Tapio Kasanen
+       Kdic is a X/Motif dictionary program which uses the EDICT and
+       KANJIDIC data files.  Version 0.8 of kdic can be ftp'd from
+       FTP sites:
+       FINLAND: nic.funet.fi, file /pub/culture/japan/x11/kdic-0.8.tar.Z
+       Requires C++, Motif 1.1 or 1.2, X11R4 or R5.
+-------------------------------------------------------------------------------
+2.3.11 TkJdic - Non-Motif interface to edict/kanjidic by Pertti Tapio Kasanen
+       TkJdic are programs and user interfaces to Jim Breen's EDICT d
+       dictionary files. With TkJdic you can search for Japanese and
+       English words, type them in (Japanese with romaji or by Kinput2) 
+       or paste them by mouse. You can also search kanjis by several 
+       methods, combine these and click any kanji to get more information 
+       about it. There is a history mechanism, so it is easy to get back
+       to previous searches. 
+       FINLAND: ftp.funet.fi, file /pub/culture/japan/x11/tkjdic-0.8.tar.Z
+       Requires Tcl/TC public domain windowing package with Japanese language
+       patches (currently tcl7.3jp* and tk3.6jp*)
+===============================================================================
+2.4 for Macintosh
+       There is a file with more detailed info for Mac users that can
+       be obtained by sending a mail to listserv@psuvm or 
+       listserv@psuvm.psu.edu with the command "Get COMPJ_MAC JTIT-L"
+       (I believe that in the body of the message). Send additions/corrections 
+       to: daeschler@mailserv.zdv.uni-tuebingen.de (Rainer Daeschler)
+-------------------------------------------------------------------------------
+2.4.1 Jim Breen's Edict - Freeware Electronic J-E E-J dictionary
+      There are always new versions, see 2.1.3. The interface for the Mac was
+      ported by Dan Crevier, and can be obtained from FTP sites:
+      AUSTRALIA: monu6.cc.monash.edu.au [130.194.1.106], file 
+        /pub/nihongo/MacJDic1.2.sit.hqx, plus the dictionaries.
+-------------------------------------------------------------------------------
+2.4.2 Ambassador - Commercial Bilingual Document System
+      Allows you to compose letters in Japanese, English, Spanish, French
+      without knowing the target language. Requires KanjiTalk. Versions in 
+      English/Japanese, English/French, English/Spanish, French/Japanese.
+      Call 617-489-4000, Fax 617-489-3850 Language Engineering Corporation,
+      385 Concorde Ave. Belmont, MA 02178, USA.
+-------------------------------------------------------------------------------
+2.4.3 Kanji Exercises and Hiragana/Katakana Exercises
+      Toolbox version of kanji flashcards, interactive approach includes 
+      reading exercises, animated character generation and quizzes, uses
+      kunrei romanization. Us$ 65 (kanji), Us$45 (kana). Requires Hypercard.
+      Contact Annonae Software, P.O.Box 7629, Berkeley, CA 94707, USA. 
+      Tel. 415-527-8006. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.4 HyperKanji v.0.86
+      Hypercard-based Kanji dictionary tool, 1600 knaji+6000 compounds, on
+      the right track for on-line dictionary, user can add own entries. 
+      Us$ 75, requires KanjiTalk >= 6.0.4, works best with Hypercard 1.2-J
+      (Japanese version). Contact Lew Clapp, International Comp.Res., P.O.Box
+      2389, Cambridge, MA 02238-2389, USA tel. 617-876-5566. Review in
+      Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.5 MacSunrise B-100 (beginning level)
+      HyperCard-based kanji reference and learning system,100 basic kanji
+      with readings and sound, include stroke order, pronunciation and 
+      meaning. Us$ 99, contact Peter Goodman, Stone Bridge Press, P.O.Box 
+      8208, Berkeley, CA 94707, USA, tel. 415-524-8732.  Review in 
+      Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.6 JapanEase
+      HyperCard-based learning tool for katakana gairaigo ("borrowed words")
+      and daily expressions (time, date, counting, etc.) Us$ 99.95, requires
+      Hypercard V2.0. Contact Ayumi Software/Qualitas Trading Co. 6907
+      Norfolk Road, Berkeley, CA 94705 USA. tel. 415-848-8080. Review in
+      Mangajin #8. 
+-------------------------------------------------------------------------------
+2.4.7 KanjiMaster / EasyKana
+      Kanji (KM) / Kana (EK) flashcards with sound, uses kunrei romanization.
+      Us$ 149, requires HyperCard. Contact HyperGlot Software, 505 Forest
+      Hills Blvd, Knoxville, TN 37919, USA Tel. 800-726-5087. Review in 
+      Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.8 KanjiSama
+      Kanji reference tool for reading; stand-alone application, fast
+      dictionary look-up, general and technical dictionaries provided, more
+      dictionaries under development. Us$ 149, requires KanjiTalk >=6.0.4,
+      RAM>2M. Contact Steve Belinski, SANBI software Co., 3594 Crowell Avenue,
+      Riverside CA 92504, USA tel. 714-352-0276. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.9 Japanese CAI - Hiragana V1.0 Katakana V1.0
+      Hiragana, katakana exercise. Us$ 150+5s&h, demo version Us$20+5s&h,
+      contact Yamazaki Intercom Corp. 42-204 Shimizu-ga-oka, Yatomicho,
+      Mizuho, Nagoya, Aichi 467 Japan. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.10 ? (seems that they dont know the name :-)
+      HyperCard-based CD-ROM, includes 100 basic kanji with readings sound.
+      Us$ 450. Requires CD-ROM player. Contact Prof. Kazuko Nakajima, Dept.
+      of East Asians Stud., University of Toronto, Toronto ON M5S 1A5 Canada.
+      Tel. 416-978-3302. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.11 Kanji Compounds
+      HyperCard-based kanji exercise program keyed to the book "Newspaper
+      compounds - the 1000 Most Important in order of Frequency". We dont 
+      know the price. Requires KanjiTalk>=6.0.4 and installation of custom
+      English fonts (included). Contact Danyll Wills, Kaminokuchi-sagaru,
+      Daiku-cho 487, Dotemachi-dori, Shimogyo-ku Kyoto 600, Japan. 
+      Tel 075-343-3641. Review in Mangajin #8. 
+-------------------------------------------------------------------------------
+2.4.12 Japanese for Everyone
+      CD-ROM based Hypercard application for practical spoken Japanese. 
+      Requires CD-ROM player. Us$ 449. Contact Butler Consulting, 2199 
+      S. Broadway, Grand Junction, CO 81503, USA. Tel. 303-245-5462. 
+      Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.13 NihongoWare 1
+      HyperCard-based CD-ROM program for practical spoke business Japanese. 
+      We dont know the price. Requires CD-Rom player. Contact Mitsuru Hosobe,
+      Ariadne Language Link, Shinjuku Center Bldg, 39F. Nishi Shinjuku 1-25-1
+      Shinjuku-ku, Tokyo 163, Japan. Tel. 03-3344-1221. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.14 Understanding Written Japanese
+      HyperCard-based system for technical Japanese. We dont know the price.
+      Contact Ms. Contact Ms. Sally Vito, Intellimation Inc., P.O.Box 1922, 
+      Santa barbara, CA 93116, USA tel. 805-968-2291. Review in Mangajin #8.
+-------------------------------------------------------------------------------
+2.4.15 Nihongo Tutorial System
+      Intelligent tutorial system to assist scientists and engineers in 
+      developing reading competence in technical Japanese, features
+      performance tracking. We dont know the price. Contact Tony Maciejewski,
+      Electrical Eng. Dept., Purdue university, West Lafayette, IN 47907 USA.
+      Tel. 317-494-9855. Review in Mangajin #8.  
+-------------------------------------------------------------------------------
+2.4.16 Eudora mail reader (Japanese version)
+      available from FTP sites:
+      JAPAN: ftp.tohoku.ac.jp, file
+        /pub/mac/comm/MacTCP/eudora/eudora1.2.2J7.sit.hqx
+      USA: ftp.uwtc.washington.edu [128.95.202.40], file 
+        /pub/Japanese/Macintosh/eudora1.2.2.J7.sit.hqx
+-------------------------------------------------------------------------------
+2.4.17 NewsWatcher news reader (Japanese version)
+      available from FTP sites:
+      JAPAN: ftp.tohoku.ac.jp, file 
+        /pub/mac/comm/MacTCPnews-watcher-j-0811.hqx
+===============================================================================
+2.5 Other computers
+-------------------------------------------------------------------------------
+2.5.1 Japanese I for Amiga
+      Basic self-study course for oral, written and grammar, includes reading
+      vocabulary and oral quizzes. Covers hiragana, katakana and 38 basic
+      kanjis. Us$ 41.95, contact Conrad Haller, Educational Tutorial 
+      Software, 10811 Ashton Ave, Suite 209, Los Angeles, CA 90024, USA 
+      tel. 213-470-6205. Review in Mangajin #8.
+===============================================================================
+2.6 Other Related topics (files, etc.)
+-------------------------------------------------------------------------------
+2.6.1 Kanji of the Day files
+      Kanji of the Day are contributions from Mr. Kurt Stueber that presents
+      one kanji with descriptions on its radicals, code information (JIS, 
+      Nelson, etc.), On- and Kun- readings, mnemonics, compounds, lots of
+      interesting data for those learning Kanji. Usually are posted to the
+      listserver, and goes to the sci.lang.japan newsgroup. Back issues of 
+      "Kanji of the Day" can be found at the FTP sites:
+      USA: ftp.uwtc.washington.edu  [128.95.202.40], directory 
+        /pub/Japanese/KanjiOfTheDay. 
+      The files are ASCII, the kanjis are represented in a 24x24 *-matrix.
+-------------------------------------------------------------------------------
+2.6.2 KanaSheet
+      KanaSheet is a nice free PostScript program that gives you plenty of
+      practice pages for hiragana and katakana, by Harald Kucharek. You can
+      get the version 2.1 of KanaSheet on the FTP sites:
+      USA: ftp.uwtc.washington.edu  [128.95.202.40] file 
+        /pub/Japanese/kanjiPrinter.letter
+-------------------------------------------------------------------------------
+2.6.3 Nihon no Kotowasa
+      Tim Duncan contributes regularly with this interesting series, on
+      proverbs (sp ?), in the newsgroup sci.lang.japan, or you can get them
+      on the FTP sites/directories:
+      USA: ftp.uwtc.washington.edu [128.95.202.40] pub/Japanese/Kotowaza
+      AUSTRALIA: ftp.cc.monash.edu.au [130.194.1.106] pub/nihongo/kotowaza
+      EUROPE: kuso.shef.ac.uk [143.167.25.1] pub/japanese/kotowaza
+      UK: aiai.ed.ac.uk [192.41.105.5] timd/kotowaza
+===============================================================================
+2.8 Information for developers
+    This section just points to some files of interest for those that
+    wants to develop programs related to Japanese Language. Basically, are
+    pointers on where to get bitmaps, dictionary files, references etc.
+    For anybody considering developing of these programs, I recommend getting
+    the book  "Understanding Japanese Information Processing" by Ken Lunde.
+    See section 5.7.2 for details.
+-------------------------------------------------------------------------------
+2.8.1 Jim Breen's EDICT and KANJIDIC files
+      These files provides lots of information on kanjis, codes, readings,
+      meanings (KANJIDIC) and Japanese-English correspondence (EDICT).
+      Format is available on some read-me files. Can be found in the same
+      FTP sites that carry the JDIC program
+-------------------------------------------------------------------------------
+2.8.2 Japanese (Kanji) bitmap fonts
+      You can find a large collection of Japanese fonts for X (bdf format)
+      in FTP sites:
+      USA: crl.nmsu.edu [128.123.1.18] or [128.123.1.14] ? ,
+        directory /pub/japanese/fonts. Read the README.jfonts file for more
+        information. 
+-------------------------------------------------------------------------------
+2.8.3 Machine-readable data from "Understanding Japanese Information 
+      Processing"
+      Machine-readable data (such as source code, character lists, and 
+      mapping tables) from "Understanding Japanese Information Processing" 
+      (see section 5.7.2) are available at FTP sites
+      USA: ftp.ora.com [140.186.65.25], directory pub/nutshell/ujip 
+      USA: ftp.uu.net [192.48.96.9], directory ??
+===============================================================================
+2.9 People to contact (authors, etc.) - Please tell me if you want/don't want
+    your name here as an author/developer so other people can contact you.
+-------------------------------------------------------------------------------
+2.9.1 Jim Breen is jwb@capek.rdt.monash.edu.au
+-------------------------------------------------------------------------------
+2.9.2 Stephen Chung is schung@kilroy.jpl.nasa.gov or 
+      schung@daneel.rdt.monash.edu.au (ocassionally)
+-------------------------------------------------------------------------------
+2.9.3 Izumi Ohzawa is izumi@violet.berkeley.edu 
+-------------------------------------------------------------------------------
+2.9.4 Kurt Stueber is stueber@vax.mpiz-koeln.mpg.dbp.de 	
+-------------------------------------------------------------------------------
+2.9.5 Ken Lunde is lunde@mv.us.adobe.com
+-------------------------------------------------------------------------------
+2.9.6 Tom Gally is tomgally@twics.co.jp
+===============================================================================
+
+*******************************************************************************
+
+3. Electronic tools for Japanese
+===============================================================================
+3.1 Electronic Dictionaries
+-------------------------------------------------------------------------------
+3.1.1 The Canon WordTank
+  This file was supposed to be the separated WordTank FAQ, but it makes more
+  sense to put on the FAQ for sci.lang.japan. If you feel the need, it can be
+  separated for distribution as long as you mention where it was originally.
+  The information presented here came mainly from a file that Larry Staples
+  sent me and for my own experience using a ID-7100 and ID-9500.
+  1-What is it ?
+    It is a small (205x92x23mm, closed, model ID8500 - the biggest) battery-
+    operated device that can be used as a Japanese-English (J-E), English-
+    Japanese (E-J) and Kanji Dictionary (KD). The input is made in a small
+    almost QWERTY keyboard and the output is on a LCD display, 52x160
+    matrix.
+    There is also a calculator and a calendar, and a "memorize" function that
+    can make some very basic quizzes, with space for 300 words. It seems that
+    the model ID8500 have some more options, but I dont know.
+    There are six models:
+      ID7000 - With 200.000 words, for 25.000 yens, catalog price
+      ID7100 - Similar to ID7000, even the price. It seems that the only
+               difference is the "jumping search".
+      ID7200 - Another step-up, with 240.000 words and you can select menus
+               in English or Japanese. 26.000 yens
+      ID8500 - A real advance, 350.000 words, including personal and place
+               names, and other features I didn't checked out. 44.000 yens.
+    These were the "old" wordtanks. The "Super" wordtanks are three, the
+    ID6500, ID7500 and ID9500. They have no calendar, but improved word 
+    memory, slightly bigger keyboard, and the case is no long the plastic 
+    one, but a tough, rubber case. The old menu key is still there but the 
+    dictionary functions are no longer on the menu.  The Japanese, Kanji,
+    and English functions each have their own buttons below the screen 
+    along with word memo, calculator, and expansion card buttons.  The 
+    "modori" button, the star button and a new history function button also
+    appear below the screen.  On the right side of the screen are four
+    function key-like buttons that take on different functions depending
+    on the screen.  A common use for the keys would be the "jukugo," 
+    or compound, function; definition; usage example; etc.  Littler 
+    "icons" appear on the screen next to the buttons to suggest their
+    usage. The WordTank Super has two expansion slots (not compatible
+    with the ID series cards) that lock into place, and it runs on
+    two AAA batteries.  Canon says the machine will run for about 250 hours on 
+    two alkaline batteries. The case is only a few millimeters larger and a 
+    few grams heavier than the old ID series machines (except the 8500 that
+    was far bigger).
+      ID6500 - This one is a new release, it seems to be the less powerful
+               of them - have the navigation (jump) functions, but I believe
+               that the word database is somehow smaller. I saw it by 
+               15.000 yens, maybe even cheaper in other places.
+      ID7500 - The new "Super" Wordtank, with a redesigned case, and the
+               vocabulary of the ID7200. I believe that it haves the same
+               capabilities as the ID9500, like jumping and wildcards.
+      ID9500 - The top of the line, another "Super" Wordtank. The features 
+               are the same as the ID7500 plus more memory. It contains 
+               61,248 Japanese entries with 89,717 English definitions, 
+               17,850 related Japanese words, 57,081 definitions in Japanese, 
+               and 53,490 usage examples in Japanese. It contains 6,353 Kanji
+               (JIS Levels 1 & 2 minus the last two kanji) with 35,875 
+               compounds and 19,719 readings. Finally, it contains 60,424
+               English words with thousands of definitions and related 
+               English words. This all adds up to 649,170 entries. Just for
+               reference, the IDX-7500 has 275,698 entries and the old 
+               ID-7100 had 199,406 entries. NOTE: the names and places 
+               database of the ID8500 was not added to the 7500 and 9500
+               models.
+    For the price, almost all the shops I saw had at least 10% off, and you
+    can get them even cheaper (older models) in bargain sales.
+    There is an optional printer IP-01 for 25.000 yens, I only saw it once
+    in a catalog.
+    There are some optional cards, like word upgrades, phrase cards
+    (for business, travel, etc.) and even fortune telling, but I never had 
+    the chance to test them. All these cards are on the 7000-10000 yens range.
+  2-What can I do with it ?
+    For the J-E function, you can enter words in Kana or Romaji, and search
+    for them. The output is in kanji with furigana, and one of the very good
+    points on it is that the furigana is displayed aligned with the kanji,
+    so the word GAKUSEI will display small hiragana GAKU on the top of the
+    kanji for GAKU and SEI on the top of the kanji for SEI. I believe that it
+    is valuable so you can associate kanji with reading. Of course, japanese
+    words in hiragana and katakana haves no furigana. The displayed kanji
+    is big and easy to read. The meaning in english are also displayed, and
+    you can use this meaning to search in the E-J for other meanings in 
+    Japanese.
+    For the KD function, you can search kanjis for the reading (ON- and KUN-),
+    for the stroke numbers and for the radicals. When you find the desired
+    kanji, the WordTank display the readings, the number of strokes, JIS
+    and KUTEN code, and bushu, and allows you to seek words in the J-E that
+    starts with that kanji. The "old" wordtanks will only display the
+    compounds of two kanjis that starts with the kanji you selected, but
+    the Super ones will search for *any* sequence that starts with the
+    kanji, including words with okurigana.
+    For the E-J function, you enter the word in romaji and it displays the
+    meanings (usually more than one). The phonetics (sp?) of the word are
+    also displayed. If the word have a link with others, you can "navigate"
+    through them. 
+    The model ID8500 also have a database for people's and place's names, 
+    that the older models lacked.
+    Some features of the Super wordtanks are:
+    Jump Search - As I said above, the English and Japanese definitions and
+      explanations included in the Japanese dictionary of the IDX-9500 have
+      been greatly expanded.  Most words have Japanese definitions. This
+      makes the improvements in "Jump Search" especially useful. Any whole 
+      word displayed on any screen can be highlighted and looked up. So, for
+      example, if you were to look at the Japanese definition of a word 
+      (Japanese or English) and found yet another word you didn't know,  
+      you could highlight that word and look it up too. You can also look 
+      up any displayed English word.
+    Kanji Jukugo - Another big improvement has been made in the Kanji 
+      dictionary. After looking up a kanji, pressing the "jukugo" function 
+      key now produces a complete list of all words starting with that 
+      character, not just two kanji words as in the ID series.  Verbs,
+      single kanji, two, three, and more kanji words are all listed on the 
+      screen.
+    Wild Cards - Both Japanese (kana, not kanji) and English words can be
+      searched for using wild card characters, "*" for multiple characters 
+      and "?" for single characters.  For example, it is possible to search 
+      for "ga*ji," resulting in three words, while "ga?ji" would result in
+      one. Searching for English words works the same way.
+    History - The machine keeps a running list of the last 16 words you have
+      looked up. So, if you're like me, and keep looking up the same word 
+      time after time; this feature will be handy.
+  3-So, which are the problems ?
+    First of all, it can be called a "feature", but it is ROM-based, meaning
+    that you cannot change/include/alter/annotate any entry on it. This
+    characteristic also means that you should expect some new releases from
+    times to times (inclusion of new words, corrections, etc.), but 
+    surprisingly it does not happens. As long as I know, the Old wordtanks 
+    had more than 2 years before the new releases, and in Japan, almost all
+    electronic tools (cameras, videos, TVs, etc) have new models every 6 
+    months. Of course, being ROM based makes it fast and small, but 
+    reliable ? For the old versions, some of the entries from the J-E are 
+    insufficient, and some are simply wrong. There are even some entries 
+    in the J-E that  have no translation (I mean, display nothing), even on
+    the ID8500 (same for the ID9500, but for the really obscures and/or
+    without translation). Try ON'YOMI, for example. For the new models, 
+    some words still lack translations but some have definitions... in 
+    Japanese. For the KD dictionary, it will search words that start with 
+    the kanji you are displaying, but only two-kanji words. For example, 
+    you can find the kanji KA for KANOUSEI in the KD, and search for words 
+    that start with it, and it will display KANOU but not KANOUSEI. The 
+    Super models corrected this annoying problem. 
+    The E-J have more meanings per word, but they are displayed in a smaller
+    type (dot matrix) than the J-E, and the kanjis don't have furiganas, so
+    if you don't read japanese, there is a trouble. More, you cannot 
+    underline a word in Japanese and search the meaning as you can do with
+    the J-E with the old models, but can with the Super ones.
+    For the person's and place's names in the ID8500 model, I have a main
+    complain - its usage is, enter a japanese name in kana and see the kanji.
+    I guess that the inverse (enter the kanjis as in the KD and see the 
+    reading) is far more useful, at least for non-Japanese speakers. 
+    Some people also complained about parts that break, but seemed that the
+    service (fixing, etc.) was OK - In Japan, I must add. 
+-------------------------------------------------------------------------------
+3.1.2 Jim Breen's JDIC in a Palmtop
+    Here is the file I got from Jim Breen about the use of JDIC in a palmtop.
+    I added some comments in ()s.
+    AN ALTERNATIVE TO THE WORDTANK 
+    For  the  last  couple  of  months I have been using what I believe is a 
+    viable alternative to the  Canon  Wordtank  as  a  hand-held  electronic 
+    dictionary.  I  have  decided to put together a detailed posting on this 
+    alternative. 
+    The system I have been using is the HP 100LX Palmtop PC, a hand-held and 
+    fully functional PC measuring about 16x8cm.  Onto this I have loaded  my 
+    JDIC  &  JREADER  programs and the EDICT,  etc.  dictionary files.  JDIC 
+    performs well on this system,  to the extent that  I  now  only  use  my 
+    trusty old WT (8500 plus upgrade card) on the rare occasions when a word 
+    I want is not in EDICT. (It usually isn't in the Wordtank either). 
+    A  few  words  about  the  Palmtop.  It  comes with many Mb of preloaded 
+    software: Lotus123, database, editor, HP Calculator.  CCMail, Phonebook, 
+    Appointment manager, XTREE-like Filer, Stopwatch, etc.  All this is in a 
+    "D:"  drive  in ROM.  The basic systems have 1M of CMOS of which 640K is 
+    DOS's memory and the rest a RAMdrive (C:).  In an  expansion  slot  (A:) 
+    goes  a  8x5x0.5cm "Flashdisk";  I have a 10M version,  which comes with 
+    Stacker installed,  so there is plenty of capacity  for  JDIC  etc.  The 
+    processor  is  an 80186,  which seems to perform at about the speed of a 
+    12Mhz 8088.  There is an Application Manager which looks after  programs 
+    through  Icons and pop-down menus,  or you can run programs from the DOS 
+    prompt.  Curiously,  powering the system off only turns off the display, 
+    the applications stay there. I have only rebooted twice. 
+    The  Palmtop has a CGA display.  Unlike earlier models,  the 100LX has a 
+    full 80x25 line screen,  i.e.  640x200 pixels in high-res  CGA.  I  have 
+    always found the aspect ratio of high-res CGA pretty poor for display of 
+    the 16x16 kana/kanji, but the crisp LCD of the Palmtop combined with the 
+    rather  flat  aspect  ratio  make  the  display  every  bit as good as a 
+    monochrome VGA. 
+    The Palmtop  has  a  serial  port  and  built-in  Kermit,  Xmodem,  etc. 
+    protocols.  An  optional  Connectivity  Pack  enables files to be copied 
+    back and forth between a PC and a Palmtop,  and for them to access  each 
+    others files.  It also contains PC versions of many of the applications. 
+    Of course,  the keyboard (full QWERTY) is tiny, and you can forget about 
+    two-handed touch typing.  I have developed a one-handed  "hunt-and-pick" 
+    which works well, particularly as it has a "sticky" Shift key. 
+    With  the  Palmtop  and CGA in mind,  I have made some format changes in 
+    version 2.4 of JDIC and JREADER (now in beta-test),  mainly to  get  the 
+    maximum  information  into  the  reduced screen size.  Also I added some 
+    features which I understand have also appeared  in  the  latest  (8xxx?)
+    (my note: now 9500) 
+    version of the Wordtank.  Among them are: saving & retrieval of the last 
+    10 search keys, a "jump search" where the key comes from a display line, 
+    and  the  ability  to log entries to a file for later review.  The kanji 
+    selection via bushu also now has an option to specify the stroke count. 
+    So how do they compare?  Well I have not seen the latest Wordtank, which 
+    I hear is quite improved,  so this comparison is largely limited to  the 
+    earlier models.
+    SIZE:  almost the same.  The Palmtop is a bit thicker (about 2.5cm), and 
+    heavier,  and has the typical tough HP case.  It runs on a  pair  of  AA 
+    batteries, & has an external 110/230V adaptor which can charge NiCads in 
+    situ.  The  Palmtop  screen  is  more than twice as large,  and with the 
+    smaller size of displayed characters packs a lot more information. 
+    (my note: the latest models are smaller than the old 8500)
+    PRICE:  not surprisingly the Palmtop is quite a bit  more  expensive.  I 
+    don't know the US price,  but extrapolating the Australian,  I expect it 
+    is about $US850,  plus a couple of hundred more for the Flashdisk.  Bear 
+    in  mind,  though,  that  for  this  you  get  a  LOT more than a just a 
+    Wordtank,  you are getting a PC with a  lot  of  built-in  applications,  
+    including a copy of Lotus123.  JDIC, EDICT, etc. are, of course, free. 
+    DICTIONARY:  EDICT  & KANJIDIC total about 3.5M,  which is somewhat less 
+    than the  Wordtank's  claimed  dictionary.  However  the  7200/8500  had 
+    separate  E->J  and  J->E  dictionaries,  which  was wasteful.  JDIC can 
+    access the full JIS 1 & 2  sets,  whereas  many  are  missing  from  the 
+    Wordtank.  From my observation,  there is not much in the Wordtank which 
+    is not now in EDICT,  and EDICT's English  translations  are  much  more 
+    complete.  Both can access kanji via reading, bush and/or stroke counts.  
+    JDIC  also  accesses  by  JIS  code,  KUTEN,  Nelson  and  Halpern  nos. 
+    KANJIDIC's collection of readings seems  much  more  comprehensive  than 
+    those  in the Wordtank.  Also,  JDIC,  EDICT,  etc.  are being regularly 
+    upgraded, and thus the Palmtop option can improve for no extra outlay. 
+    SPEED:  the Wordtank is much faster.  The typical  word  search  on  the 
+    Palmtop takes an average of 4 seconds (cf 2.2 on my 16Mhz 386). This may 
+    reduce  if  Stacker  were disabled.  Kanji searches take about a second, 
+    but  a  full  screen  takes  about  3  seconds   to   paint.   This   is 
+    understandable,  given the general nature of the Palmtop vs the ASICs in 
+    the Wordtank. 
+    OTHER APPLICATIONS:  The address book,  phone-list and calculator in the 
+    Palmtop  are  infinitely  superior to those on the Wordtank.
+    (my note: the oldest wordtanks had only Calendar/calculator, the new
+    ones only the calculator. Did the 8500 had phone list and address book ?)
+    Really the 
+    applications do not compare,  as the Palmtop is packed with  goodies.  I 
+    find the Appointment system very impressive,  particularly in the way it 
+    can migrate the details back and forth between the Palmtop and a  PC.  I 
+    often carry my Palmtop in my coat packet, and find it very convenient to 
+    use  the  built-in editor (Memo) for jotting down notes,  drafting text, 
+    etc.  I have also loaded the JREADER program on board,  and to prove  it 
+    was  possible,  downloaded  a copy of the Genji Monogatari.  A bit meaty 
+    reading for train journeys,  but feasible.  I also installed a  copy  of 
+    MOKE,  which  is  the  only  wa-puro I know of for vanilla PCs which can 
+    function on a CGA.  MOKE works fine.  It gave me quite a buzz  to  enter 
+    kanji  and  kana  text  on such a tiny system,  but it does it well.  (I 
+    believe there is a localized version of the HP Memo program available in 
+    Japan, but I have no details of it.) 
+    I realize this  is  partly  blowing  my  own  trumpet,  but  I  strongly 
+    recommend  that  people  who  are  thinking  about  buying  a  hand-held 
+    electronic dictionary consider  the  Palmtop  as  an  alternative.  With 
+    JDIC,  etc  installed  it  performs,  I  think,  every  bit as well as a 
+    Wordtank,  and in some aspects a lot better.  Also  it  is  a  far  more 
+    versatile system, with all the potential of a full PC, as well as having 
+    many  good application packages.  I think HP have done an amazing job of 
+    packing so much into such a small container.  After all, can you imagine 
+    a  Wordtank  that is also  Japanese word-processor, runs Lotus and has a
+    full-function HP Business Calculator. 
+    [Since writing the above, I have received copies of some futher Japanese
+    software for the HP100LX. This includes as TSR FEP and a JIS text display
+    program. I have not found time to try them out, as the installation is a
+    little tricky, and anyway the software I have is working well.]
+-------------------------------------------------------------------------------
+3.1.3 Sony DATA-Discman
+    It is a device to read special 3.5" CD-ROMs in a format called EB 
+    (Electronic Book, ou Denshi-Book). These CD-ROMs can be removed from the
+    cartridges and put on an adaptor to be read by CD-ROM drivers for PC
+    compatibles. There are two programs for Windows and one add-on for Mule
+    (Unix) to work as front-ends for these EBs. There are several dictionaries
+    published as EBs, including the Kenkyusha's.
+    (tip by Alberto Tomita Jr.)
+    (Rafael's note: I am not sure if their interface are easy to use for
+    foreigners - need to look at one first ;-)
+===============================================================================
+3.2 Electronic Organizers (Denshi Tetyou)
+    This is a category apart. There are some that have built-in eiwa-waei
+    dictionaries, but they are too small compared with WordTank and similars.
+    Some have expansion cards with dictionaries. 
+===============================================================================
+3.3 Wapuros
+    uh... should I give up on this one ?
+*******************************************************************************
+
+4. General Information on Japanese Language
+===============================================================================
+4.1 Writting Systems
+-------------------------------------------------------------------------------
+4.1.1 General Information
+   Traditionally,  Japanese is  written  from top to bottom and right  to left.
+Pages are bound at the right hand side, making books and magazines appear as if
+they are printed backwards to Westerners. Nowadays the younger generation tends
+to write the Western way (unless for official purposes), that is left to right,
+top to bottom. This way  is also  used in scientific books where text  is  used
+along  with  mathematical formulas which  are necessarily (really?) horizontal.
+Literature is printed the traditional way.
+   Written Japanese employs four character sets: romaji, hiragana, katakana and
+kanji. Spacing between  words with  the  latter three is up  to the  writer. In
+books for  beginning readers spaces between words may  be abundant, but in more
+advanced texts they may be few. The equivalent of a period is  called "maru", a
+small circle.  A comma  is represented by a "ten",  a long dot. Its use  is not
+governed by any strict rules (like in most languages). Quotations are indicated
+by the  top left  and bottom  right parts of a square. Question and exclamation
+marks are used once in a while. The particles ka  and ne fulfill the respective
+functions, so that there is no real need for either mark.
+-------------------------------------------------------------------------------
+4.1.2 Hiragana and Katakana
+   The   kana,  hiragana  and  katakana,  are  strictly  phonetic  syllabaries.
+Hiragana, the more flowing form of the two, is  said  to have been invented  by
+the Buddhist priest  Ku^kai  (774-835),  although this  is controversial.  Each
+hiragana  symbol derives from a  Chinese character  of the  same sound,  but is
+devoid of any  meaning. The invention of hiragana  had a significant impact  on
+Heian  literature (794-1185) as it  enabled  women to  write  (education was  a
+virtually  male-only  privilege). The most famous  contribution,  no doubt,  is
+"Genji monogatari" [The tale of Genji] by MURASAKI Shikibu.
+   Katakana, literally "side script"  and the more  angular of the two kana, is
+said to  have been  invented by KIBI no Makibi (693-755). Each katakana  symbol
+derives from parts  of  a Chinese  symbol in  the  same way as the hiragana do.
+Katakana were initially used as a pronunciation aid in Buddhist scriptures, but
+were mixed with Chinese characters from the ninth century on.
+   Both syllabaries  use  two diacritical marks to modify  the pronunciation of
+several  of the kana. Two  small dots at the upper right hand corner  produce a
+voiced version, that is: k->g, s->z, t->d and h->b. A  small circle at the same
+position  changes h to  p.  Finally, the  kana for  "ya", "yu" and  "yo" can be
+combined  with  the  "-i"  kana  to  form  a  palatalized  sound, for  example:
+pi+ya->pya.
+   Knowing hiragana  and/or katakana one can write anything one wishes to write
+in  Japanese. In  practice  however, hiragana are used  for originally Japanese
+words and katakana is reserved for foreign words. Katakana can also be used for
+emphasis, very  much like  italics  are  being used  for emphasis in the  roman
+alphabet.  This is  relatively common in manga. Moreover, the use  of kana  is,
+depending  on  the level of education, limited to (parts of) words which have a
+grammatical function, such as  particles, conjuctions and inflectional endings.
+The content of what one wants to express is written in kanji. One other  use of
+the hiragana  is as pronunciation aid for uncommon  kanji.  Found  on the right
+hand  side  or  above the  kanji, they  are referred  to as furigana ("handicap
+kana") or yomigana ("reading kana").
+-------------------------------------------------------------------------------
+4.1.3 Kanji
+   The kanji have been borrowed and adapted from the Chinese characters between
+the sixth and tenth century. During and after their introduction they underwent
+many  changes, both  in  Japan and China, so that now both languages have their
+own set of kanji although many  similarities exist. After the Meiji restoration
+(1868) the government has tried  to simplify and standardize the Japanese kanji
+(I"m  not  sure  about this!).  In  1946  the  last big government interference
+resulted in the To^yo^ kanji. This set contains 1850 kanji,  881  of which made
+up the  Kyo^iku kanji. The Jinmei-yo^ kanji contained an additional 85 kanji in
+use for family and geographical names. The Jinmei-yo^ set can be seen  as a set
+of standard non-standard kanji.  The Kyo^iku set was to be  mastered by the end
+of elementary school  and the To^yo^  set  by the end of high school. Nowadays,
+the Jinmei-yo^ set contains 284 kanji, the Gakushu^ set, formerly Kyo^iku, 1006
+and the Jo^yo^, formerly To^yo^, 1945. The Gakushu^ kanji are still a subset of
+the  Jo^yo^ kanji and  taught in elementary school. The Jo^yo^ kanji are taught
+in high school.
+   It is  not necessary to know all Jo^yo^  and Jinmei-yo^  kanji to be able to
+read most  Japanese.  Several studies indicate that  knowing  about  1000,  for
+example the Gakushu^, enables one to read some 90%. Knowing  the  Jo^yo^ allows
+you to read about 99%  of written Japanese. However, not  knowing a kanji  does
+not necessarily mean that one can  not guess  its  meaning.  Many of  the  more
+complicated kanji are combinations of simpler kanji (see below).
+   The kanji  are ideographs representing objects and/or ideas. For each  kanji
+three things  must be learned:  its root meaning, its writing (stroke order and
+stroke   endings)  and,  the  most  difficult,   its  reading  (pronunciation).
+Generally, every kanji has two types of reading. On-yomi or Chinese  reading is
+based on the Japanese imitation of  the ancient Chinese  pronunciation  of  the
+character. Kun-yomi or Japanese reading  represents the original  Japanese word
+corresponding to the ancient  Chinese meaning of  the  kanji. Put  differently,
+on-yomi  is a mapping of Japanese sounds on the spoken form  of written Chinese
+whereas kun-yomi is a mapping of spoken Japanese on written Chinese.
+   There are no strict rules  to decide whether a kanji is read on-yomi or kun-
+yomi, but as a rule of  thumb: a kanji occuring in  a compound with other kanji
+is  read on-yomi, a kanji all by itself is read kun-yomi. Note that a kanji may
+have  more than one on-yomi and/or  more than one kun-yomi.  Fortunately, there
+are some kanji that have either only one on-yomi or only one kun-yomi.
+   An example should make all this a bit clearer.  Take the  kanji for moon. By
+itself,  just  plain moon,  it is read  "tsuki" (kun-yomi).  This  is the  only
+kun-yomi it has. Well, let's be fair, it can also  be read "zuki", for  example
+in "mikazuki", "three day moon" (->new moon), but  this is merely  a change for
+ease of pronunciation (?). By the way, "mikazuki"  is a severe exception of the
+rule of thumb:  all  three  kanji are read  kun-yomi fashion.  In "first  moon"
+(->first month-> January)  it combines  with the kanji for  one, "ichi", and is
+read "gatsu".  Thus, "ichigatsu"  means  January. In "moon  day"  (->Monday) it
+combines with the  kanji  for  day,  "yo^  bi",  and  is  read "getsu".   Thus,
+"getsuyo^bi" is Monday. So, "moon" has two (accidently similar) on-yomi.
+   In many cases the more complicated kanji, in terms of stroke count, are made
+up of simpler kanji. Their meaning  can usually be inferred from the meaning of
+the simpler kanji. The simple kanji used  in  those  more complicated  ones are
+referred to  as graphemes or radicals.  Due to  size restrictions,  every kanji
+takes  up  the same  amount  of space, these graphemes  or radicals  can become
+somewhat distorted with respect to the  original. In two-grapheme kanji such as
+"bright",  where "sun" and "moon" are placed alongside (and squeezed), the left
+hand side is called "hen" and the right hand side "tsukuri".
+   Shodo^  or calligraphy is practiced by  many Japanese.  Basically, there are
+three  styles to  write  the  kanji: kaisho  (print  or  block  style), gyo^sho
+(cursive style) and so^sho  ("grasshand" style). Kaisho resembles the  style of
+kanji  in  mechanically   produced  texts.  Although   primarily  referring  to
+calligraphy, kaisho is also used to indicate the style  of these  texts. Formal
+correspondence  is  usually written  in kaisho,  whereas  gyo^sho  is  used  in
+personal  correspondence.  Artistic writings on screens  and  monuments  and in
+paintings often  use so^sho.  Easily recognized  by its reminiscence to flowing
+reeds, it is the hardest to read of the three.
+-------------------------------------------------------------------------------
+4.1.4 Romanization (Romaji)
+   Romaji is basically a  method of writing the Japanese language in the  roman
+alphabet (the very same as the one you"re reading now). Originally developed by
+Jesuit missionaries in the sixteenth century, there now are  various methods of
+romanization. The most common one is the (modified) Hepburn system (hebon-shiki
+or hyo^jun-shiki).  It was established by James C. Hepburn (1815-1911) who also
+founded  Meiji Gakuin University.  Its popularity stems from the better  compa-
+tibility  with the  Japanese sounds than kunrei-shiki  (the official,  but vir-
+tually obsolete, system) and Nihon-shiki.  Nihon-shiki  is  governed  by simple
+rules and is taught in elementary schools.
+   The use of romaji, or roman  alphabet, in everyday Japanese is very limited.
+Abbreviations, advertisements and street signs are among  the few instances you
+will see them. One area in which romaji are in wide-spread use is in text books
+for studying  Japanese for foreigners.  Most intermediate and advanced students
+of the  language will agree  that the use  of romaji will  prove an obstacle in
+learning how to read "real" Japanese.
+-------------------------------------------------------------------------------
+End of 4.1 Section, a contribution by Olaf Meeuwissen [olaf@usc.edu]. 
+Sources:  Modern Japanese  by Mieko Shimizu  HAN,  Dictionary  of  Japanese
+Culture by Setsuko  KOJIMA  and Gene A. Crane, Kanji Education by Jason Molenda
+and private communication with Ken Lunde (author of JAPAN.INF).
+===============================================================================
+4.2 Pronunciation
+     The following is a description of the sound system of Japanese. The
+     first three sections are a brief linguistic summary. Section 4.2.4
+     focuses on practical pronunciation problems faced by foreigners, 
+     especially speakers of English. Check also the Quick Pronunciation
+     Guide, section
+-------------------------------------------------------------------------------
+4.2.1  The Sounds of Japanese
+     The following are the meaningful sound elements (phonemes) of 
+     Japanese.
+          Vowels
+            /a/  /i/  /u/  /e/  /o/
+          Consonants
+            Stops:  /p/  /b/  /t/  /d/  /k/  /g/  /?/ (= glottal stop)
+            Stops with fricative release:  /ch/  /j/
+            Fricatives:  /h/  /z/  /s/  /sh/
+            Liquids:  /r/  /w/
+            Nasals:  /m/  /n/  /n'/            (/n'/ = syllabic nasal)
+          Semivowel
+            /y/
+          Note to linguists: The above phonemes should be enough to 
+          account for all native Japanese and assimilated Sino-Japanese 
+          words. However, some recent borrowings from other languages may 
+          require additional phonemes (the Japanese words for 'tsar', 
+          'violin', etc.).
+-------------------------------------------------------------------------------
+4.2.2  Phonemic Rules
+     The phonemes listed in 4.2.1 may change when they are actually 
+     pronounced. The following are some of the most important phonemic 
+     rules.
+-------------------------------------------------------------------------------
+4.2.2.1  Vowels
+     /i/ and /u/ usually become voiceless in the following two contexts:
+         (1) after /t/ /s/ /sh/ /ch/ /h/ at the end of a word
+         (2) between /t/ /s/ /sh/ /ch/ /h/ and /p/ /t/ /k/
+-------------------------------------------------------------------------------
+4.2.2.2  Consonants
+     /t/ becomes /ch/ before /i/
+     /t/ is pronounced [ts] before /u/
+
+     /d/ becomes /j/ before /i/
+     /d/ becomes /z/ before /u/
+
+     /g/ is often pronounced [ng] between vowels (as in English "singer")
+     /h/ is pronounced as a bilabial fricative before /u/  (see 4.2.4.4)
+
+     /z/ becomes /j/ before /i/
+     /s/ becomes /sh/ before /i/
+
+     /n'/ becomes /m/ before /p/ /b/ /m/
+     /n'/ is pronounced [ng] before /k/ /g/
+-------------------------------------------------------------------------------
+4.2.3  Accent
+     The accent system of Japanese is based on pitch, not stress. Each 
+     syllable is pronounced with about the same force, but accented 
+     syllables are pronounced at a higher pitch. See also 4.4.4.6 below.
+
+     Some generalizations: All high-pitch syllables in a word are 
+     contiguous. If the first syllable is high, then all the remaining 
+     syllables are low. If the first syllable is low, then the second 
+     syllable is high. One-syllable words may have either a low rising 
+     pitch or a high falling pitch.
+
+     The following examples, given in standard romanization, are taken 
+     from the introduction to the dictionary Daijirin (Sanseido, 1988). 
+     These are all of the single-word accent patterns up to six syllables. 
+     Capital letters indicate the high pitch. The mark  ^  at the end of a 
+     word indicates that the high pitch may carry over into the following 
+     word (especially if the following word is a particle such as  wa  or 
+     ga ).
+
+     1 syllable:   na^  [next syllable high]    KI  [next syllable low]
+     2 syllables:  miZU^   Aki   haNA
+     3 syllables:  kaISHA^   DEnki   oKAshi   oTOKO
+     4 syllables:  daIGAKU^   BUngaku   yuKIguni   saIJIki  oTOOTO
+     5 syllables:  chuUGOKUGO^   SHAabetto   fuKYUuritsu   yaMANObori
+                   koGATABAsu   moMONOHANA
+     6 syllables:  keNBUTSUNIN^   KEnmohororo   oMAwarisan   kiNKOnshiki
+                   koKUGOJIten   taNSANGAsu   juUICHIGATSU
+-------------------------------------------------------------------------------
+4.2.4  Problems for Learners of Japanese (English speakers)
+-------------------------------------------------------------------------------
+4.2.4.1  Short and Long Sounds
+     All of the vowels and most of the consonants of Japanese may be 
+     pronounced either short or long. In normal speech, long sounds are 
+     held for about twice the length of time as short sounds. The 
+     difference between long and short sounds is very significant, and 
+     Japanese have no trouble at all remembering which words have short 
+     sounds and which words have long sounds. Here are some minimal pairs, 
+     i.e., words distinguished only by the length of the sound:
+
+        shujin  "husband"            shuujin  "prisoner"
+        koto    "thing"              kooto    "coat"
+        kata    "shoulder"           katta    "won"
+        kosetsu "old explanation"    kossetsu "bone breakage"
+-------------------------------------------------------------------------------
+4.2.4.2  Consonant + /y/ Clusters
+     When the semivowel /y/ follows a consonant, learners of Japanese 
+     often insert a vowel between the consonant and /y/. However, no vowel 
+     belongs there and the presence of a vowel can lead to misunderstand-
+     ings. It may take some practice to learn how to say these clusters 
+     smoothly.
+
+        Correct     Incorrect
+        [ryokan]    [riyokan]   "Japanese inn"
+        [byooin]    [biyooin]   "hospital"  (cf. biyooin "beauty parlor")
+-------------------------------------------------------------------------------
+4.2.4.3  /r/
+     In many dialects of English, /r/ is pronounced before vowels with the 
+     lips slightly rounded and the tongue not touching the roof of the 
+     mouth, while /l/ is pronounced before vowels with no lip rounding and 
+     with the tip of the tongue touching lightly against the roof of the 
+     mouth. The Japanese /r/ sound varies more or less freely between 
+     these two sounds, i.e., sometimes the tongue touches the roof of the 
+     mouth and sometimes it doesn't. (That's why new students of Japanese 
+     may hear the sound sometimes as /r/ and sometimes as /l/.) However, 
+     unlike English /r/, there is no lip rounding with Japanese /r/. The 
+     lips should stay relaxed. (When Japanese comedians imitate foreigners 
+     speaking Japanese, they generally include a lot of heavily rounded 
+     /r/ sounds and /r/-colored vowels, because those are the features 
+     that sound most distinctively non-Japanese to them.)
+-------------------------------------------------------------------------------
+4.2.4.4  /hu/ = /fu/
+     When the phoneme /h/ comes before /u/, it is pronounced as a bilabial 
+     fricative. What this means is that the lips are brought close enough 
+     together to create a light hissing sound. Unlike English /f/, 
+     however, the lower lip does not touch the upper teeth.
+-------------------------------------------------------------------------------
+4.2.4.5  Vowels
+     Most English vowels are diphthongs, i.e., the tongue and/or lips move 
+     as the vowel is being pronounced. In American English, for example, 
+     the vowel sound in the word 'cake' starts as the mid front vowel /e/ 
+     and glides to near the high front vowel /i/. The vowels in the 
+     word 'two' and 'boat' have more lip rounding at the end than the 
+     beginning. In Japanese, however, vowel quality remains nearly 
+     constant from the beginning to the end of a vowel. Heavily 
+     diphthongized vowels are a clear indicator of a foreign accent in 
+     Japanese.
+
+     As described in 4.2.2.1, Japanese vowels often become voiceless in 
+     certain contexts. This means that, to a foreign ear, the vowel seems 
+     to be missing:
+     
+        doko desu ka   sounds like   doko des ka
+        arimasu        sounds like   arimas
+        chikaku        sounds like   chkaku
+        shita          sounds like   shta
+
+     This does not happen all the time, though. If a speaker is 
+     emphasizing a particular word or speaking slowly, then these vowels 
+     might remain voiced. Sentence-final vowels seem to be voiced more 
+     often in women's speech than in men's.
+-------------------------------------------------------------------------------
+4.2.4.6  Accent
+     As described in 4.2.3, Japanese accent is based on pitches, not 
+     stress. An English speaker learning Japanese is apt to put too much 
+     emphasis on certain syllables. To Japanese ears, this sounds bouncy 
+     and sing-songy.
+     Many native Japanese teachers do not emphasize accent when they teach 
+     Japanese pronunciation, probably because there is a lot of regional 
+     variation. In particular, many words have opposite accent patterns in 
+     Kanto and Kansai. For the foreign student, however, it is better to 
+     try to acquire some kind of native accent (even if it isn't standard 
+     NHK style) rather than to retain a strong foreign accent.
+-------------------------------------------------------------------------------
+4.2.5 Quick Pronunciation Guide
+     Japanese   English          Other          Other
+       Sound    equivalence      Language ?     Language ?
+     ......................................................
+         a     'a' of father
+         i     'ea' of eat
+         u     'oo' of boot
+         e     'a' of cake
+         o     'oa' of coat
+         k     as in kit
+         g     as in good
+         s     as in sun
+         sh    as in sheep
+         z     as in zoo
+         j     as in jeep
+         t     as in time
+         ch    as in cheap
+         ts    as in boots
+         d     as in doe
+         n     as in no
+         h     as in hot
+         f     as in food
+         m     as in march
+         y     as in yard
+         r     between 'l' of loom 
+               and 'r' of room
+         w     as in wash
+    
+-------------------------------------------------------------------------------
+4.2. End of "Pronunciation" by Tom Gally
+
+*******************************************************************************
+5. Books, Magazines and others
+===============================================================================
+5.1 General
+-------------------------------------------------------------------------------
+5.1.1 The Nihongo Journal 
+      General information: The Nihongo Journal, monthly magazine in English
+        and Japanese, also available in Korean/Japanese and Chinese/Japanese.
+        Price in Japan: 600 yens, tax included. Features a cassete tape, 
+        sold separately, for 2060 yens, tax included. Published on the 
+        first of every month. 120+ pages, some in color.
+      Main features: Japanese lessons divided in beginning, upper-beginning 
+        and intermediate levels, including grammar and usage notes, and kanji
+        reviews. For almost all kanjis, furigana is displayed. Also presents
+        some topics on Japanese culture, news and lifestyle (in intermediate 
+        Japanese). Feature some series like "Writing is Fun" and "Going up 
+        against the Japanese Language Proficiency Test". The cassete tape 
+        have some articles recorded, to practice listening. In overall, an 
+        excellent magazine for beginner and intermediate learning.   
+      Addresses of publisher/distributors overseas: (as for April 1993)  
+        Publisher in Japan: ALC PRESS Inc. Main office: 2-54-12, Eifuku, 
+          Suginami-ku, Tokyo 168, Tel: (03)3323-1001 (Sales)
+        Hong Kong: Apollo Book Co.Ltd., Japanese Book Centre, TST 
+          P.O. Box 95710, Kowloon. Tel. 3-678482
+        Hong Kong: Asahiya Book Stores Hong Kong Ltd. c/o Department Store
+          Co. Ltd. Kingstone Street, Causeway Bay Tel. 5-762279
+        Hong Kong: Nippon International Publication Service (HK) Co. Ltd. 
+          2nd floor, shop no. 31-33 Admiralty Centre, Tower One, 
+          18 Harcourt Road, Tel. 5-294777
+        Singapore: Kinokuniya Book Stores of Singapore Pte. Ltd. 
+          0617 Liang Court Store, 117 River Valley Road, #03-07/19 
+          Tel. 3371300
+        Singapore: Orchard Store, 0923 New Isetan Orchard, 435 Orchard Road,
+          #04-01 Tel. 7346695
+        Singapore: 0617 Raffles Store, Sogo Department Stores, 250 North
+          Bridge Road, #01-13/17, Raffles City Shopping Centre, Tel. 3308173
+        Malaysia : O.I.S. Book Shop, Yaohan The Mall Shop, c/o Yaohan (M) 
+          SDN. BHD. Bangunan The Mall, 2nd Floor, Lot 33, Section 51, JLN 
+          TUN Ismail, 50480, Kuala Lumpur
+        Malaysia : Yaohan Penang Shop, c/o Yaohan (M) SDN. BHD. Komplek 
+          Tun Abdul Razak (Komtar), Penang Road, 10000 Pulau Penang
+        Taiwan   : Kinokuniya Bookstores of Taiwan, Co.Ltd, 7th Floor, 
+          Pacific Sogo Dept. Stores, no. 45, sec 4, Chung Hsiao East Road, 
+          Taipei, Tel. 02-7212304
+        Taiwan   : Hong Ju tang Book Co. Ltd. 19 Sec 1, Kai-Fung St. Taipei,
+          Tel. 02-311-3810
+        USA      : Bun Bun Do Books Store, 745 Keeaumoku Street, Honolulu, 
+          HI 96814, Tel. 808-946-9790
+        USA      : Books Nippan, 532 West Sixth Street, Los Angeles, CA 900
+          Tel. 213-687-7400
+        USA      : Kinokuniya Books Stores of America, Co. Ltd., San
+          Francisco Store, 1581 Webster Street, San Francisco, CA 94115.
+          Tel. 415-567-7625
+        USA      : Kinokuniya Books Stores of America, Co. Ltd., New Otani 
+          Store, 110 South Los Angeles Street, suite 12, Los Angeles, 
+          CA 90012. Tel. 213-687-4447 
+        USA      : Kinokuniya Books Stores of America, Co. Ltd., Los Angeles
+          Store, 123 South Weller street, suite 106, Los Angeles, Ca 90012 
+          Tel. 213-687-4480
+        USA      : Kinokuniya Books Stores of America, Co. Ltd., Torrance
+          Store, 2141 West 182nd street, Torrance CA 90504 Tel. 213-327-6577 
+        USA      : Tokyo Shoten, Zen Oriental Publications Inc, 521 5th Ave. 
+          New York, N.Y. 10175, Tel. 212-697-0480  
+        USA      : New York Kinokuniya Book Store, 10 West 49th st. New York,
+          N.Y. 10020, Tel. 212-765-1461 
+        USA      : Anzen Importers, 736 N.E. Union Ave. Portland, OR 97232
+        Canada   : Sophia Book Store, 725 Nelson Street, Vancouver, B.C. 
+          V6B 2E5 Tel. 604-684-4032
+        Brazil   : Sol S.A. Importacao, Exportacao, Industria e Comercio. 
+          Caixa Postal 8846, 01000 - Sao Paulo, SP.
+        Brazil   : Livraria Takano Ltda. Rua Dr. Tomas de Lima, 545 Loja 1 
+          Liberdade CEP 01513, Sao Paulo, SP. Tel. 011-279-3313
+        Australia: Intext Book Company Pty. Ltd. 412 Heidelberg Road,
+          Fairfield, VIC. 3078 Tel. 03-486-1755        
+        Australia: OCS (Australia) Pty. Limited, Head Office: Sidney Unit.
+          4,4 Doody Street, Alexandria, N.S.W. 2015 Tel. 693-5122
+        England  : Japan Centre Bookshop, 212 Piccadilly, London W1V 9LD, 
+          Tel: 071-439 8035 (from UK) +44 71 439 8035 (from outside UK)
+          Fax: 071-287 1082 (from UK) +44 71 287 1082 (from outside UK)
+        England  : ENGLAND: Books Nippon (Nippon Shuppan Hanbai) Ltd. 64-66
+          St. Paulis Churchyard, London EC4M 8AA, Tel: 071-248 4956 (from UK)
+          +44 71 248 4956 (from outside UK) Fax: 071-489 1171 (from UK) 
+          +44 71 489 1171 (from outside UK)
+        France   : Europe Press (Librairie Tokyo-Do) Bank of Tokyo Bldg, 
+          4-8 Rue Sainte-Anne, 75001 Paris, Tel.42610871
+        Germany  : Nippon Shuppan Hanbai, Deutschland GMBH Immermannstr, 45 
+          4000 Dusseldorf, Tel. 49-211-365617
+        Germany  : T. Takagi GMBH Immermannstr, 31 4000 Dusseldorf 
+          Tel. 0211-36046314
+        Belgium  : Euro Nippon, Ch. de Vleurgat 119, 1050 Bruxelles
+        Sweden   : San-Ai Tegnergatan 15, 11140 Stockholm . Tel.8-202854
+        Other places:  Nippon IPS Co. Ltd, 11-6, 3 chome, Iidabashi, 
+          Chiyoda-ku, Tokyo, 102, Tel. (03)3238-0700, Fax (03)3238-0707.
+-------------------------------------------------------------------------------
+5.1.2 An Introduction to Modern Japanese by Osamu and Nobuko Mizutani
+      General Information: Publisher: Japan Times. 1977. ISBN 4-7890-0058-3
+        Price: 3510 Yen
+      Main Features: both kanji/romaji, furigana where necessary. 
+        tapes available
+-------------------------------------------------------------------------------
+5.1.3 Japanese: The Spoken Language (Parts 1-3) by Eleanor Harz Jorden and
+         Mari Noda
+      General Information: Publisher: Yale University Press. 1987. ISBN 
+         0-300-03834-8 Price: 16.85 pounds
+      Main Features: all romaji but explanations good
+-------------------------------------------------------------------------------
+5.1.4 Japanese for Busy People I by the Association for Japanese-Language
+        Teaching
+      General Information: Publisher: Kodansha International. 1984.
+        ISBN 0-87011-599-5 Price: 15.95 pounds, 3100 Yen, $19.95
+      Main Features: both kanji (?) and romaji, furigana where neccessary. 
+        Two tapes available. 
+-------------------------------------------------------------------------------
+5.1.5 Japanese for Busy People II by the Association for Japanese-Language
+        Teaching
+      General Information: Publisher: Kodansha International. 1990.
+        ISBN 0-87011-919-2 Price: 16.95 pounds, 3500 Yen, $22.95
+      Main Features: big step from part one, 6 tapes available
+-------------------------------------------------------------------------------
+5.1.6 Japanese for Today
+      General Information: (no or unknown author), Publisher: Gakken, year
+        1973 (26th print 1985), ISBN 4-05-050154-6, Y 3500 (in Japan)
+      Main Features: 30 lessons in the modern language, with every lesson
+        divided in: kanji+kana reading section, grammar, vocabulary, 
+        conversation. Cassette tapes for the book can be bought separately
+        (details and price unknown).
+      Review by Nico A.F.M. Poppelier (N.POPPELIER@ELSEVIER.nl) (edited)
+-------------------------------------------------------------------------------
+5.1.7 The languages of Japan by M. Shibatani
+      General Information: Publisher: Cambridge Language Surveys 1991
+        (paperback), 411 pages including index, ISBN 0-521-36918-5
+      Main Features: A very detailed scholarly study of Japan's two 
+        indigenous languages, Ainu and Japanese. Interesting reading. Gives 
+        some information on recent viewpoints regarding origin of Japanese 
+        language.
+      Review by Nico A.F.M. Poppelier (N.POPPELIER@ELSEVIER.nl) (edited)
+===============================================================================
+5.2 Focus on Kanji, Reading and Writing
+-------------------------------------------------------------------------------
+5.2.1 A Japanese Reader - Graded Lessons for Mastering the Written Language
+      General Information: A Japanese Reader, by Roy Andrew Miller, published 
+        by Tuttle Language Library. ISBN 0-8048-1647-6, 250+ pages, English
+        and Japanese, first edition 1962, third printing 1991. I forgot the
+        price. 
+      Main Features: Present 75 graded lessons for reading japanese. Each 
+        lesson haves a text in Japanese and explanations and translations 
+        (reading notes) for some words in English. It is presumed that the
+        reader have some background in Japanese. The first 12 lessons cover
+        hiragana and katakana, lessons 13-17 some basic kanjis, lessons 18-30
+        elementary reading, 31-47 intermediate, 48-59 advanced fiction and
+        60-75 advanced non-fiction, making it useful for readers from the
+        novice until the upper-intermediate level. It makes a lot of references
+        to Samuel Martin's "Essential Japanese" and Florence Sakade et al. 
+        "A Guide to Reading and Writing Japanese". It presents the words and 
+        kanjis in a context in almost all of the lessons.
+-------------------------------------------------------------------------------
+5.2.2 Basic Technical Japanese by Edward E. Daub, R. Byron BIrd, and Nobuo
+        Inoue
+      General Information: Publisher: University of Wisconsin Press. 1990.
+        ISBN 0-299-12730-3 Price: 31.95 pounds, $35
+      Main Features: Full course in reading technical Japanese articles.
+        Covers kana, kanji, and grammar. Designed for those who know no
+        Japanese.
+-------------------------------------------------------------------------------
+5.2.3 Remembering the Kanji: A complete course on how not to forget the  
+	 meaning and writing of Japanese characters by James W. Heisig 
+      General Information: Publisher: Japan Publications Trading Co. 1986
+         (3rd) ISBN 0-87040-739-2 Price: 4000 Yen, $29.95
+      Main Features: controversial method. Its' introduction makes the claim
+        that about 2000 kanji can be 'learnt' in about four weeks. There has
+         been considerable conflict in sci.lang.japan and soc.culture.japan
+         as to whether learning one English keyword for each kanji and how
+         to write it constitutes "learning" a kanji or not. Some people 
+         say that you cannot claim to have 'learnt' these kanji without 
+         learning significant Japanese vocabulary associated with them,
+         something no-one claims can be done in four weeks. Others say that
+         Heisig's course (he does not claim to have invented the method) 
+         teaches the 'kanji', separate from vocabulary and pronounciation 
+         with which are associated, but semantically separate parts the 
+         Japanese language. These of course must be learnt if you are to learn
+         "The Japanese Language", rather than just a very small part of it.
+      Review by Ross-c (ross-c@scs.leeds.ac.uk) (edited)
+-------------------------------------------------------------------------------
+5.2.4 Remembering the Kanji: A systematic guide to reading Japanese 
+        characters by James W. Heisig 
+      General Information: Publisher: Japan Publications Trading Co. 1987 
+        ISBN 0-87040-748-1
+-------------------------------------------------------------------------------
+5.2.5 A guide to remembering Japanese characters by Kenneth G. Henshall
+      General Information: Publisher: Tuttle Language Library 1988 
+        (6th printing 1992), 675 pages, including stroke-count and on-kun 
+        index, ISBN 0-8048-1532-1
+      Main Features: Covers all Joyo kanji. Gives explanation of development 
+        of character, plus mnemonics for studying. Every kanji is given in
+        handwritten form first (no clues for stroke order however), and in 
+        printed form in the 3-4 combinations that are given for each kanji.
+      Review by Nico A.F.M. Poppelier (N.POPPELIER@ELSEVIER.nl) (edited)
+-------------------------------------------------------------------------------
+5.2.6 Aspects of the Japanese writing system, edited by Chris Seeley
+      General Information: Journal: Visible Language XVIII 3, Summer 1984 
+        (special issue), 303 pages ISSN 0022-2224
+      Main Features: A historical overview of Japanese orthography. Very 
+        worthwhile reading for those students of the Japanese language who 
+        are interested in the history of the writing system.
+      Review by Nico A.F.M. Poppelier (N.POPPELIER@ELSEVIER.nl) (edited)
+-------------------------------------------------------------------------------
+5.2.7 Comprehending Technical Japanese by Edward E. Daub, R. Byron Bird, 
+        and Nobuo Inoue
+      General Information: Publisher: University of Wisconsin Press. 1990.
+        ISBN 0-299-06680-0 Price: $35
+      Main Features: Like "Basic Technical Japanese" (5.2.2) but intended
+        to those that have taken 1-2 years of Japanese.
+      Review by Ken Lunde (lunde@mv.us.adobe.com)
+===============================================================================
+5.3 Focus on Grammar 
+-------------------------------------------------------------------------------
+5.3.1 Particles Plus - A Complete Guide to the Usage of Particles in Modern 
+        Japanese, by Atsuko Kawashima  
+      General Information: Published by Harcourt Brace Jovanovich Japan
+        Publishers Tokyo, 1992. ISBN: 4-8337-5105-4, 3800 yens (tax 
+        included), 350pp, English and Japanese. 
+      Main Features: It presents a detailed study of the use of modern
+        particles (tenioha) in Modern Japanese, with some examples of the
+        use of each one, and translations/approximations on English. 
+        Examples in Japanese came with Furigana but are simple phrases,
+        easy to read. Indicated for upper-beginner or intermediate study,
+        since the topics are presented as in a dictionary. 
+5.3.1 End of review of Particles Plus by santos@mickey.ai.kyutech.ac.jp
+-------------------------------------------------------------------------------
+5.3.2 All About Particles (Power Japanese series) by Naoko Chino
+      General Information: Publisher: Kodansha International. 1991. ISBN
+        0-87011-954-0 Price: $6.95/1000 yen/4.95 pounds
+      Main Features: Explanation of particles with examples in kanji/kana
+         and romaji. It provides examples and tells what other particles
+         would be similar or related to the one you are looking up.
+-------------------------------------------------------------------------------
+5.3.3 A Handbook of Japanese Usage by Francis G. Drohan
+      General Information: Publisher: Charles E. Tuttle. 1992. ISBN 
+        0-8048-1610-7 Price: 12.95 pounds
+      Main Features: Function words (prefixes, suffixes, particles and 
+        conjunctions)
+-------------------------------------------------------------------------------
+5.3.4 Handbook of Modern Japanese Grammar by Yoko M. McClain
+      General Information: Publisher: Hokuseido Press. 1981. ISBN
+        4-590-00570-0 Price: 12.10 pounds/2300 Yen
+      Main Features: Good coverage of phrasal verbs, conjunctions,adverbs etc.
+-------------------------------------------------------------------------------
+5.3.5 Essential Japanese Grammar by Everett F. Bleiler
+      General Information: Publisher: Dover/Constable. 1963. 0-486-21027-8
+        Price: $2.95/2.35 pounds
+      Main Features: Good for beginners
+-------------------------------------------------------------------------------
+5.3.6 A Dictionary of Basic Japanese Grammar by Seiichi Makino and Michio 
+        Tsutsui
+      General Information: Publisher: Japan Times. 1986/89. ISBN 4-7890-0454-6
+        Price: 2890 yen
+      Main Features: Particles and verb constructions, good explanations 
+        with lots of examples in kana-kanji and romaji. This book lists a 
+        great number of forms and particles and has a wonderful appendix.  
+        It's in dictionary format so it's easy to look things up and it
+        not only provides detailed explanations with examples but tells 
+        what other forms are similar and when is best to use each kind.
+-------------------------------------------------------------------------------
+5.3.7 A reference grammar of Japanese by Samuel E. Martin
+      General Information: Publisher: Charles E. Tuttle Company, 1988 
+        (originally Yale University, 1975) 1198 pages including index, $62.95.
+        ISBN 0-8048-1550-X
+      Main Features: The absolute number-one grammar book for Japanese. A 
+        comprehensive, monumental reference work that so far has answered 
+        every single one of my queries on the Japanese grammar. Contains
+        many examples from everyday speech, including the language's many 
+        dialects. Special sections on literary language, epistolary 
+        language, and other stylized or formal grammatical forms.
+      Review by Nico A.F.M. Poppelier (N.POPPELIER@ELSEVIER.nl) (edited)
+-------------------------------------------------------------------------------
+5.3.8 Handbook of Japanese grammar by Harold G. Henderson
+      General Information: Publisher: George Allen&Unwin 1945 (but check out
+        Hughton Mifflin Company, who published a revised edition at some 
+        point).
+      Main Features: Consists of two parts. Part I is an introduction to the 
+        grammar of the classical language (not very good). Part II is a 
+        dictionary of particles, suffixes and other connectives, and this 
+        part is the best part of the book: very handy to have around when 
+        you're reading books, stories and diaries from the Heian period and 
+        later.
+      Review by Nico A.F.M. Poppelier (N.POPPELIER@ELSEVIER.nl) (edited)
+-------------------------------------------------------------------------------
+5.3.9 An historical grammar of Japanese by Sir George Sansom
+      General Information: Publisher: Oxford at the Clarendon Press 1928
+        (reprinted in 1946, 1960 and 1968).
+      Main Features: Old, but still the best book in English that I know,
+        which deals with the grammar of classical Japanese. [Note: if someone
+        has a better reference, I'm interested!]
+      Review by Nico A.F.M. Poppelier (N.POPPELIER@ELSEVIER.nl) (edited)
+===============================================================================
+5.4 Focus on Conversation
+-------------------------------------------------------------------------------
+5.4.1 Colloquial Japanese by H.D.B Clarke and Motoko Hamamura
+      General Information: Publisher: Routledge & Kegan Paul. 1981. 
+        ISBN 0-7100-05995-4 Price: 7.95 pounds
+      Main Features: all romaji
+-------------------------------------------------------------------------------
+5.4.2 Japanese for all Occasions by Anne Kaneko
+      General Information: Publisher: Charles Tuttle. 1991. ISBN 0-8048-1567-4
+        Price: 10.25 pounds
+      Main Features: Language/culture. Sections on Telephones, shopping, 
+        gift giving, and weddings.
+-------------------------------------------------------------------------------
+5.4.3 Rii to Kuraku no Bouken (The Adventures of Lee and Clark) by
+      Akira Yamakami and Yoko Tsuruta
+      General Information: Publisher: Edition Eastview SARL
+        33-14-110 Honmachi 1-choume Shibuya-ku Tokyo 151 Ph: 03-3320-1597
+      Main Features: Level: Intermediate Conversational (suggested after
+        "An Introduction to Modern Japanese", 5.1.2). The tapes focus on
+        conversational Japanese.  They include sample conversations in the
+        form of an ongoing mystery story involving Lee and Clark, as well 
+        as drills for the new grammatical constructions and patterns. The
+        accompanying book has complete transcriptions of all the material 
+        on the tapes, as well as excellent explanations of the grammar and 
+        usage styles of the conversations.  The book is entirely in Japanese
+        (NO ROMAJI) except for English translations of some vocabulary words.
+        All explanations are in Japanese.  The recorded material is 
+        interesting, funny, and original, a real pleasure to listen to and 
+        work with. Very highly recommended. (review by Ken DeLong)    
+===============================================================================
+5.5 Dictionaries
+-------------------------------------------------------------------------------
+5.5.1 Wa-Ei, Ei-Wa Dictionaries
+-------------------------------------------------------------------------------
+5.5.1.1 Kenkyusha's Furigana English-Japanese Dictionary
+      General Information: Published by Kenkyusha in 1990, a version of a 
+        dictionary originally designed for Japanese users. 49000 headwords
+        in 980+ pages, no illustrations, 2000 yens, tax included. 
+        ISBN 4-7674-1172-6.
+      Main Features: For each entry in English, present one or more entries 
+        in Japanese. Each kanji have it individual furigana group, making it
+        easy to get the individual reading for a kanji in a word with lots 
+        of them. Cover some slang, famous people names and technical words.
+        Some people dislike the lack of a context of the word in the examples,
+        so it is difficult to discover which is the correct translations when 
+        the word in english have more than one translation in japanese.  
+-------------------------------------------------------------------------------
+5.5.1.2 Japanese-English Dictionary of Japanese Culture by KOJIMA Setsuko 
+      and Gene A. Crane
+      General Information: ISBN 0-89346-336-1, published by Heian 
+        International, Inc., First American edition 1991, 414 pages, 
+        hard cover, US$ 15
+      Main Features: With approximately 1350 entries, from fields such as 
+        art, history, religion, martial arts, annual events, manners and 
+        customs, food, clothing, housing, geography, literature, education
+        and social affairs, this dictionary offers a handy reference to 
+        terminology usual dictionaries hardly cover. Entries are given in
+        romaji (Hepburn), followed by kanji, an explanation and, in most 
+        cases, cross references. Most entries are accompanied by kanji
+        renditions of important terms used in the explanation.
+      Review by Olaf Meeuwissen
+-------------------------------------------------------------------------------
+5.5.1.3  The Japan Foundation Basic Japanese-English Dictionary.
+      General Information: Publisher: Bonjinsha. 1986. ISBN 4-89358-004-3.
+         Price: Yen 2500 (also Oxford University Press?)
+      Main Features: Excellent, extensive examples, romaji/kana/kanji, 
+         wa-ei only
+-------------------------------------------------------------------------------
+5.5.1.4  The Practical English-Japanese Dictionary by Noah S. Brannen
+      General Information: Publisher: Weatherhill. 1991. ISBN 0-8348-0187-6
+        Price: $19.95/12.95 pounds
+      Main Features: Pocket size. Good (passes the "wife" test). 
+        Kanji-Kana and Romaji
+-------------------------------------------------------------------------------
+5.5.1.5 Yohan English-Japanese, Japanese-English Dictionary.
+      General Information: Publisher: Yohan Publications Inc. 1983. 
+        ISBN 4-89684-700-3 (also Websters)
+      Main Features: Small, romaji/kanji, wa-ei/ei-wa
+-------------------------------------------------------------------------------
+5.5.1.6 English Romanized Japanese Dictionary for Practical Conversation.
+      General Information: Publisher: Japan Travel Bureau Inc. 1984.
+        ISBN 4-533-00329-X Price: Yen 2600
+      Main Features: Romaji only. Capitalisation to indicate accent. ei-wa.
+-------------------------------------------------------------------------------
+5.5.1.7 Martin's Pocket Dictionary: English-Japanese, Japanese-English (by
+        Samuel E. Martin)
+      General Information: Publisher: Charles E. Tuttle. 1990. 
+        ISBN 0-8048-1588-7  
+      Main Features: ei-wa, wa-ei, romaji only, passes "wife" test
+-------------------------------------------------------------------------------
+5.5.1.8 All Romanized English-Japanese Dictionary by Hyoujun Roumaji Kai (?)
+      General Information: Publisher: Charles E. Tuttle. 1973. 
+        ISBN 0-8048-1118-0 Price: $7.95, 6.25 pounds
+      Main Features: all romaji
+--------------------------------------------------------------------------
+5.5.1.9 The Kenkyusha Japanese-English Learner's Dictionary, edited by
+        Shigeru Takebayashi
+      General Information: Published by Kenkyusha in 1992. Edited
+        specifically for foreigners studying Japanese. 1,121 pages,
+        illustrations, usage notes, 4,200 yen, tax included.
+      Main Features: All entries in romaji with kana/kanji and English
+        equivalents. Headwords marked for accent. Complete grammatical
+        information, useful pictures (kappu vs. koppu, for example), lots
+        of usage examples. Good for beginning and intermediate students,
+        but too few entries for reading or translation. No kanji index.
+      Review by Tom Gally (tomgally@twics.co.jp) (edited)
+--------------------------------------------------------------------------
+5.5.1.10 Kodansha's Romanized Japanese-English Dictionary, by Timothy J.
+        Vance
+      General Information: Published in 1992. Based on a Japanese-English
+        dictionary for Japanese students, but completely rewritten for
+        foreign users. 666 pages, no illustrations, usage notes, 3,800
+        yen, tax included.
+      Main Features: All entries in romaji with kana/kanji and English
+        equivalents. Headwords marked for accent. Complete grammatical
+        information. Very similar in size and quality to The Kenkyusha 
+        Japanese-English Learner's Dictionary.
+      Review by Tom Gally (tomgally@twics.co.jp) (edited)
+--------------------------------------------------------------------------
+5.5.1.11 Kogo jiten 
+      General Information: Publisher: Kodansha 1969, Y 1550 (in Japan), 
+        1173 pages, ISBN 4-06-121009-2
+      Main Features: As a dictionary of classical Japanese (kogo jiten=
+        dictionary of the old language) not unique, but it's one of the best 
+        in its kind. Pocket-sized. Invaluable for study of the classical 
+        language. Contains many tables and pictures, charts of Heian-kyo, 
+        and some charts are even in colour (dyes and patterns of kimonoes). 
+     Review by Nico A.F.M. Poppelier (N.POPPELIER@ELSEVIER.nl) (edited)
+     OBS: I believe that this is a Japanese-Japanese dictionary (Rafael).
+------------------------------------------------------------------------------
+5.5.2 Kanji Dictionaries
+-------------------------------------------------------------------------------
+5.5.2.1 New Japanese-English Character Dictionary by Jack Halpern (ed)
+     General Information: Publisher: Kenkyusha. 1990. ISBN 4-7674-9040-5,
+       Price: 8000 Yen
+     Main Features: Easy indexing, core meanings, compounds, synonyms,
+        homophones, indication of usage, stroke order. various indexes 
+        (jouyou, frequency, synonym groups, on/kun readings)
+-------------------------------------------------------------------------------
+5.5.2.2 A New Dictionary of Kanji Usage 
+     General Information: Publisher: Gakken. 1982. ISBN 4-05-051805-8
+       Price: 4800 Yen
+     Main Features: Presented in frequency order (on/kun, stroke count,
+        meaning indexes) Lots of compounds, stroke order. 
+-------------------------------------------------------------------------------
+5.5.2.3 The Modern Reader's Japanese-English Character Dictionary (2nd Revised
+	  Edition) by Andrew N. Nelson
+     General Information: Publisher: Charles E. Tuttle. 1974. ISBN
+         0-8048-0408-7
+      Main Features: Classic reference.
+-------------------------------------------------------------------------------
+5.5.2.4 The Complete Guide to Everyday Kanji by Yaeko S. Habein and Gerald B.
+          Mathias
+     General Information: Publisher: Kodansha International. 1991. ISBN
+         4-7700-1509-7
+      Price: 3800 Yen/18.95 pounds/$24.95
+-------------------------------------------------------------------------------
+5.5.2.5 Beginners' Dictionary of Chinese-Japanese Characters by Arthur 
+          Rose-Innes
+     General Information: Publisher: Dover Publications Inc. 1977 
+          (based on 1959). ISBN 0-486-23467-3, Price: 7.95 pounds
+       Main Features: Out of date
+-------------------------------------------------------------------------------
+5.5.2.6 The Practical Guide to Japanese Signs (1st part) by Tae Moriyama
+     General Information: Publisher: Kodansha International. 1987. 
+       ISBN 0-87011-790-4 Price: 1600 Yen/$9.95/6.95 pounds
+     Main Features: Explanation and origins of kanji that you are likely to
+       find in situations such as train stations, post offices, restaurants. 
+       Based on a weekly newspaper column.
+-------------------------------------------------------------------------------
+5.5.2.7 Shotai jiten 
+     General Information: Publisher: Nobarasha 1965 (9th edition 1989), 
+       Y 2800 (in Japan), no ISBN given
+     Main Features: Not very well-known, but probably the best book for 
+       learning how to write kanji with a brush. There's a little companion
+       for the kana. Contains a lot of kanji, though not all Joyo kanji, 
+       with the classical Chinese originals, modern simplified Chinese forms,
+       and calligraphic examples from many historical and contemporary 
+       masters. Includes stroke-count and on-kun index.
+     Review by Nico A.F.M. Poppelier (N.POPPELIER@ELSEVIER.nl) (edited)
+-------------------------------------------------------------------------------
+5.5.2.8 Japanese Character Dictionary: With Compound Lookup via Any Kanji
+          by Mark Spahn and Wolfgang Hadamitzky
+     General Information: published by Cheng & Tsui Company in U.S., 1991
+       Nichigai Associates in Japan, 1989, ISBN 0-88727-170-7 (U.S. edition)
+       1669 pages
+     Main Features: As the title implies, the main feature of this book is 
+       compound lookup by any Kanji.  This is great if the second or third 
+       character in a compound is easier to find than the first character.  
+       The book is bright yellow with three blue stipes (in U.S. edition at
+       least) and cost me $39.95 at Kinokuniya New York.  Spahn and 
+       Hadamitzky have also published several titles with Tuttle.  I think 
+       this is a great book and finally replaced my Nelson for most uses 
+       (Nelson is still more extensive)
+     Review by Garrick Blalock (R19074@PACCVM.corp.mot.com) (edited)
+-------------------------------------------------------------------------------
+5.5.3 Vocabulary Books
+-------------------------------------------------------------------------------
+5.5.3.1 "Body" Language (Power Japanese series) by Jeffrey G. Garrison
+     General Information: Publisher: Kondansha International. 1990. 
+       ISBN 0-87011-955-9 Price: $6.95/1000 yen/4.95 pounds
+     Main Features: This book details various idioms that use parts of the 
+       body and categorizes them by body part. It provides sample sentences
+       but unfortunately does not explain how the phrase came to be used as
+       an idiom. Examples in kanji/romaji
+-------------------------------------------------------------------------------
+5.5.3.2 Instant Vocabulary through Prefixes and Suffixes (Power Japanese 
+          series) by Timothy J. Vance
+     General Information: Publisher: Kondansha International. 1990.
+       ISBN 0-87011-953-2 Price: $6.95/1000 yen/4.95 pounds
+     Main Features: Kanji used as common prefix/suffix (eg: dai-, sai-,
+        -butsu) Examples of usage in kanji/romaji.
+-------------------------------------------------------------------------------
+5.5.3.3 A Dictionary of Japanese and English Idiomatic Equivalents by 
+          Charles Corwin (ed)
+     General Information: Publisher: Kodansha International. 1968.
+       ISBN 0-87011-1116 Price: 16.95 pounds, 3900 Yen
+     Main Features: idiomatic equivalents (with example sentences) indexed 
+       under 222 Japanese thought categories with cross-reference from English
+-------------------------------------------------------------------------------
+5.5.3.4 Minimum Essential Politeness: A Guide to the Japanese Honorific 
+	  Language by Agnes M. Niyekawa 
+     General Information: Publisher: Kodansha International. 1991. ISBN
+       4-7700-1624-7 Price: 2000 Yen/12.95 pounds/$14.95
+     Main Features: Explains respect language, ingroup/outgroup distinctions,
+       status. The appropriate level for various occasions, respect words
+       and how to construct respect forms.
+-------------------------------------------------------------------------------
+5.5.3.5 Making out in Japanese by Todd and Erica Geers 
+     General Information: Publisher: Yen Books (Charles Tuttle). 1988. 
+       ISBN 0-8048-1541-0 Price: $5.95
+  Main Features: Colloquial expressions, lover's talk, and insults
+-------------------------------------------------------------------------------
+5.5.3.6 Japanese Names by P. G. O'Neill
+     General Information: Publisher: Weatherhill Inc. 1972. ISBN 0-8348-0225-2
+       Price: $22.50/14.95 pounds
+     Main Features: Personal and place names. Character to pronounciation 
+       and vice-versa
+-------------------------------------------------------------------------------
+5.5.3.7 Japanese in Action (Revised Edition) by Jack Seward
+     General Information: Publisher: Weatherhill. 1968/83. ISBN 0-8348-0033-0
+       Price: $12.50/6.95 pounds
+     Main Features: Unorthodox, very interesting.
+-------------------------------------------------------------------------------
+5.5.3.8 An Illustrated Dictionary of Japanese Onomatopoeic Expressions by 
+          Taro Gomi
+     General Information: Publisher: Japan Times. 1989. ISBN 4-78990-0482-1
+        Price: 11.50 pounds/1550 Yen
+--------------------------------------------------------------------------
+5.5.3.9 Japanese Street Slang, by Peter Constantine
+      General Information: Published in 1992. No illustrations. 190 pages,
+        US$9.95.
+      Main Features: Covers slang for all the subjects your Japanese
+        teacher will be too embarrassed to mention: sex, crime, drugs,
+        etc. Many taboo words. Each headword followed by an essay on the 
+        word and similar vocabulary. Many sentence examples with idiomatic 
+        English translations. Romaji only. Both Japanese and English 
+        indexes. Recommended if you plan to become a heroin-addicted pimp 
+        who hangs out with a motorcycle gang.
+5.5.3.9 End of review of Japanese Street Slang by tomgally@twics.co.jp
+--------------------------------------------------------------------------
+5.5.3.10 Beyond Polite Japanese, by Akihiko Yonekawa, translated by Jeff 
+        Garrison, extensively rewritten by Michael Brase (Power Japanese 
+        Series)
+      General Information: Published in 1992. 173 pages. No illustrations. 
+        1,200 yen. US$8.00.
+      Main Features: All entries in romaji with kana/kanji and English 
+        equivalents. Japanese index. Less racy than "Japanese Street 
+        Slang" but more practical for most students of Japanese.
+5.5.3.10 End of review of Beyond Polite Japanese by tomgally@twics.co.jp
+===============================================================================
+5.6 Japanese Culture
+-------------------------------------------------------------------------------
+5.6.1 Mangajin - Japanese Pop Culture and Language Learning
+      General Information: Mangajin is published 10 times in a year, monthly 
+        except January and July, by Mangajin Inc. 90 pp, some pages in color.
+        1030 yens in Japan, tax included or Us$ 4.50, subscriptions for 1
+        year (10 magazines) 9000 yens / Us$ 30 
+      Main Features: Offers Japanese manga (comics) with translations and
+        explanations in English, and some American cartoons with translations/
+        explanations in Japanese. Have columns on Japanese on the computer, 
+        books reviews and Basic Japanese by mangas. Some topics of Japanese 
+        culture are presented too. Offers to the readers Japanese comics and 
+        books on Japanese Culture and Language. Good for learning something 
+        you will not find in books (slang, dialects, politeness/common speech).
+      Addresses of publisher/distributors overseas: 
+        Publisher: USA: Mangajin Inc. - P.O. Box 7119, Marietta, GA 30065 
+          Tel. 800-552-3206 (subscription hotline), fax 404-590-0890
+        Japan    : Sekai Shuppan Kenkyu Centre, 2-18-9 Minami-Aoyama,
+          Minato-ku, Tokyo 107. Tel. (03) 3479-4434, Fax (03) 3479-4436
+        Australia: Intext Book Company Pty. Ltd. 412 Heidelberg Road, 
+          Fairfield, VIC. 3078 Tel. 03-486-1755, FAX 03-486-1235
+        Australia: The Language Centre 555 Beaufort Street, Mt. Lawley
+          Tel. 09-328-8965, Fax 09-328-6161
+        England  : Japan Centre Bookshop, 212 Piccadilly, London W1V 9LD, 
+          Tel: 071-439 8035 (from UK) +44 71 439 8035 (from outside UK)
+          Fax: 071-287 1082 (from UK) +44 71 287 1082 (from outside UK)
+        New Zealand: Credence Development Ltd. P.O.Box 2559, Auckland. 
+          Tel. 09 303-4227, Fax 09 358-3993
+        Germany: Japan Service, Hauptstr. 14, D-65558 Hirschberg/Lahn
+          phone&fax: +49-6439-5167
+5.6.1 End of review of Mangajin by santos@mickey.ai.kyutech.ac.jp 
+-------------------------------------------------------------------------------
+5.6.2 Hiragana Times
+      General Information: Hiragana Times is published monthly, by Y.A.C. 
+        Planning Inc., 80 pages, some in color. 250 yens in Japan, including 
+        tax. Prices vary in other countries, because the magazine is 
+        distributed by air mail by the Oversea Courier Service Co.Ltd.
+        Ask the distributor for local telephones/addresses near you.
+      Main Features: Have articles on Japanese culture topics, usually 
+        topics you will not find in other Japanese culture books/magazines 
+        for foreigners, like Racism, Yellow Cab, Aids, politics. Almost all 
+        in the magazine is bilingual, Japanese and English, and the Japanese
+        part haves furigana over the kanjis, making it easy to read. Have 
+        sections on recommended books, visas, letters and offer of homestays. 
+      Addresses of publisher/distributors overseas:
+        Publisher: Japan: Y.A.C. Planning, Inc. 902 Towa Shinjuku Copo, 
+          2-6-3 Shinjuku-ku,Shinjuku, Tokyo 160. Tel. 03-3341-8989, 
+          fax 03-3341-8987
+      Distributor overseas (headquarter): Japan: Oversea Courier Service Co.,
+          Ltd., 2-9 Shibaura, Minato-ku, Tokyo 108, Tel. (03)5476-8131, 
+          fax (03)-3453-9338
+5.6.2 End of review of Hiragana Times by santos@mickey.ai.kyutech.ac.jp 
+-------------------------------------------------------------------------------
+5.6.3 Eye-AI - A magazine on Japanese Culture and entertainment.
+      General Information: Eye-AI is published monthly by Riverfield Inc.
+        54 pp, black and white, 410 yens in Japan, including tax. Us$ 2.25
+        in Hawaii.
+      Main Features: Articles in English about some topics of Japanese
+        culture, and lots of information on the Japanese pop art world.
+        Feature interviews with actors/singers, articles on travel, living
+        in Japan (i.e. Tokyo), mail order of Japanese CDs and videos.
+      Addresses of publisher/distributors overseas:
+        Publisher: Japan: Y.A.C. Planning, Inc. 902 Towa Shinjuku Copo, 
+          2-6-3 Shinjuku-ku, Shinjuku, Tokyo 160. Tel. 03-3341-8989,
+          fax 03-3341-8987
+        USA (Hawaii): Jack Shigemasa. P.O.Box 548, Pearl City, Hawaii 96782
+5.6.3 End of review of Eye-AI by santos@mickey.ai.kyutech.ac.jp 
+===============================================================================
+5.7 Other related books  
+-------------------------------------------------------------------------------
+5.7.1 Japan Through John Lennon's Eyes - A Personal Sketchbook
+      General Information: 21.95 plus s&h, from Cadence Books
+      Main Features: John Lennon's ingenious sketches depicting the words,
+        phrases, and actions he was learning in Japanese. A rare insight into
+        John's creative genius - a glimpse at how he perceived both ordinary 
+        events and the spiritual concepts of Japan. With the original Japanese 
+        letters, transliteration and English translation for each word, phrase
+        or sentence, this is a great tool for students learning Japanese.
+5.7.1 End of review of Japan Through John Lennon's Eyes - ad on Mangajin 20
+-------------------------------------------------------------------------------
+5.7.2 Understanding Japanese Information Processing - Ken Lunde
+      General Information: Price $29.95 (estimated), 470 pages,
+        Published by O'Reilly and Associates, Inc. ISBN 1-56592-043-0
+      Main Features: "Understanding Japanese Information Processing" is a book
+        that provides detailed information on all aspects of handling Japanese
+        text on computer systems. It tries to bring all of the relevant 
+        information together in a single book. It covers everything from the
+        origins of modern-day Japanese to the latest information on specific
+        emerging computer encoding standards. Topis covered includes: The 
+        Japanese writing system, Japanese character set standards, Japanese 
+        encoding methods, Japanese input, Japanese output, Japanese code 
+        conversion techniques, Japanese code and text processing tools,
+        Japanese e-mail. In addition, there are over 15 appendices which 
+        provide additional reference material, such as a code conversion 
+        table, character set tables, mapping tables, an extensive list of 
+        software sources, a glossary, and much more.
+      Address of publisher/distributors overseas: 
+        Publisher: USA: O'Reilly & Associates, Inc. 103 Morris Street, 
+          Suite A, Sebastopol, CA 95472 - Tels (800) 998-9938 (707) 829-0515 
+          Fax: (707) 829-0104 UUCP: uunet!ora!nuts Internet: nuts@ora.com, 
+          order@ora.com
+        Europe and Africa: 
+        UK: International Thomson Publishing Services, Ltd. Cheriton House, 
+          North Way, Andover, Hampshire SP10 5BE. Tel: 44-264-332424, Fax:
+          44-264-364418 (UK orders), 44-264-342761 (outside UK), E-mail:
+          samantha.jones@itpuk.co.uk
+        Germany: International Thomson Publishing GmbH, O'Reilly-International
+          Thomson Verlag, Attn: Mr. G. Miske. Konigswinterer Strasse 418,
+          53227 Bonn. Tel: 49-228-445171, Fax: 49-228-441342, E-mail
+          (CompuServe): 100272,2422, E-mail (Internet): 
+          100272.2422@compuserve.com
+        Asia (east of Iran and the Caspian Sea, excluding Japan): 
+        Singapore: International Thomson Publishing Asia, Attn: Rebecca Long, 
+          221 Henderson Road, #05 10 Henderson Building, Singapore 0315
+          Tel: 65-268-7867, Fax: 65-268-6727
+        Australia: WoodsLane Pty Limited. Unit 8, 101 Darley St. (P.O. 
+          Box 935), Mona Vale NSW 2103. Tel: 61-2-979-5944, Fax: 61-2-997-3348
+          E-mail: woods@tmx.mhs.oz.au
+        Japan: Toppan Company, Ltd., Ochanomizu Square B, 1-6, Kanda 
+          Surugadai, Chiyoda-ku, Tokyo 101. Tel: 81-3-3295-3461, 
+          Fax: 81-3-3293-5963
+        North, Central and South America and Oceania: same as publisher
+        New Zealand:  WoodsLane New Zealand Ltd, 7 Purnell Street  
+         (P.O. Box 575), Wanganui, Tel: 64-6-3476543, Fax: 64-6-3454840
+         E-mail: woods@tmx.mhs.oz.au
+       or in Kinokuniya stores.
+      Review by the author (Ken Lunde) (edited)
+===============================================================================
+5.8 Manga (comics)
+    This will be controversial... I want to list here some mangas that
+    can help on Japanese study. They have several advantages over "normal"
+    text: are very abundant in several difficulty levels, are very cheap
+    (I believe even outside Japan) and are more interesting ;-) The 
+    disadvantages are: some are garbage, and maybe difficult to get in
+    some places. Anyway, they *can* be used for learning, and I am an
+    amateur mangaholic, so here it goes. Before, an introduction by
+    Alfredo Liu-Perez, based on the alt.arts.anime FAQ and with some
+    comments (in parenthesis):
+        Manga: Pronounced "man-gah". Manga are Japanese comic books and 
+        have their roots in Ukiyo-e wood prints and other traditional art.
+        There are no hard rules in defining manga, but here are some 
+        general characteristics:
+        1. Drawn in black and white (sometimes over colored paper. For
+           some compilations, the first pages of the main story are in
+           full-color. There is maybe an explanation for it, but I could
+           not figure it out yet).
+        2. Compilations of several manga may appear in thick paperback books
+           of more than 700 pages! (that will be read in minutes: some
+           pages are only onomatopoeia, that can describe anything you can
+           imagine)
+        3. They can be quite graphically violent and erotic (including some
+           in compilations for young people).
+        4. Most mangas are stories that continue, like soap operas, but 
+           after a some years will end (and they mean *end* - not like 
+           DC or Marvel comics, that can even ressurect the same 50-year
+           character).
+        5. They are created and drawn by the same person (always ?).
+        Manga related postings can be posted in rec.arts.manga.
+    I will divide tentatively the Manga section in 5 degrees of difficulty.
+    I think that it is impossible to classify the compilations with several
+    stories, so I will just comment on the titles that are republished as
+    books. Of course, the complexity of the storyline is only sometimes 
+    related with the difficulty of the language used. Some of them cannot
+    be classified in a 1-5 grade, so other classification with explanation
+    is provided.
+    The 5 classifications are:
+    Level 1: Very Easy Manga: Almost all words are in Hiragana, and even some
+      Katakana words have Furigana in Hiragana. Sometimes the words are
+      separated to make an easier reading. Usually no Kanjis.
+    Level 2: Easy Manga: Almost all Kanjis have furigana, except the very 
+      obvious ones. Usually no furigana for katakana.
+    Level 3: This is the average manga for the average reader (foreigner, 
+      of course :-) requires a fair knowledge of kanjis and vocabulary.
+    Level 4: Harder to read, almost no furiganas, words not so common or 
+      easy to understand.
+    Level 5: A real challenge. No furiganas except on some obscure readings,
+      kanjis and words sometimes technical. 
+-------------------------------------------------------------------------------
+5.8.1. Urusei Yatsura, by Takahashi Rumiko (Shogakukan)
+    Story: Series. Aliens, schoolboys, inter-racial relations, 
+      inter-planetary confusion. Lum, of course, is great.
+    Level: 2 (all kanjis with furigana) Printed face, some slang.
+-------------------------------------------------------------------------------
+5.8.2 Eigyou Tenteko Nisshi by Gyuu Jirou and Kondou Yousuke (Scholar)
+    Story: Adventures of a salesman for a big appliance company.
+    Level: 4 (furigana only for some unusual readings), printed face.
+-------------------------------------------------------------------------------
+5.8.3 O.L. Shinkaron by Akizuki Risu (Kodansha)
+    Story: Stripes. Office-ladies shows the other side of the Japanese 
+      working women.  
+    Level: 3.5 (no furiganas), printed face.
+-------------------------------------------------------------------------------
+5.8.4 Oishinbo, by Kariya Tetsu and Hanasaki Akira (Shougakkan)
+    Story: Series. The search for the ultimate menu. Tips on cooking, too.
+    Level: 4 (furigana only on some unusual readings), printed face.
+-------------------------------------------------------------------------------
+5.8.5 O-jama Shimasu, by Imazeki Shin (Take Shobou)
+    Story: Stripes. Surrealistic stories, sometimes about sheep counting. 
+    Level: 2.5 (few text, no furiganas), handwritten face.
+-------------------------------------------------------------------------------
+5.8.6 Obatarian, by Hotta Katsuhiko (Take Shobou)
+    Story: Stripes. Obnoxious old ladies, don't care for the others, fun to 
+      read, but avoid them in real life. 
+    Level: 3 (easy kanjis, but no furigana). Handwritten face.
+-------------------------------------------------------------------------------
+5.8.7 Korobokkuru-kun, by Hanawa Kazuichi (Kodansha)
+    Story: Short, weird, stories.
+    Level: 2 (with furiganas), printed face.
+-------------------------------------------------------------------------------
+5.8.8 Konnichi wa Kuriko-san, by Terashima Reiko (Take Shobou)
+    Story: Stripes. Life in Kuriko's family.
+    Level: 3.5 (no furiganas), printed face.
+-------------------------------------------------------------------------------
+5.8.9 Ginga Tetsudou 999, by Matsumoto Reiji (Shounen Gahousha)
+    Story: Series. In the future a young man search for the meaning of life 
+      and a mechanical body that will allow him to live longer.
+    Level: 4, lots of technical/sci-fi words but with furiganas even in
+      the easy ones. Printed face.
+-------------------------------------------------------------------------------
+5.8.10 Koko Dake no Futari by Morishita Hiromi (Take Shobou)
+    Story: Short stories about a couple's life.
+    Level: 2 (no furigana), printed face.
+-------------------------------------------------------------------------------
+5.8.11 Sarari-kun, by Nishimura Sou 
+    Story: Stripes about the life of a salaryman.
+    Level: 2.5 (few text, no furiganas), handwritten face.
+-------------------------------------------------------------------------------
+5.8.12 Sarariman Senka, by Sadao Shoji (Kodansha)
+    Story: Short stories about the life of yeat another salaryman.
+    Level: 3 (few text, no furiganas), handwritten face.
+-------------------------------------------------------------------------------
+5.8.13 Tanaka-kun by Tanaka Hiroshi (Take Shobou)
+    Story: Stripes. Adventures of an anti-hero salaryman. No car, no
+      girlfriend, no style, no luck, but ability to get in trouble with the
+      boss. 
+Level: 3, handwritten face
+-------------------------------------------------------------------------------
+5.8.14 Dai-Tokyo Binbou Seikatsu Manyuaru by Maekawa Tsukasa (Kodansha)
+    Story: Short stories about a don't-worry-be-happy life of a guy in
+      Tokyo. I don't know that he does for a living - and neither does him.
+    Level: 4, printed face
+-------------------------------------------------------------------------------
+5.8.15 Chinmoku no Kantai byKawaguchi Kaiji (Kodansha)
+    Story: Series about a Japanese submarine that defects and becomes a 
+      sovereign nation.
+    Level: 5 (furigana only for some loan words and names, lots of technical
+      words), printed face.
+-------------------------------------------------------------------------------
+5.8.16 Tsurumoku Dokushinryou by Kubonouchi Eisaku (Shougakkan)
+    Story: Sometimes serious, sometimes gag series about life in a big
+      company.
+    Level: 3.5 (no furigana), printed face, sometimes handwritten
+-------------------------------------------------------------------------------
+5.8.17 Ningen Kousaten by Yajima Masao and Hirokane Kenshi (Shogakukan)
+    Story: Short stories about human beings. Very realistic even in the art,
+      deals with social issues.
+    Level: 4.5, printed face
+-------------------------------------------------------------------------------
+5.8.18 Bakuhatsu Sunzen, by Tanioka Yasuji (KK Best Book)
+    Story: Gag, short, absurd stories.
+    Level: 2 (few kanjis, no furigana), handwritten face.
+-------------------------------------------------------------------------------
+5.8.19 Hi no tori (The Phoenix) by Tezuka Osamu (Tezuka Productions)
+    Story: Long, philosophical story about the meaning of life
+    Level: 3.5 (furigana for all kanjis, but lots of difficult words),
+      printed face.
+-------------------------------------------------------------------------------
+5.8.20 Benramei Tou-chan by Tachibanaya Kikutarou (Take Shobou)
+    Story: Stripes about a die-hard Edokko
+    Level: 2.5 (almost no kanjis, no furiganas, but lots of hougen),
+      handwritten face.
+-------------------------------------------------------------------------------
+5.8.21 Bono-bono by Igarashi Mikio (Take Shobou)
+    Story: Short stories about a sea otter and its friends.
+    Level: 2 (almost no kanjis, no furiganas either), handwritten face.
+-------------------------------------------------------------------------------
+5.8.22 Poketto Suto-ri (Pocket Story) by Mori Masayuki (Kodansha)
+    Story: Short and light stories about life, small things and feelings.
+      Nice to read, almost poetic.
+    Level: 2.5 (few words, but no furigana), printed face
+-------------------------------------------------------------------------------
+5.8.23 What's Michael by Kobayashi Makoto (Kodansha)
+    Story: Not the Japanese Garfield - Michael is sometimes a cat, sometimes
+      a salaryman, sometimes a parody to 'Planet of the Apes'.
+    Level: 3.5 (no furiganas), printed face.
+*******************************************************************************
+6. Japanese Language Schools and Proficiency Tests
+===============================================================================
+6.1 Schools in Japan
+-------------------------------------------------------------------------------
+6.1.1 Berlitz Japan, tel. 81-3-3589-3525
+===============================================================================
+6.2 Schools outside Japan
+-------------------------------------------------------------------------------
+6.2.1 Berlitz USA, tel. 800-528-7929
+===============================================================================
+6.3 Proficiency tests in Japan
+-------------------------------------------------------------------------------
+6.3.1 Nihongo Nouryoku Shiken - Japanese Language Proficiency Test
+      This test is administered by the Ministry of Education in Japan and
+      the Foreign Ministry abroad. It is divided in 4 levels, Level 1 being 
+      the highest level of difficulty, 4 the lowest. The following info was
+      extracted from the manuals for the test:
+-------------------------------------------------------------------------------
+6.3.1.1 Objectives of the Japanese Language Proficiency Test
+      The number of foreigners studying Japanese is rapidly increasing
+      worldwide, and the day has come when those who have acquired the
+      language can put their skills to use in a wide variety of careers.
+      Students of Japanese have often urged the establisment of a system by
+      which their proficiency can be certified; the Japan Foundation and
+      Association of International Education, Japan have devised this test
+      and administered it for nonnative speakers since 1984 both in Japan and
+      abroad to meet that need. Outside Japan, the Japan Foundation
+      co-sponsors the administration  of the test jointly with local cultural
+      exchange or educational institutions, or with administrative commitees
+      established for this purpose. It is hoped that the Japanese-Language
+      Proficiency Test will prove useful for the further enhancement of
+      mutual understanding among nations.
+-------------------------------------------------------------------------------
+6.3.1.2 Contents of the Test
+     This test has four different levels; the examinee should choose
+     the level that best matches his or her ability and training. Each
+     test is made up of three sections: writing-vocabulary; listening;
+     reading-grammar. The contents and criteria of the test are as follows:
+
+     Level 1
+     Sections                    Time                  Points
+     .........................................................
+     writing-vocabulary          45 minutes            100 points
+     listening                   45 minutes            100 points
+     reading-grammar             90 minutes            200 points
+     .........................................................
+     total                      180 minutes            400 points
+     CRITERIA: The examinee should have mastered grammar at a high level,
+     about 2,000 kanji and 10,000 words, and have an integrated command of
+     the language sufficient for life in Japanese society and providing a
+     useful base for study at a Japanese university. This level should be
+     reached after studying Japanese for about 900 hours.
+
+     Level 2
+     Sections                    Time                  Points
+     .........................................................
+     writing-vocabulary          35 minutes            100 points
+     listening                   35 minutes            100 points
+     reading-grammar             70 minutes            200 points
+     .........................................................
+     total                      140 minutes            400 points
+     CRITERIA: The examinee should have mastered grammar at a relatively
+     high level, about 1,000 kanji and 6,000 words, and have the ability to
+     converse, read and write about matters of a general nature. This level
+     should be reached after studying Japanese for about 600 hours and
+     finishing an intermediate course.
+
+     Level 3
+     Sections                    Time                  Points
+     .........................................................
+     writing-vocabulary          35 minutes            100 points
+     listening                   35 minutes            100 points
+     reading-grammar             70 minutes            200 points
+     .........................................................
+     total                      140 minutes            400 points
+     CRITERIA: The examinee should have mastered basic grammar, about 300
+     kanji and 1,500 words, and have the ability to take part in everyday
+     conversation and to read and write simple sentences. This level should
+     be reached after studying Japanese for about 300 hours and finishing
+     an elementary course.
+
+     Level 4
+     Sections                    Time                  Points
+     .........................................................
+     writing-vocabulary          25 minutes            100 points
+     listening                   25 minutes            100 points
+     reading-grammar             50 minutes            200 points
+     .........................................................
+     total                      100 minutes            400 points
+
+     CRITERIA: The examinee should have mastered the elements of grammar,
+     about 100 kanji and 800 words, and have the ability to engage in simple
+     conversation and to read and write short, simple sentences. This level
+     should be reached after studying Japanese for about 150 hours and
+     finishing the first half of an elementary course.
+
+===============================================================================
+6.4 Proficienty tests outside Japan
+-------------------------------------------------------------------------------
+6.4.1 Nihongo Nouryoku Shiken - Japanese Language Proficiency Test
+      This test is administered by the Ministry of Education in Japan and
+      the Foreign Ministry abroad. It is divided in 4 levels, Level 1 being 
+      the highest level of difficulty, 4 the lowest. Ask the nearest 
+      embassy or consulate for more information, or in some address in the
+      list below. Check also 6.3.1 for more information on the test.
+-------------------------------------------------------------------------------
+6.4.1.1 USA: Japanese Foundation Language Center, tel. 310-829-3172,
+      fax 310-829-9510, Address: Suite 650E, 2425 W. Olympic Blvd.,
+      Santa Monica, CA 90404-4034 
+
+*******************************************************************************
+
+7. Studying, Teaching or just staying in Japan
+===============================================================================
+7.1 Scholarships for studying in Japan
+-------------------------------------------------------------------------------
+7.1.1 Monbusho - The Ministry of Education offers a scholarship for 
+      undergratuate and graduation studies in Japan. The scholarship
+      includes the air ticket from/to your country, usually 6 months of 
+      Japanese language classes and some other advantages. For more 
+      information, contact the nearest Japanese consulate or embassy in 
+      the country of which you are a citizen. Other way to get this 
+      scholarship is apply directly to the university. For this, get the 
+      addresses of the universities you are interested in the book 
+      "Japanese Colleges and Universities", that you can find on the library 
+      of the Japanese consulates or embassies.
+===============================================================================
+7.2 Homestays
+-------------------------------------------------------------------------------
+7.2.1 Hiragana Times Welcome Station - Hiragana Times (review 5.6.2) have a
+      column on homestay offers from and to Japan. Write an introduction 
+      with your address and send a photo to "Welcome Station - Hiragana 
+      Times", 2-6-3-902, Shinjuku, Shinjuku-ku, Tokyo 160, Japan.
+
+*******************************************************************************
+
+8. Disclaimers
+ - Standard disclaimers apply: I am NOT being paid for writing about the
+   books and magazines and (as far as I know) there is no copyright 
+   infringement of any kind. 
+ - I am not a native English speaker, so please correct me even on this.
+ - All the addresses and related information came by advertisements on the
+   magazines and books, and are subject to errors. 
+ - Some of the topics on this FAQ are not part of sci.lang.japan scope, but 
+   some people asked me about it (specially part 7), and I decided to 
+   include so I dont have to write two faqs. 
+ - About some reprinted parts or whole articles of Mangajin: In 1992 I send
+   a letter to them, that was published in the number 21, page 4, as follows:
+   "... Is it possible to mention or quote Mangajin articles, for example, 
+   the Computer Corner, on a public network ? I believe that it will benefit 
+   a lot of people interested in learning Japanese and will introduce
+   Mangajin to people who don't know about your magazine.". The answer was:
+   "As long as there is no money changing hands, we have no objections at all
+   to having portions of Mangajin reproduced or 'quoted'. As you point out,
+   it helps spread the word. We welcome that kind of use in the classroom as
+   well. One point I have to make, however, is that we can give permission
+   only for the editorial content (basically, everything that's in English).
+   We have only one-time serial rights to the manga material, and permission
+   to copy that, even in the ways you mentioned, is not ours to give."
+ - I would like the cooperation from whoever had read some books on the
+   reviews, because some information came from advertisements, and the
+   books can be in the wrong category.
+ - There are some references to e-mail of authors of software and
+   (maybe on the future) reviews. If somebody dont want to see his/her
+   e-mail address here, tell me as soon as possible, so I can remove it.
+
+###############################################################################

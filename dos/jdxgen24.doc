@@ -1,0 +1,80 @@
+J D X G E N V2.4
+
+This is a brief extract from the JDIC24.DOC file relating to the latest
+version of JDXGEN. Although V2.4 of the JDIC/JREADER/JDXGEN suite is not
+yet out, I have pushed out the latest version of JDXGEN to get around the
+problems the earlier version was having with the current (big) EDICT. The
+latest version of JDXGEN also tests the amount of free disk space on your
+nominated work drive, and asks you for a go-ahead if there seems to be
+insuffiecient. It also tests properly for read & write errors (tsk, tsk)
+and bombs appropriately.
+
+In particular, please note that the default records/workfile is now
+30,000. If you have a big DOS or lots of TSRs you will probably need to
+reduce this number by using the -rnnnnn option on the command-line.
+
+Anyway, here is the extract:
+
+14. JDXGEN 
+   
+JDXGEN  is  a  utility program that parses the dictionary file and produces a 
+file <dictionary-name>.JDX containing the index table  (see  below).  If  you 
+make any changes to the dictionary, you must run JDXGEN before operating JDIC 
+again. Its operation is similar to JDIC in that it uses JDIC.RC or MOKE.RC to 
+establish  the path to the dictionary and will operate either on a dictionary 
+called EDICT (the default) or a user-specified name.  
+
+There are two other command-line options: 
+
+    -tpathname 
+
+where "pathname" is a directory which JDXGEN can use for its temporary files. 
+If none is specified, the current directory is used for temporary files.  
+                                        
+    -rnnnnn
+
+where nnnnn is the number of records written to each  workfile.  The  default 
+is 30,000,  which is the maximum number the SORTF utility can handle.  If you 
+do not have enough RAM, the program will exit, and you will have to try again 
+with a smaller number of records in each workfile. 
+
+JDXGEN parses the dictionary, producing several temporary files of sort keys, 
+each of which is sorted using Vernon D.  Buerg's  SORTF  utility  (make  sure 
+that SORTF.COM,  a copy of which is included in this distribution,  is in the 
+path).  The sorted files are then merged to produce  the  index  table.  This 
+process can be quite slow.  A 70,000 line dictionary results in about 300,000 
+entries in the index. 
+
+A RAM drive,  a disk cache,  a second hard drive or a network file server can 
+reduce the time of the sort.  The author has  observed  the  following  times 
+processing a 40,000 entry EDICT: 
+
+        120+ minutes on an 8MHz 8088 with one hard disk 
+        
+        15  minutes  on  a  12MHz  8086 using a Novell network drive with 4Mb 
+        cache 
+        
+        10 minutes on a 16MHz 80386 with 1M disk cache 
+
+Note that a large quantity of file space is required.  The .JDX file is about 
+50% the size of the dictionary.  The temporary files will  take  about  twice 
+the  size  of  the  dictionary.  These  are deleted automatically when JDXGEN 
+finishes, however if JDXGEN aborts prematurely you may need to delete them by 
+hand (one file is called SORTFILE.XYZ,  and up to 100 files called  JDXnn.TMP 
+<nn  =  00,01,02,....> are used).  Note also that about 500k of RAM is needed 
+after DOS.  If this is not available,  the sort will abort.  Note  also  that 
+your CONFIG.SYS file may need amendment to allow for sufficient workfiles. 
+    
+JDXGEN  measures  the  amount  of disk space free on the default or specified 
+work drive.  If it does not seem to be enough,  it will ask if it  is  OK  to 
+proceed. 
+
+JDXGEN  stores  the length of the dictionary file and the JDIC version in the 
+.JDX file,  and if JDIC detects a mismatch,  it will refuse to operate.  This 
+ensures that JDXGEN is run every time the dictionary is modified. 
+
+Make sure you have the most recent JDXGEN version (2.4). 
+
+Jim Breen
+jwb@capek.rdt.monash.edu.au
+Feb 1994

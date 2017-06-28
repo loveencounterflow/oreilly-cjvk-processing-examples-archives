@@ -1,0 +1,20 @@
+Archive Name: jlist01.zip
+Description: JList 0.1, A Kanji file viewer (req. emxrt)
+Operating System/Version: OS/2 2.x
+Program Source: Author (Martin Thierer, zc0a1121@rpool1.rus.uni-stuttgart.de)
+Proposed directory for placement: 2_x/editors
+
+JList is a program which is able to display text files which have
+japanese characters (Kana and Kanji) in them.  It is distributed as
+Freeware.
+
+The 'emx Runtime Package' must be installed to run JList.
+
+Some of the features are:
+
+o Support for files in ASCII, Old-JIS, New-JIS, NEC-JIS, Shift-JIS and
+  EUC
+o Kanji fonts in multiple sizes are supported
+o Any OS/2 outline font can be used for the non-japanese characters
+o Multi-threaded
+o Partial WPS support (file types)

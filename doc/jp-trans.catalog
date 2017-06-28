@@ -1,0 +1,1307 @@
+O'Reilly & Associates' Titles Translated into Japanese
+Version 12/19/97
+Maintained by Ken Lunde (lunde@adobe.com or lunde@oreilly.com)
+URL: ftp://ftp.oreilly.com/pub/products/catalogs/jp-trans.catalog
+
+
+This file contains descriptions of all the O'Reilly & Associates books
+that have been translated into Japanese. The "Comments:" section for
+each listing includes information specific to the Japanese
+translation, such as additional appendixes describing Japanese text
+handling implications. For detailed descriptions on the books
+themselves, please refer to the English edition book descriptions,
+available through the following URLs:
+
+  ftp://ftp.oreilly.com/pub/products/catalogs/book.catalog
+  gopher://gopher.oreilly.com/
+  http://www.oreilly.com/
+
+Many of the titles use Japanese characters, as do the names of the
+translators or translation supervisors. Such Japanese text is JIS-
+encoded.
+
+Unless otherwise indicated, all these Japanese books are printed in A5
+format (210mm by 148mm), which makes them a bit smaller that their
+original English editions.
+
+There are currently six publishers that have translated O'Reilly &
+Associates titles into Japanese. They are (in alphabetical order):
+
+o ASCII Corporation
+o HBJ Publishing
+o International Thomson Publishing Japan (ITP Japan)
+o Keigaku Publishing
+o O'Reilly Japan, Incorporated
+o SOFTBANK Corporation
+
+The following sections, arranged in groups according to publisher,
+provide information about the translationed books.
+
+
+ASCII CORPORATION:
+
+The following O'Reilly & Associates titles have been translated into
+Japanese by ASCII Corporation:
+
+o System Performance Tuning
+o Using C on the UNIX System
+o Managing uucp and Usenet
+o sed & awk, First Edition
+o Learning the vi Editor
+o termcap & terminfo
+o Managing NFS and NIS
+o Practical UNIX Security, First Edition
+o Using uucp and Usenet
+o lex & yacc, Second Edition
+o MH & xmh: E-mail for Users & Programmers, Second Edition
+o Computer Security Basics
+o Power Programming with RPC
+o DNS and BIND, First Edition
+o Essential System Administration, First Edition
+
+ASCII Corporation can be contacted as follows:
+
+ASCII Corporation
+4-33-10 Yoyogi
+Shibuya-ku, Tokyo 151-24
+JAPAN
++81-3-5351-8211 (phone)
++81-3-5351-8210 (facsimile)
+http://www.ascii.co.jp/
+
+株式会社アスキー
+〒151-24東京都渋谷区代々木4-33-10
+電  話: 03-5351-8211
+ＦＡＸ: 03-5351-8210
+http://www.ascii.co.jp/
+
+More complete information on each title follows:
+
+o "System Performance Tuning"
+  Title (J): "UNIXシステムチューニング"
+  Title (E): "UNIX Shisutemu Chuningu"
+  Translation Supervisor: 砂原秀樹 (Hideki Sunahara)
+  Publisher: ASCII Corporation
+  Date: July 21, 1991
+  ISBN: 4-7561-0077-5
+  Price: 3,200 Yen
+  Number of pages: 414 (includes front matter)
+  Comments: The translation supervisor included a foreword (pp 15-16).
+
+o "Using C on the UNIX System"
+  Title (J): "UNIX Cプログラミング"
+  Title (E): "UNIX C Puroguramingu"
+  Translation Supervisor: アスキー書籍編集部 (ASCII Book Editing
+    Department)
+  Publisher: ASCII Corporation
+  Date: July 21, 1991
+  ISBN: 4-7561-0078-3
+  Price: 2,500 Yen
+  Number of pages: 327 (includes front matter)
+  Comments: The translation supervisor included a "For running
+    programs in the this book" (pp 301-313). It is information of the
+    difference between SystemV R2.0 and R4.0/3.2.
+
+o "Managing uucp and Usenet"
+  Title (J): "UUCPシステム管理"
+  Title (E): "UUCP Shisutemu Kanri"
+  Translator: 大場以津美 (Itsumi Ohba)
+  Translation Supervisor: JUICE
+  Publisher: ASCII Corporation
+  Date: December 1, 1991
+  ISBN: 4-7561-0087-2
+  Price: 3,200 Yen
+  Number of pages: 392 (includes front matter)
+  Comments: Appendix E includes information on modem setting. Appendix
+    F includes information on mail settings. Appendix G includes
+    information on settings for specific machines. Appendix H includes
+    information on PC-based UUCP (corresponds to Appendix E in the
+    original English). Appendix I includes information on UUCP
+    networks in Japan. The translation supervisor included a foreword
+    (pp 13-15).
+
+o "sed & awk, First Edition"
+  Title (J): "sed & awkプログラミング"
+  Title (E): "sed & awk Puroguramingu"
+  Translator: 福崎俊博 (Toshihiro Fukuzaki)
+  Publisher: ASCII Corporation
+  Date: December 21, 1991
+  ISBN: 4-7561-0091-0
+  Price: 3,800 Yen
+  Number of pages: 511 (includes front matter)
+  Comments: The translator included a foreword (pp 15-16). Obsolete
+    due to new edition translated by O'Reilly Japan.
+
+o "Learning the vi Editor"
+  Title (J): "vi入門"
+  Title (E): "vi Nyumon"
+  Translator: 福崎俊博 (Toshihiro Fukuzaki)
+  Publisher: ASCII Corporation
+  Date: April 1, 1992
+  ISBN: 4-7561-0110-0
+  Price: 1,800 Yen
+  Number of pages: 208 (includes front matter)
+  Comments: The translator included a foreword (pp 11-12).
+
+o "termcap & terminfo"
+  Title (J): "termcap & terminfo"
+  Translator: 近藤智幸 (Tomoyuki Kondo)
+  Translation Supervisor: 鈴木麗 (Rei Suzuki)
+  Publisher: ASCII Corporation
+  Date: October 31, 1992
+  ISBN: 4-7561-0271-9
+  Price: 2,700 Yen
+  Number of pages: 271 (includes front matter)
+  Comments: The translation supervisor included a foreword (pp 11-12).
+
+o "Managing NFS and NIS"
+  Title (J): "NFS & NIS"
+  Translator: 倉骨彰 (Akira Kurahone)
+  Translation Supervisor: 砂原秀樹 (Hideki Sunahara)
+  Publisher: ASCII Corporation
+  Date: December 1, 1992
+  ISBN: 4-7561-0273-5
+  Price: 4,800 Yen
+  Number of pages: 596 (includes front matter)
+  Comments: The translation supervisor included a foreword (pp 15-16).
+
+o "Practical UNIX Security, First Edition"
+  Title (J): "UNIXセキュリティ"
+  Title (E): "UNIX Sekyuriti"
+  Translator: 近藤智幸 (Tomoyuki Kondo)
+  Translation Supervisor: 山口英 (Suguru Yamaguchi)
+  Publisher: ASCII Corporation
+  Date: January 1, 1993
+  ISBN: 4-7561-0274-3
+  Price: 4,800 Yen
+  Number of pages: 576 (includes front matter)
+  Comments: The translation supervisor included a foreword (pp 15-17).
+
+o "Using uucp and Usenet"
+  Title (J): "UUCP入門"
+  Title (E): "UUCP Nyumon"
+  Translator: 長原陽子 (Yoko Nagahara)
+  Translation Supervisor: JUICE
+  Publisher: ASCII Corporation
+  Date: June 11, 1993
+  ISBN: 4-7561-0280-8
+  Price: 2,500 Yen
+  Number of pages: 216 (includes front matter)
+  Comments: Appendix F includes information on Japanese e-mail
+    addresses, and Appendix G includes information on Japanese
+    networks, to include contact information. The translation
+    supervisor included a foreword (pp 11-13).
+
+o "lex & yacc, Second Edition"
+  Title (J): "lex & yaccプログラミング"
+  Title (E): "lex & yacc Puroguramingu"
+  Translator: 村上列 (Retsu Murakami)
+  Publisher: ASCII Corporation
+  Date: November 1, 1994
+  ISBN: 4-7561-0297-2
+  Price: 3,600 Yen
+  Number of pages: 432 (includes front matter)
+  Comments: The Glossary from the original English edition (pp
+    333-338) does not exist. The translator included a foreword (pp
+    13-14).
+
+o "MH & xmh: E-mail for Users & Programmers, Second Edition"
+  Title (J): "MH & xmh"
+  Translator: 倉骨彰 (Akira Kurahone)
+  Translation Supervisors: 砂原秀樹 and 鈴木麗 (Hideki Sunahara and
+    Rei Suzuki)
+  Publisher: ASCII Corporation
+  Date: November 11, 1994
+  ISBN: 4-7561-0298-0
+  Price: 5,800 Yen
+  Number of pages: 738 (includes front matter)
+  Comments: Appendix H includes information related to Japanese e-mail
+    handling with MH (Japanese extensions to MH and multilingual
+    headers), the GNU Emacs mh-e package, and MIME. One of the
+    translation supervisors, Hideki Sunahara, included a foreword (pp
+    17-18). This translation is based on the Second Edition.
+
+o "Computer Security Basics"
+  Title (J): "コンピュータセキュリティの基礎"
+  Title (E): "Konpyuta Sekyuriti-no Kiso"
+  Translator: 近藤智幸 (Tomoyuki Kondo)
+  Translation Supervisor: 山口英 (Suguru Yamaguchi)
+  Publisher: ASCII Corporation
+  Date: December 1, 1994
+  ISBN: 4-7561-0299-9
+  Price: 4,800 Yen
+  Number of pages: 500 (includes front matter)
+  Comments: The translation supervisor included a foreword (pp 11-13).
+
+o "Power Programming with RPC"
+  Title (J): "RPCプログラミング"
+  Title (E): "RPC Puroguramingu"
+  Translation Supervisor: 森島晃年 (Akitoshi Morishima)
+  Publisher: ASCII Corporation
+  Date: February 11, 1995
+  ISBN: 4-7561-0303-0
+  Price: 6,800 Yen
+  Number of pages: 654 (includes front matter)
+  Comments: The translation supervisor included a foreword (pp 17-18).
+
+o "DNS and BIND, First Edition"
+  Title (J): "DNS & BIND"
+  Translation Supervisors: 浅羽登志也 (Toshiya Asaba) and 上水流由香 
+    (Yuka Kamizuru)
+  Publisher: ASCII Corporation
+  Date: August 11, 1995
+  ISBN: 4-7561-0314-6
+  Price: 4,800 Yen
+  Number of pages: 516 (includes front matter)
+  Comments: One of the translation supervisors, Toshiya Asaba,
+    included a foreword (pp 19-20). A new appendix, Appendix D "Name
+    Server Registration" (Appendixes D and E are now Appendixes E and
+    F), was added that includes information from JPNIC.
+
+o "Essential System Administration, First Edition"
+  Title (J): "UNIXシステム管理入門"
+  Title (E): "UNIX Shisutemu Kanri Nyumon"
+  Translator: 榊正憲 (Masanori Sakaki)
+  Publisher: ASCII Corporation
+  Date: August 11, 1995
+  ISBN: 4-7561-0313-8
+  Price: 5,000 Yen
+  Number of pages: 544 (includes front matter)
+  Comments: The translator included a foreword (pp 17-18). This
+    translation is based on the First Edition.
+
+
+HBJ PUBLISHING:
+
+The following O'Reilly & Associates title has been translated into
+Japanese by HBJ (Harcourt Brace Japan) Publishing:
+
+o UNIX in a Nutshell: Berkeley Edition
+
+HBJ Publishing can be contacted as follows:
+
+HBJ Publishing
+22-1 Ichiban-Cho
+Chiyoda-ku, Tokyo 102
++81-3-3234-3911 (phone)
+
+株式会社ＨＢＪ
+〒102東京都千代田区一番町22-1
+電話: 03-3234-3911
+
+More complete information on this title follows:
+
+o "UNIX in a Nutshell: Berkeley Edition"
+  Title (J): "UNIX in a Nutshell: A Desktop Quick Reference for Berkeley"
+  Translation Supervisor: 新井利幸 (Toshiyuki Arai)
+  Publisher: HBJ Publishing
+  Date: April 30, 1993
+  ISBN: 4-8337-8593-5
+  Price: 3,200 Yen
+  Number of pages: 307 plus 10 front matter
+  Comments: The translation supervisor included a foreword (pp v-vi).
+
+
+INTERNATIONAL THOMSON PUBLISHING JAPAN:
+
+The following O'Reilly & Associates titles have been translated into
+Japanese by International Thomson Publishing Japan (ITPJ):
+
+o Learning the Korn Shell
+o Understanding DCE
+o High Performance Computing
+o sendmail, First Edition
+o ORACLE Performance Tuning, First Edition
+o TCP/IP Network Administration, First Edition
+o Guide to Writing DCE Applications, Second Edition
+o The Whole Internet User's Guide & Catalog, Second Edition
+o HTML早わかり マイ・ホームページを作ろう!
+
+ITPJ can be contacted as follows:
+
+International Thomson Publishing Japan
+Hirakawacho Kyowa Building 3F
+2-2-1 Hirakawa-cho
+Chiyoda-ku, Tokyo 102
++81-3-3221-1385 (phone)
++81-3-3237-1459 (facsimile)
+customer@iptj.co.jp
+
+インターナショナル・トムソン・パブリッシング・ジャパン
+〒102東京都千代田区平河町2-2-1 平河町共和ビル3階
+電  話: 03-3221-1385
+ＦＡＸ: 03-3237-1459
+電子メール: customer@iptj.co.jp
+
+More complete information on each title follows:
+
+o "Learning the Korn Shell"
+  Title (J): "Korn Shell入門"
+  Title (E): "Korn Shell Nyumon"
+  Translator: 鈴木克彦 (Katsuhiko Suzuki)
+  Publisher: ITPJ
+  Date: April 28, 1994
+  ISBN: 4-900718-02-5
+  Price: 4,500 Yen
+  Number of pages: 383 plus 23 front matter
+  Comments: None.
+
+o "Understanding DCE"
+  Title (J): "プログラマーのためのDCE入門"
+  Title (E): "Purogurama-no tame-no DCE Nyumon"
+  Translator: 田中温郎 (Atsuro Tanaka)
+  Publisher: ITPJ
+  Date: July 8, 1994
+  ISBN: 4-900718-08-4
+  Price: 3,400 Yen
+  Number of pages: 271 plus 29 front matter
+  Comments: None.
+
+o "High Performance Computing"
+  Title (J): "ハイ・パフォーマンス・コンピューティング"
+  Title (E): "Hai Pafomansu Kompyutingu"
+  Translator: 久良知真子 (Mako Kurachi)
+  Publisher: ITPJ
+  Date: July 15, 1994
+  ISBN: 4-900718-03-3
+  Price: 4,400 Yen
+  Number of pages: 411 plus 23 front matter
+  Comments: No information about the translator is provided.
+
+o "sendmail, First Edition"
+  Title (J): "sendmail解説"
+  Title (E): "sendmail Kaisetsu"
+  Translator: 鈴木克彦 (Katsuhiko Suzuki)
+  Translation Supervisor: 村井純 (Jun Murai)
+  Publisher: ITPJ
+  Date: August 11, 1994
+  ISBN: 4-900718-07-6
+  Price: 7,000 Yen
+  Number of pages: 953 plus 46 front matter
+  Comments: The translation supervisor included a foreword (pp v-vi).
+    Obsolete due to new edition translated by O'Reilly Japan.
+
+o "ORACLE Performance Tuning, First Edition"
+  Title (J): "オラクルパフォーマンスチューニング"
+  Title (E): "Orakuru Pafomansu Chuningu"
+  Translation Supervisor: 原陽一 (Yoichi Hara)
+  Publisher: ITPJ
+  Date: October 3, 1994
+  ISBN: 4-900718-05-X
+  Price: 5,800 Yen
+  Number of pages: 730 plus 45 front matter
+  Comments: The translation supervisor included a foreword (pp v-vii).
+
+o "TCP/IP Network Administration, First Edition"
+  Title (J): "TCP/IPネットワーク管理"
+  Title (E): "TCP/IP Nettowaku Kanri"
+  Translator: 坂本真 (Makoto Sakamoto)
+  Translation Supervisor: 村井純 (Jun Murai)
+  Publisher: ITPJ
+  Date: November 25, 1994
+  ISBN: 4-900718-01-7
+  Price: 4,700 Yen
+  Number of pages: 603 plus 28 front matter
+  Comments: An additional table is in Appendix A that lists network
+    providers in Japan. Appendix B was modified to include Japanese
+    network information, to include details on JPNIC. The translation
+    supervisor included a foreword (pp v-vi).
+
+o "Guide to Writing DCE Applications, Second Edition"
+  Title (J): "DCEプログラミングガイド"
+  Title (E): "DCE Puroguramingu Gaido"
+  Translator: 田中温郎 (Atsuo Tanaka)
+  Publisher: ITPJ
+  Date: December 25, 1994
+  ISBN: 4-900718-09-2
+  Price: 4,300 Yen
+  Number of pages: 590 plus 30 front matter
+  Comments: Mayumi Nakada of Digital Equipment Corporation Japan wrote
+    a foreword for this book (pp 5-6 before the front matter). It is
+    based on the Second Edition of the original English.
+
+o "The Whole Internet User's Guide & Catalog, Second Edition"
+  Title (J): "インターネットユーザーズガイド 改訂版"
+  Title (E): "Intanetto Yuzazu Gaido Kaiteiban"
+  Translator: 株式会社エディックス (Edix Corporation)
+  Translation Supervisor: 村井純 (Jun Murai)
+  Publisher: ITPJ
+  Date: January 31, 1995
+  ISBN: 4-900718-12-2
+  Price: 4,900 Yen
+  Number of pages: 785 plus 36 front matter
+  Comments: Appendix A includes Japanese service providers (pp
+    705-710). Page v is a page entitled "Message to Japanese
+    audiences" by Ed Krol. The translation supervisor included a
+    foreword (pp vii-x). No pull-out quick reference card -- printed
+    on pp 755-758 instead. It is based on the Second Edition of the
+    original English.
+
+o "HTML早わかり マイ・ホームページを作ろう!"
+  Title (E): "HTML: Create Your Own Web Page"
+  Authors: 田辺茂也 (Shigeya Tanabe) and 藪暁彦 (Akihiko Yabu)
+  Publisher: ITPJ
+  Date: July 31, 1995
+  ISBN: 4-900718-18-1
+  Price: 2,900 Yen
+  Number of pages: 216 plus 7 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: This book is not a Japanese translation of an English
+    book, but rather an original Japanese book. It includes a useful
+    pull-out quick reference (with tag information conforming to HTML
+    Version 2.0 and Netscape) and a CD-ROM (containing demo version of
+    AIR NAVIGATOR for Windows and sample HTML files).
+
+
+KEIGAKU PUBLISHING:
+
+The following O'Reilly & Associates titles have been translated into
+Japanese by Keigaku Publishing Company, Limited:
+
+o Managing Projects with make, First Edition
+o Checking C Programs with lint
+o Programming with curses
+
+Keigaku Publishing can be contacted as follows:
+
+Keigaku Publishing Company, Limited
+1-46 Kanda Jimbo-Cho
+Chiyoda-ku, Tokyo 101
++81-3-3233-3795 (phone)
++81-3-3233-3730 (facsimile)
+
+〒101東京都千代田区神保町神田1-46
+電  話: 03-3233-3795
+ＦＡＸ: 03-3233-3730
+
+More complete information on each title follows:
+
+o "Managing Projects with make, First Edition"
+  Title (J): "make"
+  Translator: 菊池彰 (Akira Kikuchi)
+  Translation Supervisor: 矢吹道郎 (Michiro Yabuki)
+  Publisher: Keigaku Publishing
+  Date: December 20, 1990
+  ISBN: 4-7665-1093-3
+  Price: 1,200 Yen
+  Number of pages: 89 plus 4 front matter
+  Comments: It is based on the First Edition of the original
+    English. Obsolete due to new edition translated by O'Reilly
+    Japan.
+
+o "Checking C Programs with lint"
+  Title (J): "lint"
+  Translator: 菊池彰 (Akira Kikuchi)
+  Translation Supervisor: 矢吹道郎 (Michiro Yabuki)
+  Publisher: Keigaku Publishing
+  Date: December 20, 1990
+  ISBN: 4-7665-1094-1
+  Price: 1,200 Yen
+  Number of pages: 87 plus 4 front matter
+  Comments: None.
+
+o "Programming with curses"
+  Title (J): "curses"
+  Translator: 菊池彰 (Akira Kikuchi)
+  Translation Supervisor: 矢吹道郎 (Michiro Yabuki)
+  Publisher: Keigaku Publishing
+  Date: April 30, 1991
+  ISBN: 4-7665-1095-X
+  Price: 1,200 Yen
+  Number of pages: 83 plus 4 front matter
+  Comments: None.
+
+
+O'REILLY JAPAN, INCORPORATED:
+
+The following O'Reilly & Associates titles have been translated into
+Japanese by O'Reilly Japan, Incorporated:
+
+o PGP: Pretty Good Privacy
+o Running Linux, First Edition
+o Linux Network Administrator's Guide
+o Building Internet Firewalls
+o Java in a Nutshell, First Edition
+o Perl 5 Desktop Reference
+o Oracle PL/SQL Programming, First Edition (Part 1)
+o Plug-In ソフトウェア ハンドブック
+o Practical C++ Programming
+o Setting Up an Email Server (An Excerpt from "Managing Internet
+  Information Services")
+o Setting Up an FTP Server (An Excerpt from "Managing Internet
+  Information Services")
+o CGI Programming on the World Wide Web
+o The Whole Internet For Windows 95: User's Guide & Catalog
+o Exploring Java
+o Designing for the Web
+o Oracle PL/SQL Programming, First Edition (Part 2)
+o Making Tex Work
+o Networking Personal Computers with TCP/IP
+o Webmaster in a Nutshell
+o Linux Multimedia Guide
+o Java Network Programming
+o JavaScript: The Definitive Guide, Second Edition (Part 1)
+o Managing Projects with make
+o sendmail Desktop Reference
+o マルチリンガルWEBガイド
+o Java Threads
+o JavaScript: The Definitive Guide, Second Edition (Part 2)
+o sendmail, Second Edition (Part 1)
+o Web Client Programming with Perl
+o sed & awk, Second Edition
+o Developing Java Beans
+o Apache: The Definitive Guide
+o Linux in a Nutshell
+o Oracle Design
+o Programming Perl, Second Edition
+
+O'Reilly Japan, Incorporated can be contacted as follows:
+
+O'Reilly Japan, Incorporated
+Kiyoshige Building 2F
+12 Banchi, 12 Sanei-cho
+Shinjuku-ku, Tokyo 160
+JAPAN
++81-3-3356-5227 (phone)
++81-3-3356-5261 (facsimile)
+japan@oreilly.com
+http://www.oreilly.com/
+
+株式会社 オライリー・ジャパン
+〒160東京都新宿区三栄町12番地 清重ビル2F
+電  話: 03-3356-5227
+ＦＡＸ: 03-3356-5261
+japan@oreilly.com
+http://www.oreilly.com/
+
+More complete information on each title follows:
+
+o "PGP: Pretty Good Privacy"
+  Title (J): "PGP 暗号メールと電子署名"
+  Title (E): "PGP Ango Meru-to Denshi Shomei"
+  Translator: 株式会社ユニテック (UniTech Incorporated)
+  Translation Supervisor: 山本和彦 (Kazuhiko Yamamoto)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: April 15, 1996
+  ISBN: 4-900900-02-8
+  Price: 5,202 Yen
+  Number of pages: 397 plus 32 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (pp vii-
+    viii). Appendix G was added for including information on Japanese-
+    related problems with PGP. Includes a pull-out quick reference,
+    and in Japanese.
+
+o "Running Linux, First Edition"
+  Title (J): "RUNNING LINUX 導入からネットワーク構築まで"
+  Title (E): "RUNNING LINUX Donyu-kara Nettowaku Kochiku-made"
+  Translator: 小嶋隆一 (Ryuichi Kojima)
+  Technical Supervisor: 山崎康宏 (Yasuhiro Yamazaki)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: April 25, 1996
+  ISBN: 4-900900-00-1
+  Price: 6,283 Yen
+  Number of pages: 839 plus 32 front matter
+  Comments: The technical supervisor included a foreword (pp v-vi).
+    Appendix D contains extensive JE-HOWTO (Japanese Extensions
+    HOWTO) information. Appendix E contains the Japanese INFO-
+    SHEET for Linux.
+
+o "Linux Network Administrator's Guide"
+  Title (J): "Linux ネットワーク管理"
+  Title (E): "Linux Nettowaku Kanri"
+  Translators: 小嶋隆一 (Ryuichi Kojima) and 高尾哲康 (Tetsuyasu Takao)
+  Translation Supervisor: 山崎康宏 (Yasuhiro Yamazaki)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: July 10, 1996
+  ISBN: 4-900900-01-X
+  Price: 5,356 Yen
+  Number of pages: 453 plus 41 front matter
+  Comments: None.
+
+o "Building Internet Firewalls"
+  Title (J): "ファイアウォール構築 インターネット・セキュリティ"
+  Title (E): "Firewall Kochiku Internet Security"
+  Translator: 鈴木克彦 (Katsuhiko Suzuki)
+  Translation Supervisor: 歌代和正 (Kazumasa Utashiro)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: July 30, 1996
+  ISBN: 4-900900-03-6
+  Price: 5,356 Yen
+  Number of pages: 549 plus 30 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (pp v-vi).
+
+o "Java in a Nutshell, First Edition"
+  Title (J): "JAVA クイック リファレンス"
+  Title (E): "JAVA Kuikku Rifarensu"
+  Translator: 永松健司 (Kenji Nagamatsu)
+  Translation Supervisor: Nihon Sun Microsystems
+  Publisher: O'Reilly Japan, Incorporated
+  Date: August 8, 1996
+  ISBN: 4-900900-08-7
+  Price: 4,017 Yen
+  Number of pages: 571 plus 31 front matter
+  Comments: The translation supervisor included a foreword (pp
+    v-vi). The cover is the same as found on the revised English, that
+    is, it has an image of a tiger.
+
+o "Perl 5 Desktop Reference"
+  Title (J): "Perl 5 デスクトップ リファレンス"
+  Title (E): "Perl 5 Desukutoppu Rifarensu"
+  Translator: 株式会社エディックス (Edix Incorporated)
+  Translation Supervisor: 歌代和正 (Kazumasa Utashiro)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: September 5, 1996
+  ISBN: 4-900900-21-4
+  Price: 999 Yen
+  Number of pages: 50 plus 6 front matter
+  Format: Custom (203mm by 114mm)
+  Comments: An update to the Perl Version 4 Quick Reference included
+    in "Perl プログラミング" (First Edition) published by SoftBank.
+
+o "Oracle PL/SQL Programming" (Part 1)
+  Title (J): "オラクル PL/SQL プログラミング 基礎編"
+  Title (E): "Orakuru PL/SQL Puroguramingu Kisoben"
+  Translator: 株式会社ユニテック (UniTech Incorporated)
+  Translation Supervisor: 原陽一 (Yoichi Hara)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: October 22, 1996
+  ISBN: 4-900900-07-9
+  Price: 4,635 Yen
+  Number of pages: 511 plus 35 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (page vii).
+    This translation represents one part of the original English
+    edition.
+
+o "Plug-In ソフトウェア ハンドブック"
+  Title (E): "Plug-In Sofutouea Handobukku"
+  Authors: 次世代Plug-In研究グループ (Jisedai Plug-In Kenkyu Gurupu)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: October 30, 1996
+  ISBN: 4-900900-25-7
+  Price: 2,266 Yen
+  Number of pages: 203 plus 8 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: This book is not a translation but rather an original
+    title in Japanese.
+
+o "Practical C++ Programming"
+  Title (J): "C++ 実践プログラミング"
+  Title (E): "C++ Jissen Puroguramingu"
+  Translator: 谷口功 (Isao Taniguchi)
+  Translation Supervisor: 望月康司 (Koji Mochizuki)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: October 30, 1996
+  ISBN: 4-900900-10-9
+  Price: 5,871 Yen
+  Number of pages: 601 plus 29 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (page v).
+
+o "Setting Up an Email Server" (An Excerpt from "Managing Internet
+    Information Services")
+  Title (J): "Emailサーバ構築ガイド"
+  Title (E): "Email Saba Kochiku Gaido"
+  Translator: 加藤勝明 (Katsuaki Kato)
+  Translation Supervisors: 小川正夫 (Masao Ogawa) and 本多淳子 (Junko
+    Honda)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: October 30, 1996
+  ISBN: 4-900900-26-5
+  Price: 1,998 Yen
+  Number of pages: 143 plus 15 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisors included a foreword (page v).
+
+o "Setting Up an FTP Server" (An Excerpt from "Managing Internet
+    Information Services")
+  Title (J): "FTPサーバ構築ガイド"
+  Title (E): "FTP Saba Kochiku Gaido"
+  Translator: 加藤勝明 (Katsuaki Kato)
+  Translation Supervisors: 小川正夫 (Masao Ogawa) and 本多淳子 (Junko
+    Honda)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: October 30, 1996
+  ISBN: 4-900900-22-2
+  Price: 1,288 Yen
+  Number of pages: 81 plus 14 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisors included a foreword (page v).
+
+o "CGI Programming on the World Wide Web"
+  Title (J): "CGI プログラミング"
+  Title (E): "CGI Puroguramingu"
+  Translator: 株式会社エディックス (Edix Incorporated)
+  Translation Supervisor: 田辺茂也 (Shigeya Tanabe)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: November 15, 1996
+  ISBN: 4-900900-13-3
+  Price: 4,996 Yen
+  Number of pages: 479 plus 19 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (pp v-vi).
+
+o "The Whole Internet For Windows 95: User's Guide & Catalog"
+  Title (J): "インターネットユーザーズガイド Windows95版"
+  Title (E): "Intanetto Yuzazu Gaido Windows95 Ban"
+  Translator: 株式会社エディックス (Edix Incorporated)
+  Translation Supervisor: 萩原正義 (Masayoshi Hagiwara)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: November 15, 1996
+  ISBN: 4-900900-06-0
+  Price: 6,077 Yen
+  Number of pages: 695 plus 30 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (pp v-vi).
+    An included CD-ROM contains the Japanese version of Microsoft's
+    Internet Explorer software.
+
+o "Exploring Java"
+  Title (J): "JAVA 実践プログラミング"
+  Title (E): "Java Jissen Puroguramingu"
+  Translator: 安藤進 (Susumu Ando)
+  Translation Supervisor: Nihon Sun Microsystems
+  Publisher: O'Reilly Japan, Incorporated
+  Date: November 20, 1996
+  ISBN: 4-900900-17-6
+  Price: 4,635 Yen
+  Number of pages: 435 plus 23 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor, Koji Uno (宇野浩司), included a
+    foreword (page vii).
+
+o "Designing for the Web"
+  Title (J): "WEBデザインハンドブック"
+  Title (E): "Web Dezain Hando Bukku"
+  Translator: 株式会社ユニテック (UniTech Incorporated)
+  Translation Supervisor: 土橋敬彦 (Takahiko Dobashi)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: December 25, 1996
+  ISBN: 4-900900-12-5
+  Price: 4,017 Yen
+  Number of pages: 167 plus 16 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (pp v-vi).
+
+o "Oracle PL/SQL Programming" (Part 2)
+  Title (J): "オラクル PL/SQL プログラミング 応用編"
+  Title (E): "Orakuru PL/SQL Puroguramingu Oyoben"
+  Translator: 株式会社ユニテック (UniTech Incorporated)
+  Translation Supervisor: 原陽一 (Yoichi Hara)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: January 28, 1997
+  ISBN: 4-900900-11-7
+  Price: 4,429 Yen
+  Number of pages: 441 plus 26 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (page v).
+    This translation represents the second part of the original
+    English edition.
+
+o "Making Tex Work"
+  Title (J): "TEXエッセンシャルガイド"
+  Title (E): "TEX Essensharu Gaido"
+  Translator: 横山亮 (Ryo Yokoyama)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: March 28, 1997
+  ISBN: 4-900900-28-1
+  Price: 2,369 Yen
+  Number of pages: 219 plus 28 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translator included a foreword (page v).
+    This translation represents an excerpt from the original
+    English edition.
+
+o "Networking Personal Computers with TCP/IP"
+  Title (J): "TCP/IPによるPCネットワーク管理"
+  Title (E): "TCP/IP ni yoru PC Nettowaku Kanri"
+  Translator: アウル出版企画 (Auru Shuppan Kikaku)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: April 15, 1997
+  ISBN: 4-900900-05-2
+  Price: 3,900 Yen
+  Number of pages: 397 plus 17 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translator included a foreword (page v).
+
+o "Webmaster in a Nutshell"
+  Title (J): "WEBMASTERクイックリファレンス"
+  Title (E): "WEBMASTER Kuikku Rifarensu"
+  Translator: 株式会社 ユニテック (UniTech Incorporated)
+  Translation Supervisor: 田辺茂也 (Shigeya Tanabe)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: April 30, 1997
+  ISBN: 4-900900-32-X
+  Price: 3,900 Yen
+  Number of pages: 455 plus 16 front matter
+  Comments: The translation supervisor included a foreword (pp v-vi).
+
+o "Linux Multimedia Guide"
+  Title (J): "LINUX マルチメディアガイド"
+  Title (E): "LINUX Maruchi Media Gaido"
+  Translator: 山形浩生 (Hiroo Yamagata)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: May 28, 1996
+  ISBN: 4-900900-31-1
+  Price: 4,300 Yen
+  Number of pages: 449 plus 28 front matter
+  Comments: The translator included a foreword (page v).
+
+o "Java Network Programming"
+  Title (J): "JAVAネットワークプログラミング"
+  Title (E): "JAVA Nettowaku Puroguramingu"
+  Translator: 株式会社 ユニテック (UniTech Incorporated)
+  Translation Supervisor: 戸松豊和 (Toyokazu Tomatsu)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: July 22, 1997
+  ISBN: 4-900900-56-7
+  Price: 4,300 Yen
+  Number of pages: 439 plus 21 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (page v).
+
+o "JavaScript: The Definitive Guide, Second Edition" (Part 1)
+  Title (J): "JavaScriptプログラミング"
+  Title (E): "JavaScript Puroguramingu"
+  Translator: 安藤進 (Susumu Ando)
+  Translation Supervisor: 村上列 (Retsu Murakami)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: July 22, 1997
+  ISBN: 4-900900-36-2
+  Price: 3,900 Yen
+  Number of pages: 405 plus 23 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The author included a special foreword (page v). The
+    translation supervisor also included a foreword (page vi). The
+    translator include some notes (page 401). This translation
+    represents the first part of the original English edition.
+
+o "Managing Projects with make"
+  Title (J): "make 改訂版"
+  Title (E): "make Kaiteiban"
+  Translator: 菊池彰 (Akira Kikuchi)
+  Translation Supervisor: 矢吹道郎 (Michiro Yabuki)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: July 28, 1991
+  ISBN: 4-900900-60-5
+  Price: 1,800 Yen
+  Number of pages: 151 plus 19 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (page v).
+
+o "sendmail Desktop Reference"
+  Title (J): "sendmailデスクトップリファレンス"
+  Title (E): "sendmail Desukutoppu Rifarensu"
+  Translator: 中村素典 (Motonori Nakamura)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: July 28, 1997
+  ISBN: 4-900900-57-5
+  Price: 1,100 Yen
+  Number of pages: 88 plus 8 front matter
+  Format: Custom (203mm by 114mm)
+  Comments: None.
+
+o "マルチリンガルWEBガイド"
+  Title (E): "Multilingual WEB Guide"
+  Authors: 三上吉彦 (Yoshihiko Mikami), 関根謙司 (Kenji Sekine), and
+    小原信利 (Nobutoshi Kohara)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: August 25, 1997
+  ISBN: 4-900900-23-0
+  Price: 3,900 Yen
+  Number of pages: 313 plus 12 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: This book is not a Japanese translation of an English
+    book, but rather an original Japanese book. It includes a CD-ROM
+    (containing demo version of various multilingual web browsers and
+    other related software).
+
+o "Java Threads"
+  Title (J): "JAVAスレッドプログラミング"
+  Title (E): "JAVA Sureddo Puroguramingu"
+  Translator: 西村利浩 (Toshihiro Nishimura)
+  Translation Supervisor: 戸松豊和 (Toyokazu Tomatsu)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: September 19, 1997
+  ISBN: 4-900900-54-0
+  Price: 3,400 Yen
+  Number of pages: 257 plus 15 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (page v).
+
+o "JavaScript: The Definitive Guide, Second Edition" (Part 2)
+  Title (J): "JavaScriptリファレンス"
+  Title (E): "JavaScript Rifarensu"
+  Translator: 安藤進 (Susumu Ando)
+  Translation Supervisor: 村上列 (Retsu Murakami)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: September 29, 1997
+  ISBN: 4-900900-61-3
+  Price: 3,400 Yen
+  Number of pages: 383 plus 6 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (pp v-vi).
+    This translation represents the second part of the original
+    English edition.
+
+o "sendmail, Second Edition" (Part 1)
+  Title (J): "sendmailシステム管理"
+  Title (E): "sendmail Shisutemu Kanri"
+  Translator: 鈴木克彦 (Katsuhiko Suzuki)
+  Translation Supervisor: 中村素典 (Motonori Nakamura)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: September 29, 1997
+  ISBN: 4-900900-40-0
+  Price: 5,500 Yen
+  Number of pages: 566 plus 26 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (pp v-vi).
+    This translation represents the first part of the original English
+    edition.
+
+o "Web Client Programming with Perl"
+  Title (J): "Webクライアント プログラミング"
+  Title (E): "Web Kuraianto Puroguramingu"
+  Translator: 須田隆久 (Takahisa Suda)
+  Translation Supervisor: 法林浩之 (Hiroyuki Horin)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: September 29, 1997
+  ISBN: 4-900900-62-1
+  Price: 2,900 Yen
+  Number of pages: 237 plus 18 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (pp v-vi).
+
+o "sed & awk, Second Edition"
+  Title (J): "sed & awkプログラミング 改訂版"
+  Title (E): "sed & awk Puroguramingu Kaiteiban"
+  Translator: 福崎俊博 (Toshihiro Fukuzaki)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: October 27, 1991
+  ISBN: 4-900900-58-3
+  Price: 4,100 Yen
+  Number of pages: 465 plus 20 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "Developing Java Beans"
+  Title (J): "JAVA Beans 基礎から開発まで"
+  Title (E): "JAVA Beans Kiso-kara Kaihatsu-made"
+  Translator: 鷲見豊 (Yutaka Sumi)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: October 28, 1997
+  ISBN: 4-900900-47-8
+  Price: 3,700 Yen
+  Number of pages: 305 plus 20 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translator included a foreword (pp vii-viii).
+
+o "Apache: The Definitive Guide"
+  Title (J): "Apacheハンドブック"
+  Title (E): "Apache Handobukku"
+  Translator: 三代川信義 (Nobuyoshi Miyokawa)
+  Translation Supervisor: 田辺茂也 (Shigeya Tanabe)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: November 25, 1997
+  ISBN: 4-900900-37-0
+  Price: 3,400 Yen
+  Number of pages: 317 plus 25 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (page v).
+
+o "Linux in a Nutshell"
+  Title (J): "LINUXクイックリファレンス"
+  Title (E): "LINUX Kuikku Rifarensu"
+  Translators: 山崎康宏 (Yasuhiro Yamazaki), 山崎邦子 (Kuniko
+    Yamazaki), and 砂畑浩樹 (Hiroki Sunahata)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: November 25, 1997
+  ISBN: 4-900900-43-5
+  Price: 4,300 Yen
+  Number of pages: 527 plus 16 front matter
+  Comments: One of the translators included a foreword (page v).
+
+o "Oracle Design"
+  Title (J): "Oracleシステム設計"
+  Title (E): "Oracle Shisutemu Sekkei"
+  Translator: 株式会社ユニテック (UniTech Incorporated)
+  Translation Supervisor: 宮原徹 (Toru Miyahara)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: January 28, 1997
+  ISBN: 4-900900-46-X
+  Price: 5,200 Yen
+  Number of pages: 551 plus 29 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: The translation supervisor included a foreword (pp v-vi).
+
+o "Programming Perl, Second Edition"
+  Title (J): "プログラミングPerl改訂版"
+  Title (E): "Puroguramingu Perl Kaiteiban"
+  Translator: 近藤嘉雪 (Yoshiyuki Kondo)
+  Publisher: O'Reilly Japan, Incorporated
+  Date: December 25, 1997
+  ISBN: 4-900900-48-6
+  Price: 4,900 Yen
+  Number of pages: 762 plus 27 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: Larry Wall wrote a special foreword (pp v-vi). The
+    translator also included a foreword (pp vii-viii).
+
+
+SOFTBANK CORPORATION:
+
+The following O'Reilly & Associates titles have been translated into
+Japanese by SOFTBANK Corporation:
+
+o Practical C Programming (First Edition)
+o Programming Perl
+o Learning GNU Emacs
+o Learning Perl
+o Understanding Japanese Information Processing
+o X Window System Volume 0: X Protocol Reference Manual
+o X Window System Volume 1: Xlib Programming Manual
+o X Window System Volume 2: Xlib Reference Manual
+o X Window System Volume 3M: X Window System User's Guide
+o X Window System Volume 4: X Toolkit Intrinsics Programming Manual
+o X Window System Volume 5: X Toolkit Intrinsics Reference Manual
+o X Window System Volume 6M: Motif Programming Manual
+o X Window System Volume 7: XView Programming Manual
+o X Window System Volume 7: XView Reference Manual
+o X Window System Volume 8: X Window System Adminstrator's Guide
+o Programmer's Supplement for Release 5
+
+SOFTBANK Corporation can be contacted as follows:
+
+SOFTBANK Corporation
+3-42-3 Nihonbashi-Hamacho
+Chuo-ku, Tokyo 103
+JAPAN
++81-3-5642-8101 (phone)
++81-3-5641-3424 (facsimile)
+http://www.softbank.co.jp/
+
+ソフトバンク株式会社
+〒103東京都中央区日本橋浜町3-42-3
+電  話: 03-5642-8101
+ＦＡＸ: 03-5641-3424
+http://www.softbank.co.jp/
+
+More complete information on each title follows:
+
+o "Practical C Programming (First Edition)"
+  Title (J): "現実的なCプログラミング"
+  Title (E): "Genjitsuteki-na C Puroguramingu"
+  Translator: 岩谷宏 (Hiroshi Iwatani)
+  Publisher: SOFTBANK Corporation
+  Date: June 17, 1992
+  ISBN: 4-89052-321-9
+  Price: 3,600 Yen
+  Number of pages: 516 plus 10 front matter
+  Comments: The translator included a postscript (pp 503-505). It is
+    based on the First Edition of the original English.
+
+o "Programming Perl"
+  Title (J): "Perlプログラミング"
+  Title (E): "Perl Puroguramingu"
+  Translator: 近藤嘉雪 (Yoshiyuki Kondo)
+  Publisher: SOFTBANK Corporation
+  Date: February 28, 1993
+  ISBN: 4-89052-384-7
+  Price: 4,500 Yen
+  Number of pages: 637 plus 32 front matter
+  Comments: Appendix C (pp 555-560) lists differences between the
+    version of Perl described in the original book (Version 4.010) and
+    Versions 4.019 and 4.035. This appendix also includes information
+    on jperl (Japanese Perl). The book also includes a quick reference
+    guide in Japanese. The text itself has Perl Version 4.035 updates
+    sprinkled throughout (so, the Japanese translation can be thought
+    of as being more up-to-date than the original!). The translator
+    also included a foreword. The abundant humor and colloquialisms
+    found in the original made for many translator's notes as a way to
+    explain them. I consider this to be one of the best Japanese
+    translations of an O'Reilly & Associates book. Obsolete due to new
+    edition translated by O'Reilly Japan.
+
+o "Learning GNU Emacs"
+  Title (J): "GNU Emacs"
+  Translators: 前田薫, 桐生昂, 有村光晴, and 行木孝夫 (Kaoru Maeda,
+    Ko Kiryu, Mitsuharu Arimura, and Takao Namiki)
+  Translation Supervisor: 株式会社ハイパーウェア (HyperWare Corporation)
+  Publisher: SOFTBANK Corporation
+  Date: October 20, 1993
+  ISBN: 4-89052-444-4
+  Price: 3,800 Yen
+  Number of pages: 538 (includes front matter)
+  Comments: Appendix I (pp 481-487) has information on Japanese-
+    capable versions of GNU Emacs, such as Nemacs, Demacs, and Mule.
+    Appendix J (pp 488-496) has information on Japanese input
+    software, such as Tamago and SKK. Includes a pull-out reference
+    card. One of the translators, Kaoru Maeda, wrote a foreword (page
+    31).
+
+o "Learning Perl"
+  Title (J): "初めてのPerl"
+  Title (E): "Hajimete-no Perl"
+  Translator: 近藤嘉雪 (Yoshiyuki Kondo)
+  Publisher: SOFTBANK Corporation
+  Date: June 16, 1995
+  ISBN: 4-89052-678-1
+  Price: 2,900 Yen
+  Number of pages: 308 plus 32 front matter
+  Comments: The translator wrote a foreword (pp vii-viii). I also
+    consider this book a very faithful translation of the original,
+    and its treatment of the humor is splendidly executed. It also
+    incorporates corrections from the latest English-edition errata
+    sheets.
+
+o "Understanding Japanese Information Processing"
+  Title (J): "日本語情報処理"
+  Title (E): "Nihongo Joho Shori"
+  Translators: Jack Halpern (春遍雀來) and 鈴木武生 (Takeo Suzuki)
+  Publisher: SOFTBANK Corporation
+  Date: August 25, 1995
+  ISBN: 4-89052-708-7
+  Price: 4,800 Yen
+  Number of pages: 497 plus 38 front matter
+  Comments: One of the translators, Jack Halpern, wrote a foreword (pp
+    v-vi), and the author wrote a special foreword for this edition
+    (page iii). This book has corrections and changes not found in the
+    English edition (First Edition, second printing).
+
+o "X Window System Volume 0: X Protocol Reference Manual"
+  Title (J): "Ｘプロトコル・リファレンス・マニュアル"
+  Title (E): "X Purotokoru Rifarensu Manyuaru"
+  Translator: 石川和也 (Kazuya Ishikawa)
+  Publisher: SOFTBANK Corporation
+  Date: September 10, 1991
+  ISBN: 4-89052-249-2
+  Price: 5,000 Yen
+  Number of pages: 462 plus 18 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "X Window System Volume 1: Xlib Programming Manual"
+  Title (J): "Xlibプログラミング・マニュアル"
+  Title (E): "Xlib Puroguramingu Manyuaru"
+  Translation Supervisors: 坂下秀 (Shu Sakashita), 荒井美千子 (Michiko
+    Arai), 西垣内昌喜 (Masaki Nishigaichi), and 藤井裕史 (Hiroshi
+    Fujii)
+  Publisher: SOFTBANK Corporation
+  Date: March 31, 1993
+  ISBN: 4-89052-398-7
+  Price: 7,000 Yen
+  Number of pages: 746 plus 37 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "X Window System Volume 2: Xlib Reference Manual"
+  Title (J): "Xlibリファレンス・マニュアル"
+  Title (E): "Xlib Rifarensu Manyuaru"
+  Translation Supervisor: 坂下秀 (Shu Sakashita)
+  Publisher: SOFTBANK Corporation
+  Date: September 20, 1993
+  ISBN: 4-89052-441-X
+  Price: 8,000 Yen
+  Number of pages: 942 plus 28 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "X Window System Volume 3M: X Window System User's Guide"
+  Title (J): "Ｘウィンドウ・システム・ユーザ・ガイド"
+  Title (E): "X Uindo Shisutemu Yuza Gaido"
+  Translation Supervisor: 大木敦雄 (Atsuo Ohki)
+  Publisher: SOFTBANK Corporation
+  Date: September 25, 1993
+  ISBN: 4-89052-442-8
+  Price: 8,000 Yen
+  Number of pages: 796 plus 28 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "X Window System Volume 4: X Toolkit Intrinsics Programming Manual"
+  Title (J): "Ｘツールキット・イントリンシクス・プログラミング・マニュアル"
+  Title (E): "X Tsuru Kitto Intorinshikusu Puroguramingu Manyuaru"
+  Translation Supervisor: 今泉貴史 (Takashi Imaizumi)
+  Publisher: SOFTBANK Corporation
+  Date: March 30, 1992
+  ISBN: 4-89052-301-4
+  Price: 5,000 Yen
+  Number of pages: 578 plus 30 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "X Window System Volume 5: X Toolkit Intrinsics Reference Manual"
+  Title (J): "Ｘツールキット・イントリンシクス・リファレンス・マニュアル"
+  Title (E): "X Tsuru Kitto Intorinshikusu Rifarensu Manyuaru"
+  Translation Supervisor: 今泉貴史 (Takashi Imaizumi)
+  Publisher: SOFTBANK Corporation
+  Date: February 15, 1994
+  ISBN: 4-89052-490-8
+  Price: 8,000 Yen
+  Number of pages: 786 plus 14 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "X Window System Volume 6M: Motif Programming Manual"
+  Title (J): "Motifプログラミング・マニュアル"
+  Title (E): "Motif Puroguramingu Manyuaru"
+  Translation Supervisor: 吉田茂樹 (Shigeki Yoshida)
+  Publisher: SOFTBANK Corporation
+  Date: June 1, 1993
+  ISBN: 4-89052-409-6
+  Price: 8,000 Yen
+  Number of pages: 968 plus 39 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "X Window System Volume 7: XView Programming Manual"
+  Title (J): "XView Ver. 3プログラミング・マニュアル"
+  Title (E): "XView Ver. 3 Puroguramingu Manyuaru"
+  Translation Supervisor: 石川和也 (Kazuya Ishikawa)
+  Publisher: SOFTBANK Corporation
+  Date: October 30, 1992
+  ISBN: 4-89052-353-7
+  Price: 7,000 Yen
+  Number of pages: 714 plus 38 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "X Window System Volume 7: XView Reference Manual"
+  Title (J): "XView Ver. 3リファレンス・マニュアル"
+  Title (E): "XView Ver. 3 Rifarensu Manyuaru"
+  Translation Supervisor: 石川和也 (Kazuya Ishikawa)
+  Publisher: SOFTBANK Corporation
+  Date: October 30, 1992
+  ISBN: 4-89052-354-5
+  Price: 3,000 Yen
+  Number of pages: 234 plus 13 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: None.
+
+o "X Window System Volume 8: X Window System Adminstrator's Guide"
+  Title (J): "Ｘウィンドウ・システム・管理ガイド"
+  Title (E): "X Uindo Shisutemu Kanri Gaido"
+  Translation Supervisor: 小幡広昭 (Hiroaki Obata)
+  Publisher: SOFTBANK Corporation
+  Date: January 31, 1994
+  ISBN: 4-89052-487-8
+  Price: 5,500 Yen
+  Number of pages: 330 plus 24 front matter and 6 back matter
+  Format: B5 (257mm by 182mm)
+  Comments: Includes CD-ROM.
+
+o "Programmer's Supplement for Release 5"
+  Title (J): "X11 Release 5増補版"
+  Title (E): "X11 Release 5 Zohoban"
+  Translation Supervisor: 大木敦雄 (Atsuo Ohki)
+  Publisher: SOFTBANK Corporation
+  Date: July 20, 1992
+  ISBN: 4-89052-330-8
+  Price: 4,000 Yen
+  Number of pages: 344 plus 23 front matter
+  Format: B5 (257mm by 182mm)
+  Comments: This book is equivalent to the book entitled "The X Window
+    System in a Nutshell."
+---  END  ---

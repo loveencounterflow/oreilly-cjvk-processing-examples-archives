@@ -1,0 +1,1261 @@
+Version 08/21/95
+
+More Errata for "Understanding Japanese Information Processing"
+To be fixed in 3rd Printing (First Edition)
+
+
+Quote Pages:
+
+o Line 1 of Jack Halpern's quote needs an "fi" ligature. Also, change
+  the "Research Fellow" affiliation line as follows:
+
+  "Editor in Chief, Kanji Dictionary Publishing Society"
+
+o Append the following quotes:
+
+  "A programmer interested in writing a computer program which will
+  handle the Japanese language will find the book indispensable."
+
+  -- Multilingual Computing
+
+  "Ken Lunde's new book, "Understanding Japanese Information
+  Processing", has become the bible of those using Japanese on the
+  Internet."
+
+  -- Frederik L. Schodt
+     Author, "America and the Four Japans: Friend, Foe, Model, Mirror"
+
+  "This is a must-have book for anyone developing software for the
+  Japanese market. Covering a complex and arcane subject thoroughly
+  while maintaining readability, it is also the clear choice as a core
+  text for any course on Japanese information processing."
+
+  -- Earl H. Kinmonth, Reader in Japanese Studies
+     Centre for Japanese Studies, University of Sheffield
+
+  "This is a heavily detailed reference book; you should expect your
+  copy to become dog-eared and splattered with coffee stains."
+
+  -- Dr. Jeffrey S. Haemer
+     President, Canary Software, Inc.
+
+  "Thank you for your wonderful book; it was my bible and inspiration
+  throughout the port of our large application, Tactician."
+
+  -- Bruce Leavitt, Director of Development
+     Tactician Corporation
+
+
+Copyright Page (page iv):
+
+o Add a third line to the Printing History section with month, year,
+  and "Minor corrections."
+
+o Add the following paragraph before the paragraph that begins with
+  "Many of the designations":
+
+  "Nutshell handbook and the Nutshell Handbook logo are registered
+  trademarks of O'Reilly & Associates, Inc."
+
+
+Page ix:
+
+o Change "Online Dictionaries" to "Electronic Dictionaries" near the
+  bottom of the page.
+
+
+Page xxii:
+
+o Change "Pronunication" to "Symbol Name" in Table 5-7's title.
+
+
+Page xxiii:
+
+o Change the title of Table 8-1 to "Explanations of Some KANJIDIC
+  Fields."
+
+
+Page xxiv:
+
+o Add the following table entry:
+
+  "J-7  Mapping Table (to JIS X 0212-1990 User-defined Positions) 338"
+
+
+Page xxx:
+
+o Add the following paragraph to the end of the "Conventions" section:
+
+  "Footnotes are used for parenthetical remarks. Sometimes, lies are
+  spoken to simplify the discussion (especially in Chapter 2 where I
+  describe the Japanese writing system), and the footnotes (usually)
+  restore the truth."
+
+
+Page xxxi:
+
+o Change "Dave McClane" to "Dave McLane" in the second paragraph.
+
+
+Page 2:
+
+o Change "80 sounds" to "108 syllables" in the second paragraph.
+
+o Change "1,500" to "1,600" in the second paragraph.
+
+o Change "pictures or meanings" to "meanings or sounds" in the
+  last line of the second pagraph.
+
+
+Page 3:
+
+o Insert "mostly" between "are" and "used for writing" in the second
+  line of the fourth paragraph.
+
+o Change "some verbs" to "inflectional endings" in the second line of
+  the fourth paragraph.
+
+o Change the second-to-last sentence on the page (beginning with
+  "Kanji usually" and ending with "or ideographs") as follows:
+
+  "Kanji represent meanings, and are often called ideographs or
+  logographs."
+
+
+Page 4:
+
+o Change "still" to "often" at the end of the second line, first
+  paragraph.
+
+o Pluralize "meaning" at the end of the fifth line, first paragraph.
+
+o Change "in the literature of fields such as computer science" in the
+  third paragraph as follows:
+
+  "in fields such as fashion and cosmetics"
+
+
+Page 7:
+
+o Merge the first and second paragraphs (the first paragraph ends with
+  "method," and the second begins with "Two").
+
+o Break the third paragraph after the footnote reference (middle of
+  page).
+
+
+Page 20:
+
+o Change the fourth table note for Table 2-2 as follows:
+
+  "The hiragana ん is considered an independent syllable, and is
+  pronounced approximately ng."
+
+
+Page 21:
+
+o Change "consonant" to "sound" at the end of the first line of the
+  first paragraph.
+
+o Change "case of" to "voiced version of" in the fourth line of the
+  first paragraph.
+
+o Insert "some" between "to write" and "native Japanese" in the fourth
+  line of the third paragraph.
+
+o Insert a paragraph break before the last sentence of the third
+  paragraph.
+
+o Insert "with minor exceptions," before "represent the same set" in
+  the first line of the last paragraph.
+
+o Reverse "used" and "primarily" in the third line of the last
+  paragraph.
+
+o Delete "in two ways" from the third line of the last paragraph.
+
+o Insert "to write onomatopoeic words," before "and for emphasis" in
+  the fourth line of the last paragraph.
+
+
+Page 22:
+
+o Change the fourth table note for Table 2-3 as follows:
+
+  "The katakana ン is considered an independent syllable, and is
+  pronounced approximately ng."
+
+
+Page 23:
+
+o Change "writing system" to "script" in the first line of the last
+  paragraph.
+
+o Change "1,500" to "1,600" in the third line of the last paragraph.
+
+
+Page 24:
+
+o Remove the last sentence of the first paragraph.
+
+o Change "also" to "usually" in the first line of the fourth
+  paragraph.
+
+o Delete the last sentence of the fourth paragraph (begins with "The
+  terms").
+
+o Change "27" to "over 200" in the second line of the fifth paragraph.
+
+o Delete the last sentence of the fifth paragraph (begins with "No
+  matter").
+
+o Change "native" to "original" in the second line of the last
+  paragraph.
+
+
+Page 25:
+
+o Insert "often" between "and" and "use" spanning the second and third
+  lines of the second paragraph.
+
+o Insert "often" between "is" and "used" in the fourth line of the
+  second paragraph.
+
+
+Page 26:
+
+o Insert "and other non-radical elements" after "radicals" in the
+  first line of the first paragraph.
+
+o Remove the word "meaningful" from the second line of the first
+  paragraph.
+
+
+Page 27:
+
+o Change "pictures" to "characters" in the first line of the third
+  paragraph.
+
+o Change "pronunciation" to "sound" in the last line of the last
+  paragraph.
+
+
+Page 28:
+
+o Change "basic" to "etymological" in the first line.
+
+
+Page 29:
+
+o Change "1,500" to "1,600" in the first line of the last paragraph.
+
+
+Page 30:
+
+o Change "kanji" to "characters" globally in the second, third, and
+  fourth paragraphs.
+
+o Change the first instance of "kanji" to "Chinese characters" in
+  the fifth paragraph.
+
+
+Page 32:
+
+o Change "many" to "some" in the sixth line of the first paragraph.
+
+o Insert "even" between "were" and "borrowed" in the sixth line of the
+  first paragraph.
+
+o Append the following paragraph to the end of the chapter:
+
+  "I suggest the front matter of Jack Halpern's "New Japanese-English
+  Character Dictionary" as additional reference material on the
+  history and development of the Japanese writing system. More
+  specifically, pp 50a through 60a of that reference."
+
+
+Page 36:
+
+o Change "International Standards Organization" to "International
+  Organization for Standardization" in the footnote.
+
+
+Page 44:
+
+o Remove "unique" from the first line.
+
+
+Page 49:
+
+o Change "International Standards Organization" to "International
+  Organization for Standardization" in the second-to-last paragraph.
+
+
+Page 59:
+
+o Change "has" in "one goal of this book has been achieved" to "will
+  have" in the third paragraph.
+
+
+Page 69:
+
+o Move the "Shift-out" and "Shift-in" lines in Table 4-8 from the
+  "JIS8 half-width katakana" entry to the "JIS7 half-width katakana"
+  entry, surrounding the "Byte range" line.
+
+
+Page 70:
+
+o Change "line" from the sentence beginning with "To terminate the
+  line" to "string" in the second paragraph.
+
+o Append the following sentences to the third-to-last paragraph
+  (begins with "JIS7 encoding is ..."):
+
+  "An alternate method for encoding half-width katakana under JIS7
+  uses ASCII SO (shift-out) and SI (shift-in) instead of an escape
+  sequence. Half-width katakana sequences begin with a SO character,
+  and are terminated with a SI character. This method is described in
+  JIS X 0201-1976."
+
+o Replace the second-to-last paragraph (begins with "The encoding
+  range ...") with the following (I mostly deleted):
+
+  "The encoding range for JIS8 includes eight-bit bytes (its range is
+  161-233, and is identical to the half-width katakana range in
+  Shift-JIS encoding). The text stream must be in one-byte-per-
+  character mode. This method is described in JIS X 0201-1976."
+
+
+Page 87:
+
+o Change the data on the line for the GB 2312-80 two-byte character
+  escape sequence in Table 4-22 as follows:
+
+  27 36 65    1B 24 41    033 044 101
+
+
+Page 97:
+
+o Replace "will remove" with "does not include" in the first line
+  (this actually spans the first and second line).
+
+
+Page 103:
+
+o Change "English" to "Roman (or Latin)" in the first bulleted item.
+
+o Change "English" to "Roman" in the second line of the last
+  paragraph.
+
+
+Page 107:
+
+o Change "one long" to "a single" in the second line of the second
+  paragraph.
+
+
+Page 108:
+
+o Change "pronunciation" to "symbol name" in the third line of the
+  first paragraph.
+
+o Change "Pronunication" to "Symbol Name" in Table 5-7's title.
+
+
+Page 110:
+
+o Change "In most cases, a given kanji has" to "Almost all kanji have"
+  in the first line of the first paragraph.
+
+o Delete "indirect" from the last line of the third paragraph.
+
+
+Page 115:
+
+o Remove "all" from the fifth line of the first paragraph.
+
+
+Page 119:
+
+o Insert "entire" before "Thumb-shift keyboard" in the last line of
+  the first paragraph.
+
+o Remove "in all its glory" from the first paragraph.
+
+o Remove "size of the" from the second line of the last paragraph.
+
+
+Page 125:
+
+o Delete the last sentence from the second paragraph (begins with "I
+  plan to include more...").
+
+
+Page 126:
+
+o Romanize the dictionary name, at the end of the second paragraph, in
+  parentheses.
+
+o Change "total stroke number" to "total stroke count" in the last
+  paragraph (sixth line from the end).
+
+
+Page 127:
+
+o Romanize the first instance of all three dictionary names in
+  parentheses.
+
+o Change "to index" to "to locate" (three instances -- two in first
+  paragraph, and one in the fourth).
+
+o Remove "specialized" from the first line of the second paragraph.
+
+
+Page 144:
+
+o Romanize the TrueType font names in parentheses following their
+  names in Japanese in the third paragraph.
+
+o Add the following paragraph at the end of the page:
+
+  "For more information on TeX in general, I suggest "Making TeX Work"
+  by Norman Walsh. Chapter 7 of that book includes some useful
+  information on Japanese versions of TeX."
+
+
+Page 145:
+
+o Change "These others" to "These other typesetting and
+  page-description languages" in the first paragraph.
+
+
+Page 152:
+
+o Put "Type on Call" in double quotes in Table 6-13.
+
+
+Page 156:
+
+o Line 5 has "let's," but should be "lets" instead.
+
+
+Page 170:
+
+o Reverse order of "JIS" and "Shift-JIS" in last paragraph of the page.
+
+
+Page 187:
+
+o Change "total number of strokes" to "the number of strokes of the
+  nonradical part" in the fourth line of the last paragraph. Also,
+  italicize "nonradical" for emphasis.
+
+
+Page 190:
+
+o Change "rows 47 through 84" to "rows 48 through 84" in the fourth
+  paragraph.
+
+
+Page 193:
+
+o Change "cells" to "code positions" in the fourth line of the fourth
+  paragraph.
+
+
+Page 197:
+
+o Change "Online" to "Electronic" in the "In this Chapter:" box.
+
+
+Page 203:
+
+o Change "such" to "so" in the third line of the seventh paragraph.
+
+
+Page 205:
+
+o Change "routines" to "utilities" in the fourth line of the first
+  paragraph.
+
+
+Page 207:
+
+o Add the following sentence after the fourth paragraph:
+
+  "Wnn supports a multilingual environment, not only for Japanese, but
+  also for Chinese, Korean, and many European scripts."
+
+
+Page 212:
+
+o Add a reference to the Japanese translation of "Learning GNU Emacs"
+  by Softbank, and to "GNU Emacs Manual" by the Free Software
+  Foundation in the second paragraph.
+
+o Add a reference to the book "入門Mule" to the end of the section on
+  Mule.
+
+o Add a reference to the book "入門NEmacs" to the end of the section
+  on Nemacs.
+
+
+Page 215:
+
+o Change Stephen Chung's e-mail address to the following:
+
+  sschun@ccmail.monsanto.com
+
+
+Page 216:
+
+o Change "There is a periodical, published quarterly" to "There was
+  a period, published between 1986 and 1993" in the third paragraph.
+
+o Add "It is a shame that this periodical has been discontinued." to
+  the end of the third paragraph.
+
+
+Page 218:
+
+o Change "Online Dictionaries" to "Electronic Dictionaries" in the
+  section head. Also change other instances, in the first (first line)
+  and last paragraphs (first line).
+
+o Change "Sony Data Discman" to "electronic book player" in the fourth
+  line of the second paragraph.
+
+o Add the following dictionary to the bulleted list of electronic
+  books:
+
+  新漢英字典電子ブック版 by 日外アソシエーツ
+
+o Change "usually" to "always" in the fourth line of the third
+  paragraph.
+
+
+Page 219:
+
+o Remove both instances of "public domain" from the first paragraph.
+
+o Change "public domain" to "FreeWare" in the second paragraph.
+
+o In the second paragraph, replace the sentence beginning with "At
+  present" and ending with "developers" with the following:
+
+  "The copyright on EDICT and its documentation is held by Jim,
+  however it is freely available for non-commercial use."
+
+o In the third paragraph, replace 67,000 with "over 100,000," and
+  replace 15,000 with "over 50,000."
+
+o Change "and" into "its" at the end of the third line of the
+  third paragraph.
+
+o Add "and its usage license statement" after "lexographical
+  principles," in the third paragraph.
+
+o Add the following paragraph to the end of the page:
+
+  "KANJIDIC also has a copyright, however Jim has made it freely
+  available on the same basis as EDICT. The copyright on some
+  fields is held by others. For example, the SKIP field was
+  included with the permission of Jack Halpern and his publishers.
+  Again the kanjidic.doc file explains the copyright details
+  and usage procedures."
+
+
+Page 220:
+
+o Change the title of Table 8-1 to "Explanations of Some KANJIDIC
+  Fields."
+
+o Change the "F" entry of Table 8-1 as follows:
+
+  "Frequency-of-use ranking, if present (applies to 2,135 kanji, based
+  on the "New Japanese-English Character Dictionary" by Jack Halpern)"
+
+o Insert "index" between "dictionary" and "number" of the "H" and "N"
+  entries of Table 8-1.
+
+o Change the "S" entry of Table 8-1 as follows:
+
+  "Total number of strokes (more than one such field is acceptable in
+  the case of kanji with varying stroke counts)"
+
+
+Page 221:
+
+o Change "Sony Data Discman" to "electronic book players" in the second
+  line of the last paragraph.
+
+o Change "CD-ROMs" to "electronic books" in the third line of the last
+  paragraph.
+
+
+Page 222:
+
+o Change "CD-ROM" to "electronic book" in the first and second lines
+  of the first paragraph.
+
+o Add the following phrase to the end of the first paragraph, deleting
+  the final period:
+
+  "or an electronic book player."
+
+o Change "Sony's Data Discman" to "electronic book players" in the
+  second line of the sixth paragraph.
+
+o Change "online" to "electronic" in the first line of the last
+  paragraph.
+
+
+Page 223:
+
+o Change "online" to "electronic" in the first line of the first
+  paragraph, and in the first line of the fourth paragraph.
+
+
+Page 238:
+
+o Change "underline" to "underscore" in the second line of the fourth
+  paragraph.
+
+o Delete the last sentence of the last paragraph (no longer applies).
+
+
+Page 239:
+
+o The NIFTY-Serve -> Internet template should be as follows:
+
+  "INET:test-japan@ora.com".
+
+
+Page 243:
+
+o Remove the first sentence of the page (begins with "To see a copy
+  of...").
+
+o Change "can also" to "of entities within the five subdomains of the
+  JP domain can" in the next sentence.
+
+
+Page 247:
+
+o Insert "of" between "sets" and "rules" in the last line of the
+  second paragraph.
+
+
+Page 279:
+
+o Insert a comma between "JIS X 0208-1990" and "which" in the first
+  line of the second paragraph.
+
+
+Page 280:
+
+o Change "shape" to "form" in the second line of the only paragraph.
+
+
+Page 295:
+
+o Change "totally compatible" to "not fully compatible" in the fourth
+  line of the third paragraph.
+
+o Change "chapter" to "appendix" in the third line of the fourth
+  paragraph.
+
+
+Page 325:
+
+o Append the following sentence to the end of the second paragraph:
+
+  "While the transition from JIS C 6226-1978 to JIS X 0208-1983 is
+  generally viewed as involving only kanji simplification, there are a
+  handful of cases where a simplified kanji in JIS C 6226-1978 was
+  restored to its traditional form in JIS X 0208-1983."
+
+
+Page 327:
+
+o Append the following sentence to the only paragraph:
+
+  "18 kanji restored to their traditional forms are indicated with a hash
+  mark."
+
+
+Pages 327-329:
+
+o Add a hash mark after the following entries (KUTEN codes below):
+
+  2346
+  2368
+  2523
+  2684
+  2725
+  3347
+  3830
+  3853
+  3860
+  4548
+  5175
+  5984
+  6752
+  7673
+  8037
+  8085
+  8213
+  8393
+
+
+Page 329:
+
+o Append the following sentence to the last paragraph:
+
+  "Furthermore, some of these changes involve simplified kanji
+  reverting to their traditional form."
+
+
+Page 330:
+
+o Append the following sentence to the only paragraph:
+
+  "seven kanji restored to their traditional forms are indicated with
+   a hash mark."
+
+
+Pages 330-331:
+
+o Add a hash mark after the following entries (KUTEN codes below):
+
+  5024
+  6089
+  6165
+  6254
+  7125
+  7485
+  8247
+
+
+Page 333:
+
+o Change "Tables J-4 through J-6" to "Tables J-4 through J-7" in the
+  first paragraph.
+
+o Append the following sentence to the first paragraph:
+
+  "Table J-7 shows a special case."
+
+
+Page 338:
+
+o Add the following table:
+
+  "Table J-7: Mapping Table (to JIS X 0212-1990 User-defined Positions)
+
+  Character     DBCS-PC      JIS X 0212-1990
+                8D56         8422 (8FF4B6)"
+
+  Note that the actual character form under the "Character" column is
+  the same as the JIS78 form for KUTEN 2523 on page 327.
+
+
+Page 343:
+
+o Change "monu6.cc.monash.edu.au" to "ftp.cc.monash.edu.au" and
+  change position in list after "ftp.cs.titech.ac.jp."  Also change
+  "130.194.1.106" to "130.194.11.1."
+
+
+Pages 345-347:
+
+o Change "monu6.cc.monash.edu.au" to "ftp.cc.monash.edu.au" eight
+  times. Also change "130.194.1.106" to "130.194.11.1" eight times.
+
+
+Pages 348-366:
+
+o Add country code prefixes to all phone/facsimile numbers. For
+  example, "415-961-4400" becomes "+1-415-961-4400."
+
+
+Page 348:
+
+o Add the following URL to the "Adobe Systems Incorporated" entry:
+
+  http://www.adobe.com/
+
+o Change the "Adobe Systems Japan" entry as follows:
+
+  Adobe Systems Co., Ltd.
+  Yebisu Garden Place Tower
+  4-20-3 Ebisu
+  Shibuya-ku, Tokyo 150
+  JAPAN
+  +81-3-5423-8169 (phone)
+  +81-3-5423-8204 (facsimile)
+
+
+Page 349:
+
+o Remove the "Aldus Corporation" entry, and move the "Aldus
+  PageMaker-J" product entry to "Adobe Systems Incorporated" on page
+  348, but change the name to "Adobe PageMaker-J."
+
+o Move (to page 358) and rename the "Altsys Corporation" entry as
+  follows:
+
+  Macromedia, Incorporated
+  600 Townsend Street
+  San Francisco, CA 94103
+  USA
+  +1-415-252-2000 (phone)
+
+o Change the "800" number for the "America Online" entry to
+  800-827-6364.
+
+o Remove "GB technical manuals" from the Products list for the "ANSI"
+  entry.
+
+
+Page 350:
+
+o Add the following URL to the "Apple Computer Incorporated" entry:
+
+  http://www.apple.com/
+
+o Remove "7.1" from the "KanjiTalk 7.1" product for the "Apple
+  Computer Incorporated entry. Also remove both instances of "System
+  7.1" in the same entry.
+
+o Add the following URL to the "Apple Japan Incorporated" entry:
+
+  http://www.iijnet.or.jp/apple/
+
+o Add the following URL to the "ASCII Corporation" entry:
+
+  http://www.ascii.co.jp/
+
+o Remove the "Azuma Lander International" entry.
+
+
+Page 351:
+
+o Add the following URL to the first "Claris Corporation" entry:
+
+  http://www.claris.com/
+
+
+Page 352:
+
+o Add the following URL to the "CompuServe" entry:
+
+  http://www.compuserve.com/
+
+
+o Add the following URL to the first "Digital Equipment Corporation"
+  entry:
+
+  http://www.dec.com/
+
+
+Page 353:
+
+o Add the following URL to the "Electronics for Imaging, Incorporated"
+  entry:
+
+  http://www.efi.com/
+
+o Insert the following new entry:
+
+  Enfour Media Laboratory Pty. Ltd.               Gaiji Kits
+  5-3-14-203 Sendagaya                            Gaiji Designer
+  Shibuya-ku, Tokyo 151
+  JAPAN
+  +81-3-5360-8171 (phone)
+  +81-3-3355-6923 (facsimile)
+  enfour@eworld.com
+
+o Change the FontWorks contact info as follows:
+
+  FONTWORKS Limited
+  11/F Bangkok Bank Building
+  14-20 Bonham Strand West
+  Sheung Wan
+  HONG KONG
+  +852-2851-2739 (phone)
+  +852-2544-3543 (facsimile)
+  fonts@hk.net
+
+o Add the following URL to the "Frame Technology Corporation" entry:
+
+  http://www.frame.com/
+
+o Add the following URL to the "Fujitsu Business Systems" entry:
+
+  http://www.fujitsu.co.jp/
+
+
+Page 354:
+
+o Add the following e-mail address to the "GITCO" entry:
+
+  gitcoinfo@aol.com
+
+  Also, change the second phone number to +1-510-704-9129, and delete
+  the facsimile number.
+
+o Remove both entries for "GO Corporation."
+
+o Add the following URL to the "Hewlett-Packard" entry:
+
+  http://www.hp.com/
+
+
+Page 355:
+
+o Add the following URL to the "Hitachi Corporation" entry:
+
+  http://www.hitachi.co.jp/
+
+o Add the following URL to the "International Business Machines
+  Corporation" entry:
+
+  http://www.ibm.com/
+
+o Change "International Standards Organization" to "International
+  Organization for Standardization." Also, add the following URL:
+
+  http://www.iso.ch/
+
+o Add the following URL to the "Internet Initiative Japan,
+  Incorporated" entry:
+
+  http://www.iij.ad.jp/
+
+
+Page 356:
+
+o Add the following URL to the "Japan Bitnet Association" entry:
+
+  http://www.join.ad.jp/
+
+o Add the following URL to the "Japan Network Information Center
+  (JPNIC)" entry:
+
+  http://www.nic.ad.jp/
+
+
+Page 357:
+
+o Change the address for the "Kureo Technology Limited" entry as
+  follows:
+
+  Kureo Technology Limited
+  3600 Gilmore Way, Suite 303
+  Burnaby, BC V5G 4R8
+  CANADA
+  +1-604-433-7715 (phone)
+  +1-604-433-3393 (facsimile)
+  http://www.intransnet.bc.ca/
+
+  Also, add the following to the Products column:
+
+  KCom2 for Windows
+  Win/V
+  InTransNet translation service
+
+o Add the following URL to the "Language Automation, Incorporated"
+  entry:
+
+  http://www.lai.com/
+
+  Change the phone number to +1-415-571-7877, and the facsimile number
+  to +1-415-571-6294. Also, remove both e-mail addresses, and replace
+  it with the following:
+
+  info@lai.com
+
+
+Page 358:
+
+o Remove the "Letraset USA, Incorporated" entry.
+
+
+Page 359:
+
+o Add the following URL to the "Microsoft Corporation" entry:
+
+  http://www.microsoft.com/
+
+
+Page 360:
+
+o Insert the following new entry:
+
+  Netscape Communications Corporation             Netscape Navigator
+  501 East Middlefield Road
+  Mountain View, CA 94041
+  USA
+  +1-415-254-1900 (phone)
+  +1-415-528-4122 (facsimile)
+  sales@netscape.com
+  http://www.netscape.com/
+
+o Add the following URL to the "NeXT, Incorporated" entry:
+
+  http://www.next.com/
+
+o Insert the following new entry:
+
+  Nichigai Associates, Incorporated               Electronic Books
+  1-23-8 Ohmori-kita
+  Ohta-ku, Tokyo 143
+  JAPAN
+  +81-3-3763-5241 (phone)
+  +81-3-3764-0845 (facsimile)
+  info@nichigai.co.jp
+  http://www.nichigai.co.jp/
+
+o Change the "Nisus" to "Nisus Writer" under the Product listing for
+  the "Nisus Software Incorporated" entry. Also, add the following URL
+  to this entry:
+
+  http://www.nisus-soft.com/~nisus/
+
+o Add the following URL to the "O'Reilly & Associates, Incorporated"
+  entry:
+
+  http://www.ora.com/
+
+
+Page 362:
+
+o Add the following URL to the "Qualitas Trading Company" entry:
+
+  http://www.holonet.net/qualitas/
+
+  Also, add the following e-mail addresses:
+
+  72400.3100@compuserve.com
+  d2437@applelink.apple.com
+
+
+Page 363:
+
+o Add the following URL to the "Silicon Graphics, Incorporated" entry:
+
+  http://www.sgi.com/
+
+o Add the following URL to the "Softbank Corporation" entry:
+
+  http://www.softbank.co.jp/
+
+o Add the following URL to the "Sony Corporation" entry:
+
+  http://www.sony.co.jp/
+
+o Add the following URL to the "Sun Microsystems, Incorporated" entry:
+
+  http://www.sun.com/
+
+
+Page 364:
+
+o Move (to page 350) and rename the "SystemSoft America, Incorporated"
+  entry as follows:
+
+  AsiaSoft Incorporated                           Macintosh software
+  P.O. Box 4260                                   PC software
+  Vero Beach, FL 32964-4260
+  USA
+  800-882-8856 (phone)
+  +1-407-234-5598 (phone)
+  +1-407-234-4991 (facsimile)
+  asiasoft@iu.net
+  http://www.xmission.com/~asiasoft/
+
+o Add the following URL to the "TWICS" entry:
+
+  http://www.twics.com/
+
+  Also, change the e-mail address as follows:
+
+  info@twics.com
+
+
+Page 365:
+
+o Add the following URL to the "Unicode, Incorporated" entry:
+
+  http://www.unicode.org/
+
+o Remove the "URW America" entry.
+
+o Add the following URL to the "UUNET Technologies, Incorporated"
+  entry:
+
+  http://www.uu.net/
+
+o Change the contact information for Wnn Consortium as follows:
+
+  Wnn Consortium
+  c/o ASTEM Research Institute
+  Kyoto Research Park
+  17 Chudoji Minami-machi
+  Shimogyo-ku, Kyoto 600
+  JAPAN
+  +81-75-315-2897 (facsimile)
+  wnn@astem.or.jp
+
+  Also, remove "JIS X 0212-1990 bitmapped fonts" from the Products
+  listing.
+
+
+Page 366:
+
+o Move (to page 359) and rename the "Worldwide Publishing Group" entry
+  as follows:
+
+  Multilingual Computing, Incorporated
+  111 Cedar Street
+  Sandpoint, ID 83864
+  USA
+  +1-208-263-8178 (phone)
+  +1-208-263-6310 (facsimile)
+  info@multilingual.com
+
+o Add the following URL to the "X/Open Company Limited" entry:
+
+  http://www.xopen.co.uk/
+
+o Add the following URL to the "Xerox Systems Institute" entry:
+
+  http://www.xerox.com/
+
+
+Page 390:
+
+o Change "International Standards Organization" for the "ISO"
+  entry to "International Organization for Standardization."
+
+
+Page 406:
+
+o UTF-2 entry needs an "fi" ligature.
+
+
+Page 416:
+
+o Change Donnalyn Frey's book to reflect the fourth edition as
+  follows:
+
+  Frey, Donnalyn & Rick Adams. "!%@:: A Dictionary of Electronic Mail
+    Addressing & Networks". Fourth edition. O'Reilly & Associates,
+    Inc. 1994. ISBN 1-56592-046-5.
+
+o Add the following book to the bibliography:
+
+  古瀬幸広. ワープロここが不思議--ちょっと知的なワープロ学. 講談社.
+    1994. ISBN 4-06-257018-1.
+
+
+Page 417:
+
+o Change Ed Krol's book to reflect the second edition as follows:
+
+  Krol, Ed. "The Whole Internet User's Guide & Catalog". Second edition.
+    O'Reilly & Associates, Inc. 1994. ISBN 1-56592-063-5.
+
+o Add the following books to the bibliography:
+
+  Kano, Nadine. "Developing International Software for Windows 95 and
+  Windows NT." Microsoft Press. 1995. ISBN 1-55615-840-8.
+
+  Krol, Ed. インターネットユーザーズガイド 改訂版. International
+    Thomson Publishing Japan. 1995. ISBN 4-900718-12-2.
+
+  Lunde, Ken. "Prescriptive Kanji Simplification". PhD Dissertation.
+    University of Wisconsin-Madison. 1994. University Microfilms
+    International order number 9419580.
+
+  Luong, Tuoc V. et al. "Internationalization: Developing Software for
+    Global Markets". John Wiley & Sons, Incorporated. 1995. ISBN
+    0-471-07661-9.
+
+  中西秀彦. 活字が消えた日--コンピュータと印刷. 晶文社. 1994. ISBN
+    4-7949-6172-3.
+
+  大木敦雄. 入門NEmacs. ASCII Corporation. 1994. ISBN 4-7561-0287-5.
+
+  大木敦雄. 入門Mule. ASCII Corporation. 1994. ISBN 4-7561-0300-6.
+
+
+Page 418:
+
+o Add the following books to the bibliography:
+
+  Searfoss, Glenn. "JIS-Kanji Character Recognition: Featuring the
+    Gaiji Method". Van Nostrand Reinhold. 1994. ISBN 0-442-01813-4.
+
+  Stallman, Richard M. "GNU Emacs Manual". Tenth edition. Free
+    Software Foundation. 1994. ISBN 1-882114-04-3.
+
+  Unger, J. Marshall. "The Fifth Generation Fallacy: Why Japan Is Betting
+    Its Future on Artificial Intelligence". Oxford University Press. 1987.
+    ISBN 0-19-504939-X.
+
+  Walsh, Norman. "Making TeX Work". O'Reilly & Associates, Inc. 1994
+    ISBN 1-56592-051-1.
+
+  ワープロ・パソコン最新漢字辞典. 小学館. 1994. ISBN 4-09-505121-3.
+
+o Change "International Standards Organization" to "International
+  Organization for Standardization."
+
+
+Page 420:
+
+o Change "Published quarterly" to "Published from 1986 to 1993" in
+  the entry for 最新ワープロ大百科.
+
+o Add the following bibliographic entry into the "Papers and
+  Articles" section:
+
+  Breen, J.W. "A Japanese Electronic Dictionary Project (Part 1:
+    The Dictionary Files)", Technical Report 93/13, Department of
+    Robotics & Digital Technology, Monash University, November
+    1993.
+
+
+Page 425:
+
+o Change "online" to "electronic" under the "dictionaries" entry, and
+  move it to after "conversion."
+
+
+Page 428:
+
+o Change "International Standards Organization" to "International
+  Organization for Standardization."
+
+
+Page 432:
+
+o Change the entry "online dictionaries" to "electronic dictionaries,"
+  and move it to page 426.
+
+
+Colophon Page:
+
+o Change the fourth sentence of the first paragraph as follows:
+
+  "He finally received his Doctor of Philosophy degree in linguistics
+  in 1994, and his dissertation was entitled "Prescriptive Kanji
+  Simplification"."
+
+o Change "Japanese Font Production" to "CJK Type Development" in the
+  fifth fifth sentence of the first paragraph.
+
+o Delete the last sentence of the first paragraph.

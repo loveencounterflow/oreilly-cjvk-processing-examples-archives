@@ -1,0 +1,124 @@
+Name:          Japanese Language Kit Updater for System 7.5.1
+Version:       n/a
+Date Released: June 28, 1995
+Description:   This software updates the Japanese Language Kit for compatibility
+               with System 7.1, 7.5, and 7.5.1.  Please refer to the information
+               below.
+
+The enclosed file is a self-extracting archive. To use, download, double-click
+the downloaded file (this decompresses it).
+ 
+Files found within the self-extracting archive:
+-----------------------------------------------
+InputBackSupport                           7.5.2
+Language Kit Extension                     7.5.1
+WorldScriptª II                            7.5.1
+WorldScriptª Power Adapter                 7.5.2
+ 
+ 
+¥ Japanese Language Kit 1.2 now available!
+    Version 1.2 of the Japanese Language Kit is now fully compatible
+with Macintosh System 7.5, the current version of the Mac OS.  In
+addition, it includes three Japanese TrueType fonts that are
+compatible with Apple's QuickDraw GX graphics software; the most
+updated version of Kotoeri, the Japanese input method; new 'kana'
+keyboard labels; and demos of several Japanese and WorldScript-
+savvy applications.
+    With the Japanese Language Kit software running on an English-
+language Macintosh, the Macintosh user interface remains in
+English; however, users can run both English-language and
+Japanese-language applications and create documents that contain
+both languages.
+If you are using System 7.5 and JLK 1.0 or 1.1, we recommend that you upgrade
+to JLKÊ1.2.
+ 
+¥ Availability and Pricing
+    The Japanese Language Kit is available in the United States and Canada
+through software resellers for the suggested retail price of U.S. $249.  In the
+United States, customers should call 1-800-538-9696 extension 525
+for a dealer referral or 1-800-769-2775 extension 5795 to order
+direct from Apple.  United States customers who have an earlier
+version of the Japanese Language Kit can purchase the upgraded
+product for U.S. $39 plus tax and shipping and handling fees by
+calling 1-800-769-2775 extension 7856.  In Canada, customers who have an
+earlier version of the Japanese Language Kit can purchase the upgraded
+product for CAN. $49 plus shipping and handling fees by calling 1-800-263-3394
+and customers should call 1-800-665-2775 for a dealer referral.  Both products
+are also available in other countries.  For information on availability,
+customers should contact the Apple office in the specific country.
+ 
+¥ What you can do if you are using JLK 1.1:
+If you are using JLK 1.1 with System 7.5, you already have the TrueType fonts
+in JLK 1.2 and may wish to only download a limited set of files that will
+enable you to work effectively with your Japanese Language Kit (version 1.1)
+and System 7.5. (If you have version JLK 1.0 you need to purchase the upgrade.
+To find which version you have, open the System Folder, open the extensions
+folder, select the Japanese Support icon, when it is highlighted go under the
+File menu, select Get Info.  You will see Japanese Language Kit 1.0 or Japanese
+Language Kit 1.1 next to the icon.)
+ 
+These updated files will make it possible to use the JLK with QuickDraw GX
+technology.
+ 
+The updated files can be downloaded at no charge from
+the following services:
+ 
+- AppleLink:  AppleLink Services: Apple Products: Apple SW Updates: US:
+Macintosh: System Software: Other System Software: Japanese Language Kit
+Updater.
+ 
+- eWorld:  Computer Center: Apple Customer Center: Apple Technical Support: USA
+Apple Software Updates: Macintosh: System Software: Other System Software:
+Japanese Language Kit
+Updater.
+ 
+- Internet:  ftp.info.apple.com: Apple Support Area: Apple SW Updates:
+Macintosh: System Software: Other System Software: Japanese Language Kit
+Updater.
+ 
+- Internet:  ftp.support.apple.com: Apple Support Area: Apple SW Updates:
+Macintosh: System Software: Other System Software: Japanese Language Kit
+Updater.
+ 
+¥ Installation of updated components:
+If you are also using the Chinese Language Kit install the Japanese Updater
+files after you have installed the Chinese Language Kit.
+ 
+If you are only using the Japanese Language Kit, follow these steps AFTER you
+have installed the Japanese Language Kit 1.1 software. To install the
+updated files, do the following:
+ 
+¥ÊDownload the JLK Updater files to your hard drive.
+¥ Select all files in the file folder by choosing Command-A, or by
+Shift-Clicking each file.
+¥ Drag the files to the active Macintosh System Folder (where JLK has already
+been installed).
+¥ The files will be placed in the correct folders, automatically replacing the
+outdated files.
+¥ Restart your Macintosh.
+ 
+NOTE: If you place the files in a System Folder that is not currently your
+active System Folder, the files will not be automatically placed in the right
+folders. Therefore, you will need to open the System Folder and place all four
+pieces manually into the extensions folder.
+ 
+For Performa Users:
+If you have a Macintosh Performa, you may experience difficulties installing
+the JLK. If this is the case, do the following:
+¥ÊRemove the "Launcher" file from the active System Folder (Drag the "Launcher"
+to another folder while the Language Kit is being installed)
+¥ Restart your Macintosh
+¥ Install the Japanese or Chinese Language Kit
+¥ÊDrag the Launcher back into your System Folder
+ 
+¥System Requirements
+    The Japanese Language Kit requires an
+Apple Macintosh computer running either System 7.1 or System 7.5,
+with 5 Megabytes of RAM or a Power Macintosh or Mac-compatible
+computer with 8 Megabytes of RAM.
+ 
+ 
+© 1994 Apple Computer, Inc. All rights reserved. Apple, the Apple logo, and
+Macintosh are trademarks of Apple Computer, Inc., registered in the U.S. and
+other countries. PowerTalk, QuickDraw, and TrueType are trademarks of Apple
+Computer, Inc.

@@ -1,0 +1,288 @@
+E D I C T
+=========
+
+Public Domain Japanese/English Dictionary file, coordinated by Jim Breen.
+
+CURRENT VERSION
+---------------
+
+The version date and sequence number is included in the dictionary itself under
+the entry "EDICT". (Actually it is under the JIS-ASCII code "????".  This keeps
+it as the first entry when it is sorted.)
+
+The   master   copy   of   EDICT   is   in   the   pub/Nihongo   directory   of
+monu6.cc.monash.edu.au.  There are other copies around,  but they may not be as
+up-to-date. The easy way to check if the version you have is the latest is from
+the size/date.
+
+INTRODUCTION
+------------
+
+EDICT is an attempt to produce a public domain Japanese/English  Dictionary  in
+machine-readable form.  It was intended initially for use with MOKE (Mark's Own
+Kanji Editor) and related software such as JDIC and JREADER, however it has the
+potential to be used in a large number of packages. 
+
+At present it is in the "public domain", however at some stage it may be placed
+under  Gnu  or  Copyleft  protection,  mainly  to  prevent the work of its many
+contributors being exploited by commercial software developers.
+
+FORMAT
+------
+
+EDICT is in the "EDICT" format used by MOKE.  It uses EUC coding for  kana  and
+kanji,  however  this  can  be  converted  to JIS or SJIS by any of the several
+conversion programs around.  It is a text file with one  entry  per  line.  The
+format of entries is:
+
+KANJI [KANA] /english_1/english_2/.../
+
+     or
+
+KANA /english_1/.../
+
+The English translations are deliberately brief,  as  the  application  of  the
+dictionary is expected to be primarily on-line look-ups, etc.
+
+CONTENTS
+--------
+
+EDICT consists of:
+
+(a) the basic EDICT distributed with MOKE 2.0.  This  was  compiled  by  MOKE's
+author, Mark Edwards, with assistance from Spencer Green.  Mark has very kindly
+released  this  material  to  the public domain as part of EDICTJ.  A number of
+corrections have been made to the MOKE original, e.g.  spelling mistakes, minor
+mistranslations,  etc.  It  also  had  a  lot of duplications,  which have been
+removed.  It contained about 1900 unique entries.  Mark Edwards has also kindly
+given permission for the vocabulary files developed for KG (Kanji Guess) to  be
+added to EDICT.
+
+(b)  additions  by  Jim Breen.  I laboriously keyed in a ~2000 entry dictionary
+used in my first year nihongo course at Swinburne Institute of Technology years
+ago (I was given permission by the authors to do this).  I then worked  through
+other vocabulary lists trying to make sure major entries were not omitted. This
+task is continuing,  although it has slowed down,  and I suspect I will run out
+of energy eventually.  Apart from that, I have made a large number of additions
+during normal MOKE and JREADER usage (e.g. using it to read fj.* news.)
+
+(c) additions by others.  Many people have contributed entries and  corrections
+to EDICT.  I am forever on the lookout for sources of material,  provided it is
+genuinely available for use in the Public Domain.  I am especially grateful  to
+Theresa  Martin  who  has  been  supplying a lot of useful material,  plus very
+perceptive corrections.  Hidekazu Tozaki  has  also  been  a  great  help  with
+tidying  up  a  lot  of  awry  entries,  and  helping me identify obscure kanji
+compounds.  A full list is at the  back  of  this  file.  A  massive  group  of
+contributions came from Sony,  where Rik Smoody had put together a large online
+dictionary.
+
+At  this  stage  EDICT is approaching the size of a good commercial dictionary,
+which typically has 20,000+ non-name entries with examples,  etc.  It is bigger
+than  some  of  the smaller printed dictionaries,  and when used in conjunction
+with a search-and-display program like JDIC  or  XJDIC  it  provides  a  highly
+effective on-line dictionary service.
+
+COPYRIGHT?
+----------
+
+A  word  on copyright.  Of course most of the material in EDICT came from other
+published lists.  Dictionary copyright is a difficult  point,  because  clearly
+the  first  lexicographer  who  published  "inu  means  dog"  could not claim a
+copyright violation over all subsequent Japanese dictionaries.  What makes each
+dictionary unique (and copyrightable) is the particular selection of words, the
+phrasing of the meanings,  the presentation of the contents (a  very  important
+point  in the case of EDICT),  and the means of publication.  The advice I have
+received from people who know about these things is that EDICT is just as  much
+a  new  dictionary as any others on the market.  Readers may see an entry which
+looks familiar,  and say "Aha!  That comes from the XYZ Jiten!".  They  may  be
+right,  and they may be wrong.  After all there aren't too many translations of
+neko.  Let me make one thing quite clear.  NONE of this  dictionary  came  from
+commercial  machine-readable  dictionaries.  I  have  a case of RSI in my right
+elbow to prove it.
+
+Please do not contribute  entries  to  EDICT  which  have  come  directly  from
+copyrightable sources.  It is hard to check these,  and you may be jeopardizing
+EDICT's PD status.
+
+LEXICOGRAPHICAL DETAILS
+-----------------------
+
+EDICT is actually a Japanese->English dictionary,  although the words within it
+can be selected in either language using appropriate software. (JDIC uses it to
+provide both E->J and J->E functionality.)
+
+The early stages of EDICT had size limitations due to its usage (MOKE scans  it
+sequentially and JDXGEN, which is JDIC's index generator, held it in RAM.) This
+meant  that  examples of usage could not be included,  and inclusion of phrases
+was very limited.  JDIC/JDXGEN can now handle a much larger dictionary, but the
+compact format has continued.
+
+No  inflections of verbs or adjectives have been included,  except in idiomatic
+expressions.  Similarly particles are  handled  as  separate  entries.  Adverbs
+formed from adjectives (-ku or ni) are generally not included.  Verbs  are,  of
+course, are in the plain or "dictionary" form.
+
+In working on EDICT,  bearing in mind I want to use it in MOKE and with JDIC, I
+have had to come up  with  a  solution  to  the  problem  of  adjectival  nouns
+[keiyoudoushi]  (e.g.  kirei  and kantan), nouns which can be used adjectivally
+with the particle "no" and verbs formed by adding suru (e.g.  benkyousuru).  If
+I put entries in edict with the "na" and "suru" included,  MOKE will not find a
+match  when  they  are  omitted or,  the case of suru,  inflected.  What I have
+decided to do is to put the basic noun into the dictionary and add "(vs)" where
+it  can be used to form a verb with suru,  "(a-no)" for common "no" usage,  and
+"(an)" if it is an adjectival noun. Entries appear as:
+
+KANJI [benkyou] /study (vs)/
+KANJI [kantan] /simple (an)/
+
+Where  necessary,  verbs  are marked with "(vi)" or "(vt)" according to whether
+they are intransitive or transitive.  (Work on this aspect  is  continuing.)  I
+have  also  used (id) to mark idiomatic expressions,  (col) for colloquialisms,
+(pol) for teineigo, etc.
+
+Users intending to make submissions to EDICT should follow the following simple
+rules:
+
+o all verbs in plain form.  The English must begin with "to ....".  Add (vi) or
+(vt) to the first translation if the nature of the verb is not implicit in  the
+translation(s).;
+
+o  add  (an) or (a-no) or (vs) as appropriate to nouns.  Do not put the "na" or
+"no" particles on the Japanese, or the "suru" auxilary verb.
+                                     
+o indicate prefixes and suffixes by "(pref)" and "(suf)" in the  first  English
+entry, not by using "-" in the kanji or kana.
+
+o do not add definite or indefinite articles (e.g.  "a",  "an",  "the", etc) to
+English nouns unless they are necessary to distinguish the  word  from  another
+usage type or homonym.
+
+o do not guess the kanji.
+
+o do not use the "/", "[" or "]" characters except in their separating roles.
+
+o if you are keying from a romaji form, make sure you have the correct kana for
+"too/tou" and "zu", where the Hepburn romaji is often ambiguous.
+
+o  do  not use kana or kanji in the "English" fields.  Where it is necessary to
+use a Japanese word, e.g. kanto, use romaji.
+
+USAGE
+-----
+
+EDICT can be used as the dictionary within MOKE simply by renaming it  "EDICT",
+(or  JTOE.DCT  in the new version 2.1 of MOKE.) If you are a MOKE user and have
+been adding to your EDICT using the "Ask English?"  option,  you  may  wish  to
+append your additions.  Why not send them to me and I will add them to EDICT?
+
+EDICT can be used,  with acknowledgement,  for any purpose whatever, EXCEPT for
+inclusion in new commercial products.  Mark Edwards can,  of course,  use it in
+later MOKE releases.  Stephen Chung may also be using it in his PD "JWP".
+
+CONTRIBUTIONS
+-------------
+
+I will be delighted if people send me corrections, suggestions,  and ESPECIALLY
+additions.  Before ripping in with a lot of suggestions, make sure you have the
+latest version, as others may have already made the same comments.
+
+The preferred format for submissions is a JIS, EUC or Shift-JIS file (uuencoded
+for safety) containing replacement/new entries.  Separate the  amendments  from
+the new material: e.g.
+
+**Amendments to EDICT yyyymmmdd Vyy-nnn**
+
+old entry1
+new entry1
+old entry2
+........
+
+**New Entries**
+
+New entry1
+New entry2
+.........
+
+I prefer not to get a "diff" or "patch" file  as  the  master  EDICT  is  under
+continuous  revision,  and  may have had quite a few changes since you got your
+copy.
+
+ACKNOWLEDGEMENTS
+----------------
+
+Mark Edwards, Spencer Green, Alina Skoutarides, Takako Machida, Theresa Martin,
+Satoshi Tadokoro,  Stephen  Chung,  Hidekazu  Tozaki,  Clifford  Olling,  David
+Cooper, Ken Lunde, Joel Schulman, Hiroto Kagotani, Truett Smith, Mike Rosenlof,
+Harold Rowe,  Al Harkom,  Per Hammarlund,  Atsushi Fukumoto, John Crossley, Bob
+Kerns, Frank O'Carroll, Rik Smoody, Scott Trent, Curtis Eubanks,  Jamie Packer,
+Hitoshi Doi, Thalawyn Silverwood, Makato Shimojima, Bart Mathias,  Koichi Mori,
+Steven Sprouse, Jeff Friedl, Yazuru Hiraga, Kurt Stueber, Rafael Santos, Bruce
+Casner, Masato Toho, Carolyn Norton, Simon Clippingdale, Shiino Masayoshi,
+Susumu Miki, Yushi Kaneda, Masahiko Tachibana, Naoki Shibata, Yuzuru Hiraga,
+Yasuaki Nakano, Atsu Yagasaki, Hitoshi Oi, Chizuko Kanazawa, Lars Huttar,
+Jonathan Hanna, Yoshimasa Tsuji, Masatsugu Mamimura, Keiichi Nakata, Masako
+Nomura, Hiroshi Kamabe, Shi-Wen Peng, Norihiro Okada, Jun-ichi Nakamura,
+Yoshiyuki Mizuno, Minoru Terada, Itaru Ichikawa, Toru Matsuda, Katsumi Inoue,
+John Finlayson, David Luke, Iain Sinclair, Warwick Hockley, Jamii Corley,
+Howard Landman.
+
+Jim Breen
+(jwb@capek.rdt.monash.edu.au)
+Department of Robotics & Digital Technology
+Monash University
+Clayton 3168
+AUSTRALIA                                  
+
+APPENDIX
+--------
+
+As some of the material in edict has been derived from entries in the
+dictionaries of the "Wnn" project, it is appropriate to draw attention
+to the copyright statement of that project.
+
+/*
+ * Copyright Kyoto University Research Institute for Mathematical Sciences
+ *                 1987, 1988, 1989, 1990, 1991
+ * Copyright OMRON Corporation. 1987, 1988, 1989, 1990, 1991
+ * Copyright ASTEC, Inc. 1987, 1988, 1989, 1990, 1991
+ *
+ * Permission to use, copy, modify, distribute, and sell this software
+ * and its documentation for any purpose is hereby granted without fee,
+ * provided that all of the following conditions are satisfied:
+ *
+ * 1) The above copyright notices appear in all copies
+ * 2) Both those copyright notices and this permission notice appear
+ *    in supporting documentation
+ * 3) The name of "Wnn" isn't changed unless substantial modifications
+ *    are made, or
+ * 3') Following words followed by the above copyright notices appear
+ *    in all supporting documentation of software based on "Wnn":
+ *
+ *   "This software is based on the original version of Wnn developed by
+ *    Kyoto University Research Institute for Mathematical Sciences (KURIMS),
+ *    OMRON Corporation and ASTEC Inc."
+ *
+ * 4) The names KURIMS, OMRON and ASTEC not be used in advertising or
+ *    publicity pertaining to distribution of the software without
+ *    specific, written prior permission
+ *
+ * KURIMS, OMRON and ASTEC make no representations about the suitability
+ * of this software for any purpose.  It is provided "as is" without
+ * express or implied warranty.
+ *
+ * Wnn consortium is one of distributors of the official Wnn source code
+ * release.  Wnn consortium also makes no representations about the
+ * suitability of this software for any purpose.  It is provided "as is"
+ * without express or implied warranty.
+ *
+ * KURIMS, OMRON, ASTEC AND WNN CONSORTIUM DISCLAIM ALL WARRANTIES WITH
+ * REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL KURIMS, OMRON, ASTEC OR
+ * WNN CONSORTIUM BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTUOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ *
+ */
+
